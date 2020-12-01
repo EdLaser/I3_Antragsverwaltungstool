@@ -1,0 +1,64 @@
+= Meeting vom 01.12.2020
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+|Ja
+
+|Jacob 
+|Ja
+
+|Richard
+|Ja
+
+|Richard M.
+|Ja
+
+|Andreas
+|Ja
+
+|Tien
+|Ja
+
+|Amanda
+|Ja
+
+|Ruben
+|Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Fragen an Kunden
+. Adoc oder docx für Meeting Protokoll
+. Datumsfindung mit Kunden
+
+===== *Einigungen und Beschlossenes:*
+. Kundenfragen
+. Nutzung adoc in Repository
+. Nach Mittwoch bei keiner Rückmeldung Eskalation an Anke
+
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. Soll Antragsgrün implementiert werden?
+. Rahmendaten vorerst Klären: Welche Anträge,Beschlüsse, wie ist der Ablauf
+. Beispiele für Anträge einholen
+. Tool im Browser oder als Programm?
+. Welche Plattform soll unterstützt werden?
+. Wer nutzt das Tool?
+. Hintergrund erläutern
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...
