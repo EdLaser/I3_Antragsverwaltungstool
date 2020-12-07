@@ -1,0 +1,60 @@
+= Meeting vom 07.12.2020
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+|
+
+|Jacob 
+|
+
+|Richard
+|
+
+|Richard M.
+|
+
+|Andreas
+|
+
+|Tien
+|
+
+|Amanda
+| 
+
+|Ruben
+|
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Meilensteine
+. Arbeitsplan
+
+===== *Einigungen und Beschlossenes:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...
