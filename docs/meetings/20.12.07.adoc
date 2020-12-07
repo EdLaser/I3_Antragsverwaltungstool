@@ -34,6 +34,8 @@
 ===== *Zu klärende Sachverhalte:*
 . Meilensteine
 . Arbeitsplan
+. Meeting-termin festlegen
+. Essence Navigator klären
 
 ===== *Einigungen und Beschlossenes:*
 . ...
