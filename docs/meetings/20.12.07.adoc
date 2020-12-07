@@ -6,28 +6,28 @@
 |*Teilnehmer* | *Anwesend(J/N)*
 
 |Jasmin 
-|
+|Ja
 
 |Jacob 
-|
+|Ja
 
 |Richard
-|
+|Ja
 
 |Richard M.
-|
+|Nein
 
 |Andreas
-|
+|Ja
 
 |Tien
-|
+|Nein
 
 |Amanda
-| 
+|Ja
 
 |Ruben
-|
+|Ja
 
 |===
 
