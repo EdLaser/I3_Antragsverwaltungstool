@@ -1,0 +1,81 @@
+= Meeting vom 26.11.2020
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+|Ja
+
+|Jacob 
+|Ja
+
+|Richard
+|Ja
+
+|Richard M.
+|Ja
+
+|Andreas
+|Ja
+
+|Tien
+|Ja
+
+|Amanda
+|Ja
+
+|Ruben
+|Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Kennenlernen
+. Rollenverteilung
+. Allgemeine Herangehensweise Meetings
+. Kontaktaufnahme Kund
+- Planung Kundenmeeting im nächsten Teammeeting am 01.12.2020
+
+===== *Einigungen und Beschlossenes:*
+. Rollenverteilung
+. Terminvorschlag Kunde: 3.12 & 4.12 11 Uhr
+. Meetings Montag 17 Uhr 
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. keine
+
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. Fragen an Kunden Vorbereiten
+
+.Rollenverteilung
+|===
+|*Teilnehmer* | *Rolle*
+
+|Jasmin (Wing) 
+|Projektmanager
+
+|Jacob (Winfo)
+|Test / Implementierung
+
+|Richard (Wing)
+|Analyse
+
+|Richard M. (Vinfo)
+|Entwurf
+
+|Andreas (Info)
+|Analyse / Projektmanager Backup
+
+|Tien (Info)
+|Implementierung / Test
+
+|Amanda (wing)
+|Analyse
+
+|Ruben (Winfo)
+|Implementierung
+
+|===

@@ -1,0 +1,13 @@
+:project-name: <Antragsverwaltungstool (I3)>
+
+// Settings:
+:toc:
+:toc-title: Inhaltsverzeichnis
+
+// Source highlighter
+:source-highlighter: rouge
+:figure-caption: Abbildung
+:table-caption: Tabelle
+
+// folders
+:imagesdir: images
