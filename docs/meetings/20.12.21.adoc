@@ -6,57 +6,57 @@
 |*Teilnehmer* | *Anwesend(J/N)*
 
 |Jasmin 
-|
+| Ja
 
 |Jacob 
-|
+| Ja
 
 |Richard
-|
+| Ja
 
 |Richard M.
-|
+| Ja
 
 |Andreas
-|
+| Ja
 
 |Tien
-|
+| Ja
 
 |Amanda
-| 
+| Nein
 
 |Ruben
-|
+| Ja
 
 |===
 
 ===== *Zu klärende Sachverhalte:*
-. Kollaboration zu Gruppe Datenbank
+. Kollaboration zu Gruppe Datenbank Stura
 . Abspache technische Umsetzung
-. ...
-. ...
 
 ===== *Einigungen und Beschlossenes:*
-. ...
-. ...
-. ...
-. ...
+. Technische Umsetzung wird nach und nach beschlossen
+. Kollabo noch unklar da technische Umsetzung sehr wage (Felix rät ab) -> nur wenn sehr relevant, lassen wir also eher raus
+. Woche vor Silvester Anforderungsanalyse & Vision besprechen
 
 ===== *Fragen und Rücksprachen mit Kunden:*
-. ...
-. ...
-. ...
-. ...
+. Keine
 
 ===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
-. ...
-. ...
-. ...
-. ...
+. Vision und Anforderungsanalyse anschauen zum nächsten 
+
 
 ===== *Sonstige Notizen:*
-. ...
-. ...
-. ...
-. ...
+. Felix Müller beantwort hauptsächlich Fragen
+. Fokus liegt auf methodische Dinge
+. Sein Team als erstes 3 Meetings mit Themensteller (7-8 Seiten Anforderung)
+. Danach Vision
+. 3 Wesentliche Punkte: 1. Bedeutung der eigenen Rolle ( Verwantowertlichkeit) 2. Im laufe Projekt welches Artefakt und was gehört dazu (Sinn der Dokumente+deren Inhalt) 3. Verstehen Sinn iterativ/inkrementelles Vorgehen -> Anfangen makro und dann Wissensstand besprechen, dann zum Themensteller/Stakeholder und Wissen abgleichen und danach mit neuem Wissen verfeinern!
+. Mitschreiber bei Kundenmeeting, direktes umfassendes Aufnhemen des Wissens
+. Nach Meeting direktes abgleichen
+. Liste über gesamtes Projekt mit zu eledigenden Aufgaben und wer diese Macht (Hinzufügen von Ressourcen die man braucht)
+. Priorisierung in Liste inklusive Deadlines und Evaluierung des Erfolges
+. SE I Problem verstehen + Analyse was Umzusetzen ist (Vision,  Use-Case-Modell, Glossary (Am besten direkt mitführen), technischer Grobentwurf(technische Eckpunkte), Domain-Modell (In UML-Diagram statische Aspekte modellieren, wie ERM aus DB))
+. Alle Stakeholder möglichst früh erkennen!!! (Genau schauen wer noch Einfluss hat)
+. Zugang zum alten System verschaffen zu Quelltexten und Dokumentation 
