@@ -1,0 +1,32 @@
+= Architecture Notebook
+Antragsverwaltungstool 
+v1.0, 17.12.2020
+:toc:
+:toc-title: Inhaltsverzeichnis
+
+== Zielsetzung
+Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implimentierung beeinflussen.
+
+== Entwurfsziel und Philosophie 
+Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und Automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software Browserbassiert was sie im weitesten Sinne Plattvormunabhänig macht.
+
+== Annahmen und Abhänigkeiten
+Beispieltext
+
+== Architektonisch bedeutende Anforderungen
+Beispieltext
+
+== Entscheidungen, Einschränkungen und Begründungen
+Beispieltext
+
+== Architekturmechanismen
+Beispieltext
+
+== Abstraktion
+Beispieltext
+
+== Architektionischer Rahmen
+Beispieltext
+
+== Architektionische Ansichten
+Beispieltext 

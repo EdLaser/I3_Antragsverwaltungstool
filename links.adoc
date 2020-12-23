@@ -1,0 +1,7 @@
+= Links zu wichtigen Seiten:
+
+.Linkliste
+. Antraege Vorlage Stura: https://www.stura.htw-dresden.de/stura/p/abv/antraege
+. Erläuterung Nummerierung Anträge: https://www.stura.htw-dresden.de/stura/p/abv
+. Apache Webserver: https://www.a-coding-project.de/ratgeber/apache
+. Webanwendung Python: https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3-de
