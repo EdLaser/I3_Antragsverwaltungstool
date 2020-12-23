@@ -1,7 +1,10 @@
 = Vision: I3 Antragsverwaltungstool
 Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de
 {localdatetime}
+:toc:
+:toc-title: Inhaltsverzeichnis
 include::../_includes/default-attributes.inc.adoc[]
+
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -15,7 +18,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System 
 Dieses Visions-Dokument bezieht sich auf das I3 Antragsverwaltungstool, das von Team I3 entwickelt wird. Das System wird es der Stura der HTW Dresden erlauben, Anträge zu verwalten indem Antragsformulare vervollständigt werden und automatisch in die Tagesordung der nächsten Sitzung eingeordnet, um damit einen schnelleren und leichteren Antragsverwaltungsprozess zu erleichtern. Diese browserbasierte Anwendung soll das Problem der Unvollständigkeit der Formulare lösen und der Stura kommunizieren wenn Anträge erstellt werden.
 
 === Definitionen, Akronyme und Abkürzungen
-siehe Glossar (Verweis hier einfügen).
+siehe Glossar <<glossary.adoc#>>
 
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
@@ -33,7 +36,7 @@ Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten
 |Das Problem |	die unübersichtliche Behandlung der Anträge
 |betrifft |	alle Mitglieger des Sturas, das Referatskollegium, das Präsidium sowie Sprecher/innen.
 |Die Auswirkung davon ist |	die suboptimale Leistung des Sturas und das langsame Verarbeitung von Anträge 
-|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllten und nummerierten Formulare zu zu erstellen und  gemäß Priorisierung in der Tagesordung der folgenden Sitzung eingeordnet zu werden.
+|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllten und nummerierten Formulare zu erstellen und  gemäß Priorisierung in der Tagesordung der folgenden Sitzung eingeordnet zu werden.
 |===
 
 ////
