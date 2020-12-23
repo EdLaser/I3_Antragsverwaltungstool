@@ -120,11 +120,23 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|xx|xx|xx|xx
+|Vorlagen der Anträge digitalisieren|sehr hoch|Drop-down Menü, Ankreuzfunktion, automatische Gererierung der Kennziffer des Antrags |SS2021|
+Automatische Generierung der Tagesordnung| hoch |Verknüpfung mit der Anwendung, Wahlen werden priorisiert| SS2021 |
+Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas | |
+Wahlinformationen | niedrig | automatisch generierte E-Mail an Wahlkandidaten | 
+
 |===
 
 
 == Zusätzliche Produktanforderungen
+
+* Die Anwendung soll eine ähnliche Interface zu Antragsgrün haben. 
+* Kein Java
+* Die browserbasierte Anwendung muss auf Linux und Unix laufen.
+* freie Lizenz benutzen (zum Besipiel GPL, MIT, Apache).
+* gern auch in einem bekannten Webframework
+
+
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 Hinweise:
 
