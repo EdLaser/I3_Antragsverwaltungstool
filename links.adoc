@@ -23,3 +23,7 @@ https://www.w3schools.com/whatis/whatis_html.asp
 https://www.w3schools.com/tags/default.asp
 https://www.w3schools.com/html/default.asp
 
+==== JavaScript
+https://www.w3schools.com/whatis/whatis_js.asp
+https://www.w3schools.com/js/default.asp
+https://www.w3schools.com/jsref/default.asp
