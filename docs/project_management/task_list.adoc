@@ -1,0 +1,8 @@
+= Liste der Anfallenden Aufgaben
+
+.Zu erledigende Aufgaben
+|===
+|*Aufgabe* | *Zu erledigen von* | *Deadline* | *Erledigt (Ja/Nein)*
+
+
+|===
