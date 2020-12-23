@@ -18,3 +18,8 @@ Zusätliche Infos Nginx: https://kinsta.com/de/wissensdatenbank/was-ist-nginx/
 ==== HTTP und CSS bzw. andere Sachen 
 https://www.w3schools.com/whatis/whatis_http.asp
 
+==== HTML
+https://www.w3schools.com/whatis/whatis_html.asp
+https://www.w3schools.com/tags/default.asp
+https://www.w3schools.com/html/default.asp
+
