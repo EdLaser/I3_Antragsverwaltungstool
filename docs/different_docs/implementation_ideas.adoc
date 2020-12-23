@@ -1,0 +1,29 @@
+:toc:
+:toc-title: Inhaltsverzeichnis 
+= Ideen und Philosophien für die Implementerierung
+
+==== Was wird benötigt
+* Framework für Webserver (NGINX da schon vorhanden am besten)
+* Tedenziell Datenbank (ist aber eher unklar, am besten Datenmodell erstellen)
+
+
+==== Mögliche Languages
+* CSS notwendig
+* JavaScript (Richard M hat n Plan) -> nehmen wir
+* HTML notwendig
+* PHP 
+
+==== GUI
+* Anwendung auf mehrere Sachen gespreadet
+* Anzeige je nach Anwenderrechten bzw. Beabreiten und Ansehen differenzieren
+
+==== Entwicklungsumgebungen
+* VS Code / Studio
+* Eclipse 
+
+==== Struktur
+* Grundgerüst bauen dann Vererben zur einfacheren Entwicklung
+* Je nach Modulen dann abwandeln 
+
+
+

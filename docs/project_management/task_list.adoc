@@ -4,5 +4,9 @@
 |===
 |*Aufgabe* | *Zu erledigen von* | *Deadline* | *Erledigt (Ja/Nein)*
 
+|Datenmodell für Datenbank überlegen
+|Team Implementierung
+|30.12.20
+|Pending
 
 |===
