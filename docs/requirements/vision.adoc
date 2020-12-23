@@ -63,7 +63,7 @@ Beispiel
 |Die Lösung ist eine | browserbasierte Anwendung
 |Das	| digitales Ausfüllen von Antragsformulare
 |Im Gegensatz zur	|manuelle Verwaltung der Anträge
-|Unser Produkt|	erstellt Anträge automatisch und verknüpft diese mit der Tagesordung der folgenden Sitzung.
+|Unser Produkt|	erstellt Antragsvorlagen teilautomatisch und verknüpft die ausgefüllten Anträgen mit der Tagesordung der folgenden Sitzung.
 |===
 
 
@@ -78,20 +78,29 @@ Beispiel
 //|===
 
 ==	Stakeholder Beschreibungen
-===	Zusammenfassung der Stakeholder
+===	Zusammenfassung der Stakeholder (Mitglieder des Sturas)
 
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|[Benennung des Stakeholder-Typs.]	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
-| Mitglieder des Sturas | | 
-| Referatskollegium | | 
-| Sprecher/innen | | 
-| Präsidium | | |
-
+| Referatskollegium | Studenten | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen
+| Sprecher/innen | Studenten | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen
+| Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung|
+Gesetzgeber | gibt rechtliche Rahmenbediengungen vor (Datenschutz) | überwacht die Einhaltung des Gesetzes |
+jede studentische Person der HTW Dresden | Studenten | jeder mit Interesse an Amt im Stura | 
 |===
 
 === Benutzerumgebung
+
+1. Antragssteller
+* Anzahl der Studenten variiert
+* bei wiederholter Bearbeitung verringert sich die Bearbeitungszeit
+* Student ist an einem Antragprozess interessiert, intuitiv und aufwandsarm ist
+* die Anwendung kann mit jedem Browser benutzt werden
+2. Antragsverwalter
+* feste Mitglieder des Sturas
+* Arbeitsaufwand hängt vom Formular ab (Richtigigkeit und Vollständigkeit)
+* Darstellung auf einer Desktopansicht
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
@@ -128,5 +137,9 @@ Hinweise:
 [%header, cols="4,1,1"]
 |===
 |Anforderung|	Priorität|	Geplantes Release
-|xx|xx|xx|
+|Vorlagen der Anträge digitalisieren|sehr hoch|SS2021|
+Verknüpfung der Anwenund mit der Tagesordnung | hoch | SS2021|
+Priorisierung von Anträge | hoch  | SS2021 | 
+Benachrichtigung von neue Mitglieder | niedrig/extra | SS2021|  
+
 |===
