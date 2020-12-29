@@ -1,7 +1,7 @@
 == Projekt Plan: I3 Antragsverwaltungstool
 
 
-Einleitung
+= Einleitung
 
 
 
@@ -11,7 +11,7 @@ Unser Projektteam besteht aus den 8 folgenden Personen mit jeweiligen Zuständig
 
 Tabelle 1
 
-Projektorganisation
+= Projektorganisation
 
 
 Das Team trifft sich wöchentlich montags um 17:00 zu einer Telefonkonferenz auf Discord, in der neue Erkenntnisse, Auswertungen der Kundengespräche und Fragen ausgetauscht werden.
@@ -22,11 +22,19 @@ Außerdem wurden innerhalb des Teams kleinere Gruppen gebildet, die sich jeweils
 Tabelle 2
 
 
-Projektpraktiken and Messwerte
+= Projektpraktiken and Messwerte
 
 
 Als Vorlage für die Projektdokumentation nutzt unser Team OpenUP. Zudem werden unsere Teammeetings protokolliert und anschließend von einer zweiten Person kontrolliert, um alle besprochenen Themen festzuhalten. Kundenmeetings werden aufgezeichnet, sodass alle Teammitglieder die Wünsche der Stakeholder verfolgen können.
 
 
 
-Projektmeilensteine und -ziele
+= Projektmeilensteine und -ziele
+
+Tabelle 3
+
+= Bereitstellung der Software
+Die fertige Software wird über den HTW Dresden Server laufen. Entweder über den StuRa oder das Rechenzentrum. Installation und Erstinbetriebnahme sind Projektbestandteile. Die Software wird während der Projektlaufzeit entwickelt und innerhalb dieser zeit das letzte mal geupdatet.
+
+
+= Gewonnene Erkenntnisse 
