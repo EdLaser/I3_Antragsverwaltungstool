@@ -1,0 +1,69 @@
+= Meeting vom 14.12.2020
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+| Ja
+
+|Jacob 
+| Ja
+
+|Richard
+| Nein
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Ja
+
+|Amanda
+|Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Antwort Coach
+. Aufgabenverteilung
+. Kleine Teamverteilungen
+
+===== *Einigungen und Beschlossenes:*
+. Amanda und Richard: Erste Vision und Glossar, mit Richard M Use-Cases
+. Jasmin und Andreas: Projektplan, Risikoliste (Projektdokumentation)
+. Richard M: Architektur-Notebook
+. Meeting am 21.12 und arbeiten bis zum 4.1
+. Coach nicht erreicht, beim Anke nachfragen was Sache ist (Jasmin geht das an)
+. Mit Team I4 connecten, Nachfragen nach Collaboration
+. Richard M ist im Meeting dabei statt Richard
+. Jacob nimmt wieder auf
+. Ruben macht Liste Wissenstands für Meeting mit Kunden
+. Richard M erster Entwurf GUI
+. Ruben erstmal Tools und Umsetzung anschauen, mit was kann man arbeiten?
+. *Aufgaben bis ca 4.1 erledigen*
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. Kann man Java-Skript nehmen (Frage wird tendenziell weitergeleitet)
+. Abklären des letzten Meetings, haben wir es richtig verstanden
+. Erkärung zur Antragsnummer
+. Inwieweit Tagesordnungsplan automatisiert oder manuell?
+. Aus welchen Gründen werden Anträge vertagt
+. Wer genau kann Antrag stellen
+. Erste GUI Skizze abklären
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. Nächstes Meeting 16.12 13 Uhr

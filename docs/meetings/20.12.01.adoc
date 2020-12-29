@@ -40,6 +40,9 @@
 . Kundenfragen
 . Nutzung adoc in Repository
 . Nach Mittwoch bei keiner Rückmeldung Eskalation an Anke
+. Montag 17 Uhr Meeting bleibt
+. Ruben schreibt direkt mit, Jasmin überblickt in Nachbearbeitung
+. Ruben macht Nachbearbeitung erstes Meeting
 
 
 ===== *Fragen und Rücksprachen mit Kunden:*
@@ -52,10 +55,10 @@
 . Hintergrund erläutern
 
 ===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
-. ...
-. ...
-. ...
-. ...
+. Nachbesprechung Kundengespräch 
+. Kontaktaufnahme Felix Müller 
+. Welche Meilensteine sollen wir festlegen?
+. Arbeitspläne festlegen (Grobe Arbeits- sowie Zeitpläne)
 
 ===== *Sonstige Notizen:*
 . ...
