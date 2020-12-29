@@ -1,17 +1,28 @@
-I3 Antragsverwaltungstool
-Projekt Plan
+== I3 Antragsverwaltungstool
 
 
-Einleitung
+
+==Projekt Plan
+
+
+1. Einleitung
+
+
+
 Ziel des Projektes I3 Antragsmodul ist es eine browserbasierte Anwendung für den StuRa der HTW Dresden zu erstellen. Dabei soll das Tool auf die Abläufe des StuRas abgestimmt werden und auf Unix bzw. Linux laufen. Referatsleitungen des StuRas füllen Anträge aus, welchen durch das Antragsverwaltungstool ein Antragsdatum und eine Antragsnummer nach Systematik des StuRa zugewiesen wird. Das Tool soll daraus eine Tagesordnung für kommende Plenumssitzungen generieren.
 Projektorganisation
 Unser Projektteam besteht aus den 8 folgenden Personen mit jeweiligen Zuständigkeitsbereichen:
 
+Tabelle 1
+
+2. Projektorganisation
 
 
 Das Team trifft sich wöchentlich montags um 17:00 zu einer Telefonkonferenz auf Discord, in der neue Erkenntnisse, Auswertungen der Kundengespräche und Fragen ausgetauscht werden.
-Kundenmeetings ebenso über Discord in Form einer Telefonkonferenz ab. Unsere Ansprechpartner sind Axel Schiller und Liselotte Ruthe. An den Kundenmeetings nehmen 3 Mitglieder des Projektteams teil, welche sich abwechseln und die beiden Ansprechpartner. Termine für die Meetings werden auf die Kundenwünsche abgestimmt.
+Kundenmeetings laufen ebenso über Discord in Form einer Telefonkonferenz ab. Unsere Ansprechpartner sind Axel Schiller und Liselotte Ruthe. An den Kundenmeetings nehmen 3 Mitglieder des Projektteams teil, welche sich abwechseln und die beiden Ansprechpartner. Termine für die Meetings werden auf die Kundenwünsche abgestimmt.
+
 Außerdem wurden innerhalb des Teams kleinere Gruppen gebildet, die sich jeweils mit der Dokumentation der verschiedenen Zuständigkeitsbereiche beschäftigen:
 
+Tabelle 2
 
 
