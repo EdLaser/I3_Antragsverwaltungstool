@@ -7,10 +7,30 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
+== Identifizierte Use-Cases
+.Für Mitglieder 
+. Antrag Wahl
+. Antrag Ressourcen 
+. Offene Anträge ansehen
+. Antrag bearbeiten
+. Tagesordnung ansehen 
+. (Haushaltsplan ansehen)
+. (Email an gewählten Kandidat)
+
+.Fürs Präsidium 
+. Offene Anträge ansehen
+. Tagesordnung ansehen
+. (Haushaltsplan ansehen)
+. Antrag ablehnen
+. Antrag verschieben
+. Tagesordnung bearbeiten
+. Information Mitgliederverwaltung über neues Mitglied
+
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
 //<<<
+
 include::use_case_01.inc.adoc[]
 //<<<
 //include::use_case_02.inc.adoc[]
