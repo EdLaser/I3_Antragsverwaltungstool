@@ -122,20 +122,25 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |Vorlagen der Anträge digitalisieren|sehr hoch|Drop-down Menü, Ankreuzfunktion, automatische Gererierung der Kennziffer des Antrags |SS2021|
 Automatische Generierung der Tagesordnung| hoch |Verknüpfung mit der Anwendung, Wahlen werden priorisiert| SS2021 |
-Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas | |
-Wahlinformationen | niedrig | automatisch generierte E-Mail an Wahlkandidaten | 
+Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas |
 
 |===
 
 
 == Zusätzliche Produktanforderungen
 
-* Die Anwendung soll eine ähnliche Interface zu Antragsgrün haben. 
-* Kein Java
-* Die browserbasierte Anwendung muss auf Linux und Unix laufen.
-* freie Lizenz benutzen (zum Besipiel GPL, MIT, Apache).
-* gern auch in einem bekannten Webframework
-
+// * Die Anwendung soll eine ähnliche Interface zu Antragsgrün haben. 
+//* Kein Java
+//* Die browserbasierte Anwendung muss auf Linux und Unix laufen.
+//* freie Lizenz benutzen (zum Besipiel GPL, MIT, Apache).
+//* gern auch in einem bekannten Webframework
+//* Robustheit eher wichtig bei erstellen neuer Anträge (stand 31.12.2020)
+//* Ausfalltoleranz nicht abschätzbar (stand 31.12.2020)
+//* Benutzerfreundlichkeit hoch anzusetzen da eher unerfahrene Nutzer (stand 31.12.2020)
+//* Mobile Variante geringe Priorität (stand 31.12.2020)
+//* Eingabeüberprüfung sinnvoll (stand 31.12.2020)
+//* Information per E-Mail an Wahlkandidaten (gut aber kein Muss)
+//* Benutzerhandbuch on the fly wenn möglich 
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 Hinweise:
@@ -143,7 +148,7 @@ Hinweise:
 . Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
 . Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
 . Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
-. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
+. Definieren Sie alle Dokumentationsanforderungen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen
 . Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
 
 [%header, cols="4,1,1"]
@@ -153,5 +158,12 @@ Hinweise:
 Verknüpfung der Anwenund mit der Tagesordnung | hoch | SS2021|
 Priorisierung von Anträge | hoch  | SS2021 | 
 Benachrichtigung von neue Mitglieder | niedrig/extra | SS2021|  
-
+Kein Java | hoch | - |
+Browserbasierte Anwendung | sehr hoch | SS2021 |
+Robustheit | hoch | SS2021 |
+Ausfalltoleranz | nicht abschätzbar | - |
+Mobile Variante | niedrig | SS0201 |
+Eingabeüberprüfung | hoch | SS2021 |
+Information per E-Mail an Wahlkandidaten | niedrig | SS02021 |
+Hilfe-Funktion direkt auf Website | niedrig | SS20201 |
 |===
