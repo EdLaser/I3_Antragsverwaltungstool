@@ -17,7 +17,7 @@ include::../_includes/default-attributes.inc.adoc[]
 . (Haushaltsplan ansehen)
 . (Email an gewählten Kandidat)
 
-.Fürs Presidium 
+.Fürs Präsidium 
 . Offene Anträge ansehen
 . Tagesordnung ansehen
 . (Haushaltsplan ansehen)
