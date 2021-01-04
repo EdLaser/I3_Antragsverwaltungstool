@@ -7,6 +7,16 @@
 |Datenmodell für Datenbank überlegen
 |Team Implementierung
 |30.12.20
+|Canceled
+
+|Use-Cases bearbeiten
+|Team Analyse
+|11.01.21
+|Pending
+
+|Architecture-Notebook bearbeiten
+|Team Architektur
+|11.01.21/18.01.21
 |Pending
 
 |===

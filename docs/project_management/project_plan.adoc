@@ -14,15 +14,15 @@ Ziel des Projektes I3 Antragsmodul ist es eine browserbasierte Anwendung für de
 Unser Projektteam besteht aus den 8 folgenden Personen mit jeweiligen Zuständigkeitsbereichen:
 [options="header"]
 |===================================================
-|Name           | Zuständigkeitsbereich
-|Jacob Flaskamp | Implementierung / Test
-|Richard Friese | Analyse
-|Andreas Gröber | Projektmanagement (in SE II) / Filler
-|Jasmin Henn    | Projektmanagement
-|Ruben-David Kraus | Implementierung
-|Richard Müller    | Entwurf
-|Duy Tien Nguyen   | Implementierung / Test
-|Amanda Wer Estrada| Analyse
+|Name           | Zuständigkeitsbereich | Backup
+|Jacob Flaskamp | Implementierung / Test | Tien
+|Richard Friese | Analyse | Amanda
+|Andreas Gröber | Projektmanagement (in SE II) / Filler | Jasmin
+|Jasmin Henn    | Projektmanagement | Andi
+|Ruben-David Kraus | Implementierung | Richard
+|Richard Müller    | Entwurf | Ruben-David
+|Duy Tien Nguyen   | Implementierung / Test | Jacob
+|Amanda Wer Estrada| Analyse | Richard
 |===================================================
 
 

@@ -1,0 +1,61 @@
+= Meeting vom TT.MM.JJJJ
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+| Ja
+
+|Jacob 
+| Ja
+
+|Richard
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Nein
+
+|Amanda
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Aktueller Arbeitsstand
+. Vorbesprechung Meeting mit Kunden
+. Backup-Rollen
+
+===== *Einigungen und Beschlossenes:*
+. Erstellung Datei für Fragen
+. Dabei sind Amanda/Richard, Ruben, Jasmin
+. Richard M & Ruben Architecture Notebook 
+. Ruben nimmt auf im Meeting 
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. Vision Vorstellen
+. Evtl. Use-Cases vorstellen
+. Quellcode Webseite abklären
+. Meeting mit Implementierungsdude erfragen
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. Architecture-Notebook sowie Use-Cases bearbeiten
+. Tien Quellcode organisieren
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...
