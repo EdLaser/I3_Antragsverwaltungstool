@@ -3,7 +3,7 @@
 = Ideen und Philosophien für die Implementerierung
 
 ==== Was wird benötigt
-* Framework für Webserver (NGINX da schon vorhanden am besten)
+* Webserver (NGINX da schon vorhanden am besten)
 * Tedenziell Datenbank (ist aber eher unklar, am besten Datenmodell erstellen)
 
 
