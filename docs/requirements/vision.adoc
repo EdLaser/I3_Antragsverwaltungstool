@@ -33,10 +33,10 @@ Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten
 
 [cols="1,3"]
 |===
-|Das Problem |	die unübersichtliche Behandlung der Anträge
+|Das Problem |	die unübersichtliche Bearbeitung der Anträge
 |betrifft |	alle Mitglieger des Sturas, das Referatskollegium, das Präsidium sowie Sprecher/innen.
 |Die Auswirkung davon ist |	die suboptimale Leistung des Sturas und das langsame Bearbeiten von Anträgen 
-|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen und gemäß Priorisierung in der Tagesordung der folgenden Sitzung einzuordnen.
+|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen und gemäß Priorisierung in der Tagesordung der folgenden Sitzung einzuordnen. Dies entspricht eine extreme beschleunigungte, transparente und vereinfachte Überarbeitung von Anträge. Das Präsidium wird entlastet.
 |===
 
 ////
@@ -58,7 +58,7 @@ Beispiel
 
 [cols="1,3"]
 |===
-|Für|	den Sutra der HTW Dresden 
+|Für|	den Stura der HTW Dresden 
 |der|	Anträge für Wahlen und Beschlüsse verwaltet
 |Die Lösung ist eine | browserbasierte Anwendung
 |Das	| digitales Ausfüllen von Antragsformularen
@@ -83,22 +83,22 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-| Referatskollegium | Studenten | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen
-| Sprecher/innen | Studenten | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen
-| Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung|
+| Referatskollegium | beratende gewählte Mitglieder des Sturas, Studenten | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen
+| Sprecher/innen | beratende gewählte Mitglieder des Sturas, Studenten  | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen, können selber Beschlüsse fassen
+| Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung, Verwaltung der Anträge|
 Gesetzgeber | gibt rechtliche Rahmenbediengungen vor (Datenschutz) | überwacht die Einhaltung des Gesetzes |
-jede studentische Person der HTW Dresden | Studenten | jeder mit Interesse an Amt im Stura | 
+jede studentische Person der HTW Dresden (potentielle Antragssteller) | Studenten | jeder mit Interesse an Amt und/oder Mithilfe im Stura | 
 |===
 
 === Benutzerumgebung
 
 1. Antragssteller
 * Anzahl der Studenten variiert
-* bei wiederholter Bearbeitung verringert sich die Bearbeitungszeit
+* bei wiederholter Nutzung des Tools verringert sich die Bearbeitungszeit, da der Nutzer sich damit auskennt
 * Student ist an einem Antragprozess interessiert, intuitiv und aufwandsarm ist
 * die Anwendung kann mit jedem Browser benutzt werden
 2. Antragsverwalter
-* feste Mitglieder des Sturas
+* feste, berechtigte Mitglieder des Sturas
 * Arbeitsaufwand hängt vom Formular ab (Richtigigkeit und Vollständigkeit)
 * Darstellung auf einer Desktopansicht
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
@@ -121,6 +121,7 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |Vorlagen der Anträge digitalisieren|sehr hoch|Drop-down Menü, Ankreuzfunktion, automatische Gererierung der Kennziffer des Antrags |SS2021|
+Wiedervorlage von vertagten Anträge | hoch | Verknüpfung des Tools mit der Tagesordnung während der Versammlung, Zugang zur Lsite von vertagten Anträge|SS2021|
 Automatische Generierung der Tagesordnung| hoch |Verknüpfung mit der Anwendung, Wahlen werden priorisiert| SS2021 |
 Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas |
 
