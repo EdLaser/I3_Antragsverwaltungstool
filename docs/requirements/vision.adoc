@@ -129,12 +129,12 @@ Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des St
 
 
 == Zusätzliche Produktanforderungen
-
-// * Die Anwendung soll eine ähnliche Interface zu Antragsgrün haben. 
-//* Kein Java
-//* Die browserbasierte Anwendung muss auf Linux und Unix laufen.
-//* freie Lizenz benutzen (zum Besipiel GPL, MIT, Apache).
-//* gern auch in einem bekannten Webframework
+  
+ * Die Anwendung soll eine ähnliche Interface zu Antragsgrün haben. 
+* Kein Java
+* Die browserbasierte Anwendung muss auf Linux und Unix laufen.
+* freie Lizenz benutzen (zum Besipiel GPL, MIT, Apache).
+* gern auch in einem bekannten Webframework
 //* Robustheit eher wichtig bei erstellen neuer Anträge (stand 31.12.2020)
 //* Ausfalltoleranz nicht abschätzbar (stand 31.12.2020)
 //* Benutzerfreundlichkeit hoch anzusetzen da eher unerfahrene Nutzer (stand 31.12.2020)
