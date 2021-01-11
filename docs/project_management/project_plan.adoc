@@ -36,7 +36,7 @@ Außerdem wurden innerhalb des Teams kleinere Gruppen gebildet, die sich jeweils
 |===========================================================================
 |Gruppenmitglieder | Aufgaben
 |Amanda Wer Estrada, Richard Friese | Vision, Glossar, Use Case Model
-|Jasmin Henn, Andreas Gröber | Jasmin Henn, Andreas Gröber	Projektplan, Risikoliste, Iteration Plan
+|Jasmin Henn, Andreas Gröber | Projektplan, Risikoliste, Iteration Plan
 |Richard Müller | Architektur-Notizbuch, unterstützt Teams bei: Use Case Model, Iteration Plan
 |===========================================================================
 *Projektpraktiken and Messwerte*
