@@ -24,7 +24,7 @@
 * Schnelle Einarbeitung wäre gut Python bzw.
 * Konsultation des admin@stura.htw-dresden.de
 * Empfehlungen auch einholbar 
-* Deployable Sachen können wir uns melden -> Kriegen einen Container vom Vater + DNS Eintrag zum Testen
+* Deployable Sachen können wir uns melden -> Kriegen einen Container vom Paul + DNS Eintrag zum Testen
 * NXC Proxy (Debion)
 * Webseiten Code ist relativ egal
 * Interagieren mit Webseite eher auszuschließen 
