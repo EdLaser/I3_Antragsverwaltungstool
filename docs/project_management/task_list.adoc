@@ -2,21 +2,34 @@
 
 .Zu erledigende Aufgaben
 |===
-|*Aufgabe* | *Zu erledigen von* | *Deadline* | *Erledigt (Ja/Nein)*
+|*Nr* | *Aufgabenbeschreibung* | *Status* | *Referenzen (Externe Ressourcen)* | *geplante Iteration* | *Verantwortlicher*
 
+|01
 |Datenmodell für Datenbank überlegen
-|Team Implementierung
-|30.12.20
 |Canceled
+|
+|
+|Team Implementierung
 
+|02
 |Use-Cases bearbeiten
+|Done
+|
+|
 |Team Analyse
-|11.01.21
-|Pending
 
+|03
 |Architecture-Notebook bearbeiten
+|Working
+|
+|
 |Team Architektur
-|11.01.21/18.01.21
-|Pending
+
+|04
+|Vision in bezug auf Stakeholder abklären
+|Working
+|
+|
+|Richard
 
 |===
