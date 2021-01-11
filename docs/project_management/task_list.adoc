@@ -20,14 +20,14 @@
 
 |03
 |Architecture-Notebook bearbeiten
-|Working
+|In progress
 |
 |
 |Team Architektur
 
 |04
 |Vision in bezug auf Stakeholder abklären
-|Working
+|In progress
 |
 |
 |Richard
