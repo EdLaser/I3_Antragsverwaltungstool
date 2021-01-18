@@ -40,9 +40,9 @@ siehe Task List
 [%header, cols="2,1,3"]
 |===
 | Problem | Status | Notizen
-| einzelne teammitglieder fehlen | - | Protokoll für Meetings schreiben 
-| lange kommunikationswege  | gelöst | feste Termine vereinbaren + im Discord treffen
-|kein persönlich kontakt zu teammitgliedern wegen covid 19  |-|-
+| einzelne Teammitglieder fehlen | gelöst  | Inhalte der Besprechung in Meetingprotokollen festhalten
+| lange Kommunikationswege  | gelöst | feste wöchentliche Termine vereinbaren für Discord-Meetings
+|kein persönlicher Kontakt zu Teammitgliedern möglich, wegen Covid-19  |gelöst| stattdessen Online-Projektarbeit
 
 
 |===
@@ -50,9 +50,9 @@ siehe Task List
 
 == Bewertungskriterien
 * Anwesenheit bei Meetings
-** Größtenteils sind alle Meeting-Teilnehmer bzw. Stakeholder zu den entsprechenden Meetings in unsrem Discord (Sprach-Chat) an zu treffen.
-* Konzeptideen für Software stimmen überein
-** Positives Feedback von Kunden über Arbeit 
+** Größtenteils sind alle Meeting-Teilnehmer bzw. Stakeholder zu den entsprechenden Meetings in unsrem Discord (Sprach-Chat) anzutreffen. Falls nicht melden sie sich vorher ab.
+* Konzeptideen für Software stimmen mit Kundenvorstellungen überein
+** Positives Feedback vom Kunden bezüglich unserer Arbeit erhalten
 
 
 == Assessment
@@ -60,9 +60,9 @@ siehe Task List
 [%header, cols="1,3"]
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
-| Assessment Datum | date 20 dezember 
+| Assessment Datum | 20. Dezember 2020
 | Teilnehmer | alle Teammitglieder
-| Projektstatus	| abgeschlossen
+| Projektstatus	| Grün
 |===
 
 * a
