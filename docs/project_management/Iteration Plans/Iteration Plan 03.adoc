@@ -1,0 +1,64 @@
+= Iteration Plan 01: I3_Antragsverwaltungstool
+{localdatetime}
+
+
+== Meilensteine
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 11.Januar 2021
+| ... | -
+| Ende der Iteration | 31. januar. 2021
+|===
+
+
+== Wesentliche Ziele
+
+* a
+* b
+* c
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header, cols="3,1,1,1,2,1,1,1,1"]
+|===
+| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+| x | x | x | x | x | x | x | x | x
+|===
+
+
+== Probleme (optional)
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| x | x | x 
+|===
+
+
+== Bewertungskriterien
+* a
+** a
+** b
+* b
+** a
+** b 
+
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Datum | -
+| Teilnehmer | -
+| Projektstatus	| - 
+|===
+
+* a
+* b
+* c
