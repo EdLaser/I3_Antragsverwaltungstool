@@ -12,8 +12,19 @@ Ziel des Projektes I3 Antragsmodul ist es eine browserbasierte Anwendung für de
 
 
 Unser Projektteam besteht aus den 8 folgenden Personen mit jeweiligen Zuständigkeitsbereichen:
+[options="header"]
+|===================================================
+|Name           | Zuständigkeitsbereich | Backup
+|Jacob Flaskamp | Implementierung / Test | Tien
+|Richard Friese | Analyse | Amanda
+|Andreas Gröber | Projektmanagement (in SE II) / Filler | Jasmin
+|Jasmin Henn    | Projektmanagement | Andi
+|Ruben-David Kraus | Implementierung | Richard
+|Richard Müller    | Entwurf | Ruben-David
+|Duy Tien Nguyen   | Implementierung / Test | Jacob
+|Amanda Wer Estrada| Analyse | Richard
+|===================================================
 
-Tabelle 1
 
 
 Das Team trifft sich wöchentlich montags um 17:00 Uhr zu einer Telefonkonferenz auf Discord, in der neue Erkenntnisse, Auswertungen der Kundengespräche und Fragen ausgetauscht werden.
@@ -21,9 +32,13 @@ Kundenmeetings laufen ebenso über Discord in Form einer Telefonkonferenz ab. Un
 
 Außerdem wurden innerhalb des Teams kleinere Gruppen gebildet, die sich jeweils mit der Dokumentation der verschiedenen Zuständigkeitsbereiche beschäftigen:
 
-Tabelle 2
-
-
+[options="header"]
+|===========================================================================
+|Gruppenmitglieder | Aufgaben
+|Amanda Wer Estrada, Richard Friese | Vision, Glossar, Use Case Model
+|Jasmin Henn, Andreas Gröber | Projektplan, Risikoliste, Iteration Plan
+|Richard Müller | Architektur-Notizbuch, unterstützt Teams bei: Use Case Model, Iteration Plan
+|===========================================================================
 *Projektpraktiken and Messwerte*
 
 
@@ -33,8 +48,19 @@ Als Vorlage für die Projektdokumentation nutzt unser Team OpenUP. Zudem werden 
 
 *Projektmeilensteine und -ziele*
 
+<<<<<<< HEAD
 
 Tabelle 3
+=======
+[cols="1,20,8,4",options="header"]
+|====================================================
+|Iteration | Hauptziele | Meilensteine	| Erledigt bis
+|I1        |Kennenlernen, Kommunikationswege festlegen, Rollenverteilung | Team bilden | 	- 
+|I1        | Kundenkontakt aufnehmen, Gesprächsteilnehmer und Termin festlegen, Fragenkatalog erstellen, Fragenkatalog erstellen,	Kundengespräch auswerten | 1. Kundengespräch | 14.12.20
+|I1 | Gesprächsteilnehmer und Termin festlegen, Erkenntnisse aus 1. Kundengespräch aufarbeiten, Entwurf erstellen, Kundengespräch durchführen, Kundengespräch auswerten | 2. Kundengespräch | 21.12.2020 
+|I1| Verantwortliche festlegen, Aufgaben verteilen, Deadline festlegen, Dokumentationen für Belegarbeit | 04.01.2021
+|====================================================
+>>>>>>> 53a76f3543cb316ced9a3852227c47e25f6eb0ee
 
 *Bereitstellung der Software*
 

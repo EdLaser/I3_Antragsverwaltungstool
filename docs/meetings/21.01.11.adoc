@@ -1,0 +1,68 @@
+= Meeting vom TT.MM.JJJJ
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+| Ja
+
+|Jacob 
+| Ja
+
+|Richard
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Ja
+
+|Amanda
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Use-Cases abgleichen 
+. Meeting auswerten
+. ...
+. ...
+
+===== *Einigungen und Beschlossenes:*
+. Meeting erfolgreich ausgewertet 
+. Use-Cases mit Kunden abgleichen
+. Nächstes Kundenmeeting planen
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. Gesetzesgrundlage wegen Anträgen abklären (Auswählen oder automatisch ?)
+. Datenschutz und Datensicherheit 
+. Use-Cases mit Kunden abgleichen
+. Wer bespricht Anträge mit / sitzt in Besprechung 
+. Sollen Anträge zwischengespeichert werden können
+. Darf Antragssteller Antrag bearbeiten
+. Präsidium prüft Antrag, was ist wenn nicht konform/nicht eindeutig? Direkte Korrketur / Rücksprache / Ablehnen (wird hier gespeichert ?)
+. Soll es Statusanzeige für Anträge geben
+. Wie sehen nicht öffentliche Sitzungen aus ?
+. Ist direkt oder nur im Meeting Vertagung möglich
+. Tagesordnungspunkte zur Tagesordnung hinzufügbar oder nicht (Außerordentliche Dinge)
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. Vision in bezug auf Stakeholdern abklären (Stakeholder muss nicht zwangsweise Person sein -> Alle Dinge die Anforderungen stellen z.B. Gesetze,Teammitglieder)
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...

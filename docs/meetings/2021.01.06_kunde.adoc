@@ -1,0 +1,32 @@
+= Kundenmeeting 06.01.2021
+
+== Notizen
+
+.Vision
+* Formulierung ("stura verliert Überblick") evtl. anpassen 
+* Extreme Beschleunigung und Transparenz des Prozesses -> "erfolgreiche Lösung des Problems", Präsidium entlasten, Vereinfachung
+* Nicht im Stura nur Studenten (Gewählte Mitglieder als Teilnehmer, Beratende Mitlgieder)
+* Präsidium (Verantwortlichkeit: Verwaltung der Anträge)
+* Sprecher (Verantwortlichkeit: Können Beschlüssen fällen / entscheiden)
+* jeder kann Stura unterstützen auch ohne im Amt zu sein (Interesse an Mithilfe)
+* Anstatt Bearbeitung -> Nutzung des Tools 
+* Berechtigte Mitglieder Stura als Antragsverwalter
+* Gastzugang nicht gewollt für Anträge (Zu großer Traffic)
+
+.Use-Cases 
+* Änderungsantrag zu einem Antrag stellbar 
+* Ansonsten alles klar 
+
+.Implementierung 
+* Nginx / Apache
+* Freie Software 
+* PHP 7 oder mehr möglich vermeiden 
+* Schnelle Einarbeitung wäre gut Python bzw.
+* Konsultation des admin@stura.htw-dresden.de
+* Empfehlungen auch einholbar 
+* Deployable Sachen können wir uns melden -> Kriegen einen Container vom Paul + DNS Eintrag zum Testen
+* NXC Proxy (Debion)
+* Webseiten Code ist relativ egal
+* Interagieren mit Webseite eher auszuschließen 
+* Plone Web-Content-Management-System
+* Weitere Tools neben Antragsgrün -> Einfacher Umzusetzen

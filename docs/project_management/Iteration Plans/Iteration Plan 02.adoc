@@ -1,0 +1,73 @@
+= Iteration Plan 02: I3_Antragsverwaltungstool
+{localdatetime}
+
+
+== Meilensteine
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 21. Dezember 2020
+| 3. kundenmeeting | 6. Januar 2021
+|Projejektdokumentationen bearbeiten | geplant bis 4. Januar 2021
+| Ende der Iteration | 10. Januar 2021
+|===
+
+
+== Wesentliche Ziele
+* Erste Schritte Projektmanagemant
+** Projektplan
+** Risiko-Analyse
+* Analyse? / Kundengespräch Auswerten --> Daten verarbeiten
+** Vision
+** Glossar
+** Use-Cases
+* Grundlegende Rahmenbedingungen und Vorstellungen für Implementierung finden bzw. festlegen
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header, cols="3,1,1,1,2,1,1,1,1"]
+|===
+| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+| Projektplan | x | x | x | x | x | x | x | x
+| Risiko-Analyse | x | x | x | x | x | x | x | x
+| Vision  | x | x | x | x | x | x | x | x
+| Glossar | x | x | x | x | x | x | x | x
+|Use-Cases | x | x | x | x | x | x | x | x
+|===
+
+
+== Probleme (optional)
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| x | x | x 
+|===
+
+
+== Bewertungskriterien
+* Übereinstimmung von Kundenmeinung und Vision: 
+** Idee bzw. Vorschlag der Vision wurde angenommen 
+** Use-Cases wurden angenommen / bestätigt ??  
+* b
+** a
+** b 
+
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | -
+| Assessment Datum | -
+| Teilnehmer | -
+| Projektstatus	| - 
+|===
+
+* a
+* b
+* c
