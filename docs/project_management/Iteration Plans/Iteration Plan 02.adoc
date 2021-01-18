@@ -9,21 +9,21 @@
 | Datum
 
 | Beginn der Iteration | 21. Dezember 2020
-| 3. kundenmeeting | 6. Januar 2021
+| 3. Kundenmeeting | 6. Januar 2021
 |Projejektdokumentationen bearbeiten | geplant bis 4. Januar 2021
 | Ende der Iteration | 10. Januar 2021
 |===
 
 
 == Wesentliche Ziele
-* Erste Schritte Projektmanagemant
+* Erstellung der Projektdokumentationen für den Beleg:
 ** Projektplan
 ** Risiko-Analyse
-* Analyse? / Kundengespräch Auswerten --> Daten verarbeiten
+* Auswertung der Kundengespräche vom Analyse-Team und Erfassung der Daten:
 ** Vision
 ** Glossar
 ** Use-Cases
-* Grundlegende Rahmenbedingungen und Vorstellungen für Implementierung finden bzw. festlegen
+* Grundlegende Rahmenbedingungen und Vorstellungen für Implementierung festlegen
 
 
 == Aufgabenzuordnung
@@ -54,14 +54,13 @@ siehe Task List
 ** Idee bzw. Vorschlag der Vision wurde angenommen 
 * vorläufige Use-Cases werden vom Kunden bestätigt:
 ** Kunde war zufieden mit Use-Cases, detaillierte Präsentation in Iteration 03
-** b 
 
 
 == Assessment
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | -
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 | Assessment Datum | 10. Januar 2021
 | Teilnehmer | alle Teammitglieder
 | Projektstatus	| Grün 
