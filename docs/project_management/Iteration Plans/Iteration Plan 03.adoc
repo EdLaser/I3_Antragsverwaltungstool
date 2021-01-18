@@ -8,17 +8,21 @@
 | Meilenstein
 | Datum
 
-| Beginn der Iteration | 11.Januar 2021
-| ... | -
-| Ende der Iteration | 31. januar. 2021
+| Beginn der Iteration | 11. Januar 2021
+| 4. Kundenmeeting| 20. Januar 2021
+| Beginn Implementierung | über gesamte Iteration
+| Projektdokumentationen fertigstellen| 31. Januar 2021
+| Ende der Iteration | 31. Januar. 2021
 |===
 
 
 == Wesentliche Ziele
 
-* a
-* b
-* c
+* Use-Cases mit dem Kunden besprechen und ggf. anpassen
+* Test Cases erstellen
+* 4. Kundenmeeting durchführen und auswerten
+* Team Implementierung beginnt seine Arbeit
+
 
 
 == Aufgabenzuordnung
@@ -29,7 +33,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 | x | x | x | x | x | x | x | x | x
 |===
-
+siehe Task List
 
 == Probleme (optional)
 
@@ -41,10 +45,10 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 
 == Bewertungskriterien
-* a
+* Übereinstimmung von Kundenvorstellung und Use-Cases
 ** a
 ** b
-* b
+* Fertigstellung der Projektdokumentationen bis zum Ziel-Termin
 ** a
 ** b 
 
@@ -54,9 +58,9 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="1,3"]
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
-| Assessment Datum | -
-| Teilnehmer | -
-| Projektstatus	| - 
+| Assessment Datum | 31. Januar 2021
+| Teilnehmer | alle Teammitglieder
+| Projektstatus	| Grün
 |===
 
 * a

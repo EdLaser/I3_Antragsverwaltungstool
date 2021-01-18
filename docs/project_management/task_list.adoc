@@ -69,7 +69,7 @@
 
 |10
 |Use Cases erstellen
-|In progress
+|Done
 |
 |02
 |Amanda, Richard, Richard M.
@@ -83,7 +83,7 @@
 
 |12
 |Architektur-Notebook erstellen
-|In progress
+|Done
 |
 |02
 |Richard M. und Ruben
@@ -136,7 +136,7 @@
 
 |19
 |Use-Cases bearbeiten
-|Done
+|In progress
 |
 |03
 |Richard und Amanda
@@ -145,7 +145,7 @@
 |Architecture-Notebook bearbeiten
 |In progress
 |
-|
+|03
 |Richard M. und Ruben
 
 |21
@@ -157,6 +157,27 @@
 
 |22
 |Essence Navigator bearbeiten
+|In progress
+|
+|03
+|Jasmin
+
+|23
+|Test Cases erstellen
+|In progress
+|
+|03
+|noch offen
+
+|24
+|Glossar vervollständigen
+|In progress
+|
+|03
+|Richard und Amanda
+
+|25
+|Gewonnene Erkenntnisse in Projektplan ergänzen
 |In progress
 |
 |03

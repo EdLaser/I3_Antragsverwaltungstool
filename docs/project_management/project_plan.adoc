@@ -48,19 +48,18 @@ Als Vorlage für die Projektdokumentation nutzt unser Team OpenUP. Zudem werden 
 
 *Projektmeilensteine und -ziele*
 
-<<<<<<< HEAD
 
 Tabelle 3
 =======
 [cols="1,20,8,4",options="header"]
 |====================================================
 |Iteration | Hauptziele | Meilensteine	| Erledigt bis
-|I1        |Kennenlernen, Kommunikationswege festlegen, Rollenverteilung | Team bilden | 	- 
-|I1        | Kundenkontakt aufnehmen, Gesprächsteilnehmer und Termin festlegen, Fragenkatalog erstellen, Fragenkatalog erstellen,	Kundengespräch auswerten | 1. Kundengespräch | 14.12.20
-|I1 | Gesprächsteilnehmer und Termin festlegen, Erkenntnisse aus 1. Kundengespräch aufarbeiten, Entwurf erstellen, Kundengespräch durchführen, Kundengespräch auswerten | 2. Kundengespräch | 21.12.2020 
-|I1| Verantwortliche festlegen, Aufgaben verteilen, Deadline festlegen, Dokumentationen für Belegarbeit | 04.01.2021
+|I1        |Team kennenlernen, Rollenverteilung, Kommunikationswege festlegen, Kunden kennenlernen, Meetings mit Kunden durchführen, Vorstellung des Kundens erfassen und erste Konzepte entwerfen, Kundengespräche auswerten| 	1. Teammeeting, 1. Kundenmeeting, 2. Kundenmeeting| 20. Dezember 2020
+|I2        | Erstellung der Projektdokumentationen für den Beleg (Projektplan, Risiko-Analyse), Auswertung der Kundengespräche vom Analyse-Team und Erfassung der Daten (Vision, Glossar, Use-Cases), Grundlegende Rahmenbedingungen und Vorstellungen für Implementierung festlegen| 3. Kundenmeeting, Projektdokumentationen bearbeiten| 10.Januar 2021
+|I3 | Use-Cases mit dem Kunden besprechen und ggf. anpassen, Test Cases erstellen, 4. Kundenmeeting durchführen und auswerten, Team Implementierung beginnt seine Arbeit| 4. Kundenmeeting, Beginn Implementierung, Projektdokumentationen fertigstellen | 31. Januar 2021
+
 |====================================================
->>>>>>> 53a76f3543cb316ced9a3852227c47e25f6eb0ee
+
 
 *Bereitstellung der Software*
 
