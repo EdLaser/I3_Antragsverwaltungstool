@@ -69,7 +69,7 @@
 
 |10
 |Use Cases erstellen
-|In progress
+|Done
 |
 |02
 |Amanda, Richard, Richard M.
@@ -83,7 +83,7 @@
 
 |12
 |Architektur-Notebook erstellen
-|In progress
+|Done
 |
 |02
 |Richard M. und Ruben
@@ -136,7 +136,7 @@
 
 |19
 |Use-Cases bearbeiten
-|Done
+|In progress
 |
 |03
 |Richard und Amanda
@@ -145,7 +145,7 @@
 |Architecture-Notebook bearbeiten
 |In progress
 |
-|
+|03
 |Richard M. und Ruben
 
 |21
