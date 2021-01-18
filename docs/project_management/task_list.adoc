@@ -161,3 +161,17 @@
 |
 |03
 |Jasmin
+
+|23
+|Test Cases erstellen
+|In progress
+|
+|03
+|noch offen
+
+|24
+|Glossar vervollständigen
+|In progress
+|
+|03
+|Richard und Amanda
