@@ -1,0 +1,75 @@
+= Iteration Plan 01: I3_Antragsverwaltungstool
+{localdatetime}
+
+
+== Meilensteine
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 17. November 2020
+| 1. Treffen im Discord mit gesammten Team | 26. November 2020
+| 1. Kundenmeeting | 9. Dezember 2020
+| 2. Kundenmeeting | 16. Dezember 2020
+| Ende der Iteration | 20. Dezember 2020
+|===
+
+
+== Wesentliche Ziele
+
+* Team kennenlernen
+* Rollenverteilung
+* Kommunikationswege festlegen
+* Kundenkontakt aufnehmen
+* Meetings mit Kunden durchführen
+* Vorstellung des Kundens während der Gespräche erfassen und erste Konzepte entwerfen 
+* Kundengespräche auswerten
+
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header, cols="3,1,1,1,2,1,1,1,1"]
+|===
+| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+| x | x | x | x | x | x | x | x | x
+|===
+
+siehe Task List
+
+
+== Probleme (optional)
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| einzelne Teammitglieder fehlen | gelöst  | Inhalte der Besprechung in Meetingprotokollen festhalten
+| lange Kommunikationswege  | gelöst | feste wöchentliche Termine vereinbaren für Discord-Meetings
+|kein persönlicher Kontakt zu Teammitgliedern möglich, wegen Covid-19  |gelöst| stattdessen Online-Projektarbeit
+
+
+|===
+
+
+== Bewertungskriterien
+* Anwesenheit bei Meetings
+** Größtenteils sind alle Meeting-Teilnehmer bzw. Stakeholder zu den entsprechenden Meetings in unsrem Discord (Sprach-Chat) anzutreffen. Falls nicht melden sie sich vorher ab.
+* Konzeptideen für Software stimmen mit Kundenvorstellungen überein
+** Positives Feedback vom Kunden bezüglich unserer Arbeit erhalten
+
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Datum | 20. Dezember 2020
+| Teilnehmer | alle Teammitglieder
+| Projektstatus	| Grün
+|===
+
+* a
+* b
+* c

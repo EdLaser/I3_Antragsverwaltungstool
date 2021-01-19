@@ -8,25 +8,41 @@ v1.0, 17.12.2020
 Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implimentierung beeinflussen.
 
 == Entwurfsziel und Philosophie 
-Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und Automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software Browserbassiert was sie im weitesten Sinne Plattvormunabhänig macht.
+Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software Browserbassiert was sie im weitesten Sinne plattformunabhänig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-Ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert. 
 
-== Annahmen und Abhänigkeiten
-Beispieltext
+== Annahmen und Abhänigkeiten 
+* Webserver NGNX oder Apache, bereits verwendet und Wissen auf Kundenseite vorhanden
+* LINUX/UNIX als Betriebssystem daher ENwticklung für diese Systeme
+* Unteres von Felix
+* z.B. Server von Rechenzentrum
+* Alle technologien verwendbar, kein closed Source  
 
-== Architektonisch bedeutende Anforderungen
-Beispieltext
+== Architektonisch bedeutende Anforderungen (ergibt sich aus Use-Cases und Furbs+)
+* Kein Java darf verwendet werden (Von Kunde vorgeschrieben)
+* PHP möglichst vermeiden (empfohlen)
+* Freie Software, da nicht kommerziell
+* Aussehen ähnlich Antragsgrün
+* Nutzerzahl soll gering gehalten werden (niedriger Traffic)
+* Lauffähig unter UNIX/LINUX
+* Bekanntes Webframework sinnvoll 
+* Datenschutz konformität mit Anmeldungen
 
-== Entscheidungen, Einschränkungen und Begründungen
-Beispieltext
+== Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Framworks, DBS-Managementsystem usw + Begründung)
+* JavaScript, sehr weit verbreitet & Vorwissen vorhanden
+* CSS daher auch notwendig 
+* HTML für Webseite
+* Webserver entweder NGNX oder Apache da vorhanden im Stura/HTW
+* Datenbank möglich aber eher nicht sinnvoll da Nutzerzahl nicht so hoch skaliert
 
-== Architekturmechanismen
-Beispieltext
+== Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
+* Login mit Oberfläche und Backend
+* 
 
 == Abstraktion
 Beispieltext
 
-== Architektionischer Rahmen
+== Architektonischer Rahmen
 Beispieltext
 
-== Architektionische Ansichten
+== Architektonische Ansichten
 Beispieltext 

@@ -2,21 +2,183 @@
 
 .Zu erledigende Aufgaben
 |===
-|*Aufgabe* | *Zu erledigen von* | *Deadline* | *Erledigt (Ja/Nein)*
+|*Nr* | *Aufgabenbeschreibung* | *Status* | *Referenzen (Externe Ressourcen)* | *geplante Iteration* | *Verantwortlicher*
 
-|Datenmodell für Datenbank überlegen
+|01
+|Fragen an Kunden für 1. Kundenmeeting zusammenstellen
+|Done
+|
+|01
+|gesamtes Team
+
+|02
+|Kontaktaufnahme zu Felix Müller
+|Done
+|Felix Müller
+|01
+|Jasmin
+
+|03
+|Termin für 1. Kundenmeeting festlegen und fragen ob Aufzeichnung möglich ist
+|Done
+|Axel Schiller
+|01
+|Jasmin
+
+|04
+|Aufzeichnung für Kundenmeeting vorbereiten und durchführen
+|Done
+|
+|01
+|Jacob (auch Veranwortlicher für alle kommenden Aufzeichnungen)
+
+|05
+|Termin für 2. Kundenmeeting festlegen
+|Done
+|Axel Schiller
+|01
+|Jasmin
+
+|06
+|bisherigen Wissenstand zusammenfassen für Kundenmeeting
+|Done
+|
+|01
+|Ruben
+
+|07
+|ersten GUI Entwurf für Kundenmeeting vorbereiten
+|Done
+|
+|01
+|Richard M.
+
+|08
+|Team I4 kontaktieren und nach möglicher Zusammenarbeit erkundigen
+|Done
+|Team I4 (Manuela Ziesche)
+|01
+|Ruben
+
+|09
+|Vision und Glossar erstellen
+|Done
+|
+|02
+|Amanda und Richard
+
+|10
+|Use Cases erstellen
+|Done
+|
+|02
+|Amanda, Richard, Richard M.
+
+|11
+|Projektplan und Risikoliste erstellen
+|Done
+|
+|02
+|Jasmin und Andreas
+
+|12
+|Architektur-Notebook erstellen
+|Done
+|
+|02
+|Richard M. und Ruben
+
+|13
+|Termin für 3. Kundenmeeting festlegen
+|Done
+|Axel Schiller
+|02
+|Jasmin
+
+|14
+|Quellcode der StuRa Website anfordern
+|Canceled (da nicht notwendig für Implementierung)
+|Administration Stura Website
+|02
+|Tien
+
+|15
+|Grundlegende Methodik für Implementierung festlegen
+|Done
+|
+|02
 |Team Implementierung
-|30.12.20
+
+
+|16
+|Fragen an den Kunden zusammenstellen
+|Done
+|
+|02
+|gesamtes Team
+
+
+|17
+|Use Cases im Team besprechen
+|Done
+|
+|03
+|gesamtes Team
+
+
+|18
+|Datenmodell für Datenbank überlegen
 |Canceled
+|
+|03
+|Team Implementierung
 
+
+|19
 |Use-Cases bearbeiten
-|Team Analyse
-|11.01.21
-|Pending
+|In progress
+|
+|03
+|Richard und Amanda
 
+|20
 |Architecture-Notebook bearbeiten
-|Team Architektur
-|11.01.21/18.01.21
-|Pending
+|In progress
+|
+|03
+|Richard M. und Ruben
 
-|===
+|21
+|Vision in Bezug auf Stakeholder abklären
+|In progress
+|
+|03
+|Richard
+
+|22
+|Essence Navigator bearbeiten
+|In progress
+|
+|03
+|Jasmin
+
+|23
+|Test Cases erstellen
+|In progress
+|
+|03
+|noch offen
+
+|24
+|Glossar vervollständigen
+|In progress
+|
+|03
+|Richard und Amanda
+
+|25
+|Gewonnene Erkenntnisse in Projektplan ergänzen
+|In progress
+|
+|03
+|Jasmin

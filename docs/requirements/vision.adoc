@@ -15,7 +15,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das I3 Antragsverwaltungstool, das von Team I3 entwickelt wird. Das System wird es der Stura der HTW Dresden erlauben, Anträge zu verwalten indem Antragsformulare vervollständigt werden und automatisch in die Tagesordung der nächsten Sitzung eingeordnet, um damit einen schnelleren und leichteren Antragsverwaltungsprozess zu erleichtern. Diese browserbasierte Anwendung soll das Problem der Unvollständigkeit der Formulare lösen und der Stura kommunizieren wenn Anträge erstellt werden.
+Dieses Visions-Dokument bezieht sich auf das I3 Antragsverwaltungstool, das von Team I3 entwickelt wird. Das System wird es dem Stura der HTW Dresden erlauben, Anträge zu verwalten, indem Antragsformulare vervollständigt werden und automatisch in die Tagesordung der nächsten Sitzung eingeordnet werden, um damit einen schnelleren und leichteren Antragsverwaltungsprozess zu ermöglichen. Diese browserbasierte Anwendung soll das Problem der Unvollständigkeit der Formulare lösen und dem Stura informieren, wenn Anträge erstellt werden.
 
 === Definitionen, Akronyme und Abkürzungen
 siehe Glossar <<glossary.adoc#>>
@@ -25,8 +25,8 @@ siehe Glossar <<glossary.adoc#>>
 
 == Positionierung
 === Fachliche Motivation
-Der Stura der HTW Dresden verwaltet Antragsformulare noch analog. Wenn Bedürfnisse in den einzelnen Referaten entstehen, müssen diese einen Antrag stellen. Das Präsidium wird benachrichtigt und der Antrag bekommt ein Identifizierungsnummer. Dann werden Anträge manuell in der Tagesordnung nach einer bestimmten Priorität eingeordnet, um verarbeitet zu werden. Wenn der Antrag nicht in der Sitzung bearbeitet wird, wird er vertagt. Aufgrund dieses Prozesses verliert der Stura den Überblick und manche Anträge werden nicht richtig ausgefüllt. Die unberarbeiteten Anliegen gehen durcheinander und der Stura wird nicht benachrichtigt, wenn ein neues Formular erstellt wird. 
-Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools um das Erstellen und Verwalten von Anträgen übersichtlich, einfach und automatisch zu machen.
+Der Stura der HTW Dresden verwaltet Antragsformulare noch analog. Wenn Bedürfnisse in den einzelnen Referaten entstehen, müssen diese einen Antrag stellen. Das Präsidium wird benachrichtigt und der Antrag bekommt eine Identifizierungsnummer. Dann werden Anträge manuell in die Tagesordnung nach einer bestimmten Priorität eingeordnet, um verarbeitet zu werden. Wenn der Antrag nicht in der Sitzung bearbeitet wird, wird er vertagt. Aufgrund dieses Prozesses verliert der Stura den Überblick und manche Anträge werden nicht richtig ausgefüllt. Die unberarbeiteten Anliegen gehen durcheinander und der Stura wird nicht benachrichtigt, wenn ein neues Formular erstellt wird. 
+Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools, um das Erstellen und Verwalten von Anträgen übersichtlich, einfach und automatisch zu gestalten.
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
 === Problem Statement
@@ -36,7 +36,7 @@ Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten
 |Das Problem |	die unübersichtliche Bearbeitung der Anträge
 |betrifft |	alle Mitglieger des Sturas, das Referatskollegium, das Präsidium sowie Sprecher/innen.
 |Die Auswirkung davon ist |	die suboptimale Leistung des Sturas und das langsame Bearbeiten von Anträgen 
-|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen und gemäß Priorisierung in der Tagesordung der folgenden Sitzung einzuordnen. Dies entspricht eine extreme beschleunigungte, transparente und vereinfachte Überarbeitung von Anträge. Das Präsidium wird entlastet.
+|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen und gemäß Priorisierung in der Tagesordung der folgenden Sitzung einzuordnen. Dies entspricht einer extrem beschleunigungten, transparenten und vereinfachten Überarbeitung von Anträgen. Das Präsidium wird entlastet.
 |===
 
 ////
@@ -63,7 +63,7 @@ Beispiel
 |Die Lösung ist eine | browserbasierte Anwendung
 |Das	| digitales Ausfüllen von Antragsformularen
 |Im Gegensatz zur	|manuelle Verwaltung der Anträge
-|Unser Produkt|	erstellt Antragsvorlagen teilautomatisch und verknüpft die ausgefüllten Anträgen mit der Tagesordung der folgenden Sitzung.
+|Unser Produkt|	erstellt Antragsvorlagen teilautomatisch und verknüpft die ausgefüllten Anträgen mit der Tagesordung für folgende Sitzungen.
 |===
 
 
@@ -84,7 +84,7 @@ Beispiel
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 | Referatskollegium | beratende gewählte Mitglieder des Sturas, Studenten | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen
-| Sprecher/innen | beratende gewählte Mitglieder des Sturas, Studenten  | Nutzer der Anwendung und stellen Anträge auf Beschlüsse und Personenwahlen, können selber Beschlüsse fassen
+| Sprecher/innen | beratende gewählte Mitglieder des Sturas, Studenten  | Nutzer der Anwendung und stellen Anträge für Beschlüsse und Personenwahlen, können selber Beschlüsse fassen
 | Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung, Verwaltung der Anträge|
 Gesetzgeber | gibt rechtliche Rahmenbediengungen vor (Datenschutz) | überwacht die Einhaltung des Gesetzes |
 jede studentische Person der HTW Dresden (potentielle Antragssteller) | Studenten | jeder mit Interesse an Amt und/oder Mithilfe im Stura | 
@@ -95,8 +95,8 @@ jede studentische Person der HTW Dresden (potentielle Antragssteller) | Studente
 1. Antragssteller
 * Anzahl der Studenten variiert
 * bei wiederholter Nutzung des Tools verringert sich die Bearbeitungszeit, da der Nutzer sich damit auskennt
-* Student ist an einem Antragprozess interessiert, intuitiv und aufwandsarm ist
-* die Anwendung kann mit jedem Browser benutzt werden
+* Student ist an einem Antragprozess interessiert, da er intuitiv und aufwandsarm ist
+* die Anwendung kann mit jedem Browser durchgeführt werden
 2. Antragsverwalter
 * feste, berechtigte Mitglieder des Sturas
 * Arbeitsaufwand hängt vom Formular ab (Richtigigkeit und Vollständigkeit)
@@ -122,7 +122,7 @@ jede studentische Person der HTW Dresden (potentielle Antragssteller) | Studente
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |Vorlagen der Anträge digitalisieren|sehr hoch|Drop-down Menü, Ankreuzfunktion, automatische Gererierung der Kennziffer des Antrags |SS2021|
-Wiedervorlage von vertagten Anträge | hoch | Verknüpfung des Tools mit der Tagesordnung während der Versammlung, Zugang zur Lsite von vertagten Anträge|SS2021|
+Wiedervorlage von vertagten Anträgen | hoch | Verknüpfung des Tools mit der Tagesordnung während der Versammlung, Zugang zur Liste von vertagten Anträgen|SS2021|
 Automatische Generierung der Tagesordnung| hoch |Verknüpfung mit der Anwendung, Wahlen werden priorisiert| SS2021 |
 Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas |
 
