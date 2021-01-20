@@ -57,7 +57,9 @@
 
 === Statusanzeige
 * Wäre gut 
-* Zustände werden nachgereicht
+* 1. zum Präsidium eingereicht 
+* 2. in Bearbeitung
+* 3. freigegeben
 
 === Glossar 
 * "Offener Antrag" einfügen!
