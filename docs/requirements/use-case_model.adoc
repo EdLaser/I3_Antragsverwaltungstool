@@ -1,6 +1,7 @@
-= Use-Case Model: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Use-Case Model: I3 Antragverwaltungstool
+Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>
 {localdatetime}
+
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
@@ -9,23 +10,36 @@ include::../_includes/default-attributes.inc.adoc[]
 // ...
 == Identifizierte Use-Cases
 .Für Mitglieder 
-. Antrag Wahl
+. Antrag Wahl 
+//R
 . Antrag Ressourcen 
+//A bearbeitet
 . Offene Anträge ansehen
+//R
 . Antrag bearbeiten
+//R
 . Tagesordnung ansehen 
+//R
 . (Haushaltsplan ansehen)
-. (Email an gewählten Kandidat)
+. (Email an gewählten Kandidat) 
 
 .Fürs Präsidium 
 . Offene Anträge ansehen
+//A use case 8 bearbeitet
 . Tagesordnung ansehen
-. (Haushaltsplan ansehen)
-. Antrag ablehnen
-. Antrag verschieben
+//A use case 9 bearbeitet
 . Tagesordnung bearbeiten
+//R
+. Antrag bearbeiten
+//A use case 11 bearbeitet
+. Antrag ablehnen
+//A use case 12 bearbeitet
+. Antrag verschieben
+//A use case 13 bearbeitet
+. Haushaltsplan ansehen
+//A use case 14 bearbeitet
 . Information Mitgliederverwaltung über neues Mitglied
-
+//R use case 15
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.

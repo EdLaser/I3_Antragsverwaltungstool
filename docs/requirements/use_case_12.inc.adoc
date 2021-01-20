@@ -1,0 +1,77 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: Antrag ablehnen
+===	Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Der Use Case beschreibt das Vorgehen zum Ablehnen von Anträgen.
+
+===	Kurzbeschreibung der Akteure
+
+==== Antragsverwalter: 
+Will Anträge bearbeiten und mögliche Fehler berichtigen.
+
+==== Präsidium: 
+Will Anträge bearbeiten und mögliche Fehler berichtigen.
+
+==== Sprecher/in: 
+Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
+
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+. Benutzer ist angemeldet.
+. Antrag muss eingereicht sein und Regularien entsprechen.
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+.	Akteur öffnet Antrag im Antragsverwaltungstool.
+.	Akteur prüft, ob Antrag den Regularien entspricht.
+.	Akteur lehnt Antrag ab nach Abstimmung.
+.	Antrag wird im TOP als abgelehnt bezeichnet.
+.	Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== <Alternativer Ablauf 1>
+Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+. <Ablauf beschreiben>
+. Der Use Case wird im Schritt <y> fortgesetzt.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== <Unterablauf 1>
+. <Unterablauf 1, Schritt 1>
+. …
+. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Erfolgreiche Ablehnung
+
+Präsidium hat den Antrag nach Abstimmung abgelehnt.
+
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+Bei erfolgreicher Durchführung des Use Cases müssen folgende Nachbedingungen erfüllt sein:
+
+==== Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung
+
+==== Antrag wurde von Präsidium verabschiedet 
+
+==== Antrag wird in TO als bearbeitet und abgelehnt bezeichnet
+
+==== Antrag von Antragliste entfernt
+
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Usability
+Der Use Case muss einfach durchführbar für der Antragsverwalter sein. Die Anträge müssen auch ordentlich und übersichtlich gestaltet werden.
+Der Use Case muss einfach durchführbar für den Akteur sein. 
+
+==== Performance
+Die Anwendung muss in jedem Browser problemlos laufen.

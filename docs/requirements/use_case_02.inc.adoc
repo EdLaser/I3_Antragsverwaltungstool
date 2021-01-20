@@ -1,31 +1,44 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 02: Antrag für Ressourcen stellen
+== Use-Case 02: Antrag für Ressourcen stellen 
 ===	Kurzbeschreibung
-
+Der Use Case beschreibt den Kompletten Ablauf der Wahlantragsbearbeitung.
 //<Kurze Beschreibung des Use Case>
 
 ===	Kurzbeschreibung der Akteure
-==== <Akteur 1 Name>
+==== Antragssteller: 
+Möchte Antrag stellen, sodass der Bedarf an Ressourcen in den einzelnen Referaten vom Stura gedeckt wird.
+==== Sprecher/in: 
+Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
+==== Referatskollegium: 
+Stellt Anträge auf Beschlüsse.
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-<Vorbedingung 1>
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer..
+. Benutzer ist angemeldet.
+. Antragssteller ist Mitglied des Sturas und/oder eines weiteren Referats.
+
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. 	…
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+.	Der Use Case beginnt, wenn der Antragssteller das Antragsverwaltungstool geöffnet hat.
+.	Akteur wählt geforderten Anträge aus.
+.	WHILE Antrag ist nicht vollständig 
+..	Antragssteller gibt dem Antrag einen Namen
+..	System generiert Antragskennziffer
+..	Antragsteller gibt seine Rolle ein
+...	Gibt s- oder Martrikelnummer an
+..	Antragsteller beschreibt das Ressourcenbedürfnis
+.	Antragsteller löst Antragsbearbeitung aus. 
+.	System erstellt TOP.
+.	Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Alternativer Ablauf 1
+Wenn die Antworten des Antragsstellers im Schritt (a),(c) und (d) des Standardablauf nicht den Gültigkeitsregeln entsprechen, dann
+. System fordert Antragsteller auf, diese zu berichtigen 
+. Antragsteller berichtigt Angaben, Fortsetzung Standartablauf
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -37,15 +50,40 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. 	…
-. <Szenario 1, Schritt n>
+
+==== Erfolgreiche Standardbeantragung 
+. Antragssteller X füllt den Antrag auf Personenwahl aus. 
+. Antrag erfolgreich abgegeben und weitergleitet sowie in Tagesordnung vermerkt. 
+
+==== Antragstellung durch keine studentische Person
+. Eine studentische Person X möchte Antrag ausfüllen und gibt keine gültige s- oder Matrikelnummer ein.  
+. Antragsstellung wird abgebrochen.
+
+==== Antragssteller wählt nicht gültige Eingabe bzw. füllt nicht alle Pflichtfelder aus
+. Antragssteller wählt keine gültige Eingabe oder vergisst ein Feld auszufüllen. 
+. System fordert ihn auf die Eintragung zu ändern oder die fehlende zu ergänzen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== <Nachbedingung 1>
+
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+
+
+==== Antragssteller hat Formular komplett ausgefüllt.
+==== Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
+==== Antrag wurde an Präsidium weitergeleitet.
+==== Antrag bekommt TOP und wird in TO aufgenommen.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+
+==== Usability
+Der Use Case gehört zu den Hauptfunktionen des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+Der Use Case muss einfach durchführbar für den Akteur sein. 
+
+==== Performance
+Die Anwendung muss in jedem Browser problemlos laufen.
+
+==== Gesetzlicher Rahmen
+Muss Datenschutz konform sein.
+Muss Hochschulgesetz konform sein.

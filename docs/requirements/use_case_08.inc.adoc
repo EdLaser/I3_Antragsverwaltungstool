@@ -1,0 +1,74 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: Offene Anträge ansehen
+===	Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Der Use Case beschreibt das Vorgehen zum Ansehen von offenen Anträgen im internen Bereich.
+
+===	Kurzbeschreibung der Akteure
+
+==== Antragsverwalter
+Der Antragsverwalter möchte wissen, ob es Anträge zu bearbeiten gibt.
+
+==== Präsidium
+Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
+
+==== Sprecher/in
+Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. 
+
+
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+. Antragsverwalter ist angemeldet (hat Zugang, also er hat administrative Rechte und ist gleichzeitig Nutzer der Anwendung.) 
+. Es wurden schon Anträge eingereicht. 
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+.	Der Use Case beginnt, wenn Akteur den Antrag aufrufen möchte.
+.	Akteur ruft Antragsformulartool auf.
+.	Akteur wählt geforderten Antrag aus.
+.	Akteur ruft Liste der eingereichten Anträge auf.
+.	Der Use Case ist abgeschlossen.
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== <Alternativer Ablauf 1>
+Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+. <Ablauf beschreiben>
+. Der Use Case wird im Schritt <y> fortgesetzt.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== <Unterablauf 1>
+. <Unterablauf 1, Schritt 1>
+. …
+. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+ 
+==== Erfolgreiche Einsicht
+Interessierter kann den gewünschten Antrag aufrufen und ansehen.
+
+==== Gescheiterte Einsicht
+Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+==== Anträge unverändert sein
+==== Antragsnummer ist korrekt
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+
+==== Usability
+Der Use Case muss einfach durchführbar für der Antragsverwalter sein. Die Anträge müssen auch ordentlich und übersichtlich gestaltet werden.
+Der Use Case muss einfach durchführbar für den Akteur sein. 
+
+==== Performance
+Die Anwendung muss in jedem Browser problemlos laufen. 
