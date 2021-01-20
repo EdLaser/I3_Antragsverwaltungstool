@@ -1,5 +1,5 @@
-= Glossar: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Glossar: I3 Antragsverwaltungstool
+Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -13,7 +13,22 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
-|xx|xx|xx|
+|Antrag|Gesuch, Forderung|Anfrage, Anliegen. Forderung|
+Antragssteller|jemand, der einen Antrag stellt|Bewerber, Kandidat, Interessent|
+Antragsverwalter|Person, die für einen Antrag verantwortlich ist, es in Ordnung hält und betreut|Administrator, Manager|
+Beschluss|[gemeinsam festgelegte] Entscheidung; Ergebnis einer Beratung|Entscheidung, Enschließung, Resolution|
+Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen Mitteln dient, der zur Erfüllung der staatlichen Aufgaben im Bewilligungszeitraum voraussichtlich notwendig ist. In diesem Fall, die finanzielle Mitter, die den Stura zur Verfügung stehen. |Finanzplan, Etat|
+Hochschule für Technik und Wirtschaft Dresden|Bildungsinstitution mit Fokus auf den technischen und wirtschaftliche Studiengänge |xx|
+Präsidium|Leitendes Gremium einer Versammlung.|Vorsitz, Direktorium, Führerschaft|
+Referat|Abteilung einer Behörde als Fachgebiet eines Referenten.|Abteilung, Sektion|
+Referatskollegium|xx|xx|
+Ressourcen|Bestand an Geldmitteln, Geldquelle, auf die jemand zurückgreifen kann. |Bestand, Depot|
+Sprecher/innen|xx|xx|
+Studentenrat|Eine Form der Studierendenvertretung an Hochschulen.|Studierendenrat, |
+Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.|Agenda|
+Tagesordnungpunkt|Punkt einer Tagesordnung.|xx|
+vertagen|eine Sitzung o. Ä. ergebnislos abbrechen und eine weitere Sitzung zu einem späteren Zeitpunkt ansetzen|verschieben|
+
 |===
 
 
@@ -22,7 +37,10 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Abkürzung|	Bedeutung|	Erläuterung
 //|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung|
-|xx|xx|xx|
+|HTW Dresden| Hochschule für Technik und Wirtschaft|xx|
+Stura|Studentenrat|xx|
+TO|Tagesordnung|xx|
+TOP|Tagesordnungspunkt|xx|
 |===
 
 == Verzeichnis der Datenstrukturen

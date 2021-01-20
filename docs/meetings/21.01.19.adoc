@@ -1,0 +1,72 @@
+= Meeting vom TT.MM.JJJJ
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+| Ja
+
+|Jacob 
+| Ja
+
+|Richard
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Ja
+
+|Amanda
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Meeting morgen abklären
+. Test-Cases
+. Glossar
+. Use-Cases Amanda
+
+===== *Einigungen und Beschlossenes:*
+. Meeting 13 Uhr
+. Glossar wird nochmal im Meeting mit Kunden besprochen & dann bearbeitet
+. Test-Cases noch nicht vorhanden, bis 31.1 bearbeiten
+. Ruben, Amanda, Richard im Meeting (Ruben zeichnet auf)
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. Glossar Begriffe abklären, falls nötig (z.B. Sprecher, Referatskollegium etc. Richard hat Begriffe) -> Abgrenzbarkeit?
+. Antrag auf Ressourcen Stura intern oder auch extern? 
+. Gesetzesgrundlage wegen Anträgen abklären (Auswählen oder automatisch ?)
+. Datenschutz und Datensicherheit 
+. Use-Cases mit Kunden abgleichen
+. Wer bespricht Anträge mit / sitzt in Besprechung (Use-Case: Antrag bearbeiten)
+. Sollen Anträge zwischengespeichert werden können
+. Darf Antragssteller nachträglich Antrag bearbeiten
+. Präsidium prüft Antrag, was ist wenn nicht konform/nicht eindeutig? Direkte Korrketur / Rücksprache / Ablehnen (wird hier gespeichert ?)
+. Soll es Statusanzeige für Anträge geben
+. Wie sehen nicht öffentliche Sitzungen aus ?
+. Ist direkt oder nur im Meeting Vertagung möglich
+. Tagesordnungspunkte zur Tagesordnung hinzufügbar oder nicht (Außerordentliche Dinge/Vorkomnisse)
+. Tagesordnung automatisiert auf Kommando oder fortlaufende Erstellung nach aktuellen Ständen der Anträge (Eine fest Erzeugte oder Dynamische) gibt es hier zwei Varianten? Intern extern ?
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. Meeting mit Kunden nachbesprechen
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...

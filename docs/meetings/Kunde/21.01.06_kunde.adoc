@@ -2,7 +2,7 @@
 
 == Notizen
 
-.Vision
+=== Vision
 * Formulierung ("stura verliert Überblick") evtl. anpassen 
 * Extreme Beschleunigung und Transparenz des Prozesses -> "erfolgreiche Lösung des Problems", Präsidium entlasten, Vereinfachung
 * Nicht im Stura nur Studenten (Gewählte Mitglieder als Teilnehmer, Beratende Mitlgieder)
@@ -13,11 +13,11 @@
 * Berechtigte Mitglieder Stura als Antragsverwalter
 * Gastzugang nicht gewollt für Anträge (Zu großer Traffic)
 
-.Use-Cases 
+=== Use-Cases 
 * Änderungsantrag zu einem Antrag stellbar 
 * Ansonsten alles klar 
 
-.Implementierung 
+=== Implementierung 
 * Nginx / Apache
 * Freie Software 
 * PHP 7 oder mehr möglich vermeiden 
