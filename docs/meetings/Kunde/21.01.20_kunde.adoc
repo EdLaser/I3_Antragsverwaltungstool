@@ -1,0 +1,69 @@
+= Kundenmeeting 20.01.2021
+
+== Notizen
+
+=== Gesetzesgrundlagen
+* Je nachdem über was abgestimmt wird sind unterschiedliche Mehrheiten gefordert (aber immer gleiche Optionen)
+* Nicht bei Antragstellung sondern erst bei Bearbeitung durch Präsidium relevant -> Drop Down Menü mit 10-12 Optionen (Gestzesgrundlage und Abstimmungsverhältniss)
+* Mehrheiten unter  https://www.stura.htw-dresden.de/stura/p/abv/antraege/vorlage-antrag-wahl
+* Unterschied auch hier beim stellen zwischen (Stura-Organ und Andere) -> interner / externer Antragssteller, Prio nicht so hoch
+
+=== Anträge 
+* Anträge immer mit "der Stura möge beschließen" anfangen
+* "Anträge verkünden" Add-On
+
+=== Anträge ändern
+* Änderungsantrag zum Antrag falls was nachträglich geändert werden soll wäre Variante statt Bearbeitung
+* Antrag erst public wenn er auf Tagesordnung ist, also geheim bis Präsidium ihn bearbeitet hat -> Auch Antragsteller keine Einsicht
+* -> Bei Rückfragen, fragt das Präsidium den Antragssteller
+* Präsidium hat nach versenden des Antrags die alleinige Hoheit zur Bearbeitung (Nur Feedback an Antragssteller mit Änderungen welche dann vom Präsidium eingepflegt) -> Vorläufige Meinung 
+* Antrag auf Ressourcen auch extern möglich
+* Anschauen der Anträge ohne Bearbeitung
+
+=== Anträge ablehnen 
+* Durch Präsidium mit Begründung möglich
+* Auch aufgrund formeller/inhaltlicher Fehler möglich
+
+=== Anträge vertagen
+* Antrag auf Vertagung ist in Sitzung von allen stellbar
+* Auch davor möglich durch Antragssteller (Hier aber Bitte durch Vertagung mit Begründung)
+* Durch Präsidium auch möglich aber nur bei Zeitnot oder reißen der Fristen (Begründung nur fürs Präsidium aber wird nicht vermerkt)
+
+=== Tagesordnung
+* Erst öffentlich wenn die Tagesordnung final ist und sich eigentlich nix mehr ändert 
+* Interner Entwurf ist möglich (Nur sich vom Entwerfenden)
+* Interne Veröffentlichung ist möglich 
+* Option mit Intern und Extern wäre toll -> Exterb fest & intern dynamisch 
+* Extern nur Anträge die Präsidium abgesegnet hat
+* Sitzungen können ausfallen, alle Anträge werden dann vertagt (Aufgrund von Überzug der Sitzungszeit)
+* TOP Option zum löschen wäre gut
+* Außerordentliche Vorkomnisse nicht für Tagesordnung relevant 
+
+=== Haushaltsplan anzeigen
+* HHP wird veröffentlicht
+
+
+=== Datenschutz & Datensicherheit
+* Keine Matrikelnummer
+* Gesetzlicher Rahmen
+
+
+=== Zwischenspeicher Anträge
+* Wäre sinnvoll, passiert öfter mal (Ankündigung ans Präsidium das welche Anträge kommen ?) -> Eher Add-On
+
+=== Wer sitzt in Besprechung
+* Keine offizielles Plenumssitzung: Nur Präsidium
+* Offizielle Plenumssitzung: Jeder kann zuhören
+
+=== Statusanzeige
+* Wäre gut 
+* Zustände werden nachgereicht
+
+=== Glossar 
+* "Offener Antrag" einfügen!
+* Referatskollegium: 
+* "-Das Referatskollegium ist die Gesamtheit aller Referate. 
+* -Die Referatsleitung oder der von der Referatsleitung zur Vertretung des Referates im Referatskollegium bestimmtes Mitglied des Referates vertreten das Referat.
+* -Die Sprecherinnen und Sprecher sowie Beauftragungen gehören dem Referatskollegium mit beratender Stimme an."
+* Sprecher/innen: Oberstes Gremium mit Außenwirkung und Entscheidungsmacht
+* Formulierung Vorstand wird in den Chat nachgereicht

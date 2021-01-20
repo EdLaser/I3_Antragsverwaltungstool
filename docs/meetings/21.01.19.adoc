@@ -45,7 +45,7 @@
 
 ===== *Fragen und Rücksprachen mit Kunden:*
 . Glossar Begriffe abklären, falls nötig (z.B. Sprecher, Referatskollegium etc. Richard hat Begriffe) -> Abgrenzbarkeit?
-. Antrag auf Ressourcen Stura intern oder auch extern?
+. Antrag auf Ressourcen Stura intern oder auch extern? 
 . Gesetzesgrundlage wegen Anträgen abklären (Auswählen oder automatisch ?)
 . Datenschutz und Datensicherheit 
 . Use-Cases mit Kunden abgleichen
