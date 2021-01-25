@@ -1,0 +1,60 @@
+= Meeting vom 25.01.2021
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+| Nein
+
+|Jacob 
+| Ja
+
+|Richard
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Ja
+
+|Amanda
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Abklären was noch fehlt
+. Design
+. System-Wide-Requirements
+. Domain-Modell
+. Use-Cases Frage Richard
+. Test-Cases
+
+===== *Einigungen und Beschlossenes:*
+. Antrag bearbeiten heist nun Änderungsantrag in Use-Cases
+. Bearbeitung bis 8.02
+. Ruben,Richard,Jacob, Andi -> Design & Domain-Model
+. Anke im Praktikum fragen
+
+===== *Fragen und Rücksprachen mit Kunden:*
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...
