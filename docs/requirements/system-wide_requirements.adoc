@@ -6,7 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema> spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt I3_Antragsverwaltungstool spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
 
 * Systemweite funktionale Anforderungen (F),
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
@@ -16,6 +16,22 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+
+*SWFA-1: Für erweiterte Funktionen erfolgt eine Authentifizierung über Login.*
+
+    Zur Überprüfung wird ein Benutzerkonto durch das Team angelegt und über einen Login-Versuch getestet.
+
+*SWFA-2: Ressourcen zur Datenspeicherung sollen gering gehalten werden.*
+    
+    Zur Überprüfung wird zu viel Text in die Maske eingegeben, der durch die Anwendung beschränkt wird.
+
+*SWFA-3: Es soll automatisch eine Tagesordnung erzeugt werden*
+
+    Zur Überprüfung wird aus gestellten Anträgen eine Tagesordnung generiert.
+
+*SWFA-4: Automatische Anpassung der TOPs*
+
+    Zur Überprüfung wird ein Antrag vertagt, wodurch sich seine Priorität erhöht.
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
@@ -35,11 +51,19 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 == Zusätzliche Anforderungen
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+// * Ressourcenbegrenzungen
+// * zu nutzende Komponenten / Bibliotheken / Frameworks
+// * Vorgaben für die Programmiersprache
+// * zu unterstützende Plattformen / Betriebssysteme
+// * Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+* Die Software darf nicht unter Java programmiert werden
+* Als Webserver wird NGINX genutzt
+* Es muss eine Open-Source Anwendung entwickelt werden
+* Die Software soll sich optisch an "Antragsgrün" orientieren
+* PHP soll möglichst vermieden werden
+* Die Zahl an regestrierten Nutzern soll gering gehalten werden
+* Die Anwendung muss unter LINUX/UNIX lauffähig sein
+* Eine vollständige Datenbank soll nicht genutzt werden
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
@@ -50,3 +74,4 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * Lizensierung der Anwendung
 * Datenschutz
+* Hochschulgesetz
