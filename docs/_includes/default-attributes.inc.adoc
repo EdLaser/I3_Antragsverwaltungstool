@@ -1,11 +1,12 @@
-:project-name: <Antragsverwaltungstool (I3)>
+:project-name: Antragsverwaltungstool (I3)
 
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
+:toc-levels: 2
 
 // Source highlighter
-:source-highlighter: rouge
+:source-highlighter: highlightjs
 :figure-caption: Abbildung
 :table-caption: Tabelle
 
