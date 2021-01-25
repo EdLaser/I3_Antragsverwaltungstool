@@ -1,0 +1,40 @@
+== Use-Case 05: <Tagesordnung anzeigen>
+===	Kurzbeschreibung
+Der Use Case beschreibt das Vorgehen zum Ansehen der aktuellen Tagesordnung für die kommende Sitzung.
+
+===	Kurzbeschreibung der Akteure
+==== Antragssteller: 
+Der Antragsteller möchte wissen ob sein Antrag in der aktuellen TO ist und sich generell informieren.
+
+==== Pärsidium: 
+Das Präsidium möchte sich auf nächste Sitzung vorbereiten oder sich generell informieren.
+
+==== alle weiteren Interessenten an der Studentischen Vertretung: 
+Alle weiteren anderen Interessenten an der Studentischen Vertretung möchten sich informieren.
+=== Vorbedingungen
+Es ist eine Sitzung des Stura geplant und es wurden Anträge eingereicht sowie TOPs festgelegt.
+
+=== Standardablauf (Basic Flow)
+     1. Antragsverwaltungstool aufrufen 
+     2. Akteur sieht sich TO an 
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== TO aufrufen 
+Sc01: Akteur ruft im Antragsverwaltungstool die Option Tagesordnung auf. 
+
+==== TO nicht vorhanden
+Sc02: Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da keine Sitzung mit Tagesordnungspunkten ansteht.
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+
+==== Neue TO muss abgespeichert und online gestellt werden. 
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+==== <Besondere Anforderung 1>

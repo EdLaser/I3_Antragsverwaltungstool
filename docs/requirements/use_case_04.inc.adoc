@@ -1,0 +1,35 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 04: <Änderungsantrag vom Antragsteller>
+===	Kurzbeschreibung
+Der Use Case beschreibt das Vorgehen zum Bearbeiten von Anträgen durch den Antragsteller.
+
+===	Kurzbeschreibung der Akteure
+==== Antragssteller: 
+Der Antragsteller möchte etwas in seinem abgegebenen Antrag ändern.
+
+=== Vorbedingungen
+Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstool für seine Antragstellung gewählt. 
+
+=== Standardablauf (Basic Flow)
+    1. Antragsteller öffnet Antrag im Antragsverwaltungstool
+	2. Antragsteller fügt Änderung ein. 
+	3. Antragsteller speichert Antrag ab/ gibt den Antrag frei. Oder gibt Antrag zurück an Antragssteller 
+	4. Antrag wird TOP
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+==== <Erfolgreiche Bearbeitung>
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+
+==== Antragssteller hat Formular komplett ausgefüllt
+==== Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
+==== Antrag wurde an Präsidium weitergeleitet.
+==== Antrag bekommt TOP und wird in TO aufgenommen.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+==== <Besondere Anforderung 1>
