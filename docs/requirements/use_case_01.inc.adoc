@@ -1,49 +1,52 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: <use-case name>
+== Use-Case 01: <Wahlantrag stellen 
 ===	Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Der Use Case beschreibt den kompletten Ablauf der Wahlantragsbearbeitung.
 
 ===	Kurzbeschreibung der Akteure
-==== <Akteur 1 Name>
+==== externer Antragssteller: 
+Möchte auf einen Posten im Stura kandidieren. 
+==== interner Antragssteller: 
+Möchte auf einen weiteren/anderen Posten im Stura kandidieren. 
+
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-<Vorbedingung 1>
+Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstool für seine Antragstellung gewählt. 
 
 === Standardablauf (Basic Flow)
-//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+1. Der Use Case beginnt, wenn der Antragssteller das Antragsverwaltungstool geöffnet hat.
+2. WHILE Antrag ist nicht vollständig 
+    a.	Antragssteller gibt dem Antrag einen Namen
+    b.	Antragsteller gibt Datum ein
+    c.	System generiert Antragskennziffer
+    d.	Antragsteller wählt seine Rolle aus 
+    e.	Antragsteller beantwortet Fragen 
+3. Antragsteller löst Antragsbearbeitung aus. 
+4. System erstellt TOP 
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. 	…
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
-
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+(a), (c) und (d) Antworten entsprechen nicht den Gültigkeitsregeln
+  		a. System fordert Antragsteller auf, diese zu berichtigen 
+		b. Antragsteller berichtigt Angaben, Fortsetzung Standartablauf
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. 	…
-. <Szenario 1, Schritt n>
+==== <Erfolgreiche Standardbeantragung > 
+    Sc1: Antragssteller X füllt den Antrag auf Personenwahl aus. Antrag erfolgreich abgegeben und weitergleitet sowie in Tagesordnung vermerkt. 
+==== <Antragssteller wählt nicht gültige Eingabe bzw. füllt nicht alle Pflichtfelder aus>
+    Sc02: Antragssteller wählt keine gültige Eingabe oder vergisst ein Feld auszufüllen. System fordert ihn auf die Eintragung zu ändern oder die fehlende zu ergänzen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== <Nachbedingung 1>
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+
+==== Antragssteller hat Formular komplett ausgefüllt
+==== Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
+==== Antrag wurde an Präsidium weitergeleitet.
+==== Antrag bekommt TOP und wird in TO aufgenommen.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

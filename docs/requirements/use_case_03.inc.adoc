@@ -1,0 +1,57 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 03: Offene Anträge ansehen 
+===	Kurzbeschreibung
+Der Use Case beschreibt das Vorgehen zum Ansehen von offenen Anträgen. 
+//<Kurze Beschreibung des Use Case>
+
+===	Kurzbeschreibung der Akteure
+==== Antragssteller: 
+Der Antragssteller möchte wissen ob sein Antrag bearbeitet wurde.
+==== Präsidium
+Das präsidium möchte wissen welche Anträge noch zu bearbeiten sind.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer..
+Antragsteller hat einen Antrag eingereicht. 
+Es wurde schonmal ein Antrag eingereicht. 
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+	1. Der Use Case beginnt, wenn Akteur den Antrag aufrufen möchte.
+	2. Akteur ruft Antragsformulartool auf.
+	3. Akteur wählt geforderten Antrag aus.
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Sc01: Erfolgreiche Einsicht
+Akteur kann den gewünschten Antrag aufrufen.
+
+==== Sc02: Gescheiterte Einsicht
+Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+
+
+==== Anträge müssen unverändert sein
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Usability
+Der Use Case gehört zu den Hauptfunktionen des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+Der Use Case muss einfach durchführbar für den Akteur sein. 
+
+==== Performance
+Die Anwendung muss in jedem Browser problemlos laufen.
+
+==== Gesetzlicher Rahmen
+Muss Datenschutz konform sein.
+Muss Hochschulgesetz konform sein.
