@@ -1,14 +1,32 @@
-= Test Cases: {project-name}
-Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <s80350@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>; Jacob Flaskamp <s81424@htw-dresden.de>
+= Test Cases: I3 Antragsverwaltungstool
+Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>; Jacob Flaskamp <s81424@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Allgemeine Informationen
+=== allgemeine Tests:
+* Abfangen ungültiger Eingaben (z.B. Datum)
+* korrekte Übertragung der Daten nach Erstellung/Änderung eines Antrages
+* Zugriffsberechtigungen für verschiedene Funktionen der Software
+* generelle Funktionalität aller beabsichtigten Funktionen
+* korrekte Handhabung unerwarteter Fehler
+* korrekte Erstellung des TOP, nachdem neuer Antrag gestellt wurde
 
 == Test Cases
 
-=== Test Case 01
+=== Wahlantrag stellen
+* Einreichen nur bei Vollständig ausgefülltem Antrag möglich
 
-=== Test Case 02
+=== Ressourcenantrag stellen
+
+=== offene Anträge ansehen
+* korrekte Filterung der gesuchten Anträge
+* Aufrufen eines angezeigten Antrages
+* direkte Möglichkeit zur Bearbeitung (im internen Bereich)
+
+=== Tagesordnung ansehen
+. als externer Nutzer
+
+=== Änderungsantrag
