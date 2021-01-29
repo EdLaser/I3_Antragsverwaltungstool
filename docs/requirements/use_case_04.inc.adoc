@@ -5,21 +5,23 @@ Der Use Case beschreibt das Vorgehen zum Bearbeiten von Anträgen durch den Antr
 
 ===	Kurzbeschreibung der Akteure
 ==== Antragssteller: 
-Der Antragsteller möchte etwas in seinem abgegebenen Antrag ändern.
+Der Antragsteller möchte einen Änderungsantragstellen.
 
 === Vorbedingungen
-Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstool für seine Antragstellung gewählt. 
+Antragsteller hat bereits einen Antrag eingereicht. 
 
 === Standardablauf (Basic Flow)
     1. Antragsteller öffnet Antrag im Antragsverwaltungstool
-	2. Antragsteller fügt Änderung ein. 
-	3. Antragsteller speichert Antrag ab/ gibt den Antrag frei. Oder gibt Antrag zurück an Antragssteller 
-	4. Antrag wird TOP
+	2. Antragsteller füllt Änderungsantrag aus. 
+	3. Antragsteller gibt Änderungsantrag ab. 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Erfolgreiche Bearbeitung>
+=== Änderungsantrag eingereicht
+Sc01: Der Antragssteller hat Änderungsantrag vollständig ausgefüllt. 
 
+=== Änderungsantrag uneindeutig
+Sc02: Die Angaben des Antragsstellers sind uneindeutig. Daraufhin setzt sich das Präsidium mit Ihm in Verbindung.  
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
@@ -32,4 +34,3 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>

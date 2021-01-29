@@ -14,6 +14,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
 |Antrag|Gesuch, Forderung|Anfrage, Anliegen. Forderung|
+Antrag (offen)|Antrag, welcher noch nicht vollständig bearbeitet wurde.| offener Antrag|
 Antragssteller|jemand, der einen Antrag stellt|Bewerber, Kandidat, Interessent|
 Antragsverwalter|Person, die für einen Antrag verantwortlich ist, es in Ordnung hält und betreut|Administrator, Manager|
 Beschluss|[gemeinsam festgelegte] Entscheidung; Ergebnis einer Beratung|Entscheidung, Enschließung, Resolution|
@@ -21,10 +22,11 @@ Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen
 Hochschule für Technik und Wirtschaft Dresden|Bildungsinstitution mit Fokus auf den technischen und wirtschaftliche Studiengänge |xx|
 Präsidium|Leitendes Gremium einer Versammlung.|Vorsitz, Direktorium, Führerschaft|
 Referat|Abteilung einer Behörde als Fachgebiet eines Referenten.|Abteilung, Sektion|
-Referatskollegium|xx|xx|
+Referatskollegium|Das Referatskollegium ist die Gesamtheit aller Referate.|xx|
+Referatsleitung|Die Referatsleitung oder der von der Referatsleitung zur Vertretung des Referates im Referatskollegium bestimmtes Mitglied des Referates vertreten das Referat.|xx|
 Ressourcen|Bestand an Geldmitteln, Geldquelle, auf die jemand zurückgreifen kann. |Bestand, Depot|
-Sprecher/innen|xx|xx|
-Studentenrat|Eine Form der Studierendenvertretung an Hochschulen.|Studierendenrat, |
+Sprecher/innen|Die Sprecherinnen und Sprecher sowie Beauftragungen gehören dem Referatskollegium mit beratender Stimme an.|xx|
+Studentenrat|Eine Form der Studierendenvertretung an Hochschulen.|Studierendenrat|
 Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.|Agenda|
 Tagesordnungpunkt|Punkt einer Tagesordnung.|xx|
 vertagen|eine Sitzung o. Ä. ergebnislos abbrechen und eine weitere Sitzung zu einem späteren Zeitpunkt ansetzen|verschieben|
@@ -37,10 +39,11 @@ vertagen|eine Sitzung o. Ä. ergebnislos abbrechen und eine weitere Sitzung zu e
 |===
 |Abkürzung|	Bedeutung|	Erläuterung
 //|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung|
-|HTW Dresden| Hochschule für Technik und Wirtschaft|xx|
-Stura|Studentenrat|xx|
-TO|Tagesordnung|xx|
-TOP|Tagesordnungspunkt|xx|
+|HTW Dresden| Hochschule für Technik und Wirtschaft|Ist eine Fachhochschule in Dresden. |
+Stura|Studentinnen- und Studentenrat|Ist das zentrale Organ der Studentinnen- und Studentenschaft, u.a. zur Vertretung dieser.  |
+TO|Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.|
+TOP|Tagesordnungspunkt|Ist ein Punkt der Tagesordnung|
+UC|Use Case|funktionale Anforderung eines Systems
 |===
 
 == Verzeichnis der Datenstrukturen

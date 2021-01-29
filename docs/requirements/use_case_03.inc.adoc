@@ -11,7 +11,7 @@ Der Antragssteller möchte wissen ob sein Antrag bearbeitet wurde.
 Das präsidium möchte wissen welche Anträge noch zu bearbeiten sind.
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer..
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer.
 Antragsteller hat einen Antrag eingereicht. 
 Es wurde schonmal ein Antrag eingereicht. 
 

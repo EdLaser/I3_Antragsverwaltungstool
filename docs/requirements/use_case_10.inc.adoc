@@ -1,0 +1,48 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: <use-case name>
+===	Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Präsidium möchte die Tagesordnung bearbeiten.
+
+===	Kurzbeschreibung der Akteure
+==== Präsidium:  
+Ist nicht einverstanden mit der aktuellen TO.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+Es muss eine Tagesordnung geben und diese entspricht aktuell nicht den Bedürfnissen der aktuellen Sitzung.
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+1. Aufruf des Antragsverwaltungstool durch das Präsidium.
+2. Präsidium bearbeitet TO
+3. TO abspeichern 
+4. TO online stellen
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+==== <Szenario 1>
+Sc01: TO vertagen
+Präsidium möchte gesamte TO vertagen. Dies geschieht über das Vertagen aller TOP.
+
+c02: TOP löschen 
+Präsidium möchte n TOPs löschen. Präsidium wählt zu löschende TOPs aus und entfernt diese.
+
+Sc03: TOP vertagen
+Präsidium möchte n TOPs vertagen. Präsidium wählt die zu vertagenden TOPs und verschiebt diese auf eine andere TO.
+
+Sc04: TOP verschieben
+Präsidium möchte die Reihenfolge der TO verschieben. Präsidium wählt dafür zu verschiebende TOP aus und ändert die Reihenfolge.
+
+Sc05: TOP neu gewichten 
+Präsidium möchte Priorität des TOP ändern. Präsidium wählt für TOP neue Prioritätszahl.
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+==== •	Neue TO muss abgespeichert und online gestellt werden. 
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+==== <Besondere Anforderung 1>
