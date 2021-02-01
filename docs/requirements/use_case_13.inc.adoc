@@ -2,51 +2,49 @@
 == Use-Case: Antrag vertagen 
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Der Use Case beschreibt das Vorgehen zum Verschieben von Anträgen.
+Der Use Case beschreibt das Vorgehen zum Verschieben von Anträgen. Der Befehl kann vor und während einer Sitzung gegeben werden. 
+
 ===	Kurzbeschreibung der Akteure
 
 ==== Antragsverwalter: 
-Will Anträge bearbeiten und mögliche Fehler berichtigen.
+Will Antrag vertagen.
 
 ==== Präsidium: 
-Will Anträge bearbeiten und mögliche Fehler berichtigen.
+Will Antrag vertagen.
 
-==== Sprecher/in: 
-Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 . Benutzer ist angemeldet.
 . Antrag muss eingereicht sein und Regularien entsprechen.
+. Antrag wurde bereits vom Präsidum bearbeitet und genehmigt.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
-.	Akteur öffnet Antrag im Antragsverwaltungstool.
+.	Der Use Case beginnt, wenn der Akteur den Antrag im Antragsverwaltungstool öffnet.
 .	Akteur prüft, ob Antrag den Regularien entspricht.
-.	Akteur speichert Antrag ab/ gibt den Antrag frei.
+.	Akteur verschiebt Antrag.
 .	Antrag wird im TOP eingeordnet.
+.   Antrag wird in kommende TO neu aufgelistet.
 .	Der Use Case ist abgeschlossen.
 
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Antrag an TO vertagen
+Wenn Akteur im Schritt 1 des Standardablauf die TO aufruft und bearbeitet, dann
+. kann der Akteur direkt da der Antrag vertagen
+. Der Use Case wird im Schritt 5 fortgesetzt.
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Erfolgreiche Verschiebung
 Antragsverwalter hat den Antrag erfolgreich auf nächste TO verschoben.
+
+Sc01: Wenn der Antraf vor der Sitzung vertgt wurde (vor Veröffentlichung der TO), benötigt es eine Begründung.
+
+Sc02: Wenn der Antrag während der Sitzung vertagt wird, benötigt es eine schlüssige Begründung. Dies um die Transparenz der bereits veröffentlichte TO zu garantieren.
 
 ==== Antrag taucht fehlerhaft in nächsten TO ein. 
 . Antrag wurde falsch in neue TO eingeordnet, nummeriert und ausgefüllt.
@@ -65,6 +63,7 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 ==== Antrag wurde von Präsidium verschoben.
 ==== Antrag wird TOP in neue TO.
+==== Antrag behält Bearbeitungsstatus.
 
 
 === Besondere Anforderungen

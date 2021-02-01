@@ -2,7 +2,7 @@
 == Use-Case: Tagesordnung ansehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Der Use Case beschreibt das Vorgehen zum Ansehen der aktuellen Tagesordnung für die kommende Sitzung.
+Der Use Case beschreibt das Vorgehen zum Ansehen der aktuellen Tagesordnung für die kommende Sitzung im internen Bereich.
 
 ===	Kurzbeschreibung der Akteure
 
@@ -12,7 +12,7 @@ Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 ==== Präsidium: 
 Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 
-==== Sprecher/in: 
+==== Vorstand der Geschäftsführung: 
 Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. 
 
 
@@ -22,6 +22,11 @@ Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 . Es ist eine Sitzung des STURA geplant. 
 . Es wurden Anträge eingereicht.
 . Anträge wurden schon mit TO verknüpft sowie TOPs festgelegt.
+. TO hat 3 mögliche Stadien:
+.. automatisch generiertes internes Entwurf 
+.. dynamisch live Version der TO(verändert und aktualisert sich fortlaufend) intern veröffentlicht 
+.. generierte TO extern veröffentlicht nach Absendung der Einladung zur nächsten Sitzung (nur mit Anträge die bereits vom Präsidum abgesegnet wurden und konform sind). TO bereit zur Besprechung.
+
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -30,20 +35,8 @@ Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 .	Akteur sieht sich TO an. 
 .	Der Use Case ist abgeschlossen.
 
-=== Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.

@@ -1,12 +1,12 @@
-= System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= System-Wide Requirements: I3 Antragsverwaltungstool
+Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-In diesem Dokument werden die systemweiten Anforderungen für das Projekt I3_Antragsverwaltungstool spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt I3 Antragsverwaltungstool spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
 
 * Systemweite funktionale Anforderungen (F),
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie

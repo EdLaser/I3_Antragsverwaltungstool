@@ -2,7 +2,7 @@
 == Use-Case: Antrag bearbeiten 
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Der Use Case beschreibt das Vorgehen zum Bearbeiten von Anträgen im internen Bereich.
+Der Use Case beschreibt das Vorgehen zum Bearbeiten von Anträgen im internen Bereich, sowohl von Wahlanträge als auch Anträge für Ressourcen.
 
 ===	Kurzbeschreibung der Akteure
 
@@ -12,10 +12,6 @@ Will Anträge bearbeiten und mögliche Fehler berichtigen.
 ==== Präsidium: 
 Will Anträge bearbeiten und mögliche Fehler berichtigen.
 
-==== Sprecher/in: 
-Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
-
-
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -24,27 +20,16 @@ Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
-.	Akteur öffnet Antrag im Antragsverwaltungstool.
+.	Der Use Case beginnt, wenn der Akteur offene Antrag im Antragsverwaltungstool öffnet.
 .	Akteur prüft, ob Antrag den Regularien entspricht.
 .	Akteur speichert Antrag ab/ gibt den Antrag frei.
+.   Akteur wählt zugehörigen Antragsstatus.
 .	Antrag wird im TOP eingeordnet.
 .	Der Use Case ist abgeschlossen.
 
 
-=== Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
@@ -53,10 +38,14 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 Präsidium hat den Antrag nach Regularien entsprechend geändert.
 
 ==== Uneindeutig ausgefüllt 
-. Präsidium kann Antrag nicht vollständig bearbeiten, da Aussagen des Antragsstellers uneindeutig sind. 
-. Präsidium nimmt Rücksprache zu Antragsteller. 
-. Antrag behält Status der Bearbeitung. 
+Sc01: Präsidium kann Antrag nicht vollständig bearbeiten, da Aussagen des Antragsstellers uneindeutig sind. 
 
+Sc02: Präsidium nimmt Rücksprache zu Antragsteller. Antragssteller muss dann ein Änderungsantrag einreichen.
+
+Sc03: Antrag behält Status der Bearbeitung. 
+
+==== Antragsverwalter bearbeitet Antrag bis es Regularien entspricht
+Präsidium kann Antrag so oft bearbeiten bis es alle Kriterien erfüllt.
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.

@@ -23,6 +23,7 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
     e.	Antragsteller beantwortet Fragen 
 3. Antragsteller löst Antragsbearbeitung aus. 
 4. System erstellt TOP 
+5. Der Use Case ist abgeschlossen.
 
 
 === Alternative Abläufe
@@ -35,7 +36,7 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== <Erfolgreiche Standardbeantragung > 
-    Sc1: Antragssteller X füllt den Antrag auf Personenwahl aus. Antrag erfolgreich abgegeben und weitergleitet sowie in Tagesordnung vermerkt. 
+    Sc01: Antragssteller X füllt den Antrag auf Personenwahl aus. Antrag erfolgreich abgegeben und weitergleitet sowie in Tagesordnung vermerkt. 
 ==== <Antragssteller wählt nicht gültige Eingabe bzw. füllt nicht alle Pflichtfelder aus>
     Sc02: Antragssteller wählt keine gültige Eingabe oder vergisst ein Feld auszufüllen. System fordert ihn auf die Eintragung zu ändern oder die fehlende zu ergänzen. 
 

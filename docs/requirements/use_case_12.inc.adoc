@@ -2,18 +2,16 @@
 == Use-Case: Antrag ablehnen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Der Use Case beschreibt das Vorgehen zum Ablehnen von Anträgen.
+Der Use Case beschreibt das Vorgehen zum Ablehnen von Anträgen. Dies kann während der Bearbeitung des Antrags sein sowohl auch bei bearbeitete Anträge während einer Sitzung.
 
 ===	Kurzbeschreibung der Akteure
 
 ==== Antragsverwalter: 
-Will Anträge bearbeiten und mögliche Fehler berichtigen.
+Will Anträge bearbeiten und mögliche Fehler berichtigen. Will Antragsstatus verändern.
 
 ==== Präsidium: 
 Will Anträge bearbeiten und mögliche Fehler berichtigen.
-
-==== Sprecher/in: 
-Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
+Will Antragsstatus verändern.
 
 
 === Vorbedingungen
@@ -21,35 +19,24 @@ Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
 . Benutzer ist angemeldet.
 . Antrag muss eingereicht sein und Regularien entsprechen.
 
+
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 .	Akteur öffnet Antrag im Antragsverwaltungstool.
 .	Akteur prüft, ob Antrag den Regularien entspricht.
-.	Akteur lehnt Antrag ab nach Abstimmung.
+.	Akteur lehnt Antrag ab.
+..  Akteur gibt eine Begründung ein (Kriterien je nach Antragsart)
 .	Antrag wird im TOP als abgelehnt bezeichnet.
 .	Der Use Case ist abgeschlossen.
 
-=== Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
 ==== Erfolgreiche Ablehnung
 
-Präsidium hat den Antrag nach Abstimmung abgelehnt.
+Präsidium hat den Antrag (nach Abstimmung) abgelehnt.
 
 
 

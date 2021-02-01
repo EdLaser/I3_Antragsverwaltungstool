@@ -1,20 +1,22 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Haushaltsplan anzeigen
+== Use-Case: Haushaltsplan anzeigen (Add-on)
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Der Use Case beschreibt das Vorgehen zum Ansehen des Haushaltsplanes.
+
 ===	Kurzbeschreibung der Akteure
 
 ==== Antragsverwalter: 
-Will Anträge bearbeiten und mögliche Fehler berichtigen.
+Will der Haushaltsplan sehen.
 
 ==== Präsidium: 
-Will Anträge bearbeiten und mögliche Fehler berichtigen.
+Will der Haushaltsplan sehen.
 
 ==== Sprecher/in: 
 Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
 
-
+==== alle weiteren Interessierten an der Studentischen Vertretung & Hochschulpolitik:
+Wollen der Haushaltsplan 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 . Benutzer ist angemeldet.
@@ -28,33 +30,19 @@ Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
 .	Der Use Case ist abgeschlossen.
 
 
-=== Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
-
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
 ==== Haushaltsplan aufrufen
-Die interessierte Person ruft im Antragsverwaltungstool die Option Haushaltsplan auf. 
+Die interessierte Person ruft im Antragsverwaltungstool die Option Haushaltsplan erfolgreich auf. 
 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-==== Existenz eines Haushaltsplans.
+==== Freigeben eines Haushaltsplans.
 
 
 === Besondere Anforderungen
