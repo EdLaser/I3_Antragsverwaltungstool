@@ -1,7 +1,6 @@
 = Architecture Notebook: {project-name}
-Antragsverwaltungstool 
-v1.0, 17.12.2020
 include::../_includes/default-attributes.inc.adoc[]
+{mail}
 
 == Zielsetzung
 Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implimentierung beeinflussen.

@@ -1,7 +1,7 @@
 = Glossar: {project-name}
-Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+{mail}
 // Platzhalter für weitere Dokumenten-Attribute
 
 

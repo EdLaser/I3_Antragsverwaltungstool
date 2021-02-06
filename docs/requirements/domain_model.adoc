@@ -1,7 +1,6 @@
-= Domain Model: {project-name}
-// Mitglieder
-Kontakt: {mail}
+= Domain Model: {project-name} 
 include::../_includes/default-attributes.inc.adoc[]
+{mail}
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Allgemeine Informationen
