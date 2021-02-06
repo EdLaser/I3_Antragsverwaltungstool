@@ -1,4 +1,4 @@
-== Use-Case 05: <Tagesordnung anzeigen>
+== Use-Case 05: Tagesordnung anzeigen
 ===	Kurzbeschreibung
 Der Use Case beschreibt das Vorgehen zum Ansehen der aktuellen Tagesordnung für die kommende Sitzung.
 

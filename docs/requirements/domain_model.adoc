@@ -1,10 +1,9 @@
 = Domain Model: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
-{localdatetime}
+// Mitglieder
+Kontakt: {mail}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
-
 == Allgemeine Informationen
 
-== ...
+== Hallihallo
