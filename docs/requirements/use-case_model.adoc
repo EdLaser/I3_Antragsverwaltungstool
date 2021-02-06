@@ -1,8 +1,7 @@
-= Use-Case Model: I3 Antragverwaltungstool
-Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>
+= Use-Case Model: {project-name}
 {localdatetime}
-
 include::../_includes/default-attributes.inc.adoc[]
+{mail}
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -47,20 +46,28 @@ include::../_includes/default-attributes.inc.adoc[]
 
 include::use_case_01.inc.adoc[]
 //<<<
-//include::use_case_02.inc.adoc[]
+include::use_case_02.inc.adoc[]
 //<<<
-//include::use_case_03.inc.adoc[]
+include::use_case_03.inc.adoc[]
 //<<<
-//include::use_case_04.inc.adoc[]
+include::use_case_04.inc.adoc[]
 //<<<
-//include::use_case_05.inc.adoc[]
+include::use_case_05.inc.adoc[]
 //<<<
-//include::use_case_06.inc.adoc[]
+include::use_case_06.inc.adoc[]
 //<<<
-//include::use_case_07.inc.adoc[]
+include::use_case_07.inc.adoc[]
 //<<<
-//include::use_case_08.inc.adoc[]
+include::use_case_08.inc.adoc[]
 //<<<
-//include::use_case_09.inc.adoc[]
+include::use_case_09.inc.adoc[]
 //<<<
-//include::use_case_10.inc.adoc[]
+include::use_case_10.inc.adoc[]
+//
+include::use_case_11.inc.adoc[]
+//
+include::use_case_12.inc.adoc[]
+//
+include::use_case_13.inc.adoc[]
+//
+include::use_case_14.inc.adoc[]
