@@ -1,11 +1,12 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 01: <Wahlantrag stellen 
+== Use-Case 01: Wahlantrag stellen 
 ===	Kurzbeschreibung
 Der Use Case beschreibt den kompletten Ablauf der Wahlantragsbearbeitung.
 
 ===	Kurzbeschreibung der Akteure
 ==== externer Antragssteller: 
-Möchte auf einen Posten im Stura kandidieren. 
+Möchte auf einen Posten im Stura kandidieren.
+
 ==== interner Antragssteller: 
 Möchte auf einen weiteren/anderen Posten im Stura kandidieren. 
 
