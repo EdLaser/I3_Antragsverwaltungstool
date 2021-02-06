@@ -4,4 +4,6 @@ include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Allgemeine Informationen
+Dieses Dokument veranschaulicht die Beziehungen zwischen den einzelnen Akteuren in der Nutzung des Tools und ihre Beziehungen untereinander.
 
+image::Domain_model.png[]
