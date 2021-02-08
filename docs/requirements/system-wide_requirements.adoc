@@ -1,7 +1,7 @@
-= System-Wide Requirements: I3 Antragsverwaltungstool
-Jacob Flaskamp <s81424@htw-dresden.de>; Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <ruben-david.kraus@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>
+= System-Wide Requirements: {project-name}
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+{mail}
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -37,15 +37,36 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
+* Möglichst einfaches Erlernen mit selbsterklärenden Elementen und Beschriftungen, eine Benutzung sollte ohne Vorwissen möglich sein
+* Intuitive Bedienung über Nutzerführung durch Text mit einfachen Erläuterungen
+* Vorerst wird nur eine deutsche Variante mit deutscher Formatierung entwickelt
+* Für die Antragsstellung ist eine Dauer von 10 Minuten vorgesehen
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
 === Zuverlässigkeit (Reliability)
+* Wartungsarbeiten werden mit den Wartungszeiten des HTW-Servers synchronisiert wenn nötig
+* Verfügbarkeit von 90% soll erzielt erwerden -> Maximal ca 2h zum Reparieren
+* Netzwerkausfall ist zum jetzigen Zeitpunkt nicht zu kalkulieren
+* Sicherung der Anträge soll alle 2h Erfolgen (außer im Wartungszustand)
+* Komplette Sicherung soll ein mal in der Woche erfolgen, wöchentlich wird das älteste Backup gelöscht um Datensicherheit zu gewährleisten
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
 === Effizienz (Performance)
+* Priorität der Stura internen Mitarbeiter bei der Benutzung
+* Maximal 2 Nutzer in der internen Bearbeitung
+* Maximal 10 Nutzer in der externen Antragsstellung
+* Performance muss nicht zu hoch ausfallen, da die Anzahl der Anträge gering ist -> Fokus auf interne Bearbeitung 
+* Limitierung der Performance durch Hardware nicht abzuschätzen
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 === Wartbarkeit (Supportability)
+* Anpassbarkeit hoch anzusetzen, da neue Funktionen immer einfach eingebunden werden sollen (einfaches Grundgerüst zur Erweiterung)
+* Kompatibilität zu Linux/Unix muss gegeben sein, ansonsten browserbasiert -> Allumfassend kompatibel zuerst aber nur Desktop 
+* Apache oder NGINX Webserver
+* Skalierbarkeit eher gering da Stura eher geringen Zuwachs an Nutzern verzeichnet
+* Konfigurierbarkeit nicht geplant
+* Installation nur ein mal auf Server notwendig
+
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
 == Zusätzliche Anforderungen

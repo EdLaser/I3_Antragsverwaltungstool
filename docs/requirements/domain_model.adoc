@@ -1,10 +1,9 @@
-= Domain Model: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
-{localdatetime}
+= Domain Model: {project-name} 
 include::../_includes/default-attributes.inc.adoc[]
+{mail}
 // Platzhalter für weitere Dokumenten-Attribute
 
-
 == Allgemeine Informationen
+Dieses Dokument veranschaulicht die Beziehungen zwischen den einzelnen Akteuren in der Nutzung des Tools und ihre Beziehungen untereinander.
 
-== ...
+image::Domain_model.png[]

@@ -1,10 +1,10 @@
 // --- 1. Projektthema -------------------------
 = SE I - Belegabgabe: {project-name}
 // --- 2. Teammitglieder -----------------------
-Richard Friese <richard.friese@htw-dresden.de>; Andreas Gröber <andreas.groeber@htw-dresden.de>; Jasmin Henn <jasmin.henn@htw-dresden.de>; Ruben-David Kraus <s80350@htw-dresden.de>; Richard Müller <richard.mueller@htw.dresden.de>; Duy Tien Nguyen <s80287@htw-dresden.de>; Amanda Wer Estrada <amanda.werestrada@htw-dresden.de>; Jacob Flaskamp <s81424@htw-dresden.de>
-
-// ---------------------------------------------
+{localdatetime}
 include::../docs/_includes/default-attributes.inc.adoc[]
+{mail}]
+// ---------------------------------------------
 :doctype: book
 :toc:
 :toclevels: 2
@@ -88,7 +88,7 @@ include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,levelof
 include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Design
-include::{docs-development}/design.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+//include::{docs-development}/design.adoc[lines=1..1;4..-1,leveloffset=+1]
+//<<<
 
 // ---------------------------------------------

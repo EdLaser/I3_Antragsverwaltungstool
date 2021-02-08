@@ -9,7 +9,7 @@
 | Datum
 
 | Beginn der Iteration | 17. November 2020
-| 1. Treffen im Discord mit gesammten Team | 26. November 2020
+| 1. Treffen im Discord mit gesamten Team | 26. November 2020
 | 1. Kundenmeeting | 9. Dezember 2020
 | 2. Kundenmeeting | 16. Dezember 2020
 | Ende der Iteration | 20. Dezember 2020
@@ -31,11 +31,6 @@
 == Aufgabenzuordnung
 
 Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
-[%header, cols="3,1,1,1,2,1,1,1,1"]
-|===
-| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
-| x | x | x | x | x | x | x | x | x
-|===
 
 siehe Task List
 
@@ -70,6 +65,3 @@ siehe Task List
 | Projektstatus	| Grün
 |===
 
-* a
-* b
-* c
