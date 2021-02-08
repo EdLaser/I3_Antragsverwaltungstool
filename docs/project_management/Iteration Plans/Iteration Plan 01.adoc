@@ -9,7 +9,7 @@
 | Datum
 
 | Beginn der Iteration | 17. November 2020
-| 1. Treffen im Discord mit gesamtem Team | 26. November 2020
+| 1. Treffen im Discord mit gesamten Team | 26. November 2020
 | 1. Kundenmeeting | 9. Dezember 2020
 | 2. Kundenmeeting | 16. Dezember 2020
 | Ende der Iteration | 20. Dezember 2020
