@@ -6,9 +6,10 @@ Der Use Case beschreibt das Vorgehen zum Ansehen von offenen Anträgen.
 
 ===	Kurzbeschreibung der Akteure
 ==== Antragssteller: 
-Der Antragssteller möchte wissen ob sein Antrag bearbeitet wurde.
-==== Präsidium
-Das präsidium möchte wissen welche Anträge noch zu bearbeiten sind.
+Der Antragssteller möchte wissen, ob sein Antrag bearbeitet wurde.
+
+==== Präsidium:
+Das Präsidium möchte wissen, welche Anträge noch zu bearbeiten sind.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer.
@@ -39,8 +40,7 @@ Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
 
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-
-==== Anträge müssen unverändert sein
+* Anträge müssen unverändert sein
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
