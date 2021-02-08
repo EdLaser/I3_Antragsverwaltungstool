@@ -36,8 +36,10 @@ siehe Task List
 
 == Bewertungskriterien
 * Übereinstimmung von Kundenvorstellung und Use-Cases
+** positives Feedback ui den Use-Cases erhalten und einige Punkte auf Wunsch des Kundens verändert 
 
 * Fertigstellung der Projektdokumentationen bis zum Ziel-Termin
+** Zieltermin eingehalten
 
 == Assessment
 
