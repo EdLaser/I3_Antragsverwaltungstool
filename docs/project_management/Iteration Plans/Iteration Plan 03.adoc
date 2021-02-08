@@ -28,30 +28,18 @@
 == Aufgabenzuordnung
 
 Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
-[%header, cols="3,1,1,1,2,1,1,1,1"]
-|===
-| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
-| x | x | x | x | x | x | x | x | x
-|===
+
 siehe Task List
 
-== Probleme (optional)
 
-[%header, cols="2,1,3"]
-|===
-| Problem | Status | Notizen
-| x | x | x 
-|===
 
 
 == Bewertungskriterien
 * Übereinstimmung von Kundenvorstellung und Use-Cases
-** a
-** b
-* Fertigstellung der Projektdokumentationen bis zum Ziel-Termin
-** a
-** b 
+** positives Feedback zu den Use-Cases erhalten und einige Punkte auf Wunsch des Kundens verändert 
 
+* Fertigstellung der Projektdokumentationen bis zum Ziel-Termin
+** Zieltermin eingehalten
 
 == Assessment
 
@@ -63,6 +51,3 @@ siehe Task List
 | Projektstatus	| Grün
 |===
 
-* a
-* b
-* c

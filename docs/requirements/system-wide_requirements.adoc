@@ -39,7 +39,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 * Möglichst einfaches Erlernen mit selbsterklärenden Elementen und Beschriftungen, eine Benutzung sollte ohne Vorwissen möglich sein
 * Intuitive Bedienung über Nutzerführung durch Text mit einfachen Erläuterungen
-* Vorerst wird nur eine deutsche Variante mit deutscher Formatierung enwtickelt
+* Vorerst wird nur eine deutsche Variante mit deutscher Formatierung entwickelt
 * Für die Antragsstellung ist eine Dauer von 10 Minuten vorgesehen
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
@@ -55,14 +55,14 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 * Priorität der Stura internen Mitarbeiter bei der Benutzung
 * Maximal 2 Nutzer in der internen Bearbeitung
 * Maximal 10 Nutzer in der externen Antragsstellung
-* Performance muss nicht zu hoch asufallen da die Anzahl der Anträge gering ist -> Fokus auf interne Bearbeitung 
+* Performance muss nicht zu hoch ausfallen, da die Anzahl der Anträge gering ist -> Fokus auf interne Bearbeitung 
 * Limitierung der Performance durch Hardware nicht abzuschätzen
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 === Wartbarkeit (Supportability)
-* Anpassbarkeit hoch anzusetzen da neue Funktionen immer einfach eingebunden werden sollen (einfaches Grundgerüst zur Erweiterung)
+* Anpassbarkeit hoch anzusetzen, da neue Funktionen immer einfach eingebunden werden sollen (einfaches Grundgerüst zur Erweiterung)
 * Kompatibilität zu Linux/Unix muss gegeben sein, ansonsten browserbasiert -> Allumfassend kompatibel zuerst aber nur Desktop 
-* Apache oder NGNX Webserver
+* Apache oder NGINX Webserver
 * Skalierbarkeit eher gering da Stura eher geringen Zuwachs an Nutzern verzeichnet
 * Konfigurierbarkeit nicht geplant
 * Installation nur ein mal auf Server notwendig

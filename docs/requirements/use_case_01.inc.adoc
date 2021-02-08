@@ -5,7 +5,8 @@ Der Use Case beschreibt den kompletten Ablauf der Wahlantragsbearbeitung.
 
 ===	Kurzbeschreibung der Akteure
 ==== externer Antragssteller: 
-Möchte auf einen Posten im Stura kandidieren. 
+Möchte auf einen Posten im Stura kandidieren.
+
 ==== interner Antragssteller: 
 Möchte auf einen weiteren/anderen Posten im Stura kandidieren. 
 
@@ -21,33 +22,35 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
     c.	System generiert Antragskennziffer
     d.	Antragsteller wählt seine Rolle aus 
     e.	Antragsteller beantwortet Fragen 
-3. Antragsteller löst Antragsbearbeitung aus. 
+3. Antragsteller löst Antragsbearbeitung aus.
 4. System erstellt TOP 
-5. Der Use Case ist abgeschlossen.
+5. Der Use Case ist abgeschlossen
 
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== <Alternativer Ablauf 1>
 (a), (c) und (d) Antworten entsprechen nicht den Gültigkeitsregeln
+
   		a. System fordert Antragsteller auf, diese zu berichtigen 
 		b. Antragsteller berichtigt Angaben, Fortsetzung Standartablauf
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Erfolgreiche Standardbeantragung > 
-    Sc01: Antragssteller X füllt den Antrag auf Personenwahl aus. Antrag erfolgreich abgegeben und weitergleitet sowie in Tagesordnung vermerkt. 
-==== <Antragssteller wählt nicht gültige Eingabe bzw. füllt nicht alle Pflichtfelder aus>
+==== Erfolgreiche Standardbeantragung 
+    Sc01: Antragssteller X füllt den Antrag auf Personenwahl aus. Antrag erfolgreich abgegeben und weitergleitet sowie in Tagesordnung vermerkt.
+
+==== Antragssteller wählt nicht gültige Eingabe bzw. füllt nicht alle Pflichtfelder aus
     Sc02: Antragssteller wählt keine gültige Eingabe oder vergisst ein Feld auszufüllen. System fordert ihn auf die Eintragung zu ändern oder die fehlende zu ergänzen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-==== Antragssteller hat Formular komplett ausgefüllt
-==== Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
-==== Antrag wurde an Präsidium weitergeleitet.
-==== Antrag bekommt TOP und wird in TO aufgenommen.
+. Antragssteller hat Formular komplett ausgefüllt
+. Alle eingegebenen Daten und ausgewählten Optionen gespeichert
+. Antrag wurde an Präsidium weitergeleitet
+. Antrag bekommt TOP und wird in TO aufgenommen
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

@@ -19,7 +19,7 @@ Unser Projektteam besteht aus den 8 folgenden Personen mit jeweiligen Zuständig
 |Jacob Flaskamp | Implementierung / Test | Tien
 |Richard Friese | Analyse | Amanda
 |Andreas Gröber | Projektmanagement (in SE II) / Filler | Jasmin
-|Jasmin Henn    | Projektmanagement | Andi
+|Jasmin Henn    | Projektmanagement | Andreas
 |Ruben-David Kraus | Implementierung | Richard
 |Richard Müller    | Entwurf | Ruben-David
 |Duy Tien Nguyen   | Implementierung / Test | Jacob
@@ -66,3 +66,5 @@ Die fertige Software wird über den HTW Dresden Server laufen. Entweder über de
 
 
 == *Gewonnene Erkenntnisse*
+
+Ergänzung folgt nach Beendigung des Projektes in SE 2
