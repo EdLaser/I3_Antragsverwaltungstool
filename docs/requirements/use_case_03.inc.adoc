@@ -45,13 +45,4 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== Usability
-Der Use Case gehört zu den Hauptfunktionen des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
-Der Use Case muss einfach durchführbar für den Akteur sein. 
-
-==== Performance
-Die Anwendung muss in jedem Browser problemlos laufen.
-
-==== Gesetzlicher Rahmen
-Muss Datenschutz konform sein.
-Muss Hochschulgesetz konform sein.
+include::system-wide_requirements.adoc[]

@@ -54,4 +54,5 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+include::system-wide_requirements.adoc[]
+

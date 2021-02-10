@@ -11,6 +11,7 @@ Das Präsidium möchte sich auf nächste Sitzung vorbereiten oder sich generell 
 
 ==== alle weiteren Interessenten an der Studentischen Vertretung: 
 Alle weiteren anderen Interessenten an der Studentischen Vertretung möchten sich informieren.
+
 === Vorbedingungen
 Es ist eine Sitzung des Stura geplant und es wurden Anträge eingereicht sowie TOPs festgelegt.
 
@@ -33,8 +34,8 @@ Sc02: Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da ke
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-==== Neue TO muss abgespeichert und online gestellt werden. 
+* Neue TO muss abgespeichert und online gestellt werden. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+include::system-wide_requirements.adoc[]

@@ -29,10 +29,11 @@ Antragsteller hat bereits einen Antrag eingereicht.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-. Antragssteller hat Formular komplett ausgefüllt
-. Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
-. Antrag wurde an Präsidium weitergeleitet.
-. Antrag bekommt TOP und wird in TO aufgenommen.
+* Antragssteller hat Formular komplett ausgefüllt
+* Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
+* Antrag wurde an Präsidium weitergeleitet.
+* Antrag bekommt TOP und wird in TO aufgenommen.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+include::system-wide_requirements.adoc[]

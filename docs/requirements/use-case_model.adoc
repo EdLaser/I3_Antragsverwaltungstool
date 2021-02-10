@@ -35,9 +35,9 @@ include::../_includes/default-attributes.inc.adoc[]
 //A korrigiert 
 . UC13: Antrag vertagen
 //A korrigiert
-. Haushaltsplan ansehen (Add-on)
+. Add-on: (Haushaltsplan ansehen) 
 //A korrigiert UC14
-. (Information Mitgliederverwaltung über neues Mitglied)
+. Add-on: (Information Mitgliederverwaltung über neues Mitglied)
 //R use case 15
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.

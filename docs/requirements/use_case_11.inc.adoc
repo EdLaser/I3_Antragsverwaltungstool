@@ -51,20 +51,15 @@ Präsidium kann Antrag so oft bearbeiten bis es alle Kriterien erfüllt.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-==== Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung
+* Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung
 
-==== Antrag wurde von Präsidium verabschiedet 
+* Antrag wurde von Präsidium verabschiedet 
 
-==== Antrag wird TOP
-
+* Antrag wird TOP
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== Usability
-Der Use Case muss einfach durchführbar für der Antragsverwalter sein. Die Anträge müssen auch ordentlich und übersichtlich gestaltet werden.
-Der Use Case muss einfach durchführbar für den Akteur sein. 
+include::system-wide_requirements.adoc[]
 
-==== Performance
-Die Anwendung muss in jedem Browser problemlos laufen.
 

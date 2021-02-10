@@ -41,8 +41,9 @@ Präsidium möchte Priorität des TOP ändern. Präsidium wählt für TOP neue P
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== •	Neue TO muss abgespeichert und online gestellt werden. 
+*	Neue TO muss abgespeichert und online gestellt werden. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+include::system-wide_requirements.adoc[]
+
