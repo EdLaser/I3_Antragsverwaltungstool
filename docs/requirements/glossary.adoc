@@ -13,26 +13,26 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
 // |Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
-| Änderungsantrag |Formular für die Bearbeitung/Ergänzung/Korrektur eines bereits existierenden und eingereichten Antrag.   |(keine)
+| Änderungsantrag |Formular für die Bearbeitung/Ergänzung/Korrektur eines bereits existierenden und eingereichten Antrages.   |(keine)
 |Antrag|Gesuch, Forderung|Anfrage, Anliegen. Forderung|
 Antrag (offen)|Antrag, welcher eingereicht wurde, aber noch nicht vollständig vom Präsidium bearbeitet wurde.| offener Antrag|
-Antragssteller|jemand, der einen Antrag stellt|Bewerber, Kandidat, Interessent|
-Antragsverwalter|Person, die für einen Antrag verantwortlich ist, es in Ordnung hält und betreut|Administrator, Manager|
+Antragssteller|Jemand, der einen Antrag stellt.|Bewerber, Kandidat, Interessent|
+Antragsverwalter|Person, die für einen Antrag verantwortlich ist, ihn in Ordnung hält und betreut|Administrator, Manager|
 Beschluss|[gemeinsam festgelegte] Entscheidung; Ergebnis einer Beratung|Entscheidung, Enschließung, Resolution|
-Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen Mitteln dient, der zur Erfüllung der staatlichen Aufgaben im Bewilligungszeitraum voraussichtlich notwendig ist. In diesem Fall, die finanzielle Mitter, die den Stura zur Verfügung stehen. |Finanzplan, Etat|
-Hochschule für Technik und Wirtschaft Dresden|Bildungsinstitution mit Fokus auf den technischen und wirtschaftliche Studiengänge |(keine)|
-Plänum |Vollversammlung einer Körperschaft, besonders der Mitglieder eines Parlaments. |Vollversammlung|
+Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen Mitteln dient, der zur Erfüllung der staatlichen Aufgaben im Bewilligungszeitraum voraussichtlich notwendig ist. In diesem Fall, die finanzielle Mittel, die dem Stura zur Verfügung stehen. |Finanzplan, Etat|
+Hochschule für Technik und Wirtschaft Dresden|Bildungsinstitution mit Fokus auf technische und wirtschaftliche Studiengänge |(keine)|
+Plenum |Vollversammlung einer Körperschaft, besonders der Mitglieder eines Parlaments. |Vollversammlung|
 Präsidium|Leitendes Gremium einer Versammlung.|Vorsitz, Direktorium, Führerschaft|
 Referat|Abteilung einer Behörde als Fachgebiet eines Referenten.|Abteilung, Sektion|
 Referatskollegium|Das Referatskollegium ist die Gesamtheit aller Referate.|(keine)|
-Referatsleitung|Die Referatsleitung oder der von der Referatsleitung zur Vertretung des Referates im Referatskollegium bestimmtes Mitglied des Referates vertreten das Referat.|(keine)|
+Referatsleitung|Ein von der Referatsleitung zur Vertretung des Referates im Referatskollegium bestimmtes Mitglied.|(keine)|
 Ressourcen|Bestand an Geldmitteln, Geldquelle, auf die jemand zurückgreifen kann. |Bestand, Depot|
 
 Studentenrat|Eine Form der Studierendenvertretung an Hochschulen.|Studierendenrat|
 Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.|Agenda|
 Tagesordnungpunkt|Punkt einer Tagesordnung.|(keine)|
 vertagen|eine Sitzung o. Ä. ergebnislos abbrechen und eine weitere Sitzung zu einem späteren Zeitpunkt ansetzen|verschieben|
-Vorstand der Geschäftsführung|Die sind Sprecherinnen und Sprecher sowie Beauftragungen und gehören dem Referatskollegium mit beratender Stimme an.|Sprecher/innen|
+Vorstand der Geschäftsführung|Sprecherinnen und Sprecher sowie Beauftragte die dem Referatskollegium mit beratender Stimme angehören.|Sprecher/innen|
 |===
 
 

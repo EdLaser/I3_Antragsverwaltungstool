@@ -38,11 +38,11 @@ Will Anträge bearbeiten und mögliche Fehler berichtigen.
 Präsidium hat den Antrag nach Regularien entsprechend geändert.
 
 ==== Uneindeutig ausgefüllt 
-Sc01: Präsidium kann Antrag nicht vollständig bearbeiten, da Aussagen des Antragsstellers uneindeutig sind. 
+*Sc01:* Präsidium kann Antrag nicht vollständig bearbeiten, da Aussagen des Antragsstellers uneindeutig sind. 
 
-Sc02: Präsidium nimmt Rücksprache zu Antragsteller. Antragssteller muss dann ein Änderungsantrag einreichen.
+*Sc02:* Präsidium nimmt Rücksprache zu Antragsteller. Antragssteller muss dann ein Änderungsantrag einreichen.
 
-Sc03: Antrag behält Status der Bearbeitung. 
+*Sc03:* Antrag behält Status der Bearbeitung. 
 
 ==== Antragsverwalter bearbeitet Antrag bis es Regularien entspricht
 Präsidium kann Antrag so oft bearbeiten bis es alle Kriterien erfüllt.
@@ -51,11 +51,9 @@ Präsidium kann Antrag so oft bearbeiten bis es alle Kriterien erfüllt.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-==== Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung
-
-==== Antrag wurde von Präsidium verabschiedet 
-
-==== Antrag wird TOP
+. Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung
+. Antrag wurde von Präsidium verabschiedet 
+. Antrag wird TOP
 
 
 === Besondere Anforderungen

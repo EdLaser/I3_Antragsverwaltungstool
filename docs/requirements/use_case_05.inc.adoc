@@ -11,6 +11,7 @@ Das Präsidium möchte sich auf nächste Sitzung vorbereiten oder sich generell 
 
 ==== alle weiteren Interessenten an der Studentischen Vertretung: 
 Alle weiteren anderen Interessenten an der Studentischen Vertretung möchten sich informieren.
+
 === Vorbedingungen
 Es ist eine Sitzung des Stura geplant und es wurden Anträge eingereicht sowie TOPs festgelegt.
 
@@ -27,7 +28,6 @@ Sc01: Akteur ruft im Antragsverwaltungstool die Option Tagesordnung auf.
 
 ==== TO nicht vorhanden
 Sc02: Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da keine Sitzung mit Tagesordnungspunkten ansteht.
-
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.

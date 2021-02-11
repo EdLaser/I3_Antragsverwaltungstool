@@ -22,7 +22,7 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
     c.	System generiert Antragskennziffer
     d.	Antragsteller wählt seine Rolle aus 
     e.	Antragsteller beantwortet Fragen 
-3. Antragsteller löst Antragsbearbeitung aus.
+3. Antragsteller löst Antragsbearbeitung aus
 4. System erstellt TOP 
 5. Der Use Case ist abgeschlossen
 
