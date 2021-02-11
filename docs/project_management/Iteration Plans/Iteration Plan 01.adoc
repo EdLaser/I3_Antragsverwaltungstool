@@ -1,6 +1,6 @@
 = Iteration Plan 01: I3_Antragsverwaltungstool
 {localdatetime}
-
+:imagesdir: images
 
 == Meilensteine
 [%header, cols="3,1"]
@@ -65,3 +65,4 @@ siehe Task List <<../task_list.adoc#>>
 | Projektstatus	| Grün
 |===
 
+image::I1.jpg[]
