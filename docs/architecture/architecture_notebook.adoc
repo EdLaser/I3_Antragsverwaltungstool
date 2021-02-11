@@ -6,13 +6,12 @@ include::../_includes/default-attributes.inc.adoc[]
 Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implementierung beeinflussen.
 
 == Entwurfsziel und Philosophie 
-Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software Browserbassiert was sie im weitesten Sinne plattformunabhängig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
+Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software browserbasiert, was sie im weitesten Sinne plattformunabhängig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
 
-== Annahmen und Abhänigkeiten 
+== Annahmen und Abhängigkeiten 
 * Webserver NGNX oder Apache, bereits verwendet und Wissen auf Kundenseite vorhanden
 * LINUX/UNIX als Betriebssystem daher Entwicklung für diese Systeme
-* Unteres von Felix
-* z.B. Server von Rechenzentrum
+* Server von Rechenzentrum
 * Alle Technologien verwendbar, kein closed Source 
 
 == Architektonisch bedeutende Anforderungen (ergibt sich aus Use-Cases und Furbs+)
@@ -39,7 +38,7 @@ Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen ver
 * Zwischenspeicherung der eingereichten Anträge
 
 == Abstraktion
-Die Aufgabe des Systems ist es, das einreichen von Anträgen für Außenstehende und Mitglieder des Sturas zu vereinfachen. Dabei soll eine innovative Oberfläche helfen.
+Die Aufgabe des Systems ist es, das Einreichen von Anträgen für Außenstehende und Mitglieder des Sturas zu vereinfachen. Dabei soll eine innovative Oberfläche helfen.
 Das System generiert ebenfalls eine individuelle Tagesordnung für das Präsidium, welches über die eingereichten Anträge entscheidet und abstimmt. Hier wird mit einer Hierarchie gearbeitet, welche die passende Reinfolge der eingereichten Anträge gemessen an ihrer Wichtigkeit gewährleistet. Nach dem Verabschieden eines Antrages wird dieser in einer PDF-Datei abgespeichert.
 
 == Architektonischer Rahmen
@@ -51,4 +50,4 @@ Das System generiert ebenfalls eine individuelle Tagesordnung für das Präsidiu
 
 == Architektonische Ansichten
 Die Generierung der individuellen Tagesordnung ist das Herzstück des Systems und wird viel Zeit in Anspruch nehmen.
-Das Zwischenspeichern und Aufarbeiten der eingereichten Anträge für die Tagesordnung ebenfalls
+Das Zwischenspeichern und Aufarbeiten der eingereichten Anträge für die Tagesordnung ebenfalls.
