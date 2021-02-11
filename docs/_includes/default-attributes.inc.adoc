@@ -4,6 +4,7 @@
 :toc:
 :toc-title: Inhaltsverzeichnis
 :toc-levels: 2
+:imagesdir: images
 // Source highlighter
 :source-highlighter: highlightjs
 :figure-caption: Abbildung
