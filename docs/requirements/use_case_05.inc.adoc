@@ -29,7 +29,6 @@ Sc01: Akteur ruft im Antragsverwaltungstool die Option Tagesordnung auf.
 ==== TO nicht vorhanden
 Sc02: Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da keine Sitzung mit Tagesordnungspunkten ansteht.
 
-
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:

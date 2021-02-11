@@ -7,3 +7,11 @@ include::../_includes/default-attributes.inc.adoc[]
 Dieses Dokument veranschaulicht die Beziehungen zwischen den einzelnen Akteuren in der Nutzung des Tools und ihre Beziehungen untereinander.
 
 image::Domain_model.JPG[]
+
+test 1
+
+image::docs\requirements\images\Domain_model.jpg[]
+
+test 2
+
+image::docs\requirements\images\Domain_model.jpg[]

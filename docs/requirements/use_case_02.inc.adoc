@@ -30,11 +30,11 @@ Stellt Anträge auf Beschlüsse.
 ..	System generiert Antragskennziffer
 ..	Antragsteller gibt seine Rolle ein
 ..	Antragsteller beschreibt das Ressourcenbedürfnis
-.   Antragssteller füllt den Rest des Formulares aus.
-.	Antragsteller löst Antragsbearbeitung aus. 
-.   Antragssteller reicht Antrag ein.
-.	System erstellt TOP.
-.	Der Use Case ist abgeschlossen.
+.   Antragssteller füllt den Rest des Formulares aus
+.	Antragsteller löst Antragsbearbeitung aus
+.   Antragssteller reicht Antrag ein
+.	System erstellt TOP
+.	Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf

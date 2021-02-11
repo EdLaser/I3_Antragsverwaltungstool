@@ -15,8 +15,6 @@ Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 ==== Vorstand der Geschäftsführung
 Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. Besonders für abgesgnete TO. 
 
-
-
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 

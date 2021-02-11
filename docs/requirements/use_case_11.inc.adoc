@@ -38,11 +38,11 @@ Will Anträge bearbeiten und mögliche Fehler berichtigen.
 Präsidium hat den Antrag nach Regularien entsprechend geändert.
 
 ==== Uneindeutig ausgefüllt 
-Sc01: Präsidium kann Antrag nicht vollständig bearbeiten, da Aussagen des Antragsstellers uneindeutig sind. 
+*Sc01:* Präsidium kann Antrag nicht vollständig bearbeiten, da Aussagen des Antragsstellers uneindeutig sind. 
 
-Sc02: Präsidium nimmt Rücksprache zu Antragsteller. Antragssteller muss dann ein Änderungsantrag einreichen.
+*Sc02:* Präsidium nimmt Rücksprache zu Antragsteller. Antragssteller muss dann ein Änderungsantrag einreichen.
 
-Sc03: Antrag behält Status der Bearbeitung. 
+*Sc03:* Antrag behält Status der Bearbeitung. 
 
 ==== Antragsverwalter bearbeitet Antrag bis es Regularien entspricht
 Präsidium kann Antrag so oft bearbeiten bis es alle Kriterien erfüllt.
