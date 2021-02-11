@@ -1,4 +1,4 @@
-= Architecture Notebook: {project-name}
+= Architecture Notebook: I3_Antragsverwaltungstool
 include::../_includes/default-attributes.inc.adoc[]
 {mail}
 
