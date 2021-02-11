@@ -17,7 +17,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Test Cases
 
 === Wahlantrag stellen
-* Einreichen nur bei Vollständig ausgefülltem Antrag möglich
+* Einreichen nur bei vollständig ausgefülltem Antrag möglich
 
 === Ressourcenantrag stellen
 
