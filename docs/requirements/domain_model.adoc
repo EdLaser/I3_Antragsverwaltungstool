@@ -1,16 +1,15 @@
 = Domain Model: {project-name} 
 include::../_includes/default-attributes.inc.adoc[]
 {mail}
+:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Allgemeine Informationen
 Dieses Dokument veranschaulicht die Beziehungen zwischen den einzelnen Akteuren in der Nutzung des Tools und ihre Beziehungen untereinander.
 
-image::Domain_model.JPG[]
-
 test 1
 
-image::docs\requirements\images\Domain_model.jpg[]
+image::Domain_model.jpg[]
 
 test 2
 
