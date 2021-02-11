@@ -9,5 +9,3 @@
 :source-highlighter: highlightjs
 :figure-caption: Abbildung
 :table-caption: Tabelle
-// folders
-:imagesdir: images
