@@ -65,8 +65,4 @@ include::use_case_09.inc.adoc[]
 include::use_case_10.inc.adoc[]
 //
 include::use_case_11.inc.adoc[]
-//
-include::use_case_12.inc.adoc[]
-//
-include::use_case_13.inc.adoc[]
 
