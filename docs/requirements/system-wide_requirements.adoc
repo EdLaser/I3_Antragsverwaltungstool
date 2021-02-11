@@ -1,4 +1,4 @@
-= System-Wide Requirements: {Antragsverwaltungstool (I3)}
+= System-Wide Requirements: {project-name}
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 {mail}
