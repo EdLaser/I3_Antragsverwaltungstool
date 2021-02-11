@@ -28,7 +28,6 @@ Will Antrag vertagen.
 .   Antrag wird in kommende TO neu aufgelistet.
 .	Der Use Case ist abgeschlossen.
 
-
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Antrag an TO vertagen
@@ -65,7 +64,6 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-<<<<<<< HEAD
 
 ==== Usability
 Der Use Case muss einfach durchführbar für der Antragsverwalter sein. Die Anträge müssen auch ordentlich und übersichtlich gestaltet werden.
@@ -74,5 +72,3 @@ Der Use Case muss einfach durchführbar für den Akteur sein.
 ==== Performance
 Die Anwendung muss in jedem Browser problemlos laufen.
 
-=======
->>>>>>> 0ca8ad5d331269d55db6f94af5eb7507bffdb9e7
