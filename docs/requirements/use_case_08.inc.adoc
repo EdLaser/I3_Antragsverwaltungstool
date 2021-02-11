@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Offene Anträge ansehen
+== Use-Case 08: Offene Anträge ansehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Der Use Case beschreibt das Vorgehen zum Ansehen von offenen Anträgen im internen Bereich.

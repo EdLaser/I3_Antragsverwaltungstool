@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Antrag ablehnen
+== Use-Case 12: Antrag ablehnen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Der Use Case beschreibt das Vorgehen zum Ablehnen von Anträgen. Dies kann während der Bearbeitung des Antrags sein sowohl auch bei bearbeitete Anträge während einer Sitzung.

@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Antrag bearbeiten 
+== Use-Case 11: Antrag bearbeiten 
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Der Use Case beschreibt das Vorgehen zum Bearbeiten von Anträgen im internen Bereich, sowohl von Wahlanträge als auch Anträge für Ressourcen.
