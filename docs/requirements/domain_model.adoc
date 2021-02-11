@@ -1,6 +1,7 @@
 = Domain Model: {project-name} 
 include::../_includes/default-attributes.inc.adoc[]
 {mail}
+:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Allgemeine Informationen
