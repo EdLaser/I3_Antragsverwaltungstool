@@ -52,8 +52,7 @@ UC|Use Case|funktionale Anforderung eines Systems
 [%header]
 |===
 |Bezeichnung|	Definition |	Format | Gültigkeitsregeln | Aliase
-|Anmeldedaten|Zusammensetzung von Benutzername und Passwort.|String|Emailadresse muss @-Zeichen und Punkt enthalten.|Login
-|xx|xx|xx|xx|xx|
+|Anmeldedaten|Zusammensetzung von Benutzername und Passwort.|String|Emailadresse muss @-Zeichen und Punkt enthalten.|Login|
 |===
 
 
