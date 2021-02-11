@@ -1,51 +1,48 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 08: Offene Anträge ansehen
+== Use-Case 08: Tagesordnung bearbeiten
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Der Use Case beschreibt das Vorgehen zum Ansehen von offenen Anträgen im internen Bereich.
+Präsidium möchte die Tagesordnung bearbeiten.
 
 ===	Kurzbeschreibung der Akteure
-
-==== Antragsverwalter
-Der Antragsverwalter möchte wissen, ob es Anträge zu bearbeiten gibt.
-
-==== Präsidium
-Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
-
-==== Vorstand der Geschäftsführung
-Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. Besonders für abgesgnete TO. 
+==== Präsidium:  
+Ist nicht einverstanden mit der aktuellen TO.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-
-. Antragsverwalter ist angemeldet (hat Zugang, also er hat administrative Rechte und ist gleichzeitig Nutzer der Anwendung.) 
-. Es wurden schon Anträge eingereicht. 
+Es muss eine Tagesordnung geben und diese entspricht aktuell nicht den Bedürfnissen der aktuellen Sitzung.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
-.	Der Use Case beginnt, wenn Akteur den Antrag aufrufen möchte.
-.	Akteur ruft Antragsformulartool auf.
-.	Akteur ruft Liste der eingereichten Anträge auf. 
-.	Der Use Case ist abgeschlossen.
 
-
+. Aufruf des Antragsverwaltungstool durch das Präsidium.
+. Präsidium bearbeitet TO
+. TO abspeichern 
+. TO online stellen
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
- 
-==== Erfolgreiche Einsicht
-Interessierter kann den gewünschten Antrag aufrufen und ansehen.
 
-==== Gescheiterte Einsicht
-Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
+*Sc01:*
+TO vertagen
+Präsidium möchte gesamte TO vertagen. Dies geschieht über das Vertagen aller TOP.
+
+*Sc02:* TOP löschen 
+Präsidium möchte n TOPs löschen. Präsidium wählt zu löschende TOPs aus und entfernt diese.
+
+*Sc03:* TOP vertagen
+Präsidium möchte n TOPs vertagen. Präsidium wählt die zu vertagenden TOPs und verschiebt diese auf eine andere TO.
+
+*Sc04:* TOP verschieben
+Präsidium möchte die Reihenfolge der TO verschieben. Präsidium wählt dafür zu verschiebende TOP aus und ändert die Reihenfolge.
+
+*Sc05:* TOP neu gewichten 
+Präsidium möchte Priorität des TOP ändern. Präsidium wählt für TOP neue Prioritätszahl.
+
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
-
-* Anträge unverändert sein
-* Antragsnummer ist korrekt
-* Antrag hat einen Status: zum Präsidium eingereicht/in Bearbeitung/ freigegeben
+*	Neue TO muss abgespeichert und online gestellt werden. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
