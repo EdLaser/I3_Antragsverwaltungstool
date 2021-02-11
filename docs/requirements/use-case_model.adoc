@@ -9,35 +9,35 @@ include::../_includes/default-attributes.inc.adoc[]
 // ...
 == Identifizierte Use-Cases
 .Für Mitglieder 
-. UC01: Wahlantrag stellen 
-//R
-. UC02: Antrag für Ressourcen stellen 
+* UC01: Wahlantrag stellen 
+    
+* UC02: Antrag für Ressourcen stellen 
 //A korrigiert
-. UC03: Offene Anträge ansehen
+* UC03: Offene Anträge ansehen
 //R
-. UC04: Änderungsantrag vom Antragssteller 
+* UC04: Änderungsantrag vom Antragssteller 
 //R
-. UC05: Tagesordnung anzeigen
+* UC05: Tagesordnung anzeigen
 //R
-. Add-on: (Haushaltsplan ansehen)
-. Add-on: (Email an gewählten Kandidat) 
+* Add-on: (Haushaltsplan ansehen)
+* Add-on: (Email an gewählten Kandidat) 
 
 .Fürs Präsidium 
-. UC08: Offene Anträge ansehen
+* UC08: Offene Anträge ansehen
 //A korrigiert
-. UC09: Tagesordnung ansehen
+* UC09: Tagesordnung ansehen
 //A korrigiert
-. UC10: Tagesordnung bearbeiten
+* UC10: Tagesordnung bearbeiten
 //R
-. UC11: Antrag bearbeiten
+* UC11: Antrag bearbeiten
 //A korrigiert
-. UC12: Antrag ablehnen
+* UC12: Antrag ablehnen
 //A korrigiert 
-. UC13: Antrag vertagen
+* UC13: Antrag vertagen
 //A korrigiert
-. Add-on: (Haushaltsplan ansehen) 
+* Add-on: (Haushaltsplan ansehen) 
 //A korrigiert UC14
-. Add-on: (Information Mitgliederverwaltung über neues Mitglied)
+* Add-on: (Information Mitgliederverwaltung über neues Mitglied)
 //R use case 15
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
