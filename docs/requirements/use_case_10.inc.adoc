@@ -15,33 +15,34 @@ Es muss eine Tagesordnung geben und diese entspricht aktuell nicht den Bedürfni
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-1. Aufruf des Antragsverwaltungstool durch das Präsidium.
-2. Präsidium bearbeitet TO
-3. TO abspeichern 
-4. TO online stellen
+. Aufruf des Antragsverwaltungstool durch das Präsidium.
+. Präsidium bearbeitet TO
+. TO abspeichern 
+. TO online stellen
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-Sc01: TO vertagen
+*Sc01:*
+TO vertagen
 Präsidium möchte gesamte TO vertagen. Dies geschieht über das Vertagen aller TOP.
 
-c02: TOP löschen 
+*Sc02:* TOP löschen 
 Präsidium möchte n TOPs löschen. Präsidium wählt zu löschende TOPs aus und entfernt diese.
 
-Sc03: TOP vertagen
+*Sc03:* TOP vertagen
 Präsidium möchte n TOPs vertagen. Präsidium wählt die zu vertagenden TOPs und verschiebt diese auf eine andere TO.
 
-Sc04: TOP verschieben
+*Sc04:* TOP verschieben
 Präsidium möchte die Reihenfolge der TO verschieben. Präsidium wählt dafür zu verschiebende TOP aus und ändert die Reihenfolge.
 
-Sc05: TOP neu gewichten 
+*Sc05:* TOP neu gewichten 
 Präsidium möchte Priorität des TOP ändern. Präsidium wählt für TOP neue Prioritätszahl.
 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== •	Neue TO muss abgespeichert und online gestellt werden. 
+* Neue TO muss abgespeichert und online gestellt werden. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

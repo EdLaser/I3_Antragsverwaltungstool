@@ -36,15 +36,14 @@ Wenn Akteur im Schritt 1 des Standardablauf die TO aufruft und bearbeitet, dann
 . kann der Akteur direkt da der Antrag vertagen
 . Der Use Case wird im Schritt 5 fortgesetzt.
 
-
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Erfolgreiche Verschiebung
 Antragsverwalter hat den Antrag erfolgreich auf nächste TO verschoben.
 
-Sc01: Wenn der Antraf vor der Sitzung vertgt wurde (vor Veröffentlichung der TO), benötigt es eine Begründung.
+*Sc01:* Wenn der Antraf vor der Sitzung vertgt wurde (vor Veröffentlichung der TO), benötigt es eine Begründung.
 
-Sc02: Wenn der Antrag während der Sitzung vertagt wird, benötigt es eine schlüssige Begründung. Dies um die Transparenz der bereits veröffentlichte TO zu garantieren.
+*Sc02:* Wenn der Antrag während der Sitzung vertagt wird, benötigt es eine schlüssige Begründung. Dies um die Transparenz der bereits veröffentlichte TO zu garantieren.
 
 ==== Antrag taucht fehlerhaft in nächsten TO ein. 
 . Antrag wurde falsch in neue TO eingeordnet, nummeriert und ausgefüllt.
@@ -60,15 +59,12 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 ==== Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung.
 
-
-==== Antrag wurde von Präsidium verschoben.
-==== Antrag wird TOP in neue TO.
-==== Antrag behält Bearbeitungsstatus.
-
+. Antrag wurde von Präsidium verschoben.
+. Antrag wird TOP in neue TO.
+. Antrag behält Bearbeitungsstatus.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
 
 ==== Usability
 Der Use Case muss einfach durchführbar für der Antragsverwalter sein. Die Anträge müssen auch ordentlich und übersichtlich gestaltet werden.
