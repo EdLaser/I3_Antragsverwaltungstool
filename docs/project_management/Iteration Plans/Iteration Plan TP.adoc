@@ -30,7 +30,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | x | x | x | x | x | x | x | x | x
 |===
 
-bzw. siehe Task List <<task_list.adoc#>>
+bzw. siehe Task List <<../task_list.adoc#>>
 
 
 == Probleme (optional)
