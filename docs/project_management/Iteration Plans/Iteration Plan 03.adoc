@@ -29,14 +29,14 @@
 
 Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
-siehe Task List
+siehe Task List <<../task_list.adoc#>>
 
 
 
 
 == Bewertungskriterien
 * Übereinstimmung von Kundenvorstellung und Use-Cases
-** positives Feedback zu den Use-Cases erhalten und einige Punkte auf Wunsch des Kundens verändert 
+** positives Feedback zu den Use-Cases erhalten und einige Punkte auf Wunsch des Kundens hin verändert 
 
 * Fertigstellung der Projektdokumentationen bis zum Ziel-Termin
 ** Zieltermin eingehalten
