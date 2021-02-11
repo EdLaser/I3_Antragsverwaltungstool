@@ -136,56 +136,56 @@
 
 |19
 |Use-Cases bearbeiten
-|In progress
+|Done
 |
 |03
 |Richard und Amanda
 
 |20
 |Architecture-Notebook bearbeiten
-|In progress
+|Done
 |
 |03
-|Richard M. und Ruben
+|Richard M. und Ruben  
 
 |21
 |Vision in Bezug auf Stakeholder abklären
-|In progress
+|Done
 |
 |03
 |Richard
 
 |22
 |Essence Navigator bearbeiten
-|In progress
+|Done
 |
 |03
 |Jasmin
 
 |23
 |Test Cases erstellen
-|In progress
+|Done  
 |
 |03
-|noch offen
+|Richard M. und Ruben
 
 |24
 |Glossar vervollständigen
-|In progress
+|Done
 |
 |03
 |Richard und Amanda
 
 |25
 |Gewonnene Erkenntnisse in Projektplan ergänzen
-|In progress
+|Done
 |
 |03
 |Jasmin
 
 |26
 |Beleg.pdf dem StuRa zukommen lassen
-|In progress
+|Done
 |Axel Schiller
 |03
 |Jasmin

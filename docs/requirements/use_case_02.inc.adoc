@@ -70,3 +70,6 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 include::system-wide_requirements.adoc[]
+==== Gesetzlicher Rahmen
+Muss Datenschutz konform sein.
+Muss Hochschulgesetz konform sein (keine Matrikelnummer)

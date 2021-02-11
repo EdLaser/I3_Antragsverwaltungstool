@@ -1,4 +1,4 @@
-= Iteration Plan 01: I3_Antragsverwaltungstool
+= Iteration Plan Teamplate: I3_Antragsverwaltungstool
 {localdatetime}
 
 
@@ -29,6 +29,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 | x | x | x | x | x | x | x | x | x
 |===
+
+bzw. siehe Task List <<../task_list.adoc#>>
 
 
 == Probleme (optional)
