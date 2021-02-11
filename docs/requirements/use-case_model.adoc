@@ -23,17 +23,17 @@ include::../_includes/default-attributes.inc.adoc[]
 * Add-on: (Email an gewählten Kandidat) 
 
 .Fürs Präsidium 
-* UC08: Offene Anträge ansehen
+* UC06: Offene Anträge ansehen
 //A korrigiert
-* UC09: Tagesordnung ansehen
+* UC07: Tagesordnung ansehen
 //A korrigiert
-* UC10: Tagesordnung bearbeiten
+* UC08: Tagesordnung bearbeiten
 //R
-* UC11: Antrag bearbeiten
+* UC09: Antrag bearbeiten
 //A korrigiert
-* UC12: Antrag ablehnen
+* UC10: Antrag ablehnen
 //A korrigiert 
-* UC13: Antrag vertagen
+* UC11: Antrag vertagen
 //A korrigiert
 * Add-on: (Haushaltsplan ansehen) 
 //A korrigiert UC14
