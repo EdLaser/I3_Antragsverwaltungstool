@@ -2,13 +2,13 @@
 include::../_includes/default-attributes.inc.adoc[]
 
 
-== *Einleitung*
+== Einleitung
 
 
 
 Ziel des Projektes I3 Antragsmodul ist es eine browserbasierte Anwendung für den StuRa der HTW Dresden zu erstellen. Dabei soll das Tool auf die Abläufe des StuRas abgestimmt werden und auf Unix bzw. Linux laufen. Referatsleitungen des StuRas füllen Anträge aus, welchen durch das Antragsverwaltungstool ein Antragsdatum und eine Antragsnummer nach Systematik des StuRa zugewiesen wird. Das Tool soll daraus eine Tagesordnung für kommende Plenumssitzungen generieren.
 
-== *Projektorganisation*
+== Projektorganisation
 
 
 
@@ -40,14 +40,14 @@ Außerdem wurden innerhalb des Teams kleinere Gruppen gebildet, die sich jeweils
 |Jasmin Henn, Andreas Gröber | Projektplan, Risikoliste, Iteration Plan
 |Richard Müller | Architektur-Notizbuch, unterstützt Teams bei: Use Case Model, Iteration Plan
 |===========================================================================
-== *Projektpraktiken and Messwerte*
+== Projektpraktiken and Messwerte
 
 
 Als Vorlage für die Projektdokumentation nutzt unser Team OpenUP. Zudem werden unsere Teammeetings protokolliert und anschließend von einer zweiten Person kontrolliert, um alle besprochenen Themen festzuhalten. Kundenmeetings werden aufgezeichnet, sodass alle Teammitglieder die Wünsche der Stakeholder verfolgen können.
 
 
 
-== *Projektmeilensteine und -ziele*
+== Projektmeilensteine und -ziele
 Tabelle 3
 [cols="1,20,8,4",options="header"]
 |====================================================
@@ -59,12 +59,12 @@ Tabelle 3
 |====================================================
 
 
-== *Bereitstellung der Software*
+== Bereitstellung der Software
 
 
 Die fertige Software wird über den HTW Dresden Server laufen. Entweder über den StuRa oder das Rechenzentrum. Installation und Erstinbetriebnahme sind Projektbestandteile. Die Software wird während der Projektlaufzeit entwickelt und innerhalb dieser Zeit das letzte mal geupdatet.
 
 
-== *Gewonnene Erkenntnisse*
+== Gewonnene Erkenntnisse
 
 Ergänzung folgt nach Beendigung des Projektes in SE 2
