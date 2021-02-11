@@ -1,0 +1,60 @@
+= Meeting vom TT.MM.JJJJ
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jasmin 
+| Ja
+
+|Jacob 
+| Ja
+
+|Richard
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Ja
+
+|Amanda
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Use-cases überprüfen
+. ...
+. ...
+. ...
+
+===== *Einigungen und Beschlossenes:*
+. Treffen Donnerstag zum Besprechen Abgabe
+. ...
+. ...
+. ...
+
+===== *Fragen und Rücksprachen mit Kunden:*
+. ...
+
+
+===== *Fragen und Hinweise für Nachbearbeitung/Nächstes Meeting:*
+. ...
+. ...
+. ...
+. ...
+
+===== *Sonstige Notizen:*
+. ...
+. ...
+. ...
+. ...

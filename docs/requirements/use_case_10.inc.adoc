@@ -22,7 +22,7 @@ Es muss eine Tagesordnung geben und diese entspricht aktuell nicht den Bedürfni
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Szenario 1>
+
 Sc01: TO vertagen
 Präsidium möchte gesamte TO vertagen. Dies geschieht über das Vertagen aller TOP.
 

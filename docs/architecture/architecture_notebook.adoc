@@ -3,17 +3,17 @@ include::../_includes/default-attributes.inc.adoc[]
 {mail}
 
 == Zielsetzung
-Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implimentierung beeinflussen.
+Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implementierung beeinflussen.
 
 == Entwurfsziel und Philosophie 
-Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software Browserbassiert was sie im weitesten Sinne plattformunabhänig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-Ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert. 
+Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software Browserbassiert was sie im weitesten Sinne plattformunabhängig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
 
 == Annahmen und Abhänigkeiten 
 * Webserver NGNX oder Apache, bereits verwendet und Wissen auf Kundenseite vorhanden
-* LINUX/UNIX als Betriebssystem daher ENwticklung für diese Systeme
+* LINUX/UNIX als Betriebssystem daher Entwicklung für diese Systeme
 * Unteres von Felix
 * z.B. Server von Rechenzentrum
-* Alle technologien verwendbar, kein closed Source  
+* Alle Technologien verwendbar, kein closed Source 
 
 == Architektonisch bedeutende Anforderungen (ergibt sich aus Use-Cases und Furbs+)
 * Kein Java darf verwendet werden (Von Kunde vorgeschrieben)
@@ -23,24 +23,32 @@ Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen ver
 * Nutzerzahl soll gering gehalten werden (niedriger Traffic)
 * Lauffähig unter UNIX/LINUX
 * Bekanntes Webframework sinnvoll 
-* Datenschutz konformität mit Anmeldungen
+* Datenschutz Konformität mit Anmeldungen
 
 == Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Framworks, DBS-Managementsystem usw + Begründung)
-* JavaScript, sehr weit verbreitet & Vorwissen vorhanden
+* Javascript, sehr weit verbreitet & Vorwissen vorhanden
 * CSS daher auch notwendig 
 * HTML für Webseite
 * Webserver entweder NGNX oder Apache da vorhanden im Stura/HTW
-* Datenbank möglich aber eher nicht sinnvoll da Nutzerzahl nicht so hoch skaliert
+* Datenbank möglich, aber eher nicht sinnvoll da Nutzerzahl nicht so hoch skaliert
 
 == Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
-* Login mit Oberfläche und Backend
-* 
+* Log-in mit Oberfläche und backend
+* Generieren einer Tagesordnung
+* Sortierung der Tagesordnung
+* Zwischenspeicherung der eingereichten Anträge
 
 == Abstraktion
-Beispieltext
+Die Aufgabe des Systems ist es, das einreichen von Anträgen für Außenstehende und Mitglieder des Sturas zu vereinfachen. Dabei soll eine innovative Oberfläche helfen.
+Das System generiert ebenfalls eine individuelle Tagesordnung für das Präsidium, welches über die eingereichten Anträge entscheidet und abstimmt. Hier wird mit einer Hierarchie gearbeitet, welche die passende Reinfolge der eingereichten Anträge gemessen an ihrer Wichtigkeit gewährleistet. Nach dem Verabschieden eines Antrages wird dieser in einer PDF-Datei abgespeichert.
 
 == Architektonischer Rahmen
-Beispieltext
+* Kompatibilität zu allen gängigen Webbrowsern wie Chrome, Firefox, Safari etc.
+* Verwendung von HTML und CSS für die Oberfläche 
+* Javascript und falls nötig Python für die Mechaniken der Website
+* Konfigurieren des Linux/Unix Servers/Webservers als Vorbild soll die Struktur der HTW Webserver dienen
+* Generierung der Tagesordnung 
 
 == Architektonische Ansichten
-Beispieltext 
+Die Generierung der individuellen Tagesordnung ist das Herzstück des Systems und wird viel Zeit in Anspruch nehmen.
+Das Zwischenspeichern und Aufarbeiten der eingereichten Anträge für die Tagesordnung ebenfalls
