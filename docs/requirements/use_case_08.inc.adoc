@@ -15,8 +15,6 @@ Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 ==== Vorstand der Geschäftsführung
 Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. Besonders für abgesgnete TO. 
 
-
-
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
@@ -45,15 +43,13 @@ Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-==== Anträge unverändert sein
-==== Antragsnummer ist korrekt
-==== Antrag hat einen Status:
+. Anträge unverändert sein
+. Antragsnummer ist korrekt
+. Antrag hat einen Status:
 
-. zum Präsidium eingereicht
-
-. in Bearbeitung
-
-. freigegeben
+* zum Präsidium eingereicht
+* in Bearbeitung
+* freigegeben
 
 
 === Besondere Anforderungen
