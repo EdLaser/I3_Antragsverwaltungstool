@@ -73,7 +73,7 @@ include::{docs-project-management}/Iteration Plans/Iteration Plan 01.adoc[lines=
 include::{docs-project-management}/Iteration Plans/Iteration Plan 02.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 //Iteration 3
-include::{docs-project-management-Iteration Plans}/Iteration Plan 03.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/Iteration Plan 03.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 //Task-List
 include::{docs-project-management}/task_list.adoc[]
