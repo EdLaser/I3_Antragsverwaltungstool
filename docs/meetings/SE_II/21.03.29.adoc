@@ -1,0 +1,33 @@
+= Meeting vom 29.03.2021
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jacob 
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Zu klärende Sachverhalte:*
+. Datumsfindung
+
+===== *Einigungen und Beschlossenes:*
+. Meeting Wochenstart ca 17 Uhr
+. Meeting Wochenende gegen Abend, zum Reflect
+
+===== *Sonstige Notizen:*
+. Anfrage zum Meeting mit Anke geht raus, zeitlich eher Abends (ca 18 Uhr)

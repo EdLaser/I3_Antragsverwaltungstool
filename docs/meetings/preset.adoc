@@ -5,13 +5,7 @@
 |===
 |*Teilnehmer* | *Anwesend(J/N)*
 
-|Jasmin 
-|
-
 |Jacob 
-|
-
-|Richard
 |
 
 |Richard M.
@@ -22,9 +16,6 @@
 
 |Tien
 |
-
-|Amanda
-| 
 
 |Ruben
 |
