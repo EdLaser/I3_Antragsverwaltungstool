@@ -55,6 +55,18 @@ include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
 include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 
+= Entwurfsdokumentation
+* Architektur-Notizbuch
+* Test Cases
+* Design
+
+// Architektur-Notizbuch
+include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// Test Cases
+include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+
 = Projektdokumentation
 * Projektplan
 * Risikoliste
@@ -77,17 +89,5 @@ include::{docs-project-management}/Iteration Plans/Iteration Plan 03.adoc[lines=
 <<<
 //Task-List
 include::{docs-project-management}/task_list.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-
-= Entwurfsdokumentation
-* Architektur-Notizbuch
-* Test Cases
-* Design
-
-// Architektur-Notizbuch
-include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-// Test Cases
-include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // ---------------------------------------------
