@@ -8,9 +8,6 @@ https://www.stura.htw-dresden.de/stura/p/abv/antraege
 ==== Erläuterung Nummerierung Anträge
 https://www.stura.htw-dresden.de/stura/p/abv
 
-==== JavaScript
-https://jquery.com/
-
 ==== Ngninex Webserver
 https://www.nginx.com/
 Zusätliche Infos Nginx: https://kinsta.com/de/wissensdatenbank/was-ist-nginx/
@@ -27,3 +24,4 @@ https://www.w3schools.com/html/default.asp
 https://www.w3schools.com/whatis/whatis_js.asp
 https://www.w3schools.com/js/default.asp
 https://www.w3schools.com/jsref/default.asp
+https://jquery.com/
