@@ -1,6 +1,42 @@
 = Fragen an den Stura nach Auswertung mit Prof. Anke
 
 == Technisch
-== Umsetzung
+=== Welche Ressourcen werden uns zur Verfügung gestellt ? Wenn unklar dürfen wir fordern ?
+
+=== Ist eine englische Version notwendig ?
+
+=== Wie muss die verfügbarkeit ausfallen ?
+
+=== Wie sind Ausfälle einzuplanen ? Häufigkeit ?
+
+=== Dauer der Antragsstellung ?
+
+=== Wie oft sollen Backups gemacht werden ? Datensicherheit ?
+
+=== Wie wahrscheinlich ist es das neue Funktionen gebraucht werden ?
+
+=== Soll man die Oberfläche konfigurieren können ?
+
+== Nutzung
+=== Wie viele Personen nutzen das Tool intern simultan ?
+
+=== Wer genau nutzt das Tool ?
+
+=== Ist eine Nutzergrenze vorgesehen ?
+
+=== Wie viele Anträge werden normalerweise / Tag gestellt ?
+
+=== Wie viele ANträge werden pro Tag bearbeitet ?
+
+=== Wird nur am Desktop geabrietet oder auch an Mobilgeräten ? 
+
 == Anträge
-== Sitzungen 
+=== Wer geanu arbeitet mit Anträgen ?
+
+=== Welche Anträge gibt es idR ?
+
+=== Wie viele Anträge gibt es im Durchschnitt ?
+
+=== Wie oft wird normalerweise etwas verschoben ?
+
+=== Gehen Anträge verloren ?
