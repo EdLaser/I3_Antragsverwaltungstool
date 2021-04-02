@@ -16,7 +16,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System 
 Dieses Visions-Dokument bezieht sich auf das I3 Antragsverwaltungstool, das von Team I3 entwickelt wird. Das System wird es dem Stura der HTW Dresden erlauben, Anträge zu verwalten, indem Antragsformulare vervollständigt werden und automatisch in die Tagesordung der nächsten Sitzung eingeordnet werden, um damit einen schnelleren und leichteren Antragsverwaltungsprozess zu ermöglichen. Diese browserbasierte Anwendung soll das Problem der Unvollständigkeit der Formulare lösen und dem Stura informieren, wenn Anträge erstellt werden.
 
 === Definitionen, Akronyme und Abkürzungen
-siehe Glossar <<glossary.adoc#>>
+siehe xref:glosary.adoc#Einführung[Glossary].
 
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
