@@ -1,6 +1,8 @@
 = Fragen an den Stura nach Auswertung mit Prof. Anke
+(Evtl. n Tool für Wahlen einbinden)
 
-== Technisch
+== SE II
+=== Technisch
 ==== Welche Ressourcen werden uns zur Verfügung gestellt ? Wenn unklar dürfen wir fordern (5GB Speicher, Dual Core, 4 GB Ram) ?
 A: Wir sind relativ frei (Sollte auf LCX laufen)
 
@@ -22,8 +24,8 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 
 ==== Ist eine Datenbank notwendig ?
 
-== Nutzung
-==== Wie viele Personen sollen das Tool intern simultan nutzen ?
+=== Nutzung
+==== Wie viele Personen sollen das Tool intern simultan nutzen ? (Am besten 3-4 Schriftführer Accs)
 
 ==== Wer genau nutzt das Tool ?
 
@@ -39,7 +41,7 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 
 ==== Ist eine allumfassende Schulung notwendig ?
 
-== Anträge
+=== Anträge
 ==== Wer geanu arbeitet mit Anträgen ?
 
 ==== Dauer der Antragsstellung ?
