@@ -30,3 +30,7 @@
 ** (Backups löschen)
 * Supportability
 ** raus
+
+== Glossary 
+* Generell überarbeiten (besonders Datenstrukturen)
+* Auf Datenstrukturen im Text hinweisen 
