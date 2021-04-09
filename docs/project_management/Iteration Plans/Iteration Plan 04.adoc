@@ -1,0 +1,49 @@
+= Iteration Plan 03: I3_Antragsverwaltungstool
+{localdatetime}
+:imagesdir: images
+
+== Meilensteine
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 5. April 2021
+| Gespräch mit Ansprechperson zu Stura-Servern [um Requirments genau festzulegen] | 
+| Einarbeitung/Testen in/der Programme zur Implementierung  |  10.April
+| Überarbeitung der UseCases,(Systemwide)-Requirements und des Glossarys [zudem noch ergänzung/bearbeitung der Stakeholder und Akteure] über gesammte Iteration | 
+| Ende der Iteration | 19. April. 2021
+|===
+
+
+== Wesentliche Ziele
+
+* Test Cases erstellen?
+* Dokumentation vereinheitlichen und Struktur verbessern
+* Anforderungs-Analyse größtenteils beenden
+* 
+
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+
+siehe Task List <<../task_list.adoc#>>
+
+
+
+
+== Bewertungskriterien
+[yellow]#kommt noch#
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | ?
+| Assessment Datum | 19. April 2021
+| Teilnehmer | alle Teammitglieder
+| Projektstatus	| 
+|===
+
