@@ -225,5 +225,11 @@
 |04
 |Ruben
 
+|32
+|Test Cases erstellen
+|Pending
+|
+|04/05
+|[blue]#*xxx*#
 
 |===

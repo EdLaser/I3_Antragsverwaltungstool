@@ -40,7 +40,7 @@ Außerdem wurden innerhalb des Teams kleinere Gruppen gebildet, die sich jeweils
 |Jasmin Henn, Andreas Gröber | Projektplan, Risikoliste, Iteration Plan
 |Richard Müller | Architektur-Notizbuch, unterstützt Teams bei: Use Case Model, Iteration Plan
 |===========================================================================
-== Projektpraktiken and Messwerte
+== Projektpraktiken
 
 
 Als Vorlage für die Projektdokumentation nutzt unser Team OpenUP. Zudem werden unsere Teammeetings protokolliert und anschließend von einer zweiten Person kontrolliert, um alle besprochenen Themen festzuhalten. Kundenmeetings werden aufgezeichnet, sodass alle Teammitglieder die Wünsche der Stakeholder verfolgen können.
