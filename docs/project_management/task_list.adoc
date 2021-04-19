@@ -190,4 +190,46 @@
 |03
 |Jasmin
 
+|27
+|Prototypen erstellen / Einarbeiten in Programme [yellow]#*genaue Namen Ergänzen*#])
+|Pending
+|
+|04
+|Richard, Ruben, Tien
+
+|28
+|Akteure + Use_Cases überarbeiten
+|Pending
+|
+|04
+|Jacob
+
+|29
+|Glossary überarbeiten und Text vereinheitlichen
+|Pending
+|
+|04
+|Andreas
+
+|30
+|Use Case Modell erstellen
+|Pending
+|
+|04
+|[blue]#*xxx*#
+
+|31
+|Genaue Requirments mit Stura klären
+|Pending
+|[yellow]#*Axel Schiller?/Stura*#
+|04
+|Ruben
+
+|32
+|Test Cases erstellen
+|Pending
+|
+|04/05
+|[blue]#*xxx*#
+
 |===
