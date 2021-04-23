@@ -191,7 +191,7 @@
 |Jasmin
 
 |27
-|Prototypen erstellen / Einarbeiten in Programme [yellow]#*genaue Namen Ergänzen*#])
+|Prototypen erstellen / Einarbeiten in Programme [yellow]#*VS-Code,Java Script*#])
 |Pending
 |
 |04

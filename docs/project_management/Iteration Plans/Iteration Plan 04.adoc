@@ -9,9 +9,9 @@
 | Datum
 
 | Beginn der Iteration | 5. April 2021
-| Gespräch mit Ansprechperson zu Stura-Servern [um Requirments genau festzulegen] | 
+| Gespräch mit Ansprechperson zu Stura-Servern [um Requirments genau festzulegen] | -
 | Einarbeitung/Testen in/der Programme zur Implementierung  |  10.April
-| Überarbeitung der UseCases,(Systemwide)-Requirements und des Glossarys [zudem noch ergänzung/bearbeitung der Stakeholder und Akteure] über gesammte Iteration | 
+| Überarbeitung der UseCases,(Systemwide)-Requirements und des Glossarys [zudem noch ergänzung/bearbeitung der Stakeholder und Akteure] über gesammte Iteration | -
 | Ende der Iteration | 19. April. 2021
 |===
 
@@ -35,7 +35,7 @@ siehe Task List <<../task_list.adoc#>>
 
 
 == Bewertungskriterien
-[yellow]#kommt noch#
+- Mögliche Konsultation in späterer Iteration 
 
 == Assessment
 
