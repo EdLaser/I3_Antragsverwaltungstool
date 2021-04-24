@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Antragsverwaltungstool Demo</title>
+		<meta charset="utf-8" />	<!-- UTF-8 Zeichensatz -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />	<!-- Auslesen der Displayauflösung des Anzeige geräts -->
+		<link rel="stylesheet" href="sheets/styles.css" />
+		<link rel="icon" href="pictures/icon.png" />
+		<script src="javascript/jquery.js"></script>
+
+	</head>
+	<body>
+		<header>
+	<h1>Antragsverwaltungstool</h1>
+	</header>
+	<!-- Top navigation bar -->
+		<nav>
+			<div class="topnav">
+				<a class="active" href="#home">Home</a>
+				<a class="antrag" id="Antraege" href="formular1.html"></a>
+				<a href="#about">Link1</a>
+				<a href="#contact">Link2</a>
+				<div class="login-container">
+					<form action="/action_page.php">
+					<input type="text" placeholder="Username" name="username">
+					<input type="password" placeholder="Password" name="psw">
+					<button type="submit">Login</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		
+		<section>
+		<nav class="leftnav">
+			<ul>
+				<li><a href="Antrag1.html">Antrag 1</a></li>
+				<li><a href="#">Antrag 2</a></li>
+				<li><a href="#">Antrag 3</a></li>
+				<li><a href="#">Antrag 4</a></li>
+				<li><a href="#">Antrag 5</a></li>
+				<li><a href="#">Antrag 6</a></li>
+				<li><a href="#">Antrag 7</a></li>
+				<li><a href="#">Antrag 8</a></li>
+			</ul>
+		</nav>
+		
+		<article>
+			<h2>Wilkommen</h2>
+			<p>Das ist das Antragsverwaltungstool des Sturas der HTW-Dresden. Hier findest du alle Anträge die du beim StuRa einreichen kannst</p>
+		</article>
+		</section>
+
+		<section>
+			<input id="filezone" type="file">
+			<output id="out" style=" display:inline-block;width: 100px; height: 100px; border: 2px dimgray"></output>
+		</section>
+		<script src="javascript/fileHandle.js"></script>
+	</body>
+</html>

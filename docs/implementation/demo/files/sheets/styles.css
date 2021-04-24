@@ -1,0 +1,59 @@
+.topnav .login-container {
+    float: right;
+}
+.leftnav {
+    float: left;
+    width: 15%;
+    padding: 20px;
+}
+
+#antrag_stellen {
+    width: 600px;
+    float: left;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+#geschl_chose {
+    list-style: none;
+    float:left;
+    margin: 0;
+    padding: 0;
+}
+
+.in_antrag, textarea {
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+form section {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+form h3 {
+    margin: 5px;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+label span {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+}
+
+label {
+    position:relative;
+}
+
+fieldset {
+    vertical-align: bottom;
+    width: 150px;
+    box-sizing: border-box;
+    margin-left: 105px;
+}

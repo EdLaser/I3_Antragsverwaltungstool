@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Antragsverwaltungstool Demo</title>
+		<meta charset="utf-8" />	<!-- UTF-8 Zeichensatz -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />	<!-- Auslesen der Displayauflösung des Anzeige geräts -->
+		
+		<script src="../files/javascript/jquery.js"></script>
+		<link rel="icon" href="files/pictures/icon.png" />
+	</head>
+	<body>
+		<header>
+			<h1>Antragsverwaltungstool</h1>
+		</header>
+		
+		<nav>
+			<div class="topnav">
+			  <a class="active" href="Index.html">Home</a>
+			  <a href="#about">Link1</a>
+			  <a href="#contact">Link2</a>
+			  <div class="login-container">
+				<form action="/action_page.php">
+				  <input type="text" placeholder="Username" name="username">
+				  <input type="password" placeholder="Passwort" name="psw">
+				  <button type="submit">Login</button>
+				</form>
+			  </div>
+			</div>
+			<style>
+				.topnav .login-container {
+					float: right;
+				}
+			</style>
+		</nav>
+		
+		<section>
+		<nav class="leftnav">
+			<ul>
+				<li><a href="#">Antrag 1</a></li>
+				<li><a href="#">Antrag 2</a></li>
+				<li><a href="#">Antrag 3</a></li>
+				<li><a href="#">Antrag 4</a></li>
+				<li><a href="#">Antrag 5</a></li>
+				<li><a href="#">Antrag 6</a></li>
+				<li><a href="#">Antrag 7</a></li>
+				<li><a href="#">Antrag 8</a></li>
+			</ul>
+			<style>
+			.leftnav {
+				float: left;
+				width: 15%;
+				padding: 20px;
+				}
+			</style>
+		</nav>
+		
+		<article>
+			<h2>Antrag1</h2>
+			<form>
+				<label for="fname">Vorname:</label>
+				<input type="text" id="fname" name="fname" />
+				<label for="lname">Nachname:</label>
+				<input type="text" id="lname" name="lname" /><br><br>
+				
+				<label for="dat">Datum:</label>
+				<input type="date" id="dat" name="dat"/><br><br>
+				
+				<label for="mail">E-Mail:</label>
+				<input type="email" id="mail" name="mail" placeholder="example@try.org"/><br><br>
+				
+				<label for="inputtext">Anliegen</label>
+				<input type="text" id="inputtext" name="inputtext" />
+				
+				<br><br><input type="reset" value="Zurücksetzen"/><input type="submit" value="Senden" />
+			</form>
+		</article>
+			
+		</section>
+	</body>
+</html>
