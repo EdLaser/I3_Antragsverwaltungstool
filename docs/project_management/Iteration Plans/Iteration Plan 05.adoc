@@ -1,0 +1,48 @@
+= Iteration Plan 03: I3_Antragsverwaltungstool
+{localdatetime}
+:imagesdir: images
+
+== Meilensteine
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 5. April 2021
+|Grundfunktionen im Prototypen implementieren [yellow]#(Login, Dateiarbeit/speicherung)# | -
+|Testcases erstellen | -
+|Dokumentation bearbeiten (Korregieren/Struktur verbessern) | -
+| Ende der Iteration | 03. Mai. 2021
+|===
+
+
+== Wesentliche Ziele
+
+* Dokumentation koregieren -> Berichtigung als Grundlage für den Rest des Projektes
+* mögliche Probleme im Prototypen finden und  Lösungsstrategien entwickeln
+* Grundfunktionen Implementieren
+
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+
+siehe Task List <<../task_list.adoc#>>
+
+
+
+
+== Bewertungskriterien
+Prototyp läuft [red]#Ja/Nein# bzw. gennante [yellow]#Funtkionen# sind implementiert und funktionieren.
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | ?
+| Assessment Datum | 19. April 2021
+| Teilnehmer | alle Teammitglieder
+| Projektstatus	| 
+|===
+

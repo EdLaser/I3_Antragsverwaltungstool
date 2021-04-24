@@ -16,7 +16,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System 
 Dieses Visions-Dokument bezieht sich auf das I3 Antragsverwaltungstool, das von Team I3 entwickelt wird. Das System wird es dem Stura der HTW Dresden erlauben, Anträge zu verwalten, indem Antragsformulare vervollständigt werden und automatisch in die Tagesordung der nächsten Sitzung eingeordnet werden, um damit einen schnelleren und leichteren Antragsverwaltungsprozess zu ermöglichen. Diese browserbasierte Anwendung soll das Problem der Unvollständigkeit der Formulare lösen und dem Stura informieren, wenn Anträge erstellt werden.
 
 === Definitionen, Akronyme und Abkürzungen
-siehe Glossar <<glossary.adoc#>>
+siehe xref:glosary.adoc#Einführung[Glossary].
 
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
@@ -76,7 +76,7 @@ Beispiel
 //|===
 
 ==	Stakeholder Beschreibungen
-===	Zusammenfassung der Stakeholder (Mitglieder des Sturas)
+===	Zusammenfassung der Stakeholder
 
 [%header, cols="1,3,3"]
 |===
@@ -85,7 +85,12 @@ Beispiel
 | Sprecher/innen | beratende gewählte Mitglieder des Sturas, Studenten  | Nutzer der Anwendung und stellen Anträge für Beschlüsse und Personenwahlen, können selber Beschlüsse fassen
 | Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung, Verwaltung der Anträge|
 Gesetzgeber | gibt rechtliche Rahmenbediengungen vor (Datenschutz) | überwacht die Einhaltung des Gesetzes |
-jede studentische Person der HTW Dresden (potentielle Antragssteller) | Studenten | jeder mit Interesse an Amt und/oder Mithilfe im Stura | 
+Studierende | Studenten der HTW Dresden (potenzielle Antragsteller) | jeder mit Interesse an Amt und/oder Mithilfe im Stura | 
+Admin | IT-Mitarbeiter der Hochschule | überwacht und wartet die Server der HTW Dresden. Stellt Serverleistung für die Software bereit | 
+beschließendes Mitglied | ist an Entscheidungen des Sturas beteiligt | Repräsentieren der Studierenden. Stimmenabgabe zu wahlen und anderen Entscheidungen |
+Entwickler | die Entwickler der Software | Planung, Entwicklung und Bereitstellung von Antragsverwaltungstool |
+Antragsteller | Eine Person, welche einen Antrag eingereicht hat. Kann ein Mitglied des Sturas sein (intern), oder jede beliebige andere Person (extern) | Bereitschaft für eventuelle Rückmeldungen |
+Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern | 
 |===
 
 === Benutzerumgebung
@@ -124,6 +129,13 @@ Wiedervorlage von vertagten Anträgen | hoch | Verknüpfung des Tools mit der Ta
 Automatische Generierung der Tagesordnung| hoch |Verknüpfung mit der Anwendung, Wahlen werden priorisiert| SS2021 |
 Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas |
 
+|===
+
+[%header, cols="4,4,4"]
+|===
+|Antragsbezeichnung|    Zweck|  Inhalt
+|Wahlantrag | Antrag auf Wahl zu einem Stura-Posten | persönliche Daten des Antragstellers, Posten auf welchen kandidiert wird
+|Ressourcenantrag | Antrag auf Bereitstellung von Ressourcen/Mitteln | angefragte Mittel, Grund für Antrag
 |===
 
 

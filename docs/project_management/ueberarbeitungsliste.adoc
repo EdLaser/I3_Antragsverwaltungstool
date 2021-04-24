@@ -1,0 +1,36 @@
+= Beleg überarbeiten
+
+== Use Cases überarbeiten
+
+* Antragssteller (Akteur)
+** Antragstellen (UC)
+** (Änderungsantrag (UC4))
+* Schriftführer (Akteur)
+** Antrag beschließen (UC 10, 11)
+** Antragsinhalt überarbeiten (UC 09)
+* beschließendes Mitglied / Abgeroneter / Sturamitglied (wir sollten noch nach einem passenden Namen suchen als Akteur/Steakholder)
+** Tagesordung sehen (UC gilt auch für Schriftführer)
+
+== Steakholder / Akteure überarbeiten, neu definieren
+* Antragssteller
+* Schriftführer
+* beschließendes Mitglied / Abgeroneter / Sturamitglied (wir sollten noch nach einem passenden Namen suchen als Akteur/Steakholder)
+* Admin (IT-Mitarbeiter)
+* (Entwickler)
+* Stura Staturen etc.
+
+== System wide Requirements
+* Alle bis auf SWR 1 weg 
+* ggf neue definieren sollten welche auffallen/ einfallen
+
+== Requirements
+* Usability 
+** (leute kicken nach Zeit x)
+* Reliability
+** (Backups löschen)
+* Supportability
+** raus
+
+== Glossary 
+* Generell überarbeiten (besonders Datenstrukturen)
+* Auf Datenstrukturen im Text hinweisen 

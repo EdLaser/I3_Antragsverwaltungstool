@@ -1,0 +1,71 @@
+= Fragen an den Stura nach Auswertung mit Prof. Anke
+(Evtl. n Tool für Wahlen einbinden)
+
+== SE II
+=== Technisch
+==== Welche Ressourcen werden uns zur Verfügung gestellt ? Wenn unklar dürfen wir fordern (5GB Speicher, Dual Core, 4 GB Ram) ?
+A: Wir sind relativ frei (Sollte auf LCX laufen)
+
+==== Ist eine englische Version notwendig ?
+
+==== Wie muss die Verfügbarkeit ausfallen ?
+
+==== Wie sind Ausfälle einzuplanen ? Häufigkeit ?
+
+==== Wie oft sollen Backups gemacht werden ? Datensicherheit ?
+
+==== Wie viele Backups sind nötig ? Gibts da Gesetze ?
+
+==== Wie wahrscheinlich ist es das neue Funktionen gebraucht werden ?
+
+==== Soll man die Oberfläche konfigurieren können ?
+
+==== Wie lange darf das System offline sein ?
+
+==== Ist eine Datenbank notwendig ?
+
+=== Nutzung
+==== Wie viele Personen sollen das Tool intern simultan nutzen ? (Am besten 3-4 Schriftführer Accs)
+
+==== Wer genau nutzt das Tool ?
+
+==== Ist eine Nutzergrenze vorgesehen ?
+
+==== Wie viele Anträge werden normalerweise / Tag gestellt ?
+
+==== Wie viele Anträge werden pro Tag bearbeitet ?
+
+==== Wird nur am Desktop geabrietet oder auch an Mobilgeräten ? 
+
+==== Wer bekommt die Rechte zum Bearbeiten im Präsiudium ?
+
+==== Ist eine allumfassende Schulung notwendig ?
+
+=== Anträge
+==== Wer geanu arbeitet mit Anträgen ?
+
+==== Dauer der Antragsstellung ?
+
+==== Welche Anträge gibt es idR ?
+
+==== Wie viele Anträge gibt es im Durchschnitt ?
+
+==== Wie oft wird normalerweise etwas verschoben ?
+
+==== Wie lange soll die Dauer für Antragsstellung sein ?
+
+==== Gehen Anträge verloren ?
+
+==== Sollen Anträge geändert werden ? Und wenn ja wie ?
+
+==== Wer schreibt im Dokument mit ?
+
+==== Wie kommt die Tagesordnungspunkt ?
+
+==== Soll die Tagesordnung bearbeitet werden ?
+
+==== Wie laufen Abstimmungen ab ?
+
+==== Wie kommt Beschlussfähigkeit zustande ? Wie viele müssen anwesend sein ? Gibt es hier Regeln ?
+
+==== Wer ist stimmberechtigt ?
