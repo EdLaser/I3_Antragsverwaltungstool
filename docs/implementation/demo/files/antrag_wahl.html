@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Antragsverwaltungstool Demo</title>
+    <meta charset="utf-8"/>	<!-- UTF-8 Zeichensatz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />	<!-- Auslesen der Displayauflösung des Anzeige geräts -->
+    <link rel="stylesheet" href="sheets/styles.css"/>
+    <link rel="icon" href="pictures/icon.png"/>
+    <script src="javascript/jquery.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Antragsverwaltungstool</h1>
+    </header>
+  <!-- Top navigation bar -->
+    <nav>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a class="antrag" id="Antraege" href="antrag_wahl.html"></a>
+        <a href="#about">Link1</a>
+        <a href="#contact">Link2</a>
+        <div class="login-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="psw">
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="leftnav">
+      <ul>
+        <li><a href="Antrag1.html">Antrag 1</a></li>
+        <li><a href="#">Antrag 2</a></li>
+        <li><a href="#">Antrag 3</a></li>
+        <li><a href="#">Antrag 4</a></li>
+        <li><a href="#">Antrag 5</a></li>
+        <li><a href="#">Antrag 6</a></li>
+        <li><a href="#">Antrag 7</a></li>
+        <li><a href="#">Antrag 8</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section>
+        <article>
+          <h2>Wilkommen</h2>
+          <p>Das ist das Antragsverwaltungstool des Sturas der HTW-Dresden. Hier findest du alle Anträge die du beim StuRa einreichen kannst</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Antrag stellen</h2>
+        <form action="/create_form.php" method="post" accept-charset="UTF-8" id="antrag_stellen">
+          <h2><strong>Antragsnummer:99999</strong></h2>
+          <!-- Antragstite -->
+          <section>
+            <h3>Antrag/Titel</h3>
+            <p>
+              <label for="ant_titel">
+                <input type="text" class="in_antrag_mall" id="ant_titel" placeholder="Antragstitel" style="width: 250px">
+              </label>
+            </p>
+          </section>
+          <!-- Name Steller -->
+          <section>
+            <h3>AntragsstellerIn</h3>
+            <p>
+              <label for="vorname">
+                <span>Vorname:</span>
+              </label>
+              <input type="text" class="in_antrag_mall" id="vorname" placeholder="Max">
+            </p>
+            <p>
+              <label for="nachname">
+                <span>Nachname:</span>
+              </label>
+              <input type="text" class="in_antrag_mall" id="nachname" placeholder="Mustermann">
+            </p>
+            <p>
+              <label for="email">
+                <span>E-Mail:</span>
+              </label>
+              <input type="email" class="in_antrag_mall" id="email" placeholder="Max@mustermann.de">
+            </p>
+          </section>
+          <!-- Datum -->
+          <section>
+            <h3>Antragsdatum</h3>
+            <p>
+              <label for="ant_datum">
+                <input type="date" id="ant_datum" placeholder="TT.MM.JJJJ">
+              </label>
+            </p>
+          </section>
+          <!-- Antragstext -->
+          <section>
+            <h3>Antragstext</h3>
+            <p>
+              <label for="antrag_text">
+                <textarea class="in_antrag_big" id="antrag_text" spellcheck="false" placeholder="Antragstext"></textarea>
+              </label>
+            </p>
+          </section>
+          <!-- Begründung -->
+          <section>
+            <h3>Begründung zum Antrag</h3>
+            <p>
+              <label for="antrag_begründung">
+                <textarea class="in_antrag_big" id="antrag_begründung" spellcheck="false" placeholder="Begründung"></textarea>
+              </label>
+            </p>
+          </section>
+          <!-- Vorschlag zum Verfahren -->
+          <section>
+            <h3>Vorschlag zum weiteren Verfahren</h3>
+            <p>
+              <label for="antrag_vorschlag">
+                <textarea class="in_antrag_big" id="antrag_vorschlag" spellcheck="false" placeholder="Voschlag"></textarea>
+              </label>
+            </p>
+          </section>
+          <!-- Anlagen -->
+          <section>
+            <p>
+              <label for="antrag_anlagen">
+                <input class="in_antrag_small" id="antrag_anlagen" spellcheck="false" placeholder="Anlagen">
+              </label>
+            </p>
+          </section>
+        </form>
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
