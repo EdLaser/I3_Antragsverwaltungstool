@@ -44,7 +44,11 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 === Anträge
 ==== Wer geanu arbeitet mit Anträgen ?
 
+=== Wer darf TO sehen ?
+
 ==== Dauer der Antragsstellung ?
+
+=== Welche Antragsaten soll es geben ?
 
 ==== Welche Anträge gibt es idR ?
 
