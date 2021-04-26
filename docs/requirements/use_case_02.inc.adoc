@@ -9,10 +9,7 @@ Der Use Case beschreibt den kompletten Ablauf der Beantragung eines Antrages fü
 Möchte Antrag stellen, sodass der Bedarf an Ressourcen in den einzelnen Referaten vom Stura gedeckt wird.
 
 ==== Vorstand der Geschäftsführung: 
-Stellt Anträg für Beschlüsse, können selber Beschlüsse fassen.
-
-==== Referatskollegium: 
-Stellt Anträge auf Beschlüsse.
+Stellt Antrag für Beschlüsse, können selber Beschlüsse fassen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer..
@@ -49,24 +46,20 @@ Wenn die Antworten des Antragsstellers im Schritt (a),(c) und (d) des Standardab
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
 ==== Sc01: Erfolgreiche Beantragung
-. Antragssteller füllt den Antrag für Ressourcen aus. 
-. Antrag erfolgreich abgegeben und weitergleitet. 
+    Antragssteller füllt den Antrag für Ressourcen aus. 
+    Antrag erfolgreich abgegeben und weitergleitet. 
 
 ==== Sc02: Antragssteller gibt nicht gültige Antworten ein bzw. füllt nicht alle Pflichtfelder aus
-. Antragssteller wählt keine gültige Eingabe oder vergisst ein Feld auszufüllen. 
-. System fordert ihn auf die Eintragung zu ändern oder die fehlende zu ergänzen. 
+    Antragssteller tätigt keine gültige Eingabe oder vergisst ein Feld auszufüllen. Das System fordert ihn auf die Eingabe zu ändern oder die fehlende Daten zu ergänzen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-* Antragssteller hat Formular komplett ausgefüllt.
 * Alle eingegebenen Daten und ausgewählten Optionen gespeichert.
 * Antrag wurde an Präsidium weitergeleitet.
 * Antrag bekommt TOP und wird in TO aufgenommen.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-xref:system-wide_requirements.adoc#System-wide Requirements[System-wide Requirements]

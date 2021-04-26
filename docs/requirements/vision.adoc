@@ -90,7 +90,7 @@ Admin | IT-Mitarbeiter der Hochschule | überwacht und wartet die Server der HTW
 beschließendes Mitglied | ist an Entscheidungen des Sturas beteiligt | Repräsentieren der Studierenden. Stimmenabgabe zu wahlen und anderen Entscheidungen |
 Entwickler | die Entwickler der Software | Planung, Entwicklung und Bereitstellung von Antragsverwaltungstool |
 Antragsteller | Eine Person, welche einen Antrag eingereicht hat. Kann ein Mitglied des Sturas sein (intern), oder jede beliebige andere Person (extern) | Bereitschaft für eventuelle Rückmeldungen |
-Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern | 
+Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern | Bearbeitung der Anträge nach Entscheidung des Stura
 |===
 
 === Benutzerumgebung
@@ -131,6 +131,7 @@ Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des St
 
 |===
 
+=== Antragsarten
 [%header, cols="4,4,4"]
 |===
 |Antragsbezeichnung|    Zweck|  Inhalt

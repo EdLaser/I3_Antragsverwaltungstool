@@ -13,7 +13,7 @@ Der Antragsverwalter möchte wissen, ob es Anträge zu bearbeiten gibt.
 Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
 
 ==== Vorstand der Geschäftsführung
-Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. Besonders für abgesgnete TO. 
+Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. Besonders für abgesegnete TO. 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -28,16 +28,14 @@ Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. Beson
 .	Akteur ruft Liste der eingereichten Anträge auf. 
 .	Der Use Case ist abgeschlossen.
 
-
-
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
  
-==== Erfolgreiche Einsicht
-Interessierter kann den gewünschten Antrag aufrufen und ansehen.
+==== Sc01: Erfolgreiche Einsicht
+    Interessierter kann den gewünschten Antrag aufrufen und ansehen.
 
-==== Gescheiterte Einsicht
-Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
+==== Sc02: Gescheiterte Einsicht
+    Es ist kein Antrag vorhanden. Akteur kann sein Bedürfnis nicht nachgehen.
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
@@ -50,5 +48,4 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-xref:system-wide_requirements.adoc#System-wide Requirements[System-wide Requirements]
 

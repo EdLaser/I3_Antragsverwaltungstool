@@ -4,12 +4,8 @@
 Der Use Case beschreibt den kompletten Ablauf der Wahlantragsbearbeitung.
 
 ===	Kurzbeschreibung der Akteure
-==== externer Antragssteller: 
+==== Antragssteller: 
 Möchte auf einen Posten im Stura kandidieren.
-
-==== interner Antragssteller: 
-Möchte auf einen weiteren/anderen Posten im Stura kandidieren. 
-
 
 === Vorbedingungen
 Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstool für seine Antragstellung gewählt. 
@@ -47,12 +43,8 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-. Antragssteller hat Formular komplett ausgefüllt
 . Alle eingegebenen Daten und ausgewählten Optionen gespeichert
 . Antrag wurde an Präsidium weitergeleitet
 . Antrag bekommt TOP und wird in TO aufgenommen
 
 === Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
- 
-xref:system-wide_requirements.adoc#System-wide Requirements[System-wide Requirements]
