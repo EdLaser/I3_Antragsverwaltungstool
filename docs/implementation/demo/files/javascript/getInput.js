@@ -1,4 +1,3 @@
-
 $('#antrag_submit').addEventListener('click', function ()
 {
     if(confirm('Antrag stellen ?')) {
