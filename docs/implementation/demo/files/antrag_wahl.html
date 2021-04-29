@@ -91,10 +91,12 @@
           <section>
             <h3>Antragsdatum</h3>
             <p>
-              <label for="antrag_datum">
-                <input type="date" id="antrag_datum" placeholder="TT.MM.JJJJ">
-              </label>
+                <span id="antrag_datum"></span>
             </p>
+              <script>
+                let dt = new Date();
+                document.getElementById('antrag_datum').innerHTML = dt.toLocaleDateString();
+              </script>
           </section>
           <!-- Antragstext -->
           <section>
