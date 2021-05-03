@@ -18,32 +18,23 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 
 | Änderungsantrag |Formular für die Bearbeitung/Ergänzung/Korrektur eines bereits existierenden und eingereichten Antrages.   |(keine) 
 
-| Antragssteller| Jemand, der einen Antrag stellt.| #Sturamitglied#?
+| Antragssteller| Jemand, der einen Antrag stellt.| #Sturamitglied#
 
 | Antragsverwalter|Person, die für einen Antrag verantwortlich ist, ihn in Ordnung hält und betreut|Administrator, Präsidiumsmitglied?|
 
 Beschluss|[gemeinsam festgelegte] Entscheidung; Ergebnis einer Beratung|Ergebnis, Resolution 
 
 |Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen Mitteln dient, der zur Erfüllung der staatlichen Aufgaben im Bewilligungszeitraum voraussichtlich notwendig ist. In diesem Fall, die 
-finanzielle Mittel, die dem Stura zur Verfügung stehen. |Finanzplan, Etat|
+finanzielle Mittel, die dem Stura zur Verfügung stehen. |Finanzplan, Etat
 
-Hochschule für Technik und Wirtschaft Dresden|Bildungsinstitution mit Fokus auf technische und wirtschaftliche Studiengänge [red]#???kann das weg# |
+|Plenum |Beschlussfähige Mehrheit des #Sturas#. |Vollversammlung
 
-|Plenum |Vollversammlung einer Körperschaft, besonders der Mitglieder eines Parlaments [red]#-> in diesem Fall des Sturas#. |Vollversammlung
+|Präsidium|Leitendes Gremium einer Versammlung.|
 
-|Präsidium|Leitendes Gremium einer Versammlung.|[red]#???#
+|Ressourcen|Bestand an vorhandenen Geldmitteln. | 
 
-|Referat [red]#kann weg?#|Abteilung einer Behörde als Fachgebiet eines Referenten.|Abteilung, Sektion 
-
-|Referatskollegium [red]#kann weg?#|Das Referatskollegium ist die Gesamtheit aller Referate.|(keine)
-
-|Referatsleitung [red]#kann weg?#|Ein von der Referatsleitung zur Vertretung des Referates im Referatskollegium bestimmtes Mitglied.|(keine)
-
-|Ressourcen|Bestand an vorhandenen Geldmitteln. |Bestand, Depot  
-[red]#kann weg?#
-
-| Studentenrat |Eine Form der Studierendenvertretung an Hochschulen. 
-[red]#Vertretung der Studenten an der# #Htw-Dresden#|Studierendenrat
+| Studentenrat |  
+Vertretung der Studenten an der #Htw-Dresden#|Studierendenrat
 
 | Tagesordnung|Gesamtheit der #Tagesordnungspunkte#, die bei einer Sitzung, Versammlung behandelt werden sollen.|Agenda / ToDoList|
 
@@ -51,7 +42,6 @@ Tagesordnungpunkt|Punkt einer Tagesordnung.|(keine)
 
 | vertagen|eine Sitzung oder Antrag ohne Beschluss abschließen und diese(n) in eine weitere Sitzung zu einem späteren Zeitpunkt wieder aufgreifen bzw. bearbeiten|verschieben
 
-| Vorstand der Geschäftsführung [red]#was soll das sein???#|Sprecherinnen und Sprecher sowie Beauftragte die dem Referatskollegium mit beratender Stimme angehören.|Sprecher/innen
 |x |x |x 
 |===
 
