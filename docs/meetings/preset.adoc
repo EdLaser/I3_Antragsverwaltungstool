@@ -1,7 +1,6 @@
 = Meeting vom TT.MM.JJJJ
 
-
-.Anwesenheit
+== Anwesenheit
 |===
 |*Teilnehmer* | *Anwesend(J/N)*
 
