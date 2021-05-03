@@ -14,7 +14,7 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
 1. Der Use Case beginnt, wenn der Antragssteller das Antragsverwaltungstool geöffnet hat.
 2. WHILE Antrag ist nicht vollständig 
     a.	Antragssteller gibt dem Antrag einen Namen
-    b.	Antragsteller gibt Datum ein
+    b.	Antragsteller gibt Datum ein // Nicht mehr korrekt, da Datum automatisch
     c.	System generiert Antragskennziffer
     d.	Antragsteller wählt seine Rolle aus 
     e.	Antragsteller beantwortet Fragen 
