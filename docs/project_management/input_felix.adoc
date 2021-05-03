@@ -1,0 +1,100 @@
+== Vision
+* Referenzen: externe Standards (OpenUP, ASCIDoc reference)
+* fachliche Motivation: Bestandteil des Studiums
+* Probleme an bisherigem/altem Antragsverwaltungs-Prozess genau beschreiben
+* Formulierung "automatisch" -> "teilautomatisch"
+* Statement:
+** Problem genau beschreiben ... warum ist Prozess nicht gut?
+** über welche Teile des Prozesses hilft das Produkt?
+* Positionierung des Produktes
+** andere Positionierungen für andere Nutzer?
+** haben alle das gleiche Ziel? (Antragsteller und Präsidium)
+* Stakeholder
+** Prof ergänzen. Gibt Dinge vor und hat Interesse an Produkt
+** ist Admin vom Laborbereich oder Stura?
+* Benutzerumgebung
+** Anzahl Studierende auf einen Bereich begrenzen
+** "die Anwendung kann mit jedem Browser durchgeführt werden" -> auf zB zwei beschränken. JEDER Browser ist overkill
+** Arten der Endgeräte ergänzen 
+** -> Architektureinschränkung
+** wie viele Antragssteller/ Antragsverwalter
+** Login/Authentifizierung für versch. Rollen festhalten
+** Benutzerumgebung für Admin (gleiche Punkte wie oben. Authentifizierung, welche Browser, wie viele Nutzer, mobil?)
+* Bedarfe
+** Dropdownmenü -> Auswahlmenü (UI Begriff ... nicht in der Vision. Lieber allgemein)
+* Antragsarten
+** Änderungsantrag ergänzen?
+* zus. Produktanforderungen
+** als Tabelle umgestalten
+** Bedarf, Priorität, Features, geplantes Release
+** Bedarfe und Hauptfunktionen von zusätzlichen Anforderungen trennen
+
+== use-case model
+* use-case Diagramm erstellen
+* Priorisierung der use-cases
+* Priorisierung der Anforderungen und use-cases mit Themensteller besprechen
+
+== uc01
+* stabile Verbindung
+* richtige Darstellung im Browser
+* (tool ist geöffnet)
+* Standardablauf
+** Eingabe Datum fällt weg
+** System speichert Antrag
+** Darstellung Unterpunkte
+* Alternativer Ablauf
+** Ablauf: "Korrektur wieder inkorrekt" aufnehmen
+** Überprüfung der Eingabe nach jedem Feld oder am Ende?
+** Link bei besondere Anforderungen zu vision (weitere Anforderungen)
+
+== syswq
+* Benutzbarkeit
+** intuitive Bedienbarkeit, Übersichtlichkeit: wann gegeben, wann nicht? mit Themensteller abklären
+* zus. Anforderungen
+** kein Java -> umformulieren
+** "optisch wie Antragsgrün" -> umformulieren
+** Anzahl Nutzer entfernen
+** Datenbank entfernen
+*org. Randbedingungen
+** zu beachtende Standards, Normen und Regeln: einzeln aufzählen, nicht beschreiben, vllt verlinken (zB. pdf-Standard, csv)
+* Persistenz als funktionale Anforderung aufnehmen (Datenspeicherung)
+
+== Projekt organisation
+* Maßnahmen
+
+== architecture notebook
+* Philosophie
+** was für ein Systemtyp? (Webanwendung)
+** wer sind die Nutzer?
+** auf Vision verweisen
+** datenschutz
+** Schnittstellen des Systems (zB pdfs)
+* Annahme und Abhängigkeiten
+** Annahmen = Vorbedingungen für use case
+*** Programmiersprachen bleiben nutzbar
+** Abhängigkeiten: zB Server läuft
+* Architektonisch bedeutende Anforderungen
+** Link zu syswq
+** Persistenz, Anzahl parallele Nutzer
+* Entscheidungen
+** keine Datenbank
+** alle Programmiersprachen/ Technologien(zB css)
+** UI des Prototyp beschreiben (Themensteller hat es als gut befunden) -> Entscheidungen des Prototypen werden beibehalten
+* Mechanismen
+** als Tabelle gestalten (Anforderungen, Mechanismus, Softwarekomponente die es realisiert)
+* Abstraktion
+** Antrag -> pdf Datei
+** für alles was als Daten im System dargestellt wird
+* Sichten
+** Betriebssicht ergänzen (welcher Teil der Software läuft wo?)
+** Mechanismen Tabelle
+** danach nur noch: Front- oder Backend?
+
+
+== sonstiges
+* Themensteller Prototypen testen lassen
+* das Wichtigste:
+. use-case model
+. domain model
+. architektur
+. projekt management 

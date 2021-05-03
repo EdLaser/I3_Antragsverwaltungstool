@@ -1,0 +1,104 @@
+= Meeting vom 03.05.2021
+
+== Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jacob 
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Ja
+
+|Tien
+| Nein
+
+|Ruben
+| Ja
+
+|===
+
+=== *Erledigte Arbeit:*
+. DateiArbeit fertig gestellt
+. Demo erstellt
+
+=== *Dos:*
+. DateiArbeit testen, Ruben
+. Webserver testen & Landingpage, Richard
+. Visionsdokument SE II, Andreas
+. Use-Cases anschauen und Priorisierung, Jacob
+
+=== *Felix input:*
+==== Vision
+. Referenzen steht nur das Template aka nichts
+. Referenzen meint externe Standards mit denen wir arbeiten. z.B. Prozessdokumentation für Open-Up, UML, Asciidoc,... -> Sachen mit denen wir arbeiten
+. Fachliche Motivation: Punkt fehlt das es im Rahmen Modul SE macht, wenn man das nicht weiß kann man denken das wir das als Unternehmen machen -> Rahmen in dem das Projekt stattfindet
+. Konkretes Pronlem mit dem alten Prozess ist nicht wirklich klar, was genau ist das Problem des alten Prozesses ? Beschreibung des Ablaufs rausnehmen und durch Problematik des alten Prozesses ersetzen
+. "Automatisch erzeugen" durch "halbautomatisch" ersetzen
+. Es fehlt das Problem des aktuellen Prozesses in problem Statement
+. Beim Statement bei Lösung: Unterstützt es den ganzen Prozess oder nur einen Teilprozess ? -> Noch schärfer Ausarbeiten und genauer formulieren. Inwieweit lösen wir das Problem
+. Positionierung des Produkts: Zwei Sichten beachten
+. Stakeholder: Anke als Stakeholder fehlt, gibt auch viel vor
+. Bei Admin: Jemand vom StuRa oder Hochschule ? Wer genau macht das in unserem Fall ?
+. Benutzerumgebung: Anzahl Studenten bzw. Antragsbearbeitern variiert. Wo sind die Grenzen ? Wie stark varriert es ? Größenordnung angeben (Bereich einschränken z.B. mehr als 100 weniger als 5000 -> So genau wie möglich)
+. "Anwendung kann mit jedem Browser durchgeführt werden". Zu ungenau, auf gängigste zwei Browser einschränken ! "Jeder" zu allgemeingültig (Safari fehlen öfter Standards bzw ist restriktiver)
+. Art der Engeräte ist hier interessanter ? Bildschirm und Auflösung, Mobilgerät, Desktop ?
+. Sollen sich Antragssteller / Antragsverwalter Authentifizieren ? -> Auch nicht Studenten -> Anzahl der Nutzern krass, da auch externe Nutzer, ist zu beachten ! Beim StuRa nachharken
+. Wie wird sich wie Authentifiziert? festhalten !
+. Hat der Admin des Systems eine eigene Benutzerumgebung ? Über welche Benutzerumgebung wird System gewartet, upgedatet, uws... ? Anzahl Nutzer ebenfalls bei Admin aufnehmen, auch Authentifizierung
+. In Visionen und Use-Cases UI-Begriffe vermeiden. Sprachlich allgemein bleiben
+. Zusätzliche Produktanforderungen: Tabelle überarbeiten, Hauptfunktionen von Zusatzfunktionen trennen (Spalten: Bennenung, Priorität!!!, Durch was wird es erfüllt, geplanter Release)
+. 2 Tabellen mit Haupt- und Zusatzfunktionen
+
+==== Use-Case Model
+. Unbedingt Use-Case-Diagram machen
+. Priorisierung wichtig -> Mit wichtigsten Use-Cases anfangen
+. Mit Themensteller absprechen
+. Use-Case 1: Vorbedingung ist zu dünn. Stabile Verbindung bei Webtool immer wichtig, Browser stellt Seite richtig dar!!!
+. Standardablauf: System speichert Antrag fehlt. Ist aber eigentlich das worum es eigentlich geht.
+. Bei Besondere Anforderungen im Use-Case kann ich auf zusätzliche Anforderungen in Vision verweisen (Link setzen)
+
+==== Sytsem-Wide-Requirements
+. Manche Dinge brauchen eine Definition (z.B. intuitive Bedienung... was ist das ? Messbare Größe?)
+. Ansonsten passt das ganz gut
+. Manchmal nicht die wirkliche Anforderung sondern Formulierung des Themenstellers verwendet -> z.B. kein Java... bedeutet wohl eher, dass es eine leichte Wartbarkeit des Systems geben, da JAVA sehr komplex
+. Oder optisch an Antragsgrün orientieren -> Er meint eher das es sich leicht bedienen lässt bzw. einen einfachen Prozess haben
+. "Zahl an registrierten Nutzern soll gering gehalten werden" muss raus, macht keinen Sinn
+. Verzicht auf Datenbank ist wenn wir es frei wählen können, keine Anforderung sondern eine Design-Entscheidung
+. Organisatorische Randbedingungen: z.B. Standards gegebn von der HTW, PDF Standard, Rechtliche Dinge, ... alle relevanten aufschreiben
+. SWR meist nicht direkt vom Themensteller auf die Nase gebunden
+
+==== Domain-Modell
+. Muss neu gemacht werden
+. Entitäten soll mit ihren Daten abgebildet werden
+. Es sollen Entitäten und ihre Beziehung herauskommen -> Aggregation & Komposition (UML-Klassendiagram)
+. NICHT für Aktivitäten und Interaktionen
+
+==== Projektplan
+. Nicht so nice aber wird überarbeitet
+
+==== Iterationsplan
+. Rückwirkende Betrachtung fehlt
+. Abweichung vom Plan sollte überprüft werden -> Was hat geklappt / nicht geklappt
+. Am Ende jeder Iteration Essence-Navigatorn (für Assessment
+
+==== Risikomanagement
+. Maßnahmen zum verhindern und Alternative beschreiben
+
+==== Architecture-Notebook
+. Architektur Philospophie: Ergänzen was ist das für ein Systemtyp ?
+. Für wen ist das System zugägnlich ? Aus welchem Personenkreis sind die Nutzer ?
+. Auf gewisse Sachen aus der Vision verweisen
+. Übersicht über Schnittstellen des Systems
+. Annahmen und Abhängigkeiten: Annahmen sind alle Dinge die als Vorbedingung in einem Use-Case stehen
+. SWR raussuschen die für Architektur wichtig sind und verweisen auf SWR Dokument
+. Alle Programmiersprachen / Technologien müssen noch rein -> Alles was wir einsetzen um Anforderungen zu realisieren
+. Ergänzen wie Daten durch System wandern
+. Mechanismen müssen nicht tabellarisch sein aber wäre sinnvoll
+. 1 Tabelle: Anforderung, Architekturmechanismus, Komponente die das realisiert
+. Sichten: Logische Sicht ist da, Betriebssicht fehlt -> Sicht der einzelnen Rechnerknoten. Welcher Teil der Software läut wo ? Frontend und Backend ?
+
+=> Als erstes am besten Use-Case-Model angehen, wichtigste Use-Cases finden und überprüfen, dem Themensteller zukommen lassen für finales OKAY, dann haben wir Implementierungsgrundlage. Dann könnte man Domain-Model machen, dann sieht man sehr leicht was wor gespeichert werden soll. Dann schrittweise Architektur. Management pro Iteration ein kleines Stück weitermachen. 
