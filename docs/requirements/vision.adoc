@@ -19,12 +19,14 @@ Dieses Visions-Dokument bezieht sich auf das I3 Antragsverwaltungstool, das von 
 siehe xref:glosary.adoc#Einführung[Glossary].
 
 === Referenzen
-(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
+Externe Quellen Open UP, Ascidoc etc.
 
 == Positionierung
 === Fachliche Motivation
 Der Stura der HTW Dresden verwaltet Antragsformulare noch analog. Wenn Bedürfnisse in den einzelnen Referaten entstehen, müssen diese einen Antrag stellen. Das Präsidium wird benachrichtigt und der Antrag bekommt eine Identifizierungsnummer. Dann werden Anträge manuell in die Tagesordnung nach einer bestimmten Priorität eingeordnet, um verarbeitet zu werden. Wenn der Antrag nicht in der Sitzung bearbeitet wird, wird er vertagt. Aufgrund dieses Prozesses verliert der Stura den Überblick und manche Anträge werden nicht richtig ausgefüllt. Die unberarbeiteten Anliegen gehen durcheinander und der Stura wird nicht benachrichtigt, wenn ein neues Formular erstellt wird. 
-Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools, um das Erstellen und Verwalten von Anträgen übersichtlich, einfach und automatisch zu gestalten.
+Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools, um das Erstellen und Verwalten von Anträgen übersichtlich einfach zu gestalten.
+
+[blue]#Bestandteil des Studiums SE2#
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
 === Problem Statement
@@ -33,7 +35,7 @@ Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten
 |===
 |Das Problem |	die unübersichtliche Bearbeitung der Anträge
 |betrifft |	alle Mitglieger des Sturas, das Referatskollegium, das Präsidium sowie Sprecher/innen.
-|Die Auswirkung davon ist |	die suboptimale Leistung des Sturas und das langsame Bearbeiten von Anträgen 
+|Die Auswirkung davon ist |	die suboptimale Leistung des Sturas und das langsame Bearbeiten von Anträgen [blue]#fehleranfällig, Prozess uneffizient, Zeitaufwendig, uneinheitlich#
 |eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen und gemäß Priorisierung in der Tagesordung der folgenden Sitzung einzuordnen. Dies entspricht einer extrem beschleunigungten, transparenten und vereinfachten Überarbeitung von Anträgen. Das Präsidium wird entlastet.
 |===
 
@@ -63,7 +65,7 @@ Beispiel
 |Im Gegensatz zur	|manuelle Verwaltung der Anträge
 |Unser Produkt|	erstellt Antragsvorlagen teilautomatisch und verknüpft die ausgefüllten Anträgen mit der Tagesordung für folgende Sitzungen.
 |===
-
+[blue]#2 Sichten Antragssteller, Präsidium# 
 
 //Beispiel Produkt:
 //|===
@@ -86,25 +88,31 @@ Beispiel
 | Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung, Verwaltung der Anträge|
 Gesetzgeber | gibt rechtliche Rahmenbediengungen vor (Datenschutz) | überwacht die Einhaltung des Gesetzes |
 Studierende | Studenten der HTW Dresden (potenzielle Antragsteller) | jeder mit Interesse an Amt und/oder Mithilfe im Stura | 
-Admin | IT-Mitarbeiter der Hochschule | überwacht und wartet die Server der HTW Dresden. Stellt Serverleistung für die Software bereit | 
+Admin | IT-Mitarbeiter der Hochschule [blue]#Stura oder Laborbereich# | überwacht und wartet die Server der HTW Dresden. Stellt Serverleistung für die Software bereit | 
 beschließendes Mitglied | ist an Entscheidungen des Sturas beteiligt | Repräsentieren der Studierenden. Stimmenabgabe zu wahlen und anderen Entscheidungen |
 Entwickler | die Entwickler der Software | Planung, Entwicklung und Bereitstellung von Antragsverwaltungstool |
 Antragsteller | Eine Person, welche einen Antrag eingereicht hat. Kann ein Mitglied des Sturas sein (intern), oder jede beliebige andere Person (extern) | Bereitschaft für eventuelle Rückmeldungen |
 Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern | Bearbeitung der Anträge nach Entscheidung des Stura
+
+[blue]#Jürgen Anke hinzufügen#
 |===
 
 === Benutzerumgebung
 
 1. Antragssteller
-* Anzahl der Studenten variiert
+* Anzahl der Nutzer variiert [blue]#Größenordnung#
 * bei wiederholter Nutzung des Tools verringert sich die Bearbeitungszeit, da der Nutzer sich damit auskennt
 * Student ist an einem Antragprozess interessiert, da er intuitiv und aufwandsarm ist
-* die Anwendung kann mit jedem Browser durchgeführt werden
+* die [red]#Anwendung kann mit jedem Browser# durchgeführt werden
+
+* [blue]#Welche Geräte benutzen Studis#
 2. Antragsverwalter
+* [blue]#wie viele + Login + welche Browser+ nicht mobile#
 * feste, berechtigte Mitglieder des Sturas
 * Arbeitsaufwand hängt vom Formular ab (Richtigigkeit und Vollständigkeit)
 * Darstellung auf einer Desktopansicht
 
+[blue]#3. Admin --> Authentifizierung , einer, Browser etc.# 
 //Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
@@ -124,7 +132,7 @@ Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern |
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|Vorlagen der Anträge digitalisieren|sehr hoch|Drop-down Menü, Ankreuzfunktion, automatische Gererierung der Kennziffer des Antrags |SS2021|
+|Vorlagen der Anträge digitalisieren|sehr hoch|Auswahlverfahren, automatische Gererierung der Kennziffer des Antrags |SS2021|
 Wiedervorlage von vertagten Anträgen | hoch | Verknüpfung des Tools mit der Tagesordnung während der Versammlung, Zugang zur Liste von vertagten Anträgen|SS2021|
 Automatische Generierung der Tagesordnung| hoch |Verknüpfung mit der Anwendung, Wahlen werden priorisiert| SS2021 |
 Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des Sturas |
@@ -139,9 +147,12 @@ Verlinkung zum Haushaltsplan  | niedrig | Weiterleitung zum Haushaltsplan des St
 |Ressourcenantrag | Antrag auf Bereitstellung von Ressourcen/Mitteln | angefragte Mittel, Grund für Antrag
 |===
 
+[blue]#kommt noch was?#
 
 == Zusätzliche Produktanforderungen
   
+[blue]#Tabelle mit Bedarf, Priorität, Feature, Zweck?#
+
  * Die Anwendung soll eine ähnliche Interface zu Antragsgrün haben. 
 * Kein Java
 * Die browserbasierte Anwendung muss auf Linux und Unix laufen.
