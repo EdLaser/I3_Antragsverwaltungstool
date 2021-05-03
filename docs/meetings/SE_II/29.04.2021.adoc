@@ -1,0 +1,41 @@
+= Meeting vom 29.04.2021
+
+
+.Anwesenheit
+|===
+|*Teilnehmer* | *Anwesend(J/N)*
+
+|Jacob 
+| Ja
+
+|Richard M.
+| Ja
+
+|Andreas
+| Nein
+
+|Tien
+| Ja
+
+|Ruben
+| Ja
+
+|===
+
+===== *Erledigte Arbeit:*
+. Login formell geklärt
+. Dateiarbeit Schritt 1: Input in php, php ruft py auf, fertig aber nicht getestet
+
+===== *Einigungen:*
+. Rücksprachen mit StuRa klären
+. Login formell geklärt, muss getestet werden 
+. Antrag als Datenobjekt geklärt
+. Overlay designed
+. Erste konkrete Ansätze der Umsetzung
+. wie läuft Dateiarbeit ab
+
+===== *Dos / Tickets / Issues:*
+. Dateiarbeit Schritt 1 testen, Ruben
+. Antrag Anzeigen: csv zu php zu output auf Webseite, Ruben
+. Overlay basteln in finaler implementation Ordner, Richard
+. Login basteln, Richard
