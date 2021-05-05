@@ -32,7 +32,7 @@
     <!-- Left navigation bar -->
     <nav class="leftnav">
       <ul>
-        <li><a href="Antrag1.html">Antrag 1</a></li>
+        <li><a href="antrag1.html">Antrag 1</a></li>
         <li><a href="#">Antrag 2</a></li>
         <li><a href="#">Antrag 3</a></li>
         <li><a href="#">Antrag 4</a></li>
@@ -56,12 +56,12 @@
         <h2>Antrag stellen</h2>
         <form action="php/create_form.php" method="post" accept-charset="UTF-8" id="antrag_stellen">
           <h2><strong>Antragsnummer:99999</strong></h2>
-          <!-- Antragstite -->
+          <!-- Antragstitel -->
           <section>
             <h3>Antrag/Titel</h3>
             <p>
               <label for="antrag_titel">
-                <input type="text" class="in_antrag_mall" id="antrag_titel" placeholder="Antragstitel" style="width: 250px">
+                <input type="text" class="in_antrag_mall" id="antrag_titel" name="antrag_titel" placeholder="Antragstitel" style="width: 250px">
               </label>
             </p>
           </section>
@@ -72,19 +72,19 @@
               <label for="antrag_vorname">
                 <span>Vorname:</span>
               </label>
-              <input type="text" class="in_antrag_mall" id="antrag_vorname" placeholder="Max">
+              <input type="text" class="in_antrag_mall" id="antrag_vorname" name="antrag_vorname" placeholder="Max">
             </p>
             <p>
               <label for="antrag_nachname">
                 <span>Nachname:</span>
               </label>
-              <input type="text" class="in_antrag_mall" id="antrag_nachname" placeholder="Mustermann">
+              <input type="text" class="in_antrag_mall" id="antrag_nachname" name="antrag_nachname" placeholder="Mustermann">
             </p>
             <p>
               <label for="antrag_email">
                 <span>E-Mail:</span>
               </label>
-              <input type="email" class="in_antrag_mall" id="antrag_email" placeholder="Max@mustermann.de">
+              <input type="email" class="in_antrag_mall" id="antrag_email" name="antrag_email" placeholder="Max@mustermann.de">
             </p>
           </section>
           <!-- Datum -->
@@ -103,7 +103,7 @@
             <h3>Antragstext</h3>
             <p>
               <label for="antrag_text">
-                <textarea class="in_antrag_big" id="antrag_text" spellcheck="false" placeholder="Antragstext"></textarea>
+                <textarea class="in_antrag_big" id="antrag_text" name="antrag_text" spellcheck="false" placeholder="Antragstext"></textarea>
               </label>
             </p>
           </section>
@@ -112,7 +112,7 @@
             <h3>Begründung zum Antrag</h3>
             <p>
               <label for="antrag_grund">
-                <textarea class="in_antrag_big" id="antrag_grund" spellcheck="false" placeholder="Begründung"></textarea>
+                <textarea class="in_antrag_big" id="antrag_grund" name="antrag_grund" spellcheck="false" placeholder="Begründung"></textarea>
               </label>
             </p>
           </section>
@@ -121,7 +121,7 @@
             <h3>Vorschlag zum weiteren Verfahren</h3>
             <p>
               <label for="antrag_vorschlag">
-                <textarea class="in_antrag_big" id="antrag_vorschlag" spellcheck="false" placeholder="Voschlag"></textarea>
+                <textarea class="in_antrag_big" id="antrag_vorschlag" name="antrag_vorschlag" spellcheck="false" placeholder="Voschlag"></textarea>
               </label>
             </p>
           </section>
@@ -135,7 +135,7 @@
           </section>
           <!-- Bestätigen -->
          <section>
-             <button type="submit" id="antrag_submit">Bestätigen</button>
+             <button type="submit" id="antrag_submit" formmethod="post">Bestätigen</button>
          </section>
         </form>
       </section>
