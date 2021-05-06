@@ -4,9 +4,31 @@ include::../_includes/default-attributes.inc.adoc[]
 {mail}
 // Platzhalter für weitere Dokumenten-Attribute
 
-
 == Allgemeine Informationen
-// ...
+Die Tabelle enthält alle identifizierten Use-Cases.
+
+[blue]#hier fehlt noch das use-case model#
+[%header, cols="1,4,1,2"]
+|===
+|Nr | Use-Case | Priorität | Akteur
+|UC01 | Wahlantrag stellen | sehr hoch | Mitglied
+|UC02 | Antrag auf Ressourcen stellen | sehr hoch | Mitglied
+|UC03 | Offene Anträge Ansehen | hoch | Mitglied
+|UC04 | Änderungsantrag vom Antragsteller | mittel | Mitglied
+|UC05 | Tagesordnung anzeigen | niedrig | Mitglied
+|Add-On1 | Haushaltplan ansehen | niedrig | Mitglied
+|Add-On2 | Email an gewählten Kandidat | niedrig | Mitglied
+|UC06 | Offene Anträge ansehen | sehr hoch | Präsidium
+|UC07 | Tagesordnung ansehen | niedrig | Präsidium
+|UC08 | Tagesordnung bearbeiten | niedrig | Präsidium
+|UC09 | Antrag bearbeiten | sehr hoch | Präsidium
+|UC10 | Antrag ablehnen | sehr hoch | Präsidium
+|UC11 | Antrag vertagen | sehr hoch | Präsidium
+|Add-On3 | Haushaltplan anzeigen | niedrig | Präsidium
+|Add-On4 | Information Mitgliederverwaltung über neues Mitglied | niedrig | Präsidium
+|===
+
+////
 == Identifizierte Use-Cases
 .Für Mitglieder 
 * UC01: Wahlantrag stellen 
@@ -43,7 +65,7 @@ include::../_includes/default-attributes.inc.adoc[]
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
 //<<<
-
+////
 include::use_case_01.inc.adoc[]
 
 <<<
