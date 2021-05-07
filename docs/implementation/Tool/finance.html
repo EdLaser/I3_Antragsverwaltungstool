@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Antragverwaltungstool</title>
+    <link rel="icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="data/css/mainstyle.css">
+    <link rel="stylesheet" href="data/css/W3.css">
+    <link rel="stylesheet" href="data/css/finance.css">
+    <link rel="stylesheet" href="data/css/popup.css">
+</head>
+<body>
+<div class = "logo">
+    <a href="index.html"><img src="img/logo.png" class = "sturalogo" /></a>
+</div>
+<div class = navigation">
+    <ul class = "mainnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="universally.html">Antrag für Allgemeines</a></li>
+        <li class = "dropdown"><a href="javascript:void(0)" class = "dropbtn">Antrag Wahl</a>
+            <div class = "dropdown-content">
+                <a href="advisory_member.html">Beratendes Mitglied</a>
+                <a href="election_report.html">Referat</a>
+                <a href="#">höheres Gremium</a>
+            </div>
+        </li>
+        <li id = "active"><a href="finance.html">Antrag Finanzen</a></li>
+        <li><a href="intern.html">Intern</a></li>
+    </ul>
+</div>
+
+<div class = "content">
+    <div class = "w3-row-padding">
+        <div class = "w3-half form">
+            <label><b>Vorname:</b></label>
+            <input class = "w3-input w3-border" type = "text" placeholder = "Max">
+        </div>
+        <div class = "w3-half form">
+            <label><b>Nachname:</b></label>
+            <input class = "w3-input w3-border" type = "text" placeholder = "Mustermann">
+        </div>
+
+        <div class = "form">
+            <label><b>Antragstext:</b></label>
+            <div class="tooltip">
+                <img src="img/info.png" width = "16" height = "16"/>
+                <span class="tooltiptext">Hier steht ein erklärender Text
+            </span></div>
+            <textarea class = "w3-input w3-border" rows = "8">Der StuRa möge beschließen </textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Begründung zum Antrag:</b></label>
+            <textarea class = "w3-input w3-border" rows = "8" placeholder="ausführliche Begründung zum Antrag"></textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Kostenposition im Haushaltsplan:</b></label>
+            <div class="tooltip">
+                <img src="img/info.png" width = "16" height = "16"/>
+                <span class="tooltiptext">Bei Unkenntnis muss das Referat Finanzen konsultiert werden
+            </span></div>
+            <textarea class = "w3-input w3-border" rows = "8"></textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Vorschlag zum weiteren Verfahren:</b></label>
+            <textarea class = "w3-input w3-border" rows = "8" placeholder="Vorschlag"></textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Anlagen</b></label>
+            <textarea class = "w3-input w3-border" rows = "8"></textarea>
+        </div>
+
+        <div class = "form">
+            <input type="button" class = "w3-button w3-green mybutton" value="Absenden">
+            <input type="button" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+        </div>
+    </div>
+</div>
+
+<div class = "footer">
+    <table>
+        <tr>
+            <td><a href="https://httpd.apache.org/"><img src="img/footer/apache.png"/><br></br>Apache</a></td>
+            <td><a href="https://www.stura.htw-dresden.de/"><img src="img/footer/Stura_htw.png"/><br></br></a></td>
+            <td><a href="https://www.gnu.org/home.de.html"><img src="img/footer/gnu.png"/><br></br>GNU</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

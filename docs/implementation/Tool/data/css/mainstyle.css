@@ -1,0 +1,77 @@
+body{
+    background: gainsboro;
+    font-family: Verdana, sans-serif;
+}
+
+.sturalogo{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.mainnav{
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.mainnav li{
+    float: left;
+}
+#active{
+    background-color: #F2AC2E;
+}
+.mainnav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainnav a:hover:not(.active){
+    background-color: #F2AC2E;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.footer{
+    position: static;
+    width: 100%;
+    background-color: #333;
+}
+
+.footer table{
+    text-align: center;
+    margin: auto;
+    border: 0;
+}
+
+.footer td{
+    height: 100px;
+    width: 100px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover:not(.active){
+    background-color: #333;
+}
+
+.footer img{
+    height: 50px;
+}

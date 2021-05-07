@@ -1,0 +1,16 @@
+.content{
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
+}
+
+.form{
+    margin-bottom: 15px;
+}
+
+.mybutton{
+    float: right;
+    padding: 15px;
+    margin-left: 10px;
+}
