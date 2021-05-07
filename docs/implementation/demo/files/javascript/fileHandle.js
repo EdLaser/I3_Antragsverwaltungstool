@@ -46,7 +46,7 @@ document.getElementById('filezone').addEventListener('change',function fileSelec
     }
     let reader = new FileReader();
     reader.onload = function (progressEvent) {
-        console.log(reader.result;
+        console.log(reader.result);
     };
     document.getElementById('out').innerHTML = this.files;
 });

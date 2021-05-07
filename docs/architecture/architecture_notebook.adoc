@@ -38,7 +38,7 @@ Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen ver
 * Datenbank möglich, aber eher nicht sinnvoll da Nutzerzahl nicht so hoch skaliert
 
 == Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
-* Log-in mit Oberfläche und backend
+* Log-in mit Oberfläche und Backend
 * Generieren einer Tagesordnung
 * Sortierung der Tagesordnung
 * Zwischenspeicherung der eingereichten Anträge

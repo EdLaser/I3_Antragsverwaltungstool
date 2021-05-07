@@ -1,6 +1,5 @@
 = Meeting vom 29.04.2021
 
-
 .Anwesenheit
 |===
 |*Teilnehmer* | *Anwesend(J/N)*

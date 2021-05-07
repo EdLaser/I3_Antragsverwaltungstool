@@ -29,6 +29,8 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 
 ==== Wer genau nutzt das Tool ?
 
+==== Welche konkreten Rollen werden insgesamt benötigt ?
+
 ==== Ist eine Nutzergrenze vorgesehen ?
 
 ==== Wie viele Anträge werden normalerweise / Tag gestellt ?
@@ -42,7 +44,15 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 ==== Ist eine allumfassende Schulung notwendig ?
 
 === Anträge
-==== Wer geanu arbeitet mit Anträgen ?
+==== Wer genau arbeitet mit Anträgen ?
+
+==== Wann dürfen Anträge vom Präsidium geändert werden ? und wie weit ? Wann muss der Steller Dinge ändern ?
+
+==== Änderungsanträge als eigene Anträge ?
+
+==== Macht die TO überhaupt im Toool Sinn ? Penta ?
+
+==== Wie viele Anträge sind normal in der TOP ?
 
 === Wer darf TO sehen ?
 
@@ -64,7 +74,7 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 
 ==== Wer schreibt im Dokument mit ?
 
-==== Wie kommt die Tagesordnungspunkt ?
+==== Wie kommt die Tagesordnung zusammen ?
 
 ==== Soll die Tagesordnung bearbeitet werden ?
 
@@ -73,3 +83,5 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 ==== Wie kommt Beschlussfähigkeit zustande ? Wie viele müssen anwesend sein ? Gibt es hier Regeln ?
 
 ==== Wer ist stimmberechtigt ?
+
+==== Wo werden welche Anträge besprochen ?
