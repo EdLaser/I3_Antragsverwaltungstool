@@ -34,3 +34,25 @@
 == Glossary 
 * Generell überarbeiten (besonders Datenstrukturen)
 * Auf Datenstrukturen im Text hinweisen 
+
+
+== *ab 05.03* 
+
+== Domain Modell
+
+== Use Case Modell
+
+== Lessons Learned einführen
+ Funktionalitäten in einer Iteration erarbeiten, nicht nur "Probleme" lösen
+
+ Funktionalität > Design
+
+ Kurze Meetings, dafür öfter
+
+ Kein Multitasking
+
+ Früher Prototyp um Entwurf zu testen --> falls Entwurf nicht funktioniert
+
+ Prototyp testen eine Anforderung --> Das was wir Prototyp nennen ist eigentlich unsere Software ??
+
+ --> Retroperspektiv

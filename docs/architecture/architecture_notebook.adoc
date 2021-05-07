@@ -11,10 +11,14 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sow
 Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software browserbasiert, was sie im weitesten Sinne plattformunabhängig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
 
 == Annahmen und Abhängigkeiten 
+=== Annahmen
 * Webserver NGNX oder Apache, bereits verwendet und Wissen auf Kundenseite vorhanden
 * LINUX/UNIX als Betriebssystem daher Entwicklung für diese Systeme
-* Server von Rechenzentrum
-* Alle Technologien verwendbar, kein closed Source 
+* Server von Rechenzentrum / StuRa
+* Alle Technologien Open-Source, kein Closed-Source
+
+=== Abhängigkeiten
+* Da wir einen Server zur verfügung gestellt bekommen sind wir von seiner Leistung und Verfügbarkeit abhängig
 
 == Architektonisch bedeutende Anforderungen (ergibt sich aus Use-Cases und Furbs+)
 * Kein Java darf verwendet werden (Von Kunde vorgeschrieben)
@@ -27,7 +31,7 @@ Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen ver
 * Datenschutz Konformität mit Anmeldungen
 
 == Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Framworks, DBS-Managementsystem usw + Begründung)
-* Javascript, sehr weit verbreitet & Vorwissen vorhanden
+*  Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist
 * CSS daher auch notwendig 
 * HTML für Webseite
 * Webserver entweder NGNX oder Apache da vorhanden im Stura/HTW

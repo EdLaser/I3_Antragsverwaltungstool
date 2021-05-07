@@ -4,36 +4,38 @@
 Der Use Case beschreibt den kompletten Ablauf der Wahlantragsbearbeitung.
 
 ===	Kurzbeschreibung der Akteure
-==== externer Antragssteller: 
+==== Antragssteller: 
 Möchte auf einen Posten im Stura kandidieren.
 
-==== interner Antragssteller: 
-Möchte auf einen weiteren/anderen Posten im Stura kandidieren. 
-
-
 === Vorbedingungen
-Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstool für seine Antragstellung gewählt. 
+Der Antragssteller hat das Antragsverwaltungstool geöffnet und eine stabile Verbindung zum Server. Die Seite wird im Browser des Nutzers korrekt dargestellt.
 
 === Standardablauf (Basic Flow)
-1. Der Use Case beginnt, wenn der Antragssteller das Antragsverwaltungstool geöffnet hat.
-2. WHILE Antrag ist nicht vollständig 
-    a.	Antragssteller gibt dem Antrag einen Namen
-    b.	Antragsteller gibt Datum ein
-    c.	System generiert Antragskennziffer
-    d.	Antragsteller wählt seine Rolle aus 
-    e.	Antragsteller beantwortet Fragen 
-3. Antragsteller löst Antragsbearbeitung aus
-4. System erstellt TOP 
-5. Der Use Case ist abgeschlossen
-
+. Der Use Case beginnt, wenn der Antragssteller das Antragsverwaltungstool geöffnet hat
+. WHILE Antrag ist nicht vollständig 
+    ..	Antragssteller gibt dem Antrag einen Namen
+    ..	System generiert Antragskennziffer
+    ..	Antragsteller wählt seine Rolle aus 
+    ..	Antragsteller beantwortet Fragen 
+. Antragsteller löst Antragsbearbeitung aus
+. System speichert den Antrag ab
+. System erstellt TOP 
+. Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== <Alternativer Ablauf 1>
-(a), (c) und (d) Antworten entsprechen nicht den Gültigkeitsregeln
+Die Antworten (a), (c) und/oder (d) entsprechen nicht den Gültigkeitsregeln.
 
-  		a. System fordert Antragsteller auf, diese zu berichtigen 
-		b. Antragsteller berichtigt Angaben, Fortsetzung Standartablauf
+. System fordert Antragsteller auf, diese zu berichtigen 
+. Antragsteller berichtigt Angaben, Fortsetzung Standardablauf
+
+==== <Alternativer Ablauf 2>
+Die berichtigten Angaben des Antragstellers entsprechen ebenfalls nicht den Gültigkeitsregeln.
+
+. System fordert Antragsteller erneut auf die Angaben zu korrigieren
+. Antragsteller versucht erneut die Angaben zu korrigieren oder bricht die Antragstellung ab
+. Standardablauf wird fortsetzt oder der Prozess wird abgebrochen
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
@@ -47,12 +49,10 @@ Antragsteller ist beliebige natürliche Person und hat das Antragsverwaltungstoo
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
 
-. Antragssteller hat Formular komplett ausgefüllt
 . Alle eingegebenen Daten und ausgewählten Optionen gespeichert
 . Antrag wurde an Präsidium weitergeleitet
 . Antrag bekommt TOP und wird in TO aufgenommen
 
 === Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
- 
-xref:system-wide_requirements.adoc#System-wide Requirements[System-wide Requirements]
+
+[blue]#hier link zu vision#

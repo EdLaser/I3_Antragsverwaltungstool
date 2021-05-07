@@ -54,7 +54,11 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 
 ==== Wie viele Anträge sind normal in der TOP ?
 
+=== Wer darf TO sehen ?
+
 ==== Dauer der Antragsstellung ?
+
+=== Welche Antragsaten soll es geben ?
 
 ==== Welche Anträge gibt es idR ?
 

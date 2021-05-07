@@ -4,12 +4,12 @@ Der Use Case beschreibt das Vorgehen zum Ansehen der aktuellen Tagesordnung für
 
 ===	Kurzbeschreibung der Akteure
 ==== Antragssteller: 
-Der Antragsteller möchte wissen ob sein Antrag in der aktuellen TO ist und sich generell informieren.
+Der Antragsteller möchte wissen ob sein Antrag in der aktuellen TO ist.
 
 ==== Präsidium: 
-Das Präsidium möchte sich auf nächste Sitzung vorbereiten oder sich generell informieren.
+Das Präsidium möchte sich auf die nächste Sitzung vorbereiten oder sich generell informieren.
 
-==== alle weiteren Interessenten an der Studentischen Vertretung: 
+==== beliebige Person: 
 Alle weiteren anderen Interessenten an der Studentischen Vertretung möchten sich informieren.
 
 === Vorbedingungen
@@ -17,17 +17,16 @@ Es ist eine Sitzung des Stura geplant und es wurden Anträge eingereicht sowie T
 
 === Standardablauf (Basic Flow)
      1. Antragsverwaltungstool aufrufen 
-     2. Akteur sieht sich TO an 
-
+     2. Akteur sieht sich aktuelle TO an 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== TO aufrufen 
-Sc01: Akteur ruft im Antragsverwaltungstool die Option Tagesordnung auf. 
+==== Sc01: TO aufrufen 
+     Akteur ruft im Antragsverwaltungstool die Option Tagesordnung auf. 
 
-==== TO nicht vorhanden
-Sc02: Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da keine Sitzung mit Tagesordnungspunkten ansteht.
+==== Sc02: TO nicht vorhanden
+     Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da keine Sitzung mit Tagesordnungspunkten ansteht.
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
@@ -37,5 +36,3 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-xref:system-wide_requirements.adoc#System-wide Requirements[System-wide Requirements]

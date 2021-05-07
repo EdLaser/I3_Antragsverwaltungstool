@@ -17,11 +17,12 @@
 
 
 == Wesentliche Ziele
-
-* Test Cases erstellen?
-* Dokumentation vereinheitlichen und Struktur verbessern
+|===
+[red]#nicht erfüllt# ; [yellow]#zum Teil erfüllt# ; [green]#erfüllt#
+|===
+* [green]#Test Cases erstellen#
+* [yellow]#Dokumentation vereinheitlichen und Struktur verbessern#
 * Anforderungs-Analyse größtenteils beenden
-* 
 
 
 

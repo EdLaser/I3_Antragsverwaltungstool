@@ -21,18 +21,6 @@ Weiteres unter xref:use-case_model.adoc#Use-Case Model[Use-Case Model].
 
     Zur Überprüfung wird ein Benutzerkonto durch das Team angelegt und über einen Login-Versuch getestet.
 
-*SWFA-2: Ressourcen zur Datenspeicherung sollen gering gehalten werden.*
-    
-    Zur Überprüfung wird zu viel Text in die Maske eingegeben, der durch die Anwendung beschränkt wird.
-
-*SWFA-3: Es soll automatisch eine Tagesordnung erzeugt werden*
-
-    Zur Überprüfung wird aus gestellten Anträgen eine Tagesordnung generiert.
-
-*SWFA-4: Automatische Anpassung der TOPs*
-
-    Zur Überprüfung wird ein Antrag vertagt, wodurch sich seine Priorität erhöht.
-
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 

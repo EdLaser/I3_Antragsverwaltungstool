@@ -9,18 +9,23 @@
 | Datum
 
 | Beginn der Iteration | 5. April 2021
-|Grundfunktionen im Prototypen implementieren [yellow]#(Login, Dateiarbeit/speicherung)# | -
+|Grundfunktionen im Prototypen implementieren [blue]#(Login, Dateiarbeit/speicherung)# | -
 |Testcases erstellen | -
-|Dokumentation bearbeiten (Korregieren/Struktur verbessern) | -
+|Dokumentation bearbeiten (Korregieren/Struktur verbessern) | - 
+|Prakitkum Projektmanagement | 03. Mai. 2021 
+|Konsultation mit Felix | 03.Mai.2021 
 | Ende der Iteration | 03. Mai. 2021
 |===
 
 
 == Wesentliche Ziele
+|===
+[red]#nicht erfüllt# ; [yellow]#zum Teil erfüllt# ; [green]#erfüllt#
+|===
+* [yellow]#Dokumentation koregieren -> Berichtigung als Grundlage für den Rest des Projektes#
+* [red]#mögliche Probleme im Prototypen finden und  Lösungsstrategien entwickeln#
+* [green]#Grundfunktionen Implementieren#
 
-* Dokumentation koregieren -> Berichtigung als Grundlage für den Rest des Projektes
-* mögliche Probleme im Prototypen finden und  Lösungsstrategien entwickeln
-* Grundfunktionen Implementieren
 
 
 
@@ -34,7 +39,7 @@ siehe Task List <<../task_list.adoc#>>
 
 
 == Bewertungskriterien
-Prototyp läuft [red]#Ja/Nein# bzw. gennante [yellow]#Funtkionen# sind implementiert und funktionieren.
+Prototyp läuft bzw. gennante [blue]#Funtkionen# sind implementiert und funktionieren theoretisch --> da noch kein Webserver zur Verfügung steht.
 
 == Assessment
 
@@ -45,4 +50,7 @@ Prototyp läuft [red]#Ja/Nein# bzw. gennante [yellow]#Funtkionen# sind implement
 | Teilnehmer | alle Teammitglieder
 | Projektstatus	| 
 |===
+
+
+[blue]#Iterationsziele überprüfen --> assessment#
 
