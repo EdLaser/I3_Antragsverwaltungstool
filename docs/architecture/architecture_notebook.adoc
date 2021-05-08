@@ -8,21 +8,29 @@ include::../_includes/default-attributes.inc.adoc[]
 Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sowie Begründungen der wesentlichen Elemente und alle anderen übergreifenden Aspekte des Systems, die das Design und die Implementierung beeinflussen.
 
 == Entwurfsziel und Philosophie 
-Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und automatisieren. Da die Endbenutzer keine einheitliche Struktur bei der Wahl der Hard- und Software haben, ist diese Software browserbasiert, was sie im weitesten Sinne plattformunabhängig macht. Das System soll wenn möglich auf lange Zeit im Stura genutzt werden und wenn möglich auch Platz für Erweiterungen bieten. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
+Das System stellt eine Webanwendung dar, welches das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und beschleunigen soll. Die Anwendung ist öffentlich zugänglich und muss daher parallel nutzbar sein. Das System soll von den Studenten der HTW (idR 4000-6000) genutzt werden, kann aber auch von Externen verwendet werden. Hier ist von einer simultanen Nutzung von 10-300 Studierenden auszugehen. Zusätzlich ist eine interne, nicht öffentliche Nutzung durch die Mitglieder des StuRa vorgesehen, um Anträge zu bearbeiten und zu prüfen.
+
+Die Aspekete der Prüfung sowie Bearbeitung von Anträgen sollen technisch abgebildet werden um den Aufwand zu verringern und das Bearbeiten zu beschleunigen. Da die verwendeten Endgeräte und ihre technische Anbindung (Hardware, Software, Eingabetechnik, Bandbreite etc.) nicht bekannt und einheitlich sind, ist diese Software browserbasiert, was sie im weitesten Sinne plattformunabhängig macht. 
+
+Um das Stellen von Anträgen für erstmalige Nutzer zu erleichtern ist eine gute Bedienbarkeit notwendig. Es soll klar erkennbar sein welche Anträge stellbar sind und welche Informationen vom Antragssteller notwendig sind. Diese Bedienbarkeit soll durch eine klare Navigation und genaue möglichst einfache Darstellung der geforderten Informationen realsisiert werden.
+
+Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden. Ebenfalls soll Platz für Erweiterungen geboten werden. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
 
 == Annahmen und Abhängigkeiten 
 === Annahmen
-* Webserver NGNX oder Apache, bereits verwendet und Wissen auf Kundenseite vorhanden
-* LINUX/UNIX als Betriebssystem daher Entwicklung für diese Systeme
+* Der Nutzer besitzt stabile und ausreichende Internetanbindung
+* Die Webseite wird beim Nutzer korrekt dargestellt
+* Bei Anträgen auf Ressourcen oder zur Wahl als Gremiu im StuRa ist der Antragssteller selbst Mitglied im StuRa
+* Um den Antragsstatus anzusehen oder einen Änderungsantrag zu stellen, wurde im Vorhinein bereits ein Antrag gestellt
+* Zur Bearbeitung von Anträgen hat sich das Mitglied des StuRa im Tool mit zugewiesenem Login angemeldet
 * Server von Rechenzentrum / StuRa
-* Alle Technologien Open-Source, kein Closed-Source
+* Alle Technologien Open-Source, kein Closed-Source.
 
 === Abhängigkeiten
-* Da wir einen Server zur verfügung gestellt bekommen sind wir von seiner Leistung und Verfügbarkeit abhängig
+* Da wir einen Server bzw. die nötige Infrastruktur zur Verfügung gestellt bekommen sind wir von der Leistung und Verfügbarkeit des StuRa-Netzwerkes abhängig.
 
 == Architektonisch bedeutende Anforderungen (ergibt sich aus Use-Cases und Furbs+)
-* Kein Java darf verwendet werden (Von Kunde vorgeschrieben)
-* PHP möglichst vermeiden (empfohlen)
+* Als Backend-Programmiersprache soll eine möglichst leichte und gut verständliche gewählt werden.
 * Freie Software, da nicht kommerziell
 * Aussehen ähnlich Antragsgrün
 * Nutzerzahl soll gering gehalten werden (niedriger Traffic)
@@ -31,11 +39,16 @@ Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen ver
 * Datenschutz Konformität mit Anmeldungen
 
 == Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Framworks, DBS-Managementsystem usw + Begründung)
-*  Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist
-* CSS daher auch notwendig 
-* HTML für Webseite
-* Webserver entweder NGNX oder Apache da vorhanden im Stura/HTW
-* Datenbank möglich, aber eher nicht sinnvoll da Nutzerzahl nicht so hoch skaliert
+. Generell ist nur das Nutzen von Open-Source Software vorgesehen.
+. HTML bildet die Grundlage des Aufbaus unserer Webseite.
+.  Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist.
+. Ebenfalls findet CSS bei uns Anwendung, da es zum Gestalten der Webseite unverzichtbar ist. Hier bedienen wir uns eines vorgefertigten Stylesheets von W3.
+. Wir verwenden PHP, da es ein bekannter Standard zur weitergabe von Nutzereingaben ist.
+. Um die Nutzereingaben serverseitig zu Bearbeiten, verwenden wir Python als gut verständliche Programmiersprache.
+. Als Webserver kommt Apache zum Einsatz, da er weit verbreitet und gut dokumentiert ist.
+. Wir verwenden die relationale Datenbank MySQL da wir die Anträge gut als Tabellenstruktur abbilden können.
+. Um die von PHP übermittelten Eingaben in einen Datensatz in der Datenbank umzuwandeln, nutzen wir die PyMysql um aus den Eingaben Abfragen auf der Datenbank zu generieren.
+. PyMysql bildet für die Datenverarbeitung die Grundlage der Kommunikation zwischen dem Webserver und der Datenbank.
 
 == Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
 * Log-in mit Oberfläche und Backend
@@ -44,8 +57,19 @@ Das Programm soll das Einreichen sowie das Ver- und Bearbeiten von Anträgen ver
 * Zwischenspeicherung der eingereichten Anträge
 
 == Abstraktion
-Die Aufgabe des Systems ist es, das Einreichen von Anträgen für Außenstehende und Mitglieder des Sturas zu vereinfachen. Dabei soll eine innovative Oberfläche helfen.
-Das System generiert ebenfalls eine individuelle Tagesordnung für das Präsidium, welches über die eingereichten Anträge entscheidet und abstimmt. Hier wird mit einer Hierarchie gearbeitet, welche die passende Reinfolge der eingereichten Anträge gemessen an ihrer Wichtigkeit gewährleistet. Nach dem Verabschieden eines Antrages wird dieser in einer PDF-Datei abgespeichert.
+*Typen / Daten die im Programm zur Laufzeit benötigt werden:*
+* Antragseingaben: Umfasst alle Eingaben des Nutzers in das Formular die keine persönlichen Informationen sind
+* Nutzerinformationen: Enthält alle Informationen zum Antragssteller (Umfasst Name, Vorname, E-Mail)
+* Antragsvorgaben: Umfasst nicht änderbare Texte im Antrag sowie das Datum zum Antrag
+* Sign-in: Informationen die einer Rolle den Login ermöglichen
+
+*Services:*
+* Antrag anlegen: Die Nutzereingaben werden an das PHP-Skript übergeben und an das Python-Skript weitergereicht. Mit den Nutzereingaben wird ein Insert-Befehl in der Datenbank ausgeführt um eine neue Zeile anzulegen.
+* Antrag bearbeiten: Die gewünschten Änderungen des Antrags werden über einen Update-Befehl in der Datenbank geändert.
+* Antragssatus ändern: Das Flag des Antrags in der Tabelle wird über einen Update-Befehl in der Datenbank geändert.
+* Anmelden: Die eingegebenen Anmeldedaten werden, mit denen über einen Select-Befehl generierten, Daten aus der zum Login gespeicherten Daten abgeglichen und es wird ein entsprechendes Anmelden gewährleistet.
+
+*Workflos:*
 
 == Architektonischer Rahmen
 * Kompatibilität zu allen gängigen Webbrowsern wie Chrome, Firefox, Safari etc.
@@ -55,5 +79,9 @@ Das System generiert ebenfalls eine individuelle Tagesordnung für das Präsidiu
 * Generierung der Tagesordnung 
 
 === Architektonische Ansichten
-Die Generierung der individuellen Tagesordnung ist das Herzstück des Systems und wird viel Zeit in Anspruch nehmen.
-Das Zwischenspeichern und Aufarbeiten der eingereichten Anträge für die Tagesordnung ebenfalls.
+
+==== Logische Sicht
+In unserer logischen Schicht betrachten wir die einzelnen Komponenten des Systems. Der Webserver bildet die Grundlagen für die Darstellung der Webseite. Hier liegen alle HTML- sowie CSS- und Skriptdateien (Python, JavaScript, PHP). Über Skripte kommuniziert der Webserver mit der Datenbank indem Abfragen auf der Datenbank ausgeführt werden.
+
+==== Pyhsische Sicht
+Unsere Anwendung bildet ein Server-Client System ab. Im Fokus steht der Webserver der mehreren Clients die Funktionalitäten des Systems bereitstellen muss. Im Hintergrund steht der Datenbankserver der nur über Services angebunden ist.
