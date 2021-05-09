@@ -17,8 +17,11 @@ body{
     background-color: #333;
 }
 
-.mainnav li{
+.lil{
     float: left;
+}
+.lir{
+    float: right;
 }
 #active{
     background-color: #F2AC2E;
@@ -33,6 +36,10 @@ body{
 
 .mainnav a:hover:not(.active){
     background-color: #F2AC2E;
+}
+
+.lir a:hover:not(.active){
+    background-color: cornflowerblue;
 }
 
 .dropdown:hover .dropdown-content {
