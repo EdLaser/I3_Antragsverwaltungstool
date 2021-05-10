@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="data/css/login_popup.css">
 </head>
 <body>
-<div class = "logo">
-    <a href="index.html"><img src="img/logo.png" class = "sturalogo" /></a>
+<div class = "logo w3-animate-top">
+    <a href="index.html" class = "w3-hover-opacity"><img src="img/logo.png" class = "sturalogo" alt="ToolLogo"/></a>
 </div>
-<div class = navigation">
+<div class = "navigation">
     <ul class = "mainnav">
         <li class = "lil"><a href="index.html">Home</a></li>
         <li class = "lil"><a href="universally.html">Antrag für Allgemeines</a></li>
         <li class = "dropdown lil"  id = "active" ><a href="javascript:void(0)" class = "dropbtn">Antrag Wahl ▼</a>
-            <div class = "dropdown-content">
+            <div class = "dropdown-content w3-animate-opacity">
                 <a href="advisory_member.html">Beratendes Mitglied</a>
                 <a href="election_report.html"  id = "active" >Referat</a>
                 <a href="#">höheres Gremium</a>
@@ -30,18 +30,18 @@
         <li class = "lil"><a href="intern.html">Intern</a></li>
 
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
-            <img src="img/Stura_htw.png" style="width: 84px"></a>
+            <img src="img/Stura_htw.png" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
         <li class = "lir dropdown"><a class="dropbtn">
-            <img src="img/login1.png" style="width: 19px"> Login</a>
-            <div class = "dropdown-content" id = "myLogin">
-                <form class = "form-container">
+            <img src="img/login.png" style="width: 19px" alt = "login"/> Login</a>
+            <div class = "dropdown-content w3-animate-opacity" id = "myLogin">
+                <form class = "form-container" action="data/php/login.php" method="post">
                     <label><b>Rollenwahl</b></label>
                     <select class="w3-select w3-border" name = "role" required>
-                        <option value = "default"></option>
-                        <option value = "admin">Admin</option>
-                        <option value = "write">Schriftführer</option>
-                        <option valure = "read">Mitglied</option>
+                        <option name = "" value = "0">Bitte Auswählen</option>
+                        <option name = "admin" value = "1">Admin</option>
+                        <option name = "write" value = "2">Schriftführer</option>
+                        <option name = "read" value = "3">Mitglied</option>
                     </select>
                     <label><b>Passwort</b></label>
                     <input type = "password" aria-placeholder="Passwort eingeben" name = "pwd" required>
@@ -52,58 +52,57 @@
     </ul>
 </div>
 
-<div class = "content">
-    <div class = "w3-row-padding">
-        <div class = "w3-half form">
-            <label><b>Vorname:</b></label>
-            <input class = "w3-input w3-border" type = "text" placeholder = "Max">
+<div class = "content w3-animate-opacity">
+    <form action="data/php/election_report.php" method="post">
+        <div class = "w3-half npad">
+            <label><b>Vorname:</b></label><br>
+            <input class = "w3-input w3-border" type = "text" name = "fname" placeholder = "Max">
         </div>
-        <div class = "w3-half form">
-            <label><b>Nachname:</b></label>
-            <input class = "w3-input w3-border" type = "text" placeholder = "Mustermann">
+        <div class = "w3-half">
+            <label><b>Nachname:</b></label><br>
+            <input class = "w3-input w3-border" type = "text" name = "lname" placeholder = "Mustermann">
         </div>
 
         <div class = "form">
             <label><b>Antragstext:</b></label>
             <div class="tooltip">
-                <img src="img/info.png" width = "16" height = "16"/>
+                <img src="img/info.png" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Hier steht ein erklärender Text
             </span></div>
-            <textarea class = "w3-input w3-border" rows = "8">Der StuRa möge durch Wahl beschließen, ob DEIN NAME die Funktion als übernehmen soll.</textarea>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">Der StuRa möge durch Wahl beschließen, ob DEIN NAME die Funktion als übernehmen soll.</textarea>
         </div>
 
         <div class = "form">
             <label><b>Anlagen:</b></label><br>
             <label>Allgemeine Fragen zum speziellen Amt:</label><br>
             <label><i><script src="text/election_report/frage1.js"></script></i></label>
-            <input class = "w3-input w3-border"></input>
+            <input class = "w3-input w3-border" name = "frg1" maxlength="260">
         </div>
 
         <div class = "form">
             <label><i><script src="text/election_report/frage2.js"></script></i></label>
-            <input class = "w3-input w3-border"></input>
+            <input class = "w3-input w3-border" name = "frg2" maxlength="260">
         </div>
 
         <div class = "form">
             <label><i><script src="text/election_report/frage3.js"></script></i></label>
-            <input class = "w3-input w3-border"></input>
+            <input class = "w3-input w3-border" name = "frg3" maxlength="260">
         </div>
-
-        <div class = "form">
+        <div class = "w3-row-padding">
             <input type="button" class = "w3-button w3-green mybutton" value="Absenden">
-            <input type="button" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+            <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
         </div>
-    </div>
+    </form>
 </div>
 
-<div class = "footer">
+<div class = "footer w3-animate-bottom">
     <table>
         <tr>
-            <td><a href="https://www.w3schools.com/default.asp"><img src="img/footer/W3.png"/><br></br>W3 schools</a></td>
-            <td><a href="https://httpd.apache.org/"><img src="img/footer/apache.png"/><br></br>Apache</a></td>
-            <td><a href="https://www.stura.htw-dresden.de/"><img src="img/footer/Stura_htw.png"/><br></br></a></td>
-            <td><a href="https://www.gnu.org/home.de.html"><img src="img/footer/gnu.png"/><br></br>GNU</a></td>
-            <td><a href="https://www.bootstrapcdn.com/"><img src="img/footer/Bootstrap.png"/><br></br>BootstrapCDN</a></td>
+            <td><a href="https://www.w3schools.com/default.asp"><img src="img/footer/W3.png" alt = "W3 Logo"/><br>W3 schools</a></td>
+            <td><a href="https://httpd.apache.org/"><img src="img/footer/apache.png" alt = "Apache Logo"/><br>Apache</a></td>
+            <td><a href="https://www.stura.htw-dresden.de/"><img src="img/footer/Stura_htw.png" alt = "Stura Logo"/><br></a></td>
+            <td><a href="https://www.gnu.org/home.de.html"><img src="img/footer/gnu.png" alt = "GNU Logo"/><br>GNU</a></td>
+            <td><a href="https://www.bootstrapcdn.com/"><img src="img/footer/Bootstrap.png" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
         </tr>
     </table>
 </div>

@@ -5,7 +5,7 @@
     padding-bottom: 20px;
 }
 
-.form{
+.form, .w3-half input{
     margin-bottom: 15px;
 }
 
@@ -13,4 +13,8 @@
     float: right;
     padding: 15px;
     margin-left: 10px;
+}
+
+.npad{
+    padding-right: 10px;
 }
