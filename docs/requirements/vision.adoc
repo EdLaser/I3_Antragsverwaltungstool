@@ -24,6 +24,11 @@ siehe xref:glosary.adoc#Einführung[Glossary].
 |Ascidoc | https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 |Open UP(Unified-Process) | https://www2.htw-dresden.de/~anke/openup/index.htm
 |Vorlage/Basis | https://antragsgruen.de/
+|JavaScript | https://www.javascript.com
+|PHP | https://www.php.net
+|Python | https://www.python.org
+|MySQL | https://www.mysql.com
+|Apache | https://httpd.apache.org
 |===
 
 == Positionierung
