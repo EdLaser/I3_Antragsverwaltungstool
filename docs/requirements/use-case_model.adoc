@@ -7,7 +7,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Allgemeine Informationen
 Die Tabelle enthält alle identifizierten Use-Cases.
 
-[blue]#hier fehlt noch das use-case model#
+
 [%header, cols="1,4,1,2"]
 |===
 |Nr | Use-Case | Priorität | Akteur
