@@ -55,4 +55,3 @@ Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen er
 
 === Besondere Anforderungen
 
-[blue]#hier link zu vision#
