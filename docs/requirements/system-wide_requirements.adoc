@@ -29,27 +29,20 @@ Weiteres unter xref:use-case_model.adoc#Use-Case Model[Use-Case Model].
 * Intuitive Bedienung über Nutzerführung durch Text mit einfachen Erläuterungen
 * Vorerst wird nur eine deutsche Variante mit deutscher Formatierung entwickelt
 * Für die Antragsstellung ist eine Dauer von 10 Minuten vorgesehen
-*#Hilfefunktion siehe Vision?#
+* Hilfefunktion (siehe Vision)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
 === Zuverlässigkeit (Reliability)
 * Wartungsarbeiten werden mit den Wartungszeiten des HTW-Servers synchronisiert wenn nötig
-* Netzwerkausfall ist zum jetzigen Zeitpunkt nicht zu kalkulieren
-* Sicherung der Anträge soll alle 2h Erfolgen (außer im Wartungszustand)
-* Komplette Sicherung soll ein mal in der Woche erfolgen, #Backups werden nachdem sie älter sind als 6 Monate automatisch gelöscht#
+* Daten werden in Datenbank gespeichtert, die auf dem Stura-Server implementiert ist
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
 === Effizienz (Performance)
-* Priorität der Stura internen Mitarbeiter bei der Benutzung
-* #Performance muss nicht zu hoch ausfallen, da die Anzahl der Anträge gering ist -> Fokus auf interne Bearbeitung?#
 * Limitierung der Performance durch Hardware nicht abzuschätzen
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 === Wartbarkeit (Supportability)
 * Anpassbarkeit hoch anzusetzen, da neue Funktionen immer einfach eingebunden werden sollen (einfaches Grundgerüst zur Erweiterung)
-* Kompatibilität zu Linux/Unix muss gegeben sein, ansonsten browserbasiert -> Allumfassend kompatibel zuerst aber nur Desktop 
-* Apache oder NGINX Webserver
-* Skalierbarkeit eher gering da Stura eher geringen Zuwachs an Nutzern verzeichnet
 * Installation nur ein mal auf Server notwendig
 
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
@@ -65,7 +58,6 @@ Weiteres unter xref:use-case_model.adoc#Use-Case Model[Use-Case Model].
 * Die Software darf nicht unter Java programmiert werden
 * Als Webserver wird NGINX genutzt
 * Es muss eine Open-Source Anwendung entwickelt werden
-* Die Software soll sich optisch an "Antragsgrün" orientieren
 * PHP soll möglichst vermieden werden
 * Die Anwendung muss unter LINUX/UNIX lauffähig sein
 
