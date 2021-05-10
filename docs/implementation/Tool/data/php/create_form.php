@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $vorschlag = $_POST["antrag_vorschlag"];
    $anlagen = $_POST["antrag_anlagen"];
    echo "$titel $vorname $nachname $email $text $grund $vorschlag $anlagen";
-   $command = "python /Users/ruben/Documents/SE/I3_Antragsverwaltungstool/docs/implementation/Tool/data/python/insert_form.py";
-   exec("$command $titel $vorname $nachname $email $text $grund $vorschlag $anlagen", $output);
+
+   exec("python /Users/ruben/Library/Mobile Documents/com~apple~CloudDocs/Documents/Uni Online/I3_Antragsverwaltungstool/docs/implementation/demo/files/python/create_form.py $titel $vorname $nachname $email $text $grund $vorschlag $anlagen", $output);
    print_r($output);
 }
