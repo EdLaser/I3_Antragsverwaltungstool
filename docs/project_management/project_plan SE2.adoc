@@ -1,0 +1,60 @@
+= Projekt Plan: {project-name}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Projektorganisation
+
+
+
+Unser Projektteam besteht aus den 5 folgenden Personen mit jeweiligen Zuständigkeitsbereichen:
+[options="header"]
+|===================================================
+|Name           | Zuständigkeitsbereich 
+|Jacob Flaskamp | Analyse/Test 
+|Andreas Gröber | Projektmanagement/Dokumentierung 
+|Ruben-David Kraus | Implementierung/ Analyse(Mitglied des Sturas)
+|Richard Müller    | Entwurf/Implementierung
+|Duy Tien Nguyen   | Implementierung / Test 
+|===================================================
+
+
+
+Das Team trifft sich wöchentlich montags um 17:00 Uhr zu einer Telefonkonferenz auf Discord, in der neue Erkenntnisse, Auswertungen der Kundengespräche und Fragen ausgetauscht werden.
+Kundenmeetings laufen ebenso über Discord in Form einer Telefonkonferenz ab. Unsere Ansprechpartner sind Axel Schiller und Liselotte Ruthe. An den Kundenmeetings nehmen 3 Mitglieder des Projektteams teil, welche sich abwechseln und die beiden Ansprechpartner. 
+Meetings werden nach jedem großen Projektmeilenstein mit Kunden geführt. 
+
+Zudem treffen sich die Teammitglieder welche den Zuständigkeitsbereich Implementierung haben regelmäßig am Freitag zwischen 8:00 und 12:00 um dort falls nötig bzw. gewollt zusammen an unserer Webanwendung zu arbeiten
+
+
+== Projektpraktiken
+
+
+Als Vorlage für die Projektdokumentation nutzt unser Team OpenUP. Zudem werden unsere Teammeetings protokolliert und anschließend von einer zweiten Person kontrolliert, um alle besprochenen Themen festzuhalten. Kundenmeetings werden aufgezeichnet, sodass alle Teammitglieder die Wünsche der Stakeholder verfolgen können.
+
+
+
+== Projektmeilensteine und -ziele
+Tabelle 3
+[cols="1,20,8,4",options="header"]
+|====================================================
+|Iteration | Hauptziele | Meilensteine	| Erledigt bis
+|I1        |Team kennenlernen, Rollenverteilung, Kommunikationswege festlegen, Kunden kennenlernen, Meetings mit Kunden durchführen, Vorstellung des Kundens erfassen und erste Konzepte entwerfen, Kundengespräche auswerten| 	1. Teammeeting, 1. Kundenmeeting, 2. Kundenmeeting| 20. Dezember 2020
+|I2        | Erstellung der Projektdokumentationen für den Beleg (Projektplan, Risiko-Analyse), Auswertung der Kundengespräche vom Analyse-Team und Erfassung der Daten (Vision, Glossar, Use-Cases), Grundlegende Rahmenbedingungen und Vorstellungen für Implementierung festlegen| 3. Kundenmeeting, Projektdokumentationen bearbeiten| 10.Januar 2021
+|I3 | Use-Cases mit dem Kunden besprechen und ggf. anpassen, Test Cases erstellen, 4. Kundenmeeting durchführen und auswerten, Team Implementierung beginnt seine Arbeit| 4. Kundenmeeting, Beginn Implementierung, Projektdokumentationen fertigstellen | 31. Januar 2021
+|I4|x | x |
+|I5 |x | x |
+|I6 |x | x |
+|I7 |x | x |
+
+
+|====================================================
+
+
+== Bereitstellung der Software
+
+
+Die fertige Software wird über den HTW Dresden Server laufen. Entweder über den StuRa oder das Rechenzentrum. Installation und Erstinbetriebnahme sind Projektbestandteile. Die Software wird während der Projektlaufzeit entwickelt und innerhalb dieser Zeit das letzte mal geupdatet.
+
+
+== Gewonnene Erkenntnisse
+
+Extra Dokument Lessons Learned Verlinkung folgt.
