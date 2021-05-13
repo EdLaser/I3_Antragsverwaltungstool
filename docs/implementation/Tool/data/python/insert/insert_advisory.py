@@ -12,7 +12,7 @@ cursor = connect.cursor()
 # Try executing
 with connect:
     with connect.cursor() as cursor:
-        statement = "INSERT INTO advisory_member(flag, number, title, fname, lname, mail, date , text, frg1, frg2, frg3,frg4) VALUES(0,'2021-01-01', 'Beispiel','Ruben', 'Kraus', 'ruben@kraus.de', CURDATE(), 'Heute Testen wir den Antrag', 'Keine', 'Ganz viel Zeit', 'Wenig Zeit', 'Ich knalle alle ab')"
+        statement = "INSERT INTO advisory_member(flag, number, title, name, mail, date , text, frg1, frg2, frg3,frg4) VALUES(0,'2021-01-01', 'Beispiel','Ruben Kraus', 'ruben@kraus.de', CURDATE(), 'Heute Testen wir den Antrag', 'Keine', 'Ganz viel Zeit', 'Wenig Zeit', 'Ich knalle alle ab')"
         cursor.execute(statement)
 
     connect.commit()
