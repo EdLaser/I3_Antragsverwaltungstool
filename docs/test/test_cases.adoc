@@ -16,7 +16,16 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Test Cases
 
+*TC*
+|===
+Beschreibung:
 
+Vorbedingung:
+
+Nachbedingung:
+
+Erforderliche Daten:
+|===
 
 *TC01 - Valide Logindaten akzeptiert*
 |===
@@ -123,4 +132,15 @@ Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
 Nachbedingungen: Die Tagesordung muss dann auf dem Bildschirm gezeigt werden. 
 
 Erforderliche Daten: Keine 
+|===
+
+*TC11 - Dokument als Anlage*
+|===
+Beschreibung: Prüfen, ob sich Dokumente als Anlage anhängen lassen. 
+
+Vorbedingung: Das Internet muss verfügbar sein. Der Login muss gelungen sein. Alle Felder von oben müssen ausgefüllt werden.
+
+Nachbedingung: De Dokumente muss gespeichert werden.
+
+Erforderliche Daten: Dokumente
 |===
