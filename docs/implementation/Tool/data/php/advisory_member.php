@@ -10,9 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $frg2 = $_POST["frg2"];
     $frg3 = $_POST["frg3"];
     $frg4 = $_POST["frg4"];
-    echo "$titel $fname $lname $email $antrtext $frg1 $frg2 $frg3 x$frg4";
+    echo "$titel $fname $lname $email $antrtext $frg1 $frg2 $frg3 $frg4";
 
     $command = "python /Users/ruben/Documents/SE/I3_Antragsverwaltungstool/docs/implementation/Tool/data/python/insert_form.py";
     exec("$command $titel $fname $lname $email $antrtext $frg1 $frg2 $frg3 $frg4", $output);
-    print_r($output);
+    print_r( $output);
 }
