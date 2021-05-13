@@ -1,5 +1,4 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titel = "Testantrag";
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
@@ -15,4 +14,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $command = "python /Users/ruben/Documents/SE/I3_Antragsverwaltungstool/docs/implementation/Tool/data/python/insert_form.py";
     exec("$command $titel $fname $lname $email $antrtext $frg1 $frg2 $frg3 $frg4", $output);
     print_r( $output);
-}
+?>
