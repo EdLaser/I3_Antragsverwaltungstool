@@ -7,6 +7,7 @@
 A: Wir sind relativ frei (Sollte auf LCX laufen)
 
 ==== Ist eine englische Version notwendig ?
+Jein, wenn fertig dann sollte es eine haben.
 
 ==== Wie muss die Verfügbarkeit ausfallen ?
 
@@ -15,73 +16,78 @@ A: Wir sind relativ frei (Sollte auf LCX laufen)
 ==== Wie oft sollen Backups gemacht werden ? Datensicherheit ?
 
 ==== Wie viele Backups sind nötig ? Gibts da Gesetze ?
+Gibt es warscheinlich aber weis man nicht konkret.
 
 ==== Wie wahrscheinlich ist es das neue Funktionen gebraucht werden ?
-
-==== Soll man die Oberfläche konfigurieren können ?
 
 ==== Wie lange darf das System offline sein ?
 
 ==== Ist eine Datenbank notwendig ?
+Nein, aber wir machen eine.
 
 === Nutzung
 ==== Wie viele Personen sollen das Tool intern simultan nutzen ? (Am besten 3-4 Schriftführer Accs)
-
-==== Wer genau nutzt das Tool ?
+max 10 minimal 2 ( bis zu 10 Logins) Passwort Reset über Admin
 
 ==== Welche konkreten Rollen werden insgesamt benötigt ?
+Eigentlich keine da keine Rollen im Präsidium. Aber eine Rolle "Präsidiumsmitlgied" 
 
 ==== Ist eine Nutzergrenze vorgesehen ?
-
-==== Wie viele Anträge werden normalerweise / Tag gestellt ?
-
-==== Wie viele Anträge werden pro Tag bearbeitet ?
+max 10
 
 ==== Wird nur am Desktop geabrietet oder auch an Mobilgeräten ? 
+Nur Desktop, vorher keine Mobile Version notwendig.
 
 ==== Wer bekommt die Rechte zum Bearbeiten im Präsiudium ?
+Alle aus dem Präsidium
 
 ==== Ist eine allumfassende Schulung notwendig ?
 
-=== Anträge
+=== Anträge ( trennen in Antrag ohne finanzielle Mittel / ohne finanzielle Mittel)
 ==== Wer genau arbeitet mit Anträgen ?
+Präsidium
+
+==== Anlagen ?
+Sehr frei. Alles zwischen Bildern bis Links
 
 ==== Wann dürfen Anträge vom Präsidium geändert werden ? und wie weit ? Wann muss der Steller Dinge ändern ?
+Bei kleinen Dingen, bei fehlenden Infos bekommt der Antragssteller eine Information mit Frist. Anträge direkt bei Eingabe auf Korrektheit prüfen. Alles Pflicht bis auf Vorschlag bzw. Anlagen
 
 ==== Änderungsanträge als eigene Anträge ?
+Ja, sehr wichtig ! Passiert auch vor der Sitzung.
 
-==== Macht die TO überhaupt im Toool Sinn ? Penta ?
+==== Macht die TO überhaupt im Tool Sinn ? Penta ?
+Ja wäre gut aber kein Muss.
 
-==== Wie viele Anträge sind normal in der TOP ?
+==== Wie viele Anträge sind normal in der TO ?
 
-=== Wer darf TO sehen ?
-
-==== Dauer der Antragsstellung ?
-
-=== Welche Antragsaten soll es geben ?
-
-==== Welche Anträge gibt es idR ?
-
-==== Wie viele Anträge gibt es im Durchschnitt ?
-
-==== Wie oft wird normalerweise etwas verschoben ?
-
-==== Wie lange soll die Dauer für Antragsstellung sein ?
-
-==== Gehen Anträge verloren ?
-
-==== Sollen Anträge geändert werden ? Und wenn ja wie ?
-
-==== Wer schreibt im Dokument mit ?
+==== Wer darf TO sehen ?
+Im Prinzip alle die sich auf die Sitzung vorbereiten. Sie ist öffentlich
 
 ==== Wie kommt die Tagesordnung zusammen ?
 
 ==== Soll die Tagesordnung bearbeitet werden ?
 
+==== Welche Antragsarten soll es geben ?
+Finanzen, Amt/Stelle, Beratendes Mitgleid, Studienkomission, Änderungsanträge
+In den Antrag muss die Abstimmung (Ja/Nein/Enthaltung), Beschluss, Beschlusstext, Begründung zum Beschluss ( bei leer wird es die Begründung des Antrags, bei allem was nicht Zustimmung ist bleibt es frei ) E-Mail als verpflichtendes Feld ( am besten HTW-Mail als Infofeld )
+
+Adressat des Antrags wäre auch sinnvoll ( An wen ist er gerichtet Dropwown am besten)
+
+Vorname und Name zu Name fusionieren
+
+==== Wie viele Anträge gibt es im Durchschnitt ?
+10 - 20
+
+==== Wie oft wird normalerweise etwas verschoben ?
+
+==== Sollen Anträge geändert werden ? Und wenn ja wie ?
+Über Änderungsanträge.
+
 ==== Wie laufen Abstimmungen ab ?
+Beschlussfähigkeit und dann Abstimmungs
 
 ==== Wie kommt Beschlussfähigkeit zustande ? Wie viele müssen anwesend sein ? Gibt es hier Regeln ?
+Man stellt es einmal fest. Feststellung gilt solange bis es erneut festgestellt wird -> Wenn einer kommt und geht dann stellt man es fest. Letzte Beschlussfähigkeit soll übernommen und angezeigt werden. Besondere Mehrheit: Manche Anträge brauchen besondere Mehrheit -> Die Mehrheit der stimmberechtigten Mitglieder ( Welche Art der besonderen Mehrheit ist beim ANträg nötig )
 
 ==== Wer ist stimmberechtigt ?
-
-==== Wo werden welche Anträge besprochen ?
