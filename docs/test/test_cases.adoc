@@ -16,7 +16,16 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Test Cases
 
+*TC*
+|===
+Beschreibung:
 
+Vorbedingung:
+
+Nachbedingung:
+
+Erforderliche Daten:
+|===
 
 *TC01 - Valide Logindaten akzeptiert*
 |===
@@ -103,6 +112,7 @@ Nachbedingungen: Uhrzeit, Benutzername und der bearbeitete Antrag müssen (in ei
 
 Erforderliche Daten: Inhalt des Antrags
 |===
+
 *TC09 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
 |===
 Beschreibung: Prüfen, ob ein externer Nutzer die Tagesordnung ansehen darf. Das darf nicht möglich sein.
@@ -123,4 +133,48 @@ Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
 Nachbedingungen: Die Tagesordung muss dann auf dem Bildschirm gezeigt werden. 
 
 Erforderliche Daten: Keine 
+|===
+
+*TC11 - Unterschiedliche Datentypen als Anlage*
+|===
+Beschreibung: Prüfen, ob sich unterschiedliche Datentypen(Dokumenten, Video, Audio, usw.) als Anlagen anhängen lassen. 
+
+Vorbedingung: Das Internet muss verfügbar sein. Der Login muss gelungen sein. Alle Felder von oben müssen ausgefüllt werden.
+
+Nachbedingung: Die Anlagen muss gespeichert werden.
+
+Erforderliche Daten: Anlagen
+|===
+
+*TC12 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+|===
+Beschreibung: Prüfen, ob diese beiden Felder leer sein dürfen
+
+Vorbedingung: Keine
+
+Nachbedingung: Keine
+
+Erforderliche Daten: Keine
+|===
+
+*TC13 - 1 Loginkonto für alle Rechte*
+|===
+Beschreibung: Es sollte ein Konto geben, die alle Rechte haben.
+
+Vorbedingung: Keine
+
+Nachbedingung: Keine
+
+Erforderliche Daten: Keine
+|===
+
+*TC14 - 10 Mitglieder gleichzeitig*
+|===
+Beschreibung: Prüfen, ob die Software unter gleichzeitiger Nutzung von 10 Nutern noch funktioniert.
+
+Vorbedingung: Der Server muss aufrufbar sein.
+
+Nachbedingung: Die Wartezeit muss nicht länger als 5 Minuten dauern.
+
+Erforderliche Daten: Keine
 |===
