@@ -1,0 +1,65 @@
+-- auto-generated definition
+create table advisory_member
+(
+    flag   int default 0 null,
+    number varchar(12)   not null
+        primary key,
+    title  varchar(25)   null,
+    name   varchar(25)   null,
+    mail   varchar(25)   null,
+    date   date          null,
+    text   varchar(260)  null,
+    frg1   varchar(260)  null,
+    frg2   varchar(260)  null,
+    frg3   varchar(260)  null,
+    frg4   varchar(260)  null
+);
+
+-- auto-generated definition
+create table antrag
+(
+    status   int          null,
+    nummer   varchar(12)  not null
+        primary key,
+    titel    varchar(25)  null,
+    vorname  varchar(20)  null,
+    name     varchar(20)  null,
+    mail     varchar(25)  null,
+    datum    date         null,
+    text     varchar(250) null,
+    grund    varchar(150) null,
+    vorgehen varchar(250) null
+);
+
+-- auto-generated definition
+create table finance
+(
+    flag      int default 0 null,
+    number    varchar(12)   not null
+        primary key,
+    title     varchar(25)   null,
+    name      varchar(25)   null,
+    mail      varchar(25)   null,
+    date      date          null,
+    text      varchar(260)  null,
+    begzantr  varchar(260)  null,
+    haushplan varchar(260)  null,
+    vrshzverf varchar(260)  null
+);
+
+-- auto-generated definition
+create table universal
+(
+    flag      int default 0 null,
+    number    varchar(12)   not null
+        primary key,
+    title     varchar(25)   null,
+    name      varchar(25)   null,
+    mail      varchar(25)   null,
+    date      date          null,
+    text      varchar(260)  null,
+    begzantr  varchar(260)  null,
+    vrshzverf varchar(260)  null
+);
+
+
