@@ -57,4 +57,4 @@ Die fertige Software wird über den HTW Dresden Server laufen. Entweder über de
 
 == Gewonnene Erkenntnisse
 
-Extra Dokument Lessons Learned Verlinkung folgt.
+<<../Lessons-learned.adoc#>>

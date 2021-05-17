@@ -11,9 +11,9 @@
 | Beginn der Iteration | 03. Mai 2021
 |Use Case 1 in Demo implementieren | -
 |Vision überarbeiten | -
-|Use Case Modell erstellen | - 
-|Stura Demo vorstellen | - 
- | Ende der Iteration | 03. Mai. 2021
+|Use Case Modell überarbeiten | - 
+|Stura Demo vorstellen | 13.Mai 
+ | Ende der Iteration | 17. Mai. 2021
 |===
 
 
@@ -21,9 +21,10 @@
 |===
 [red]#nicht erfüllt# ; [yellow]#zum Teil erfüllt# ; [green]#erfüllt#
 |===
-* Auftragsteller fortschritt zeigen
-* Erste brauchbare? Funktionalität realisieren
-* Vision für SE 2 Anpassen
+* [green]#Auftragsteller fortschritt zeigen#
+* [green]#Erste brauchbare? Funktionalität realisieren#
+* [green]#Vision für SE 2 Anpassen#
+* Datenbank erstellen -> per Script/Schnittstelle mit Website verbinden
 
 
 

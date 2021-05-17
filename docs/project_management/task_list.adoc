@@ -192,44 +192,87 @@
 
 |27
 |Prototypen erstellen / Einarbeiten in Programme [yellow]#*VS-Code,Java Script*#])
-|Pending
+|done
 |
 |04
 |Richard, Ruben, Tien
 
 |28
 |Akteure + Use_Cases überarbeiten
-|Pending
+|done
 |
 |04
 |Jacob
 
 |29
 |Glossary überarbeiten und Text vereinheitlichen
-|Pending
+|done
 |
-|04
+|04/05
 |Andreas
 
 |30
 |Use Case Modell erstellen
-|Pending
+|done
 |
 |04
-|[blue]#*xxx*#
+|Jacob
 
 |31
 |Genaue Requirments mit Stura klären
-|Pending
-|[yellow]#*Axel Schiller?/Stura*#
-|04
-|Ruben
+|#pending#
+|
+|04/05/06 
+|Ruben/Andreas/Richard/Tien
 
 |32
 |Test Cases erstellen
-|Pending
+|done
 |
-|04/05
-|[blue]#*xxx*#
+|04/05/06
+|Tien
+
+|33
+|Dateiarbeit implementieren (Dateneingabe und Speicherung)
+|done
+|
+|05
+|Ruben
+
+|34
+|Login Realisieren
+|Done?
+|
+|05
+|Richard
+
+|35
+|Demo Version erstellen --> Diese Vorzeigen
+|done
+|
+|06
+|Ruben,Richard
+
+|36
+|Datenbank Verknüpfung realisieren
+|done
+|
+|06
+|Ruben
+
+|37
+|[red]#Domain Modell#
+|
+|
+|06
+|Jacob?
+
+|38
+|[red]#Dateien zum hochladen managen (Anlagen)#
+|
+|
+|07
+|
+
 
 |===

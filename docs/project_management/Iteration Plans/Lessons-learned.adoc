@@ -1,0 +1,15 @@
+
+[cols="1,20,4",options="header"]
+|====================================================
+|ID | Bedeutung/Erläuterung | Author/Zugehörigkeit
+|1 | Aufwandsabschätzung, sehr Sinvoll --> am Anfang recht ungenau lohnt sich aber in späteren Iterationen | Projektmanagement (Andreas)
+|2 | kleine Prototypen können zum testen des Entwurfs zu einem früheren Zeitpunkt entworfen werden, --> dirket bei der Entwurfs-Entscheidung | Projektmanagement (Andreas) 
+|3 | Funktionalität > Design | Implementierung
+|4 | Aufgrund fehlender Erfahrung muss man bzw ist es wahrscheinlich, dass bestimmte Dokumente aktualisiert bzw. neu angefertigt werden müssen (Vision, Projectplan, Usecases) | -
+|5 | Anforderungen sind genau zu klären (was ist ein must have, was zusatz, etc.) | Analyse 
+|6 | Erst Kernanforderungen Implementieren dann nach Priorität --> Priorität bei Use-Cases bzw. Funktionalen Anforderungen extrem Sinvoll | Analyse/Implementierung 
+|7 | Kunden/Auftragsteller wechseln bzw. ihre Interessen oder Anforderungen bleiben nicht immer gleich | Analyse 
+|8 | x | x
+|9 | x | x
+|10 | x | x
+ 
