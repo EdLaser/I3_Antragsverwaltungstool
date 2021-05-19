@@ -16,6 +16,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Test Cases
 
+// Template
 *TC*
 |===
 Beschreibung:
