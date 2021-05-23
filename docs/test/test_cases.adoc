@@ -16,6 +16,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Test Cases
 
+// Template
 *TC*
 |===
 Beschreibung:
@@ -35,32 +36,21 @@ Vorbedingungen: Das Internet muss verfügbar sein.
 
 Nachbedingungen: Uhrzeit und Logindaten müssen (in einer Datenbank) gespeichert werden.
 
-Erforderliche Daten: Logindaten (Name und Passwort) 
+Erforderliche Daten: Logindaten (Rolle und Passwort) 
 |===
 
-*TC02 - Falsche Logindaten akzeptiert*
+*TC02 - Falsches Passwort akzeptiert*
 |===
-Beschreibung: Prüfen der Reaktion der Software, wenn falsche Logindaten eingegeben werden. Entweder ist der Name falsch oder das Passwort ist falsch oder beides ist falsch. Der Login muss fehlerhaft sein.
+Beschreibung: Prüfen der Reaktion der Software, wenn falsches Passwort eingegeben wird. Der Login muss fehlerhaft sein.
 
 Vorbedingungen: Das Internet muss verfügbar sein.
 
 Nachbedingungen: Keine
 
-Erforderliche Daten: Logindaten (Name und Passwort)
+Erforderliche Daten: Logindaten (Rolle und Passwort)
 |===
 
-*TC03 - Leerer Name akzeptiert:*
-|===
-Beschreibung: Prüfen der Reaktion der Software, wenn der Name leer ist und der Login-Button gedrückt wird. Der Login muss fehlerhaft sein.
-
-Vorbedingungen: Das Internet muss verfügbar sein. 
-
-Nachbedingungen: Keine  
-
-Erforderliche Daten: Keine 
-|===
-
-*TC04 - Vollständig ausgefüllter Antrag eingerreicht*
+*TC03 - Vollständig ausgefüllter Antrag eingerreicht*
 |===
 Beschreibung: Prüfen, ob sich ein vollständig ausgefüllter Antrag erreichen lässt. Es muss möglich sein.
 
@@ -70,7 +60,7 @@ Nachbedingungen: Uhrzeit, Name des Antragsstellers und der Antrag müssen (in ei
 Erforderliche Daten: vollständig ausgefüllter Antrag
 |===
 
-*TC05 - Unvollständiger Antrag eingerreicht*
+*TC04 - Unvollständiger Antrag eingerreicht*
 |===
 Beschreibung: Prüfen, ob sich ein unvollständiger Antrag erreichen lässt. Es darf nicht gelungen sein.
 
@@ -80,7 +70,7 @@ Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden.
 Erforderliche Daten: unvollständiger Antrag 
 |===
 
-*TC06 - Angezeigter Antrag aufrufbar*
+*TC05 - Angezeigter Antrag aufrufbar*
 |===
 Beschreibung: Prüfen, ob sich ein angezeigter Antrag aufrufen lässt. Es muss möglich sein.
 
@@ -91,7 +81,7 @@ Nachbedingungen: Der Inhalt des Auftrag muss dann auf dem Bildschirm gezeigt wer
 Erforderliche Daten: Keine
 |===
 
-*TC07 - Externer Nutzer darf keinen Antrag bearbeiten*
+*TC06 - Externer Nutzer darf keinen Antrag bearbeiten*
 |===
 Beschreibung: Prüfen, ob ein externer Nutzer einen Antrag bearbeiten kann. Das darf nicht möglich sein.
 
@@ -99,10 +89,10 @@ Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
 
 Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden.
 
-Erforderliche Daten: Keine (?)
+Erforderliche Daten: Keine
 |===
  
-*TC08 - Administrator/Präsidium darf Anträge bearbeiten*
+*TC07 - Administrator/Präsidium darf Anträge bearbeiten*
 |===
 Beschreibung: Prüfen, ob ein interner Nutzer Anträge bearbeiten kann. Das muss möglich sein.
 
@@ -113,7 +103,7 @@ Nachbedingungen: Uhrzeit, Benutzername und der bearbeitete Antrag müssen (in ei
 Erforderliche Daten: Inhalt des Antrags
 |===
 
-*TC09 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
+*TC08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
 |===
 Beschreibung: Prüfen, ob ein externer Nutzer die Tagesordnung ansehen darf. Das darf nicht möglich sein.
 
@@ -124,7 +114,7 @@ Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden.
 Erforderliche Daten: Keine
 |===
 
-*TC10 - Interner Nutzer können die Tagesordnung ansehen*
+*TC09 - Interner Nutzer können die Tagesordnung ansehen*
 |===
 Beschreibung: Prüfen, ob ein interner Nuter die Tagesordnung ansehen kann. Das muss möglich sein.
 
@@ -135,7 +125,7 @@ Nachbedingungen: Die Tagesordung muss dann auf dem Bildschirm gezeigt werden.
 Erforderliche Daten: Keine 
 |===
 
-*TC11 - Unterschiedliche Datentypen als Anlage*
+*TC10 - Unterschiedliche Datentypen als Anlage*
 |===
 Beschreibung: Prüfen, ob sich unterschiedliche Datentypen(Dokumenten, Video, Audio, usw.) als Anlagen anhängen lassen. 
 
@@ -146,7 +136,7 @@ Nachbedingung: Die Anlagen muss gespeichert werden.
 Erforderliche Daten: Anlagen
 |===
 
-*TC12 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+*TC11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
 |===
 Beschreibung: Prüfen, ob diese beiden Felder leer sein dürfen
 
@@ -157,7 +147,7 @@ Nachbedingung: Keine
 Erforderliche Daten: Keine
 |===
 
-*TC13 - 1 Loginkonto für alle Rechte*
+*TC12 - 1 Loginkonto mit allen Rechten*
 |===
 Beschreibung: Es sollte ein Konto geben, die alle Rechte haben.
 
@@ -168,7 +158,7 @@ Nachbedingung: Keine
 Erforderliche Daten: Keine
 |===
 
-*TC14 - 10 Mitglieder gleichzeitig*
+*TC13 - 10 Mitglieder gleichzeitig*
 |===
 Beschreibung: Prüfen, ob die Software unter gleichzeitiger Nutzung von 10 Nutern noch funktioniert.
 

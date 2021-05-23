@@ -1,0 +1,64 @@
+= Test Script: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+{mail}
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Allgemeine Informationen
+=== Testfallbeschreibung
+* Vorbedingungen für den Test, z.B. bestimmter Systemzustand
+* Eingabedaten (Testdaten)
+* Ablaufbeschreibung des Tests (manuell oder automatisiert)
+* Erwartetes Ergebnis, z.B. Systemzustand, Fehlermeldung, Ausgabedaten
+
+== Test Script
+// Template
+*TS## - TC-Name*
+|===
+Vorbedingung:
+
+Eingabedaten:
+
+Ablaufbeschreibung des Tests:
+
+Erwartetes Ergebnis:
+|===
+
+*TS01 - Valide Logindaten akzeptiert*
+|===
+Vorbedingung: das Internet
+
+Eingabedaten: Passwort
+
+Ablaufbeschreibung des Tests:
+1. Login-Button drucken
+2. Rolle wählen
+3. Korrektes Passwort eingeben
+
+Erwartetes Ergebnis: Anzeige der neuen Seite für die gewählte Rolle
+|===
+
+*TS02 - Falsches Passwort akzeptiert*
+|===
+Vorbedingung: das Internet
+
+Eingabedaten: Passwort
+
+Ablaufbeschreibung des Tests:
+1. Login-Button drucken
+2. Rolle wählen
+3. Falsches Passwort eingeben
+
+Erwartetes Ergebnis: Fehlermeldung
+|===
+
+*TS03 - TC-Name*
+|===
+Vorbedingung:
+
+Eingabedaten:
+
+Ablaufbeschreibung des Tests:
+
+Erwartetes Ergebnis:
+|===
