@@ -30,31 +30,30 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 * Da wir einen Server bzw. die nötige Infrastruktur zur Verfügung gestellt bekommen sind wir von der Leistung und Verfügbarkeit des StuRa-Netzwerkes abhängig.
 
 == Architektonisch bedeutende Anforderungen (ergibt sich aus Use-Cases und Furbs+)
-* Als Backend-Programmiersprache soll eine möglichst leichte und gut verständliche gewählt werden.
-* Freie Software, da nicht kommerziell
-* Aussehen ähnlich Antragsgrün
-* Nutzerzahl soll gering gehalten werden (niedriger Traffic)
-* Lauffähig unter UNIX/LINUX
-* Bekanntes Webframework sinnvoll 
-* Datenschutz Konformität mit Anmeldungen
+=== Functional
+*SWFA-1:* Für das Bearbeiten von Anträgen ist ein Login nötig, um sicherzustellen das nur zuständige StuRa-Mitglieder Anträge bearbeiten können.
+
+*SWFA-2:* Das System muss alle Daten der Anträge persistent speichern.
+
+=== Wartbarkeit (Supportability)
+*NFAS-1:* Das System soll die Möglichkeit bieten, später eine weitere Sprachen einbinden zu können.
 
 == Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Framworks, DBS-Managementsystem usw + Begründung)
 . Generell ist nur das Nutzen von Open-Source Software vorgesehen.
 . HTML bildet die Grundlage des Aufbaus unserer Webseite.
 .  Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist.
 . Ebenfalls findet CSS bei uns Anwendung, da es zum Gestalten der Webseite unverzichtbar ist. Hier bedienen wir uns eines vorgefertigten Stylesheets von W3.
-. Wir verwenden PHP, da es ein bekannter Standard zur weitergabe von Nutzereingaben ist.
-. Um die Nutzereingaben serverseitig zu Bearbeiten, verwenden wir Python als gut verständliche Programmiersprache.
+. Um die Nutzereingaben serverseitig zu Bearbeiten, verwenden wir Python als gut verständliche und vielseitige Programmiersprache.
 . Als Webserver kommt Apache zum Einsatz, da er weit verbreitet und gut dokumentiert ist.
 . Wir verwenden die relationale Datenbank MySQL da wir die Anträge gut als Tabellenstruktur abbilden können.
-. Um die von PHP übermittelten Eingaben in einen Datensatz in der Datenbank umzuwandeln, nutzen wir die PyMysql um aus den Eingaben Abfragen auf der Datenbank zu generieren.
+. Um die vom Nutzer übermittelten Eingaben in einen Datensatz in der Datenbank umzuwandeln, nutzen wir die PyMysql um aus den Eingaben Abfragen auf der Datenbank zu generieren.
 . PyMysql bildet für die Datenverarbeitung die Grundlage der Kommunikation zwischen dem Webserver und der Datenbank.
 
 == Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
-* Log-in mit Oberfläche und Backend
-* Generieren einer Tagesordnung
-* Sortierung der Tagesordnung
-* Zwischenspeicherung der eingereichten Anträge
+. Wir haben in der Analyse festgestellt, das wir alle Daten zu einem Antrag persistent speichern müssen (*SFA-2*). Hier haben wir zwei Möglichkeiten erwägt selbiges technisch Umzusetzen. Zwischen der Speicherung in einer SQL-Datenbank oder als Textdatei im CSV-Format, haben wir uns für eine SQL-Datenbank entschieden, da wir unsere Anträge gut relationell abbilden können und wir durch vorhandenes Vorwissen in SQL einfacher Abfragen in der Datenbank formulieren und testen können. Wir haben uns in der Implementierung für eine MySQL-Datenbank entschieden da sie uns eine gut dokumentierte Open-Source-Lösung bietet.
+
+. Aus dem *SWFA-1* geht hervor, dass wir eine Nutzerverwaltung für die StuRa-Mitglieder benötigen. Hier haben wir die Möglichkeiten gesehen selbiges über direkt über Apache zu lösen und eine Access-Datei zu benutzen. Da wir keine weitere Registrierung benötigen und eine festgelegte Anzahl an Nutzerkonten haben, welche nicht auf einzelne Personen zugeschnitten sein muss, haben wir uns für die oben genannte Lösung entschieden.
+
 
 == Abstraktion
 === *Typen / Daten die im Programm zur Laufzeit benötigt werden:*
@@ -82,6 +81,48 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 
 ==== Logische Sicht
 In unserer logischen Schicht betrachten wir die einzelnen Komponenten des Systems. Der Webserver bildet die Grundlagen für die Darstellung der Webseite. Hier liegen alle HTML- sowie CSS- und Skriptdateien (Python, JavaScript, PHP). Über Skripte kommuniziert der Webserver mit der Datenbank indem Abfragen auf der Datenbank ausgeführt werden.
+
+@startuml
+
+node "Webserver" {
+    [HTML]
+    [Python]
+    note left of [Python] : scripts select,insert,delete,update
+    [CSS]
+    note left of [CSS]
+        predefined W3 
+        and own stylesheet
+    end note
+    [JavaScript]
+    [CSS] ..> [HTML] : styles
+    [HTML] --> [Python] : calls
+    
+    [Python] --> finance : select,insert,delete,update
+    [Python] --> universal : select,insert,delete,update
+    [Python] --> advisory_member : select,insert,delete,update
+    [Python] --> election : select,insert,delete,update
+}
+
+database "MySQL" {
+    folder "finance" {
+        [finance 1]
+        [finance 2]
+    }
+    folder "universal" {
+        [universal 1]
+        [universal 2]
+    }
+    folder "advisory_member" {
+        [advisory_member 1]
+        [advisory_member 2]
+    }
+    folder "election" {
+        [election 1]
+        [election 2]
+    }
+}
+
+@enduml
 
 ==== Pyhsische Sicht
 Unsere Anwendung bildet ein Server-Client System ab. Im Fokus steht der Webserver der mehreren Clients die Funktionalitäten des Systems bereitstellen muss. Im Hintergrund steht der Datenbankserver der nur über Services angebunden ist.
