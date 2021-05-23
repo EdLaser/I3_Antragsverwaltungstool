@@ -17,35 +17,46 @@ Weiteres unter xref:use-case_model.adoc#Use-Case Model[Use-Case Model].
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
-*SWFA-1: Für erweiterte Funktionen erfolgt eine Authentifizierung über Login.*
-
+*SWFA-1: Für das Bearbeiten von Anträgen ist ein Login nötig, um sicherzustellen das nur zuständige StuRa-Mitglieder Anträge bearbeiten können.*
     Zur Überprüfung wird ein Benutzerkonto durch das Team angelegt und über einen Login-Versuch getestet.
+
+*SWFA-2: Das System muss alle Daten der Anträge persistent speichern.*
+    Zum Test wird die Datenbank mit Test-Anträgen gefüllt und ausgeschalten. Bei Inbetriebnahme müssen alle Anträge wieder vollständig vorhanden sein.
+
+*SWFA-3: Bei der Antragsstellung müssen alle Daten korrekt und vollständig eingetragen und gespeichert werden.*
+    Zur Überprüfung wird ein Antrag im System gestellt. Es werden absichtlich Felder ausgelassen und Fehler gemacht, um zu sehen ob diese Korrekt erkannt werden. Danach wird der Antrag in der Datenbank auf Korrektheit geprüft.
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
-* Möglichst einfaches Erlernen mit selbsterklärenden Elementen und Beschriftungen, eine Benutzung sollte ohne Vorwissen möglich sein
-* Intuitive Bedienung über Nutzerführung durch Text mit einfachen Erläuterungen
-* Vorerst wird nur eine deutsche Variante mit deutscher Formatierung entwickelt
-* Für die Antragsstellung ist eine Dauer von 10 Minuten vorgesehen
-* Hilfefunktion (siehe Vision)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+*NFAU-1: Bei der Antragsstellung sollen Hilfefenster zur jeweiligen Antragsart verfügbar sein.*
+    Zum Test wird ein Antrag gestellt und das Hilfefenster aufgerufen, was Erklärungen zum jeweiligen Eingabepunkt zeigt.
+*NFAU-1: Auf der Startseite sollen Erklärungen für alle Antragsarten gezeigt werden.*
+    Zur Überprüfung wird die Startseite aufgerufen und geprüft, ob alle Informationen korrekt dargestellt werden und einem Nutzer, welcher noch nie einen Antrag gestellt hat, plausibel erscheinen.
 
 === Zuverlässigkeit (Reliability)
-* Wartungsarbeiten werden mit den Wartungszeiten des HTW-Servers synchronisiert wenn nötig
-* Daten werden in Datenbank gespeichtert, die auf dem Stura-Server implementiert ist
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+*NFAR-1: Der Nutzer muss bei der Antragsstellung eine gültige E-Mail-Adresse angeben.*
+    Zur Überprüfung wird getestet ob ein falsches Format mit einem Hinweis abgewiesen wird.
+
+*NFAR-2: Der Nutzer darf nur eine bestimmte Anzahl an Zeichen in die Eingabefelder eingeben.*
+    Zum Test wird eine zu große Anzahl an Zeichen eingetippt und überprüft ob eine Fehlermeldung ausgegeben wird.
+
+*NFAR-3: Der Nutzer darf keine Felder in der Antragsstellung auslassen.*
+    Zum Test werden absichtlich Felder ausgelassen und auf einen Hinweis überprüft.
 
 === Effizienz (Performance)
-* Limitierung der Performance durch Hardware nicht abzuschätzen
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 === Wartbarkeit (Supportability)
-* Anpassbarkeit hoch anzusetzen, da neue Funktionen immer einfach eingebunden werden sollen (einfaches Grundgerüst zur Erweiterung)
-* Installation nur ein mal auf Server notwendig
-
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+*NFAS-1: Das System soll die Möglichkeit bieten, später eine weitere Sprachen einbinden zu können.*
+    Zur Überprüfung wird festgestellt, ob entsprechende Möglichkeiten vorhanden sind.
+
+*NFAS-2: Das System muss auf Containern im StuRa-Server-Cluster installiert werden.*
+    Zur Überprüfung wird vorher auf eigenen Containern ein Deploy-Versuch unternommen.
 
 == Zusätzliche Anforderungen
 === Einschränkungen
@@ -55,19 +66,17 @@ Weiteres unter xref:use-case_model.adoc#Use-Case Model[Use-Case Model].
 // * Vorgaben für die Programmiersprache
 // * zu unterstützende Plattformen / Betriebssysteme
 // * Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
-* Die Software darf nicht unter Java programmiert werden
-* Als Webserver wird NGINX genutzt
-* Es muss eine Open-Source Anwendung entwickelt werden
-* PHP soll möglichst vermieden werden
-* Die Anwendung muss unter LINUX/UNIX lauffähig sein
+* Die Software darf nicht unter Java programmiert werden.
+* Es muss Open-Source-Software genutzt werden.
+* Die Anwendung muss unter LINUX/UNIX lauffähig sein.
+* Als Backend-Programmiersprache soll eine möglichst leichte und gut verständliche gewählt werden.
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* #zu beachtende Standards, Normen und Regeln?#
+* Die Anträge müssen den formellen Anforderungen des StuRa folgen.
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
-* Hochschulgesetz
+* Lizensierung der genutzen Software muss frei sein.
+* Datenschutz muss gewährleistet werden (angegebene Daten des Antragsstellers).
+* Hochschulgesetz.
