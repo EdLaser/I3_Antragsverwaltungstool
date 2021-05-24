@@ -15,203 +15,203 @@ include::../_includes/default-attributes.inc.adoc[]
 // Template
 *TS## - TC-Name*
 |===
-Vorbedingung:
+| Vorbedingung:
 
-Eingabedaten:
+| Eingabedaten:
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-Erwartetes Ergebnis:
+| Erwartetes Ergebnis:
 |===
 
 *TS01 - Valide Logindaten akzeptiert*
 |===
-Vorbedingung: das Internet
+| Vorbedingung: das Internet
 
-Eingabedaten: Passwort
+| Eingabedaten: Passwort
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Login-Button drucken
+| 1. Login-Button drucken
 
-2. Rolle wählen
+| 2. Rolle wählen
 
-3. Korrektes Passwort eingeben
+| 3. Korrektes Passwort eingeben
 
-Erwartetes Ergebnis: Anzeige der neuen Seite für die gewählte Rolle
+| Erwartetes Ergebnis: Anzeige der neuen Seite für die gewählte Rolle
 |===
 
 *TS02 - Falsches Passwort akzeptiert*
 |===
-Vorbedingung: das Internet
+| Vorbedingung: das Internet
 
-Eingabedaten: Passwort
+| Eingabedaten: Passwort
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Login-Button drucken
+| 1. Login-Button drucken
 
-2. Rolle wählen
+| 2. Rolle wählen
 
-3. Falsches Passwort eingeben
+| 3. Falsches Passwort eingeben
 
-Erwartetes Ergebnis: Fehlermeldung
+| Erwartetes Ergebnis: Fehlermeldung
 |===
 
 *TS03 - Vollständig ausgefüllter Antrag eingerreicht*
 |===
-Vorbedingung: das Internet, Login, korrekte Logindaten
+| Vorbedingung: das Internet, Login, korrekte Logindaten
 
-Eingabedaten: Antragsfelder(Name, Datum, Antragsinhalt, usw.)
+| Eingabedaten: Antragsfelder(Name, Datum, Antragsinhalt, usw.)
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Login
+| 1. Login
 
-2. Antragsfelder eingeben
+| 2. Antragsfelder eingeben
 
-3. Speichern
+| 3. Speichern
 
-Erwartetes Ergebnis: Speichern des Antrags in Datenbank
+| Erwartetes Ergebnis: Speichern des Antrags in Datenbank
 |===
 
 *TS04 - Unvollständiger Antrag eingerreicht*
 |===
-Vorbedingung: das Internet, Login, korrekte Logindaten
+| Vorbedingung: das Internet, Login, korrekte Logindaten
 
-Eingabedaten: Antragsfelder(Name, Datum, Antragsinhalt, usw.)
+| Eingabedaten: Antragsfelder(Name, Datum, Antragsinhalt, usw.)
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Login
+| 1. Login
 
-2. Antragsfelder eingeben
+| 2. Antragsfelder eingeben
 
-3. Ein nicht optimales Feld leer lassen
+| 3. Ein nicht optimales Feld leer lassen
 
-4. Speichern
+| 4. Speichern
 
-Erwartetes Ergebnis: Fehlermeldung
+| Erwartetes Ergebnis: Fehlermeldung
 |===
 
 *TS05 - Angezeigter Antrag aufrufbar*
 |===
-Vorbedingung: das Internet, Login
+| Vorbedingung: das Internet, Login
 
-Eingabedaten: Keine
+| Eingabedaten: Keine
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Antrag wählen
+| 1. Antrag wählen
 
-2. "Antrag anschauen"-Button drucken
+| 2. "Antrag anschauen"-Button drucken
 
-Erwartetes Ergebnis: Anzeige des gewählten Antrags
+| Erwartetes Ergebnis: Anzeige des gewählten Antrags
 |===
 
 *TS06 - Externer Nutzer darf keinen Antrag bearbeiten*
 |===
-Vorbedingung: das Internet
+| Vorbedingung: das Internet
 
-Eingabedaten: Keine
+| Eingabedaten: Keine
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Antrag wählen
+| 1. Antrag wählen
 
-2. "Antrag bearbeiten"-Button drucken
+| 2. "Antrag bearbeiten"-Button drucken
 
-Erwartetes Ergebnis: Fehlermeldung
+| Erwartetes Ergebnis: Fehlermeldung
 |===
 
 *TS07 - Administrator/Präsidium darf Anträge bearbeiten*
 |===
-Vorbedingung: das Internet, Login
+| Vorbedingung: das Internet, Login
 
-Eingabedaten: Keine
+| Eingabedaten: Keine
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Login
+| 1. Login
 
-2. Antrag wählen
+| 2. Antrag wählen
 
-3. "Antrag bearbeiten"-Button drucken
+| 3. "Antrag bearbeiten"-Button drucken
 
-4. Antrag bearbeiten
+| 4. Antrag bearbeiten
 
-5. Speichern
+| 5. Speichern
 
-Erwartetes Ergebnis: Speichern des bearbeiteten Antrags
+| Erwartetes Ergebnis: Speichern des bearbeiteten Antrags
 |===
 
 *TS08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
 |===
-Vorbedingung: das Internet
+| Vorbedingung: das Internet
 
-Eingabedaten: Keine
+| Eingabedaten: Keine
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. "Tagesordnung ansehen"-Button drucken
+| 1. "Tagesordnung ansehen"-Button drucken
 
-Erwartetes Ergebnis: Fehlermeldung
+| Erwartetes Ergebnis: Fehlermeldung
 |===
 
 *TS09 - Interner Nutzer können die Tagesordnung ansehen*
 |===
-Vorbedingung: das Internet, Login
+| Vorbedingung: das Internet, Login
 
-Eingabedaten: Keine
+| Eingabedaten: Keine
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Login
+| 1. Login
 
-2. "Tagesordnung ansehen"-Button drucken
+| 2. "Tagesordnung ansehen"-Button drucken
 
-Erwartetes Ergebnis: Anzeige der Tagesordnung
+| Erwartetes Ergebnis: Anzeige der Tagesordnung
 |===
 
 *TS10 - Unterschiedliche Datentypen als Anlage*
 |===
-Vorbedingung: das Internet, Login, ausgefüllte Felder 
+| Vorbedingung: das Internet, Login, ausgefüllte Felder 
 
-Eingabedaten: Anlage
+| Eingabedaten: Anlage
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. "Anlage"-Button wählen
+| 1. "Anlage"-Button wählen
 
-2. Anlage wählen und hochladen
+| 2. Anlage wählen und hochladen
 
-Erwartetes Ergebnis: Speichern der Anlage in Datenbank
+| Erwartetes Ergebnis: Speichern der Anlage in Datenbank
 |===
 
 *TS11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
 |===
-Vorbedingung: das Internet, Login 
+| Vorbedingung: das Internet, Login 
 
-Eingabedaten: Keine
+| Eingabedaten: Keine
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-1. Felder "Vorschlag" und "Anlage" leer lassen
+| 1. Felder "Vorschlag" und "Anlage" leer lassen
 
-2. "Speichern"-Button drucken
+| 2. "Speichern"-Button drucken
 
-Erwartetes Ergebnis: Speichern des Antrags in Datenbank
+| Erwartetes Ergebnis: Speichern des Antrags in Datenbank
 |===
 
 *TS## - TC-Name*
 |===
-Vorbedingung: 
+| Vorbedingung: 
 
-Eingabedaten:
+| Eingabedaten:
 
-Ablaufbeschreibung des Tests:
+| Ablaufbeschreibung des Tests:
 
-Erwartetes Ergebnis:
+| Erwartetes Ergebnis:
 |===
 
 
