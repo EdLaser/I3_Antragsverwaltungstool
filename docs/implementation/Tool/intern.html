@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="data/css/W3.css">
     <link rel="stylesheet" href="data/css/intern.css">
     <link rel="stylesheet" href="data/css/login_popup.css">
+    <script src="data/js/owninput.js"></script>
+    <script src="data/js/toggleout.js"></script>
+    <script src="data/js/toggledisplay.js"></script>
 </head>
 <body>
 <div class = "logo w3-animate-top">
@@ -53,7 +56,75 @@
 </div>
 
 <div class = "content w3-animate-opacity">
+    <div class = "w3-row" style="margin-bottom: 20px">
+        <div class="w3-half" style="width: 40%">
+            <div class="w3-card-4" style="margin-right: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Referat wählen:</h2>
+                </header>
 
+                <div class="w3-container w3-light-gray">
+                    <form class = "myform" action="data/php/intern.php">
+                        <select class="w3-select w3-border form" id = "Sin" onchange="mytoggleinputs('oth')" name = "election_input" required>
+                            <option disabled selected>Bitte Auswählen</option>
+                            <option name = "pres" value = "1">Präsidium</option>
+                            <option name = "ple" value = "2">Plenum</option>
+                            <option name = "qm" value = "3">Quallitätsmanagement</option>
+                            <option name = "tes" value = "4">Testreferat</option>
+                            <option name = "other" value = "5">Eigene...</option>
+                        </select>
+
+                        <div id="oth" style = "visibility: hidden">
+                            <label><b>Eigene:</b></label>
+                            <input class = "w3-input w3-border form" placeholder="Beispielreferat" name = "owninput" ><br>
+                        </div>
+                    </form>
+                </div>
+
+                <footer class="w3-container w3-light-gray">
+                    <input type="submit" class = "w3-button w3-green mybutton" value="Absenden" onclick="toggleout('out'),toggledisplay('applications')">
+                </footer>
+            </div>
+        </div>
+
+        <div class="w3-half" style="width: 60%; visibility: hidden" id = "out">
+            <div class="w3-card-4">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Ausgabe:</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <div class = "sqloutput">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none; margin-right: 10%; margin-left: 10%" id = "applications">
+        <h1>Antragsart wählen:</h1>
+        <table>
+            <tr>
+                <td><a href="universally_stura.html">
+                    <img src="img/applications.png" class = "applimg" alt="Antagslogo"/><b>Antrag ohne finanzielle Mittel</b>
+                </a></td>
+                <td><a href="finance_stura.html">
+                    <img src="img/applications.png" class = "applimg" alt="Antagslogo"/><b>Antrag mit finanziellen Mitteln</b>
+                </a></td>
+                <td><a href="advisory_member_stura.html">
+                    <img src="img/applications.png" class = "applimg" alt="Antagslogo"/><b>Wahl Beratendes Mitglied</b>
+                </a></td>
+                <td><a href="election_report_stura.html">
+                    <img src="img/applications.png" class = "applimg" alt="Antagslogo"/><b>Wahl auf Stelle/Amt</b>
+                </a></td>
+                <td><a href="#">
+                    <img src="img/applications.png" class = "applimg" alt="Antagslogo"/><b>Wahl auf Studienkomission</b>
+                </a></td>
+            </tr>
+        </table>
+
+    </div>
 </div>
 
 <div class = "footer w3-animate-bottom">
