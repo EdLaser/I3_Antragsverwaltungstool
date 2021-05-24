@@ -57,6 +57,7 @@ Beschreibung: Prüfen, ob sich ein vollständig ausgefüllter Antrag erreichen l
 Vorbedingungen: Das Internet muss zur Verfüfung stehen. Der Login muss gelungen sein. Die Eingaben (z.B. Datum) müssen gültig sein.
 
 Nachbedingungen: Uhrzeit, Name des Antragsstellers und der Antrag müssen (in einer Datenbank) gespeichert werden.
+
 Erforderliche Daten: vollständig ausgefüllter Antrag
 |===
 
@@ -67,6 +68,7 @@ Beschreibung: Prüfen, ob sich ein unvollständiger Antrag erreichen lässt. Es 
 Vorbedingungen: Das Internet muss zu Verfügung stehen. Der Login muss gelungen sein. 
 
 Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden. 
+
 Erforderliche Daten: unvollständiger Antrag 
 |===
 
@@ -85,7 +87,7 @@ Erforderliche Daten: Keine
 |===
 Beschreibung: Prüfen, ob ein externer Nutzer einen Antrag bearbeiten kann. Das darf nicht möglich sein.
 
-Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
+Vorbedingungen: Das Internet muss verfügbar sein.
 
 Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden.
 
@@ -143,28 +145,6 @@ Beschreibung: Prüfen, ob diese beiden Felder leer sein dürfen
 Vorbedingung: Keine
 
 Nachbedingung: Keine
-
-Erforderliche Daten: Keine
-|===
-
-*TC12 - 1 Loginkonto mit allen Rechten*
-|===
-Beschreibung: Es sollte ein Konto geben, die alle Rechte haben.
-
-Vorbedingung: Keine
-
-Nachbedingung: Keine
-
-Erforderliche Daten: Keine
-|===
-
-*TC13 - 10 Mitglieder gleichzeitig*
-|===
-Beschreibung: Prüfen, ob die Software unter gleichzeitiger Nutzung von 10 Nutern noch funktioniert.
-
-Vorbedingung: Der Server muss aufrufbar sein.
-
-Nachbedingung: Die Wartezeit muss nicht länger als 5 Minuten dauern.
 
 Erforderliche Daten: Keine
 |===
