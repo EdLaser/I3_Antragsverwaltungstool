@@ -11,22 +11,29 @@ Die Tabelle enthält alle identifizierten Use-Cases.
 [%header, cols="1,4,1,2"]
 |===
 |Nr | Use-Case | Priorität | Akteur
-|UC01 | Wahlantrag stellen | sehr hoch | Mitglied
-|UC02 | Antrag auf Ressourcen stellen | sehr hoch | Mitglied
-|UC03 | Offene Anträge Ansehen | hoch | Mitglied
-|UC04 | Änderungsantrag vom Antragsteller | mittel | Mitglied
-|UC05 | Tagesordnung anzeigen | niedrig | Mitglied
+|UC01 | Wahlantrag stellen | sehr hoch | Mitglied oder natürliche Person
+|UC02 | Antrag auf Ressourcen stellen | sehr hoch | Mitglied oder natürliche Person
+|UC03 | Offene Anträge Ansehen | hoch | Mitglied oder natürliche Person 
+|UC04 | Änderungsantrag vom Antragsteller | mittel | Mitglied oder natürliche Person
+// |UC05 | Tagesordnung anzeigen | niedrig | Mitglied
+|UC05 | Offene Anträge ansehen | sehr hoch | Präsidium
+// |UC07 | Tagesordnung ansehen | niedrig | Präsidium
+// |UC08 | Tagesordnung bearbeiten | niedrig | Präsidium
+|UC06 | Antrag bearbeiten | sehr hoch | Präsidium
+|UC07 | Antrag ablehnen | sehr hoch | Präsidium
+|UC08 | Antrag vertagen | sehr hoch | Präsidium
 |Add-On1 | Haushaltplan ansehen | niedrig | Mitglied
 |Add-On2 | Email an gewählten Kandidat | niedrig | Mitglied
-|UC06 | Offene Anträge ansehen | sehr hoch | Präsidium
-|UC07 | Tagesordnung ansehen | niedrig | Präsidium
-|UC08 | Tagesordnung bearbeiten | niedrig | Präsidium
-|UC09 | Antrag bearbeiten | sehr hoch | Präsidium
-|UC10 | Antrag ablehnen | sehr hoch | Präsidium
-|UC11 | Antrag vertagen | sehr hoch | Präsidium
 |Add-On3 | Haushaltplan anzeigen | niedrig | Präsidium
 |Add-On4 | Information Mitgliederverwaltung über neues Mitglied | niedrig | Präsidium
 |===
+
+.Use-Case-Model
+.Use-Case-Model
+[plantuml, "diagrams/use_case_model", svg]
+....
+include::diagrams/use_case_model.puml[]
+....
 
 ////
 == Identifizierte Use-Cases

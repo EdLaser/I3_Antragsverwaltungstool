@@ -1,0 +1,27 @@
+@startuml "Use-Case-Model"
+left to right direction
+actor Antragssteller <<Person>>
+actor Präsidium <<Person>>
+
+rectangle Antragsverwaltungstool {
+    (Wahlantrag stellen) <<UC01>> as wahl
+    (Antrag auf Ressourcen stellen) <<UC02>> as ressourcen
+    (Offene Anträge Ansehen) <<UC03>> as ansehen
+    (Änderungsantrag vom Antragsteller) <<UC04>> as änderung
+    (Offene Anträge ansehen) <<UC05>> as ansehen_p
+    (Antrag bearbeiten) <<UC06>> as bearbeiten
+    (Antrag ablehnen) <<UC07>> as ablehnen
+    (Antrag vertagen) <<UC08>> as vertagen
+}
+left to right direction
+Antragssteller --> wahl
+Antragssteller --> ressourcen
+Antragssteller --> ansehen
+Antragssteller --> änderung
+
+Präsidium --> ansehen_p
+Präsidium --> bearbeiten
+Präsidium --> ablehnen
+Präsidium --> vertagen
+
+@enduml
