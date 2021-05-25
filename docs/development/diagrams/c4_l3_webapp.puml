@@ -1,0 +1,10 @@
+@startuml "Level 3 - Component"
+
+actor Antragssteller <<Person>>
+actor StuRa_Mitglied <<Person>>
+
+component "Web-Applikation" {
+    []
+}
+
+@enduml

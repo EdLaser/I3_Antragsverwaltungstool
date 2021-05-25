@@ -1,0 +1,14 @@
+@startuml "Level 1 - Context"
+
+actor Antragssteller <<Person>>
+actor StuRa_Mitglied <<Person>>
+[Antragsverwaltungstool]
+note right of [Antragsverwaltungstool] : Web-Applikation zum Verwalten und Stellen von Anträgen im StuRa
+
+Antragssteller ..> Antragsverwaltungstool : nutzt (HTTP)
+StuRa_Mitglied ..> Antragsverwaltungstool : nutzt (HTTP)
+
+note left of Antragssteller : Ein Nutzer der einen Antrag stellt
+note right of StuRa_Mitglied : Ein Mitlgied im StuRa das Anträge verwalten soll/darf
+@enduml
+

@@ -1,0 +1,23 @@
+@startuml "Level 2 - Container"
+
+actor Antragssteller <<Person>>
+actor StuRa_Mitglied <<Person>>
+
+component "Antragsverwaltungstool" {
+    component [Web-Applikation] <<Container>>
+    note right of [Web-Applikation]
+        Stellt das graphische Overlay dar, 
+        empfängt Nutzereingaben und zeigt Informationen geordnet an
+    end note
+    [Datenbank] <<Container>>
+    note right of [Datenbank]
+        Speichert Daten zu Anträgen
+        und gibt selbige auf Anfrage zurück
+    end note
+}
+
+Antragssteller ..> [Web-Applikation] : nutzt (HTTP)
+StuRa_Mitglied ..> [Web-Applikation] : nutzt (HTTP)
+[Web-Applikation] ..> [Datenbank] : liest, schreibt, löscht in
+
+@enduml
