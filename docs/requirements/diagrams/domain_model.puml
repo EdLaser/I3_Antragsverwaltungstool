@@ -1,0 +1,85 @@
+@startuml "Domain-Model"
+
+object Antragssteller {
+    name
+    email
+}
+
+object Präsidium 
+
+object StuRa
+
+object StuRa_Server
+
+object Antragverwaltungstool
+
+object Computer_des_Nutzers {
+    Browser
+    Internetleistung
+}
+
+object Server_Admin
+
+object Antrag {
+    status
+    Antragsnummer
+    Titel
+    Stelle
+    Datum
+    Text
+    Begründung
+    Vorschlag_zum_Verfahren
+    Anlagen
+}
+
+object Wahlantrag {
+    vorstellung_frg1
+    vorstellung_frg2
+    vorstellung_frg3
+    vorstellung_frg4
+}
+
+object beratendes_Mitglied
+
+object Stelle_Amt {
+    amt_frg1
+    amt_frg2
+    amt_frg3
+}
+
+object Studienkomission
+
+object Änderungsantrag
+
+object mit_finanziellen_Mitteln {
+    Kostenposition
+}
+
+object ohne_finanzielle_Mittel
+
+StuRa --> Präsidium : stellt
+StuRa --> Antrag : gibt Rahmenbedingungen
+StuRa --> StuRa_Server : betreibt
+Server_Admin --> StuRa : ist Teil von
+
+Computer_des_Nutzers <-- Antragssteller : genutzt von
+Computer_des_Nutzers <-- Präsidium : genutzt von
+
+Präsidium "1" --> "1" Antragverwaltungstool : nutzt
+Antragssteller "n" --> "1" Antragverwaltungstool : nutzt
+
+Server_Admin "2" --> "1" StuRa_Server : betreut
+StuRa_Server "1" --> "1" Antragverwaltungstool : stellt bereit
+Antragverwaltungstool "1" --> "n" Antrag : speichert / managet
+
+Antrag <|-- Wahlantrag
+Antrag <|-- mit_finanziellen_Mitteln
+Antrag <|-- ohne_finanzielle_Mittel
+Antrag <|-- Änderungsantrag
+Wahlantrag <|-- Stelle_Amt
+Wahlantrag <|-- beratendes_Mitglied
+Wahlantrag <|-- Studienkomission
+
+
+
+@enduml

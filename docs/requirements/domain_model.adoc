@@ -7,5 +7,9 @@ include::../_includes/default-attributes.inc.adoc[]
 == Allgemeine Informationen
 Dieses Dokument veranschaulicht die Beziehungen zwischen den einzelnen Akteuren in der Nutzung des Tools und ihre Beziehungen untereinander.
 
-image::Domain_model.jpg[]
+.Domain-Model
+[plantuml, "diagrams/domain_model", svg]
+....
+include::diagrams/domain_model.puml[]
+....
 

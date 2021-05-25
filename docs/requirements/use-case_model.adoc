@@ -29,7 +29,6 @@ Die Tabelle enthält alle identifizierten Use-Cases.
 |===
 
 .Use-Case-Model
-.Use-Case-Model
 [plantuml, "diagrams/use_case_model", svg]
 ....
 include::diagrams/use_case_model.puml[]
