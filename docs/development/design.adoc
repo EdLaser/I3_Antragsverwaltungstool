@@ -7,13 +7,31 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 
-* Anträge in tmp Verzeichnis als .txt solange sie nicht beschlosssen wurden im csv Format
-* Zu jedem Antrag einen Ordner mit Antragsnummer und Anlagen ( Dateien )
-* Nach Beschluss Überführung in ein pdf / zip
+* Anträge in relationale Datenbank
 * Prozesse der Bearbeitung (Status) wird durch Flags im Antrag gesetzt (ganz oben)
-* Login über Plugin mit neuen Browser-Popup, Zugriffe über Gruppenstruktur im Plugin
 * Externe Antragssteller sind zu beachten, bei Wahlantrag sinnvoll
-* Ablauf Antrag: Ausfüllen -> php action über submit putton -> führt python script mit input vom Antrag aus -> schreibt neue txt csv / Ordner -> Umwandeln zu pdf nach Beschluss 
+* Ablauf Antrag: Ausfüllen -> python script führt sql insert aus -> schreiben eines neuen Tabelleneintrags
 * Nav Leiste mit Dropdown Menü "Einreichen für normale Anträge" und "intern" -> Einloggen mit zusätzlichen Funktionen
-* TO mit ul und links zu den jeweilige Anträge der TOPs
-* Anträge haben Prio Flags für TO
+
+== Design Struktur
+=== C4-Modell
+.Level 1: Context
+[plantuml, "diagrams/c4_l1", svg]
+....
+include::diagrams/c4_l1.puml[]
+....
+
+.Level 2: Container
+[plantuml, "diagrams/c4_l2", svg]
+....
+include::diagrams/c4_l2.puml[]
+....
+
+.Level 3: Container (Web-Applikation)
+[plantuml, "diagrams/c4_l3_webapp", svg]
+....
+include::diagrams/c4_l3_webapp.puml[]
+....
+
+== Umsetzung von Anforderungen
+=== 

@@ -3,8 +3,42 @@
 actor Antragssteller <<Person>>
 actor StuRa_Mitglied <<Person>>
 
-component "Web-Applikation" {
-    []
+folder "Web-Applikation" {
+   component insert_script <<insert>> [
+        Script, dass bei einer Nutzereingabe einen
+        Datensatz in die Datebnbank schreibt.
+    ] 
+    component login_controller <<Login>> [
+        Ermöglicht es einem berechtigten Nutzer
+         sich einzulogen, um in den internen
+         Bereich zu gelangen.
+    ]
+    component select_script <<insert>> [
+        Script, dass Datensätze nach festlegbaren
+        Kriterien aus der Datenbank liest.
+    ]
+    component update_script <<insert>> [
+        Script, dass nach Bearbeitung eines 
+        Datensatzes Änderungen in die Datenank schreibt.
+    ]
+    component delete_script <<insert>> [
+        Script, dass einen gewünschten
+        Datensatz aus der Datenbank entfernt.
+    ]
 }
+
+database Datenbank <<container>>
+
+Antragssteller ..> insert_script : nutzt (HTTP)
+
+StuRa_Mitglied ..> login_controller : nutzt (HTTP)
+StuRa_Mitglied ..> update_script : nutzt (HTTP)
+StuRa_Mitglied ..> select_script : nutzt (HTTP)
+StuRa_Mitglied ..> delete_script : nutzt (HTTP)
+
+update_script ..> Datenbank : schreibt (PyMySQL)
+insert_script ..> Datenbank : schreibt (PyMySQL)
+select_script ..> Datenbank : liest (PyMySQL)
+delete_script ..> Datenbank : löscht (PyMySQL)
 
 @enduml
