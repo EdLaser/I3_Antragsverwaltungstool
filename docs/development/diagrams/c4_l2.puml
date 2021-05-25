@@ -1,7 +1,9 @@
 @startuml "Level 2 - Container"
 
+skinparam actorStyle awesome
+
 actor Antragssteller <<Person>>
-actor StuRa_Mitglied <<Person>>
+actor Präsidium <<Person>>
 
 component "Antragsverwaltungstool" {
     component [Web-Applikation] <<Container>>
@@ -17,7 +19,7 @@ component "Antragsverwaltungstool" {
 }
 
 Antragssteller ..> [Web-Applikation] : nutzt (HTTP)
-StuRa_Mitglied ..> [Web-Applikation] : nutzt (HTTP)
+Präsidium ..> [Web-Applikation] : nutzt (HTTP)
 [Web-Applikation] ..> [Datenbank] : liest, schreibt, löscht in
 
 @enduml

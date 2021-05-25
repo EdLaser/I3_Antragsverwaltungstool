@@ -1,7 +1,9 @@
 @startuml "Level 3 - Component"
 
+skinparam actorStyle awesome
+
 actor Antragssteller <<Person>>
-actor StuRa_Mitglied <<Person>>
+actor Präsidium <<Person>>
 
 folder "Web-Applikation" {
    component insert_script <<insert>> [
@@ -31,10 +33,10 @@ database Datenbank <<container>>
 
 Antragssteller ..> insert_script : nutzt (HTTP)
 
-StuRa_Mitglied ..> login_controller : nutzt (HTTP)
-StuRa_Mitglied ..> update_script : nutzt (HTTP)
-StuRa_Mitglied ..> select_script : nutzt (HTTP)
-StuRa_Mitglied ..> delete_script : nutzt (HTTP)
+Präsidium ..> login_controller : nutzt (HTTP)
+Präsidium ..> update_script : nutzt (HTTP)
+Präsidium ..> select_script : nutzt (HTTP)
+Präsidium ..> delete_script : nutzt (HTTP)
 
 update_script ..> Datenbank : schreibt (PyMySQL)
 insert_script ..> Datenbank : schreibt (PyMySQL)
