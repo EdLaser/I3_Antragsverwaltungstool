@@ -1,0 +1,23 @@
+@startuml "pyhsische Sicht"
+
+cloud "Webserver" {
+    [data]
+}
+
+node "client 1" {
+    [browser 1]
+}
+
+node "client 2" {
+    [browser 2]
+}
+
+node "client 3" {
+    [browser 3]
+}
+
+[browser 1] --> [data]
+[browser 2] --> [data]
+[browser 3] --> [data]
+
+@enduml

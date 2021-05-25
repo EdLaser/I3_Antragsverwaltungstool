@@ -82,47 +82,17 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 ==== Logische Sicht
 In unserer logischen Schicht betrachten wir die einzelnen Komponenten des Systems. Der Webserver bildet die Grundlagen für die Darstellung der Webseite. Hier liegen alle HTML- sowie CSS- und Skriptdateien (Python, JavaScript, PHP). Über Skripte kommuniziert der Webserver mit der Datenbank indem Abfragen auf der Datenbank ausgeführt werden.
 
-@startuml
-
-node "Webserver" {
-    [HTML]
-    [Python]
-    note left of [Python] : scripts select,insert,delete,update
-    [CSS]
-    note left of [CSS]
-        predefined W3 
-        and own stylesheet
-    end note
-    [JavaScript]
-    [CSS] ..> [HTML] : styles
-    [HTML] --> [Python] : calls
-    
-    [Python] --> finance : select,insert,delete,update
-    [Python] --> universal : select,insert,delete,update
-    [Python] --> advisory_member : select,insert,delete,update
-    [Python] --> election : select,insert,delete,update
-}
-
-database "MySQL" {
-    folder "finance" {
-        [finance 1]
-        [finance 2]
-    }
-    folder "universal" {
-        [universal 1]
-        [universal 2]
-    }
-    folder "advisory_member" {
-        [advisory_member 1]
-        [advisory_member 2]
-    }
-    folder "election" {
-        [election 1]
-        [election 2]
-    }
-}
-
-@enduml
+.logische Sicht
+[plantuml, "diagrams/logical", svg]
+....
+include::diagrams/logical.puml[]
+....
 
 ==== Pyhsische Sicht
 Unsere Anwendung bildet ein Server-Client System ab. Im Fokus steht der Webserver der mehreren Clients die Funktionalitäten des Systems bereitstellen muss. Im Hintergrund steht der Datenbankserver der nur über Services angebunden ist.
+
+.pyhsische Sicht
+[plantuml, "diagrams/pyhsical", svg]
+....
+include::diagrams/physical.puml[]
+....
