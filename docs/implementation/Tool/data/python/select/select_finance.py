@@ -10,4 +10,3 @@ with connect:
         cursor.execute(statement)
         result = cursor.fetchall()
         print(result)
-    connect.commit()
