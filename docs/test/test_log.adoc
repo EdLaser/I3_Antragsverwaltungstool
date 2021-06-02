@@ -1,0 +1,21 @@
+= Test Cases: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+{mail}
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Allgemeine Informationen
+Information über Testergebnisse, wann der Test durchgeführt wird und welche Tests, die schon durchgeführt werden
+
+== Test log
+// Template
+*TS## - TC-Name*
+|===
+| Datum:
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig):
+
+| Notizen: 
+ 
+|===

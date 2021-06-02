@@ -1,0 +1,24 @@
+= Test Cases: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+{mail}
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Allgemeine Informationen
+
+== Testdokumentation
+
+=== Testkonzept
++ Testobjekte: Webseite, Datenbank
+
++ Testmethoden: manuell
+
++ Testdurchführungsplanung (wann wird welche Tests durchgeführt?): siehe test_log.adoc
+
+
+=== Testfallbeschreibung
+siehe: test_script.adoc
+
+=== Testergebnisse
+siehe: test_log.adoc
