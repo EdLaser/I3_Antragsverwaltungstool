@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Antragverwaltungstool</title>
+    <link rel="icon" href="../../atool/static/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../atool/static/css/mainstyle.css">
+    <link rel="stylesheet" href="../../atool/static/css/W3.css">
+    <link rel="stylesheet" href="../../atool/static/css/election_report_stura.css">
+    <link rel="stylesheet" href="../../atool/static/css/popup.css">
+    <link rel="stylesheet" href="../../atool/static/css/login_popup.css">
+    <script src="../../atool/static/js/owninput.js"></script>
+    <script src="../../atool/static/js/toggleradio.js"></script>
+</head>
+<body>
+<div class = "logo w3-animate-top">
+    <a href="index.html" class = "w3-hover-opacity"><img src="../../atool/static/img/logo.png" class = "sturalogo" alt="ToolLogo"/></a>
+</div>
+<div class = "navigation">
+    <ul class = "mainnav">
+        <li class = "lil"><a href="index.html">Home</a></li>
+        <li class = "lil"><a href="intern.html">Zurück</a></li>
+    </ul>
+</div>
+
+<div class = "content w3-animate-opacity">
+    <form action="data/python/insert/insert_election_stura.py">
+        <label><b>Antragsnummer:</b></label>
+        <table class = "form">
+            <tr>
+                <td><input class = "w3-input w3-border" type = "text" name = "applnumber" required placeholder = "P210000"></td>
+                <td><input type="submit" class = "w3-button w3-green mybutton" value="Daten Anfordern"></td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="data/php/election_report_stura.php" method="post">
+        <div class = "form">
+            <label><b>Antragstitel:</b></label><br>
+            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf...">
+        </div>
+
+        <div class = "w3-half npad">
+            <label><b>Zuständige Stelle wählen:</b></label><br>
+            <label>
+                <select class="w3-select w3-border" id = "Sin" onchange="mytoggleinputs('oth')" name = "election_input" required>
+                    <option disabled selected>Bitte Auswählen</option>
+                    <option name = "pres" value = "1">Präsidium</option>
+                    <option name = "ple" value = "2">Plenum</option>
+                    <option name = "qm" value = "3">Quallitätsmanagement</option>
+                    <option name = "tes" value = "4">Testreferat</option>
+                    <option name = "other" value = "5">Eigene...</option>
+                </select>
+            </label>
+        </div>
+
+        <div class = "w3-half">
+            <br>
+            <div id="oth" style = "visibility: hidden">
+                <input class = "w3-input w3-border" type = "text" name = "otherinput">
+            </div>
+        </div>
+
+        <div class = "w3-half npad">
+            <label><b>Name:</b></label><br>
+            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann">
+        </div>
+        <div class = "w3-half">
+            <label><b>E-Mail:</b></label>
+            <div class="tooltip">
+                <img src="../../atool/static/img/info.png" width = "16" height = "16" alt = "Info icon"/>
+                <span class="tooltiptext">Bei möglichkeit die HTW-Mail verwenden (sXXXXX@htw-dresden.de)
+                </span></div>
+            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com">
+        </div>
+
+        <div class = "form">
+            <label><b>Antragstext:</b></label>
+            <div class="tooltip">
+                <img src="../../atool/static/img/info.png" width = "16" height = "16" alt = "Info icon"/>
+                <span class="tooltiptext">Hier steht ein erklärender Text
+            </span></div>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">Der StuRa möge durch Wahl beschließen, ob DEIN NAME die Funktion als übernehmen soll.</textarea>
+        </div>
+
+        <div class = "form">
+        <label><b>StuRa Mitglied?</b></label>
+        <label>Ja </label><input class="w3-check" type="checkbox" id="Fin" name="member" onclick="toggleradio('frg','Fin')">
+        </div>
+
+        <div id = "frg">
+            <div class = "form">
+                <label><b>Vorstellung:</b></label><br>
+                <label><i><script src="../../atool/static/text/advisory_member/frage1.js"></script></i></label>
+                <input class = "w3-input w3-border" name = "frg1" maxlength="260">
+            </div>
+
+            <div class = "form">
+                <label><i><script src="../../atool/static/text/advisory_member/frage2.js"></script></i></label>
+                <input class = "w3-input w3-border" name = "frg2" maxlength="260">
+            </div>
+
+            <div class = "form">
+                <label><i><script src="../../atool/static/text/advisory_member/frage3.js"></script></i></label>
+                <input class = "w3-input w3-border" name = "frg3" maxlength="260">
+            </div>
+
+            <div class = "form">
+                <label><i><script src="../../atool/static/text/advisory_member/frage4.js"></script></i></label>
+                <input class = "w3-input w3-border" name = "frg4" maxlength="260">
+            </div>
+        </div>
+
+        <div class = "form">
+            <label><b>Allgemeine Fragen zum speziellen Amt:</b></label><br>
+            <label><i><script src="../../atool/static/text/election_report/frage1.js"></script></i></label>
+            <input class = "w3-input w3-border" name = "frg5" maxlength="260">
+        </div>
+
+        <div class = "form">
+            <label><i><script src="../../atool/static/text/election_report/frage2.js"></script></i></label>
+            <input class = "w3-input w3-border" name = "frg6" maxlength="260">
+        </div>
+
+        <div class = "form">
+            <label><i><script src="../../atool/static/text/election_report/frage3.js"></script></i></label>
+            <input class = "w3-input w3-border" name = "frg7" maxlength="260">
+        </div>
+
+        <div>
+            <label><b>Anlagen:</b></label><br>
+            <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Falsches Referat?</b></label>
+            <label>Ja </label><input class="w3-check" type="checkbox" id="sturayes" name="wrgelec" onclick="toggleradio('sturaInput','sturayes')">
+        </div>
+
+        <div class = form id = "sturaInput">
+            <div class = "form">
+                <label><b>Besondere Merheit?</b></label>
+                <label>Ja </label><input class="w3-check" type="checkbox" name="yes">
+                <label>Nein </label><input class="w3-check" type="checkbox" name="yes">
+            </div>
+
+            <div class = "form">
+                <label><b>Beschluss:</b></label>
+                <input class = "w3-input w3-border" type = "text" name = "beschluss" placeholder = "Beschluss">
+            </div>
+
+            <div class = "form">
+                <label><b>Beschlusstext</b></label>
+                <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Beschlusstext..." maxlength="260"></textarea>
+            </div>
+
+            <div class = "form">
+                <label><b>Begründung zum Beschluss:</b></label>
+                <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Beschlussbegründung..." maxlength="260"></textarea>
+            </div>
+        </div>
+
+        <div class = "w3-row-padding">
+            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+            <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+        </div>
+    </form>
+</div>
+
+<div class = "footer w3-animate-bottom">
+    <table>
+        <tr>
+            <td><a href="https://www.w3schools.com/default.asp"><img src="../../atool/static/img/footer/W3.png" alt = "W3 Logo"/><br>W3 schools</a></td>
+            <td><a href="https://httpd.apache.org/"><img src="../../atool/static/img/footer/apache.png" alt = "Apache Logo"/><br>Apache</a></td>
+            <td><a href="https://www.stura.htw-dresden.de/"><img src="../../atool/static/img/footer/Stura_htw.png" alt = "Stura Logo"/><br></a></td>
+            <td><a href="https://www.gnu.org/home.de.html"><img src="../../atool/static/img/footer/gnu.png" alt = "GNU Logo"/><br>GNU</a></td>
+            <td><a href="https://www.bootstrapcdn.com/"><img src="../../atool/static/img/footer/Bootstrap.png" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
