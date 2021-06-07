@@ -1,0 +1,25 @@
+== Hauptaktivitäten
+1. Herstellen der Testfälle
+    + Analysieren der Use-Cases
+    + Suche nach Testobjekten
+    + Beschreibung jedes Testfalls
+    + Suche nach den Vorbedingungen, Nachbedingungen und erforderlichen Daten des Testfalls
+
+2. Herstellen der Testfallbeschreibung
+    + Eingabedaten
+    + Ablaufbeschreibung des Tests
+    + Wählen der Testmethode
+
+3. Testen
+    + Wählen des Testfalls
+    + Lesen der Testfallbeschreibung
+    + Durchführung dieses Testfalls
+    + Dokumentation des Testergebnisses
+
+4. Herstellen der Testergebnisse
+    + Ergebnisse der Testdurchführung
+    + Notizen
+
+== Entscheidungen mit Begründung
+
+== Probleme und ihr Umgang
