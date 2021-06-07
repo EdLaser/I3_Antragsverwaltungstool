@@ -1,0 +1,18 @@
+== Ergebnisse
+
+=== Reflexion
+
+* Was habe ich gelernt?
++ Kommunikation mit anderen Teammitgliedern
++ Teilen der Aufgaben
++ Bitte um Hilfe von anderen Teammitgliedern
+
+* Worauf bin ich stolz?
+Ich bin darauf stolz, dass ich die Aufgaben meiner Rolle erledigen kann.
+
+* Was hat gut funktioniert?
++ Die Zusammenarbeit zwischen Teammitgliedern: Wir haben uns regelmäßig getroffen und über die Probleme diskutiert
++ Die Aufteilung der Aufgaben: Jeder macht, was ihn interessiert
+
+* Was würde ich beim nächsten Projekt anders machen?
+Ich würde mich auf die Technologie, die bei der Implementierung genutzt wird, vorbeireiten. In diesem Projekt nutzen wir HTML, CSS und JavaScript. Ich kenne diese Sprache nicht so gut, deswegen kann ich bei der Implementierung nicht helfen.
