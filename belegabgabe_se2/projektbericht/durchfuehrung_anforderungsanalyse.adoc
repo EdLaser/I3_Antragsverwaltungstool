@@ -1,0 +1,14 @@
+== Hauptaktivitäten
+1. Kontakt mit Kunden
+    + Treffen mit Kunden
+    + Sammeln der Probleme 
+    + Umwandlung zur technischen Sprache
+
+2. Analyse der Probleme und Anforderungen
+
+3. Herstellen der Dokumentation: glossary, system-wide requirements, use case, use-case model 
+
+
+== Entscheidungen mit Begründung
+
+== Probleme und ihr Umgang
