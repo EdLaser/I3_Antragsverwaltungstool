@@ -128,7 +128,7 @@ Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern |
 * die Anwendung soll in den Browsern Google Chrome sowie #Firefox# laufen (jeweils neuste Version bei Abgabe)
 
 2. Antragsverwalter
-* Anzahl der Nutzer variiert zwischen 1 und #5?#
+* Anzahl der Nutzer variiert zwischen 2 bis 10
 * feste, berechtigte Mitglieder des Sturas
 * Arbeitsaufwand hängt vom Formular ab (Richtigigkeit und Vollständigkeit)
 * Darstellung auf einer Desktopansicht

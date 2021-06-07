@@ -1,0 +1,48 @@
+= Iteration Plan 06: I3_Antragsverwaltungstool
+{localdatetime}
+:imagesdir: images
+
+== Meilensteine
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 17. Mai 2021
+|Finalle Anforderungen/Funktionalität klären mit Stura | -
+ | Ende der Iteration | 31. Mai. 2021
+|===
+
+
+== Wesentliche Ziele
+|===
+[red]#nicht erfüllt# ; [yellow]#zum Teil erfüllt# ; [green]#erfüllt#
+|===
+* [green]#Datenbank bzw. Datenbankschnittstelle implemetieren/testen#
+* [green]#Anforderungen überprüfen, abgleichen bzw. mit Fortschritt abgleichen#
+* server beschaffen 
+
+
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+
+siehe Task List <<../task_list.adoc#>>
+
+
+
+
+== Bewertungskriterien
+
+
+== Assessment
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | ?
+| Assessment Datum | 19. April 2021
+| Teilnehmer | alle Teammitglieder
+| Projektstatus	| 
+|===
