@@ -14,13 +14,14 @@ class AdvisoryMember(models.Model):
     frg1 = models.CharField(max_length=260, null=True)
     frg2 = models.CharField(max_length=260, null=True)
     frg3 = models.CharField(max_length=260, null=True)
+    frg4 = models.CharField(max_length=260, null=True)
 
     class Meta:
         ordering = ['number']
 
     def __str__(self):
         return self.flag, self.number, self.date, self.date, self.title, self.office, self.name, self.mail, self.text, \
-               self.frg1, self.frg2, self.frg3
+               self.frg1, self.frg2, self.frg3, self.frg4
 
 
 class Finance(models.Model):
