@@ -65,8 +65,9 @@
                 </header>
 
                 <div class="w3-container w3-light-gray">
-                    <form class = "myform" action="../Antragsverwaltungstool/data/php/intern.php">
-                        <select class="w3-select w3-border form" id = "Sin" onchange="mytoggleinputs('oth')" name = "election_input" required>
+                    <form class = "myform" action="" method="POST">
+                        {% csrf_token %}
+                        <select class="w3-select w3-border form" id = "Sin"  name = "election_input" required>
                             <option disabled selected>Bitte Auswählen</option>
                             <option name = "pres" value = "1">Präsidium</option>
                             <option name = "ple" value = "2">Plenum</option>
@@ -79,16 +80,13 @@
                             <label><b>Eigene:</b></label>
                             <input class = "w3-input w3-border form" placeholder="Beispielreferat" name = "owninput" ><br>
                         </div>
+                        <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
                     </form>
                 </div>
-
-                <footer class="w3-container w3-light-gray">
-                    <input type="submit" class = "w3-button w3-green mybutton" value="Absenden" onclick="toggleout('out'),toggledisplay('applications')">
-                </footer>
             </div>
         </div>
 
-        <div class="w3-half" style="width: 60%; visibility: hidden" id = "out">
+        <div class="w3-half" style="width: 60%;" id = "out">
             <div class="w3-card-4">
                 <header class="w3-container" style="background-color: #F2AC2E;">
                     <h2>Ausgabe:</h2>
@@ -96,7 +94,8 @@
 
                 <div class="w3-container w3-light-gray">
                     <div class = "sqloutput">
-
+                        {% block out %}
+                        {% endblock %}
                     </div>
                 </div>
             </div>
@@ -131,11 +130,11 @@
 <div class = "footer w3-animate-bottom">
     <table>
         <tr>
-            <td><a href="https://www.w3schools.com/default.asp"><img src="{% static '' %}img/footer/W3.png" alt = "W3 Logo"/><br>W3 schools</a></td>
-            <td><a href="https://httpd.apache.org/"><img src="{% static '' %}img/footer/apache.png" alt = "Apache Logo"/><br>Apache</a></td>
-            <td><a href="https://www.stura.htw-dresden.de/"><img src="{% static '' %}img/footer/Stura_htw.png" alt = "Stura Logo"/><br></a></td>
-            <td><a href="https://www.gnu.org/home.de.html"><img src="{% static '' %}img/footer/gnu.png" alt = "GNU Logo"/><br>GNU</a></td>
-            <td><a href="https://www.bootstrapcdn.com/"><img src="{% static '' %}img/footer/Bootstrap.png" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
+            <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %}" alt = "W3 Logo"/><br>W3 schools</a></td>
+            <td><a href="https://httpd.apache.org/"><img src="{% static 'img/footer/apache.png' %}" alt = "Apache Logo"/><br>Apache</a></td>
+            <td><a href="https://www.stura.htw-dresden.de/"><img src="{% static 'img/footer/Stura_htw.png' %}" alt = "Stura Logo"/><br></a></td>
+            <td><a href="https://www.gnu.org/home.de.html"><img src="{% static 'img/footer/gnu.png' %}" alt = "GNU Logo"/><br>GNU</a></td>
+            <td><a href="https://www.bootstrapcdn.com/"><img src="{% static 'img/footer/Bootstrap.png' %}" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
         </tr>
     </table>
 </div>

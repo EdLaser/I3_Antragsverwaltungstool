@@ -57,7 +57,8 @@
 </div>
 
 <div class = "content w3-animate-opacity">
-    <form action="../Antragsverwaltungstool/data/python/insert/insert_office.py" method="post">
+    <form action="" method="post">
+        {%  csrf_token %}
         <div class = "form">
             <label><b>Antragstitel:</b></label><br>
             <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf...">
