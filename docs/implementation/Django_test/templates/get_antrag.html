@@ -1,0 +1,12 @@
+{% extends 'stat_html/universally.html' %}
+{% block input %}
+    <form action="/show/">
+        <label><b>Antragsnummer:</b></label>
+        <table class = "form">
+            <tr>
+                <td><input class = "w3-input w3-border" type = "text" name = "applnumber" required placeholder = "P210000"></td>
+                <td><input type="submit" class = "w3-button w3-green mybutton" value="Daten Anfordern"></td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}
