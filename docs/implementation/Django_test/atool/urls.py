@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
@@ -7,5 +7,6 @@ urlpatterns = [
     path('finance/', views.new_finance, name="finance"),
     path('election_report/', views.new_position, name="election_report"),
     path('advisory_member/', views.new_advisory, name="advisory_member"),
-    path('intern/', views.get_universall, name="intern"),
+    path('intern/', views.get_all_by_electioninput, name="intern"),
+    path('show/uni', views.change_universall, name="uni"),
 ]
