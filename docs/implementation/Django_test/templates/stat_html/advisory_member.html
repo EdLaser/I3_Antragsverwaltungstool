@@ -30,7 +30,7 @@
         </li>
         <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
         <li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>
-        <li class = "lil"><a href="admin.html">Admin</a></li>
+        <li class = "lil"><a href="#">Admin</a></li>
 
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
@@ -58,6 +58,8 @@
 </div>
 
 <div class = "content w3-animate-opacity">
+    {% block input %}
+    {% endblock %}
     <form action="" method="POST">
         {%  csrf_token %}
         <div class = "form">
@@ -134,11 +136,8 @@
             <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
             <input class = "upl" type="file" name = "fileupl">
         </div>
-
-        <div class = "w3-row-padding">
-            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
-            <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
-        </div>
+        {% block beschluss %}
+        {% endblock %}
     </form>
 </div>
 
