@@ -1,5 +1,6 @@
 import datetime
-from django.shortcuts import render
+import re
+from django.shortcuts import render, get_object_or_404
 from atool.models import Universall, Finance, AdvisoryMember, Position
 from itertools import chain
 
@@ -31,7 +32,6 @@ def intern(request):
 # Add a new universall database entry
 def new_universall(request):
     if request.method == 'POST':
-        print(request.POST)
         flag = 0
         number = '2020-01-01'
         date = datetime.date.today()
@@ -49,7 +49,6 @@ def new_universall(request):
 
 def new_finance(request):
     if request.method == 'POST':
-        print(request.POST)
         flag = 0
         number = '2020-01-01'
         date = datetime.date.today()
@@ -68,7 +67,6 @@ def new_finance(request):
 
 def new_advisory(request):
     if request.method == 'POST':
-        print(request.POST)
         flag = 0
         number = '2020-01-01'
         date = datetime.date.today()
@@ -88,7 +86,6 @@ def new_advisory(request):
 
 def new_position(request):
     if request.method == 'POST':
-        print(request.POST)
         flag = 0
         number = '2020-01-01'
         date = datetime.date.today()
@@ -110,7 +107,7 @@ def new_position(request):
     return render(request, 'stat_html/election_report.html')
 
 
-def get_universall(request):
+def get_all_by_electioninput(request):
     if request.method == 'POST':
         print(request)
         uni_objects = Universall.objects.all().filter(office=request.POST.get('election_input'))
@@ -135,3 +132,70 @@ def get_universall(request):
         return render(request, 'intern_out.html', context)
     else:
         return render(request, 'stat_html/intern.html')
+
+
+def intern_universall(request):
+    return render(request, 'get_antrag.html')
+
+
+def change_universall(request):
+    if request.method == 'POST':
+        flag = 0
+        number = request.POST.get('number')
+        date = datetime.date.today()
+        title = request.POST.get('titel')
+        office = request.POST.get('election_input')
+        name = request.POST.get('name')
+        mail = request.POST.get('mail')
+        text = request.POST.get('antrtext')
+        reason = request.POST.get('begzantr')
+        suggestion = request.POST.get('vrshzverf')
+        mehrheit = request.POST.get('yes')
+        beschluss = request.POST.get('beschluss')
+        beschlusstext = request.POST.get('bestext')
+        beschlussgrund = request.POST.get('begtext')
+        new_uni = Universall(flag, number, date, title, office, name, mail, text, reason, suggestion, mehrheit,
+                             beschluss, beschlusstext, beschlussgrund)
+        new_uni.save()
+        return render(request, 'intern_change_uni.html')
+    number = request.GET.get('antrag')
+    if not number:
+        return render(request, 'intern_change_uni.html')
+    # matched = re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
+    # if re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]", number):
+    uni_object = get_object_or_404(Universall, number=number)
+    context = {
+        'uni_object': uni_object
+    }
+    return render(request, 'intern_change_uni.html', context)
+
+
+def change_advisory(request):
+    if request.method == 'POST':
+        flag = 0
+        number = request.POST.get('number')
+        title = request.POST.get('titel')
+        office = request.POST.get('election_input')
+        name = request.POST.get('name')
+        mail = request.POST.get('mail')
+        text = request.POST.get('antrtext')
+        reason = request.POST.get('begzantr')
+        suggestion = request.POST.get('vrshzverf')
+        mehrheit = request.POST.get('yes')
+        beschluss = request.POST.get('beschluss')
+        beschlusstext = request.POST.get('bestext')
+        beschlussgrund = request.POST.get('begtext')
+        new_uni = Universall(flag, number, title, office, name, mail, text, reason, suggestion, mehrheit,
+                             beschluss, beschlusstext, beschlussgrund)
+        new_uni.save()
+        return render(request, 'intern_change_uni.html')
+    number = request.GET.get('antrag')
+    if not number:
+        return render(request, 'intern_change_uni.html')
+    # matched = re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
+    # if re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]", number):
+    uni_object = get_object_or_404(Universall, number=number)
+    context = {
+        'uni_object': uni_object
+    }
+    return render(request, 'intern_change_uni.html', context)
