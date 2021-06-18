@@ -4,7 +4,7 @@
         <label><b>Antragsnummer:{{ uni_object.number }}</b></label>
         <table class = "form">
             <tr>
-                <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "2021-01-01"></td>
+                <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "2021-01-01" value="{{ uni_object.number }}"></td>
                 <td><input type="submit" class = "w3-button w3-green mybutton" value="Daten Anfordern"></td>
             </tr>
         </table>
@@ -39,7 +39,6 @@
             <textarea class = "w3-input w3-border" name = "begtext" rows = "4" placeholder="Beschlussbegründung..." maxlength="260">{{ uni_object.beschlussgrund }}</textarea>
         </div>
     </div>
-
     <div class = "w3-row-padding">
         <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
         <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
