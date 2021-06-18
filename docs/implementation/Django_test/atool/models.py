@@ -24,8 +24,8 @@ class AdvisoryMember(models.Model):
         ordering = ['number']
 
     def __str__(self):
-        return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' % (
-        self.flag, self.number, self.date, self.date, self.title, self.office, self.name, self.mail, self.text, \
+        return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' % (
+        self.flag, self.number, self.date, self.title, self.office, self.name, self.mail, self.text, \
         self.frg1, self.frg2, self.frg3, self.frg4, self.mehrheit, self.beschluss, self.beschlusstext,
         self.beschlussgrund)
 
