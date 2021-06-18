@@ -106,16 +106,16 @@
         <h1>Antragsart wählen:</h1>
         <table>
             <tr>
-                <td><a href="universally_stura.html">
+                <td><a href="{% url 'change_uni'%}">
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag ohne finanzielle Mittel</b>
                 </a></td>
-                <td><a href="finance_stura.html">
+                <td><a href="{% url 'change_fin'%}">
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag mit finanziellen Mitteln</b>
                 </a></td>
-                <td><a href="advisory_member_stura.html">
+                <td><a href="{% url 'change_advi'%}">
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl Beratendes Mitglied</b>
                 </a></td>
-                <td><a href="election_report_stura.html">
+                <td><a href="{% url 'change_posi'%}">
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl auf Stelle/Amt</b>
                 </a></td>
                 <td><a href="#">
