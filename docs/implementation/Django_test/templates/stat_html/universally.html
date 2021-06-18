@@ -105,7 +105,7 @@
                 <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext"> Hier steht ein erklärender Text
             </span></div>
-            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">{% if uni_object %} {{ uni_object.text }} {% else %}Der StuRa möge beschließen  {% endif %}</textarea>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">{% if uni_object %}{{ uni_object.text }}{% else %}Der StuRa möge beschließen{% endif %}</textarea>
         </div>
 
         <div class = "form">
@@ -123,6 +123,12 @@
             <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
             <input class = "upl" type="file" name = "fileupl">
         </div>
+        {% if uni_object %}
+            <div class = "w3-row-padding">
+                <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+                <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+            </div>
+        {% endif %}
         {% block beschluss %}
         {% endblock %}
     </form>
