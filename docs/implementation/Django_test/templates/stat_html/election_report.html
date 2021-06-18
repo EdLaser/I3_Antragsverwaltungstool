@@ -57,11 +57,13 @@
 </div>
 
 <div class = "content w3-animate-opacity">
+    {% block input %}
+    {% endblock %}
     <form action="" method="post">
         {%  csrf_token %}
         <div class = "form">
             <label><b>Antragstitel:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf...">
+            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf..." value="{{ posi_object.title }}">
         </div>
 
         <div class = "w3-half npad">
@@ -87,7 +89,7 @@
 
         <div class = "w3-half npad">
             <label><b>Name:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann">
+            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann" value="{{ posi_object.name }}">
         </div>
         <div class = "w3-half">
             <label><b>E-Mail:</b></label>
@@ -95,7 +97,7 @@
                 <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Bei möglichkeit die HTW-Mail verwenden (sXXXXX@htw-dresden.de)
                 </span></div>
-            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com">
+            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com" value="{{ posi_object.mail }}">
         </div>
 
         <div class = "form">
@@ -104,7 +106,7 @@
                 <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Hier steht ein erklärender Text
             </span></div>
-            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">Der StuRa möge durch Wahl beschließen, ob DEIN NAME die Funktion als übernehmen soll.</textarea>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">{% if posi_object %}{{ posi_object.text }}{% else %}Der StuRa möge durch Wahl beschließen, ob DEIN NAME die Funktion als übernehmen soll.{% endif %}</textarea>
         </div>
 
         <div class = "form">
@@ -116,39 +118,39 @@
             <div class = "form">
                 <label><b>Vorstellung:</b></label><br>
                 <label><i><script src="{% static 'text/advisory_member/frage1.js' %}"></script></i></label>
-                <input class = "w3-input w3-border" name = "frg1" maxlength="260">
+                <input class = "w3-input w3-border" name = "frg1" maxlength="260" value="{{ posi_object.frg1 }}">
             </div>
 
             <div class = "form">
                 <label><i><script src="{% static 'text/advisory_member/frage2.js' %}"></script></i></label>
-                <input class = "w3-input w3-border" name = "frg2" maxlength="260">
+                <input class = "w3-input w3-border" name = "frg2" maxlength="260" value="{{ posi_object.frg2 }}">
             </div>
 
             <div class = "form">
                 <label><i><script src="{% static 'text/advisory_member/frage3.js' %}"></script></i></label>
-                <input class = "w3-input w3-border" name = "frg3" maxlength="260">
+                <input class = "w3-input w3-border" name = "frg3" maxlength="260" value="{{ posi_object.frg3 }}">
             </div>
 
             <div class = "form">
                 <label><i><script src="{% static 'text/advisory_member/frage4.js' %}"></script></i></label>
-                <input class = "w3-input w3-border" name = "frg4" maxlength="260">
+                <input class = "w3-input w3-border" name = "frg4" maxlength="260" value="{{ posi_object.frg4 }}">
             </div>
         </div>
 
         <div class = "form">
             <label><b>Allgemeine Fragen zum speziellen Amt:</b></label><br>
             <label><i><script src="{% static 'text/election_report/frage1.js' %}"></script></i></label>
-            <input class = "w3-input w3-border" name = "frg5" maxlength="260">
+            <input class = "w3-input w3-border" name = "frg5" maxlength="260" value="{{ posi_object.frg_spez_1 }}">
         </div>
 
         <div class = "form">
             <label><i><script src="{% static 'text/election_report/frage2.js' %}"></script></i></label>
-            <input class = "w3-input w3-border" name = "frg6" maxlength="260">
+            <input class = "w3-input w3-border" name = "frg6" maxlength="260" value="{{ posi_object.frg_spez_2 }}">
         </div>
 
         <div class = "form">
             <label><i><script src="{% static 'text/election_report/frage3.js' %}"></script></i></label>
-            <input class = "w3-input w3-border" name = "frg7" maxlength="260">
+            <input class = "w3-input w3-border" name = "frg7" maxlength="260" value="{{ posi_object.frg_spez_3 }}">
         </div>
 
         <div>
@@ -156,18 +158,21 @@
             <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
             <input class = "upl" type="file" name = "fileupl">
         </div>
-
-        <div class = "w3-row-padding">
-            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
-            <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
-        </div>
+        {% if not posi_object %}
+            <div class = "w3-row-padding">
+                <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+                <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+            </div>
+        {% endif %}
+        {% block beschluss %}
+        {% endblock %}
     </form>
 </div>
 
 <div class = "footer w3-animate-bottom">
     <table>
         <tr>
-                      <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %}" alt = "W3 Logo"/><br>W3 schools</a></td>
+          <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %}" alt = "W3 Logo"/><br>W3 schools</a></td>
           <td><a href="https://httpd.apache.org/"><img src="{% static 'img/footer/apache.png' %}" alt = "Apache Logo"/><br>Apache</a></td>
           <td><a href="https://www.stura.htw-dresden.de/"><img src="{% static 'img/footer/Stura_htw.png' %}" alt = "Stura Logo"/><br></a></td>
           <td><a href="https://www.gnu.org/home.de.html"><img src="{% static 'img/footer/gnu.png' %}" alt = "GNU Logo"/><br>GNU</a></td>
