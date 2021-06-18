@@ -56,11 +56,13 @@
 </div>
 
 <div class = "content w3-animate-opacity">
+    {% block input %}
+    {% endblock %}
     <form action="" method="post">
         {%  csrf_token %}
         <div class = "form">
             <label><b>Antragstitel:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf...">
+            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf..." value="{{ fina_object.title }}">
         </div>
 
         <div class = "w3-half npad">
@@ -86,7 +88,7 @@
 
         <div class = "w3-half npad">
             <label><b>Name:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann">
+            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann" value="{{ fina_object.name }}">
         </div>
         <div class = "w3-half">
             <label><b>E-Mail:</b></label>
@@ -94,7 +96,7 @@
                 <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Bei möglichkeit die HTW-Mail verwenden (sXXXXX@htw-dresden.de)
                 </span></div>
-            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com">
+            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com" value="{{ fina_object.mail }}">
         </div>
 
         <div class = "form">
@@ -103,12 +105,12 @@
                 <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Hier steht ein erklärender Text
             </span></div>
-            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">Der StuRa möge beschließen </textarea>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">{% if fina_object %}{{ fina_object.text }}{% else %}Der StuRa möge beschließen{% endif %}</textarea>
         </div>
 
         <div class = "form">
             <label><b>Begründung zum Antrag:</b></label>
-            <textarea class = "w3-input w3-border" name = "begzantr" rows = "4" placeholder="ausführliche Begründung zum Antrag..." maxlength="260"></textarea>
+            <textarea class = "w3-input w3-border" name = "begzantr" rows = "4" placeholder="ausführliche Begründung zum Antrag..." maxlength="260">{{ fina_object.reason }}</textarea>
         </div>
 
         <div class = "form">
@@ -117,12 +119,12 @@
                 <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Bei Unkenntnis muss das Referat Finanzen konsultiert werden
             </span></div>
-            <textarea class = "w3-input w3-border" name = "haushplan" rows = "4" maxlength="260"></textarea>
+            <textarea class = "w3-input w3-border" name = "haushplan" rows = "4" maxlength="260">{{ fina_object.budget }}</textarea>
         </div>
 
         <div class = "form">
             <label><b>Vorschlag zum weiteren Verfahren:</b></label>
-            <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Vorschlag..." maxlength="260"></textarea>
+            <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Vorschlag..." maxlength="260">{{ fina_object.suggestion}}</textarea>
         </div>
 
         <div>
@@ -130,11 +132,14 @@
             <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
             <input class = "upl" type="file" name = "fileupl">
         </div>
-
+        {% if not fina_object %}
         <div class = "w3-row-padding">
             <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
             <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
         </div>
+        {% endif %}
+        {% block beschluss %}
+        {% endblock %}
     </form>
 </div>
 
