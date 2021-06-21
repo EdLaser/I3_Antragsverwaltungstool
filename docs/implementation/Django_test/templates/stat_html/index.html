@@ -36,20 +36,16 @@
         <li class = "lir dropdown"><a class="dropbtn">
             <img src="{% static 'img/login.png' %}" style="width: 19px" alt = "login"/> Login</a>
             <div class = "dropdown-content w3-animate-opacity" id = "myLogin">
-                <form class = "form-container" action="../Antragsverwaltungstool/data/php/login.php" method="post">
-                    <label><b>Rollenwahl</b></label>
-                    <select class="w3-select w3-border" name = "role" required>
-                        <option disabled selected>Bitte Auswählen</option>
-                        <option name = "admin" value = "1">Admin</option>
-                        <option name = "write" value = "2">Schriftführer</option>
-                        <option name = "read" value = "3">Mitglied</option>
-                    </select>
-                    <label><b>Passwort</b></label>
-                    <input type = "password" aria-placeholder="Passwort eingeben" name = "pwd" required>
-                    <button type="submit" class = "btn w3-green">Login</button>
-                </form>
+                {% if user.is_authenticated %}
+                    <p>User: {{ user.get_username }}</p>
+                    <p><a href="{% url 'logout' %}">logout</a></p>
+                {% else %}
+                {% block login %}
+                {% endblock %}
+                {% endif %}
             </div>
         </li>
+
     </ul>
 </div>
 
