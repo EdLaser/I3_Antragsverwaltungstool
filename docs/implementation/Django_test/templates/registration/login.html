@@ -3,15 +3,15 @@
     <form class = "form-container" action="{% url 'login' %}" method="post">
         {% csrf_token %}
         <table>
-      <tr>
-        <td>{{ form.username.label_tag }}</td>
-        <td>{{ form.username }}</td>
-      </tr>
-      <tr>
-        <td>{{ form.password.label_tag }}</td>
-        <td>{{ form.password }}</td>
-      </tr>
-    </table>
+          <tr>
+            <td>{{ form.username.label_tag }}</td>
+            <td>{{ form.username }}</td>
+          </tr>
+          <tr>
+            <td>{{ form.password.label_tag }}</td>
+            <td>{{ form.password }}</td>
+          </tr>
+        </table>
         <input type="submit" class = "btn w3-green" value="login">
         <input type="hidden" name="next" value="{{ next }}">
     </form>
