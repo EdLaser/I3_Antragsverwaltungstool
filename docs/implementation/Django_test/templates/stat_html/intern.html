@@ -36,23 +36,7 @@
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
-        <li class = "lir dropdown"><a class="dropbtn">
-            <img src="{% static 'img/login.png' %}" style="width: 19px" alt = "login"/> Login</a>
-            <div class = "dropdown-content w3-animate-opacity" id = "myLogin">
-                <form class = "form-container" action="../Antragsverwaltungstool/data/php/login.php" method="post">
-                    <label><b>Rollenwahl</b></label>
-                    <select class="w3-select w3-border" name = "role" required>
-                        <option disabled selected>Bitte Auswählen</option>
-                        <option name = "admin" value = "1">Admin</option>
-                        <option name = "write" value = "2">Schriftführer</option>
-                        <option name = "read" value = "3">Mitglied</option>
-                    </select>
-                    <label><b>Passwort</b></label>
-                    <input type = "password" aria-placeholder="Passwort eingeben" name = "pwd" required>
-                    <button type="submit" class = "btn w3-green">Login</button>
-                </form>
-            </div>
-        </li>
+        {% include 'include_login.html' %}
     </ul>
 </div>
 
@@ -106,16 +90,16 @@
         <h1>Antragsart wählen:</h1>
         <table>
             <tr>
-                <td><a href="{% url 'change_uni'%}">
+                <td><a {% if user.is_authenticated %}href="{% url 'change_uni'%}"{% endif %}>
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag ohne finanzielle Mittel</b>
                 </a></td>
-                <td><a href="{% url 'change_fin'%}">
+                <td><a {% if user.is_authenticated %}href="{% url 'change_fin'%}"{% endif %}>
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag mit finanziellen Mitteln</b>
                 </a></td>
-                <td><a href="{% url 'change_advi'%}">
+                <td><a {% if user.is_authenticated %}href="{% url 'change_advi'%}"{% endif %}>
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl Beratendes Mitglied</b>
                 </a></td>
-                <td><a href="{% url 'change_posi'%}">
+                <td><a {% if user.is_authenticated %}href="{% url 'change_posi'%}"{% endif %}>
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl auf Stelle/Amt</b>
                 </a></td>
                 <td><a href="#">
