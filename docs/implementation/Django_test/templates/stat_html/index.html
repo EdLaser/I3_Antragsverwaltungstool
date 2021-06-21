@@ -29,23 +29,10 @@
         <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
         <li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>
         <li class = "lil"><a href="{% url 'admin:index' %}">Admin</a></li>
-
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
-        <li class = "lir dropdown"><a class="dropbtn">
-            <img src="{% static 'img/login.png' %}" style="width: 19px" alt = "login"/> Login</a>
-            <div class = "dropdown-content w3-animate-opacity" id = "myLogin">
-                {% if user.is_authenticated %}
-                    <p>User: {{ user.get_username }}</p>
-                    <p><a href="{% url 'logout' %}">logout</a></p>
-                {% else %}
-                {% block login %}
-                {% endblock %}
-                {% endif %}
-            </div>
-        </li>
-
+        {% include 'include_login.html' %}
     </ul>
 </div>
 
