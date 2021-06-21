@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="dataSourceStorageLocal" created-in="PY-211.7442.45">
     <data-source name="Django default" uuid="519b3a0a-968b-42c7-a7fe-4406826ba184">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
-      <user-name>ruben</user-name>
+      <secret-storage>forget</secret-storage>
       <schema-mapping />
     </data-source>
   </component>
-=======
-  <component name="dataSourceStorageLocal" created-in="PY-211.7442.45" />
->>>>>>> ac2c258 (For django project)
 </project>
