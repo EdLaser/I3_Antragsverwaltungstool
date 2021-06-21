@@ -1,0 +1,46 @@
+{% extends 'stat_html/finance.html' %}
+{% block input %}
+    <form action="">
+        <label><b>Antragsnummer:{{ fina_object.number }}</b></label>
+        <table class = "form">
+            <tr>
+                <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "2021-01-01" value="{{ fina_object.number }}"></td>
+                <td><input type="submit" class = "w3-button w3-green mybutton" value="Daten Anfordern"></td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}
+
+{%  block beschluss %}
+    <div class = "form">
+        <label><b>Falsches Referat?</b></label>
+        <label>Ja </label><input class="w3-check" type="checkbox" id="sturayes" name="wrgelec" onclick="toggleradio('sturaInput','sturayes')">
+    </div>
+
+    <div class = form id = "sturaInput">
+        <div class = "form">
+            <label><b>Besondere Merheit?</b></label>
+            <label>Ja<input class="w3-check" type="checkbox" name="yes"></label>
+            <label>Nein<input class="w3-check" type="checkbox" name="yes"> </label>
+        </div>
+
+        <div class = "form">
+            <label><b>Beschluss:</b></label>
+            <input class = "w3-input w3-border" type = "text" name = "beschluss" placeholder = "Beschluss" value="{{ fina_object.beschluss }}">
+        </div>
+
+        <div class = "form">
+            <label><b>Beschlusstext</b></label>
+            <textarea class = "w3-input w3-border" name = "bestext" rows = "4" placeholder="Beschlusstext..." maxlength="260">{{ fina_object.beschlusstext }}</textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Begründung zum Beschluss:</b></label>
+            <textarea class = "w3-input w3-border" name = "begtext" rows = "4" placeholder="Beschlussbegründung..." maxlength="260">{{ fina_object.beschlussgrund }}</textarea>
+        </div>
+    </div>
+    <div class = "w3-row-padding">
+        <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+        <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+    </div>
+{% endblock %}

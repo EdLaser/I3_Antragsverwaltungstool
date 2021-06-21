@@ -1,0 +1,26 @@
+{% load static %}
+<li class = "lir dropdown"><a class="dropbtn">
+    <img src="{% static 'img/login.png' %}" style="width: 19px" alt = "login"/> Login</a>
+    <div class = "dropdown-content w3-animate-opacity" id = "myLogin">
+        {% if user.is_authenticated %}
+            <p>User: {{ user.get_username }}</p>
+            <p><a href="{% url 'logout' %}?next={{ request.path }}">logout</a></p>
+        {% else %}
+            <form class = "form-container" action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <table>
+                    <tr>
+                        <td>{{ form.username.label_tag }}</td>
+                        <td>{{ form.username }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ form.password.label_tag }}</td>
+                        <td>{{ form.password }}</td>
+                    </tr>
+                </table>
+                <input type="submit" class = "btn w3-green" value="login">
+                <input type="hidden" name="next" value="{{ next }}">
+            </form>
+        {% endif %}
+    </div>
+</li>
