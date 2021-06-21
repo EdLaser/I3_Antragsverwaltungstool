@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="Included include_login.html to ease modification of login">
+    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/templates/include_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_test/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atool/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/atool/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/stat_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stat_html/index.html" afterDir="false" />
     </list>
-=======
-    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="For django project" />
->>>>>>> ac2c258 (For django project)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
@@ -439,30 +434,4 @@
     <MESSAGE value="Included include_login.html to ease modification of login" />
     <option name="LAST_COMMIT_MESSAGE" value="Included include_login.html to ease modification of login" />
   </component>
-=======
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/../../.." value="DJango" />
-      </map>
-    </option>
-  </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="EdLaser" />
-        <option name="repository" value="I3_Antragsverwaltungstool" />
-      </RepoCoordinatesHolder>
-    </option>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="TaskManager">
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
->>>>>>> ac2c258 (For django project)
 </project>
