@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('atool', '0002_auto_20210602_1710'),
+        ('Antragsverwaltungstool', '0002_auto_20210602_1710'),
     ]
 
     operations = [

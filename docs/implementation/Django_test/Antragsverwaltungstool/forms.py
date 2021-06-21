@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 
-from atool.models import Universall
+from Antragsverwaltungstool.models import Universall
 
 
 class NewUniversallForm(ModelForm):

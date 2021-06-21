@@ -1,4 +1,4 @@
-"""Django_test URL Configuration
+"""Django_AT URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -21,6 +21,6 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('atool/', include('atool.urls')),
-    path('', RedirectView.as_view(url='atool/', permanent=True))
+    path('Antragsverwaltungstool/', include('Antragsverwaltungstool.urls')),
+    path('', RedirectView.as_view(url='Antragsverwaltungstool/', permanent=True))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

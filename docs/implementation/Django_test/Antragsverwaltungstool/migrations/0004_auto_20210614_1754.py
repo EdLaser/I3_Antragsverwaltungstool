@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('atool', '0003_advisorymember_frg4'),
+        ('Antragsverwaltungstool', '0003_advisorymember_frg4'),
     ]
 
     operations = [

@@ -1,7 +1,7 @@
 import datetime
 import re
 from django.shortcuts import render, get_object_or_404
-from atool.models import Universall, Finance, AdvisoryMember, Position
+from Antragsverwaltungstool.models import Universall, Finance, AdvisoryMember, Position
 from itertools import chain
 
 

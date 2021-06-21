@@ -7,7 +7,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('atool', '0001_initial'),
+        ('Antragsverwaltungstool', '0001_initial'),
     ]
 
     operations = [
