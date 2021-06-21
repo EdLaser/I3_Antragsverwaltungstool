@@ -15,5 +15,5 @@ urlpatterns = [
     path('show/position', views.change_position, name="change_posi"),
     path('show/finance', views.change_finance, name="change_fin"),
 
-    path('accounts/', include('django.contrib.auth.urls'))
+    path('', include('django.contrib.auth.urls'))
 ]
