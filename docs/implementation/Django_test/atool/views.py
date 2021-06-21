@@ -29,71 +29,57 @@ def intern(request):
     return render(request, 'stat_html/intern.html')
 
 
+def generate_number(object_given):
+    number = object_given.objects.first()
+
+
+def common_new(request):
+    flag = 0
+    number = '2020-01-01'
+    date = datetime.date.today()
+    title = request.POST.get('titel')
+    office = request.POST.get('election_input')
+    name = request.POST.get('name')
+    mail = request.POST.get('mail')
+    text = request.POST.get('antrtext')
+    return flag, number, date, title, office, name, mail, text
+
+
 # Add a new universall database entry
 def new_universall(request):
     if request.method == 'POST':
-        flag = 0
-        number = '2020-01-01'
-        date = datetime.date.today()
-        title = request.POST.get('titel')
-        office = request.POST.get('election_input')
-        name = request.POST.get('name')
-        mail = request.POST.get('mail')
-        text = request.POST.get('antrtext')
+        common_new(request)
         reason = request.POST.get('begzantr')
         suggestion = request.POST.get('vrshzverf')
-        new_uni = Universall(flag, number, date, title, office, name, mail, text, reason, suggestion)
+        new_uni = Universall(common_new(request), reason, suggestion)
         new_uni.save()
     return render(request, 'stat_html/universally.html')
 
 
 def new_finance(request):
     if request.method == 'POST':
-        flag = 0
-        number = '2020-01-01'
-        date = datetime.date.today()
-        title = request.POST.get('titel')
-        office = request.POST.get('election_input')
-        name = request.POST.get('name')
-        mail = request.POST.get('mail')
-        text = request.POST.get('antrtext')
         reason = request.POST.get('begzantr')
         budget = request.POST.get('haushplan')
         suggestion = request.POST.get('vrshzverf')
-        new_fin = Finance(flag, number, date, title, office, name, mail, text, reason, budget, suggestion)
+        new_fin = Finance(common_new(request), reason, budget, suggestion)
         new_fin.save()
     return render(request, 'stat_html/finance.html')
 
 
 def new_advisory(request):
     if request.method == 'POST':
-        flag = 0
-        number = '2020-01-01'
-        date = datetime.date.today()
-        title = request.POST.get('titel')
-        office = request.POST.get('election_input')
-        name = request.POST.get('name')
-        mail = request.POST.get('mail')
-        text = request.POST.get('antrtext')
         frg1 = request.POST.get('frg1')
         frg2 = request.POST.get('frg2')
         frg3 = request.POST.get('frg3')
         frg4 = request.POST.get('frg4')
-        new_adv = AdvisoryMember(flag, number, date, title, office, name, mail, text, frg1, frg2, frg3, frg4)
+        new_adv = AdvisoryMember(common_new(request), frg1, frg2, frg3, frg4)
         new_adv.save()
     return render(request, 'stat_html/advisory_member.html')
 
 
 def new_position(request):
     if request.method == 'POST':
-        flag = 0
-        number = '2020-01-01'
-        date = datetime.date.today()
-        title = request.POST.get('titel')
-        office = request.POST.get('election_input')
-        name = request.POST.get('name')
-        mail = request.POST.get('mail')
-        text = request.POST.get('antrtext')
+        common_new(request)
         frg1 = request.POST.get('frg1')
         frg2 = request.POST.get('frg2')
         frg3 = request.POST.get('frg3')
@@ -101,7 +87,7 @@ def new_position(request):
         frg_spez_1 = request.POST.get('frg5')
         frg_spez_2 = request.POST.get('frg6')
         frg_spez_3 = request.POST.get('frg7')
-        new_pos = Position(flag, number, date, title, office, name, mail, text, frg1, frg2, frg3, frg4, frg_spez_1,
+        new_pos = Position(common_new(request), frg1, frg2, frg3, frg4, frg_spez_1,
                            frg_spez_2, frg_spez_3)
         new_pos.save()
     return render(request, 'stat_html/election_report.html')
@@ -134,27 +120,29 @@ def get_all_by_electioninput(request):
         return render(request, 'stat_html/intern.html')
 
 
-# def intern_universall(request):
-   # return render(request, 'get_antrag.html')
+def common_change(request, object_change, number):
+    object_change.number = number
+    object_change.title = request.POST.get('titel')
+    object_change.office = request.POST.get('election_input')
+    object_change.name = request.POST.get('name')
+    object_change.mail = request.POST.get('mail')
+    object_change.text = request.POST.get('antrtext')
+    object_change.mehrheit = request.POST.get('yes')
+    object_change.beschluss = request.POST.get('beschluss')
+    object_change.beschlusstext = request.POST.get('bestext')
+    object_change.beschlussgrund = request.POST.get('begtext')
 
 
 def change_universall(request):
     number = request.GET.get('antrag')
     if request.method == 'POST':
         uni_object = get_object_or_404(Universall, number=number)
-        flag = 0
-        uni_object.number = number
-        uni_object.title = request.POST.get('titel')
-        uni_object.office = request.POST.get('election_input')
-        uni_object.name = request.POST.get('name')
-        uni_object.mail = request.POST.get('mail')
-        uni_object.text = request.POST.get('antrtext')
-        uni_object.reason = request.POST.get('begzantr')
+        common_change(request, uni_object, number)
         uni_object.suggestion = request.POST.get('vrshzverf')
-        uni_object.mehrheit = request.POST.get('yes')
-        uni_object.beschluss = request.POST.get('beschluss')
-        uni_object.beschlusstext = request.POST.get('bestext')
-        uni_object.beschlussgrund = request.POST.get('begtext')
+        # uni_object.mehrheit = request.POST.get('yes')
+        # uni_object.beschluss = request.POST.get('beschluss')
+        # uni_object.beschlusstext = request.POST.get('bestext')
+        # uni_object.beschlussgrund = request.POST.get('begtext')
         uni_object.save()
 
         return render(request, 'intern_change_uni.html')
@@ -177,22 +165,15 @@ def change_advisory(request):
     number = request.GET.get('antrag')
     if request.method == 'POST':
         advi_object = get_object_or_404(AdvisoryMember, number=number)
-        flag = 0
-        advi_object.number = number
-        advi_object.title = request.POST.get('titel')
-        advi_object.office = request.POST.get('election_input')
-        advi_object.name = request.POST.get('name')
-        advi_object.mail = request.POST.get('mail')
-        advi_object.text = request.POST.get('antrtext')
-        advi_object.reason = request.POST.get('begzantr')
+        common_change(request, advi_object, number)
         advi_object.frg1 = request.POST.get('frg1')
         advi_object.frg2 = request.POST.get('frg2')
         advi_object.frg3 = request.POST.get('frg3')
         advi_object.frg4 = request.POST.get('frg4')
-        advi_object.mehrheit = request.POST.get('yes')
-        advi_object.beschluss = request.POST.get('beschluss')
-        advi_object.beschlusstext = request.POST.get('bestext')
-        advi_object.beschlussgrund = request.POST.get('begtext')
+        # advi_object.mehrheit = request.POST.get('yes')
+        # advi_object.beschluss = request.POST.get('beschluss')
+        # advi_object.beschlusstext = request.POST.get('bestext')
+        # advi_object.beschlussgrund = request.POST.get('begtext')
         advi_object.save()
 
         return render(request, 'intern_change_advisory.html')
@@ -211,14 +192,7 @@ def change_position(request):
     number = request.GET.get('antrag')
     if request.method == 'POST':
         posi_object = get_object_or_404(Position, number=number)
-        flag = 0
-        posi_object.number = number
-        posi_object.title = request.POST.get('titel')
-        posi_object.office = request.POST.get('election_input')
-        posi_object.name = request.POST.get('name')
-        posi_object.mail = request.POST.get('mail')
-        posi_object.text = request.POST.get('antrtext')
-        posi_object.reason = request.POST.get('begzantr')
+        common_change(request, posi_object, number)
         posi_object.frg1 = request.POST.get('frg1')
         posi_object.frg2 = request.POST.get('frg2')
         posi_object.frg3 = request.POST.get('frg3')
@@ -226,10 +200,10 @@ def change_position(request):
         posi_object.frg_spez_1 = request.POST.get('frg5')
         posi_object.frg_spez_2 = request.POST.get('frg6')
         posi_object.frg_spez_3 = request.POST.get('frg7')
-        posi_object.mehrheit = request.POST.get('yes')
-        posi_object.beschluss = request.POST.get('beschluss')
-        posi_object.beschlusstext = request.POST.get('bestext')
-        posi_object.beschlussgrund = request.POST.get('begtext')
+        # posi_object.mehrheit = request.POST.get('yes')
+        # posi_object.beschluss = request.POST.get('beschluss')
+        # posi_object.beschlusstext = request.POST.get('bestext')
+        # posi_object.beschlussgrund = request.POST.get('begtext')
         posi_object.save()
 
         return render(request, 'intern_change_position.html')
@@ -248,20 +222,14 @@ def change_finance(request):
     number = request.GET.get('antrag')
     if request.method == 'POST':
         fina_object = get_object_or_404(Finance, number=number)
-        flag = 0
-        fina_object.number = number
-        fina_object.title = request.POST.get('titel')
-        fina_object.office = request.POST.get('election_input')
-        fina_object.name = request.POST.get('name')
-        fina_object.mail = request.POST.get('mail')
-        fina_object.text = request.POST.get('antrtext')
+        common_change(request, fina_object, number)
         fina_object.reason = request.POST.get('begzantr')
         fina_object.budget = request.POST.get('haushplan')
-        fina_object.suggestion = request.POST.get('vrshzverf')
-        fina_object.mehrheit = request.POST.get('yes')
-        fina_object.beschluss = request.POST.get('beschluss')
-        fina_object.beschlusstext = request.POST.get('bestext')
-        fina_object.beschlussgrund = request.POST.get('begtext')
+        # fina_object.suggestion = request.POST.get('vrshzverf')
+        # fina_object.mehrheit = request.POST.get('yes')
+        # fina_object.beschluss = request.POST.get('beschluss')
+        # fina_object.beschlusstext = request.POST.get('bestext')
+        # fina_object.beschlussgrund = request.POST.get('begtext')
         fina_object.save()
 
         return render(request, 'intern_change_finance.html')
