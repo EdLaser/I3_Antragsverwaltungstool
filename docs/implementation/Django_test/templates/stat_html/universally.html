@@ -107,14 +107,10 @@
             <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
             <input class = "upl" type="file" name = "fileupl">
         </div>
-        {% if not uni_object %}
             <div class = "w3-row-padding">
                 <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
                 <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
             </div>
-        {% endif %}
-        {% block beschluss %}
-        {% endblock %}
     </form>
 </div>
 

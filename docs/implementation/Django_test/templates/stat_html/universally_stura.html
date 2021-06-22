@@ -1,44 +1,61 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Antragverwaltungstool</title>
-    <link rel="icon" href="../../Antragsverwaltungstool/static/icon.png" />
+    <link rel="icon" href="{% static 'icon.png' %} " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../Antragsverwaltungstool/static/css/mainstyle.css">
-    <link rel="stylesheet" href="../../Antragsverwaltungstool/static/css/W3.css">
-    <link rel="stylesheet" href="../../Antragsverwaltungstool/static/css/universally_stura.css">
-    <link rel="stylesheet" href="../../Antragsverwaltungstool/static/css/popup.css">
-    <link rel="stylesheet" href="../../Antragsverwaltungstool/static/css/login_popup.css">
-    <script src="../../Antragsverwaltungstool/static/js/owninput.js"></script>
-    <script src="../../Antragsverwaltungstool/static/js/toggleradio.js"></script>
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/W3.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/universally_stura.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/popup.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/login_popup.css' %} ">
+    <script src="{% static 'js/owninput.js' %} "></script>
+    <script src="{% static 'js/toggleradio.js' %} "></script>
 </head>
 <body>
 <div class = "logo w3-animate-top">
-    <a href="index.html" class = "w3-hover-opacity"><img src="../../Antragsverwaltungstool/static/img/logo.png" class = "sturalogo" alt="ToolLogo"/></a>
+    <a href="index.html" class = "w3-hover-opacity"><img src="{% static 'img/logo.png' %} " class = "sturalogo" alt="ToolLogo"/></a>
 </div>
 <div class = "navigation">
     <ul class = "mainnav">
-        <li class = "lil"><a href="index.html">Home</a></li>
-        <li class = "lil"><a href="intern.html">Zurück</a></li>
+        <li class = "lil"><a href="{%  url 'index' %}">Home</a></li>
+        <li class = "lil"  id = "active" ><a href="{%  url 'universall' %}">Antrag ohne finanzielle Mittel</a></li>
+        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag Wahl ▼</a>
+            <div class = "dropdown-content w3-animate-opacity">
+                <a href="{%  url 'advisory_member' %}">Beratendes Mitglied</a>
+                <a href="{%  url 'election_report' %}">Stelle/Amt</a>
+                <a href="#">Studienkomission</a>
+            </div>
+        </li>
+        <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
+        <li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>
+        <li class = "lil"><a href="">Admin</a></li>
+
+        <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
+            <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
+        </li>
+        {% include 'include_login.html' %}
     </ul>
 </div>
 
 <div class = "content w3-animate-opacity">
-    <form action="data/php/getInput.php">
-        <label><b>Antragsnummer:</b></label>
+    <form action="">
+        <label><b>Antragsnummer:{{ uni_object.number }}</b></label>
         <table class = "form">
             <tr>
-                <td><input class = "w3-input w3-border" type = "text" name = "applnumber" required placeholder = "P210000"></td>
+                <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "2021-01-01" value="{{ uni_object.number }}"></td>
                 <td><input type="submit" class = "w3-button w3-green mybutton" value="Daten Anfordern"></td>
             </tr>
         </table>
     </form>
 
-    <form action="data/python/insert/insert_unsiversal_stura.py" method="post">
+    <form action="" method="POST">
+        {%  csrf_token %}
         <div class = "form">
             <label><b>Antragstitel:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf...">
+            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf..." value="{{ uni_object.title }}">
         </div>
 
         <div class = "w3-half npad">
@@ -64,39 +81,40 @@
 
         <div class = "w3-half npad">
             <label><b>Name:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann">
+            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann" value="{{ uni_object.name }}">
         </div>
         <div class = "w3-half">
             <label><b>E-Mail:</b></label>
             <div class="tooltip">
-                <img src="../../Antragsverwaltungstool/static/img/info.png" width = "16" height = "16" alt = "Info icon"/>
+                <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
                 <span class="tooltiptext">Bei möglichkeit die HTW-Mail verwenden (sXXXXX@htw-dresden.de)
                 </span></div>
-            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com">
+            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com" value="{{ uni_object.mail }}">
         </div>
 
         <div class = "form">
             <label><b>Antragstext:</b></label>
             <div class="tooltip">
-                <img src="../../Antragsverwaltungstool/static/img/info.png" width = "16" height = "16" alt = "Info icon"/>
-                <span class="tooltiptext">Hier steht ein erklärender Text
+                <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
+                <span class="tooltiptext"> Hier steht ein erklärender Text
             </span></div>
-            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">Der StuRa möge beschließen </textarea>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">{% if uni_object %}{{ uni_object.text }}{% else %}Der StuRa möge beschließen{% endif %}</textarea>
         </div>
 
         <div class = "form">
             <label><b>Begründung zum Antrag:</b></label>
-            <textarea class = "w3-input w3-border" name = "begzantr" rows = "4" placeholder="ausführliche Begründung zum Antrag..." maxlength="260"></textarea>
+            <textarea class = "w3-input w3-border" name = "begzantr" rows = "4" placeholder="ausführliche Begründung zum Antrag..." maxlength="260">{{ uni_object.reason }}</textarea>
         </div>
 
         <div class = "form">
             <label><b>Vorschlag zum weiteren Verfahren:</b></label>
-            <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Vorschlag..." maxlength="260"></textarea>
+            <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Vorschlag..." maxlength="260">{{ uni_object.suggestion }}</textarea>
         </div>
 
         <div>
             <label><b>Anlagen:</b></label><br>
             <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
+            <input class = "upl" type="file" name = "fileupl">
         </div>
 
         <div class = "form">
@@ -107,23 +125,23 @@
         <div class = form id = "sturaInput">
             <div class = "form">
                 <label><b>Besondere Merheit?</b></label>
-                <label>Ja </label><input class="w3-check" type="checkbox" name="yes">
-                <label>Nein </label><input class="w3-check" type="checkbox" name="yes">
+                <label>Ja<input class="w3-check" type="checkbox" name="yes"></label>
+                <label>Nein<input class="w3-check" type="checkbox" name="yes"> </label>
             </div>
 
             <div class = "form">
                 <label><b>Beschluss:</b></label>
-                <input class = "w3-input w3-border" type = "text" name = "beschluss" placeholder = "Beschluss">
+                <input class = "w3-input w3-border" type = "text" name = "beschluss" placeholder = "Beschluss" value="{{ uni_object.beschluss }}">
             </div>
 
             <div class = "form">
                 <label><b>Beschlusstext</b></label>
-                <textarea class = "w3-input w3-border" name = "bestext" rows = "4" placeholder="Beschlusstext..." maxlength="260"></textarea>
+                <textarea class = "w3-input w3-border" name = "bestext" rows = "4" placeholder="Beschlusstext..." maxlength="260">{{ uni_object.beschlusstext }}</textarea>
             </div>
 
             <div class = "form">
                 <label><b>Begründung zum Beschluss:</b></label>
-                <textarea class = "w3-input w3-border" name = "begtext" rows = "4" placeholder="Beschlussbegründung..." maxlength="260"></textarea>
+                <textarea class = "w3-input w3-border" name = "begtext" rows = "4" placeholder="Beschlussbegründung..." maxlength="260">{{ uni_object.beschlussgrund }}</textarea>
             </div>
         </div>
 
@@ -137,11 +155,11 @@
 <div class = "footer w3-animate-bottom">
     <table>
         <tr>
-            <td><a href="https://www.w3schools.com/default.asp"><img src="../../Antragsverwaltungstool/static/img/footer/W3.png" alt = "W3 Logo"/><br>W3 schools</a></td>
-            <td><a href="https://httpd.apache.org/"><img src="../../Antragsverwaltungstool/static/img/footer/apache.png" alt = "Apache Logo"/><br>Apache</a></td>
-            <td><a href="https://www.stura.htw-dresden.de/"><img src="../../Antragsverwaltungstool/static/img/footer/Stura_htw.png" alt = "Stura Logo"/><br></a></td>
-            <td><a href="https://www.gnu.org/home.de.html"><img src="../../Antragsverwaltungstool/static/img/footer/gnu.png" alt = "GNU Logo"/><br>GNU</a></td>
-            <td><a href="https://www.bootstrapcdn.com/"><img src="../../Antragsverwaltungstool/static/img/footer/Bootstrap.png" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
+            <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %} " alt = "W3 Logo"/><br>W3 schools</a></td>
+            <td><a href="https://httpd.apache.org/"><img src="{% static 'img/footer/apache.png' %} " alt = "Apache Logo"/><br>Apache</a></td>
+            <td><a href="https://www.stura.htw-dresden.de/"><img src="{% static 'img/footer/Stura_htw.png' %} " alt = "Stura Logo"/><br></a></td>
+            <td><a href="https://www.gnu.org/home.de.html"><img src="{% static 'img/footer/gnu.png' %} " alt = "GNU Logo"/><br>GNU</a></td>
+            <td><a href="https://www.bootstrapcdn.com/"><img src="{% static 'img/footer/Bootstrap.png' %} " alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
         </tr>
     </table>
 </div>
