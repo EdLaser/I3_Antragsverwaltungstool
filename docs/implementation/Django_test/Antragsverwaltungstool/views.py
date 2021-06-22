@@ -33,18 +33,6 @@ def generate_number(object_given):
     number = object_given.objects.first()
 
 
-def common_new(request):
-    flag = 0
-    number = '2020-01-01'
-    date = datetime.date.today()
-    title = request.POST.get('titel')
-    office = request.POST.get('election_input')
-    name = request.POST.get('name')
-    mail = request.POST.get('mail')
-    text = request.POST.get('antrtext')
-    return flag, number, date, title, office, name, mail, text
-
-
 # Add a new universall database entry
 def new_universall(request):
     if request.method == 'POST':
@@ -175,10 +163,10 @@ def change_universall(request):
         # uni_object.beschlussgrund = request.POST.get('begtext')
         uni_object.save()
 
-        return render(request, 'intern_change_uni.html')
+        return render(request, 'stat_html/universally_stura.html')
     # when number is not given render without object
     if not number:
-        return render(request, 'intern_change_uni.html')
+        return render(request, 'stat_html/universally_stura.html')
     # else render with object
 
     # matched = re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
@@ -188,7 +176,7 @@ def change_universall(request):
     context = {
         'uni_object': uni_object
     }
-    return render(request, 'intern_change_uni.html', context)
+    return render(request, 'stat_html/universally_stura.html', context)
 
 
 def change_advisory(request):
@@ -206,16 +194,16 @@ def change_advisory(request):
         # advi_object.beschlussgrund = request.POST.get('begtext')
         advi_object.save()
 
-        return render(request, 'intern_change_advisory.html')
+        return render(request, 'stat_html/advisory_member_stura.html')
     if not number:
-        return render(request, 'intern_change_advisory.html')
+        return render(request, 'stat_html/advisory_member_stura.html')
     # matched = re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
     # if re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]", number):
     advi_object = get_object_or_404(AdvisoryMember, number=number)
     context = {
         'advi_object': advi_object
     }
-    return render(request, 'intern_change_advisory.html', context)
+    return render(request, 'stat_html/advisory_member_stura.html', context)
 
 
 def change_position(request):
@@ -236,16 +224,16 @@ def change_position(request):
         # posi_object.beschlussgrund = request.POST.get('begtext')
         posi_object.save()
 
-        return render(request, 'intern_change_position.html')
+        return render(request, 'stat_html/election_report_stura.html')
     if not number:
-        return render(request, 'intern_change_position.html')
+        return render(request, 'stat_html/election_report_stura.html')
     # matched = re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
     # if re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]", number):
     posi_object = get_object_or_404(Position, number=number)
     context = {
         'posi_object': posi_object
     }
-    return render(request, 'intern_change_position.html', context)
+    return render(request, 'stat_html/election_report_stura.html', context)
 
 
 def change_finance(request):
@@ -262,10 +250,10 @@ def change_finance(request):
         # fina_object.beschlussgrund = request.POST.get('begtext')
         fina_object.save()
 
-        return render(request, 'intern_change_finance.html')
+        return render(request, 'stat_html/finance_stura.html')
     # when number is not given render without object
     if not number:
-        return render(request, 'intern_change_finance.html')
+        return render(request, 'stat_html/finance_stura.html')
     # else render with object
 
     # matched = re.match("[0-9][0-9][0-9][0-9]/[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
@@ -275,4 +263,4 @@ def change_finance(request):
     context = {
         'fina_object': fina_object
     }
-    return render(request, 'intern_change_finance.html', context)
+    return render(request, 'stat_html/finance_stura.html', context)
