@@ -17,16 +17,47 @@ Zur Ausführung des Systems, in Hinblick auf Skalierbarkeit, wird benötigt:
 .. CPU mit 4 Kernen
 .. 4 GB Arbeitsspeicher
 .. 15 GB Festplattenspeicher
-.. Internetanbindung mit mindestens 100 Mbit/s
-. Für den Datenbankserver
+.. Internetanbindung mit mindestens 50 Mbit/s
+. Für den Datenbankserver:
 .. CPU mit 4 Kernen
 .. 4 GB Arbeitsspeicher
-.. 20 GB Festplattenspeicher
-.. Internetanbindung mit mindestens 100 Mbit/s
+.. 20 GB Festplattenspeicher (Muss nach mehreren Jahren erhöht werden, je nach Skalierung)
+.. Internetanbindung mit mindestens 50 Mbit/s
 
 ==== Software
 
 . Für den Webserver:
-.. Ubuntu (Version 20.04 LTS) oder Debian (Version 10)
-.. Python3 bzw. Pip3
-.. Django (Version 3.2.4 LTS)
+.. https://ubuntu.com/download/desktop[Ubuntu] (Version 20.04 LTS) oder https://www.debian.org/distrib/[Debian] (Version 10)
+.. https://www.python.org/downloads/[Python3] bzw. Pip3
+.. mindestens https://www.djangoproject.com/download/[Django] (Version 3.2.4 LTS)
+.. https://httpd.apache.org/[Apache2]
+. Für den Datenbankserver
+.. https://ubuntu.com/download/desktop[Ubuntu] (Version 20.04 LTS) oder https://www.debian.org/distrib/[Debian] (Version 10)
+.. https://dev.mysql.com/downloads/[MySQL Community Edition] (mindestens Version 8.0)
+
+== Systemeinrichtung
+=== Komponenten
+
+Die Anwednung besteht im ganzen aus einer Django-Applikation welche sich in kleine Unterkomponenten gliedert (im Folgenden aufgelistet)
+. HTML: Alle Seiten die die Applikation bereitstellt sind im Ordner _Templates_ zu finden.
+. CSS: Die CSS-Dateien bilden das Styling für die HTML-Seiten und sind im Applikationsordner _Antragsverwaltungstool_ unter _static/css_ zu finden.
+. PNG: In der Applikation befinden sich ebenfalls einzelne Bilder zum darstellen auf der Webseite, ebenfalls unter _static/png_
+. JS: Es wird JavaScript benutzt um input Felder anzuzeigen oder zu verstecken. Zusätzlich um Texte einfach zu displayen.
+. PY: Die Anwendung besteht zum Großteil aus Python-Dateien welche einerseits das MVC-Architekturprinzip wiederspiegeln (_views.py_, _models.py_) und andererseits die Funktionen des Frameworks bereitstellen. Wichtig ist auch hier die _settings.py_ indem für die Applikation spezifische Einstellungen festgelegt sind.
+. MySQL-API-TReiber: Zum Betreiben wird ebenfalls ein Treiber zur Kommunikation mit der Datenbank benötigt. Hier wird https://pypi.org/project/mysqlclient/[_mysqlclient_] empfohlen.
+
+=== Installation / Verzeichnisstruktur
+
+Für die Installation ist nur Python und Django nötig. Es kann entweder ein neues Django Projekt mit dem gleichen Namen erstellt werden, um dann die Dateien aus der Applikationen in das neue Projekt zu kopieren. Oder es wird der gesamte Ordner aus der fertigen Applikation kopiert. Hier ist es nötig die Python-Laufzeitumgebung entsprechend anzupassen, da in unserem Falle mit einem Python Virtual Environment gearbeitet wird. Die Verzeichnisstruktur wird beim Erstellen des Projektes automatisch erzeugt, Hier ist es nur notwendig die HTML-Unterordner in _Templates_ und den static-Ordner in den Root-Folder der Applikation zu verschieben. Auf dem Webserver können die Dateien der Applikation an einem beliebigen Ort abgelegt werden, zur Einfachheit sollten sie aber unter _var/www/_ abgelegt werden.
+
+
+
+
+=== Konfiguration
+
+Zur Konfiguration muss einerseits im der _settings.py_ die IP-Adresse des Datenbankservers angegeben werden mit einer zusätzlichen Angabe des MySQL-Treibers. Diese kann vom System vergeben werden, darf aber nicht von beliebigen Nutzern erreichbar sein. Dafür muss in der Datenbank nur ein Nutzer für die Applikation angelegt werden, welcher den Server außerhalb von der eigenen IP-Adresse erreichen kann. Damit die Applikation unter Apache2 lauffähig ist muss https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/modwsgi/[_WSGI_] verwendet werden. Dazu benötigt der Webserver Berechtigungen um die Dateien der Applikation ausführen und lesen zu können.
+
+== Systembetreuung
+=== Datensicherung und -wiederherstellung
+
+Die Daten des Webservers können nach Notwendigkeit regelmäßig gesichert werden. Es ist systemseitige keine automatische Sicherung der Daten vorhanden.
