@@ -1,0 +1,10 @@
+@startuml "Einfügen"
+
+Browser -> Template : POST
+Template -> View : post with user input
+View -> Model : insert data according to user input
+Model -> View : response success/error
+View -> Template : display success/error
+Template -> Browser : content
+
+@enduml
