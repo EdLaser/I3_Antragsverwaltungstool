@@ -1,0 +1,32 @@
+= Betriebsdokumentation: {project-name}
+{localdatetime}
+include::../../docs/_includes/default-attributes.inc.adoc[]
+{mail}
+
+== Ziel der Dokumentation
+Ziel der Dokumentation ist es den Administrator beim Einrichten, Konifgurieren, Innbetriebnhemen sowie Betreuen des Systems Rahmenbedingungen zu geben.
+
+== Anforderungen an die Produktivumgebung
+=== Systemvorraussetzungen
+
+Zur Ausführung des Systems, in Hinblick auf Skalierbarkeit, wird benötigt:
+
+==== Hardware
+
+. Für den Webserver:
+.. CPU mit 4 Kernen
+.. 4 GB Arbeitsspeicher
+.. 15 GB Festplattenspeicher
+.. Internetanbindung mit mindestens 100 Mbit/s
+. Für den Datenbankserver
+.. CPU mit 4 Kernen
+.. 4 GB Arbeitsspeicher
+.. 20 GB Festplattenspeicher
+.. Internetanbindung mit mindestens 100 Mbit/s
+
+==== Software
+
+. Für den Webserver:
+.. Ubuntu (Version 20.04 LTS) oder Debian (Version 10)
+.. Python3 bzw. Pip3
+.. Django (Version 3.2.4 LTS)
