@@ -1,0 +1,16 @@
+= Enwticklerdokumentation: {project-name}
+{localdatetime}
+include::../../docs/_includes/default-attributes.inc.adoc[]
+{mail}
+
+== Ziel der Dokumentation
+Ziel der Dokumentation ist es den künftigen Entwicklern der Software möglichst viel Infors bereitzustellen. Die Dokumentation is bei Entwicklung entsprechend zu ergänzen.
+
+== Entwurfsdokumentation
+
+.logische Sicht
+[plantuml, "diagrams/logical", svg]
+....
+include::diagrams/logical.puml[]
+....
+

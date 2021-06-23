@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="Changed workspace conf after rename">
+    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="Moved files for visibility">
+      <change beforePath="$PROJECT_DIR$/../../../belegabgabe_se2/dokumentation/betriebsdokumentation.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../belegabgabe_se2/dokumentation/betriebsdokumentation.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stat_html/advisory_member_stura.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stat_html/advisory_member_stura.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -55,11 +55,11 @@
       <recent name="F:\Uni\Django_test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\templates\old" />
       <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\templates" />
       <recent name="F:\Uni\Django_test\templates\stat_html" />
       <recent name="F:\Uni\Django_test\atool\static\css" />
       <recent name="F:\Uni\Django_test\atool" />
-      <recent name="F:\Uni\Django_test" />
     </key>
   </component>
   <component name="RunManager">
@@ -119,7 +119,11 @@
       <workItem from="1624262720673" duration="9294000" />
       <workItem from="1624287420797" duration="2473000" />
       <workItem from="1624295090997" duration="119000" />
-      <workItem from="1624295211798" duration="320000" />
+      <workItem from="1624295211798" duration="1282000" />
+      <workItem from="1624301707067" duration="146000" />
+      <workItem from="1624376543151" duration="45000" />
+      <workItem from="1624376597837" duration="7008000" />
+      <workItem from="1624448841842" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="Setup HTML Forms for Django">
       <created>1623658172021</created>
@@ -394,7 +398,49 @@
       <option name="project" value="LOCAL" />
       <updated>1624292916534</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="changed workspace.xml">
+      <created>1624295768827</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1624295768827</updated>
+    </task>
+    <task id="LOCAL-00041" summary="undo functions to perform insert of application (didnt work)">
+      <created>1624378409580</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1624378409580</updated>
+    </task>
+    <task id="LOCAL-00042" summary="corrected spelling mistake">
+      <created>1624378424470</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1624378424470</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Changed html files to serve static StuRa intern file on change application use-case">
+      <created>1624383478622</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1624383478622</updated>
+    </task>
+    <task id="LOCAL-00044" summary="deleted common_new function(doesnt work)">
+      <created>1624383498583</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1624383498583</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Moved files for visibility">
+      <created>1624383558705</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1624383558705</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,12 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added templates for changing applications" />
-    <MESSAGE value="Debuged string representation in Advisory Model" />
-    <MESSAGE value="Removed space in django dunction to regualte to display placeholder" />
-    <MESSAGE value="Changed one placeholder to correct context" />
-    <MESSAGE value="added if clause to hide confirmation button when object is edited" />
-    <MESSAGE value="added the object number to display in the number field" />
     <MESSAGE value="ADded all urls for changing objects" />
     <MESSAGE value="Added urls to href the html files to change objects" />
     <MESSAGE value="created change_finance to extend finance.html" />
@@ -451,6 +491,12 @@
     <MESSAGE value="For Django" />
     <MESSAGE value="Refactored dirs for better names" />
     <MESSAGE value="Changed workspace conf after rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed workspace conf after rename" />
+    <MESSAGE value="changed workspace.xml" />
+    <MESSAGE value="undo functions to perform insert of application (didnt work)" />
+    <MESSAGE value="corrected spelling mistake" />
+    <MESSAGE value="Changed html files to serve static StuRa intern file on change application use-case" />
+    <MESSAGE value="deleted common_new function(doesnt work)" />
+    <MESSAGE value="Moved files for visibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved files for visibility" />
   </component>
 </project>

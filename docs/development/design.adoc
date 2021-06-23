@@ -27,7 +27,7 @@ include::diagrams/c4_l1.puml[]
 include::diagrams/c4_l2.puml[]
 ....
 
-.Level 3: Container (Web-Applikation)
+.Level 3: Component (Web-Applikation)
 [plantuml, "diagrams/c4_l3_webapp", svg]
 ....
 include::diagrams/c4_l3_webapp.puml[]

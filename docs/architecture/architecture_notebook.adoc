@@ -38,16 +38,16 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 === Wartbarkeit (Supportability)
 *NFAS-1:* Das System soll die Möglichkeit bieten, später eine weitere Sprachen einbinden zu können.
 
-== Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Framworks, DBS-Managementsystem usw + Begründung)
+== Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Frameworks, DBS-Managementsystem usw + Begründung)
 . Generell ist nur das Nutzen von Open-Source Software vorgesehen.
+. Als Framework nutzen wir Django, da es uns viel lästige Arbeit bei der Datenverarbeitung abnimmt und uns das AUsliefern der HTML- sowie CSS- und JavaScript-Dateien deutlich erleichtert. Es folgt ebenfalss dem Model-View-Presenter Prinzip, wodurch wir eine klare Abgrenzung der einzelnen Aspekte des Systems erreichen. Dadurch steigert sich die Wartbarkeit und es können einzelne Teile geändert werden ohne, dass das System unbrauchbar wird.
 . HTML bildet die Grundlage des Aufbaus unserer Webseite.
 .  Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist.
 . Ebenfalls findet CSS bei uns Anwendung, da es zum Gestalten der Webseite unverzichtbar ist. Hier bedienen wir uns eines vorgefertigten Stylesheets von W3.
 . Um die Nutzereingaben serverseitig zu Bearbeiten, verwenden wir Python als gut verständliche und vielseitige Programmiersprache.
 . Als Webserver kommt Apache zum Einsatz, da er weit verbreitet und gut dokumentiert ist.
 . Wir verwenden die relationale Datenbank MySQL da wir die Anträge gut als Tabellenstruktur abbilden können.
-. Um die vom Nutzer übermittelten Eingaben in einen Datensatz in der Datenbank umzuwandeln, nutzen wir die PyMysql um aus den Eingaben Abfragen auf der Datenbank zu generieren.
-. PyMysql bildet für die Datenverarbeitung die Grundlage der Kommunikation zwischen dem Webserver und der Datenbank.
+. PyMysql bildet den Treiber für die Datenverarbeitung zwischen dem Webserver und der Datenbank.
 
 == Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
 . Wir haben in der Analyse festgestellt, das wir alle Daten zu einem Antrag persistent speichern müssen (*SFA-2*). Hier haben wir zwei Möglichkeiten erwägt selbiges technisch Umzusetzen. Zwischen der Speicherung in einer SQL-Datenbank oder als Textdatei im CSV-Format, haben wir uns für eine SQL-Datenbank entschieden, da wir unsere Anträge gut relationell abbilden können und wir durch vorhandenes Vorwissen in SQL einfacher Abfragen in der Datenbank formulieren und testen können. Wir haben uns in der Implementierung für eine MySQL-Datenbank entschieden da sie uns eine gut dokumentierte Open-Source-Lösung bietet.
@@ -70,16 +70,9 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 
 === *Workflos:*
 
-== Architektonischer Rahmen
-* Kompatibilität zu den Webbrowsern wie Chrome, Firefox
-* Verwendung von HTML und CSS für die Oberfläche 
-* Javascript und falls nötig Python für die Mechaniken der Website
-* Konfigurieren des Linux/Unix Servers/Webservers als Vorbild soll die Struktur der HTW Webserver dienen
-* Generierung der Tagesordnung 
+== Architektonische Sichten
 
-=== Architektonische Ansichten
-
-==== Logische Sicht
+=== Logische Sicht
 In unserer logischen Schicht betrachten wir die einzelnen Komponenten des Systems. Der Webserver bildet die Grundlagen für die Darstellung der Webseite. Hier liegen alle HTML- sowie CSS- und Skriptdateien (Python, JavaScript, PHP). Über Skripte kommuniziert der Webserver mit der Datenbank indem Abfragen auf der Datenbank ausgeführt werden.
 
 .logische Sicht
@@ -88,11 +81,22 @@ In unserer logischen Schicht betrachten wir die einzelnen Komponenten des System
 include::diagrams/logical.puml[]
 ....
 
-==== Pyhsische Sicht
+=== Pyhsische Sicht
 Unsere Anwendung bildet ein Server-Client System ab. Im Fokus steht der Webserver der mehreren Clients die Funktionalitäten des Systems bereitstellen muss. Im Hintergrund steht der Datenbankserver der nur über Services angebunden ist.
 
 .pyhsische Sicht
 [plantuml, "diagrams/pyhsical", svg]
 ....
 include::diagrams/physical.puml[]
+....
+
+=== Architektur-Framework
+
+==== Model-View-Presenter
+Unsere Applikation folgt dem Model-View-Controller Prinzip. Hierbei findet eine klare Abgrenzung zwischen den einzelnen Funktionalitäten der Software statt. Hier repäsentiert unser Model die Tabellenstruktur der einzelnen Tabellen mit ihrem Spalten. Die View nimmt Anfragen entgegen und rendert den Inhalt der HTML-Dateien über den Webbrowser.
+
+.Model-View-Presenter
+[plantuml, "diagrams/mvp", svg]
+....
+include::diagrams/mvp.puml[]
 ....

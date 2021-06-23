@@ -29,6 +29,7 @@ Zur Ausführung des Systems, in Hinblick auf Skalierbarkeit, wird benötigt:
 . Für den Webserver:
 .. https://ubuntu.com/download/desktop[Ubuntu] (Version 20.04 LTS) oder https://www.debian.org/distrib/[Debian] (Version 10)
 .. https://www.python.org/downloads/[Python3] bzw. Pip3
+.. https://pypi.org/project/mysqlclient/[_mysqlclient_]
 .. mindestens https://www.djangoproject.com/download/[Django] (Version 3.2.4 LTS)
 .. https://httpd.apache.org/[Apache2]
 . Für den Datenbankserver
