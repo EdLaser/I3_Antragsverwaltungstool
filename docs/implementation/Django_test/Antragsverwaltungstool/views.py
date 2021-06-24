@@ -1,7 +1,8 @@
 import datetime
 import pdoc
+from django.contrib.auth import authenticate, login
 from django.shortcuts import render, get_object_or_404
-from Antragsverwaltungstool.models import Universall, Finance, AdvisoryMember, Position
+from Antragsverwaltungstool.models import Universall, Finance, AdvisoryMember, Position, Conduct
 from itertools import chain
 
 
@@ -16,7 +17,6 @@ from itertools import chain
 # TODOS:
 # - Implement deleting
 # - Implement show all entrys
-
 # Methods to render the GET requests of the html files
 def index(request):
     """ Method to return a HttpResponse with the index.html file when calling the website"""
@@ -244,6 +244,49 @@ def new_position(request):
     return render(request, 'stat_html/election_report.html')
 
 
+def new_conduct(request):
+    """
+    Add a new establishind conduct application to the database, with the variables
+    extracted out of the post request and the flag 0 for "application arrived".
+
+    Parameters:
+        request(WSGIRequest): The request given to the view by the url configuration.
+        on which file to be rendered
+
+    Returns:
+        a HttpResponse with establishing_conduct.html.
+
+    """
+
+    if request.method == 'POST':
+        # initialize the flag (status) as 0 (eingenagen)
+        flag = 0
+        number = '2020-01-02'
+        # set the date as the current systemdate
+        date = datetime.date.today()
+        # title of the application
+        title = request.POST.get('titel')
+        # office the request is pointet to
+        office = request.POST.get('election_input')
+        # contact data of the applicant
+        name = request.POST.get('name')
+        mail = request.POST.get('mail')
+        # the text of the application
+        text = request.POST.get('antrtext')
+        # the reason why the application is made
+        reason = request.POST.get('begzantr')
+        # the suggestion what should be done after the application is processed
+        suggestion = request.POST.get('vrshzverf')
+        # attachments to the entry
+        anlagen = request.POST.get('anlgn')
+        # initialize a new object according to the model
+        new_con = Universall(flag, number, date, title, office, name, mail, text, reason, suggestion, anlagen)
+        # save the object to the database by calling the django method "save" on the object
+        new_con.save()
+        # return the request and the universally.html file
+    return render(request, 'stat_html/establishing_conduct.html')
+
+
 def get_all_by_electioninput(request):
     """
         Display the intern.html site (GET-Request) or get all the applications directed
@@ -448,3 +491,37 @@ def change_finance(request):
         'fina_object': fina_object
     }
     return render(request, 'stat_html/finance_stura.html', context)
+
+
+def change_conduct(request):
+    """
+        Changes an conduct application by the variables of the POST-Request. ALl the parameters of the object are
+        rendered onto the page before.
+
+        Parameters:
+            request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
+            or to POST the data and save it to the database.
+
+        Returns:
+            Either the HttpRequest with establishing_conduct_stura.html, or the establishing_conduct_stura.html
+            populated with content out of the database.
+    """
+    number = request.GET.get('antrag')
+    if request.method == 'POST':
+        con_object = get_object_or_404(Conduct, number=number)
+        common_change(request, con_object, number)
+        con_object.suggestion = request.POST.get('vrshzverf')
+        con_object.save()
+
+        return render(request, 'stat_html/universally_stura.html')
+    # when number is not given render without object
+    if not number:
+        return render(request, 'stat_html/universally_stura.html')
+    # else render with object
+
+    # get the object
+    con_object = get_object_or_404(Universall, number=number)
+    context = {
+        'con_object': con_object
+    }
+    return render(request, 'stat_html/universally_stura.html', context)
