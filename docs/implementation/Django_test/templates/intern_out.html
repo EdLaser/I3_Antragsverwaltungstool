@@ -3,11 +3,25 @@
 {% block out %}
     {% if pos %}<h3>Alle Anträge an: {{ pos }}</h3>{% else %}<h3>Bitte Stelle wählen.</h3>{% endif %}
     {% if uni_list %}
-        <li>Antragsnummer Titel Datum</li>
         <ul style="list-style-type:none;">
-            {% for application in uni_list %}
-                <li>{{ application.number }} {{ application.title }} {{ application.date }}</li>
-            {% endfor %}
+            <table style="width: 100%">
+                <li>
+                    <tr>
+                        <td style="text-align: center"><b>Antragsnummer</b></td>
+                        <td style="text-align: center"><b>Antragstitel</b></td>
+                        <td style="text-align: center"><b>Datum</b></td>
+                    </tr>
+                </li>
+                {% for application in uni_list %}
+                <li>
+                    <tr>
+                        <td style="text-align: center">{{ application.number }}</td>
+                        <td style="text-align: center">{{ application.title }}</td>
+                        <td style="text-align: center">{{ application.date }}</td>
+                    </tr>
+                </li>
+                {% endfor %}
+            </table>
         </ul>
     {% else %}
         <p>Keine Anträge für {{ pos }}</p>
