@@ -34,7 +34,7 @@
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
-        {% include 'include_login.html' %}
+        {% include 'is_logged_in.html' %}
     </ul>
 </div>
 
@@ -87,18 +87,18 @@
                             <label>Enddatum:</label>
                             <input type = "date" class = "w3-input" name = "edat"  style="width: 70%">
                         </div>
-                    </div>
-                    <footer class="w3-container w3-light-gray">
-                        <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
-                    </footer>
-                </form>
+                        <footer class="w3-container w3-light-gray">
+                            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+                        </footer>
+                    </form>
+                </div>
             </div>
         </div>
 
         <div class="w3-half" style="width: 60%;" id = "out">
             <div class="w3-card-4">
                 <header class="w3-container" style="background-color: #F2AC2E;">
-                    <h2>Ausgabe:</h2>
+                    <h2>Ergebnisse:</h2>
                 </header>
 
                 <div class="w3-container w3-light-gray">
