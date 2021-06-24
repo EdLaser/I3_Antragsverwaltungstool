@@ -1,11 +1,12 @@
 {% extends 'stat_html/intern.html'%}
 
 {% block out %}
-    <h3>Alle Anträge an: {{ pos }}</h3>
+    {% if pos %}<h3>Alle Anträge an: {{ pos }}</h3>{% else %}<h3>Bitte Stelle wählen.</h3>{% endif %}
     {% if uni_list %}
-        <ul>
-            {% for universall in uni_list %}
-                <li>{{ universall.number }}  {{ universall.title }} {{ universall.name }} {{ universall.date }}</li>
+        <li>Antragsnummer Titel Datum</li>
+        <ul style="list-style-type:none;">
+            {% for application in uni_list %}
+                <li>{{ application.number }} {{ application.title }} {{ application.date }}</li>
             {% endfor %}
         </ul>
     {% else %}
