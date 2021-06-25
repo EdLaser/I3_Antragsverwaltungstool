@@ -53,6 +53,7 @@
             <label>
                 <select class="w3-select w3-border" id = "Sin" onchange="mytoggleinputs('oth')" name = "election_input" required>
                     <option disabled selected>Bitte Auswählen</option>
+                    <optgroup label="Allgemein">
                     <option name = "vors" value = "Vorstand">Vorstand</option>
                     <option name = "ple" value = "Plenum">Plenum</option>
                     <option name = "prae" value = "Präsidium">Präsidium</option>
@@ -60,16 +61,19 @@
                     <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
                     <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
                     <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
-                    <option name = "refstselorg" value = "Referatsleitung Studentische Selbstverwaltung und Organisation">Referatsleitung Studentische Selbstverwaltung und Organisation</option>
-                    <option name = "refstud" value = "Referatsleitung Studium">Referatsleitung Studium</option>
-                    <option name = "refkul" value = "Referatsleitung Kultur">Referatsleitung Kultur</option>
-                    <option name = "refsp" value = "Referatsleitung Sport">Referatsleitung Sport</option>
-                    <option name = "refqm" value = "Referatsleitung Qualitätsmanagement">Referatsleitung Qualitätsmanagement</option>
-                    <option name = "refoeff" value = "Referatsleitung Öffentlichkeitsarbeit">Referatsleitung Öffentlichkeitsarbeit</option>
-                    <option name = "refsoz" value = "Referatsleitung Soziales">Referatsleitung Soziales</option>
-                    <option name = "reffin" value = "Referatsleitung Finanzen">Referatsleitung Finanzen</option>
-                    <option name = "refhoch" value = "Referatsleitung Hochschulpolitik">Referatsleitung Hochschulpolitik</option>
-                    <option name = "refint" value = "Referatsleitung Internationales">Referatsleitung Internationales</option>
+                    </optgroup>
+                    <optgroup label="Referatsleitung">
+                      <option name = "refstselorg" value = "Studentische Selbstverwaltung und Organisation">Studentische Selbstverwaltung und Organisation</option>
+                      <option name = "refstud" value = "Studium">Studium</option>
+                      <option name = "refkul" value = "Kultur">Kultur</option>
+                      <option name = "refsp" value = "Sport">Sport</option>
+                      <option name = "refqm" value = "Qualitätsmanagement">Qualitätsmanagement</option>
+                      <option name = "refoeff" value = "Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</option>
+                      <option name = "refsoz" value = "Soziales">Soziales</option>
+                      <option name = "reffin" value = "Finanzen">Finanzen</option>
+                      <option name = "refhoch" value = "Hochschulpolitik">Hochschulpolitik</option>
+                      <option name = "refint" value = "Internationales">Internationales</option>
+                    </optgroup>
                     <option name = "other" value = "18">Eigene...</option>
                 </select>
             </label>
