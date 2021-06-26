@@ -1,0 +1,10 @@
+@startuml "Anzeigen"
+
+Browser -> Template : request
+Template -> View : request with user input
+View -> Model : get data according to user input
+Model -> View : response data
+View -> Template : render with data
+Template -> Browser : content
+
+@enduml

@@ -19,16 +19,15 @@
     <ul class = "mainnav">
         <li id = "active" class = "lil"><a href="{%  url 'index' %}">Home</a></li>
         <li class = "lil"><a href="{%  url 'universall' %}">Antrag ohne finanzielle Mittel</a></li>
-        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag Wahl ▼</a>
+        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag zur: ▼</a>
             <div class = "dropdown-content w3-animate-opacity">
                 <a href="{%  url 'advisory_member' %}">Beratendes Mitglied</a>
                 <a href="{%  url 'election_report' %}">Stelle/Amt</a>
-                <a href="#">Studienkomission</a>
+                <a href="#">Herstellung des Benehmens</a>
             </div>
         </li>
         <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
-        <li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>
-        <li class = "lil"><a href="{% url 'admin:index' %}">Admin</a></li>
+        {% if user.is_authenticated %}<li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>{% endif %}
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
@@ -50,7 +49,7 @@
     <h1>Universelle Anträge:</h1>
 
     <div class = "w3-row" style="margin-bottom: 20px">
-        <a href="universally.html"><div class="w3-half">
+        <a href="{% url 'universall' %}"><div class="w3-half">
             <div class="w3-card-4" style="margin-right: 10px">
                 <header class="w3-container" style="background-color: #F2AC2E;">
                     <h2>Antrag ohne finanziellen Mittel</h2>
@@ -62,7 +61,7 @@
             </div>
         </div></a>
 
-        <a href="finance.html"><div class="w3-half">
+        <a href="{% url 'finance' %}"><div class="w3-half">
             <div class="w3-card-4" style="margin-left: 10px">
                 <header class="w3-container" style="background-color: #F2AC2E;">
                     <h2>Antrag mit finanziellen Mitteln</h2>
@@ -75,10 +74,10 @@
         </div></a>
     </div>
 
-    <h1>Anträge zu Wahlen:</h1>
+    <h1>Anträge zu Personen:</h1>
 
     <div class = "w3-row" style="margin-bottom: 20px">
-        <a href="advisory_member.html"><div class="w3-third">
+        <a href="{% url 'advisory_member' %}"><div class="w3-third">
             <div class="w3-card-4" style="margin-right: 10px">
                 <header class="w3-container" style="background-color: #F2AC2E;">
                     <h2>Beratendes Mitglied</h2>
@@ -90,7 +89,7 @@
             </div>
         </div></a>
 
-        <a href="election_report.html"><div class="w3-third">
+        <a href="{% url 'election_report' %}"><div class="w3-third">
             <div class="w3-card-4" style="margin-left: 10px; margin-right: 10px">
                 <header class="w3-container" style="background-color: #F2AC2E;">
                     <h2>Wahl auf Stelle/Amt</h2>
@@ -115,18 +114,6 @@
         </div></a>
     </div>
 </div>
-
-<div class = "footer w3-animate-bottom">
-    <table>
-      <tr>
-          <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %}" alt = "W3 Logo"/><br>W3 schools</a></td>
-          <td><a href="https://httpd.apache.org/"><img src="{% static 'img/footer/apache.png' %}" alt = "Apache Logo"/><br>Apache</a></td>
-          <td><a href="https://www.stura.htw-dresden.de/"><img src="{% static 'img/footer/Stura_htw.png' %}" alt = "Stura Logo"/><br></a></td>
-          <td><a href="https://www.gnu.org/home.de.html"><img src="{% static 'img/footer/gnu.png' %}" alt = "GNU Logo"/><br>GNU</a></td>
-          <td><a href="https://www.bootstrapcdn.com/"><img src="{% static 'img/footer/Bootstrap.png' %}" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
-          <td></td>
-      </tr>
-    </table>
-</div>
+{% include 'footer.html' %}
 </body>
 </html>

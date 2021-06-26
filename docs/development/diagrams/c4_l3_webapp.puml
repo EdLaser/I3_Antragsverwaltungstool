@@ -5,42 +5,47 @@ skinparam actorStyle awesome
 actor Antragssteller <<Person>>
 actor Präsidium <<Person>>
 
-folder "Web-Applikation" {
-   component insert_script <<insert>> [
-        Script, dass bei einer Nutzereingabe einen
-        Datensatz in die Datebnbank schreibt.
-    ] 
+node "Django-Applikation" as DjangoApplikation
+
+node components {
     component login_controller <<Login>> [
         Ermöglicht es einem berechtigten Nutzer
          sich einzulogen, um in den internen
          Bereich zu gelangen.
     ]
-    component select_script <<insert>> [
+    component view_antrags_anzeige <<Anzeige>> [
         Script, dass Datensätze nach festlegbaren
         Kriterien aus der Datenbank liest.
     ]
-    component update_script <<insert>> [
+    component view_antrags_änderung <<Änderung>> [
         Script, dass nach Bearbeitung eines 
         Datensatzes Änderungen in die Datenank schreibt.
     ]
-    component delete_script <<insert>> [
-        Script, dass einen gewünschten
-        Datensatz aus der Datenbank entfernt.
+    component view_antrag_stellen <<Stellen>> [
+        Script, dass Datensätze in die 
+        Datenbank einfügt.
+    ]
+    component mysqlclient <<SQL-Treiber>> [
+        Treiber zur Kommunikation mit der Datenbank.
     ]
 }
 
 database Datenbank <<container>>
+ 
+Antragssteller ..> DjangoApplikation : nutzt (HTTP)
+Präsidium ..> DjangoApplikation : nutzt (HTTP)
 
-Antragssteller ..> insert_script : nutzt (HTTP)
+DjangoApplikation ..> login_controller : ruft
+DjangoApplikation ..> mysqlclient : ruft
+DjangoApplikation ..> view_antrags_anzeige : ruft
+DjangoApplikation ..> view_antrags_änderung : ruft
+DjangoApplikation ..> view_antrag_stellen : ruft
 
-Präsidium ..> login_controller : nutzt (HTTP)
-Präsidium ..> update_script : nutzt (HTTP)
-Präsidium ..> select_script : nutzt (HTTP)
-Präsidium ..> delete_script : nutzt (HTTP)
+login_controller ..> mysqlclient : ruft
+view_antrags_anzeige ..> mysqlclient : ruft
+view_antrags_änderung ..> mysqlclient : ruft
+view_antrag_stellen ..> mysqlclient : ruft
 
-update_script ..> Datenbank : schreibt (PyMySQL)
-insert_script ..> Datenbank : schreibt (PyMySQL)
-select_script ..> Datenbank : liest (PyMySQL)
-delete_script ..> Datenbank : löscht (PyMySQL)
+mysqlclient ..> Datenbank : CRUD (PyMySQL)
 
 @enduml

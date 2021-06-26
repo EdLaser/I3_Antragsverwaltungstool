@@ -6,8 +6,8 @@ actor Antragssteller <<Person>>
 actor Präsidium <<Person>>
 
 component "Antragsverwaltungstool" {
-    component [Web-Applikation] <<Container>>
-    note right of [Web-Applikation]
+    component [Django-Applikation] <<Container>>
+    note right of [Django-Applikation]
         Stellt das graphische Overlay dar, 
         empfängt Nutzereingaben und zeigt Informationen geordnet an
     end note
@@ -18,8 +18,8 @@ component "Antragsverwaltungstool" {
     end note
 }
 
-Antragssteller ..> [Web-Applikation] : nutzt (HTTP)
-Präsidium ..> [Web-Applikation] : nutzt (HTTP)
-[Web-Applikation] ..> [Datenbank] : liest, schreibt, löscht in
+Antragssteller ..> [Django-Applikation] : nutzt (HTTP)
+Präsidium ..> [Django-Applikation] : nutzt (HTTP)
+[Django-Applikation] ..> [Datenbank] : liest, schreibt, löscht in
 
 @enduml

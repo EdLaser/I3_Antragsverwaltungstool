@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{% static 'css/login_popup.css' %}">
     <script src="{% static 'js/owninput.js' %}"></script>
     <script src="{% static 'js/toggleout.js' %}"></script>
-    <script src="{% static 'js/toggledisplay.js' %}"></script>
 </head>
 <body>
 <div class = "logo w3-animate-top">
@@ -22,16 +21,15 @@
     <ul class = "mainnav">
         <li class = "lil"><a href="{%  url 'index' %}">Home</a></li>
         <li class = "lil"><a href="{%  url 'universall' %}">Antrag ohne finanzielle Mittel</a></li>
-        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag Wahl ▼</a>
+        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag zur: ▼</a>
             <div class = "dropdown-content w3-animate-opacity">
                 <a href="{%  url 'advisory_member' %}">Beratendes Mitglied</a>
                 <a href="{%  url 'election_report' %}">Stelle/Amt</a>
-                <a href="#">Studienkomission</a>
+                <a href="#">Herstellung des Benehmens</a>
             </div>
         </li>
         <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
-        <li class = "lil"  id = "active" ><a href="{%  url 'intern' %}">Intern</a></li>
-        <li class = "lil"><a href="">Admin</a></li>
+        {% if user.is_authenticated %}<li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>{% endif %}
 
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
@@ -45,28 +43,55 @@
         <div class="w3-half" style="width: 40%">
             <div class="w3-card-4" style="margin-right: 10px">
                 <header class="w3-container" style="background-color: #F2AC2E;">
-                    <h2>Referat wählen:</h2>
+                    <h2>Antragssuche:</h2>
                 </header>
 
                 <div class="w3-container w3-light-gray">
                     <form class = "myform" action="" method="POST">
                         {% csrf_token %}
-                        <select class="w3-select w3-border form" id = "Sin"  name = "election_input" required>
-                            <option disabled selected>Bitte Auswählen</option>
-                            <option name = "pres" value = "1">Präsidium</option>
-                            <option name = "ple" value = "2">Plenum</option>
-                            <option name = "qm" value = "3">Quallitätsmanagement</option>
-                            <option name = "tes" value = "4">Testreferat</option>
-                            <option name = "other" value = "5">Eigene...</option>
-                        </select>
+                        <label><b>Stelle wählen:</b></label><br>
+                        <label>
+                            <select class="w3-select w3-border" id = "Sin" onchange="toggledisplay('own')" name = "election_input" required>
+                                <option disabled selected>Bitte Auswählen</option>
+                                <option name = "vors" value = "Vorstand">Vorstand</option>
+                                <option name = "ple" value = "Plenum">Plenum</option>
+                                <option name = "prae" value = "Präsidium">Präsidium</option>
+                                <option name = "vertkss" value = "Vertretung in der KSS">Vertretung in der KSS</option>
+                                <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
+                                <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
+                                <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
+                                <option name = "refstselorg" value = "Referatsleitung Studentische Selbstverwaltung und Organisation">Referatsleitung Studentische Selbstverwaltung und Organisation</option>
+                                <option name = "refstud" value = "Referatsleitung Studium">Referatsleitung Studium</option>
+                                <option name = "refkul" value = "Referatsleitung Kultur">Referatsleitung Kultur</option>
+                                <option name = "refsp" value = "Referatsleitung Sport">Referatsleitung Sport</option>
+                                <option name = "refqm" value = "Referatsleitung Qualitätsmanagement">Referatsleitung Qualitätsmanagement</option>
+                                <option name = "refoeff" value = "Referatsleitung Öffentlichkeitsarbeit">Referatsleitung Öffentlichkeitsarbeit</option>
+                                <option name = "refsoz" value = "Referatsleitung Soziales">Referatsleitung Soziales</option>
+                                <option name = "reffin" value = "Referatsleitung Finanzen">Referatsleitung Finanzen</option>
+                                <option name = "refhoch" value = "Referatsleitung Hochschulpolitik">Referatsleitung Hochschulpolitik</option>
+                                <option name = "refint" value = "Referatsleitung Internationales">Referatsleitung Internationales</option>
+                                <option name = "other" value = "18">Eigene...</option>
+                            </select>
+                            <script src="{% static 'js/toggledisplay.js' %}"></script>
+                        </label>
 
-                        <div id="oth" style = "visibility: hidden">
+                        <div id="own" style = "display:none">
                             <label><b>Eigene:</b></label>
                             <input class = "w3-input w3-border form" placeholder="Beispielreferat" name = "owninput" ><br>
                         </div>
+
+                        <div class = "form">
+                            <label><b>Zeitspanne wählen:</b></label><br>
+                            <label>Startdatum:</label>
+                            <input type = "date" class = "w3-input" name = "sdat"  style="width: 70%;margin-bottom: 15px">
+                            <label>Enddatum:</label>
+                            <input type = "date" class = "w3-input" name = "edat"  style="width: 70%">
+                        </div>
+                    </div>
+                    <footer class="w3-container w3-light-gray">
                         <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
-                    </form>
-                </div>
+                    </footer>
+                </form>
             </div>
         </div>
 
@@ -107,20 +132,8 @@
                 </a></td>
             </tr>
         </table>
-
     </div>
 </div>
-
-<div class = "footer w3-animate-bottom">
-    <table>
-        <tr>
-            <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %}" alt = "W3 Logo"/><br>W3 schools</a></td>
-            <td><a href="https://httpd.apache.org/"><img src="{% static 'img/footer/apache.png' %}" alt = "Apache Logo"/><br>Apache</a></td>
-            <td><a href="https://www.stura.htw-dresden.de/"><img src="{% static 'img/footer/Stura_htw.png' %}" alt = "Stura Logo"/><br></a></td>
-            <td><a href="https://www.gnu.org/home.de.html"><img src="{% static 'img/footer/gnu.png' %}" alt = "GNU Logo"/><br>GNU</a></td>
-            <td><a href="https://www.bootstrapcdn.com/"><img src="{% static 'img/footer/Bootstrap.png' %}" alt = "Bootstrap Logo"/><br>BootstrapCDN</a></td>
-        </tr>
-    </table>
-</div>
+{% include 'footer.html' %}
 </body>
 </html>

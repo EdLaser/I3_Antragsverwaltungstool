@@ -16,8 +16,14 @@ node "client 3" {
     [browser 3]
 }
 
+node "..." {
+    ["..."]
+}
+
+
 [browser 1] --> [data]
 [browser 2] --> [data]
 [browser 3] --> [data]
+["..."] --> [data]
 
 @enduml

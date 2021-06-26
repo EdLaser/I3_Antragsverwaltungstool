@@ -1,0 +1,34 @@
+@startuml "MVP"
+
+node "Browser"
+
+node "Webserver"
+
+node "URL Conf"
+
+node "View"
+
+node "Model"
+
+node "Datenbank"
+
+node "Template"
+
+[Browser] .left.> [Webserver] : Anfrage
+[Webserver] ..> [Browser] : Antwort
+
+[Webserver] ..> [URL Conf] : Anfrage
+[View] ..> [Webserver] : Antwort
+
+[URL Conf] .right.> [View] : Anfrage
+
+[View] ..> [Model]
+[Model] ..> [View]
+
+[View] ..> [Template] : Inhalt / Text
+[Template] ..> [View]
+
+[Model] ..> [Datenbank]
+[Datenbank] ..> [Model]
+
+@enduml
