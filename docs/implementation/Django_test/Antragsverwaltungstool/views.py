@@ -1,5 +1,4 @@
 import datetime
-import pdoc
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, get_object_or_404
 from Antragsverwaltungstool.models import Universall, Finance, AdvisoryMember, Position, Conduct
