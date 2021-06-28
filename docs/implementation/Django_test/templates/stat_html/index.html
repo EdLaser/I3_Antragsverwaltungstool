@@ -23,7 +23,7 @@
             <div class = "dropdown-content w3-animate-opacity">
                 <a href="{%  url 'advisory_member' %}">Beratendes Mitglied</a>
                 <a href="{%  url 'election_report' %}">Stelle/Amt</a>
-                <a href="#">Herstellung des Benehmens</a>
+                <a href="{% url 'conduct' %}">Herstellung des Benehmens</a>
             </div>
         </li>
         <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
@@ -31,7 +31,7 @@
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
-        {% include 'include_login.html' %}
+        {% include 'is_logged_in.html' %}
     </ul>
 </div>
 
