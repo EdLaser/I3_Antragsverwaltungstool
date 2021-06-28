@@ -1,0 +1,28 @@
+= Reflexion Ruben-David Kraus
+
+== Was habe ich gelernt ?
+Im Projekt habe ich zahlreiche Erfahrungen gesammelt. Einerseits das die Kommunikation im Team bei solch einem Vorgehen die wichtigste Komponente von allen ist. Kommunikation bildet die Grundlage für ein zielgerichtetes Arbeiten. Wird nicht ausreichend kommuniziert, wird aneinander vorbeigearbeitet. Oft werden Aufgaben nicht klar verteilt, deswegen sollte alles aktiv besprochen und abgeklärt werden. Auch in meiner Rolle der Implementierung ist es essenziell miteinander zu Arbeiten und nicht jeder für sich. Das hat sich im LAufe des Projekts deutlich herausgestellt. Wird in gemeinsamen 'Sessions' programmiert, ist der Output deutlich besser, da man sich direkt absprechen kann. 
+
+Auch die Wichtigkeit von Schaubildern und Diagramen ist mir deutlicher geworden. Es ist deutlich einfacher, beispielsweise eine Domäne zu verstehen bzw. gemeinsam über ein Thema zu diskutieren wenn jeder, unabhängig vom Fachwissen, das Thema in kurzer Zeit überblicken und 'verstehen' kann.
+
+Ich habe auch mitgnommen, das die Entwicklung von Demos oder ein minimum viable product Ansatz eine gute Möglichkeit ist früh Feedback einzuholen, damit nicht in Richtung Entwickelt wird, die am Ende falsch sind.
+
+Außerdem habe ich gelernt, dass es wichtig ist nicht alles selbst machen zu wollen. Wenn man versucht alle Schnittstellen für Kkomplexe Anwendungen zu programmieren kommt man schnell an seine Grenzen und man merkt das man mit seinem aktuellen Wissen nciht weiterkommt. Daher habe ich auch gelernt, wie wichtig Frameworks sein können und das sie einem zahlreiche gute Ansätze bieten auf lästige Arbeit zu verzichten.
+
+Darauf aufbauend habe ich ebenfalls viele Erkenntnissse bezüglich Model-View-Controller Architekturen gewonnen. Ich habe an vielen Stellen gemerkt wie sinnvoll es ist Funktionalitäten einzeln abzugrenzen. Hier hatte ich oft einen 'AHA!'-Moment indem ich die Sinnhaftigkeit dieses Architekturmusters verstanden habe. Hier konnte ich mir oft langen und komplex zu lesenden Code sparen.
+
+Auch  wie wichtig REST-API in der aktuellen Zeit ist. Es war spannend zu sehen wie einzelne Requests und Responses über den Server liefen und die Kommunikation mit dem Client zu beobachten. Damit eingergehend habe ich ebenfalls gelernt einen Webserver einzurichten und eine Anwendung in eine Produktivumgebung einzuführen und zu betreiben.
+
+== Was hat gut funktioniert ?
+
+In unserem Projekt hat vieles gut funktioniert. Einerseits war die Kommunikation mit anderen Teammitgliedern stets freundlich und auf einer Ebene. Es kam nie zu Streitigkeiten oder Unsachlichkeit in den Diskussionen.
+
+Ebenfalls war die Arbeit in der Implementierung sehr angenehm. Wir haben oft direkt miteinander geredet und "Pair-Programming" betrieben, was das Arbeiten deutlich angenehmer gemacht hat, als Solo for sich hinzucoden. Wir haben stets lösngsorientiert gearbeitet und dem Anderen nie Vorwürfe gemacht wenn mal etwas nicht funktionierte. Ich hatte das Gefühl das wir immer an einem Strang gezogen haben und gemeinsam daran orientiert waren das Problem zu lösen.
+
+== Was würde ich beim nächsten Projekt anders machen ?
+
+Leider gab es auch ein paar Punkte die mir zu denken gegeben haben. Einerseits ist der StuRa als Auftraggeber sehr gut, alle sind stets nett und bemüht und man merkt das sie auch an einer guten Umsetzung interessiert sind. Da der StuRa aber leider auf freiwilliger Arbeit basiert und es zur Zeit unseres Projektes einen größeren Mitglieder Abgang gab, fehlt es an dieser Stelle an nötigen Personen die uns betreuten. Am Ende war nur noch ein Student für uns zuständig, der auch selbst inmitten der Prüfungsphase für unser Projekt nur wenig Zeit aufwenden konnte. Da dieser Fakt natürlich schwer abzuschätzen ist, würde ich eventuell vorher beim StuRa Anfragen ob genug Kapaziäten für die Betreuung vorhanden sind. 
+
+Die Art des Themas hat mir im Nachhinein ebenfalls zu denken gegeben.  Ich hatte das Gefühl, dass das komplette, von Grund auf Entwickeln, von Software eine große Herausforderung darstellt. Wenn es hier eher wenig, z.B. berufliche, Vorkentnisse gibt, ist es sehr schwer sich in alle Themengebiete einzuarbeiten und einem fehlt die nötige Informationsdichte um für Entscheidungen genug Informationen zu haben. Hier ist es mir teilweise schwer gefallen den Überblick zu behalten, was nun wo gut angewendet werden kann und wir haben aus Unwissen lange in eine Richtung gearbeitet, die uns am Ende keinen Erfolg brachte. Daher würde ich mich im Vorhinein mehr in Richtung Umsetzung (Frameworks, Programmiersprachen, State-of-the-Art) informieren um vorher genug planen zu können.
+
+Außerdem würde ich beim nächsten Projekt auch gerne einmal SCRUM Anwenden bzw. noch mehr mit meinen Teammitgliedern kommunizieren und gemeinsam arbeiten. Ich denke es fällt oft schwer im Druck des Semesters genug Motivation zu finden noch viel Arbeit ins Projekt zu investieren. Ich habe gemerkt das es viel mehr Spaß macht simultan zusammen zu Arbeiten und das möchte ich gerne intensivieren.
