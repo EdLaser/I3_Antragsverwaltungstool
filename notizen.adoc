@@ -1,5 +1,0 @@
-= Notizen
-
-* Antragsnummerierung hat sich geändert (Möglichkeit für nachträgliches ändern muss gegeben sein)
-* Texte nicht in absehbarer Zeit fertig
-* Kein Problem wenn nicht einsatzbereit
