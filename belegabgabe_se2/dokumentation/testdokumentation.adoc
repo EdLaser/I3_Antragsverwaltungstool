@@ -21,11 +21,301 @@
 . Testdurchführungsplanung (wann wird welche Tests durchgeführt?): siehe test_log.adoc
 
 
+*TS01 - Valide Logindaten akzeptiert*
+|===
+| Datum: 21.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS02 - Falsches Passwort akzeptiert*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS03 - Vollständig ausgefüllter Antrag eingerreicht*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS04 - Unvollständiger Antrag eingerreicht*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS05 - Angezeigter Antrag aufrufbar*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS06 - Externer Nutzer darf keinen Antrag bearbeiten*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS07 - Administrator/Präsidium darf Anträge bearbeiten*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS09 - Interner Nutzer können die Tagesordnung ansehen*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS10 - Unterschiedliche Datentypen als Anlage*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
 === Testfallbeschreibung
 siehe: test_script.adoc
 
+*TS01 - Valide Logindaten akzeptiert*
+|===
+| Vorbedingung: das Internet
+
+| Eingabedaten: Passwort
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Login-Button drucken
+
+| 2. Rolle wählen
+
+| 3. Korrektes Passwort eingeben
+
+| Erwartetes Ergebnis: Anzeige der neuen Seite für die gewählte Rolle
+|===
+
+*TS02 - Falsches Passwort akzeptiert*
+|===
+| Vorbedingung: das Internet
+
+| Eingabedaten: Passwort
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Login-Button drucken
+
+| 2. Rolle wählen
+
+| 3. Falsches Passwort eingeben
+
+| Erwartetes Ergebnis: Fehlermeldung
+|===
+
+*TS03 - Vollständig ausgefüllter Antrag eingerreicht*
+|===
+| Vorbedingung: das Internet, Login, korrekte Logindaten
+
+| Eingabedaten: Antragsfelder(Name, Datum, Antragsinhalt, usw.)
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Login
+
+| 2. Antragsfelder eingeben
+
+| 3. Speichern
+
+| Erwartetes Ergebnis: Speichern des Antrags in Datenbank
+|===
+
+*TS04 - Unvollständiger Antrag eingerreicht*
+|===
+| Vorbedingung: das Internet, Login, korrekte Logindaten
+
+| Eingabedaten: Antragsfelder(Name, Datum, Antragsinhalt, usw.)
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Login
+
+| 2. Antragsfelder eingeben
+
+| 3. Ein nicht optimales Feld leer lassen
+
+| 4. Speichern
+
+| Erwartetes Ergebnis: Fehlermeldung
+|===
+
+*TS05 - Angezeigter Antrag aufrufbar*
+|===
+| Vorbedingung: das Internet, Login
+
+| Eingabedaten: Keine
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Antrag wählen
+
+| 2. "Antrag anschauen"-Button drucken
+
+| Erwartetes Ergebnis: Anzeige des gewählten Antrags
+|===
+
+*TS06 - Externer Nutzer darf keinen Antrag bearbeiten*
+|===
+| Vorbedingung: das Internet
+
+| Eingabedaten: Keine
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Antrag wählen
+
+| 2. "Antrag bearbeiten"-Button drucken
+
+| Erwartetes Ergebnis: Fehlermeldung
+|===
+
+*TS07 - Administrator/Präsidium darf Anträge bearbeiten*
+|===
+| Vorbedingung: das Internet, Login
+
+| Eingabedaten: Keine
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Login
+
+| 2. Antrag wählen
+
+| 3. "Antrag bearbeiten"-Button drucken
+
+| 4. Antrag bearbeiten
+
+| 5. Speichern
+
+| Erwartetes Ergebnis: Speichern des bearbeiteten Antrags
+|===
+
+*TS08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
+|===
+| Vorbedingung: das Internet
+
+| Eingabedaten: Keine
+
+| Ablaufbeschreibung des Tests:
+
+| 1. "Tagesordnung ansehen"-Button drucken
+
+| Erwartetes Ergebnis: Fehlermeldung
+|===
+
+*TS09 - Interner Nutzer können die Tagesordnung ansehen*
+|===
+| Vorbedingung: das Internet, Login
+
+| Eingabedaten: Keine
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Login
+
+| 2. "Tagesordnung ansehen"-Button drucken
+
+| Erwartetes Ergebnis: Anzeige der Tagesordnung
+|===
+
+*TS10 - Unterschiedliche Datentypen als Anlage*
+|===
+| Vorbedingung: das Internet, Login, ausgefüllte Felder 
+
+| Eingabedaten: Anlage
+
+| Ablaufbeschreibung des Tests:
+
+| 1. "Anlage"-Button wählen
+
+| 2. Anlage wählen und hochladen
+
+| Erwartetes Ergebnis: Speichern der Anlage in Datenbank
+|===
+
+*TS11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+|===
+| Vorbedingung: das Internet, Login 
+
+| Eingabedaten: Keine
+
+| Ablaufbeschreibung des Tests:
+
+| 1. Felder "Vorschlag" und "Anlage" leer lassen
+
+| 2. "Speichern"-Button drucken
+
+| Erwartetes Ergebnis: Speichern des Antrags in Datenbank
+|===
+
 === Testergebnisse
-siehe: test_log.adoc
+
+11 Testfälle sind bestanden
 
 funktionen: anträge stellen
 anzahl anträge pro referat einsehen
