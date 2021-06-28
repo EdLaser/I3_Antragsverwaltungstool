@@ -279,7 +279,7 @@ def new_conduct(request):
         # attachments to the entry
         anlagen = request.POST.get('anlgn')
         # initialize a new object according to the model
-        new_con = Universall(flag, number, date, title, office, name, mail, text, reason, suggestion, anlagen)
+        new_con = Conduct(flag, number, date, title, office, name, mail, text, reason, suggestion, anlagen)
         # save the object to the database by calling the django method "save" on the object
         new_con.save()
         # return the request and the universally.html file
