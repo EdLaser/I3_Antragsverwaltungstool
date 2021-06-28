@@ -16,6 +16,9 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Test Cases
 
+=== Allgemeine Vorbedingungen:
+* Internetverbindung ist vorhanden
+* Verbindung zu Host-Server kann aufgebaut werden
 // Template
 *TC*
 |===
@@ -30,31 +33,31 @@ Erforderliche Daten:
 
 *TC01 - Valide Logindaten akzeptiert*
 |===
-Beschreibung:  Prüfen der Reaktion der Software, wenn valide Logindaten eingegeben werden. Diese müssen akzeptiert werden. Der Login muss gelungen sein.
+Beschreibung:  Prüfen der Reaktion der Software, wenn valide Logindaten eingegeben werden. Diese müssen akzeptiert werden. Der Login muss gelingen.
 
-Vorbedingungen: Das Internet muss verfügbar sein.
+Vorbedingungen:
 
-Nachbedingungen: Uhrzeit und Logindaten müssen (in einer Datenbank) gespeichert werden.
+Nachbedingungen: Uhrzeit und Logindaten müssen (in einer Datenbank als log Datei) gespeichert werden.
 
-Erforderliche Daten: Logindaten (Rolle und Passwort) 
+Erforderliche Daten: Logindaten (Nutzername/Rolle und Passwort) 
 |===
 
-*TC02 - Falsches Passwort akzeptiert*
+*TC02 - Falsches Passwort eingegeben*
 |===
-Beschreibung: Prüfen der Reaktion der Software, wenn falsches Passwort eingegeben wird. Der Login muss fehlerhaft sein.
+Beschreibung: Prüfen der Reaktion der Software, wenn falsches Passwort eingegeben wird. Der Login muss fehlschlagen.
 
-Vorbedingungen: Das Internet muss verfügbar sein.
+Vorbedingungen:
 
 Nachbedingungen: Keine
 
-Erforderliche Daten: Logindaten (Rolle und Passwort)
+Erforderliche Daten: Logindaten (Nutzername/Rolle und Passwort)
 |===
 
 *TC03 - Vollständig ausgefüllter Antrag eingerreicht*
 |===
-Beschreibung: Prüfen, ob sich ein vollständig ausgefüllter Antrag erreichen lässt. Es muss möglich sein.
+Beschreibung: Prüfen, ob sich ein vollständig ausgefüllter Antrag einreichen lässt. Antrag muss angenommen und an Server/Datenbank übermittelt werden.
 
-Vorbedingungen: Das Internet muss zur Verfüfung stehen. Der Login muss gelungen sein. Die Eingaben (z.B. Datum) müssen gültig sein.
+Vorbedingungen: Die Eingaben (z.B. Datum) müssen gültig sein.
 
 Nachbedingungen: Uhrzeit, Name des Antragsstellers und der Antrag müssen (in einer Datenbank) gespeichert werden.
 
@@ -63,53 +66,54 @@ Erforderliche Daten: vollständig ausgefüllter Antrag
 
 *TC04 - Unvollständiger Antrag eingerreicht*
 |===
-Beschreibung: Prüfen, ob sich ein unvollständiger Antrag erreichen lässt. Es darf nicht gelungen sein.
+Beschreibung: Prüfen, ob sich ein unvollständiger Antrag einreichen lässt. Dies darf nicht möglich sein.
 
-Vorbedingungen: Das Internet muss zu Verfügung stehen. Der Login muss gelungen sein. 
+Vorbedingungen:
 
-Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden. 
+Nachbedingungen: Dem Nutzer muss eine Fehlermeldung angezeigt werden. 
 
-Erforderliche Daten: unvollständiger Antrag 
+Erforderliche Daten: unvollständige Antragsdaten
 |===
 
-*TC05 - Angezeigter Antrag aufrufbar*
+*TC05 - Eingereichter Antrag aufrufbar*
 |===
-Beschreibung: Prüfen, ob sich ein angezeigter Antrag aufrufen lässt. Es muss möglich sein.
+Beschreibung: Prüfen, ob sich ein bereits eingereichter Antrag aufrufen lässt. Antrag muss korrekt angezeigt werden.
 
-Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein. Die Antragsliste muss auf dem Bildschirm stehen.
+Vorbedingungen: Nutzer muss unter einer berechtigten Rolle angemeldet sein. Gültige Antragsnummer muss angegeben worden sein.
 
-Nachbedingungen: Der Inhalt des Auftrag muss dann auf dem Bildschirm gezeigt werden.
+Nachbedingungen: Der Inhalt des Auftrag muss vollständig und korrekt auf dem Bildschirm angezeigt werden.
 
-Erforderliche Daten: Keine
+Erforderliche Daten: Antragsnummer
 |===
 
 *TC06 - Externer Nutzer darf keinen Antrag bearbeiten*
 |===
-Beschreibung: Prüfen, ob ein externer Nutzer einen Antrag bearbeiten kann. Das darf nicht möglich sein.
+Beschreibung: Prüfen, ob ein nicht berechtigter Nutzer einen Antrag bearbeiten kann. Dies darf nicht möglich sein.
 
-Vorbedingungen: Das Internet muss verfügbar sein.
+Vorbedingungen:
 
-Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden.
+Nachbedingungen:
 
-Erforderliche Daten: Keine
+Erforderliche Daten: Antragsnummer
 |===
  
 *TC07 - Administrator/Präsidium darf Anträge bearbeiten*
 |===
-Beschreibung: Prüfen, ob ein interner Nutzer Anträge bearbeiten kann. Das muss möglich sein.
+Beschreibung: Prüfen, ob ein berechtigter Nutzer Anträge bearbeiten kann. Dies muss möglich sein.
 
-Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
+Vorbedingungen: Nutzer muss unter einer berechtigten Rolle angemeldet sein. Zu bearbeitender Antrag muss korrekt angezeigt werden.
 
 Nachbedingungen: Uhrzeit, Benutzername und der bearbeitete Antrag müssen (in einer Datenbank) gespeichert werden.
 
-Erforderliche Daten: Inhalt des Antrags
+Erforderliche Daten: Antragsdaten
 |===
 
+////
 *TC08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
 |===
 Beschreibung: Prüfen, ob ein externer Nutzer die Tagesordnung ansehen darf. Das darf nicht möglich sein.
 
-Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
+Vorbedingungen: Der Login muss gelungen sein.
 
 Nachbedingungen: Eine Fehlermeldung muss auf dem Bildschirm gezeigt werden.
 
@@ -120,25 +124,26 @@ Erforderliche Daten: Keine
 |===
 Beschreibung: Prüfen, ob ein interner Nuter die Tagesordnung ansehen kann. Das muss möglich sein.
 
-Vorbedingungen: Das Internet muss verfügbar sein. Der Login muss gelungen sein.
+Vorbedingungen: Der Login muss gelungen sein.
 
 Nachbedingungen: Die Tagesordung muss dann auf dem Bildschirm gezeigt werden. 
 
 Erforderliche Daten: Keine 
 |===
+////
 
-*TC10 - Unterschiedliche Datentypen als Anlage*
+*TC08 - Unterschiedliche Datentypen als Anlage*
 |===
-Beschreibung: Prüfen, ob sich unterschiedliche Datentypen(Dokumenten, Video, Audio, usw.) als Anlagen anhängen lassen. 
+Beschreibung: Prüfen, ob sich verschiedene Datentypen (Text, Video, Audio, usw.) als Anlagen anhängen lassen. 
 
-Vorbedingung: Das Internet muss verfügbar sein. Der Login muss gelungen sein. Alle Felder von oben müssen ausgefüllt werden.
+Vorbedingung: Nutzer muss unter einer berechtigten Rolle angemeldet sein. Sonstige benötigte Antragsdaten sind korrekt angegeben.
 
-Nachbedingung: Die Anlagen muss gespeichert werden.
+Nachbedingung: Die Anlage muss gespeichert werden.
 
-Erforderliche Daten: Anlagen
+Erforderliche Daten: Antragsdaten, Anlage
 |===
 
-*TC11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+*TC09 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
 |===
 Beschreibung: Prüfen, ob diese beiden Felder leer sein dürfen
 
