@@ -304,6 +304,7 @@ def get_all_by_electioninput(request):
         fin_objects = Finance.objects.all().filter(office=request.POST.get('election_input'))
         pos_objects = Position.objects.all().filter(office=request.POST.get('election_input'))
         adv_members = AdvisoryMember.objects.all().filter(office=request.POST.get('election_input'))
+        con_objects = Conduct.objects.all().filter(office=request.POST.get('election_input'))
         # office needs to be a string
         office = request.POST.get('election_input')
         # chain all the objects together
@@ -519,7 +520,7 @@ def change_conduct(request):
     # else render with object
 
     # get the object
-    con_object = get_object_or_404(Universall, number=number)
+    con_object = get_object_or_404(Conduct, number=number)
     context = {
         'con_object': con_object
     }
