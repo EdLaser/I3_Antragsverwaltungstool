@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class = "logo w3-animate-top">
-    <a href="index.html" class = "w3-hover-opacity"><img src="{% static '' %}img/logo.png" class = "sturalogo" alt="ToolLogo"/></a>
+    <a href="{%  url 'index' %}" class = "w3-hover-opacity"><img src="{% static '' %}img/logo.png" class = "sturalogo" alt="ToolLogo"/></a>
 </div>
 <div class = "navigation">
     <ul class = "mainnav">
@@ -34,7 +34,7 @@
         <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
             <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
         </li>
-        {% include 'include_login.html' %}
+        {% include 'is_logged_in.html' %}
     </ul>
 </div>
 
@@ -52,7 +52,8 @@
                         <label><b>Stelle wählen:</b></label><br>
                         <label>
                             <select class="w3-select w3-border" id = "Sin" onchange="toggledisplay('own')" name = "election_input" required>
-                                <option disabled selected>Bitte Auswählen</option>
+                               <option disabled selected>Bitte Auswählen</option>
+                                <optgroup label="Allgemein">
                                 <option name = "vors" value = "Vorstand">Vorstand</option>
                                 <option name = "ple" value = "Plenum">Plenum</option>
                                 <option name = "prae" value = "Präsidium">Präsidium</option>
@@ -60,16 +61,19 @@
                                 <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
                                 <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
                                 <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
-                                <option name = "refstselorg" value = "Referatsleitung Studentische Selbstverwaltung und Organisation">Referatsleitung Studentische Selbstverwaltung und Organisation</option>
-                                <option name = "refstud" value = "Referatsleitung Studium">Referatsleitung Studium</option>
-                                <option name = "refkul" value = "Referatsleitung Kultur">Referatsleitung Kultur</option>
-                                <option name = "refsp" value = "Referatsleitung Sport">Referatsleitung Sport</option>
-                                <option name = "refqm" value = "Referatsleitung Qualitätsmanagement">Referatsleitung Qualitätsmanagement</option>
-                                <option name = "refoeff" value = "Referatsleitung Öffentlichkeitsarbeit">Referatsleitung Öffentlichkeitsarbeit</option>
-                                <option name = "refsoz" value = "Referatsleitung Soziales">Referatsleitung Soziales</option>
-                                <option name = "reffin" value = "Referatsleitung Finanzen">Referatsleitung Finanzen</option>
-                                <option name = "refhoch" value = "Referatsleitung Hochschulpolitik">Referatsleitung Hochschulpolitik</option>
-                                <option name = "refint" value = "Referatsleitung Internationales">Referatsleitung Internationales</option>
+                                </optgroup>
+                                <optgroup label="Referatsleitung">
+                                  <option name = "refstselorg" value = "Studentische Selbstverwaltung und Organisation">Studentische Selbstverwaltung und Organisation</option>
+                                  <option name = "refstud" value = "Studium">Studium</option>
+                                  <option name = "refkul" value = "Kultur">Kultur</option>
+                                  <option name = "refsp" value = "Sport">Sport</option>
+                                  <option name = "refqm" value = "Qualitätsmanagement">Qualitätsmanagement</option>
+                                  <option name = "refoeff" value = "Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</option>
+                                  <option name = "refsoz" value = "Soziales">Soziales</option>
+                                  <option name = "reffin" value = "Finanzen">Finanzen</option>
+                                  <option name = "refhoch" value = "Hochschulpolitik">Hochschulpolitik</option>
+                                  <option name = "refint" value = "Internationales">Internationales</option>
+                                </optgroup>
                                 <option name = "other" value = "18">Eigene...</option>
                             </select>
                             <script src="{% static 'js/toggledisplay.js' %}"></script>
@@ -87,18 +91,18 @@
                             <label>Enddatum:</label>
                             <input type = "date" class = "w3-input" name = "edat"  style="width: 70%">
                         </div>
-                    </div>
-                    <footer class="w3-container w3-light-gray">
-                        <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
-                    </footer>
-                </form>
+                        <footer class="w3-container w3-light-gray">
+                            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+                        </footer>
+                    </form>
+                </div>
             </div>
         </div>
 
         <div class="w3-half" style="width: 60%;" id = "out">
             <div class="w3-card-4">
                 <header class="w3-container" style="background-color: #F2AC2E;">
-                    <h2>Ausgabe:</h2>
+                    <h2>Ergebnisse:</h2>
                 </header>
 
                 <div class="w3-container w3-light-gray">
