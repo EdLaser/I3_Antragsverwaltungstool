@@ -19,3 +19,113 @@ Information über Testergebnisse, wann der Test durchgeführt wird und welche Te
 | Notizen: 
  
 |===
+
+*TS01 - Valide Logindaten akzeptiert*
+|===
+| Datum: 21.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS02 - Falsches Passwort akzeptiert*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS03 - Vollständig ausgefüllter Antrag eingerreicht*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS04 - Unvollständiger Antrag eingerreicht*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS05 - Angezeigter Antrag aufrufbar*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS06 - Externer Nutzer darf keinen Antrag bearbeiten*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS07 - Administrator/Präsidium darf Anträge bearbeiten*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS09 - Interner Nutzer können die Tagesordnung ansehen*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS10 - Unterschiedliche Datentypen als Anlage*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
+
+*TS11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+|===
+| Datum: 28.06.2021
+
+| Ergebnis (Bestanden/Nicht bestanden/Warnung(Warning)/Unfertig): bestanden
+
+| Notizen: 
+ 
+|===
