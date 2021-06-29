@@ -308,7 +308,7 @@ def get_all_by_electioninput(request):
         # office needs to be a string
         office = request.POST.get('election_input')
         # chain all the objects together
-        all_objects = chain(uni_objects, fin_objects, pos_objects, adv_members)
+        all_objects = chain(uni_objects, fin_objects, pos_objects, adv_members, con_objects)
         print(all_objects)
         # set the context to the variables out of the database
         context = {
@@ -513,10 +513,10 @@ def change_conduct(request):
         con_object.suggestion = request.POST.get('vrshzverf')
         con_object.save()
 
-        return render(request, 'stat_html/universally_stura.html')
+        return render(request, 'stat_html/establishing_conduct_stura.html')
     # when number is not given render without object
     if not number:
-        return render(request, 'stat_html/universally_stura.html')
+        return render(request, 'stat_html/establishing_conduct_stura.html')
     # else render with object
 
     # get the object
@@ -524,4 +524,4 @@ def change_conduct(request):
     context = {
         'con_object': con_object
     }
-    return render(request, 'stat_html/universally_stura.html', context)
+    return render(request, 'stat_html/establishing_conduct_stura.html', context)
