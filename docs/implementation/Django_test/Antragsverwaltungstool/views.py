@@ -1,7 +1,11 @@
-import datetime
+""" Sets the views handling the requests mapped by the urls.py."""
+import calendar
+from datetime import datetime, date, timedelta
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from django.db.models import Max
 from django.shortcuts import render, get_object_or_404
-from Antragsverwaltungstool.models import Universall, Finance, AdvisoryMember, Position, Conduct
+from Antragsverwaltungstool.models import Universall, Finance, AdvisoryMember, Position, Conduct, NumberCount
 from itertools import chain
 
 
@@ -18,45 +22,85 @@ from itertools import chain
 # - Implement show all entrys
 # Methods to render the GET requests of the html files
 def index(request):
-    """ Method to return a HttpResponse with the index.html file when calling the website"""
+    """ Return a HttpResponse with the index.html file when calling the website"""
     return render(request, 'stat_html/index.html')
 
 
 def finance(request):
-    """ Method to return a HttpResponse with the finance.html file when calling / not used """
+    """ Return a HttpResponse with the finance.html file when calling / not used """
     return render(request, 'stat_html/finance.html')
 
 
 def universally(request):
-    """ Method to return a HttpResponse with the universally.html file when calling / not used """
+    """ Return a HttpResponse with the universally.html file when calling / not used """
     return render(request, 'stat_html/universally.html')
 
 
 def election(request):
-    """ Method to return a HttpResponse with the election_report.html file when calling / not used """
+    """ Return a HttpResponse with the election_report.html file when calling / not used """
     return render(request, 'stat_html/election_report.html')
 
 
 def advisory(request):
-    """ Method to return a HttpResponse with the advisory_member.html file when calling / not used """
+    """ Return a HttpResponse with the advisory_member.html file when calling / not used """
     return render(request, 'stat_html/advisory_member.html')
 
 
 def intern(request):
-    """ Method to return a HttpResponse with the intern.html file when calling / not used """
+    """ Return a HttpResponse with the intern.html file when calling / not used """
     return render(request, 'stat_html/intern.html')
 
 
-def generate_number(object_given):
+def all_tuesdays(year, start, end):
+    day = date(year, start, end)
+    day += timedelta(days=(1 - day.weekday() if day.weekday() <= 1 else 7 + 1 - day.weekday()))
+    while (day.year == year) | (day.year == year+1):
+        yield day
+        day += timedelta(days=14)
+
+
+def generate_number():
     """
     Generate the number->primary key for the application ( not implemented yet )
 
-    Parameters:
-        object_given (object of type model): The object (application) given, to get
-        the last entry in the database.
+    Arguments:
+    object_given (object of type model): The object (application) given, to get
+    the last entry in the database.
 
     """
-    number = object_given.objects.first()
+    sessions = {}
+    tuesday_dates = all_tuesdays(2021, 1, 1)
+    iterable = 0
+    next_session = 0
+    legislature = ""
+    for i in tuesday_dates:
+        sessions[i] = iterable
+        iterable += 1
+
+    temp = list(sessions)
+    try:
+        for key in temp:
+            if (date.today() > temp[temp.index(key)]) & ( date.today() < temp[temp.index(key)+1]):
+                print("found")
+                next_session = sessions[key]
+                break
+    except(ValueError, IndexError):
+        next_session = 0
+
+    current_year = datetime.today().year
+    next_year = current_year[:-2] + 1
+
+    if datetime.today().month < 8:
+        last_year = current_year - 1
+        legislature = str(last_year) + '/' + str(current_year[:-2] + 1)
+
+    if datetime.today().month > 8:
+        legislature = str(current_year) + '/' + str(next_year)
+
+    continous_number = NumberCount.objects.all().aggregate(Max('ongoing_number'))+1
+    number = legislature + str(next_session) + continous_number
+
+    return
 
 
 def new_universall(request):
@@ -64,13 +108,9 @@ def new_universall(request):
     Add a new universall application to the database, with the variables
     extracted out of the post request and the flag 0 for "application arrived".
 
-    Parameters:
-        request(WSGIRequest): The request given to the view by the url configuration.
-        on which file to be rendered
-
-    Returns:
-        a HttpResponse with universally.html.
-
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration.
+    on which file to be rendered
     """
 
     if request.method == 'POST':
@@ -104,16 +144,12 @@ def new_universall(request):
 
 def new_finance(request):
     """
-        Add a new financial application to the database, with the variables
-        extracted out of the post request and the flag 0 for "application arrived".
+    Add a new financial application to the database, with the variables
+    extracted out of the post request and the flag 0 for "application arrived".
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration
-            on which file to be rendered.
-
-        Returns:
-            a HttpResponse with finance.html.
-
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration
+    on which file to be rendered.
     """
     if request.method == 'POST':
         flag = 0
@@ -146,16 +182,12 @@ def new_finance(request):
 
 def new_advisory(request):
     """
-        Add a application to be voted as a advisory member to the database, with the variables
-        extracted out of the post request and the flag 0 for "application arrived".
+    Add a application to be voted as a advisory member to the database, with the variables
+    extracted out of the post request and the flag 0 for "application arrived".
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration
-            on which file to be rendered.
-
-        Returns:
-            a HttpResponse with advisory_member.html.
-
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration
+    on which file to be rendered.
     """
     if request.method == 'POST':
         flag = 0
@@ -192,16 +224,12 @@ def new_advisory(request):
 
 def new_position(request):
     """
-        Add a application to be voted as a special position to the database, with the variables
-        extracted out of the post request and the flag 0 for "application arrived".
+    Add a application to be voted as a special position to the database, with the variables
+    extracted out of the post request and the flag 0 for "application arrived".
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration
-            on which file to be rendered.
-
-        Returns:
-            a HttpResponse with election_report.html.
-
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration
+    on which file to be rendered.
     """
     if request.method == 'POST':
         flag = 0
@@ -248,13 +276,9 @@ def new_conduct(request):
     Add a new establishind conduct application to the database, with the variables
     extracted out of the post request and the flag 0 for "application arrived".
 
-    Parameters:
-        request(WSGIRequest): The request given to the view by the url configuration.
-        on which file to be rendered
-
-    Returns:
-        a HttpResponse with establishing_conduct.html.
-
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration.
+    on which file to be rendered
     """
 
     if request.method == 'POST':
@@ -286,17 +310,15 @@ def new_conduct(request):
     return render(request, 'stat_html/establishing_conduct.html')
 
 
+@login_required(login_url='login')
 def get_all_by_electioninput(request):
     """
-        Display the intern.html site (GET-Request) or get all the applications directed
-        to one office put the output on the page.
+    Display the intern.html site (GET-Request) or get all the applications directed
+    to one office put the output on the page.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration
-            on which file to be rendered (GET) or the request to display all the applications (POST).
-        Returns:
-            Returns a HttpResponse with either the normal intern.html (GET) or a
-            HttpResponse with the intern.html populated with the context (data from the database).
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration
+    on which file to be rendered (GET) or the request to display all the applications (POST).
     """
     if request.method == 'POST':
         # get all objects of every model
@@ -322,17 +344,14 @@ def get_all_by_electioninput(request):
 
 def common_change(request, object_change, number):
     """
-        Generates all the common changes that are always repeated to a given objects.
+    Generates all the common changes that are always repeated to a given objects.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration, POST.
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration, POST.
 
-            object_change(model object): THe object that needs to be changed by the function.
+    object_change(model object): THe object that needs to be changed by the function.
 
-            number(string): The number of the application.
-
-        Returns:
-              Returns nothing.
+    number(string): The number of the application.
     """
     object_change.number = number
     object_change.title = request.POST.get('titel')
@@ -348,18 +367,15 @@ def common_change(request, object_change, number):
     object_change.aenderung = request.POST.get('aenda')
 
 
+@login_required(login_url='login')
 def change_universall(request):
     """
-        Changes an universall application by the variables of the POST-Request. ALl the parameters of the object are
-        rendered onto the page before.
+    Changes an universall application by the variables of the POST-Request. ALl the parameters of the object are
+    rendered onto the page before.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
-            or to POST the data and save it to the database.
-
-        Returns:
-            Either the HttpRequest with universally_stura.html, or the universally_stura.html populated with content out
-            of the database.
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
+    or to POST the data and save it to the database.
     """
     number = request.GET.get('antrag')
     if request.method == 'POST':
@@ -382,18 +398,15 @@ def change_universall(request):
     return render(request, 'stat_html/universally_stura.html', context)
 
 
+@login_required(login_url='login')
 def change_advisory(request):
     """
-        Changes an advisory member application by the variables of the POST-Request. ALl the parameters of the object
-        are rendered onto the page before.
+    Changes an advisory member application by the variables of the POST-Request. ALl the parameters of the object
+    are rendered onto the page before.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
-            or to POST the data and save it to the database.
-
-        Returns:
-            Either the HttpRequest with advisory_member_stura.html, or the universally_stura.html populated with content
-            out of the database.
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
+    or to POST the data and save it to the database.
     """
     number = request.GET.get('antrag')
     if request.method == 'POST':
@@ -419,18 +432,15 @@ def change_advisory(request):
     return render(request, 'stat_html/advisory_member_stura.html', context)
 
 
+@login_required(login_url='login')
 def change_position(request):
     """
-        Changes an position application by the given variables of the POST-Request. ALl the parameters of the
-        object are rendered onto the page before.
+    Changes an position application by the given variables of the POST-Request. ALl the parameters of the
+    object are rendered onto the page before.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
-            or to POST the data and save it to the database.
-
-        Returns:
-            Either the HttpRequest with advisory_member_stura.html, or the election_report_stura.html populated with
-            content out of the database.
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
+    or to POST the data and save it to the database.
     """
     number = request.GET.get('antrag')
     if request.method == 'POST':
@@ -458,18 +468,15 @@ def change_position(request):
     return render(request, 'stat_html/election_report_stura.html', context)
 
 
+@login_required(login_url='login')
 def change_finance(request):
     """
-        Changes an finance application by the given variables of the POST-Request. ALl the parameters of the
-        object are rendered onto the page before.
+    Changes an finance application by the given variables of the POST-Request. ALl the parameters of the
+    object are rendered onto the page before.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
-            or to POST the data and save it to the database.
-
-        Returns:
-            Either the HttpRequest with advisory_member_stura.html, or the finance_stura.html populated with content
-            out of the database.
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
+    or to POST the data and save it to the database.
     """
 
     number = request.GET.get('antrag')
@@ -493,18 +500,15 @@ def change_finance(request):
     return render(request, 'stat_html/finance_stura.html', context)
 
 
+@login_required(login_url='login')
 def change_conduct(request):
     """
-        Changes an conduct application by the variables of the POST-Request. ALl the parameters of the object are
-        rendered onto the page before.
+    Changes an conduct application by the variables of the POST-Request. ALl the parameters of the object are
+    rendered onto the page before.
 
-        Parameters:
-            request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
-            or to POST the data and save it to the database.
-
-        Returns:
-            Either the HttpRequest with establishing_conduct_stura.html, or the establishing_conduct_stura.html
-            populated with content out of the database.
+    Arguments:
+    request(WSGIRequest): The request given to the view by the url configuration, to either get the application,
+    or to POST the data and save it to the database.
     """
     number = request.GET.get('antrag')
     if request.method == 'POST':
