@@ -1,7 +1,9 @@
 {% extends 'stat_html/intern.html'%}
 
 {% block out %}
-    {% if pos %}<h3>Alle Anträge an: {{ pos }}</h3>{% else %}<h3>Bitte Stelle wählen.</h3>{% endif %}
+    {% if pos %}<h3>Alle Anträge an: {{ pos }}</h3>
+    {% else %}<h3>Alle Anträge an alle Stellen:</h3>
+    {% endif %}
         <ul style="list-style-type:none;">
             <table style="width: 100%">
                 {% if uni_object %}
