@@ -16,16 +16,19 @@ include::diagrams/logical.puml[]
 
 === Bibliotheken und Frameworks
 ==== Frameworks
-Als Framework wird https://www.djangoproject.com/[Django] verwendet. Django erleichtert ganz klar die Arbeit in der Applikation da für die Kommunikation alle Funktionalitäten bereitgestellt werden. Außerdem lassen sich über das MVP-Prinzip alle Funktionen gut abstrahieren und einzeln bearbeiten.
+Als Framework wird https://www.djangoproject.com/[Django] verwendet. Django erleichtert ganz klar die Arbeit in der Applikation, da für die Kommunikation alle Funktionalitäten bereitgestellt werden. Außerdem lassen sich über das MVC-Prinzip alle Funktionen gut abstrahieren und einzeln bearbeiten.
 
 ==== Bibliotheken
 Es werden ansonsten nur einzelne Django-Bibliotheken genutzt. Nebenbeiwird noch ein Stylesheet von https://www.w3schools.com/w3css/w3css_downloads.asp[W3-Schools] genutzt.
 
 === Datenbankschema
-Das Datenbankschema wird von Django verwaltet. Nach Änderungen in den einzelnen Modellen kann die Änderung in die Datenbank mirgiert werden.
+Das Datenbankschema wird von Django verwaltet. Nach Änderungen in den einzelnen Modellen kann die Änderung in die Datenbank migriert werden.
 Hier gibt es eine Tabelle mit den Login-Daten (_auth_user_) der eigens angelegten Nutzer der Applikation. Alle anderen django-spezifischen Tabellen müssen nicht eigens verwaltet werden. Hier befinden sich Zugriffsrechte und der Adminlogin, sowie die einzelnen Migrationen der Modelle in die Datenbank.
 
 Die wichtigsten Tabelle sind die Tabellen die nach den in Django festgelegten Modellen migriert(erstellt/geändert) werden. Hier finden sich die Tabellen: _Antragsverwaltungstool_advisorymember_, _Antragsverwaltungstool_finance_, _Antragsverwaltungstool_position_, _Antragsverwaltungstool_universall_. Die Spalten in den Tabellen spiegeln jeweils Attribute eines Elements erstellt nach dem Model wieder.
+Es ist wichtig zu beachten das sich die Tabelle je nach den Models ändern und dadurch je nach Erweiterung "dynamisch" werden !
+
+image::database-scheme.png[]
 
 === Zusammenarbeit zwischen den Komponenten
 ==== Anzeigen
