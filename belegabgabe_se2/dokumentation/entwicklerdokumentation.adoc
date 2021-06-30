@@ -169,3 +169,18 @@ function toggledisplay(f){
 Diese Funktion ist eine Mixtur aus "togglecheck()" und "mytoggleinputs()". Angewendet wird sie auf der Seite "Intern" und bledet das feld "Eigene" aus und ein. Display: none ist der Default fall. Die Mixtur besteht aus der Logik von "togglecheck()" und dem Anwendungsbereich von "mytoggleinputs()" 
 
 === CSS
+Die generelle Logik der Sheetaufteilung
+
+* mainstyle
+** Alle generellen styl entscheidungen wie Hindergrundfarbe, Farbe der Navigationsleiste, Footer, etc.
+* W3
+** Vordefiniertes Stylsheet von "W3 Schools" mit vielen Funktionen, Farben, Animationen, etc.
+* popup
+** Style für die kleinen Mouseover "?" in den Anträgen
+* formular
+** Der gennerelle Style der Anträge
+* login
+** Der Stlye der Loginpage mit einem Angepassten Footer
+* index, intern
+** Spezifische Styls für die jeweiligen Seiten "Index(Home)" und "Intern"
+
