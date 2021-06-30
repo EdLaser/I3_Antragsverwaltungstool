@@ -63,6 +63,9 @@ class AdvisoryMember(models.Model):
             self.frg1, self.frg2, self.frg3, self.frg4, self.anlagen, self.aenderung, self.mehrheit, self.beschluss,
             self.beschlusstext, self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_advisory/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Finance(models.Model):
     """
@@ -121,6 +124,9 @@ class Finance(models.Model):
             self.flag, self.number, self.date, self.title, self.office, self.name, self.mail, self.text,
             self.reason, self.budget, self.suggestion, self.anlagen, self.aenderung, self.mehrheit, self.beschluss,
             self.beschlusstext, self.beschlussgrund)
+
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_finance/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
 class Position(models.Model):
@@ -190,6 +196,9 @@ class Position(models.Model):
             self.frg2, self.frg3, self.frg4, self.frg_spez_1, self.frg_spez_2, self.frg_spez_3, self.anlagen,
             self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext, self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_position/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Universall(models.Model):
     """
@@ -248,6 +257,9 @@ class Universall(models.Model):
             self.suggestion, self.anlagen, self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext,
             self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_universall/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Conduct(models.Model):
     """
@@ -305,6 +317,9 @@ class Conduct(models.Model):
             self.flag, self.number, self.date, self.title, self.office, self.name, self.mail, self.text, self.reason,
             self.suggestion, self.anlagen, self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext,
             self.beschlussgrund)
+
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_conduct/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
 class NumberCount(models.Model):
