@@ -135,7 +135,7 @@ function togglecheck(toggleID1,radioID){
 }
 
 Diese Funktion blendet ein <div> auf knopfdruck ein und aus. Antrag auf Stelle/Amt zu sehen
-"frg" ist die id des zu Stylenden divs und "Fin" ist die id des Buttons ,hier eine Checkbox, die die Bedungung für den Style wechsel ist. Wenn .checked erfüllt ist soll "frg" ausgeblendet werden. Wenn .checked nicht erfüllt ist soll "frg" eingeblendet werden. Das ist auch der default fall.
+"toggleID1" ist die id des zu Stylenden divs und "radioID" ist die id des Buttons ,hier eine Checkbox, die die Bedungung für den Style wechsel ist. Wenn ".checked" erfüllt ist soll "toggleID1" ausgeblendet werden. Wenn ".checked" nicht erfüllt ist soll "toggleID1" eingeblendet werden. Das ist auch der default fall.
 
 [source,javascript]
 function togglecheck_stura(toggleID1,toggleID2,radioID){

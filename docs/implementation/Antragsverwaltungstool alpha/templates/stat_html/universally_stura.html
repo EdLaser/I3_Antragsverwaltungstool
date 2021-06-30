@@ -25,7 +25,7 @@
 
 <div class = "content w3-animate-opacity">
     <form action="">
-        <label><b>Antragsnummer:{{ uni_object.number }}</b></label>
+        <label><b>Antragsnummer: {{ uni_object.number }}</b></label>
         <table class = "form">
             <tr>
                 <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "20XX/XX-YY-ZZZZ" value="{{ uni_object.number }}"></td>
@@ -43,7 +43,7 @@
 
         <div class = "form">
             <label><b>ausgewählte Stelle:</b></label><br>
-            <input class = "w3-input w3-border" type = "text" name = "site" style="width: 30%;" value="{{ uni_object.office }}">
+            <input class = "w3-input w3-border" type = "text" name = "site" disabled style="width: 30%;">
         </div>
 
         <div class = "w3-half npad">
@@ -95,7 +95,7 @@
 
         <div class = form id = "sturaInput">
              <div class = "form">
-                <label><b>Besondere Merheit?</b></label>
+                <label><b>Besondere Mehrheit?</b></label>
                 <label>Ja </label><input class="w3-radio" type="radio" id = "yes" name="majorityradio">
                 <label>Nein </label><input class="w3-radio" type="radio" id = "no" name="majorityradio" checked>
             </div>
@@ -106,7 +106,7 @@
             </div>
 
             <div class = "form">
-                <label><b>Beschlusstext</b></label>
+                <label><b>Beschlusstext:</b></label>
                 <textarea class = "w3-input w3-border" name = "bestext" rows = "4" placeholder="Beschlusstext..." maxlength="260">{{ uni_object.beschlusstext }}</textarea>
             </div>
 
