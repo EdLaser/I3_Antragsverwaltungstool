@@ -1,0 +1,23 @@
+= Reflexion Jacob
+
+== Was habe ich gelernt?
+Ich habe gelernt, was so alles hinter der Entwicklung von komplexen Software Systemen steht und wie viele verschiedene Aufgabenbereiche es bei solch einem Projekt eigentlich gibt. Ohne ein gut organisiertes Team mit einem klaren Plan würde man nie in absehbarer Zeit zu einem guten Ergebnis kommen können. Selbst ein anfänglich leicht erscheinendes Projekt wird später wahrscheinlich zu einer Herausforderung werden. Es können jederzeit unvorhergesehene Probleme oder Hürden auftreten, weshalb man im Idealfall auch auf diese vorbereitet sein sollte. Vor allem ist auch ein guter 
+
+== Worauf bin ich stolz?
+Auf mein Team und das Ergebnis, das wir erreicht haben.
+Trotz einiger unvorhergesehener Hindernisse haben wir meiner Meinung nach viel erreicht und eine solide Basis geschaffen, auf welcher nächstes Semester auch noch ein weiteres Team aufbauen kann.
+
+== Was hat gut funkioniert?
+Die regelmäßigen Treffen zu Besprechungen fanden immer statt. Dies hat dafür gesorgt, dass neue Probleme schnell und rechtzeitig geklärt werden konnten.
+Außerdem wussten so auch immer alle Teammitglieder, welchen Dingen sie aktuell nachgehen sollten.
+
+== Was würde ich beim nächsten Projekt anders machen?
+
+
+////
+Hauptaktivitäten Anforderungserhebung und -analyse:
+-Besprechungen mit Kunde
+-Präsentation bisheriger Designentwürde/Prototypen -> Sicherheit, dass an den richtigen Stellen gearbeitet wird
+-Überarbeitung der Modelle/Vision
+-
+////
