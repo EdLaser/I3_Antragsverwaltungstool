@@ -1,12 +1,3 @@
-function questiontoggel(){
-    var x = document.getElementById("frg");
-    if(document.getElementById('Fin').checked === true) {
-        x.style.display = "none";
-    }else {
-        x.style.display = "block";
-    }
-}
-
 function togglecheck(toggleID1,radioID){
     var x = document.getElementById(toggleID1);
     if(document.getElementById(radioID).checked === true) {
@@ -25,16 +16,6 @@ function togglecheck_stura(toggleID1,toggleID2,radioID){
     }else {
         x.style.display = "block";
         y.style.display = "none";
-    }
-}
-
-function toggleout(f) {
-
-    var x = document.getElementById(f);
-    if (x.style.visibility === "hidden") {
-        x.style.visibility = "visible";
-    }else{
-        x.style.visibility = "hidden";
     }
 }
 
