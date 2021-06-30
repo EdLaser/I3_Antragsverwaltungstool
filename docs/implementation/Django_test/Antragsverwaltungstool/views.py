@@ -80,7 +80,7 @@ def generate_number():
     temp = list(sessions)
     try:
         for key in temp:
-            if (date.today() > temp[temp.index(key)]) & ( date.today() < temp[temp.index(key)+1]):
+            if (date.today() > temp[temp.index(key)]) & (date.today() < temp[temp.index(key)+1]):
                 print("found")
                 next_session = sessions[key]
                 break
@@ -88,19 +88,27 @@ def generate_number():
         next_session = 0
 
     current_year = datetime.today().year
-    next_year = current_year[:-2] + 1
+    next_year = current_year + 1
+    next_year = str(next_year)
 
     if datetime.today().month < 8:
         last_year = current_year - 1
-        legislature = str(last_year) + '/' + str(current_year[:-2] + 1)
+        current_year = str(current_year)
+        print(current_year)
+        legislature = str(last_year) + '/' + current_year[-2:]
 
     if datetime.today().month > 8:
-        legislature = str(current_year) + '/' + str(next_year)
+        legislature = str(current_year) + '/' + next_year[-2:]
 
-    continous_number = NumberCount.objects.all().aggregate(Max('ongoing_number'))+1
-    number = legislature + str(next_session) + continous_number
+    continous_number = NumberCount.objects.all().aggregate(Max('ongoing_number')).get('ongoing_number__max')
+    continous_number += 1
 
-    return
+    number = legislature + "-" + str(next_session) + "-" + str(continous_number).zfill(4)
+
+    new_number_count = NumberCount(number, legislature, int(next_session), int(continous_number))
+    new_number_count.save()
+
+    return number
 
 
 def new_universall(request):
@@ -116,9 +124,9 @@ def new_universall(request):
     if request.method == 'POST':
         # initialize the flag (status) as 0 (eingenagen)
         flag = 0
-        number = '2020-01-02'
+        number = generate_number()
         # set the date as the current systemdate
-        date = datetime.date.today()
+        date_today = date.today()
         # title of the application
         title = request.POST.get('titel')
         # office the request is pointet to
@@ -135,7 +143,7 @@ def new_universall(request):
         # attachments to the entry
         anlagen = request.POST.get('anlgn')
         # initialize a new object according to the model
-        new_uni = Universall(flag, number, date, title, office, name, mail, text, reason, suggestion, anlagen)
+        new_uni = Universall(flag, number, date_today, title, office, name, mail, text, reason, suggestion, anlagen)
         # save the object to the database by calling the django method "save" on the object
         new_uni.save()
         # return the request and the universally.html file
@@ -153,9 +161,9 @@ def new_finance(request):
     """
     if request.method == 'POST':
         flag = 0
-        number = '2020-01-01'
+        number = generate_number()
         # set the date as the current systemdate
-        date = datetime.date.today()
+        date_today = date.today()
         # title of the application
         title = request.POST.get('titel')
         # office the request is pointet to
@@ -174,7 +182,7 @@ def new_finance(request):
         # attachments to the entry
         anlagen = request.POST.get('anlgn')
         # initialize a new finance object with the variables
-        new_fin = Finance(flag, number, date, title, office, name, mail, text, reason, budget, suggestion, anlagen)
+        new_fin = Finance(flag, number, date_today, title, office, name, mail, text, reason, budget, suggestion, anlagen)
         # call the django method save on the object to write it in the database
         new_fin.save()
     return render(request, 'stat_html/finance.html')
@@ -192,9 +200,9 @@ def new_advisory(request):
     if request.method == 'POST':
         flag = 0
         print(request)
-        number = '2020-01-02'
+        number = generate_number()
         # set the date as the current systemdate
-        date = datetime.date.today()
+        date_today = date.today()
         # title of the application
         title = request.POST.get('titel')
         # office the request is pointet to
@@ -216,7 +224,7 @@ def new_advisory(request):
         # attachments to the entry
         anlagen = request.POST.get('anlgn')
         # initalize the model object
-        new_adv = AdvisoryMember(flag, number, date, title, office, name, mail, text, frg1, frg2, frg3, frg4, anlagen)
+        new_adv = AdvisoryMember(flag, number, date_today, title, office, name, mail, text, frg1, frg2, frg3, frg4, anlagen)
         # save it into the databse with django method save
         new_adv.save()
     return render(request, 'stat_html/advisory_member.html')
@@ -233,9 +241,9 @@ def new_position(request):
     """
     if request.method == 'POST':
         flag = 0
-        number = '2020-01-01'
+        number = generate_number()
         # set the date as the current systemdate
-        date = datetime.date.today()
+        date_today = date.today()
         # title of the application
         title = request.POST.get('titel')
         # office the request is pointet to
@@ -264,7 +272,7 @@ def new_position(request):
         # attachments to the entry
         anlagen = request.POST.get('anlgn')
         # initialize the object with the vars
-        new_pos = Position(flag, number, date, title, office, name, mail, text, frg1, frg2, frg3, frg4, frg_spez_1,
+        new_pos = Position(flag, number, date_today, title, office, name, mail, text, frg1, frg2, frg3, frg4, frg_spez_1,
                            frg_spez_2, frg_spez_3, anlagen)
         # save it to the database with django method save
         new_pos.save()
@@ -284,9 +292,9 @@ def new_conduct(request):
     if request.method == 'POST':
         # initialize the flag (status) as 0 (eingenagen)
         flag = 0
-        number = '2020-01-02'
+        number = generate_number()
         # set the date as the current systemdate
-        date = datetime.date.today()
+        date_today = date.today()
         # title of the application
         title = request.POST.get('titel')
         # office the request is pointet to
@@ -303,7 +311,7 @@ def new_conduct(request):
         # attachments to the entry
         anlagen = request.POST.get('anlgn')
         # initialize a new object according to the model
-        new_con = Conduct(flag, number, date, title, office, name, mail, text, reason, suggestion, anlagen)
+        new_con = Conduct(flag, number, date_today, title, office, name, mail, text, reason, suggestion, anlagen)
         # save the object to the database by calling the django method "save" on the object
         new_con.save()
         # return the request and the universally.html file
@@ -330,11 +338,16 @@ def get_all_by_electioninput(request):
         # office needs to be a string
         office = request.POST.get('election_input')
         # chain all the objects together
+        # if office == None:
+            # do something
         all_objects = chain(uni_objects, fin_objects, pos_objects, adv_members, con_objects)
-        print(all_objects)
         # set the context to the variables out of the database
         context = {
-            'uni_list': all_objects,
+            'uni_object': uni_objects,
+            'fin_object': fin_objects,
+            'pos_object': pos_objects,
+            'adv_object': adv_members,
+            'con_object': con_objects,
             'pos': office
         }
         return render(request, 'intern_out.html', context)
