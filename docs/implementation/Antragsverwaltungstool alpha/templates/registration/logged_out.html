@@ -1,0 +1,5 @@
+{% extends 'stat_html/index.html' %}
+{% block login %}
+    <p>Logged out!</p>
+    <a href="{% url 'login'%}">Click here to login again.</a>
+{% endblock %}

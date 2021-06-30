@@ -1,0 +1,6 @@
+var text = 'Wer auf ein konkretes Amt im StuRa kandidieren möchte, kann hier einen Antrag stellen. Eine vorherige Wahl zum Beratenden Mitglied ist nicht notwendig. Es sei auf die Stellenausschreibungen hingewiesen, die der StuRa auf seiner Webseite veröffentlicht.<br>'+
+'Dieser Antrag kann nicht verwendet werden, um auf ein Amt der akademischen Selbstverwaltung zu kandideren, wie zum Beispiel dem Senat, dem Fakultätsrat oder einer Studienkommission! Die Adressaten solcher Kandidaturen sind in der Regel die jeweiligen Vorsitzenden der'+
+    ' Gremien. Allerding können hier auch Anträge gestellt werden, als Wahlvorschlag des StuRa auf ein solches Amt zu kandidieren. Fragen hierzu können am besten an stura@stura.htw-dresden.de gestellt werden.<br>'+
+    'Ebenso kann hiermit nicht als Stimmberechtigtes Mitglied im Plenum kandidert werden. Dies ist nur nach vorheriger Wahlausschreibung durch die Wahlleitung der Studentinnen- und Studentenschaft möglich. Kandidaturen'+
+    ' für das Plenum des StuRa müssen an die Wahlleiterin der Studentinnen- und Studentenschaft, erreichbar unter wahl@stura.htw-dresden, gerichtet werden.';
+document.writeln(text);

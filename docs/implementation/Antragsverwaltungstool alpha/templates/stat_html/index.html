@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Antragsverwaltungstool</title>
+    <link rel="icon" href="{% static 'icon.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/W3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+<div class = "logo w3-animate-top">
+    <img src="{% static 'img/logo.png' %}" class = "sturalogo w3-hover-grayscale" alt="ToolLogo"/>
+</div>
+<div class = "navigation">
+    <ul class = "mainnav">
+        <li id = "active" class = "lil"><a href="{%  url 'index' %}">Home</a></li>
+        <li class = "lil"><a href="{%  url 'universall' %}">Antrag ohne finanzielle Mittel</a></li>
+        <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
+        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag zur: ▼</a>
+            <div class = "dropdown-content w3-animate-opacity">
+                <a href="{%  url 'advisory_member' %}">Beratendes Mitglied</a>
+                <a href="{%  url 'election_report' %}">Stelle/Amt</a>
+                <a href="{% url 'conduct' %}">Herstellung des Benehmens</a>
+            </div>
+        </li>
+        {% if user.is_authenticated %}<li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>{% endif %}
+        <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
+            <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
+        </li>
+        {% include 'is_logged_in.html' %}
+    </ul>
+</div>
+
+<div class = "content w3-animate-opacity">
+    <div class="w3-card-4" style="margin-bottom: 20px">
+        <header class="w3-container" style="background-color: cornflowerblue;">
+            <h1>StuRa Antragsverwaltung</h1>
+        </header>
+
+        <div class="w3-container w3-light-gray">
+            <p><script src="{% static 'text/index/welcometext.js' %}"></script></p>
+        </div>
+    </div>
+
+    <h1>Universelle Anträge:</h1>
+
+    <div class = "w3-row" style="margin-bottom: 20px">
+        <a href="{% url 'universall' %}"><div class="w3-half">
+            <div class="w3-card-4" style="margin-right: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Antrag ohne finanziellen Mittel</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <p><script src="{% static 'text/index/universaltext.js' %}"></script></p>
+                </div>
+            </div>
+        </div></a>
+
+        <a href="{% url 'finance' %}"><div class="w3-half">
+            <div class="w3-card-4" style="margin-left: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Antrag mit finanziellen Mitteln</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <p><script src="{% static 'text/index/financestext.js' %}"></script></p>
+                </div>
+            </div>
+        </div></a>
+    </div>
+
+    <h1>Anträge zu Personen:</h1>
+
+    <div class = "w3-row" style="margin-bottom: 20px">
+        <a href="{% url 'advisory_member' %}"><div class="w3-third">
+            <div class="w3-card-4" style="margin-right: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Beratendes Mitglied</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <p><script src="{% static 'text/index/advisorytext.js' %}"></script></p>
+                </div>
+            </div>
+        </div></a>
+
+        <a href="{% url 'election_report' %}"><div class="w3-third">
+            <div class="w3-card-4" style="margin-left: 10px; margin-right: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Wahl auf Stelle/Amt</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <p><script src="{% static 'text/index/electiontext.js' %}"></script></p>
+                </div>
+            </div>
+        </div></a>
+
+        <a href="{% url 'conduct' %}"><div class="w3-third">
+            <div class="w3-card-4" style="margin-left: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Herstellung des Benehmens</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <p><script src="{% static 'text/index/establishing.js' %}"></script></p>
+                </div>
+            </div>
+        </div></a>
+    </div>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>
