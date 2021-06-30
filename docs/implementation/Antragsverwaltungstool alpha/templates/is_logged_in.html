@@ -1,0 +1,13 @@
+{% load static %}
+{% if user.is_authenticated %}
+    <li class = "lir">
+        <a href="{% url 'logout' %}?next={{ request.path }}">logout</a>
+    </li>
+    <li class = "lir">
+        <a>{{ user.get_username }}</a>
+    </li>
+{% else %}
+    <li class = "lir">
+        <a href="{% url 'login' %}?next={{ request.path }}"><img src="{% static 'img/login.png' %}" style="width: 19px" alt = "login"/> Login</a>
+    </li>
+{% endif %}

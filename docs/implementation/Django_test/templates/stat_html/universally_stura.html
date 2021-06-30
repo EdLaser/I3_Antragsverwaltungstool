@@ -30,7 +30,7 @@
         <label><b>Antragsnummer:{{ uni_object.number }}</b></label>
         <table class = "form">
             <tr>
-                <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "2021-01-01" value="{{ uni_object.number }}"></td>
+                <td><input class = "w3-input w3-border" type = "text" name = "antrag" required placeholder = "20XX/XX-YY-ZZZZ" value="{{ uni_object.number }}"></td>
                 <td><input type="submit" class = "w3-button w3-green mybutton" value="Daten Anfordern"></td>
             </tr>
         </table>
@@ -116,12 +116,12 @@
 
         <div class="form">
             <label><b>Anlagen:</b></label><br>
-            <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
+            <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px">{{ uni_object.anlagen }}</textarea>
         </div>
 
         <div>
             <label><b>Änderungsantrag:</b></label><br>
-            <textarea class = "w3-input w3-border" name = "aenda" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
+            <textarea class = "w3-input w3-border" name = "aenda" rows = "4" maxlength="260" style="margin-bottom: 10px">{{ uni_object.aenderung }}</textarea>
         </div>
 
         <div class = "form">

@@ -2,40 +2,25 @@
 
 node "Django-Applikation" {
     [HTML]
-    [Python]
-        note left of [Python] : CRUD
+    [View]
+        note left of [View] : CRUD, Processes requests
     [CSS]
         note left of [CSS]
             predefined W3 
             and own stylesheet
         end note
-    [JavaScript] ..> [HTML] : toogles, displays text
+    [URL Resolver]
+        note left of [URL Resolver] : recieves request by url paths
+
+    [JavaScript] ..> [HTML] : toggles, displays text
     [CSS] ..> [HTML] : styles
-    [HTML] --> [Python] : uses
+    [URL Resolver] --> [View] : redirects request
+    [View] ..> [HTML] : renders response to browser
     
-    [Python] --> finance : CRUD-Operations
-    [Python] --> universal : CRUD-Operations
-    [Python] --> advisory_member : CRUD-Operations
-    [Python] --> election : CRUD-Operations
+    [View] --> database : CRUD-Operations
 }
 
-database "MySQL-Datenbank" {
-    folder "finance" {
-        [finance 1]
-        [finance 2]
-    }
-    folder "universal" {
-        [universal 1]
-        [universal 2]
-    }
-    folder "advisory_member" {
-        [advisory_member 1]
-        [advisory_member 2]
-    }
-    folder "election" {
-        [election 1]
-        [election 2]
-    }
-}
+database "MySQL-Datenbank" as database {
 
+}
 @enduml

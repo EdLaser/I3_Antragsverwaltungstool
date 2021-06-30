@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Antrag mit finanziellen Mitteln</title>
+    <link rel="icon" href="{% static 'icon.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/W3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/formular.css' %}">
+    <link rel="stylesheet" href="{% static 'css/popup.css' %}">
+    <script src="{% static 'js/myInputToggle.js' %}"></script>
+</head>
+<body>
+<div class = "logo w3-animate-top">
+    <a href="{%  url 'index' %}" class = "w3-hover-opacity"><img src="{% static 'img/logo.png' %}" class = "sturalogo" alt="ToolLogo"/></a>
+</div>
+<div class = "navigation">
+    <ul class = "mainnav">
+        <li class = "lil"><a href="{% url 'index' %}">Home</a></li>
+        <li class = "lil"><a href="{% url 'universall' %}">Antrag ohne finanzielle Mittel</a></li>
+        <li class = "lil"  id = "active" ><a href="{%url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
+        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag zur: ▼</a>
+            <div class = "dropdown-content w3-animate-opacity">
+                <a href="{% url 'advisory_member' %}">Beratendes Mitglied</a>
+                <a href="{% url 'election_report' %}">Stelle/Amt</a>
+                <a href="{% url 'conduct' %}">Herstellung des Benehmens</a>
+            </div>
+        </li>
+        {% if user.is_authenticated %}<li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>{% endif %}
+
+        <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
+            <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
+        </li>
+        {% include 'is_logged_in.html' %}
+    </ul>
+</div>
+
+<div class = "content w3-animate-opacity">
+    <form action="" method="post">
+        {%  csrf_token %}
+        <div class = "form">
+            <label><b>Antragstitel:</b></label><br>
+            <input class = "w3-input w3-border" type = "text" name = "titel" required placeholder = "Antrag auf..." value="{{ fina_object.title }}">
+        </div>
+
+        <div class = "w3-half npad">
+            <label><b>Zuständige Stelle wählen:</b></label><br>
+            <label>
+                <select class="w3-select w3-border" id = "Sin" onchange="mytoggleinputs('oth')" name = "election_input" required>
+                    <option disabled selected>Bitte Auswählen</option>
+                    <optgroup label="Allgemein">
+                    <option name = "vors" value = "Vorstand">Vorstand</option>
+                    <option name = "ple" value = "Plenum">Plenum</option>
+                    <option name = "prae" value = "Präsidium">Präsidium</option>
+                    <option name = "vertkss" value = "Vertretung in der KSS">Vertretung in der KSS</option>
+                    <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
+                    <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
+                    <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
+                    </optgroup>
+                    <optgroup label="Referatsleitung">
+                      <option name = "refstselorg" value = "Studentische Selbstverwaltung und Organisation">Studentische Selbstverwaltung und Organisation</option>
+                      <option name = "refstud" value = "Studium">Studium</option>
+                      <option name = "refkul" value = "Kultur">Kultur</option>
+                      <option name = "refsp" value = "Sport">Sport</option>
+                      <option name = "refqm" value = "Qualitätsmanagement">Qualitätsmanagement</option>
+                      <option name = "refoeff" value = "Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</option>
+                      <option name = "refsoz" value = "Soziales">Soziales</option>
+                      <option name = "reffin" value = "Finanzen">Finanzen</option>
+                      <option name = "refhoch" value = "Hochschulpolitik">Hochschulpolitik</option>
+                      <option name = "refint" value = "Internationales">Internationales</option>
+                    </optgroup>
+                    <option name = "other" value = "18">Eigene...</option>
+                </select>
+            </label>
+
+        </div>
+
+        <div class = "w3-half">
+            <br>
+            <div id="oth" style = "visibility: hidden">
+                <input class = "w3-input w3-border" type = "text" name = "otherinput">
+            </div>
+        </div>
+
+        <div class = "w3-half npad">
+            <label><b>Name:</b></label><br>
+            <input class = "w3-input w3-border" type = "text" name = "name" required placeholder = "Max Mustermann" value="{{ fina_object.name }}">
+        </div>
+        <div class = "w3-half">
+            <label><b>E-Mail:</b></label>
+            <div class="tooltip">
+                <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
+                <span class="tooltiptext"><script src="{% static 'text/mouseovers/email.js' %}"></script>
+                </span></div>
+            <input class = "w3-input w3-border" type = "email" name = "mail" required placeholder = "example@mail.com" value="{{ fina_object.mail }}">
+        </div>
+
+        <div class = "form">
+            <label><b>Antragstext:</b></label>
+            <div class="tooltip">
+                <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
+                <span class="tooltiptext"><script src="{% static 'text/mouseovers/antragtext.js' %}"></script>
+            </span></div>
+            <textarea class = "w3-input w3-border" name = "antrtext" rows = "4" maxlength="260">{% if fina_object %}{{ fina_object.text }}{% else %}Der StuRa möge beschließen{% endif %}</textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Begründung zum Antrag:</b></label>
+            <textarea class = "w3-input w3-border" name = "begzantr" rows = "4" placeholder="ausführliche Begründung zum Antrag..." maxlength="260">{{ fina_object.reason }}</textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Kostenposition im Haushaltsplan:</b></label>
+            <div class="tooltip">
+                <img src="{% static 'img/info.png' %}" width = "16" height = "16" alt = "Info icon"/>
+                <span class="tooltiptext"><script src="{% static 'text/mouseovers/KostenpositionimHaushaltsplantext.js' %}"></script>
+            </span></div>
+            <textarea class = "w3-input w3-border" name = "haushplan" rows = "4" maxlength="260">{{ fina_object.budget }}</textarea>
+        </div>
+
+        <div class = "form">
+            <label><b>Vorschlag zum weiteren Verfahren:</b></label>
+            <textarea class = "w3-input w3-border" name = "vrshzverf" rows = "4" placeholder="Vorschlag..." maxlength="260">{{ fina_object.suggestion}}</textarea>
+        </div>
+
+        <div>
+            <label><b>Anlagen:</b></label><br>
+            <textarea class = "w3-input w3-border" name = "anlgn" rows = "4" maxlength="260" style="margin-bottom: 10px"></textarea>
+            <!--<input class = "upl" type="file" name = "fileupl">-->
+        </div>
+        <div class = "w3-row-padding">
+            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+            <input type="reset" class = "w3-button w3-indigo mybutton" value="Zurücksetzen">
+        </div>
+    </form>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

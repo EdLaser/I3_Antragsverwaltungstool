@@ -131,7 +131,7 @@
                 <td><a {% if user.is_authenticated %}href="{% url 'change_posi'%}"{% endif %}>
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl auf Stelle/Amt</b>
                 </a></td>
-                <td><a href="{% url 'change_con' %}">
+                <td><a {% if user.is_authenticated %}href="{% url 'change_con' %}{% endif %}">
                     <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Herstellung des Benehmens</b>
                 </a></td>
             </tr>

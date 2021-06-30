@@ -1,5 +1,7 @@
+""" Sets the url mappings for the requests. """
 from django.urls import path, re_path, include
 from . import views
+
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -19,3 +21,4 @@ urlpatterns = [
 
     path('', include('django.contrib.auth.urls')),
 ]
+""" All the url patterns and the according view to the mappings """

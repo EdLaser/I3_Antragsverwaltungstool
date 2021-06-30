@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>StuRa interner Bereich</title>
+    <link rel="icon" href="{% static 'icon.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/W3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/intern.css' %}">
+    <script src="{% static 'js/myInputToggle.js' %}"></script>
+</head>
+<body>
+<div class = "logo w3-animate-top">
+    <a href="{%  url 'index' %}" class = "w3-hover-opacity"><img src="{% static 'img/logo.png' %}" class = "sturalogo" alt="ToolLogo"/></a>
+</div>
+<div class = "navigation">
+    <ul class = "mainnav">
+        <li class = "lil"><a href="{%  url 'index' %}">Home</a></li>
+        <li class = "lil"><a href="{%  url 'universall' %}">Antrag ohne finanzielle Mittel</a></li>
+        <li class = "lil"><a href="{%  url 'finance' %}">Antrag mit finanziellen Mitteln</a></li>
+        <li class = "dropdown lil"><a href="javascript:void(0)" class = "dropbtn">Antrag zur: ▼</a>
+            <div class = "dropdown-content w3-animate-opacity">
+                <a href="{%  url 'advisory_member' %}">Beratendes Mitglied</a>
+                <a href="{%  url 'election_report' %}">Stelle/Amt</a>
+                <a href="{% url 'conduct' %}">Herstellung des Benehmens</a>
+            </div>
+        </li>
+        {% if user.is_authenticated %}<li class = "lil"><a href="{%  url 'intern' %}">Intern</a></li>{% endif %}
+
+        <li class = "lir"><a href="https://www.stura.htw-dresden.de/">
+            <img src="{% static 'img/Stura_htw.png' %}" style="width: 84px" alt = "SturaLogo"/></a>
+        </li>
+        {% include 'is_logged_in.html' %}
+    </ul>
+</div>
+
+<div class = "content w3-animate-opacity">
+    <div class = "w3-row" style="margin-bottom: 20px">
+        <div class="w3-half" style="width: 40%">
+            <div class="w3-card-4" style="margin-right: 10px">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Antragssuche:</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <form class = "myform" action="" method="POST">
+                        {% csrf_token %}
+                        <label><b>Stelle wählen:</b></label><br>
+                        <label>
+                            <select class="w3-select w3-border" id = "Sin" onchange="toggledisplay('own')" name = "election_input" required>
+                               <option disabled selected>Bitte Auswählen</option>
+                                <optgroup label="Allgemein">
+                                <option name = "vors" value = "Vorstand">Vorstand</option>
+                                <option name = "ple" value = "Plenum">Plenum</option>
+                                <option name = "prae" value = "Präsidium">Präsidium</option>
+                                <option name = "vertkss" value = "Vertretung in der KSS">Vertretung in der KSS</option>
+                                <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
+                                <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
+                                <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
+                                </optgroup>
+                                <optgroup label="Referatsleitung">
+                                  <option name = "refstselorg" value = "Studentische Selbstverwaltung und Organisation">Studentische Selbstverwaltung und Organisation</option>
+                                  <option name = "refstud" value = "Studium">Studium</option>
+                                  <option name = "refkul" value = "Kultur">Kultur</option>
+                                  <option name = "refsp" value = "Sport">Sport</option>
+                                  <option name = "refqm" value = "Qualitätsmanagement">Qualitätsmanagement</option>
+                                  <option name = "refoeff" value = "Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</option>
+                                  <option name = "refsoz" value = "Soziales">Soziales</option>
+                                  <option name = "reffin" value = "Finanzen">Finanzen</option>
+                                  <option name = "refhoch" value = "Hochschulpolitik">Hochschulpolitik</option>
+                                  <option name = "refint" value = "Internationales">Internationales</option>
+                                </optgroup>
+                                <option name = "other" value = "18">Eigene...</option>
+                            </select>
+                            <script src="{% static 'js/toggledisplay.js' %}"></script>
+                        </label>
+
+                        <div id="own" style = "display:none">
+                            <label><b>Eigene:</b></label>
+                            <input class = "w3-input w3-border form" placeholder="Beispielreferat" name = "owninput" ><br>
+                        </div>
+
+                        <div class = "form">
+                            <label><b>Zeitspanne wählen:</b></label><br>
+                            <label>Startdatum:</label>
+                            <input type = "date" class = "w3-input" name = "sdat"  style="width: 70%;margin-bottom: 15px">
+                            <label>Enddatum:</label>
+                            <input type = "date" class = "w3-input" name = "edat"  style="width: 70%">
+                        </div>
+                        <footer class="w3-container w3-light-gray">
+                            <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half" style="width: 60%;" id = "out">
+            <div class="w3-card-4">
+                <header class="w3-container" style="background-color: #F2AC2E;">
+                    <h2>Ergebnisse:</h2>
+                </header>
+
+                <div class="w3-container w3-light-gray">
+                    <div class = "sqloutput">
+                        {% block out %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: block; margin-right: 10%; margin-left: 10%" id = "applications">
+        <h1>Antragsart wählen:</h1>
+        <table>
+            <tr>
+                <td><a {% if user.is_authenticated %}href="{% url 'change_uni'%}"{% endif %}>
+                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag ohne finanzielle Mittel</b>
+                </a></td>
+                <td><a {% if user.is_authenticated %}href="{% url 'change_fin'%}"{% endif %}>
+                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag mit finanziellen Mitteln</b>
+                </a></td>
+                <td><a {% if user.is_authenticated %}href="{% url 'change_advi'%}"{% endif %}>
+                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl Beratendes Mitglied</b>
+                </a></td>
+                <td><a {% if user.is_authenticated %}href="{% url 'change_posi'%}"{% endif %}>
+                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl auf Stelle/Amt</b>
+                </a></td>
+                <td><a {% if user.is_authenticated %}href="{% url 'change_con' %}{% endif %}">
+                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Herstellung des Benehmens</b>
+                </a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

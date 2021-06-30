@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="{% static 'icon.png' %} " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/W3.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/login.css' %} ">
+</head>
+<body>
+<div class = "logo w3-animate-top">
+    <a href="{% url 'index' %}" class = "w3-hover-opacity"><img src="{% static 'img/logo.png' %} " class = "sturalogo" alt="ToolLogo"/></a>
+</div>
+
+<div class = "navigation">
+    <ul class = "mainnav">
+        <li class = "lil"><a href="{% url 'index' %}">Home</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <form class="modal-content" action="{% url 'login' %}?next={{request.path}}" method="post">
+        {% csrf_token %}
+        <div class="form">
+            <label for="uname"><b>Username:</b></label>
+            <input type="text" placeholder="Username eingeben" name="username" class = "w3-input" required>
+        </div>
+        <div class = "form">
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Password" name="password" class = "w3-input" required>
+        </div>
+
+        <input type="submit" class = "w3-button w3-green" value="Daten absenden"/>
+        <input type="hidden" name="next" value="{{ next }}"/>
+        <button type="button" class = "w3-button w3-indigo">Abbrechen</button>
+    </form>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>
