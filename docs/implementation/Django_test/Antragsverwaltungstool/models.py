@@ -13,7 +13,7 @@ class AdvisoryMember(models.Model):
     """
     flag = models.IntegerField(default=0)
     """ The current status of the application. """
-    number = models.CharField(max_length=12, primary_key=True, unique=True)
+    number = models.CharField(max_length=15, primary_key=True, unique=True)
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
@@ -74,7 +74,7 @@ class Finance(models.Model):
     """
     flag = models.IntegerField(default=0)
     """ The current status of the application. """
-    number = models.CharField(max_length=12, primary_key=True, unique=True)
+    number = models.CharField(max_length=15, primary_key=True, unique=True)
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
@@ -134,7 +134,7 @@ class Position(models.Model):
     """
     flag = models.IntegerField(default=0)
     """ The current status of the application. """
-    number = models.CharField(max_length=12, primary_key=True, unique=True)
+    number = models.CharField(max_length=15, primary_key=True, unique=True)
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
@@ -202,7 +202,7 @@ class Universall(models.Model):
     """
     flag = models.IntegerField(default=0)
     """ The current status of the application. """
-    number = models.CharField(max_length=12, primary_key=True, unique=True)
+    number = models.CharField(max_length=15, primary_key=True, unique=True)
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
@@ -260,7 +260,7 @@ class Conduct(models.Model):
     """
     flag = models.IntegerField(default=0)
     """ The current status of the application. """
-    number = models.CharField(max_length=12, primary_key=True, unique=True)
+    number = models.CharField(max_length=15, primary_key=True, unique=True)
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
@@ -311,7 +311,7 @@ class NumberCount(models.Model):
     """
     Represents the ongoing number of the application.
     """
-    # number = models.ForeignKey(AdvisoryMember, Finance, Conduct, Position, Universall)
+    number = models.CharField(max_length=15, primary_key=True)
     legislature = models.CharField(max_length=7)
     session = models.IntegerField()
     ongoing_number = models.IntegerField()
