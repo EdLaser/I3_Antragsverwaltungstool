@@ -44,3 +44,134 @@ include::diagrams/sequence_show.puml[]
 ....
 include::diagrams/sequence_insert.puml[]
 ....
+
+
+== Entwicklung der Webanwendung
+in diesem abschnitt wird erläutert wie die Webanwendung zusammengesetzt ist.
+Wie oben bereits erwähnt kommt als Framework Django zum einsatz. Dessen aufgabe ist es die Website mit der mySQL Datenbank zu verbinden um eine Kommunikation zwischen Webanwenung und Datenbank zu ermöglichen.
+Die Webanwendung liest und schreibt auf der Datenbank.
+
+=== Verwendete Sprachen
+* HTML (Hypertext Markup Language)
+* CSS (Cascading Style Sheets)
+* Java Script
+
+=== Verzeichnisstruktur
+Antragsverwaltungstool (Hauptverzeichnis in der die gesammte Webanwendung und das Django Framework liegt)
+
+. Antragsverwaltungstool (Unterverzeichnis)
+.. \\__pycache__
+.. migrations
+... \\__pycache__
+.. static (Default Verzeichnis von Django für Sheets aller art die die Webanwendung oder der Django Server benötigt)
+... css
+... img
+... js
+... text
+. Django_AT (Default Verzeichnis für Django Strukturen und Default Python files)
+.. \\__pycache__
+. templates (Default Verzeichnis für alle html files der Webanwendung)
+.. registration (Verzeichnis der html files die für den Login zuständing sind)
+.. stat_html (Verzeichnis aller HTML seiten)
+
+==== HTML
+Als basis für unser System soll eine Webanwendung dienen. Diese hat den Vorteil das diese von jedem Moderenen Browser der HTML 5.0 oder neuer beherscht dargestellt werden kann. Getestet wurde Sie mit den gänigsten Browsern
+
+* Google Chrome (V. 91.0.4472.114)
+* Safari (V. 14.0.3)
+* Microsoft Edge (V. 91.0.864.59)
+* Mozilla Firefox (V. 89.0.2)
+
+Die Webanwendung wurde ohne einen Baukasten erstellt sondern selbst gecodet mit zuhilfenahme eines Vordefinierten Stylesheets von W3-Schools mit Vordefinierten Fraben, Animationen, etc.
+
+=== HTML Code grundaufbau
+Jedes File hat immer den gleichen aufbau: 
+[source,html]
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Antragsverwaltungstool</title>
+        <link> Verschiedene Imports für den Style der Webanwendung
+        <script></script> Verschiedene Java Srcipte für die Funktionalität der Webanwendung 
+    </head>
+    <body>
+        <div>StuRa Logo</div>
+        <div>Navigationsleiste</div>
+        <div>Content</div> Hier kommt alles hin das auf der Seite angezeigt werden soll
+        <div>Footer</div>
+    </body>
+</html>
+
+Bis auf die im Folgenden beschriebe Syntax Veränderung von Dateipfaden kann troz Framework "ganz normal" HTML gecodet werden.
+
+Java Script und CSS sowie bilder und die Angezeigten Texte wurden in externe Dateien und Verzeichnise ausgelagert damit Sie auf jeder Seite neu als link eingebettet werden können. Damit erhält man mehr übersicht und kann einen Style der Webanwendung verwenden ohne alles auf jeder seite neu schreiben zu müssen. 
+
+Beispiel für einbinden eines CSS files das im Verzeichnis für CSS files abgelegt ist ohne Django Framework
+[source,html]
+<link rel="stylesheet" href="static/css/mainstyle.css">
+
+Beispiel für einbinden eines CSS files das im Verzeichnis für CSS files abgelegt ist mit dem Django Framework
+[source,html]
+<link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+
+Durch das Framework verändert sich die Angabe von Pfaden wie im Oben gezeigten Beispiel. Das gilt auch für alle anderes Dateipfade die auf ein internes Script, Stylesheet oder eine Bildtatei verweisen sollen. Dabei ist der jeweils verwendete HTML Tag egal. Wenn man allerdings auf ein Externes Objekt verweist wie beispielweise auf eine andere Hompage dann kann der link "normal" eingefügt werden.
+Beispiel:
+[source,html]
+<td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %} " alt = "W3 Logo"/><br>W3 schools</a></td>
+
+Ausschnitt aus dem Footer. der link auf die Homepage von "W3 Schools" ist unverändert abgelegt aber der Dateipfad zum Logo welches auf dem Toolserver abgelegt ist ist mit der Django Syntax eingebunden worden.
+
+=== Java Script
+Java Script hat in dieser Webanwenung die Aufgabe Kontetnt auf wunsch des Benutzers ein- und Auszublenden das passiert mit umstylen der Aktuellen seite über CSS befehle.
+
+[source,javascript]
+function togglecheck(toggleID1,radioID){
+    var x = document.getElementById(toggleID1);
+    if(document.getElementById(radioID).checked === true) {
+        x.style.display = "none";
+    }else {
+        x.style.display = "block";
+    }
+}
+
+Diese Funktion blendet ein <div> auf knopfdruck ein und aus. Antrag auf Stelle/Amt zu sehen
+"frg" ist die id des zu Stylenden divs und "Fin" ist die id des Buttons ,hier eine Checkbox, die die Bedungung für den Style wechsel ist. Wenn .checked erfüllt ist soll "frg" ausgeblendet werden. Wenn .checked nicht erfüllt ist soll "frg" eingeblendet werden. Das ist auch der default fall.
+
+[source,javascript]
+function togglecheck_stura(toggleID1,toggleID2,radioID){
+    var x = document.getElementById(toggleID1);
+    var y = document.getElementById(toggleID2);
+    if(document.getElementById(radioID).checked === true) {
+        x.style.display = "none";
+        y.style.display = "block";
+    }else {
+        x.style.display = "block";
+        y.style.display = "none";
+    }
+}
+
+[source,javascript]
+function mytoggleinputs(f) {
+    var Sin = document.getElementById("Sin").value;     //Stellen Input
+    var x = document.getElementById(f);
+    if(Sin === "18") {
+        if (x.style.visibility === "hidden") {
+            x.style.visibility = "visible";
+        }
+    } else {
+        x.style.visibility = "hidden";
+    }
+}
+
+[source,javascript]
+function toggledisplay(f){
+    var x = document.getElementById(f);
+    var Sin = document.getElementById("Sin").value;     //Stellen Input
+    if(Sin === "18") {
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }
+    }else {
+        x.style.display = "none";
+    }
+}
