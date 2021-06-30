@@ -2,28 +2,144 @@
 
 {% block out %}
     {% if pos %}<h3>Alle Anträge an: {{ pos }}</h3>{% else %}<h3>Bitte Stelle wählen.</h3>{% endif %}
-    {% if uni_list %}
         <ul style="list-style-type:none;">
             <table style="width: 100%">
-                <li>
-                    <tr>
-                        <td style="text-align: center"><b>Antragsnummer</b></td>
-                        <td style="text-align: center"><b>Antragstitel</b></td>
-                        <td style="text-align: center"><b>Datum</b></td>
-                    </tr>
-                </li>
-                {% for application in uni_list %}
-                <li>
-                    <tr>
-                        <td style="text-align: center">{{ application.number }}</td>
-                        <td style="text-align: center">{{ application.title }}</td>
-                        <td style="text-align: center">{{ application.date }}</td>
-                    </tr>
-                </li>
-                {% endfor %}
+                {% if uni_object %}
+                    <li>
+                        <b>Anträge ohne finanzielle Mittel:</b>
+                    </li>
+                    <li>
+                        <tr>
+                            <td style="text-align: center"><b>Antragsnummer</b></td>
+                            <td style="text-align: center"><b>Antragstitel</b></td>
+                            <td style="text-align: center"><b>Datum</b></td>
+                        </tr>
+                    </li>
+                    {% for application in uni_object %}
+                    <li>
+                        <tr>
+                            <td style="text-align: center">{{ application.number }}</td>
+                            <td style="text-align: center">{{ application.title }}</td>
+                            <td style="text-align: center">{{ application.date }}</td>
+                        </tr>
+                    </li>
+                    {% endfor %}
+                {% else %}
+                    <li>
+                        <b>Keine Anträge ohne finanzielle Mittel.</b>
+                    </li>
+                {% endif %}
+            </table>
+
+            <table>
+                {% if fin_object %}
+                     <li>
+                         <b>Anträge mit finanziellen Mitteln:</b>
+
+                        <tr>
+                            <td style="text-align: center"><b>Antragsnummer</b></td>
+                            <td style="text-align: center"><b>Antragstitel</b></td>
+                            <td style="text-align: center"><b>Datum</b></td>
+                        </tr>
+                    </li>
+                    {% for application in fin_object %}
+                        <li>
+                            <tr>
+                                <td style="text-align: center">{{ application.number }}</td>
+                                <td style="text-align: center">{{ application.title }}</td>
+                                <td style="text-align: center">{{ application.date }}</td>
+                            </tr>
+                        </li>
+                    {% endfor %}
+                 {% else %}
+                    <li>
+                        <b>Keine Anträge mit finanziellen Mitteln.</b>
+                    </li>
+                {% endif %}
+            </table>
+
+            <table>
+                {% if pos_object %}
+                    <li>
+                        <b>Anträge zur Stelle/Amt:</b>
+                    </li>
+                    <li>
+                        <tr>
+                            <td style="text-align: center"><b>Antragsnummer</b></td>
+                            <td style="text-align: center"><b>Antragstitel</b></td>
+                            <td style="text-align: center"><b>Datum</b></td>
+                        </tr>
+                    </li>
+                    {% for application in pos_object %}
+                        <li>
+                            <tr>
+                                <td style="text-align: center">{{ application.number }}</td>
+                                <td style="text-align: center">{{ application.title }}</td>
+                                <td style="text-align: center">{{ application.date }}</td>
+                            </tr>
+                        </li>
+                    {% endfor %}
+                 {% else %}
+                    <li>
+                        <b>Keine Anträge zur Stelle/Amt.</b>
+                    </li>
+                {% endif %}
+            </table>
+
+            <table>
+                {% if adv_object %}
+                    <li>
+                        <b>Anträge für beratende Mitglieder:</b>
+                    </li>
+                    <li>
+                        <tr>
+                            <td style="text-align: center"><b>Antragsnummer</b></td>
+                            <td style="text-align: center"><b>Antragstitel</b></td>
+                            <td style="text-align: center"><b>Datum</b></td>
+                        </tr>
+                    </li>
+                    {% for application in adv_object %}
+                        <li>
+                            <tr>
+                                <td style="text-align: center">{{ application.number }}</td>
+                                <td style="text-align: center">{{ application.title }}</td>
+                                <td style="text-align: center">{{ application.date }}</td>
+                            </tr>
+                        </li>
+                    {% endfor %}
+                 {% else %}
+                    <li>
+                        <b>Keine Anträge für beratende Mitglieder.</b>
+                    </li>
+                {% endif %}
+            </table>
+
+            <table>
+                {% if con_object %}
+                     <li>
+                         <b>Anträge zum Herstellen des Benehmens:</b>
+                    </li>
+                    <li>
+                        <tr>
+                            <td style="text-align: center"><b>Antragsnummer</b></td>
+                            <td style="text-align: center"><b>Antragstitel</b></td>
+                            <td style="text-align: center"><b>Datum</b></td>
+                        </tr>
+                    </li>
+                    {% for application in con_object %}
+                        <li>
+                            <tr>
+                                <td style="text-align: center">{{ application.number }}</td>
+                                <td style="text-align: center">{{ application.title }}</td>
+                                <td style="text-align: center">{{ application.date }}</td>
+                            </tr>
+                        </li>
+                    {% endfor %}
+                 {% else %}
+                    <li>
+                        <b>Keine Anträge zum Herstellen des Benehmens.</b>
+                    </li>
+                {% endif %}
             </table>
         </ul>
-    {% else %}
-        <p>Keine Anträge für {{ pos }}</p>
-    {% endif %}
 {% endblock %}
