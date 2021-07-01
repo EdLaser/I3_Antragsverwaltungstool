@@ -1,15 +1,11 @@
-= Test Script: {project-name}
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
-{mail}
-// Platzhalter für weitere Dokumenten-Attribute
-
+////
 == Allgemeine Informationen
 === Testfallbeschreibung
 * Vorbedingungen für den Test, z.B. bestimmter Systemzustand
 * Eingabedaten (Testdaten)
 * Ablaufbeschreibung des Tests (manuell oder automatisiert)
 * Erwartetes Ergebnis, z.B. Systemzustand, Fehlermeldung, Ausgabedaten
+////
 
 == Test Script
 // Template
@@ -32,7 +28,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 | Ablaufbeschreibung des Tests:
 
-| 1. Login-Button drucken
+| 1. Login-Button klicken
 
 | 2. Rolle wählen
 

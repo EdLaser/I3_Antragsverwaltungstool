@@ -12,3 +12,11 @@
 == Entscheidungen mit Begründung
 
 == Probleme und ihr Umgang
+
+////
+Hauptaktivitäten Anforderungserhebung und -analyse:
+-Besprechungen mit Kunde
+-Präsentation bisheriger Designentwürde/Prototypen -> Sicherheit, dass an den richtigen Stellen gearbeitet wird
+-Überarbeitung der Modelle/Vision
+-
+////
