@@ -1,0 +1,26 @@
+= Testplan
+
+== Teststrategie
+Eines der höchsten Risiken von Fehlfunktionen der Software ist der Verlust von Antragsdaten. Wenn Anträge garnicht oder falsch abgespeichert werden, dann kann dies für große Probleme beim StuRa sorgen und macht die Software unzuverlässig und damit auch unbrauchbar.
+
+Deshalb ist es essenziell, dass das Einreichen und Bearbeiten von Anträgen ohne Datenverlust oder ungewollte Datenmanipulation funktioniert. Ebenfalls dürfen bei der Antragsbearbeitung keine Daten falsch angezeigt werden, da dies für Fehlinformationen und -entscheidungen sorgen würde.
+
+== Testumgebung
+
+Zum Testen wird keine besondere Testumgebung benötigt. Da das System auf dem HTW-Server gehostet wird  braucht man lediglich eine Internetverbindung, um das Tool über den Browser aufzurufen und zu testen/nutzen.
+
+Bevor das Tool auf dem Server gehostet wurde war es notwendig die Systemvoraussetzungen (siehe Betriebsdokumentation) lokal auf dem eigenen Gerät zu schaffen. Dies hat den Test- und Entwicklungsprozess erheblich erschwert.
+
+Die Test werden ausschließlich manuell durchgeführt. Mit Skripten o.Ä. automatisierte Test werden vorerst nicht benötigt.
+
+== Testdokumentation
+
+Die Testergebnisse werden in einer Tabelle (siehe test_log) protokolliert. Es werden der Name des Tests, das Datum an dem er durchgeführt wurde, das Ergebnis und sonstige Anmerkungen/Notizen in der Tabelle notiert. Sonstige Fehler und Verbesserungenvorschläge werden in der Fehlerliste dokumentiert.
+
+== Testorganisation
+
+Jacob testet alle wichtigen use-cases auf Fehlfunktionen, optimalen Workflow für den Nutzer und sonstige Ungenauigkeiten (wie z.B. Rechtschreibfehler). Nachdem die Tests durchgeführt sind werden alle Funde möglichst zeitnah mit den für die Implementierung zuständigen Teammitgliedern besprochen. Diese setzen dann die notwendigen Änderungen um.
+
+== Testausführungsplan
+
+Alle vollständig implementierten use-cases werden von Jacob ausführlich getestet, sobald das Tool auf dem Server installiert ist und bereit steht.
