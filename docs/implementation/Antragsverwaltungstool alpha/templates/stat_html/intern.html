@@ -50,27 +50,27 @@
                         <label><b>Stelle wählen:</b></label><br>
                         <label>
                             <select class="w3-select w3-border" id = "Sin" onchange="toggledisplay('own')" name = "election_input" required>
-                               <option disabled selected>Bitte Auswählen</option>
+                                <option disabled selected>Bitte Auswählen</option>
                                 <optgroup label="Allgemein">
-                                <option name = "vors" value = "Vorstand">Vorstand</option>
-                                <option name = "ple" value = "Plenum">Plenum</option>
-                                <option name = "prae" value = "Präsidium">Präsidium</option>
-                                <option name = "vertkss" value = "Vertretung in der KSS">Vertretung in der KSS</option>
-                                <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
-                                <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
-                                <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
+                                    <option name = "vors" value = "Vorstand">Vorstand</option>
+                                    <option name = "ple" value = "Plenum">Plenum</option>
+                                    <option name = "prae" value = "Präsidium">Präsidium</option>
+                                    <option name = "vertkss" value = "Vertretung in der KSS">Vertretung in der KSS</option>
+                                    <option name = "vertfzs" value = "Vertretung im fzs">Vertretung im fzs</option>
+                                    <option name = "fakulkreis" value = "Fakultätsarbeitskreis">Fakultätsarbeitskreis</option>
+                                    <option name = "refkoll" value = "Referatskollegium">Referatskollegium</option>
                                 </optgroup>
                                 <optgroup label="Referatsleitung">
-                                  <option name = "refstselorg" value = "Studentische Selbstverwaltung und Organisation">Studentische Selbstverwaltung und Organisation</option>
-                                  <option name = "refstud" value = "Studium">Studium</option>
-                                  <option name = "refkul" value = "Kultur">Kultur</option>
-                                  <option name = "refsp" value = "Sport">Sport</option>
-                                  <option name = "refqm" value = "Qualitätsmanagement">Qualitätsmanagement</option>
-                                  <option name = "refoeff" value = "Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</option>
-                                  <option name = "refsoz" value = "Soziales">Soziales</option>
-                                  <option name = "reffin" value = "Finanzen">Finanzen</option>
-                                  <option name = "refhoch" value = "Hochschulpolitik">Hochschulpolitik</option>
-                                  <option name = "refint" value = "Internationales">Internationales</option>
+                                    <option name = "refstselorg" value = "Studentische Selbstverwaltung und Organisation">Studentische Selbstverwaltung und Organisation</option>
+                                    <option name = "refstud" value = "Studium">Studium</option>
+                                    <option name = "refkul" value = "Kultur">Kultur</option>
+                                    <option name = "refsp" value = "Sport">Sport</option>
+                                    <option name = "refqm" value = "Qualitätsmanagement">Qualitätsmanagement</option>
+                                    <option name = "refoeff" value = "Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</option>
+                                    <option name = "refsoz" value = "Soziales">Soziales</option>
+                                    <option name = "reffin" value = "Finanzen">Finanzen</option>
+                                    <option name = "refhoch" value = "Hochschulpolitik">Hochschulpolitik</option>
+                                    <option name = "refint" value = "Internationales">Internationales</option>
                                 </optgroup>
                                 <option name = "other" value = "18">Eigene...</option>
                             </select>
@@ -82,12 +82,12 @@
                             <input class = "w3-input w3-border form" placeholder="Beispielreferat" name = "owninput" ><br>
                         </div>
 
-                        <div class = "form">
+                        <div class = "form" >
                             <label><b>Zeitspanne wählen:</b></label><br>
                             <label>Startdatum:</label>
-                            <input type = "date" class = "w3-input" name = "sdat"  style="width: 70%;margin-bottom: 15px">
+                            <input type = "date" class = "w3-input" name = "sdat"  style="width: 70%;margin-bottom: 15px" disabled>
                             <label>Enddatum:</label>
-                            <input type = "date" class = "w3-input" name = "edat"  style="width: 70%">
+                            <input type = "date" class = "w3-input" name = "edat"  style="width: 70%" disabled>
                         </div>
                         <footer class="w3-container w3-light-gray">
                             <input type="submit" class = "w3-button w3-green mybutton" value="Absenden">
@@ -113,28 +113,6 @@
         </div>
     </div>
 
-    <div style="display: block; margin-right: 10%; margin-left: 10%" id = "applications">
-        <h1>Antragsart wählen:</h1>
-        <table>
-            <tr>
-                <td><a {% if user.is_authenticated %}href="{% url 'change_uni'%}"{% endif %}>
-                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag ohne finanzielle Mittel</b>
-                </a></td>
-                <td><a {% if user.is_authenticated %}href="{% url 'change_fin'%}"{% endif %}>
-                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Antrag mit finanziellen Mitteln</b>
-                </a></td>
-                <td><a {% if user.is_authenticated %}href="{% url 'change_advi'%}"{% endif %}>
-                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl Beratendes Mitglied</b>
-                </a></td>
-                <td><a {% if user.is_authenticated %}href="{% url 'change_posi'%}"{% endif %}>
-                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Wahl auf Stelle/Amt</b>
-                </a></td>
-                <td><a {% if user.is_authenticated %}href="{% url 'change_con' %}{% endif %}">
-                    <img src="{% static 'img/applications.png' %}" class = "applimg" alt="Antagslogo"/><b>Herstellung des Benehmens</b>
-                </a></td>
-            </tr>
-        </table>
-    </div>
 </div>
 {% include 'footer.html' %}
 </body>
