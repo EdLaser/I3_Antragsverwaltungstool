@@ -1,0 +1,63 @@
+= Kurze Beschreibung der Ziele, Aktivitäten und Ergebnisse in den OpenUP-Projektphasen / Iterationen
+
+=  Hauptaktivitäten
+
+Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vollumfänglich Implimentieren können.  Da wir nicht auf ein bestehendes System aufsetzen beziungsweise weiterentwickeln gab es einige Herausvorderungen denen Wir uns als Gruppe stellen mussten. 
+
+* Auswahl der Anwendungsart = Webanwendung
+* Auswahl der dafür verfügbaren Techniken = HTML, etc.
+* Beschaffung der Hardware vom StuRa = Hat geklappt aber sehr spät
+* Auschließliche Verwendung von Open Source Lizenzen
+
+== Anforderungserhebung und -analyse
+
+Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens aber Professoren und HTW Studten, verschiedene Arten von Anträgen beim StuRa der HTW-Dresden einreichen können. Das sollte sehr einfach funktionieren so das die Bedinung leicht ist und gut verständlich ist. Desweiteren soll das zu entwickelnde Tool auch die möglichkeit haben die verschieden eingereichten Anträge wieder in einer Listenform anzuzeigen. Zudem soll eine Bearbeitungs möglichkeit für StuRa Mitglieder geschaffen werden. Also ein Tool für das Einrechen und Bearbeiten von StuRa Anträgen war gefordert.
+
+Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal unseren wissenstand und Fragten nach Änderungen.
+
+[cols=3*,options=header]
+|===
+
+|Problemstellung
+|Analyse
+|Implementierte Lösung
+
+|Einfache Bedinbarkeit
+|Verwendung von HTML Formularen
+|Verwendung simpler <input>,<textarea> und <select> tags die in HTML seit langem Standard sind
+
+|verschiedene Antragsarten
+|die verschiedenen Antragsarten die der StuRa implementiert haben möchte erkennen und von Antragsformularen für die Händische Ausfüllung in einfache HTML Formulare umwandeln
+|Abbilden der StuRa internen Antragsvorlage für die gewünschten Anträge 
+
+|Ausgabe der eingereichten Anträge in Listenform
+|Eigene HTML seite die als Übersicht der Einzelen Anträge dienen soll 
+|
+
+|===
+
+== Inception Phase
+
+== Elaboration Phase
+
+== Construction Phse
+
+== Transition Phase
+
+== Entwurf
+
+== Implementierung
+
+== Test
+
+== Übergabe und Dokumentation
+
+=  Welche Entscheidungen wurden getroffen? Warum?
+
+= Was hat gut geklappt, was nicht? 
+
+== Welche Ursachen gab es dafür?
+
+= Wie wurde mit Problemen umgegangen? 
+
+== Haben die getroffenen Maßnahmen gewirkt?
