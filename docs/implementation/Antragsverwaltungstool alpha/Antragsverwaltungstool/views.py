@@ -351,20 +351,20 @@ def get_all_by_electioninput(request):
     """
     if request.method == 'POST':
         # get all objects of every model
-        uni_objects = Universall.objects.all().filter(office=request.POST.get('election_input'))
-        fin_objects = Finance.objects.all().filter(office=request.POST.get('election_input'))
-        pos_objects = Position.objects.all().filter(office=request.POST.get('election_input'))
-        adv_members = AdvisoryMember.objects.all().filter(office=request.POST.get('election_input'))
-        con_objects = Conduct.objects.all().filter(office=request.POST.get('election_input'))
+        uni_objects = Universall.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        fin_objects = Finance.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        pos_objects = Position.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        adv_members = AdvisoryMember.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        con_objects = Conduct.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
         # office needs to be a string
         office = request.POST.get('election_input')
         # chain all the objects together
         if not office:
-            uni_objects = Universall.objects.all()
-            fin_objects = Finance.objects.all()
-            pos_objects = Position.objects.all()
-            adv_members = AdvisoryMember.objects.all()
-            con_objects = Conduct.objects.all()
+            uni_objects = Universall.objects.all().order_by('-date')
+            fin_objects = Finance.objects.all().order_by('-date')
+            pos_objects = Position.objects.all().order_by('-date')
+            adv_members = AdvisoryMember.objects.all().order_by('-date')
+            con_objects = Conduct.objects.all().order_by('-date')
             context = {
                 'uni_object': uni_objects,
                 'fin_object': fin_objects,
