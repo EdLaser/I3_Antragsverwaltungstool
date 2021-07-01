@@ -304,3 +304,20 @@ Wenn der Text zu lang ist das er den Rahmen einer Zeile sprent kann der Text wie
 [TIP]
 In den 'String' des Text-Java Scrips kann Problemlos auch HTML code untergebracht werden. Beispiel wäre der Text aus dem welcometext.js im text Verzeichnis unter index
 
+==== Textordner struktur und Namenslegende
+* advisory_member = Beratendes Mitglied
+** frage 1, 2, 3, 4 = Die vier Fragen im Formular die Kursiv gedruckt sind
+* election_report = Stelle/Amt
+** die ersten vier Fragen aus "advisory_member" kommen zu erst danach
+** frage 1, 2, 3 = Diese bilden dann Frage 5-7 
+* index = Indexseite/Home
+** advisorytext = Beratendes Mitglied Box
+** electiontext = Stelle/Amt Box
+** establishing = Herstellung des Benehmen Box
+** financestext = Antrag mit finanziellen Mitteln Box
+** universaltext = Antrag ohne finanziellen Mitteln Box
+** welcometext = StuRa Antragsverwaltung Box
+* mouseovers
+** antragtext = Fragezeichen Mausover an jeder Box "Antragstext"
+** email = Fragezeichen Mausover an jeder Box "E-Mail"
+** KostenpositionimHaushaltsplantext = Fragezeichen Mausover an der Box "Kostenposition im Haushaltspan" im "Antrag mit finanziellen Mitteln" 
