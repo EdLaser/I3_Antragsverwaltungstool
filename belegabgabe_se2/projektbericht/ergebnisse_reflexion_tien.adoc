@@ -4,22 +4,19 @@
 
 * Was habe ich gelernt?
 
-+ Kommunikation mit anderen Teammitgliedern
+Erstens habe ich gelernt, wie man mit anderen Teammitgliedern schnell kommunizieren kann. Wir haben eine Whatsapp-Gruppe und eine Discord-Gruppe erstellt, mit denen wir Nachrichten miteinander schicken und Meeting organisieren. Zweitens habe ich gelernt, wie man im Team die Aufgaben teilt. Jeder kann etwas gut. Man muss wissen, was er gut kann und was ihm gefällt, um diese Aufgabe gut zu erledigen. Außerdem habe ich gelernt, dass ich manchmal um Hilfe von den anderen bitten kann, dass Mitglieder gegenseitig unterstützen sollen.
 
-+ Teilen der Aufgaben
-
-+ Bitte um Hilfe von anderen Teammitgliedern
 
 * Worauf bin ich stolz?
 
-Ich bin darauf stolz, dass ich die Aufgaben meiner Rolle erledigen kann.
+Ich bin darauf stolz, dass ich die Aufgaben meiner Rolle erledigen konnte. Am Anfang war es schwer, weil ich die Aufgaben nicht so gut kannte. Aber mithilfe der anderen und der Dokumentationen konnte ich sie erledigen.
+
 
 * Was hat gut funktioniert?
 
-+ Die Zusammenarbeit zwischen Teammitgliedern: Wir haben uns regelmäßig getroffen und über die Probleme diskutiert
+Die Zusammenarbeit zwischen den Teammitgliedern hat gut funktioniert. Obwohl wir uns nicht im Präsenz treffen konnten, haben wir uns regelmäßig getroffen und über die Probleme diskutiert. Die Aufteilung der Aufgaben hat auch gut funktioniert, weil jeder die Aufgaben wählen kann, die ihn interessiert.
 
-+ Die Aufteilung der Aufgaben: Jeder macht, was ihn interessiert
 
 * Was würde ich beim nächsten Projekt anders machen?
 
-Ich würde mich auf die Technologie, die bei der Implementierung genutzt wird, vorbeireiten. In diesem Projekt nutzen wir HTML, CSS und JavaScript. Ich kenne diese Sprachen nicht so gut, deswegen kann ich bei der Implementierung nicht helfen.
+Ich würde mich auf die Technologie, die bei der Implementierung genutzt wird, vorbeireiten. In diesem Projekt haben wir HTML, CSS und JavaScript genutzt. Ich habe diese Sprachen nicht so gut gekannt, deswegen konnte ich bei der Implementierung nicht viel helfen.

@@ -17,7 +17,7 @@ class AdvisoryMember(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -41,11 +41,11 @@ class AdvisoryMember(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -63,6 +63,9 @@ class AdvisoryMember(models.Model):
             self.frg1, self.frg2, self.frg3, self.frg4, self.anlagen, self.aenderung, self.mehrheit, self.beschluss,
             self.beschlusstext, self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_advisory/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Finance(models.Model):
     """
@@ -78,7 +81,7 @@ class Finance(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -100,11 +103,11 @@ class Finance(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -122,6 +125,9 @@ class Finance(models.Model):
             self.reason, self.budget, self.suggestion, self.anlagen, self.aenderung, self.mehrheit, self.beschluss,
             self.beschlusstext, self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_finance/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Position(models.Model):
     """
@@ -138,7 +144,7 @@ class Position(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -168,11 +174,11 @@ class Position(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -190,6 +196,9 @@ class Position(models.Model):
             self.frg2, self.frg3, self.frg4, self.frg_spez_1, self.frg_spez_2, self.frg_spez_3, self.anlagen,
             self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext, self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_position/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Universall(models.Model):
     """
@@ -206,7 +215,7 @@ class Universall(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -226,11 +235,11 @@ class Universall(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -248,6 +257,9 @@ class Universall(models.Model):
             self.suggestion, self.anlagen, self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext,
             self.beschlussgrund)
 
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_universall/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
+
 
 class Conduct(models.Model):
     """
@@ -264,7 +276,7 @@ class Conduct(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -284,11 +296,11 @@ class Conduct(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -305,6 +317,9 @@ class Conduct(models.Model):
             self.flag, self.number, self.date, self.title, self.office, self.name, self.mail, self.text, self.reason,
             self.suggestion, self.anlagen, self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext,
             self.beschlussgrund)
+
+    def get_absolute_url(self):
+        return f"/Antragsverwaltungstool/show_conduct/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
 class NumberCount(models.Model):
