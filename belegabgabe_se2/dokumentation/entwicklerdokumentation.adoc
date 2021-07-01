@@ -73,6 +73,7 @@ Die Webanwendung wurde ohne einen Baukasten erstellt sondern selbst gecodet mit 
 === HTML Code grundaufbau
 Jedes File hat immer den gleichen aufbau: 
 [source,html]
+--
 <!DOCTYPE html>
 <html lang="de">
     <head>
@@ -80,6 +81,7 @@ Jedes File hat immer den gleichen aufbau:
         <link> Verschiedene Imports für den Style der Webanwendung
         <script></script> Verschiedene Java Srcipte für die Funktionalität der Webanwendung 
     </head>
+
     <body>
         <div>StuRa Logo</div>
         <div>Navigationsleiste</div>
@@ -87,6 +89,7 @@ Jedes File hat immer den gleichen aufbau:
         <div>Footer</div>
     </body>
 </html>
+--
 
 Bis auf die im Folgenden beschriebe Syntax Veränderung von Dateipfaden kann troz Framework "ganz normal" HTML gecodet werden.
 
@@ -114,6 +117,7 @@ Java Script hat in dieser Webanwenung die Aufgabe Kontetnt auf wunsch des Benutz
 
 .myInputToggle.js
 [source,javascript]
+--
 function togglecheck(toggleID1,radioID){
     var x = document.getElementById(toggleID1);
     if(document.getElementById(radioID).checked === true) {
@@ -122,12 +126,14 @@ function togglecheck(toggleID1,radioID){
         x.style.display = "block";
     }
 }
+--
 
 Diese Funktion blendet ein <div> auf knopfdruck ein und aus. Wie im Antrag auf Stelle/Amt zu sehen,
 "toggleID1" ist die id des zu Stylenden divs und "radioID" ist die id des zu drückenden Buttons, hier eine Checkbox, die die Bedingung für den Style wechsel ist. Wenn ".checked" erfüllt ist soll "toggleID1" ausgeblendet werden. Wenn ".checked" nicht erfüllt ist soll "toggleID1" eingeblendet werden. Das ist auch der default fall.
 
 .myInputToggle.js
 [source,javascript]
+--
 function togglecheck_stura(toggleID1,toggleID2,radioID){
     var x = document.getElementById(toggleID1);
     var y = document.getElementById(toggleID2);
@@ -139,11 +145,13 @@ function togglecheck_stura(toggleID1,toggleID2,radioID){
         y.style.display = "none";
     }
 }
+--
 
 Diese Funktion macht genau das selbe wie die Obrige Funktion "togglecheck()" nur hat diese noch dein zusatzparameter "toggleID2". Beim Ausführen der Funkton wird ein <div id = "toggleID1"> ausgeblendet (umgestylt) und ein anderes <div id = "toggleID2"> sichtbar gemacht (umgestylt)
 
 .myInputToggle.js
 [source,javascript]
+--
 function mytoggleinputs(f) {
     var Sin = document.getElementById("Sin").value;     //Stellen Input
     var x = document.getElementById(f);
@@ -155,11 +163,13 @@ function mytoggleinputs(f) {
         x.style.visibility = "hidden";
     }
 }
+--
 
 Auch diese Funktion arbeitet "togglecheck()" nur das hier nicht ewtwas ne displayt wird sondern die Sichtbarkeit verändert wird. Das passiert wenn man bei den Anträgen "Zuständige Stelle wählen:" auf den Reiter "Eigene" drückt. Das Dropdownmenu hat die id "Sin" und "f" ist das Objekt dessen sichtbarkeit Manipuliert wird. in "Sin" steht das Value welches der Benutzer ausgewählt hat wenn dieses Value gleich 18 (das ist das Value für den "Eigene" reiter) ist dann wird das zu Manipulierende Objekt sichtbar gestylt und wenn es ungleich 18 ist dann bleibt es weiterhin unsichtbar.
 
 .toggledisplay.js
 [source,javascript]
+--
 function toggledisplay(f){
     var x = document.getElementById(f);
     var Sin = document.getElementById("Sin").value;     //Stellen Input
@@ -171,6 +181,7 @@ function toggledisplay(f){
         x.style.display = "none";
     }
 }
+--
 
 Diese Funktion ist eine Mixtur aus "togglecheck()" und "mytoggleinputs()". Angewendet wird sie auf der Seite "Intern" und bledet das feld "Eigene" aus und ein. Display: none ist der Default fall. Die Mixtur besteht aus der Logik von "togglecheck()" und dem Anwendungsbereich von "mytoggleinputs()" 
 
@@ -194,15 +205,18 @@ Im weiteren werden nur die wichtigsten styleelemente genauer beschrieben da es s
 
 .mainstyle.css
 [source,css]
+--
 body{
     background: gainsboro;
     font-family: Verdana, sans-serif;
 }
+
 .sturalogo{
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 5px;
 }
+--
 
 Style des <body> tags mit einer Hintergrundfarbe und einer Schriftart die nach dem include des css files in das HTML Dokument einen einheitlichen style der verschiedenen Seiten gewährleistet. Genau wie der <body> tag wurde eine Klasse mit dem Namen "sturalogo" erstellt und an ein <div> gebunden mit <div class="sturalogo"> dies stellt den Style des Tool logos das das auf jeder Seite der Anwendung links oben gefunden werden kann. Das "margin" Atribut beschreibt den Abstand des Objektes von einem Anderen Objekt bzw. Abstand zum Bildschirm-/Fensterrand.
 
@@ -212,4 +226,52 @@ Beim stylen von CSS kann man einem <tag> eine Klasse <tag class="myclass"> eine 
 
 
 :warning-caption: ❗
-WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie beispielsweise das in der Navigationsleiste mit der "id="active" gemacht wurde dann gilt es zu beachten das diese id *NICHT* in einem Java Script verwerwendet wird.
+WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie beispielsweise das in der Navigationsleiste mit der "id="active" gemacht wurde dann gilt es zu beachten das diese id *NICHT* in einem Java Script verwerwendet wird. Das Problem hierbei ist das dann das Script keinen Effekt hat. Der Browser gibt auch einen Error aus das eine ID doppelt verwendet wurde in einem Dokument.
+
+.mainstyle.css
+[source,css]
+--
+.mainnav{                               /*Style der Navigationsleiste*/ 
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.lil{                                   /*Linkes Listenobjekt der Navigationsleite*/
+    float: left;
+}
+
+.lir{                                   /*Rechtes Listenobjekt der Navigationsleiste*/
+    float: right;
+}
+
+#active{                                /*Cursor der Navigationsleiste für die aktuelle Seite*/
+    background-color: #F2AC2E;
+}
+
+.mainnav a{                             /*Style des Link tags innerhalb der Navigationsklasse*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainnav a:hover:not(.active){          /*Style des Link tags innerhalb der Navigationsklasse*/
+    background-color: #F2AC2E;
+}
+
+.dropdown:hover .dropdown-content {     /*Style des Dropdowns der Navigationsleiste*/
+    display: block;
+}
+
+.dropdown-content {                     
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+--
