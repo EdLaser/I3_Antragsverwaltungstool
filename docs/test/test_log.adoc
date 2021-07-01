@@ -1,12 +1,57 @@
-= Test Cases: {project-name}
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
-{mail}
-// Platzhalter für weitere Dokumenten-Attribute
-
+= Test Protokoll
 
 == Allgemeine Informationen
 Information über Testergebnisse, wann der Test durchgeführt wird und welche Tests, die schon durchgeführt werden
+
+[%header, cols="3,1,1,3"]
+|===
+|Testfall |Datum |Ergebnis |Notizen
+|Valide Login-Daten akzeptiert |28.06.2021 |bestanden |-
+|falsche Login-Daten abgelehnt |28.06.2021 |bestanden |-
+|Vollständig ausgefüllter Antrag eingereicht |28.06.2021 |bestanden |-
+|
+|===
+
+== bugs:
+* Anträge verlieren Stelle
+* Daten für ungültige Antragsnummer anfordern -> unexpected error
+* Änderung besondere Mehrheit wird nicht gespeichert (oder nicht richtig angezeigt?)
+* Antrag Stelle/Amt & Herst. des Benehmens haben keine checks für leere Felder (nur Titel, Name, E-mail) besonders Stelle wichtig!
+* Felder bei Antragsbearbeitung ausgegraut (neu)
+
+== Verbesserungsvorschläge:
+* Antragsbearbeitung etwas versteckt: Bearbeitungsfunktion mehr hervorheben -> leichter verständlich für Anwender
+* Kostenposition im Haushaltsplan: großes Testfeld notwendig?
+* Antrag abgeschickt feedback?
+* Antrag mit unverändertem Antragstext abschickbar?
+
+== Notizen:
+* Name kein Leerzeichenfilter
+* Antragsbearbeitung
+** Leerzeichen vor Antragsnummer, unterhalb von Daten anfordern
+** zuständige Stelle "leer" (besser aktuelle Stelle bereits ausgewählt?)
+* abgeschlossene Anträge können weiterhin bearbeitet werden?
+* Textboxen in Größe veränderbar: gewollt?
+* Anlagen? bisher nur Text möglich
+* Antragsnummer ohne korrektes Datum
+* Anträge löschen?
+
+== mit finanziellen Mitteln
+* Antrag ohne Kostenposition möglich?
+
+== Rechtschreibung:
+* StuRa Antragsverwaltung: "notwendig,[ ]wenn", "konsultiert werden[.]"
+* besondere MeHrheit
+* Beschlusstext ":"
+
+== Antragsbearbeitung:
+
+== Testdaten:
+* Testantrag 
+
+== funktioniert:
+* e-mail check
+* mehrere Anträge
 
 == Test log
 // Template
@@ -129,45 +174,3 @@ Information über Testergebnisse, wann der Test durchgeführt wird und welche Te
 | Notizen: 
  
 |===
-
-== Verbesserungsvorschläge:
-* Antragsbearbeitung etwas versteckt: Bearbeitungsfunktion mehr hervorheben -> leichter verständlich für Anwender
-* Kostenposition im Haushaltsplan: großes Testfeld notwendig?
-* Antrag abgeschickt feedback?
-* Antrag mit unverändertem Antragstext abschickbar?
-
-== Notizen:
-* Name kein Leerzeichenfilter
-* Antragsbearbeitung
-** Leerzeichen vor Antragsnummer, unterhalb von Daten anfordern
-** zuständige Stelle "leer" (besser aktuelle Stelle bereits ausgewählt?)
-* abgeschlossene Anträge können weiterhin bearbeitet werden?
-* Textboxen in Größe veränderbar: gewollt?
-* Anlagen? bisher nur Text möglich
-* Antragsnummer ohne korrektes Datum
-* Anträge löschen?
-
-== mit finanziellen Mitteln
-* Antrag ohne Kostenposition möglich?
-
-== Rechtschreibung:
-* StuRa Antragsverwaltung: "notwendig,[ ]wenn", "konsultiert werden[.]"
-* besondere MeHrheit
-* Beschlusstext ":"
-
-== Antragsbearbeitung:
-
-== Testdaten:
-* Testantrag 
-
-== funktioniert:
-* e-mail check
-* mehrere Anträge
-
-== bugs:
-* Anträge verlieren Stelle
-* Daten für ungültige Antragsnummer anfordern -> unexpected error
-* Änderung besondere Mehrheit wird nicht gespeichert (oder nicht richtig angezeigt?)
-* Antrag Stelle/Amt & Herst. des Benehmens haben keine checks für leere Felder (nur Titel, Name, E-mail) besonders Stelle wichtig!
-* Felder bei Antragsbearbeitung ausgegraut (neu)
-
