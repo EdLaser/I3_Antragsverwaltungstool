@@ -57,22 +57,8 @@ Die Webanwendung liest und schreibt auf der Datenbank.
 * Java Script
 
 === Verzeichnisstruktur
-Antragsverwaltungstool (Hauptverzeichnis in der die gesammte Webanwendung und das Django Framework liegt)
-
-. Antragsverwaltungstool (Unterverzeichnis)
-.. \\__pycache__
-.. migrations
-... \\__pycache__
-.. static (Default Verzeichnis von Django für Sheets aller art die die Webanwendung oder der Django Server benötigt)
-... css
-... img
-... js
-... text
-. Django_AT (Default Verzeichnis für Django Strukturen und Default Python files)
-.. \\__pycache__
-. templates (Default Verzeichnis für alle html files der Webanwendung)
-.. registration (Verzeichnis der html files die für den Login zuständing sind)
-.. stat_html (Verzeichnis aller HTML seiten)
+.Antragsverwaltungstool (Hauptverzeichnis in der die gesammte Webanwendung und das Django Framework liegt)
+image::Ordnerstruktur.jpg[]
 
 ==== HTML
 Als basis für unser System soll eine Webanwendung dienen. Diese hat den Vorteil das diese von jedem Moderenen Browser der HTML 5.0 oder neuer beherscht dargestellt werden kann. Getestet wurde Sie mit den gänigsten Browsern
@@ -134,8 +120,8 @@ function togglecheck(toggleID1,radioID){
     }
 }
 
-Diese Funktion blendet ein <div> auf knopfdruck ein und aus. Antrag auf Stelle/Amt zu sehen
-"frg" ist die id des zu Stylenden divs und "Fin" ist die id des Buttons ,hier eine Checkbox, die die Bedungung für den Style wechsel ist. Wenn .checked erfüllt ist soll "frg" ausgeblendet werden. Wenn .checked nicht erfüllt ist soll "frg" eingeblendet werden. Das ist auch der default fall.
+Diese Funktion blendet ein <div> auf knopfdruck ein und aus. Wie im Antrag auf Stelle/Amt zu sehen,
+"toggleID1" ist die id des zu Stylenden divs und "radioID" ist die id des zu drückenden Buttons, hier eine Checkbox, die die Bedingung für den Style wechsel ist. Wenn ".checked" erfüllt ist soll "toggleID1" ausgeblendet werden. Wenn ".checked" nicht erfüllt ist soll "toggleID1" eingeblendet werden. Das ist auch der default fall.
 
 [source,javascript]
 function togglecheck_stura(toggleID1,toggleID2,radioID){
@@ -150,6 +136,8 @@ function togglecheck_stura(toggleID1,toggleID2,radioID){
     }
 }
 
+Diese Funktion macht genau das selbe wie die Obrige Funktion "togglecheck()" nur hat diese noch dein zusatzparameter "toggleID2". Beim Ausführen der Funkton wird ein <div id = "toggleID1"> ausgeblendet (umgestylt) und ein anderes <div id = "toggleID2"> sichtbar gemacht (umgestylt)
+
 [source,javascript]
 function mytoggleinputs(f) {
     var Sin = document.getElementById("Sin").value;     //Stellen Input
@@ -163,6 +151,8 @@ function mytoggleinputs(f) {
     }
 }
 
+Auch diese Funktion arbeitet "togglecheck()" nur das hier nicht ewtwas ne displayt wird sondern die Sichtbarkeit verändert wird. Das passiert wenn man bei den Anträgen "Zuständige Stelle wählen:" auf den Reiter "Eigene" drückt. Das Dropdownmenu hat die id "Sin" und "f" ist das Objekt dessen sichtbarkeit Manipuliert wird. in "Sin" steht das Value welches der Benutzer ausgewählt hat wenn dieses Value gleich 18 (das ist das Value für den "Eigene" reiter) ist dann wird das zu Manipulierende Objekt sichtbar gestylt und wenn es ungleich 18 ist dann bleibt es weiterhin unsichtbar.
+
 [source,javascript]
 function toggledisplay(f){
     var x = document.getElementById(f);
@@ -175,3 +165,22 @@ function toggledisplay(f){
         x.style.display = "none";
     }
 }
+
+Diese Funktion ist eine Mixtur aus "togglecheck()" und "mytoggleinputs()". Angewendet wird sie auf der Seite "Intern" und bledet das feld "Eigene" aus und ein. Display: none ist der Default fall. Die Mixtur besteht aus der Logik von "togglecheck()" und dem Anwendungsbereich von "mytoggleinputs()" 
+
+=== CSS
+Die generelle Logik der Sheetaufteilung
+
+* mainstyle
+** Alle generellen styl entscheidungen wie Hindergrundfarbe, Farbe der Navigationsleiste, Footer, etc.
+* W3
+** Vordefiniertes Stylsheet von "W3 Schools" mit vielen Funktionen, Farben, Animationen, etc.
+* popup
+** Style für die kleinen Mouseover "?" in den Anträgen
+* formular
+** Der gennerelle Style der Anträge
+* login
+** Der Stlye der Loginpage mit einem Angepassten Footer
+* index, intern
+** Spezifische Styls für die jeweiligen Seiten "Index(Home)" und "Intern"
+

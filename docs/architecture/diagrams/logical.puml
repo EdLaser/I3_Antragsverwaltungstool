@@ -3,18 +3,22 @@
 node "Django-Applikation" {
     [HTML]
     [View]
-        note left of [View] : CRUD, Processes requests
+        note top of [View] : CRUD, Processes requests
     [CSS]
         note left of [CSS]
             predefined W3 
             and own stylesheet
         end note
     [URL Resolver]
-        note left of [URL Resolver] : recieves request by url paths
-
+        note top of [URL Resolver] : recieves request by url paths
+    [URL Patterns] 
+        note top of [URL Patterns] :redirect requests to view
+    
     [JavaScript] ..> [HTML] : toggles, displays text
     [CSS] ..> [HTML] : styles
-    [URL Resolver] --> [View] : redirects request
+    [URL Resolver] --> [URL Patterns] : check patterns
+    [URL Patterns] --> [URL Resolver] : tells matching pattern and view
+    [URL Resolver] --> [View] : redirects requests
     [View] ..> [HTML] : renders response to browser
     
     [View] --> database : CRUD-Operations

@@ -34,3 +34,23 @@ td{
 a{
     text-decoration: none;
 }
+
+/* unvisited link */
+.ap_link{
+    color: cornflowerblue;
+  }
+
+  /* visited link */
+  .ap_link:visited {
+    color: #F2AC2E;
+  }
+
+  /* mouse over link */
+  .ap_link:hover {
+    color: #F2AC2E;
+  }
+
+  /* selected link */
+  .ap_link:active {
+    color: cornflowerblue;
+  }

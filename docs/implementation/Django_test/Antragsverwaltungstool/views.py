@@ -399,11 +399,17 @@ def common_change(request, object_change, number):
 
     number(string): The number of the application.
     """
+    for i in request.POST.items():
+        print(i)
+
     object_change.number = number
     object_change.title = request.POST.get('titel')
-    object_change.office = request.POST.get('election_input')
-    object_change.name = request.POST.get('name')
-    object_change.mail = request.POST.get('mail')
+    print(request.POST.get('election_input'))
+    if not request.POST.get('election_input'):
+        object_change.office = request.POST.get('site')
+        print(request.POST.get('site'))
+    else:
+        object_change.office = request.POST.get('election_input')
     object_change.text = request.POST.get('antrtext')
     object_change.mehrheit = request.POST.get('yes')
     object_change.beschluss = request.POST.get('beschluss')

@@ -34,7 +34,7 @@ siehe xref:glosary.adoc#Einführung[Glossary].
 == Positionierung
 === Fachliche Motivation
 Im Rahmen unseres Studiums in den Modulen Software-Engineering I / -II, ist das Ziel unseres Teams ein Antragsverwaltungstool für den Stura zu entwickeln. 
-Der Stura der HTW Dresden verwaltet Antragsformulare noch analog. Wenn Bedürfnisse in den einzelnen Referaten entstehen, müssen diese einen Antrag stellen. Das Präsidium wird benachrichtigt und der Antrag bekommt eine Identifizierungsnummer. Dann werden Anträge manuell in die Tagesordnung nach einer bestimmten Priorität eingeordnet, um verarbeitet zu werden. Wenn der Antrag nicht in der Sitzung bearbeitet wird, wird er vertagt. Aufgrund dieses Prozesses verliert der Stura den Überblick und manche Anträge werden nicht richtig ausgefüllt.  
+Der Stura der HTW Dresden verwaltet Antragsformulare noch analog. Wenn Bedürfnisse in den einzelnen Referaten entstehen, müssen diese einen Antrag stellen. Das Präsidium wird benachrichtigt und der Antrag bekommt eine Identifizierungsnummer. Wenn der Antrag nicht in der Sitzung bearbeitet wird, wird er vertagt. Aufgrund dieses Prozesses verliert der Stura den Überblick und manche Anträge werden nicht richtig ausgefüllt.  
 Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools, um das Erstellen und Verwalten von Anträgen übersichtlich einfach zu gestalten.
 
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
@@ -46,7 +46,7 @@ Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten
 |Das Problem |	die unübersichtliche Bearbeitung der Anträge
 |betrifft |	alle Mitglieger des Sturas, das Referatskollegium, das Präsidium sowie Sprecher/innen.
 |Die Auswirkung davon ist |	das das bearbeiten der Anträge oft sehr uneffizient fehleranfällig sowie Zeitaufwendig ist, Zudem sind die Anträge nicht einheitlich formatiert
-|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen und gemäß Priorisierung in der Tagesordung der folgenden Sitzung einzuordnen. Dies entspricht einer extrem beschleunigungten, transparenten und vereinfachten Überarbeitung von Anträgen. Das Präsidium wird entlastet.
+|eine erfolgreiche Lösung wäre |	eine Anwendung um korrekt ausgefüllte und nummerierte Formulare zu erstellen. Dies entspricht einer extrem beschleunigungten, transparenten und vereinfachten Überarbeitung von Anträgen. Das Präsidium wird entlastet und das Antragstellen vereinfacht.
 |===
 
 ////
@@ -69,11 +69,11 @@ Beispiel
 [cols="1,3"]
 |===
 |Für|	den Antragsteller (beliebiges Sturamitglied)
-|der|	Anträge für Wahlen, Ressourcen sowie Beschlüsse stellt
+|der|	Anträge für Wahlen, Ressourcen o.Ä stellt
 |Die Lösung ist eine | browserbasierte Anwendung
 |Das	| digitales Ausfüllen von Antragsformularen
 |Im Gegensatz zum	|analogen stellen der Anträge 
-|Unser Produkt|	erstellt Antragsvorlagen welche, mit den vom Nutzer eingegebenen Informationen einen Antrag erstellt 
+|Unser Produkt|	erstellt Antragsvorlagen welche, mit den vom Nutzer eingegebenen Informationen einen Antrag erstellt. 
 |===
 
 
@@ -82,9 +82,9 @@ Beispiel
 |Für|	das Präsidium (entscheidendes Gremium)
 |der|	Anträge für Wahlen und Beschlüsse verwaltet
 |Die Lösung ist eine | browserbasierte Anwendung
-|welche	| die Bearbeitung und Vertagung der Anträge ermöglicht
+|welche	| die Bearbeitung  Anträge ermöglicht
 |Im Gegensatz zur	|manuelle Verwaltung der Anträge
-|Unser Produkt|	erstellt Automatisch die Anträge welche mit der #konfigurierbaren Tagesordnung# verknüpft werden. Zudem können die Äntrage selbst bearbeitet sowie verschoben werden.
+|Unser Produkt|	ermöglicht eine vereinfachte Bearbeitung gestellter Anträge in digitaler Form. 
 |===
 
 
@@ -109,7 +109,7 @@ Beispiel
 | Präsidium | die Leiter des Sturas, Studenten | sie haben administrative Rechte und sind gleichzeitig Nutzer der Anwendung, Verwaltung der Anträge|
 Gesetzgeber | gibt rechtliche Rahmenbediengungen vor (Datenschutz) | überwacht die Einhaltung des Gesetzes |
 Studierende | Studenten der HTW Dresden (potenzielle Antragsteller) | jeder mit Interesse an Amt und/oder Mithilfe im Stura | 
-Admin | IT-Mitarbeiter der Hochschule [blue]#Stura oder Laborbereich# | überwacht und wartet die Server der HTW Dresden. Stellt Serverleistung für die Software bereit | 
+Admin | IT-Mitarbeiter der Hochschule bzw. des Sturas | überwacht und wartet die Server der HTW Dresden. Stellt Serverleistung für die Software bereit | 
 beschließendes Mitglied | ist an Entscheidungen des Sturas beteiligt | Repräsentieren der Studierenden. Stimmenabgabe zu wahlen und anderen Entscheidungen |
 Entwickler | die Entwickler der Software | Planung, Entwicklung und Bereitstellung von Antragsverwaltungstool |
 Antragsteller | Eine Person, welche einen Antrag eingereicht hat. Kann ein Mitglied des Sturas sein (intern), oder jede beliebige andere Person (extern) | Bereitschaft für eventuelle Rückmeldungen |
@@ -125,20 +125,20 @@ Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern |
 * bei wiederholter Nutzung des Tools verringert sich die Bearbeitungszeit, da der Nutzer sich damit auskennt
 * Student ist an einem Antragprozess interessiert, da er intuitiv und aufwandsarm ist
 * Die Anwendung soll für Desktop-PC bzw. Laptops entwickelt sein, nicht für mobile Geräte 
-* die Anwendung soll in den Browsern Google Chrome sowie #Firefox# laufen (jeweils neuste Version bei Abgabe)
+* die Anwendung soll in den Browsern Google Chrome sowie Firefox laufen (jeweils neuste Version bei Abgabe)
 
 2. Antragsverwalter
 * Anzahl der Nutzer variiert zwischen 2 bis 10
 * feste, berechtigte Mitglieder des Sturas
 * Arbeitsaufwand hängt vom Formular ab (Richtigigkeit und Vollständigkeit)
 * Darstellung auf einer Desktopansicht
-* die Anwendung soll in den Browsern Google Chrome sowie #Firefox# laufen (jeweils neuste Version bei Abgabe)
+* die Anwendung soll in den Browsern Google Chrome sowie Firefox laufen (jeweils neuste Version bei Abgabe)
 
-3. #Stura/ Netzwerk Admin#
-* 1 #oder 2#
-* Admin des Sturas / Laborbereichs
+3. Stura Admin
+* 1 oder 2
+* Admin des Sturas 
 * Sollte möglichst leicht unsere Anwendung bearbeiten, updaten oder neustarten könnnen
-#* Browserbasietes bearbeitungstool + unsere Dokumentation bzw. kritische Entwicklungsdaten?#
+* Browserbasietes bearbeitungstool 
 //Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
@@ -179,14 +179,14 @@ Wiedervorlage von vertagten Anträgen | hoch | Verknüpfung des Tools mit der Ta
 [%header, cols="2,1,1,5"]
 |===
 Anforderung|	Priorität|	Geplantes Release | Zweck | 
-[blue]#Priorisierung von Anträge# | hoch  | SS2021 | Übersichtlichkeit bzw. automatische Anordnung der Anträge (erst alle Wahlanträge dann alle Ressourcen etc.)|
-Kein Java | hoch | - | #nochmalfragen# |
+Automatische Generierung der Tagesordnung| sehr hoch | SS2021 | Verknüpfung mit der Anwendung, Wahlen werden priorisiert|
+Kein Java | hoch | - | - |
 Browserbasierte Anwendung | sehr hoch | SS2021 | einfach anzuwenden, nahezu übreall zugänglich |
 Mobile Variante | extra | -| |
 Eingabeüberprüfung | hoch | SS2021 | überprüfen ob alle kritischen Informationen angegeben wurden [Benarichtigung wenn dies nicht der Fall ist --> Eingabe-Fehler vermeiden |
 Hilfe-Funktion direkt auf Website | niedrig | SS20201 | Anwendung benutzerfreundlich gestallten --> Zugänglichkeit erhöhen |
-E-Mail über Beschlüsse | niedrig |SS2021 | Stura-Mitglieder kritische Informationen teilweise automatisch mit E-Mails mitteilen |
-Automatische Generierung der Tagesordnung| mittel | SS2021 | Verknüpfung mit der Anwendung, Wahlen werden priorisiert|
+E-Mail über Beschlüsse | niedrig |- | Stura-Mitglieder kritische Informationen teilweise automatisch mit E-Mails mitteilen |
+Druckvorschau | niedrig |- | Druckvorschau für Anträge bzw. Drucklayout an sich erstellen |
 |===
 
   
