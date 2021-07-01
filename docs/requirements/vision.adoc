@@ -71,7 +71,7 @@ Beispiel
 |Für|	den Antragsteller (beliebiges Sturamitglied)
 |der|	Anträge für Wahlen, Ressourcen o.Ä stellt
 |Die Lösung ist eine | browserbasierte Anwendung
-|Das	| digitales Ausfüllen von Antragsformularen
+|welche	| ein digitales Ausfüllen von Antragsformularen ermöglicht 
 |Im Gegensatz zum	|analogen stellen der Anträge 
 |Unser Produkt|	erstellt Antragsvorlagen welche, mit den vom Nutzer eingegebenen Informationen einen Antrag erstellt. 
 |===
@@ -79,12 +79,12 @@ Beispiel
 
 [cols="1,3"]
 |===
-|Für|	das Präsidium (entscheidendes Gremium)
+|Für|	das Präsidium 
 |der|	Anträge für Wahlen und Beschlüsse verwaltet
 |Die Lösung ist eine | browserbasierte Anwendung
-|welche	| die Bearbeitung  Anträge ermöglicht
-|Im Gegensatz zur	|manuelle Verwaltung der Anträge
-|Unser Produkt|	ermöglicht eine vereinfachte Bearbeitung gestellter Anträge in digitaler Form. 
+|welche	| die vereinfachte Bearbeitung  der gestellten Anträge ermöglicht
+|Im Gegensatz zur	|manuellen Verwaltung der Anträge
+|Unser Produkt|	ermöglicht eine vereinfachte und schnelle Bearbeitung sowie die Möglichkeit den Antrag zu vertagen bzw. zu beschließen. 
 |===
 
 
@@ -158,8 +158,8 @@ Schriftführer | ist befugt Anträge zu bearbeiten und ihren Status zu ändern |
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|Vorlagen der Anträge digitalisieren|sehr hoch|Auswahlverfahren, automatische Gererierung der Kennziffer des Antrags |SS2021|
-Wiedervorlage von vertagten Anträgen | hoch | Verknüpfung des Tools mit der Tagesordnung während der Versammlung, Zugang zur Liste von vertagten Anträgen|SS2021|
+|Vorlagen der Anträge digitalisieren|sehr hoch|Auswahlverfahren, automatische Genererierung der Kennziffer des Antrags |SS2021|
+Möglichkeit zur Bearbeitung gestellter bzw. vertagter Anträge | sehr hoch |  Auswahlverfahren und Aufrufmöglichkeit, vereinfachte Bearbeitung|SS2021|
 
 |===
 
