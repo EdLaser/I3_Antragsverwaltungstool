@@ -65,6 +65,10 @@ Zur Konfiguration muss einerseits im der _settings.py_ die IP-Adresse des Datenb
 
 Die Daten des Webservers können nach Notwendigkeit regelmäßig gesichert werden. Es ist systemseitige keine automatische Sicherung der Daten vorhanden.
 
+=== Erreichbarkeit des Servers (Portfreigabe)
+
+Zur Kommunikation mit dem Webserver muss der Port 8000 über die Firewall geöffnet werden. Das geschieht mit dem Kommando "sudo ufw allow 8000". Dies ist leider eine "Bad Practice" da der Traffic eigentlich auch über Port 80 oder den http/tcp Port laufen könnte. Leider sind wir noch zu keiner Möglichkeit gekommen dies so zu realisieren. Selbige Umsetzung ist aus Sicherheitsgründen jedoch anzustreben. Der Port kann über "sudo ufw disallow 8000" wieder geschlossen werden.
+
 === Neustart des Servers
 Der Django Server ist in einer Screen session im Hintergrund und wird bei einem Reboot des Haubtsrevers *Nicht* Automatisch gestartet. Der Start muss manuell ausgelöst werden.
 Sollte man den Server Starten wollen muss man sich über ssh auf den Server einlogen und unter dem Benutzer "django_admin" folgende Befehle eingeben:
@@ -91,4 +95,8 @@ Sollte sich der Name der screen session ändern genügt es auch screen -r *TAB* 
 
 ==== Zugang und Rechte
 
-Der Administrator hat das alleinige Recht das Tool zu verwalten.
+Der Administrator hat das alleinige Recht das Tool zu verwalten. Dieser besitzt eine seperaten Account mit allumfänglichen Rechten auf der Datenbank. Die Adminseite ist unter "141.56.51.110:8000/admin" zu erreichen. Hier können Datenbank Einträge angezeigt und bearbeitet bzw. gelöscht oder hinzugefügt werden. Dies sollte jedoch nur in Außnahemfällen genutzt werden.
+
+Sollte hier eine Antragsart nicht aufgelistet sein, sollte in der Datei _admin.py_ überprüft werden ob das zugehörige Model auch registriert ist. Die Anzeige der jeweiligen Datensätze der Antragsarten hängt von der __str__ Methode im jeweiligen Model ab. Diese sollte *unbedingt* bei Erstellung eines Models auf Korrektheit überprüft werden.
+
+Der Admin kann ebenfalls neue Benutzer und Benutzergruppen einrichten. Hier ist es zu empfehlen den entsprechenden Accounts nicht vollumfängliche Rechte einzuräumen sondern nur Lese- bzw. Schreibrechte zu erteilen, damit keine Manipulation der Daten Auftritt.
