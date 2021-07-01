@@ -14,7 +14,7 @@ Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vol
 
 Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens aber Professoren und HTW Studten, verschiedene Arten von Anträgen beim StuRa der HTW-Dresden einreichen können. Das sollte sehr einfach funktionieren so das die Bedinung leicht ist und gut verständlich ist. Desweiteren soll das zu entwickelnde Tool auch die möglichkeit haben die verschieden eingereichten Anträge wieder in einer Listenform anzuzeigen. Zudem soll eine Bearbeitungs möglichkeit für StuRa Mitglieder geschaffen werden. Also ein Tool für das Einrechen und Bearbeiten von StuRa Anträgen war gefordert.
 
-Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal unseren wissenstand und Fragten nach Änderungen.
+Nach dem esten Kundengespräch im neuen Semester überprüften wir nocheinmal unseren Wissenstand und fragten nach Änderungen.
 
 [cols=2*,options=header]
 |===
@@ -25,8 +25,8 @@ Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 |Einfache Bedinbarkeit
 |Verwendung von HTML Formularen
 
-|verschiedene Antragsarten
-|die verschiedenen Antragsarten die der StuRa implementiert haben möchte erkennen und von Antragsformularen für die Händische Ausfüllung in einfache HTML Formulare umwandeln
+|Verschiedene Antragsarten
+|Die verschiedenen Antragsarten die der StuRa implementiert haben möchte erkennen und von Antragsformularen für die Händische Ausfüllung in einfache HTML Formulare umwandeln
 
 |Ausgabe der eingereichten Anträge in Listenform
 |Eigene HTML seite die als Übersicht der Einzelen Anträge dienen soll 
@@ -35,9 +35,11 @@ Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 |Verwendung eines Login systems der Verschiedene Funktionen sperrt oder zugänlich macht
 
 |Bearbeitung der eingereichten Anträge
-|
+|StuRa eigendes Formular für die Bearbeitung der jeweiligen Anträge zuzüglich der Elemente für die Beschlussfassung des StuRas
 
 |===
+
+
 
 == Elaboration Phase Ausarbeitungsphase
 
