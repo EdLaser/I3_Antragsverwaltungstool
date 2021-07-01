@@ -17,7 +17,7 @@ class AdvisoryMember(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -81,7 +81,7 @@ class Finance(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -144,7 +144,7 @@ class Position(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -215,7 +215,7 @@ class Universall(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
@@ -276,7 +276,7 @@ class Conduct(models.Model):
     """ Number of the application in the database (primary_key). """
     date = models.DateField(default=django.utils.timezone.now)
     """ Date when the application is made. """
-    title = models.CharField(max_length=25, null=True)
+    title = models.CharField(max_length=50, null=True)
     """ Title of the application. """
     office = models.CharField(max_length=75, null=True)
     """ Office the application is pointed to. """
