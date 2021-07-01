@@ -1,0 +1,94 @@
+== 1. Planung [A.G.]
+
+=== 1.1Kurze Erläuterung des zu lösenden Problems
+
+Der StuRa wollte ein Online Antragsverwaltungstool (auf der StuRa Website) zum vereinfachen  des Antragsstellens, der Bearbeitung und des anschließenden Sichern/Speichern der Anträge.  
+(Was im Moment zum Teil noch Analog passiert das heißt dadurch ohne gemeinsame Formatierung und an keiner Stelle automatisiert.) 
+
+Unser Tool soll auf funktionaler Ebene erstmal nur Grundfunktionen wie das einreichen ,bearbeiten sowie anschließend das abspeichern übernehmen, nützliche Zusätze dazu wäre das Anträge zusammengefasst und in eine Art Liste gespeichert werden können (Tagesordnung) sowie direkt gedruckt werden können. 
+Zudem soll  unsere Implementation als ein Grundgerüst für mögliche weiterentwicklung diennen, eine denkbäre weiterentwicklung wäre zum Beispiel eine Version für mobile Geräte.
+
+Auf technischer Ebene wurden wir kaum eingeschränkt (siehe Systemwide Req.).
+Als Vorlage wurde uns die Website https://antragsgruen.de/ präsentiert an die wir uns zumindest optisch orientieren konnten.
+
+=== 1.2 Zustand – Beginn Semester 2
+
+Zu Semesterbeginn haben wir die größtenteils abgeschlossene Anforderungsanalyse aus dem letzten Semester übernommen bzw. damit weitergearbeitet. Zudem hatten wir uns letztes Semester schon einige Gedanken über die Tools gemacht ,welche wir nun zur Implementierung nutzen wollten. Wir waren somit fast mit der Elaboration-Phase fertig und konnten mit der Construction-Phase beginnen. 
+
+Leider mussten wir feststellen das unsere alte Ansprechpartnerin  „Liselotte Ruthe“ vom StuRa sich nicht mehr für uns verantwortlich fühlte bzw. aus dem StuRa ausgetretten ist. Zudem war #"Axel S."(hier noch vervollständigen)# zwar der Antragsteller jedoch nicht unser Ansprechpartner, daher konnten wir zu beginn dieses Semester erstmal keine Rücksprache mit unserem eigentlichen Kunden halten, später erfüllte diese Position dann "Johann Boxberger".
+
+Hinzu kommt das Corona bedingt ein Lockdown vorherrscht welcher die Kommunikation in den virtuellen Raum lenkt, dies hat uns nicht groß behindert war jedoch im Bereich der Motivation und Kommunikation durchaus merkbar.
+
+
+#Hier noch Essence Navigator Bild einfügen IT-Plan 3-4#
+
+
+=== 1.3 Projektorganisation
+
+==== 1.3.1 Teamaufbau und Aufgabenbereiche
+
+Unser Team hat sich von 8 auf 5 Personen (Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien Nguyen[T.N], Andreas Gröber[A.G]) verkleinert, welche gelegentlich von unserem Coach Felix Müller unterstützt wurde. Daraus folgt das wir auch unsere Rollen und Aufgabenbereiche angepasst haben bzw. mussten. 
+
+Ruben und Richard haben größtenteils selbständig die Implementierung und das entwerfen der Architektur sowie die Dokumentierung darüber übernommen. 
+Jacob und Tien haben das Testen #(den Teil den Ruben und Richard nicht gemacht haben?)# und dessen Dokumentierung übernommen. 
+Andreas hat die Projektplannung sowie den leitenden Teil bei der Analyse-Dokumentation übernommen mit Ruben und Jacob als unterstützende Personen.
+
+Zudem ist Ruben Mitglied im StuRa und somit ein schneller Kommunikationsweg zu unserem Kunden, bei Fragen oder Rücksprache an unseren Kunden bzw. der gesammten StuRa Leitung war das überaus hilfreich.
+
+==== 1.3.2 Kommunikation  und Meetings
+Wir haben uns am Anfang des Semesters darauf geeinigt uns einmal in der Woche, coronabedingt in Form eines Discord-Gruppenanruf, zu treffen. Dies ist auch jede Woche Am Montag zwischen 17:00 und 19:00 passiert die Meetings haben je nach Inhalt etwa 30 Minuten bis 90 Minuten in Anspruch genommen. Zudem haben wir uns Freitag von 8:00 bis 10:00 bei Bedarf getroffen, falls wir Zwischenergebnisse teilen, Meinungen von den anderen Teammitgliedern einholen oder zusammen etwas erarbeiten wollten. 
+
+Außerdem haben wir Whattsapp benutzt um diese Treffen zu koordinieren bzw. bei Bedarf zu verschieben , falls jemand mal nicht konnte.
+
+Da wir zu beginn des Semesters keinen wirklichen Kunden als Ansprechpartner hatten, kammen bis  mitte Mai auch keine Kundenmeetings zu stand, dort haben wir dann Johann Boxberger als neuen Ansprechpartner kennen gelernt und darauf geeinigt das wir uns aller 2 Wochen Montags 16:00 zum kurzen Informationaustausch treffen, zudem konnten wir uns bei Bedarf auf Discord Fragen stellen bzw. diese beantworten. 
+Diese Treffen fanden immer in der Mitte einer Iteration statt, falls zu betreffender Iteration noch fragen bestanden, zudem wurde der Kunde bei diesen Meetings über unsere Fortschritte informiert und sofern möglich, genannte Fortschritte oder neue Funktionalitäten gezeigt, um die Meinung des Kunden bzw. Anwenders einzuholen und bei Bedarf noch Änderungen vorzunehmen.
+
+Wichtige Informationen aus den Meetings (Team sowie Kunden) wurden in einem Protokoll festgehalten, um bei Bedarf besprochenes bzw. Ergebnis dessen nochmal zu rekapitulieren.
+
+Da wir ihre Empfehlung für sinvoll erachten  und abgeshen von SE-1 noch nie  jemand von uns innerhalb  eines OpenUP bzw. eines Projekts dieser Größe gearbeitet hat, haben wir die Iterationslänge auf 2 Wochen festgelegt. dadurch haben wir ein Größeres Meeting jeden 2. Montag in welcher wir die Iteration reviewen und Ziele sowie das vorgehen in der nächsten besprechen. An den anderen Montagen besprechen wir kurz unsere zwischen Ergebnisse und klären gegebenenfalls Fragen oder geben Hilfestellung falls nötig.
+
+==== 1.3.3 Model/Idee der Planung
+
+Wie von ihnen vorgegeben haben wir unser Projekt als OpenUP umgesetzt bzw. dies best möglichst versucht. Wir haben dabei zum Großteil Iterativ gearbeitet zum anderen Teil aber auch in einer Art V-Modell um eine Art Überblick zu behalten und uns nicht an Kleinigkeiten aufzuhalten. 
+
+Grob gesehen wussten wir etwa in welchen Wochen des Semesters wir den Entwurf abschließen, implementieren und testen und diese Grobplannung hat auch recht genau gestimmt. (Auch wenn die Hälfte der Use-Cases am Ende noch nicht implementiert worden sind.)
+
+Innerhalb der einzelnen Iterationen haben wir jedoch nochmal altes überarbeitet sowie verbessert, bei Bedarf auf Kundenwünsche reagiert und unser Ergebnis eher an unsere aufgewandte Zeit angepasst als anders herum.
+
+Unsere Hauptanforderungen wurden  erfüllt und sind in unserer Software integriert, zudem haben wir beim arbeiten darauf geachtet das andere Entwickler, möglicherweiße der Jahrgang nach uns, unser System ohne große Schwirigkeiten weiterentwickeln können.
+
+Beim plannen haben Ich [A.G.] vorerst nicht den Auffwand einzelner Tasks abgeschätzt dies wäre jedoch wahrscheinlich sinvoll gewesen, Ich habe zum Ende des Projekts hin erst damit angefangen und es hat beim „gerechten“ verteilen der Tasks und beim Plannen über einen größeren Zeitraum durchaus Sinn gemacht.  
+Zudem wurden sich Gedanken zu Risiken und deren Lösung in Form einer Risklist gemacht zum Teil konnten dadurch Probleme vermieden werden oder schnell gelöst werden. Einnige Sachen haben wir jedoch in der Weise wie sie passiert sind, nicht kommen gesehen. 
+
+=== 1.3.4 Way of Working 
+==== 1.3.4.1 Eingesetzte Tools
+Wir haben unser Projekt in einem Github-Repostory angelegt und haben dort die Möglichkeit genutzt mit Github-Issues zu arbeiten. 
+
+Zur Kommunikation wurden Discord sowie Whattsapp (Mobil) genutzt. 
+
+Wir haben uns zudem während des ganzen Projektes an den Meilensteinen des Essence-Navigators sowie der OpenUp-Vorlage orientiert.
+
+Um den Quellcode zu dokumentieren wurde Pydoctor genutzt.  #(Ruben)#
+
+Wie erwähnt wurde eine Risklist erstellt.
+
+#Ergänzungen#
+
+==== 1.3.4.2 Eingesetzte Strategien
+
+Höchste Priorität bei der Start-Phase war es Momentum (eine Eigendynamik) zu erzeugen, dies wurde über wöchentliche Meetings bzw. durch regelmäßiges arbeiten am Projekt sowie der Spezialisierung in die verschiedenen Rollen, um Multitasking zu vermeiden, sowie über Konfliktvermeidung auch erreicht. 
+
+Das erzeugen des Momentums erfordert am Anfang möglicherweise etwas mehr Zeit, aber es ermöglicht oder vereinfacht das kontinuierliche sowie konzentrierte arbeiten am Projekt und sorgt schlussendlich für Fortschritt an den Hauptfunktionalitäten. Leider wurde dies an einnigen stellen durch unseren Kunden etwas gestört z.B als wir etwa einen Monat keine Reaktion auf die Nachfrage nach unserem zugesagten Server bekammen und nicht wirklich wussten wie es weiter geht. 
+
+Konflikte  wurden größtenteils am Anfang des Projekts beseitigt bzw. direkt am Zeitpunkt des auftretens über Kompromisse oder einer klaren Entscheidung über das weitere Verfahren. Es kamm nie zu wirklich großen Diskussionen oder Ausseinandersetzungen, grundsätzlich hat jeder sein bestmögliches gegeben um das Projekt erfolgreich abzuschließen.
+
+Ziele wurden nach dem SMART-Format (https://de.wikipedia.org/wiki/SMART_(Projektmanagement))  formuliert, um die Sinnhaftigkeit sowie eine gewisse Effektivität dieser  zu gewährleisten. Ich persönlich empfinde diese Art der Zielsetzung als Sinvoll, habe allerdings keinen wirklichen Verlgeichswert  um sagen zu können das es effektiv ist bzw. unserem Projekt weitergeholfen hat.
+
+==== 1.3.4.3 Grundregeln
+
+Grundsätzlich wurde versucht ein Arbeitsumfeld zu schaffen indem man gerne und mit möglichst wenig Störungen, auf das Ziel eines möglichst gut (nach Kundenvorstellung) funktionierenden Produktes hinarbeitet sowie einer dementsprechend guten Bewertung des Projektes. 
+
+Außerdem sollte jedes Teammitglied etwa den gleichen zeitlichen Aufwand bzw. Leistung in das Projekt investieren um Fairness zu gewährleisten, pro Woche sollte dieser Umfang etwa in 2 bis 4 (Teammeetings zählen nicht zu dieser Zeit) Zeitstunden die sinvoll genutzt werden, liegen. Dies ist aber nicht immer gelungen. 
+Der Hauptgrund dafür war wahrscheinlich die eher „kurzsichtige“ Plannung,als Beispiel hatten wir in einigen Iterationen keine Analyse bzw. wirkliche Testaufgaben außer die Dokumentation zu überarbeiten während unser Implementierungsteam eigentlich immer beschäftigt war. 
+
+
