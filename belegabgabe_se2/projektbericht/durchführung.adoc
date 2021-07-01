@@ -1,6 +1,7 @@
 = Kurze Beschreibung der Ziele, Aktivitäten und Ergebnisse in den OpenUP-Projektphasen / Iterationen
 
-=  Hauptaktivitäten
+== Inception Phase Anfangsphase
+===  Hauptaktivitäten
 
 Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vollumfänglich Implimentieren können.  Da wir nicht auf ein bestehendes System aufsetzen beziungsweise weiterentwickeln gab es einige Herausvorderungen denen Wir uns als Gruppe stellen mussten. 
 
@@ -9,7 +10,7 @@ Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vol
 * Beschaffung der Hardware vom StuRa = Hat geklappt aber sehr spät
 * Auschließliche Verwendung von Open Source Lizenzen
 
-== Anforderungserhebung und -analyse
+==== Anforderungserhebung und -analyse
 
 Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens aber Professoren und HTW Studten, verschiedene Arten von Anträgen beim StuRa der HTW-Dresden einreichen können. Das sollte sehr einfach funktionieren so das die Bedinung leicht ist und gut verständlich ist. Desweiteren soll das zu entwickelnde Tool auch die möglichkeit haben die verschieden eingereichten Anträge wieder in einer Listenform anzuzeigen. Zudem soll eine Bearbeitungs möglichkeit für StuRa Mitglieder geschaffen werden. Also ein Tool für das Einrechen und Bearbeiten von StuRa Anträgen war gefordert.
 
@@ -35,8 +36,6 @@ Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 |
 
 |===
-
-== Inception Phase Anfangsphase
 
 == Elaboration Phase Ausarbeitungsphase
 
