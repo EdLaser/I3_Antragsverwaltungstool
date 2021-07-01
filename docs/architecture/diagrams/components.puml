@@ -1,0 +1,35 @@
+@startuml "Komponentendiagramm"
+
+node "Django-Application" as django {
+    component [Model] {
+        [AdvisoryMember]
+        [Conduct]
+        [Position]
+        [Finance]
+        [Universall]
+    }
+    component [View] {
+        [new_function]
+        [get_all]
+        [change_application]
+        [generate_number]
+        [all_tuesdays]
+    }
+    component Templates {
+
+    }
+}
+
+database "Datenbank" {
+    [_advisorymember]
+    [_finance]
+    [_conduct]
+    [_universall]
+    [_position]
+}
+
+Model -d-> Datenbank: spiegeln Tabellen wieder
+View -u-> Templates: als response mit / ohne Daten
+View -d-> Datenbank: Daten lesen / schreiben
+
+@enduml

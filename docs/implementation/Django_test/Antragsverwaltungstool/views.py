@@ -51,19 +51,9 @@ def intern(request):
     return render(request, 'stat_html/intern.html')
 
 
-def all_tuesdays(year, month, day):
-    """ 
-    Generates a hash of all tuedays of the year.
-    
-    Arguments:
-    year (int): The year the calculation is applied for
-    month (int): Month which marks the start of the calculation.
-    day (int): Day of the month to start with.
-    """
-    day = date(year, month, day)
-    """ Day to start the calculation """
+def all_tuesdays(year, start, end):
+    day = date(year, start, end)
     day += timedelta(days=(1 - day.weekday() if day.weekday() <= 1 else 7 + 1 - day.weekday()))
-    """ Find the first tuesday according to the date. """
     while (day.year == year) | (day.year == year + 1):
         yield day
         day += timedelta(days=14)
@@ -71,28 +61,23 @@ def all_tuesdays(year, month, day):
 
 def generate_number():
     """
-    Generates the number->primary key for the application.
+    Generate the number->primary key for the application ( not implemented yet )
 
-    Generates the numberof the application based on the current date. Therefore a hash of all tuesdays of the year is used.
-    The function iterates through all the tuesdays in the hash and compares the current date with the current index and the next
-    index to see where the current date is fitting in. 
-    Also the function uses a number of the NumberCount model to determine what is the latest application made.
+    Arguments:
+    object_given (object of type model): The object (application) given, to get
+    the last entry in the database.
+
     """
     sessions = {}
-    """ All the sessions of the "Plenum" everty year."""
     tuesday_dates = all_tuesdays(2021, 1, 1)
     iterable = 0
-    """ Iteratable for the loops. """
     next_session = 0
-    """ Set the next session to 0. """
     legislature = ""
-    """ Set an empty legislature to prevent errors. """
     for i in tuesday_dates:
         sessions[i] = iterable
         iterable += 1
 
     temp = list(sessions)
-    """ Use a temporary list of session to be able to get next session index. """
     try:
         for key in temp:
             if (date.today() > temp[temp.index(key)]) & (date.today() < temp[temp.index(key) + 1]):
@@ -116,14 +101,11 @@ def generate_number():
         legislature = str(current_year) + '/' + next_year[-2:]
 
     continous_number = NumberCount.objects.all().aggregate(Max('ongoing_number')).get('ongoing_number__max')
-    """ Get the maximum number of the ongoing_number column (get the highest application number). """
     continous_number += 1
 
     number = legislature + "-" + str(next_session) + "-" + str(continous_number).zfill(4)
-    """ Set the number string and add leading zeros to the number."""
 
     new_number_count = NumberCount(number, legislature, int(next_session), int(continous_number))
-    """ Initialize a new tbale entry and save it with the current number. """
     new_number_count.save()
 
     return number
@@ -351,20 +333,20 @@ def get_all_by_electioninput(request):
     """
     if request.method == 'POST':
         # get all objects of every model
-        uni_objects = Universall.objects.all().filter(office=request.POST.get('election_input'))
-        fin_objects = Finance.objects.all().filter(office=request.POST.get('election_input'))
-        pos_objects = Position.objects.all().filter(office=request.POST.get('election_input'))
-        adv_members = AdvisoryMember.objects.all().filter(office=request.POST.get('election_input'))
-        con_objects = Conduct.objects.all().filter(office=request.POST.get('election_input'))
+        uni_objects = Universall.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        fin_objects = Finance.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        pos_objects = Position.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        adv_members = AdvisoryMember.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
+        con_objects = Conduct.objects.all().filter(office=request.POST.get('election_input')).order_by('-date')
         # office needs to be a string
         office = request.POST.get('election_input')
         # chain all the objects together
         if not office:
-            uni_objects = Universall.objects.all()
-            fin_objects = Finance.objects.all()
-            pos_objects = Position.objects.all()
-            adv_members = AdvisoryMember.objects.all()
-            con_objects = Conduct.objects.all()
+            uni_objects = Universall.objects.all().order_by('-date')
+            fin_objects = Finance.objects.all().order_by('-date')
+            pos_objects = Position.objects.all().order_by('-date')
+            adv_members = AdvisoryMember.objects.all().order_by('-date')
+            con_objects = Conduct.objects.all().order_by('-date')
             context = {
                 'uni_object': uni_objects,
                 'fin_object': fin_objects,
@@ -399,9 +381,6 @@ def common_change(request, object_change, number):
 
     number(string): The number of the application.
     """
-    for i in request.POST.items():
-        print(i)
-
     object_change.number = number
     object_change.title = request.POST.get('titel')
     print(request.POST.get('election_input'))
@@ -417,7 +396,6 @@ def common_change(request, object_change, number):
     object_change.beschlussgrund = request.POST.get('begtext')
     object_change.anlagen = request.POST.get('anlgn')
     object_change.aenderung = request.POST.get('aenda')
-
 
 @login_required(login_url='login')
 def change_universall(request):

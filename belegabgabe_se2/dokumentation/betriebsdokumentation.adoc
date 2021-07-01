@@ -43,15 +43,60 @@ Die Anwednung besteht im ganzen aus einer Django-Applikation welche sich in klei
 
 === Installation / Verzeichnisstruktur
 
-Für die Installation ist nur Python und Django nötig. Es kann entweder ein neues Django Projekt mit dem gleichen Namen erstellt werden, um dann die Dateien aus der Applikationen in das neue Projekt zu kopieren. Oder es wird der gesamte Ordner aus der fertigen Applikation kopiert. Hier ist es nötig die Python-Laufzeitumgebung entsprechend anzupassen, da in unserem Falle mit einem Python Virtual Environment gearbeitet wird. Die Verzeichnisstruktur wird beim Erstellen des Projektes automatisch erzeugt, Hier ist es nur notwendig die HTML-Unterordner in _Templates_ und den static-Ordner in den Root-Folder der Applikation zu verschieben. Auf dem Webserver wurden die Dateien im root Verzeichnis unter ~/Antragsverwaltungstool abgelegt.
+Für die Installation ist nur Python und Django nötig sowie der Apache Webserver. Es kann entweder ein neues Django Projekt mit dem gleichen Namen erstellt werden, um dann die Dateien aus der Applikationen in das neue Projekt zu kopieren. Oder es wird der gesamte Ordner aus der fertigen Applikation kopiert. Hier ist es nötig die Python-Laufzeitumgebung entsprechend anzupassen, da in unserem Falle mit einem Python Virtual Environment gearbeitet wird. Die Verzeichnisstruktur wird beim Erstellen des Projektes automatisch erzeugt, Hier ist es nur notwendig die HTML-Unterordner in _Templates_ und den static-Ordner in den Root-Folder der Applikation zu verschieben. Auf dem Webserver wurden die Dateien im root Verzeichnis unter ~/Antragsverwaltungstool abgelegt.
 
+=== Installation und Konfiguration von Django und Apache mit wsgi
 
+Um unsere Server passent einzurichten und zu Konfigutieren sind wir diesem Guide gefolgt. https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04 nachdem wir unser Projekt angelegt hatten haben wir die Erstellten dateien des neuen Projektes mit unseren ausgetauscht und danach nochmals die Befehle
+[source,linux terminal]
+--
+python3 ./manage.py makemigrations
+python3 ./manage.py migrate
+--
 
 === Konfiguration
 
 Zur Konfiguration muss einerseits im der _settings.py_ die IP-Adresse des Datenbankservers angegeben werden mit einer zusätzlichen Angabe des MySQL-Treibers. Da der Server auf der gleichen Maschine läuft, wurde _localhost_ verwendet. Dafür muss in der Datenbank nur ein Nutzer für die Applikation angelegt werden. Damit die Applikation unter Apache2 lauffähig ist muss https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/modwsgi/[_WSGI_] verwendet werden. Dazu benötigt der Webserver Berechtigungen um die Dateien der Applikation ausführen und lesen zu können.
 
+
+
 == Systembetreuung
 === Datensicherung und -wiederherstellung
 
 Die Daten des Webservers können nach Notwendigkeit regelmäßig gesichert werden. Es ist systemseitige keine automatische Sicherung der Daten vorhanden.
+
+=== Erreichbarkeit des Servers (Portfreigabe)
+
+Zur Kommunikation mit dem Webserver muss der Port 8000 über die Firewall geöffnet werden. Das geschieht mit dem Kommando "sudo ufw allow 8000". Dies ist leider eine "Bad Practice" da der Traffic eigentlich auch über Port 80 oder den http/tcp Port laufen könnte. Leider sind wir noch zu keiner Möglichkeit gekommen dies so zu realisieren. Selbige Umsetzung ist aus Sicherheitsgründen jedoch anzustreben. Der Port kann über "sudo ufw disallow 8000" wieder geschlossen werden.
+
+=== Neustart des Servers
+Der Django Server ist in einer Screen session im Hintergrund und wird bei einem Reboot des Haubtsrevers *Nicht* Automatisch gestartet. Der Start muss manuell ausgelöst werden.
+Sollte man den Server Starten wollen muss man sich über ssh auf den Server einlogen und unter dem Benutzer "django_admin" folgende Befehle eingeben:
+[source,linux terminal]
+--
+cd Antragsverwaltungstool
+screen ./Serverstart.sh
+--
+
+Danach gelangt man in eine screen session. Um aus dieser Herauszukommen um den Prozess in den Hintergrund zu bringen muss man die Tastenkombination *STRG+A* danach *D* drücken dann kommt man zurück zu der Linux konsole und kann sich beispielsweise mit "exit" abmelden. 
+
+Um den Serverprozess wieder in den Vordergrund zu bekommen benutzt man folgende befehle:
+[source,linux terminal]
+--
+screen -ls
+screen -r pts-2.antragsverwaltung 
+--
+
+:tip-caption: 💡
+[TIP]
+Sollte sich der Name der screen session ändern genügt es auch screen -r *TAB* zu drücken da der server gerade die einzige screen session sein sollte 
+
+=== Verwalten des Systems als Administrator
+
+==== Zugang und Rechte
+
+Der Administrator hat das alleinige Recht das Tool zu verwalten. Dieser besitzt eine seperaten Account mit allumfänglichen Rechten auf der Datenbank. Die Adminseite ist unter "141.56.51.110:8000/admin" zu erreichen. Hier können Datenbank Einträge angezeigt und bearbeitet bzw. gelöscht oder hinzugefügt werden. Dies sollte jedoch nur in Außnahemfällen genutzt werden.
+
+Sollte hier eine Antragsart nicht aufgelistet sein, sollte in der Datei _admin.py_ überprüft werden ob das zugehörige Model auch registriert ist. Die Anzeige der jeweiligen Datensätze der Antragsarten hängt von der __str__ Methode im jeweiligen Model ab. Diese sollte *unbedingt* bei Erstellung eines Models auf Korrektheit überprüft werden.
+
+Der Admin kann ebenfalls neue Benutzer und Benutzergruppen einrichten. Hier ist es zu empfehlen den entsprechenden Accounts nicht vollumfängliche Rechte einzuräumen sondern nur Lese- bzw. Schreibrechte zu erteilen, damit keine Manipulation der Daten Auftritt.

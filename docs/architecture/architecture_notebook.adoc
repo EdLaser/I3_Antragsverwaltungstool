@@ -10,18 +10,18 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Einschränkungen sow
 == Entwurfsziel und Philosophie 
 Das System stellt eine Webanwendung dar, welches das Einreichen sowie das Ver- und Bearbeiten von Anträgen vereinfachen und beschleunigen soll. Die Anwendung ist öffentlich zugänglich und muss daher parallel nutzbar sein. Das System soll von den Studenten der HTW (idR 4000-6000) genutzt werden, kann aber auch von Externen verwendet werden. Hier ist von einer simultanen Nutzung von 10-300 Studierenden auszugehen. Zusätzlich ist eine interne, nicht öffentliche Nutzung durch die Mitglieder des StuRa vorgesehen, um Anträge zu bearbeiten und zu prüfen.
 
-Die Aspekete der Prüfung sowie Bearbeitung von Anträgen sollen technisch abgebildet werden um den Aufwand zu verringern und das Bearbeiten zu beschleunigen. Da die verwendeten Endgeräte und ihre technische Anbindung (Hardware, Software, Eingabetechnik, Bandbreite etc.) nicht bekannt und einheitlich sind, ist diese Software browserbasiert, was sie im weitesten Sinne plattformunabhängig macht. 
+Die Aspekete der Prüfung sowie Bearbeitung von Anträgen sollen technisch abgebildet werden um den Aufwand zu verringern und das Bearbeiten zu beschleunigen. Da die verwendeten Endgeräte und ihre technische Anbindung (Hardware, Software, Eingabetechnik, Bandbreite etc.) nicht bekannt und nicht einheitlich sind, ist diese Software browserbasiert, was sie im weitesten Sinne plattformunabhängig macht. 
 
-Um das Stellen von Anträgen für erstmalige Nutzer zu erleichtern ist eine gute Bedienbarkeit notwendig. Es soll klar erkennbar sein welche Anträge stellbar sind und welche Informationen vom Antragssteller notwendig sind. Diese Bedienbarkeit soll durch eine klare Navigation und genaue möglichst einfache Darstellung der geforderten Informationen realsisiert werden.
+Um das Stellen von Anträgen für erstmalige Nutzer zu erleichtern ist eine gute Bedienbarkeit notwendig. Es soll klar erkennbar sein welche Anträge stellbar sind und welche Informationen vom Antragssteller notwendig sind. Diese Bedienbarkeit soll durch eine klare Navigation und  möglichst einfache Darstellung und eine genaue Beschreibung der geforderten Informationen realsisiert werden.
 
 Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden. Ebenfalls soll Platz für Erweiterungen geboten werden. Vorerst sind keine schnellen Änderungen der Software durch Add-ons oder neue Soft- sowie Hardware zu erwarten, dennoch ist hier eine einfache Erweiterung erstrebenswert.
 
 == Annahmen und Abhängigkeiten 
 === Annahmen
-* Der Nutzer besitzt stabile und ausreichende Internetanbindung
-* Die Webseite wird beim Nutzer korrekt dargestellt
-* Bei Anträgen auf Ressourcen oder zur Wahl als Gremiu im StuRa ist der Antragssteller selbst Mitglied im StuRa
-* Um den Antragsstatus anzusehen oder einen Änderungsantrag zu stellen, wurde im Vorhinein bereits ein Antrag gestellt
+* Der Nutzer besitzt einr stabile und ausreichende Internetanbindung
+* Die Webanwendung wird beim Nutzer korrekt dargestellt
+* Bei Anträgen auf Ressourcen oder zur Wahl als Gremium im StuRa ist der Antragssteller selbst Mitglied im StuRa
+* ##Um den Antragsstatus anzusehen oder einen Änderungsantrag zu stellen, wurde im Vorhinein bereits ein Antrag gestellt##
 * Zur Bearbeitung von Anträgen hat sich das Mitglied des StuRa im Tool mit zugewiesenem Login angemeldet
 * Server von Rechenzentrum / StuRa
 * Alle Technologien Open-Source, kein Closed-Source.
@@ -36,37 +36,37 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 *SWFA-2:* Das System muss alle Daten der Anträge persistent speichern.
 
 === Wartbarkeit (Supportability)
-*NFAS-1:* Das System soll die Möglichkeit bieten, später eine weitere Sprachen einbinden zu können.
+*NFAS-1:* Das System soll die Möglichkeit bieten, später eine weitere Sprache einbinden zu können.
 
 == Entscheidungen, Einschränkungen und Begründungen (Programmiersprachen ,Bibliotheken, Frameworks, DBS-Managementsystem usw + Begründung)
 . Generell ist nur das Nutzen von Open-Source Software vorgesehen.
-. Als Framework nutzen wir Django, da es uns viel lästige Arbeit bei der Datenverarbeitung abnimmt und uns das AUsliefern der HTML- sowie CSS- und JavaScript-Dateien deutlich erleichtert. Es folgt ebenfalss dem Model-View-Presenter Prinzip, wodurch wir eine klare Abgrenzung der einzelnen Aspekte des Systems erreichen. Dadurch steigert sich die Wartbarkeit und es können einzelne Teile geändert werden ohne, dass das System unbrauchbar wird.
-. HTML bildet die Grundlage des Aufbaus unserer Webseite.
-.  Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist.
-. Ebenfalls findet CSS bei uns Anwendung, da es zum Gestalten der Webseite unverzichtbar ist. Hier bedienen wir uns eines vorgefertigten Stylesheets von W3.
+. Als Framework nutzen wir Django, da es uns viel lästige Arbeit bei der Datenverarbeitung abnimmt und uns das Ausliefern der HTML- sowie CSS- und JavaScript-Dateien deutlich erleichtert. Es folgt ebenfalss dem Model-View-Presenter Prinzip, wodurch wir eine klare Abgrenzung der einzelnen Aspekte des Systems erreichen. Dadurch steigert sich die Wartbarkeit und es können einzelne Teile geändert werden ohne, dass das System unbrauchbar wird. Desweiteren is Django ein Open Source project, was den Anforderungen entspricht.
+. HTML bildet die Grundlage des Aufbaus unserer Webanwendung.
+. Wir nutzen Javascript, da es in Webapplikationen zur Nutzerinteraktion verbreitet ist & Vorwissen vorhanden ist.
+. Ebenfalls findet CSS bei uns Anwendung, da es zum Gestalten der Webseite unverzichtbar ist. Hier bedienen wir uns eines vorgefertigten Stylesheets von W3 School sowie eigenen Stylesheets um die Webanwenung an unsere bedrürfnisse anzupassen.
 . Um die Nutzereingaben serverseitig zu Bearbeiten, verwenden wir Python als gut verständliche und vielseitige Programmiersprache.
-. Als Webserver kommt Apache zum Einsatz, da er weit verbreitet und gut dokumentiert ist.
+. Als Webserver kommt Apache zum Einsatz, da er weit verbreitet und gut dokumentiert ist ebenfalls fällt er under die Open Source Licens und ist bei jeder gänigen Linux dirstibution einfach zu installieren und zu konfigurieren.
 . Wir verwenden die relationale Datenbank MySQL da wir die Anträge gut als Tabellenstruktur abbilden können.
 . PyMysql bildet den Treiber für die Datenverarbeitung zwischen dem Webserver und der Datenbank.
 
 == Architekturmechanismen (Technische Umsetzung die sich aus Anforderung ergibt, aus Anforderungen welche Technik ich brauche)
 . Wir haben in der Analyse festgestellt, das wir alle Daten zu einem Antrag persistent speichern müssen (*SFA-2*). Hier haben wir zwei Möglichkeiten erwägt selbiges technisch Umzusetzen. Zwischen der Speicherung in einer SQL-Datenbank oder als Textdatei im CSV-Format, haben wir uns für eine SQL-Datenbank entschieden, da wir unsere Anträge gut relationell abbilden können und wir durch vorhandenes Vorwissen in SQL einfacher Abfragen in der Datenbank formulieren und testen können. Wir haben uns in der Implementierung für eine MySQL-Datenbank entschieden da sie uns eine gut dokumentierte Open-Source-Lösung bietet.
 
-. Aus dem *SWFA-1* geht hervor, dass wir eine Nutzerverwaltung für die StuRa-Mitglieder benötigen. Hier haben wir die Möglichkeiten gesehen selbiges über direkt über Apache zu lösen und eine Access-Datei zu benutzen. Da wir keine weitere Registrierung benötigen und eine festgelegte Anzahl an Nutzerkonten haben, welche nicht auf einzelne Personen zugeschnitten sein muss, haben wir uns für die oben genannte Lösung entschieden.
+. Aus dem *SWFA-1* geht hervor, dass wir eine Nutzerverwaltung für die StuRa-Mitglieder benötigen. Hier haben wir die Möglichkeit eine von Django vorinstallierte Adminseite zu nutzen. Diese bietet uns viele Funktionen "out of the Box" wie eine Einfache login Verwaltung sowie das erstellen-/löschen von Benutzern sowie eine Aufteilung in "normale" Nutzer ohne Admininstrations rechten und Nutzern mit Administrationsrechten.
 
 
 == Abstraktion
 === *Typen / Daten die im Programm zur Laufzeit benötigt werden:*
 * Antragseingaben: Umfasst alle Eingaben des Nutzers in das Formular die keine persönlichen Informationen sind
-* Nutzerinformationen: Enthält alle Informationen zum Antragssteller (Umfasst Name, Vorname, E-Mail)
+* Nutzerinformationen: Enthält alle Informationen zum Antragssteller (Umfasst Name, E-Mail)
 * Antragsvorgaben: Umfasst nicht änderbare Texte im Antrag sowie das Datum zum Antrag
 * Sign-in: Informationen die einer Rolle den Login ermöglichen
 
 === *Services:*
-* Antrag anlegen: Die Nutzereingaben werden an das PHP-Skript übergeben und an das Python-Skript weitergereicht. Mit den Nutzereingaben wird ein Insert-Befehl in der Datenbank ausgeführt um eine neue Zeile anzulegen.
-* Antrag bearbeiten: Die gewünschten Änderungen des Antrags werden über einen Update-Befehl in der Datenbank geändert.
-* Antragssatus ändern: Das Flag des Antrags in der Tabelle wird über einen Update-Befehl in der Datenbank geändert.
-* Anmelden: Die eingegebenen Anmeldedaten werden, mit denen über einen Select-Befehl generierten, Daten aus der zum Login gespeicherten Daten abgeglichen und es wird ein entsprechendes Anmelden gewährleistet.
+* Antrag anlegen: Die Nutzereingaben werden an das python-Skript übergeben. Mit den Nutzereingaben wird ein Insert-Befehl in der Datenbank ausgeführt um eine neue Zeile anzulegen.
+* ##Antrag bearbeiten: Die gewünschten Änderungen des Antrags werden über einen Update-Befehl in der Datenbank geändert.##
+* ##Antragssatus ändern: Das Flag des Antrags in der Tabelle wird über einen Update-Befehl in der Datenbank geändert.##
+* ##Anmelden: Die eingegebenen Anmeldedaten werden, mit denen über einen Select-Befehl generierten, Daten aus der zum Login gespeicherten Daten abgeglichen und es wird ein entsprechendes Anmelden gewährleistet.##
 
 === *Workflos:*
 
@@ -99,4 +99,10 @@ Unsere Applikation folgt dem Model-View-Controller Prinzip. Hierbei findet eine 
 [plantuml, "diagrams/mvp", svg]
 ....
 include::diagrams/mvp.puml[]
+....
+
+.Komponentendiagram
+[plantuml, "diagrams/components", svg]
+....
+include::diagrams/components.puml[]
 ....

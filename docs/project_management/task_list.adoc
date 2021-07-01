@@ -220,7 +220,7 @@
 
 |31
 |Genaue Requirments mit Stura klären
-|#pending#
+|done
 |
 |04/05/06 
 |Ruben/Andreas/Richard/Tien
@@ -241,7 +241,7 @@
 
 |34
 |Login Realisieren
-|Done?
+|Done
 |
 |05
 |Richard
@@ -261,18 +261,39 @@
 |Ruben
 
 |37
-|[red]#Domain Modell#
-|
+|Domain Modell
+|done
 |
 |06
-|Jacob?
+|Jacob,Ruben
 
 |38
-|[red]#Dateien zum hochladen managen (Anlagen)#
+|Dateien zum hochladen managen (Anlagen)
+|done
 |
+|07/08
+|
+
+|39
+|Server beschaffen Stura
+|done
+|Paul/Clemens
+|07/08/09
+|
+
+|40
+|Analyse Dokumente überarbeiten (Vision,Use-Cases,ProjectPlan)
+|done
 |
 |07
+|Jacob,Andreas,Ruben
+
+
+
+|41
+|live test Stura
 |
-
-
+|
+|09
+|
 |===

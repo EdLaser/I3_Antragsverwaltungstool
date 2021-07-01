@@ -4,9 +4,10 @@
 | Datum
 
 | Beginn der Iteration | 14. Juni. 2021
-|#Übergabe unseres Projektes?# | -
+|#Übergabe unseres Projektes?# | folgt im Juli 06/07
 | Dokumenation prüfen | -
 | Bericht fertigstellen | -
+ | live test Stura mit Johann | 28. Juni
  | Ende der Iteration | 28. Juni. 2021
 |===
 

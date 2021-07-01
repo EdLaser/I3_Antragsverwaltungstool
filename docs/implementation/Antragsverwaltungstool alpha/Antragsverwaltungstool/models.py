@@ -64,6 +64,7 @@ class AdvisoryMember(models.Model):
             self.beschlusstext, self.beschlussgrund)
 
     def get_absolute_url(self):
+        """ Return the url of the model instance to get a hyperlink that leads directly to the application. """
         return f"/Antragsverwaltungstool/show_advisory/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
@@ -126,6 +127,7 @@ class Finance(models.Model):
             self.beschlusstext, self.beschlussgrund)
 
     def get_absolute_url(self):
+        """ Return the url of the model instance to get a hyperlink that leads directly to the application. """
         return f"/Antragsverwaltungstool/show_finance/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
@@ -197,6 +199,7 @@ class Position(models.Model):
             self.aenderung, self.mehrheit, self.beschluss, self.beschlusstext, self.beschlussgrund)
 
     def get_absolute_url(self):
+        """ Return the url of the model instance to get a hyperlink that leads directly to the application. """
         return f"/Antragsverwaltungstool/show_position/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
@@ -258,6 +261,7 @@ class Universall(models.Model):
             self.beschlussgrund)
 
     def get_absolute_url(self):
+        """ Return the url of the model instance to get a hyperlink that leads directly to the application. """
         return f"/Antragsverwaltungstool/show_universall/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
@@ -319,6 +323,7 @@ class Conduct(models.Model):
             self.beschlussgrund)
 
     def get_absolute_url(self):
+        """ Return the url of the model instance to get a hyperlink that leads directly to the application. """
         return f"/Antragsverwaltungstool/show_conduct/?antrag={self.number[:4]+'%2F'+self.number[5:]}"
 
 
@@ -327,13 +332,18 @@ class NumberCount(models.Model):
     Represents the ongoing number of the application.
     """
     number = models.CharField(max_length=15, primary_key=True)
+    """ Set the number filed of the table for the complete application number with length of 15. """
     legislature = models.CharField(max_length=7)
+    """ Set the number of the current legislature to a length of 7 """
     session = models.IntegerField()
+    """ Filed of the next session of the "plenum". """
     ongoing_number = models.IntegerField()
+    """ Field for the ongoing number across all applications. """
 
     class Meta:
         """ Sets the ordering for the model. """
         ordering = ['ongoing_number']
 
     def __str__(self):
+        """ Returns a string representation of the model for the admin site. """
         return '%s %s %s' % (self.legislature, self.session, self.ongoing_number)

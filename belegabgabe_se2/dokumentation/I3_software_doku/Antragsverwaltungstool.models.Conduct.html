@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Antragsverwaltungstool.models.Conduct : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header navbar-brand">
+          Antragsverwaltungstool
+          <a href="index.html">API Documentation</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="class"><code><code><a href="Antragsverwaltungstool.html">Antragsverwaltungstool</a></code>.<code><a href="Antragsverwaltungstool.models.html">models</a></code>.<code><a href="Antragsverwaltungstool.models.Conduct.html">Conduct</a></code></code></h1>
+        <div id="showPrivate">
+          <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+        </div>
+      </div>
+
+      <div class="categoryHeader">
+        class documentation
+      </div>
+
+      <div class="extrasDocstring">
+        <p><code><span class="py-keyword">class</span> <span class="py-defname">Conduct</span>(<span title="django.db.models.Model">models.Model</span>):</code></p>
+        <p><a href="classIndex.html#Antragsverwaltungstool.models.Conduct">View In Hierarchy</a></p>
+      </div>
+
+      <div class="moduleDocstring">
+        <div><p>Represents an application to establishe conduct with for special proceedures with variables containing all application data. This application may look like the universall one but must be seperated by the universall one. All variables are of type model.field with max lengths and the possibility to be null in the database.</p><p>Arguments: models.Model: Django uses models to represent classes to work with in the application, which are representing database tables.</p></div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id21">
+  
+  <tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#flag">flag</a></code></td>
+    <td><span>The current status of the application.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#number">number</a></code></td>
+    <td><span>Number of the application in the database (primary_key).</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#date">date</a></code></td>
+    <td><span>Date when the application is made.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#title">title</a></code></td>
+    <td><span>Title of the application.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#office">office</a></code></td>
+    <td><span>Office the application is pointed to.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#name">name</a></code></td>
+    <td><span>Name of the applicant.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#mail">mail</a></code></td>
+    <td><span>Email of the applicant.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#text">text</a></code></td>
+    <td><span>Text of the application.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#reason">reason</a></code></td>
+    <td><span>Reason why the application has been made.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#suggestion">suggestion</a></code></td>
+    <td><span>Suggestion what should be done after the applications is processed.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#anlagen">anlagen</a></code></td>
+    <td><span>Attachments to the entry.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#aenderung">aenderung</a></code></td>
+    <td><span>Possible changes of the application.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#mehrheit">mehrheit</a></code></td>
+    <td><span>The majority needed to pass the application.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#beschluss">beschluss</a></code></td>
+    <td><span>Decision done in the application.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#beschlusstext">beschlusstext</a></code></td>
+    <td><span>Text of the deciosion.</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#beschlussgrund">beschlussgrund</a></code></td>
+    <td><span>Reason for the deciosion.</span></td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="Antragsverwaltungstool.models.Conduct.Meta.html">Meta</a></code></td>
+    <td><span>Sets the ordering for the model.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__str__">__str__</a></code></td>
+    <td><span>Displays a string representation of the model Conduct for the admin class to call.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_absolute_url">get_absolute_url</a></code></td>
+    <td><span>Return the url of the model instance to get a hyperlink that leads directly to the application.</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.flag">
+    
+  </a>
+  <a name="flag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">flag</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>The current status of the application.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.number">
+    
+  </a>
+  <a name="number">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">number</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Number of the application in the database (primary_key).</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.date">
+    
+  </a>
+  <a name="date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">date</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Date when the application is made.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.title">
+    
+  </a>
+  <a name="title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">title</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Title of the application.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.office">
+    
+  </a>
+  <a name="office">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">office</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Office the application is pointed to.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">name</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Name of the applicant.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.mail">
+    
+  </a>
+  <a name="mail">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">mail</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Email of the applicant.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.text">
+    
+  </a>
+  <a name="text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">text</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Text of the application.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.reason">
+    
+  </a>
+  <a name="reason">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">reason</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Reason why the application has been made.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.suggestion">
+    
+  </a>
+  <a name="suggestion">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">suggestion</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Suggestion what should be done after the applications is processed.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.anlagen">
+    
+  </a>
+  <a name="anlagen">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">anlagen</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Attachments to the entry.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.aenderung">
+    
+  </a>
+  <a name="aenderung">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">aenderung</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Possible changes of the application.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.mehrheit">
+    
+  </a>
+  <a name="mehrheit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">mehrheit</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>The majority needed to pass the application.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.beschluss">
+    
+  </a>
+  <a name="beschluss">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">beschluss</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Decision done in the application.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.beschlusstext">
+    
+  </a>
+  <a name="beschlusstext">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">beschlusstext</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Text of the deciosion.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.beschlussgrund">
+    
+  </a>
+  <a name="beschlussgrund">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">beschlussgrund</span> =
+    
+  </div>
+  <div class="functionBody">
+    
+    
+    <div><p>Reason for the deciosion.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.__str__">
+    
+  </a>
+  <a name="__str__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__str__</span>(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Displays a string representation of the model Conduct for the admin class to call.</p><p>Retuns a string representation of the model with all the variables in it to display on the admin page.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="Antragsverwaltungstool.models.Conduct.get_absolute_url">
+    
+  </a>
+  <a name="get_absolute_url">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_absolute_url</span>(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return the url of the model instance to get a hyperlink that leads directly to the application.</p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for Antragsverwaltungstool, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 21.2.2 at 2021-07-01 21:48:38.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
