@@ -66,7 +66,7 @@ Zur Konfiguration muss einerseits im der _settings.py_ die IP-Adresse des Datenb
 Die Daten des Webservers können nach Notwendigkeit regelmäßig gesichert werden. Es ist systemseitige keine automatische Sicherung der Daten vorhanden.
 
 === Neustart des Servers
-der Django Server ist in einer Screen session im Hintergrund und wird bei einem Reboot des Haubtsrevers *Nicht* Automatisch gestartet. Das muss Manuell gemacht werden.
+Der Django Server ist in einer Screen session im Hintergrund und wird bei einem Reboot des Haubtsrevers *Nicht* Automatisch gestartet. Der Start muss manuell ausgelöst werden.
 Sollte man den Server Starten wollen muss man sich über ssh auf den Server einlogen und unter dem Benutzer "django_admin" folgende Befehle eingeben:
 [source,linux terminal]
 --
