@@ -102,6 +102,8 @@ Beispiel für einbinden eines CSS files das im Verzeichnis für CSS files abgele
 
 Durch das Framework verändert sich die Angabe von Pfaden wie im Oben gezeigten Beispiel. Das gilt auch für alle anderes Dateipfade die auf ein internes Script, Stylesheet oder eine Bildtatei verweisen sollen. Dabei ist der jeweils verwendete HTML Tag egal. Wenn man allerdings auf ein Externes Objekt verweist wie beispielweise auf eine andere Hompage dann kann der link "normal" eingefügt werden.
 Beispiel:
+
+.footer.html
 [source,html]
 <td><a href="https://www.w3schools.com/default.asp"><img src="{% static 'img/footer/W3.png' %} " alt = "W3 Logo"/><br>W3 schools</a></td>
 
@@ -110,6 +112,7 @@ Ausschnitt aus dem Footer. der link auf die Homepage von "W3 Schools" ist unver�
 === Java Script
 Java Script hat in dieser Webanwenung die Aufgabe Kontetnt auf wunsch des Benutzers ein- und Auszublenden das passiert mit umstylen der Aktuellen seite über CSS befehle.
 
+.myInputToggle.js
 [source,javascript]
 function togglecheck(toggleID1,radioID){
     var x = document.getElementById(toggleID1);
@@ -123,6 +126,7 @@ function togglecheck(toggleID1,radioID){
 Diese Funktion blendet ein <div> auf knopfdruck ein und aus. Wie im Antrag auf Stelle/Amt zu sehen,
 "toggleID1" ist die id des zu Stylenden divs und "radioID" ist die id des zu drückenden Buttons, hier eine Checkbox, die die Bedingung für den Style wechsel ist. Wenn ".checked" erfüllt ist soll "toggleID1" ausgeblendet werden. Wenn ".checked" nicht erfüllt ist soll "toggleID1" eingeblendet werden. Das ist auch der default fall.
 
+.myInputToggle.js
 [source,javascript]
 function togglecheck_stura(toggleID1,toggleID2,radioID){
     var x = document.getElementById(toggleID1);
@@ -138,6 +142,7 @@ function togglecheck_stura(toggleID1,toggleID2,radioID){
 
 Diese Funktion macht genau das selbe wie die Obrige Funktion "togglecheck()" nur hat diese noch dein zusatzparameter "toggleID2". Beim Ausführen der Funkton wird ein <div id = "toggleID1"> ausgeblendet (umgestylt) und ein anderes <div id = "toggleID2"> sichtbar gemacht (umgestylt)
 
+.myInputToggle.js
 [source,javascript]
 function mytoggleinputs(f) {
     var Sin = document.getElementById("Sin").value;     //Stellen Input
@@ -153,6 +158,7 @@ function mytoggleinputs(f) {
 
 Auch diese Funktion arbeitet "togglecheck()" nur das hier nicht ewtwas ne displayt wird sondern die Sichtbarkeit verändert wird. Das passiert wenn man bei den Anträgen "Zuständige Stelle wählen:" auf den Reiter "Eigene" drückt. Das Dropdownmenu hat die id "Sin" und "f" ist das Objekt dessen sichtbarkeit Manipuliert wird. in "Sin" steht das Value welches der Benutzer ausgewählt hat wenn dieses Value gleich 18 (das ist das Value für den "Eigene" reiter) ist dann wird das zu Manipulierende Objekt sichtbar gestylt und wenn es ungleich 18 ist dann bleibt es weiterhin unsichtbar.
 
+.toggledisplay.js
 [source,javascript]
 function toggledisplay(f){
     var x = document.getElementById(f);
@@ -184,3 +190,26 @@ Die generelle Logik der Sheetaufteilung
 * index, intern
 ** Spezifische Styls für die jeweiligen Seiten "Index(Home)" und "Intern"
 
+Im weiteren werden nur die wichtigsten styleelemente genauer beschrieben da es sich um gewöhnliches css styling handelt
+
+.mainstyle.css
+[source,css]
+body{
+    background: gainsboro;
+    font-family: Verdana, sans-serif;
+}
+.sturalogo{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+Style des <body> tags mit einer Hintergrundfarbe und einer Schriftart die nach dem include des css files in das HTML Dokument einen einheitlichen style der verschiedenen Seiten gewährleistet. Genau wie der <body> tag wurde eine Klasse mit dem Namen "sturalogo" erstellt und an ein <div> gebunden mit <div class="sturalogo"> dies stellt den Style des Tool logos das das auf jeder Seite der Anwendung links oben gefunden werden kann. Das "margin" Atribut beschreibt den Abstand des Objektes von einem Anderen Objekt bzw. Abstand zum Bildschirm-/Fensterrand.
+
+:tip-caption: 💡
+[TIP]
+Beim stylen von CSS kann man einem <tag> eine Klasse <tag class="myclass"> eine ID <tag id="myid"> geben. Es ist ebenfalls möglich einem <tag> beides zu geben <tag class="myclass" id="myid"> sowie mehrere Klassen und IDs <tag class="myclass1 myclass2" id="myid1 myid2">
+
+
+:warning-caption: ❗
+WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie beispielsweise das in der Navigationsleiste mit der "id="active" gemacht wurde dann gilt es zu beachten das diese id *NICHT* in einem Java Script verwerwendet wird.
