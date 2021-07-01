@@ -73,7 +73,7 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 == Architektonische Sichten
 
 === Logische Sicht
-In unserer logischen Schicht betrachten wir die einzelnen Komponenten des Systems. Der Webserver bildet die Grundlagen für die Darstellung der Webseite. Hier liegen alle HTML- sowie CSS- und Skriptdateien (Python, JavaScript, PHP). Über Skripte kommuniziert der Webserver mit der Datenbank indem Abfragen auf der Datenbank ausgeführt werden.
+In unserer logischen Schicht betrachten wir die einzelnen Komponenten des Systems. Die Anwednung besteht zum einen Teil aus einer Django-Applikation. Diese ist, nach dem MVC Prinzip, in mehrere Teile gegliedert. Hier finden wir als Hauptbestandteile die _views.py_, die _models.py_ und die _urls.py_.
 
 .logische Sicht
 [plantuml, "diagrams/logical", svg]
@@ -92,10 +92,10 @@ include::diagrams/physical.puml[]
 
 === Architektur-Framework
 
-==== Model-View-Presenter
+==== Model-View-Controller
 Unsere Applikation folgt dem Model-View-Controller Prinzip. Hierbei findet eine klare Abgrenzung zwischen den einzelnen Funktionalitäten der Software statt. Hier repäsentiert unser Model die Tabellenstruktur der einzelnen Tabellen mit ihrem Spalten. Die View nimmt Anfragen entgegen und rendert den Inhalt der HTML-Dateien über den Webbrowser.
 
-.Model-View-Presenter
+.Model-View-Controller
 [plantuml, "diagrams/mvp", svg]
 ....
 include::diagrams/mvp.puml[]
