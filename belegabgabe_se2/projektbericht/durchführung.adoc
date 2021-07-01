@@ -12,7 +12,7 @@ Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vol
 
 ==== Anforderungserhebung und -analyse
 
-Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens aber Professoren und HTW Studten, verschiedene Arten von Anträgen beim StuRa der HTW-Dresden einreichen können. Das sollte sehr einfach funktionieren so das die Bedinung leicht ist und gut verständlich ist. Desweiteren soll das zu entwickelnde Tool auch die möglichkeit haben die verschieden eingereichten Anträge wieder in einer Listenform anzuzeigen. Zudem soll eine Bearbeitungs möglichkeit für StuRa Mitglieder geschaffen werden. Also ein Tool für das Einrechen und Bearbeiten von StuRa Anträgen war gefordert.
+Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens aber Professoren und HTW Studeten, verschiedene Arten von Anträgen beim StuRa der HTW-Dresden einreichen können. Das sollte sehr einfach funktionieren so das die Bedinung leicht ist und gut verständlich ist. Desweiteren soll das zu entwickelnde Tool auch die möglichkeit haben die verschieden eingereichten Anträge wieder in einer Listenform anzuzeigen. Zudem soll eine Bearbeitungs möglichkeit für StuRa Mitglieder geschaffen werden. Also ein Tool für das Einrechen und Bearbeiten von StuRa Anträgen war gefordert.
 
 Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal unseren wissenstand und Fragten nach Änderungen.
 
@@ -38,6 +38,11 @@ Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 |===
 
 == Elaboration Phase Ausarbeitungsphase
+
+=== Hautpaktivitäten
+==== Anforderungserhebung und -analyse
+
+Nach der Groben Richtung und der Erörterung der Domäne, sowie des Fachlichen Problems der Aufgabenstellung, führten wir Zahlreiche Meetings mit den Auftraggebern durch. Hier 
 
 == Construction Phase Konstruktionsphase
 
