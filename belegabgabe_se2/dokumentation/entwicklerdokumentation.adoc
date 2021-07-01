@@ -54,21 +54,22 @@ Die Webanwendung liest und schreibt auf der Datenbank.
 === Verwendete Sprachen
 * HTML (Hypertext Markup Language)
 * CSS (Cascading Style Sheets)
-* Java Script
+* js (Java Script)
+* py (Python)
 
 === Verzeichnisstruktur
 .Antragsverwaltungstool (Hauptverzeichnis in der die gesammte Webanwendung und das Django Framework liegt)
 image::Ordnerstruktur.jpg[]
 
 ==== HTML
-Als basis für unser System soll eine Webanwendung dienen. Diese hat den Vorteil das diese von jedem Moderenen Browser der HTML 5.0 oder neuer beherscht dargestellt werden kann. Getestet wurde Sie mit den gänigsten Browsern
+Als Basis für unser System soll eine Webanwendung dienen. Diese hat den Vorteil das diese von jedem moderenen Browser der HTML 5.0 oder neuer unterstützt dargestellt werden kann. Getestet wurde sie mit den gänigsten Browsern
 
 * Google Chrome (V. 91.0.4472.114)
 * Safari (V. 14.0.3)
 * Microsoft Edge (V. 91.0.864.59)
 * Mozilla Firefox (V. 89.0.2)
 
-Die Webanwendung wurde ohne einen Baukasten erstellt sondern selbst gecodet mit zuhilfenahme eines Vordefinierten Stylesheets von W3-Schools mit Vordefinierten Fraben, Animationen, etc.
+Die Webanwendung wurde ohne einen Baukasten erstellt sondern selbst gecodet unter zuhilfenahme eines Vordefinierten Stylesheets von W3-Schools (W3.css) mit Vordefinierten Fraben, Animationen, etc.
 
 === HTML Code grundaufbau
 Jedes File hat immer den gleichen aufbau: 
@@ -267,7 +268,7 @@ WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie bei
     display: block;
 }
 
-.dropdown-content {                     
+.dropdown-content {                     /*Style des Dropdowns der Navigationsleiste*/
     display: none;
     position: absolute;
     background-color: #333;
@@ -275,3 +276,31 @@ WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie bei
     z-index: 1;
 }
 --
+
+:tip-caption: 💡
+[TIP]
+Das Stylen von <tags> in  CSS bewerkstelligt man in dem man den Namen des <tags> in das Stylesheet oder den <style></style> tag direkt im HTML File scheibt. Beispiel: der oben gezeigte body tag. eine Klasse wird mit einem .Klassennamen und eine ID mit #IDname gestylt. Beislpiele hier: .mainnav oder #active. Ebenso ist es möglich wenn eine Klasse oder ID einen Bereich umspannt beispielsweise mit einem <div> tag das man innerhalb dieser Klasse oder ID einen tag stylt. Damit kann man Klassen und ID Namen sparen, bzw. erhält mehr übersicht. Beispiel hier: .mainnav(Klassenname) a(der link tag). Damit stylt man den <a> tag nur innerhalb der Klasse mainnav.
+
+:warning-caption: ❗
+WARNING: Das File W3.css ist von eine Library der Seite W3 Schools (https://www.w3schools.com/default.asp) welche ich auf grund der Verfügbarkeit Kopiert habe. Für nähere Informationen und Anwendung der verschieden Klassen, Animationen, Farben, etc. Kann unter https://www.w3schools.com/w3css/defaulT.asp genauer nachgelesen werden. Dort findet man Erklärungen und Anwendungs Tutorials.
+
+=== Texte
+
+Die verschiedenen Texte der Webanwendung wie beispielsweise auf der Homeseite oder die Texte der Mouseovers in den Anträgen sowie die verschieden Fragen wurden nicht in die Verschieden Files geschrieben sondern ausgelagert. Damit bietet sich der Vorteil das die Texte schnell und einfach Angepasst werden können. Die Technik dahinter ist eine Java Script datei die einen String beinhaltet welcher dann ausgegeben wird.
+
+.email.js
+[source,javascript]
+--
+var text = 'Bei möglichkeit die HTW-Mail verwenden (sXXXXX@htw-dresden.de)';
+
+    document.writeln(text);
+--
+
+:tip-caption: 💡
+[TIP]
+Wenn der Text zu lang ist das er den Rahmen einer Zeile sprent kann der Text wie in Java gesplittet werden. Beispiel wäre der Text aus dem financestext.js im text Verzeichnis unter index
+
+:tip-caption: 💡
+[TIP]
+In den 'String' des Text-Java Scrips kann Problemlos auch HTML code untergebracht werden. Beispiel wäre der Text aus dem welcometext.js im text Verzeichnis unter index
+
