@@ -86,3 +86,9 @@ screen -r pts-2.antragsverwaltung
 :tip-caption: 💡
 [TIP]
 Sollte sich der Name der screen session ändern genügt es auch screen -r *TAB* zu drücken da der server gerade die einzige screen session sein sollte 
+
+=== Verwalten des Systems als Administrator
+
+==== Zugang und Rechte
+
+Der Administrator hat das alleinige Recht das Tool zu verwalten.
