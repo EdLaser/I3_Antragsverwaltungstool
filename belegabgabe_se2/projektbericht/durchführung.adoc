@@ -16,23 +16,25 @@ Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens 
 
 Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal unseren wissenstand und Fragten nach Änderungen.
 
-[cols=3*,options=header]
+[cols=2*,options=header]
 |===
 
 |Problemstellung
 |Analyse
-|Implementierte Lösung
 
 |Einfache Bedinbarkeit
 |Verwendung von HTML Formularen
-|Verwendung simpler <input>,<textarea> und <select> tags die in HTML seit langem Standard sind
 
 |verschiedene Antragsarten
 |die verschiedenen Antragsarten die der StuRa implementiert haben möchte erkennen und von Antragsformularen für die Händische Ausfüllung in einfache HTML Formulare umwandeln
-|Abbilden der StuRa internen Antragsvorlage für die gewünschten Anträge 
 
 |Ausgabe der eingereichten Anträge in Listenform
 |Eigene HTML seite die als Übersicht der Einzelen Anträge dienen soll 
+
+|Bearbeitungs möglichkeit für StuRa Mitglieder
+|Verwendung eines Login systems der Verschiedene Funktionen sperrt oder zugänlich macht
+
+|Bearbeitung der eingereichten Anträge
 |
 
 |===
