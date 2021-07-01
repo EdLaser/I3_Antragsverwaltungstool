@@ -1,9 +1,4 @@
-= Test Cases: {project-name}
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
-{mail}
-// Platzhalter für weitere Dokumenten-Attribute
-
+= Test Cases
 
 == Allgemeine Informationen
 === allgemeine Funktionstests:
