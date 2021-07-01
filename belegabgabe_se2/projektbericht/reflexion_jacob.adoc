@@ -1,23 +1,21 @@
 = Reflexion Jacob
 
 == Was habe ich gelernt?
-Ich habe gelernt, was so alles hinter der Entwicklung von komplexen Software Systemen steht und wie viele verschiedene Aufgabenbereiche es bei solch einem Projekt eigentlich gibt. Ohne ein gut organisiertes Team mit einem klaren Plan würde man nie in absehbarer Zeit zu einem guten Ergebnis kommen können. Selbst ein anfänglich leicht erscheinendes Projekt wird später wahrscheinlich zu einer Herausforderung werden. Es können jederzeit unvorhergesehene Probleme oder Hürden auftreten, weshalb man im Idealfall auch auf diese vorbereitet sein sollte. Vor allem ist auch ein guter 
+Ich habe gelernt, was so alles hinter der Entwicklung von komplexen Software Systemen steht und wie viele verschiedene Aufgabenbereiche es bei solch einem Projekt eigentlich gibt. Ohne ein gut organisiertes Team mit einem klaren Plan würde man nie in absehbarer Zeit zu einem guten Ergebnis kommen können. Selbst ein anfänglich leicht erscheinendes Projekt wird später wahrscheinlich zu einer Herausforderung werden. Es können jederzeit unvorhergesehene Probleme oder Hürden auftreten, weshalb man im Idealfall auch auf diese vorbereitet sein sollte. Ein Beispiel dafür ist die starke Verzögerung bei der Bereitstellung des Servers für unser Tool.
+
+Vor allem ist auch ein gut geschriebener Projektplan mit konkreten Anforderungen notwendig. Unser Team hat z.B. den Fehler gemacht die "Anforderung" Tagesordnung nicht gut genug mit dem Themensteller (StuRa) abzusprechen, weshalb wir unnötig Zeit in Planung und Entwurf investiert haben, obwohl diese Funktion später wieder verworfen werden musste.
 
 == Worauf bin ich stolz?
 Auf mein Team und das Ergebnis, das wir erreicht haben.
-Trotz einiger unvorhergesehener Hindernisse haben wir meiner Meinung nach viel erreicht und eine solide Basis geschaffen, auf welcher nächstes Semester auch noch ein weiteres Team aufbauen kann.
+Trotz einiger unvorhergesehener Hindernisse haben wir meiner Meinung nach viel erreicht und eine solide Basis geschaffen, auf welcher nächstes Semester auch noch ein weiteres Team aufbauen kann. Auch wenn wir nicht alle ursprünglich geplanten use-cases realisieren konnten, so ist doch ein sehr nützliches Tool entstanden, dass dem StuRa in Zukunft viel Arbeit ersparen/erleichtern wird.
 
 == Was hat gut funkioniert?
-Die regelmäßigen Treffen zu Besprechungen fanden immer statt. Dies hat dafür gesorgt, dass neue Probleme schnell und rechtzeitig geklärt werden konnten.
-Außerdem wussten so auch immer alle Teammitglieder, welchen Dingen sie aktuell nachgehen sollten.
+Die regelmäßigen Treffen zu Besprechungen fanden immer statt. Fast nie hat ein Teammitglied gefehlt (und falls doch hat derjenige bereits vorher Bescheid gegeben). Dies hat dafür gesorgt, dass neue Aufgaben und Probleme schnell und rechtzeitig geklärt werden konnten. Außerdem wussten so auch immer alle Teammitglieder, welchen tasks sie aktuell nachgehen mussten.
+Bei zusätzlichem Bedarf für Absprachen konnten immer schnell und flexibel weitere Besprechungstermine vereinbart werden.
+Jedes Teammitglied hat seine Aufgaben wichtig genommen und sich nicht auf der Arbeit der Anderen ausgeruht, wodurch wir auch immer gut in unserem Zeitplan bleiben konnten. 
+
 
 == Was würde ich beim nächsten Projekt anders machen?
-
-
-////
-Hauptaktivitäten Anforderungserhebung und -analyse:
--Besprechungen mit Kunde
--Präsentation bisheriger Designentwürde/Prototypen -> Sicherheit, dass an den richtigen Stellen gearbeitet wird
--Überarbeitung der Modelle/Vision
--
-////
+Ich hätte gern auch noch andere Rollen besser kennengelernt. Vor allem bei der Implementierung würde ich beim nächsten Mal gern mitwirken und tiefere Einblicke gewinnen.
+Außerdem würde ich mir noch mehr Mühe geben rechtzeitig für eine Testumgebung zu sorgen, da wir leider durch die starke Verzögerung bei der Severbereitstellung viel Zeit zum Testen verloren haben.
+Selten ist es auch vorgekommen, dass eine Aufgabe kurzzeitig unter den Tisch gefallen ist, weil jeder dachte, dass sie ein anderer bearbeitet. Deshalb würde ich beim nächsten Projekt gern noch mehr mit GitHub issues arbeiten wollen.
