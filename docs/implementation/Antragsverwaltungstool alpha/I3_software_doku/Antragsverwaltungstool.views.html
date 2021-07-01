@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Antragsverwaltungstool.views : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header navbar-brand">
+          Antragsverwaltungstool
+          <a href="index.html">API Documentation</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="module"><code><code><a href="Antragsverwaltungstool.html">Antragsverwaltungstool</a></code>.<code><a href="Antragsverwaltungstool.views.html">views</a></code></code></h1>
+        <div id="showPrivate">
+          <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+        </div>
+      </div>
+
+      <div class="categoryHeader">
+        module documentation
+      </div>
+
+      <div class="extrasDocstring">
+        
+        <p></p>
+      </div>
+
+      <div class="moduleDocstring">
+        <div><p>Sets the views handling the requests mapped by the urls.py.</p></div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id26">
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#index">index</a></code></td>
+    <td><span>Return a HttpResponse with the index.html file when calling the website</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#finance">finance</a></code></td>
+    <td><span>Return a HttpResponse with the finance.html file when calling / not used</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#universally">universally</a></code></td>
+    <td><span>Return a HttpResponse with the universally.html file when calling / not used</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#election">election</a></code></td>
+    <td><span>Return a HttpResponse with the election_report.html file when calling / not used</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#advisory">advisory</a></code></td>
+    <td><span>Return a HttpResponse with the advisory_member.html file when calling / not used</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#intern">intern</a></code></td>
+    <td><span>Return a HttpResponse with the intern.html file when calling / not used</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#all_tuesdays">all_tuesdays</a></code></td>
+    <td><span>Generates a hash of all tuedays of the year.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#generate_number">generate_number</a></code></td>
+    <td><span>Generates the number-&gt;primary key for the application.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#new_universall">new_universall</a></code></td>
+    <td><span>Add a new universall application to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#new_finance">new_finance</a></code></td>
+    <td><span>Add a new financial application to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#new_advisory">new_advisory</a></code></td>
+    <td><span>Add a application to be voted as a advisory member to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#new_position">new_position</a></code></td>
+    <td><span>Add a application to be voted as a special position to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#new_conduct">new_conduct</a></code></td>
+    <td><span>Add a new establishind conduct application to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_all_by_electioninput">get_all_by_electioninput</a></code></td>
+    <td><span>Display the intern.html site (GET-Request) or get all the applications directed to one office put the output on the page.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#common_change">common_change</a></code></td>
+    <td><span>Generates all the common changes that are always repeated to a given objects.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#change_universall">change_universall</a></code></td>
+    <td><span>Changes an universall application by the variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#change_advisory">change_advisory</a></code></td>
+    <td><span>Changes an advisory member application by the variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#change_position">change_position</a></code></td>
+    <td><span>Changes an position application by the given variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#change_finance">change_finance</a></code></td>
+    <td><span>Changes an finance application by the given variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#change_conduct">change_conduct</a></code></td>
+    <td><span>Changes an conduct application by the variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.index">
+    
+  </a>
+  <a name="index">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">index</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return a HttpResponse with the index.html file when calling the website</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.finance">
+    
+  </a>
+  <a name="finance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">finance</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return a HttpResponse with the finance.html file when calling / not used</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.universally">
+    
+  </a>
+  <a name="universally">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">universally</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return a HttpResponse with the universally.html file when calling / not used</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.election">
+    
+  </a>
+  <a name="election">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">election</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return a HttpResponse with the election_report.html file when calling / not used</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.advisory">
+    
+  </a>
+  <a name="advisory">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">advisory</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return a HttpResponse with the advisory_member.html file when calling / not used</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.intern">
+    
+  </a>
+  <a name="intern">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">intern</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Return a HttpResponse with the intern.html file when calling / not used</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.all_tuesdays">
+    
+  </a>
+  <a name="all_tuesdays">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">all_tuesdays</span>(year, month, day):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Generates a hash of all tuedays of the year.</p><p>Arguments: year (int): The year the calculation is applied for month (int): Month which marks the start of the calculation. day (int): Day of the month to start with.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.generate_number">
+    
+  </a>
+  <a name="generate_number">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">generate_number</span>():
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Generates the number-&gt;primary key for the application.</p><p>Generates the numberof the application based on the current date. Therefore a hash of all tuesdays of the year is used. The function iterates through all the tuesdays in the hash and compares the current date with the current index and the next index to see where the current date is fitting in. Also the function uses a number of the NumberCount model to determine what is the latest application made.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.new_universall">
+    
+  </a>
+  <a name="new_universall">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">new_universall</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Add a new universall application to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration. on which file to be rendered</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.new_finance">
+    
+  </a>
+  <a name="new_finance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">new_finance</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Add a new financial application to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration on which file to be rendered.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.new_advisory">
+    
+  </a>
+  <a name="new_advisory">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">new_advisory</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Add a application to be voted as a advisory member to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration on which file to be rendered.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.new_position">
+    
+  </a>
+  <a name="new_position">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">new_position</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Add a application to be voted as a special position to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration on which file to be rendered.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.new_conduct">
+    
+  </a>
+  <a name="new_conduct">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">new_conduct</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Add a new establishind conduct application to the database, with the variables extracted out of the post request and the flag 0 for "application arrived".</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration. on which file to be rendered</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.get_all_by_electioninput">
+    
+  </a>
+  <a name="get_all_by_electioninput">
+    
+  </a>
+  <div class="functionHeader">
+    @login_required(login_url='login')<br />
+    <span class="py-keyword">def</span> <span class="py-defname">get_all_by_electioninput</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Display the intern.html site (GET-Request) or get all the applications directed to one office put the output on the page.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration on which file to be rendered (GET) or the request to display all the applications (POST).</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.common_change">
+    
+  </a>
+  <a name="common_change">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">common_change</span>(request, object_change, number):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Generates all the common changes that are always repeated to a given objects.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration, POST.</p><p>object_change(model object): THe object that needs to be changed by the function.</p><p>number(string): The number of the application.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.change_universall">
+    
+  </a>
+  <a name="change_universall">
+    
+  </a>
+  <div class="functionHeader">
+    @login_required(login_url='login')<br />
+    <span class="py-keyword">def</span> <span class="py-defname">change_universall</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes an universall application by the variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration, to either get the application, or to POST the data and save it to the database.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.change_advisory">
+    
+  </a>
+  <a name="change_advisory">
+    
+  </a>
+  <div class="functionHeader">
+    @login_required(login_url='login')<br />
+    <span class="py-keyword">def</span> <span class="py-defname">change_advisory</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes an advisory member application by the variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration, to either get the application, or to POST the data and save it to the database.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.change_position">
+    
+  </a>
+  <a name="change_position">
+    
+  </a>
+  <div class="functionHeader">
+    @login_required(login_url='login')<br />
+    <span class="py-keyword">def</span> <span class="py-defname">change_position</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes an position application by the given variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration, to either get the application, or to POST the data and save it to the database.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.change_finance">
+    
+  </a>
+  <a name="change_finance">
+    
+  </a>
+  <div class="functionHeader">
+    @login_required(login_url='login')<br />
+    <span class="py-keyword">def</span> <span class="py-defname">change_finance</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes an finance application by the given variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration, to either get the application, or to POST the data and save it to the database.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="Antragsverwaltungstool.views.change_conduct">
+    
+  </a>
+  <a name="change_conduct">
+    
+  </a>
+  <div class="functionHeader">
+    @login_required(login_url='login')<br />
+    <span class="py-keyword">def</span> <span class="py-defname">change_conduct</span>(request):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes an conduct application by the variables of the POST-Request. ALl the parameters of the object are rendered onto the page before.</p><p>Arguments: request(WSGIRequest): The request given to the view by the url configuration, to either get the application, or to POST the data and save it to the database.</p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for Antragsverwaltungstool, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 21.2.2 at 2021-07-01 21:48:38.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="Moved files for visibility">
-      <change beforePath="$PROJECT_DIR$/../../../belegabgabe_se2/dokumentation/betriebsdokumentation.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../belegabgabe_se2/dokumentation/betriebsdokumentation.adoc" afterDir="false" />
+    <list default="true" id="ccda976c-1cfd-4029-93de-31b29d36cd30" name="Default Changelist" comment="added links to numbers">
+      <change beforePath="$PROJECT_DIR$/../../architecture/images/diagrams/logical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../architecture/images/diagrams/pyhsical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django_tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_tool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Antragsverwaltungstool/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Antragsverwaltungstool/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,23 +46,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Antragsverwaltungstool" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\Antragsverwaltungstool" />
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\Antragsverwaltungstool\static\js" />
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\Antragsverwaltungstool\static" />
       <recent name="F:\Uni\Django_test\templates\forms" />
       <recent name="F:\Uni\Django_test\atool\static\css" />
-      <recent name="F:\Uni\Django_test\templates" />
-      <recent name="F:\Uni\Django_test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\templates\old" />
-      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\templates" />
-      <recent name="F:\Uni\Django_test\templates\stat_html" />
-      <recent name="F:\Uni\Django_test\atool\static\css" />
-      <recent name="F:\Uni\Django_test\atool" />
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\Antragsverwaltungstool\static\css" />
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\templates\registration" />
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\templates\stat_html" />
+      <recent name="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\Antragsverwaltungstool\static\img\footer" />
     </key>
   </component>
   <component name="RunManager">
@@ -69,6 +73,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Django_AT.settings" />
       </envs>
       <option name="SDK_HOME" value="C:\Uni\GitHub\Antragsverwaltungstool\docs\implementation\Django_test\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -123,231 +128,30 @@
       <workItem from="1624301707067" duration="146000" />
       <workItem from="1624376543151" duration="45000" />
       <workItem from="1624376597837" duration="7008000" />
-      <workItem from="1624448841842" duration="1195000" />
-    </task>
-    <task id="LOCAL-00001" summary="Setup HTML Forms for Django">
-      <created>1623658172021</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1623658172021</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added the 4th question for advisorymember in model">
-      <created>1623658200407</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1623658200407</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Changed routing for new views">
-      <created>1623658229866</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1623658229866</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added all applications and getting applications by categorie">
-      <created>1623658276838</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1623658276838</updated>
-    </task>
-    <task id="LOCAL-00005" summary="migration of advisorymember model change">
-      <created>1623658303635</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1623658303635</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added new application through admin site">
-      <created>1623833625116</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833625116</updated>
-    </task>
-    <task id="LOCAL-00007" summary="view for changing universallm application">
-      <created>1623833641734</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833641734</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added url for changing universall">
-      <created>1623833651544</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833651544</updated>
-    </task>
-    <task id="LOCAL-00009" summary="changed ínput names according to front end designer">
-      <created>1623833673513</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833673513</updated>
-    </task>
-    <task id="LOCAL-00010" summary="changed database IP">
-      <created>1623833685280</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833685280</updated>
-    </task>
-    <task id="LOCAL-00011" summary="changed intern to always display application variants">
-      <created>1623833712391</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833712391</updated>
-    </task>
-    <task id="LOCAL-00012" summary="html form to get an application (unused)">
-      <created>1623833735175</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833735175</updated>
-    </task>
-    <task id="LOCAL-00013" summary="changed models __str__ to display correctly on admin">
-      <created>1623833759286</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833759286</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added block to be rendered when changing application">
-      <created>1623833781371</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833781371</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added templates for changing applications">
-      <created>1623833796746</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1623833796746</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Debuged string representation in Advisory Model">
-      <created>1624029540642</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1624029540642</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Removed space in django dunction to regualte to display placeholder">
-      <created>1624029564911</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1624029564911</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Changed one placeholder to correct context">
-      <created>1624029590104</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1624029590104</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added if clause to hide confirmation button when object is edited">
-      <created>1624029640119</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1624029640119</updated>
-    </task>
-    <task id="LOCAL-00020" summary="added the object number to display in the number field">
-      <created>1624029680380</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1624029680380</updated>
-    </task>
-    <task id="LOCAL-00021" summary="ADded all urls for changing objects">
-      <created>1624031347628</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031347628</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Added urls to href the html files to change objects">
-      <created>1624031395478</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031395478</updated>
-    </task>
-    <task id="LOCAL-00023" summary="created change_finance to extend finance.html">
-      <created>1624031414961</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031414961</updated>
-    </task>
-    <task id="LOCAL-00024" summary="created change_position to extend election_report.html">
-      <created>1624031434599</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031434599</updated>
-    </task>
-    <task id="LOCAL-00025" summary="added statement to hide absenden button when object is beeing edited">
-      <created>1624031473894</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031473894</updated>
-    </task>
-    <task id="LOCAL-00026" summary="modified election_report.html to show object elements">
-      <created>1624031494799</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031494799</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added if statement to hide absenden button when object is displayed">
-      <created>1624031518599</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031518599</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Added all statements to display object in finance.html">
-      <created>1624031541991</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031541991</updated>
-    </task>
-    <task id="LOCAL-00029" summary="new views for changing all objects">
-      <created>1624031570329</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1624031570329</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Created templates for login in and out">
-      <created>1624268063867</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1624268063867</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Added intern_out.html template">
-      <created>1624268084556</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1624268084556</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Changed index to display username and logout button">
-      <created>1624268101163</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1624268101163</updated>
+      <workItem from="1624448841842" duration="5199000" />
+      <workItem from="1624517818083" duration="12216000" />
+      <workItem from="1624555651494" duration="8091000" />
+      <workItem from="1624646713235" duration="1155000" />
+      <workItem from="1624881929843" duration="463000" />
+      <workItem from="1624895387940" duration="144000" />
+      <workItem from="1624909798850" duration="320000" />
+      <workItem from="1624957794063" duration="6111000" />
+      <workItem from="1624968148972" duration="3916000" />
+      <workItem from="1624976618220" duration="9776000" />
+      <workItem from="1625001526274" duration="2027000" />
+      <workItem from="1625038492945" duration="6349000" />
+      <workItem from="1625044874590" duration="17000" />
+      <workItem from="1625045832931" duration="184000" />
+      <workItem from="1625046039856" duration="502000" />
+      <workItem from="1625047016365" duration="983000" />
+      <workItem from="1625048079530" duration="269000" />
+      <workItem from="1625063195598" duration="53000" />
+      <workItem from="1625063500265" duration="370000" />
+      <workItem from="1625064328597" duration="3660000" />
+      <workItem from="1625068709425" duration="3659000" />
+      <workItem from="1625125186376" duration="797000" />
+      <workItem from="1625130889290" duration="26000" />
+      <workItem from="1625131959711" duration="23000" />
     </task>
     <task id="LOCAL-00033" summary="Added functions for common application processing for less code">
       <created>1624268138377</created>
@@ -440,7 +244,259 @@
       <option name="project" value="LOCAL" />
       <updated>1624383558705</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Updated js scripts to work properly">
+      <created>1624556265959</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1624556265959</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added pics for and new footer.html">
+      <created>1624556285996</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1624556285996</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Updated the election input and content of all sites">
+      <created>1624556309636</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1624556309636</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Updated model and views because of new election input">
+      <created>1624556335310</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1624556335310</updated>
+    </task>
+    <task id="LOCAL-00050" summary="deleted unused form template">
+      <created>1624563068264</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563068264</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added new form form conduct model">
+      <created>1624563084600</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563084600</updated>
+    </task>
+    <task id="LOCAL-00052" summary="added newurl for new and change conduct">
+      <created>1624563102906</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563102907</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added conduct model">
+      <created>1624563113856</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563113856</updated>
+    </task>
+    <task id="LOCAL-00054" summary="added the new login page">
+      <created>1624563137261</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563137261</updated>
+    </task>
+    <task id="LOCAL-00055" summary="removed login url">
+      <created>1624563147544</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563147544</updated>
+    </task>
+    <task id="LOCAL-00056" summary="changed format of the intern output">
+      <created>1624563168509</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563168509</updated>
+    </task>
+    <task id="LOCAL-00057" summary="new application conduct sites and css">
+      <created>1624563186374</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563186374</updated>
+    </task>
+    <task id="LOCAL-00058" summary="created a login part of the navbar and included it in every file">
+      <created>1624563483775</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563483775</updated>
+    </task>
+    <task id="LOCAL-00059" summary="moved old login file">
+      <created>1624563494024</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563494024</updated>
+    </task>
+    <task id="LOCAL-00060" summary="database migrations">
+      <created>1624563523186</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563523186</updated>
+    </task>
+    <task id="LOCAL-00061" summary="added conduct link and csrf token for form">
+      <created>1624910010377</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1624910010377</updated>
+    </task>
+    <task id="LOCAL-00062" summary="added admin comments">
+      <created>1625003927199</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1625003927199</updated>
+    </task>
+    <task id="LOCAL-00063" summary="added apps comments">
+      <created>1625003938698</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1625003938698</updated>
+    </task>
+    <task id="LOCAL-00064" summary="fixed display bug">
+      <created>1625003997697</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1625003997697</updated>
+    </task>
+    <task id="LOCAL-00065" summary="added test comment">
+      <created>1625004007135</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004007135</updated>
+    </task>
+    <task id="LOCAL-00066" summary="added new model for number of application and docstrings">
+      <created>1625004031187</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004031187</updated>
+    </task>
+    <task id="LOCAL-00067" summary="changed link to be not there if user is not logged in">
+      <created>1625004060559</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004060559</updated>
+    </task>
+    <task id="LOCAL-00068" summary="added url docstring">
+      <created>1625004068782</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004068782</updated>
+    </task>
+    <task id="LOCAL-00069" summary="added number generation and docstrings and request to user authentication in change views">
+      <created>1625004103685</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004103685</updated>
+    </task>
+    <task id="LOCAL-00070" summary="deleted forms.py">
+      <created>1625004114255</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004114255</updated>
+    </task>
+    <task id="LOCAL-00071" summary="registered model for number count of application">
+      <created>1625043119324</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1625043119325</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Changed the placeholder for new application number">
+      <created>1625043147671</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1625043147671</updated>
+    </task>
+    <task id="LOCAL-00073" summary="added view for new number generation">
+      <created>1625043162482</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1625043162482</updated>
+    </task>
+    <task id="LOCAL-00074" summary="changed the charfiled length for number in all models to 15">
+      <created>1625043179726</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1625043179726</updated>
+    </task>
+    <task id="LOCAL-00075" summary="changed display of applications">
+      <created>1625044746225</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1625044746225</updated>
+    </task>
+    <task id="LOCAL-00076" summary="fixed display bug (änderung, anlagen)">
+      <created>1625046009365</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1625046009366</updated>
+    </task>
+    <task id="LOCAL-00077" summary="added feature to add all applications">
+      <created>1625047507447</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1625047507447</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fixed styling of tables">
+      <created>1625048292272</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1625048292272</updated>
+    </task>
+    <task id="LOCAL-00079" summary="updated url paths">
+      <created>1625072098489</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1625072098490</updated>
+    </task>
+    <task id="LOCAL-00080" summary="added get absolute url in model">
+      <created>1625072112647</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1625072112647</updated>
+    </task>
+    <task id="LOCAL-00081" summary="added links to numbers">
+      <created>1625072126065</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1625072126065</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,31 +528,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ADded all urls for changing objects" />
-    <MESSAGE value="Added urls to href the html files to change objects" />
-    <MESSAGE value="created change_finance to extend finance.html" />
-    <MESSAGE value="created change_position to extend election_report.html" />
-    <MESSAGE value="added statement to hide absenden button when object is beeing edited" />
-    <MESSAGE value="modified election_report.html to show object elements" />
-    <MESSAGE value="Added if statement to hide absenden button when object is displayed" />
-    <MESSAGE value="Added all statements to display object in finance.html" />
-    <MESSAGE value="new views for changing all objects" />
-    <MESSAGE value="Created templates for login in and out" />
-    <MESSAGE value="Added intern_out.html template" />
-    <MESSAGE value="Changed index to display username and logout button" />
-    <MESSAGE value="Added functions for common application processing for less code" />
-    <MESSAGE value="Added path for login urls" />
-    <MESSAGE value="Added lines to redirect to index after login" />
-    <MESSAGE value="Included include_login.html to ease modification of login" />
-    <MESSAGE value="For Django" />
-    <MESSAGE value="Refactored dirs for better names" />
-    <MESSAGE value="Changed workspace conf after rename" />
-    <MESSAGE value="changed workspace.xml" />
-    <MESSAGE value="undo functions to perform insert of application (didnt work)" />
-    <MESSAGE value="corrected spelling mistake" />
-    <MESSAGE value="Changed html files to serve static StuRa intern file on change application use-case" />
-    <MESSAGE value="deleted common_new function(doesnt work)" />
-    <MESSAGE value="Moved files for visibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved files for visibility" />
+    <MESSAGE value="new application conduct sites and css" />
+    <MESSAGE value="created a login part of the navbar and included it in every file" />
+    <MESSAGE value="moved old login file" />
+    <MESSAGE value="database migrations" />
+    <MESSAGE value="added conduct link and csrf token for form" />
+    <MESSAGE value="added admin comments" />
+    <MESSAGE value="added apps comments" />
+    <MESSAGE value="fixed display bug" />
+    <MESSAGE value="added test comment" />
+    <MESSAGE value="added new model for number of application and docstrings" />
+    <MESSAGE value="changed link to be not there if user is not logged in" />
+    <MESSAGE value="added url docstring" />
+    <MESSAGE value="added number generation and docstrings and request to user authentication in change views" />
+    <MESSAGE value="deleted forms.py" />
+    <MESSAGE value="registered model for number count of application" />
+    <MESSAGE value="Changed the placeholder for new application number" />
+    <MESSAGE value="added view for new number generation" />
+    <MESSAGE value="changed the charfiled length for number in all models to 15" />
+    <MESSAGE value="changed display of applications" />
+    <MESSAGE value="fixed display bug (änderung, anlagen)" />
+    <MESSAGE value="added feature to add all applications" />
+    <MESSAGE value="fixed styling of tables" />
+    <MESSAGE value="updated url paths" />
+    <MESSAGE value="added get absolute url in model" />
+    <MESSAGE value="added links to numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added links to numbers" />
   </component>
 </project>
