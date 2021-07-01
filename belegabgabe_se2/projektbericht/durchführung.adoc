@@ -36,13 +36,13 @@ Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 
 |===
 
-== Inception Phase
+== Inception Phase Anfangsphase
 
-== Elaboration Phase
+== Elaboration Phase Ausarbeitungsphase
 
-== Construction Phase
+== Construction Phase Konstruktionsphase
 
-== Transition Phase
+== Transition Phase Übergangsphase
 
 == Entwurf
 
@@ -52,7 +52,7 @@ Nach dem Esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 
 == Übergabe und Dokumentation
 
-=  Welche Entscheidungen wurden getroffen? Warum?
+= Welche Entscheidungen wurden getroffen? Warum?
 
 = Was hat gut geklappt, was nicht? 
 
