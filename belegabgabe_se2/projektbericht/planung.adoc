@@ -9,7 +9,7 @@ Unser Tool soll auf funktionaler Ebene erstmal nur Grundfunktionen wie das einre
 Zudem soll  unsere Implementation als ein Grundgerüst für mögliche weiterentwicklung diennen, eine denkbäre weiterentwicklung wäre zum Beispiel eine Version für mobile Geräte.
 
 Auf technischer Ebene wurden wir kaum eingeschränkt (siehe Systemwide Req.).
-Als Vorlage wurde uns die Website https://antragsgruen.de/ präsentiert an die wir uns zumindest optisch orientieren konnten.
+Als Vorlage wurde uns die Website https://antragsgruen.de/ präsentiert an der wir uns zumindest optisch orientieren konnten.
 
 === 1.2 Zustand – Beginn Semester 2
 
@@ -90,5 +90,3 @@ Grundsätzlich wurde versucht ein Arbeitsumfeld zu schaffen indem man gerne und 
 
 Außerdem sollte jedes Teammitglied etwa den gleichen zeitlichen Aufwand bzw. Leistung in das Projekt investieren um Fairness zu gewährleisten, pro Woche sollte dieser Umfang etwa in 2 bis 4 (Teammeetings zählen nicht zu dieser Zeit) Zeitstunden die sinvoll genutzt werden, liegen. Dies ist aber nicht immer gelungen. 
 Der Hauptgrund dafür war wahrscheinlich die eher „kurzsichtige“ Plannung,als Beispiel hatten wir in einigen Iterationen keine Analyse bzw. wirkliche Testaufgaben außer die Dokumentation zu überarbeiten während unser Implementierungsteam eigentlich immer beschäftigt war. 
-
-
