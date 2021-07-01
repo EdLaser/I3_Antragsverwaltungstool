@@ -41,11 +41,11 @@ class AdvisoryMember(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -103,11 +103,11 @@ class Finance(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -174,11 +174,11 @@ class Position(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -235,11 +235,11 @@ class Universall(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
@@ -296,11 +296,11 @@ class Conduct(models.Model):
     """ Possible changes of the application. """
     mehrheit = models.CharField(max_length=25, null=True)
     """ The majority needed to pass the application. """
-    beschluss = models.CharField(max_length=25, null=True)
+    beschluss = models.CharField(max_length=250, null=True)
     """ Decision done in the application. """
-    beschlusstext = models.CharField(max_length=25, null=True)
+    beschlusstext = models.CharField(max_length=250, null=True)
     """ Text of the deciosion. """
-    beschlussgrund = models.CharField(max_length=25, null=True)
+    beschlussgrund = models.CharField(max_length=250, null=True)
     """ Reason for the deciosion. """
 
     class Meta:
