@@ -1,0 +1,38 @@
+= Ergebnisse 
+
+== Was haben wir erreicht (RDK)
+
+Am Anfang des Projektes haben wir unsere Ziele doch sehr hoch gesteckt und wollten, eigentlich alle Use-Cases des StuRa umsetzen. Hier haben wir Use-Cases des normalen Betriebes des Tools aufgneommen. Also Anträge stellen, Anträge bearbeiten und natürlich Anträge einsehen. Hier wollten wir ebenfalls unterstützen das die Unterschiedlichen Anträge auch unterschiedliche Status besitzen kann. Wir haben ebenfalls Versucht noch zusätzliche Anforderugen, in Form von Add-Ons, aufzunehmen.
+
+.Use-Case-Model
+[plantuml, "diagrams/use_case_model", svg]
+....
+include::../../docs/requirements/diagrams/use_case_model.puml[]
+....
+
+Von diesen Kernfunktionalitäten haben wir die Grundlagen des Tools erreicht. Unser Tool bietet die Möglichkeit Anträge aller gewünschten Formen durch externe und interne Stellen einzureichen. Hier werden die Anträge mit ihren Pflicht Daten vom System verarbeitet und entsprechend nach ihren zuvor modellierten Attributen gespeichert. Diese Speicherung erfolgt permanent.  Wir haben es ebenfalls eine auf dem Datum basierende Generierung der Antragsnummer abzubilden. Dabei haben wir nach VOrgabe des StuRa eine dynamische Antragsnummer für jeden Antrag generiert, die nach Test gut funktioniert. 
+
+Eine weitere implementierte Funktionalität des Tools, stellt die Bearbeitung der Anträge dar. Hier haben wir die Möglichkeit geschaffen, einzelne Anträge gezielt auszuwählen und dann durch einen auhorisierten Nutzer bearbeiten zu lassen. Hier bekommt der StuRa ebenfalls die Möglichkeit die Beschlüsse des Antrags direkt einzutragen und falsche Angaben zu korrigieren. 
+
+Zusätzlich lässt sich vom Tool auch eine List anzeigen die, alle Anträge oder Anträge gefiltert nach den in den Antrag festgelegten Stellen, anzeigt. Hier hat man durch die Hyperlink-Farbe ebenfalls eine gute Möglichkeit, noch nicht angesehen Anträge zu erkennen. Darauf aufbauend lassen sich mit den Hyperlinks der Antragsnummer, die gestellten Anträge ebenfalls anezigen bzw. führen zur Bearbeitung.
+
+Außerdem bietet das Tool die Möglichkeit eines Logins. Hier war unser Ziel für die Nutzer des "Präsidiums" Benutzer-Logins einzurichten, damit diese und nur diese Zugang zu den Anträgen im Tool bekommen. Wir haben es geschafft das nur verifizierte Nutzer Anträge ansehen und bearbeiten dürfen. Auch durch Angabe von URLs zu Anträgen ist ohne Login keine Anzeige möglich. Zusätzlich zu diesem Login gibt es eine Administrationsseite zum tieferen Verwalten der ANträge. Hier können die Datenstrukturen, über die normale Eingabemaske hinaus, ergänzt / geändert / entfernt werden.
+
+Des weiteren haben wir es geschafft, das die ganze Seite einem gewissen Konzept folgt. Wir hatten das Ziel die Benutzung der Seite möglichst einfach und so modern wie möglich zu halten. Dabei stand stets der Nutzer im Vordergrund. Es sollte erreicht werden, dass obwohl bei den Anträgen sehr komplexe Gegebenheiten gelten, eine einfache Nutzung des Tools ohne Recherche notwendig ist. Dies haben wir durch erklärende Texte und Popups erreicht.
+
+== Was haben wir nicht erreicht und warum ? (RDK)
+
+=== Generelle Gründe
+Leider konnten wir mehrer Funktionalitäten nicht im Projekt umsetzen.
+Hier ist asl großer Faktor der Zeitdruck zu sehen. Dadurch das wir relativ spät im Projekt auf ein Framework umgestiegen sind, mussten wir uns zuerst darin einarbeiten um die Funktionsweise zu verstehen. Da uns dies relativ viel Zeit kostete, waren wir am Anfang von SE II im Verzug. Da in diese Maßnahme viel Energie floss fehlte sie uns leider an anderen Punkten im Projekt bzw. Funktionalitäten. Jedoch lässt sich aber sagen, dass wir hier im Hintergrund vielleicht mehr erreicht haben als wir eigentlich dachten. Durch das Framework haben wir eine gute Wiederverwendbarkeit in höheren Semestern erreicht und könnten die Funktionalitäten die wir umgesetzt haben, auch gut umsetzen.
+
+=== Was wurde nicht erreicht ?
+
+Was haben wir also nicht geschafft ?
+Im Hinblick auf unsere Use-Cases haben wir leider einige Dinge nicht erreicht. Die mit größte Funktionalität die nicht erreicht wurde, ist die Wiederspiegelung des Status des Antrags. Da diese sehr komplex und vielseitig ist, haben wir uns dafür entschieden diese vorerst nicht zu implementieren. Leider haben wir bisher keine Möglichkeit gesehen diese im aktuellen Status bei der Antragsbearbeitung unterzubringen. In den Modellen existiert jedoch ein Attribut welches diese abbildet. Erschwerend kam hinzu das durch den Status des Antrags gewisse Abläufe abgebildet bzw. ausgedrückt werden sollten. Dadurch das wir hier nicht die Zeit hatten die Abläufe komplett zu verstehen und diese zu modellieren blieb dieses Feature leider außen vor.
+
+Ebenfalls nicht unterstützt wird das Feature des Einsehens der offenen Anträge durch externe Nutzer. Hier war das Ziel für externe Nutzer einzusehen welche Anträge gerade in Bearbeitung sind und welche bereits abgeschlossen. Dadurch das wir die oben genannte Status anzeige der Anträge ebenfalls nicht abbilden konnten mussten wir dieses Feature ebenfalls weglassen. Erschwerend kam hinzu, das hier bei uns Bedenken im Thema Datenschzu auftraten. Da hier personenebzogene Daten im Antrag abgleget werden (Name, Email, Beantwortung sensibler Fragen) wäre nur ein Ansehen eines einzelnen, selbst gestelten Antrages, sinnvoll. Uns ist in diesem Fall keine gute Lösung in der Projekzeiteingefallen, quasi kurzzeitige Links zum ansehen von Anträgen zu generieren.
+
+Ein Feature das noch verbesserunsgwürdig ist, ist das ansehen von Anträgen im "Intern" Bereich. Hier kann man die Anträge nur ansehen indem man in den Bearbeitungsmodus des Tools wechselt. Man zeigt einen Antrag also an, indem man keine Änderungen im Antrag durchführt. Hier gibt es sicher eine bessere Lösung die Anträge als nicht bearbeitbar anzuzeigen.
+
+Auch das Antrags ablehnen / Vertagen mussten wir leider weglassen. Besonders beim Vertagen das Antrags spielt wieder der Status des Antrags eine Rolle, welcher nicht implementiert ist. Hier richtet sich das Vertagen ebenfalls an die aktuelle Sitzungsgestaltung des Plenums im StuRa. Beim Vertagen wird der Antrag auf eine nächste Sitzung verschoben, was genau die abzubildenden Abläufe im StuRa aufzeigt. Hier hätten wir 1. das Feature des Antraggssatus gebraucht und 2. hätte es durch das Ablehnen einer Antragsnummer Änderung bedarft bzw. hätte man hier auch die Tagesordnung der jeweiligen Sitzung beachten müssen, welche als Add-On ebenfalls nicht umgesetzt wurde. 
