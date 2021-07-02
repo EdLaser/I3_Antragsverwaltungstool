@@ -12,7 +12,7 @@ Zudem behandelt die Iteration 10 keine neuen Funktionalitäten Grundsätzlich we
 |=== 
 
 |Itaration
-|geplannte Phase
+|geplannte Phase (aus letztem Semester hervorgehend)
 |tatsächliche Phase
 |Datum
 |Aufgaben
@@ -105,12 +105,12 @@ Prototypen bauen(Implementierung)#
 
 === 2.2Gliederung der Durchführung [A.G]
 
-Wir werden die nun folgende Dokumentation der Durchführung anhand den 4 Projekt-Phasen Inception, Elaboration, Construction, and Transition gliedern. Die Tabelle in Punkt 2.1 soll bei der Orientirung helfen, da wir zum Teil innerhalb den Iteration springen (siehe Iteration 6) und dieser Teil des Projektes aus der Sicht von 4 Personen zusammengetragen wird.
+Wir werden die nun folgende Dokumentation der Durchführung anhand der 4 Projekt-Phasen Inception, Elaboration, Construction, and Transition gliedern. Die Tabelle in Punkt 2.1 soll bei der Orientierung helfen, da wir zum Teil innerhalb der Iteration springen (siehe Iteration 6) und dieser Teil des Projektes aus der Sicht von 4 Personen zusammengetragen wird.
 
 === 2.2.1 Inception-Phase [A.G,R.K,R.M,J.F] 
 
 ==== 2.2.1.1 Zustand
-Diese Phase betrifft die Iterationen 1 bis 3 sowie 6, da unser Auftragsteller wechselte mussten wir auch unsere Anforderungsanalyse an ihn anpassen. 
+Diese Phase betrifft die Iterationen 1 bis 3 sowie 6, da unser Auftragsteller wechselte mussten wir auch unsere Anforderungsanalyse an ihn anpassen müssen. 
 Dies ist leider erst ab dem 13.Mai passiert. 
 
 Dazu kommt das unsere Dokumente aus SE-1 noch sehr fehlerhaft waren, diese konnten wir zum Teil aber auch ohne die Hilfe unseres Kunden anpassen. Grob gesehen haben wir bestimmt nochmal etwa 1/3 der gesammten Anforderungsanalyse machen müssen darunter fallen Teile der Dokumentation, Use-Cases und Vision.
@@ -122,7 +122,7 @@ Dazu kommt das unsere Dokumente aus SE-1 noch sehr fehlerhaft waren, diese konnt
 
 |Ziel |Datum |Erläuterung | Erfüllt?
 |Vollständige Anforderungsanalyse | SE-1 | Wurde aufgrund des Kundenwechsels und fehlern erneuert | Nein
-|Neue Anforderungsanalyse | 05.04 bzw. 17.05 | Vision und Use-Cases an Johann Boxbergers wünsche angepasst | Ja 
+|erste Anforderungsanalyse | 05.04 bzw. 17.05 | Vision und Use-Cases an Johann Boxbergers wünsche angepasst | Ja 
 | Theoretischen Plan haben was zu Implementieren ist | 17.05 | Wissen wie man Kundenwünsche in der Theorie umsetzt| Ja
 
 |===
@@ -135,7 +135,7 @@ Unser Hauptproblem bestand darin das wir nach dem Semesterwechsel keinen Ansprec
 
 =====  Hauptaktivitäten
 
-Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vollumfänglich Implimentieren können.  Da wir nicht auf ein bestehendes System aufsetzen beziungsweise weiterentwickeln gab es einige Herausvorderungen denen Wir uns als Gruppe stellen mussten. 
+Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vollumfänglich Implimentieren zu können. Da wir nicht auf ein bestehendes System aufsetzen beziungsweise weiterentwickeln gab es einige Herausvorderungen denen Wir uns als Gruppe stellen mussten. 
 
 * Auswahl der Anwendungsart = Webanwendung
 * Auswahl der dafür verfügbaren Techniken = HTML, etc.
@@ -181,26 +181,84 @@ Insgesammt wurde unsere neue Vision und die vorgeschlagenen Use-Cases (die Imple
 Grundsätzlich gab es wenig Input was Requirements und Anforderungen angeht vom Kunden selbst, wir haben das meißte als Idee vorgestellt die wurden dann angenommen oder abgelehnt, mitunter hatte Johann selber noch Ansprüche an das Layout oder Design gestellt die wir beachtet haben. 
 Johann war von unserer überarbeiteten Vision an das Projekt überzeugt und wir konnten die eigentlich Arbeit eigentlich schnell wieder aufnehmen.  
 
-Zudem haben wir Felix nochmal über unsere Analyse (Domainmodell,Vision,ProjectPlan) drüberschauen lassen und haben seinen Input umgesetzt.
+Zudem haben wir Felix nochmal über unsere Analyse (Domainmodell,Vision,ProjectPlan) drüberschauen lassen und haben seinen Input umgesetzt dies greift zum Teil schon über in die Elaboration Phase.
 
 === 2.2.2 Elaboration-Phase [A.G,R.K,R.M,J.F] 
 
 ==== 2.2.2.1 Zustand
+Wir waren mitten in der Elaboration Phase beim Übergang von SE1 zu SE2, unsere Anforderungsanalyse war fertig aber fehlerhaft, es wurde sich darauf geeinigt welche sprachen bzw. tools man für die Implementierung verwenden möchte.
+Diese Phase betrifft die Iterationen 3 bis 6
+
 ==== 2.2.2.2 Ziele
 [%header, cols="2,1,4,3"]
+
 
 |===
 
 |Ziel |Datum |Erläuterung | Erfüllt?
+|Plan für weiteres vorgehen |17.05 | ein neue Grobplannung um die Use-Cases noch zu Implementieren| erstellt aber nicht realisierbar -> Ergebenis eher dem Aufwand angepasst als anders herum
+|Neue Anforderungsanalyse | 17.05 | Vision,Use-Cases,Projectplan und Domainmodell erneuert | Ja
+|Test-Cases erstellen| 19.04 bzw 17.05 | - | Ja
+|Architektur festgellegt | 03.05 bzw. 17.05 | Auf Systemstruktur einigen, Programmiersprache wählen | Ja 
+|Aufgabenbereiche zuteilen| 03.05 | Im Bereich test sowie Implementierung einzelne Tasks zuweisen und grobe Problemstellungen zuweisen | -
 
 |===
 ==== 2.2.2.3 Probleme
+Fehlerhafte Anforderungsanalyse (wurde in der Inception-Phase abgehandelt)
+
+Wir hatten nicht wirklich eine Ahnung wo wir Anfangen sollten, wir hatten eine Menge vor und keinen richtigen Anhaltspunkt wo wir starten sollten bzw. mit welchen Tools oder welchen Programmiersprachen. Somit musste unsere Implementierungsgruppe mithilfe der Testgruppe ausprobieren mit welchen Hilfsmitteln,Sprachen,Tools wir arbeiten wollen bzw. mit welchen es sinvoll ist unser Projekt um zu setzen dies braucht eine Menge Zeit und war nicht immer Risikofrei. 
+
+Wir haben keinen Analysten aus SE1 mehr und mussten uns Wissen über den StuRa neu aneignen um weiter in die Dömäne zu schauen um das Problem richtig an zu gehen bzw. um das richtige Problem zu lösen.
+
 ==== 2.2.2.4 Aktivitäten
+
+==== Hautpaktivitäten
+===== Anforderungserhebung und -analyse
+
+Nach der groben Richtung und der Erörterung der Domäne, sowie des Fachlichen Problems der Aufgabenstellung, führten wir zahlreiche Meetings mit den Auftraggebern durch. Hier haben wir den Fokus auf alle möglichen Uses-Cases der Anwendung gelegt. Aufbauend auf diesem Wissen, haben wir die ersten Use-Case-Diagramme erarbeitet und begonnen das Use-Case-Modell anzufertigen. Dies hat uns anfänglich eher viele Probleme bereitet. Leider war das einarbeiten in die Prozesse des StuRa sehr anstrengend und zeitintensiv. Da es sich beim StuRa um eine sehr komplexe Struktur bzw. Beziehung aus Personen Positionen und Förmlichkeiten handelt. Hier gibt es viele Punkte die beachtet werden müssen welche für uns vollumfänglich kaum zu verstehen waren. Hier hatten wir viele Nachfragen bei jedem Meeting mit den Themenstellern bis wir die ganze Domäne vollumfänglich verstanden hatten.
+
+
+===== Entwurf
+
+Im Entwurf haben wir begonnen zu Planen in welche Richtung wir technisch gehen wollen. Hier haben wir den Fokus auf zu nutzende Technologien gelegt. Wir haben uns informiert welche Komponenten für unser System als Webanwendung nötig sind. In dieser Phase hat sich herauskristalisiert das wir einen Webserver benötigen. Die Lösung zur Haltung der Daten erschien erst als txt Dateien sinnvoll, wir behielten uns jedoch eine Datenbanklösung im Hinterkopf.
+
+Wir befassten uns außerdem welche einzelnen Komponenten des Systems notwendig sein sollten. Wir arbeiteten aus der Analyse heraus, das wir Funktionalitäten zum Einfügen und zum Anzeigen von Anträgen bereitstellen müssen. Mit diesem Wissen planten wir ebenfalls die Kommunkation mit dem Webserver und den bis jetzt vorhandenen Datenstrukturen.
+
+Außerdem haben wir abgeklärt welche Programmiersprachen bzw. welche Sprachen generell für einen Webservice benötigt werden. Hier haben wir uns auf die im Frontend dominanten Sprachen: HTML / CSS / JavaScript geeinigt. Hier hatte Richard  bereits ein kleines Konzept im Kopf, welches Design und welche Stuktur die Webseite haben sollte. Da wir im Backend eine möglichst gut verständliche Sprache nutzen sollten, haben wir uns auch aufgrund von Vorkentnisse auf Python geeinigt. Jedoch schien es alles deutlich einfacher als es am Ende war. Hier plante wir die erste Kommunikation mit der Datenbank, welche über einfache Scripte abfolgen sollte. Der Plan sah vor das wir in SQL Abfragen formulieren wollten, welche wir dann in die Anwednung übernehmen wollten. Darauf aufbauend befasste sich Ruben , da er Vorwissen in Python hatte, mit dem Backend Part und den damit verbundenen Möglichkeiten der Umsetzung. Da wir es hier möglichst einfach halten wollten, wollten wir zunächst auf ein Framework verzichten und planten zuerst nur mit wenigen Bibliotheken und einfachen Skripten.
+
+Zusätzlich planten wir erste Versionen des Webservers und beschäftigten uns mit der groben Infrastruktur im StuRa. Hier haben wir uns angeeignet, wie ein Webserver einzurichten ist und Erfahren wie dieser im StuRa bereitgestellt wird.
+
+==== Implementierung
+
+Hier gab Richard einen Einstieg in HTML als mit größte Komponente des Frontends. Da er schon Erfahrungen mit Frontend-Sprachen hatte, konnte er uns in diesem Fall viel Wissen vermitteln und uns alle anfallenden Fragen bereits erklären. Danach haben wir uns alle mit den geplanten Technologien auseinandergesetzt, aber gemerkt, dass ohne konkretes Ziel ein Anwenden der Sprachen kaum sinnvoll war. Es schien uns am sinnvollsten Richard (mit den Erfahrungen im Frontend) für selbigen Part einzusetzen. Wir hatten hier vorerst eine unterstützende Funktion.
+Dabei wurde bereits eine erste Demo Version von Richard erstellt. Hier haben wir uns ein gewisses Konzept für das Frontend überlegt, um einerseits eine gewisse Einheitlichkeit zu bekommen und um das Frontend ebenfalls nach einem Plan entwickeln zu können.
+Da das Feedback zum Größtenteil positiv war, wurde die Demo Version weiterverfolgt.
+
+Im Backend fehlte uns leider das nötige Wissen um die einsetzbaren Technologien möglichst gut abzuschätzen. Es wurden mit Python erste Scripte, die CRUD Operationen ausführen sollen, zu planen / zu erstellen. Die Scripte bauten auf den HTML Dateien der Demo auf und sollten den input der HTML Forms entgegennehmen und in die Dtaenbank schreiben.
+
+==== Test
+
+Es wurden bereits erste Testfälle für die Demo geplant. Leider begrenzte sich das ganze nur auf einzelne Dummy clicks ohne Funktion da wir weder einen Webserver, noch eine Datenbank online zur verfügen hatten. Hier haben wir versucht das ganze lokal über Container zu betreiben.
+
+==== Dokumentation
+
+Einzelne Dokumente wurden überarbeitet darunter Glossary,Domainmodell,Use-Casemodell,Lessons learned (eingefügt). Zudem wurde die Plannung etwas abgeändert
+
+
 ==== 2.2.2.5 Review
+
+Richards Vorwissen und Rubens begeisterungsfähigkeit für das Projekt waren in der Phase unnerlässlig, gegen Ende dieser Phase (etwa hälfte des Semesters) fiel eigentlich schon die Entscheidung ob wir die Grundanforderungen Implementieren können oder nicht. 
+Bekräftigt wurde dies als unser Kunde sich unsere Demo-Version angeschaut hat und dies in etwa seine Vorstellung eines Online Antragsverwaltungstools war. 
+
+In der Überleitung von Elobaration zu Construktion-Phase gab es auf einmal Fortschritt zum ersten mal seit Start des Semesters konnten wir richtig an unserem Projekt in zusammenarbeit mit unserem Kunden arbeiten, das einzige was an der Stelle noch fehlte war unser StuRa Server.
+
+Und Obwohl die Situation erst sehr angespannt und auch nicht gerade gut aussah möchte Ich (A.G) an dieser Stelle sagen, dass wir alle darauf vertraut haben das wir es noch schaffen können, das Projekt zumindest im Ansatz zu vollenden, jeder von uns hat auch wenn nicht immer motiviert sein Ding bzw. seine Aufgabe durchgezogen, keiner hat sich auch nur im Ansatz beschwert und Jeder ist relativ entspannt geblieben und hat geschaut das er bzw. wir das Beste aus einer eher schlechten Situation machen. 
 
 === 2.2.3 Construction-Phase [A.G,R.K,R.M,J.F] 
 
 ==== 2.2.3.1 Zustand
+
+
 ==== 2.2.3.2 Ziele
 [%header, cols="2,1,4,3"]
 
