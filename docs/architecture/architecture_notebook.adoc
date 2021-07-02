@@ -63,10 +63,9 @@ Das System ist die erste Version und soll auf lange Zeit im StuRa genutzt werden
 * Sign-in: Informationen die einer Rolle den Login ermöglichen
 
 === *Services:*
-* Antrag anlegen: Die Nutzereingaben werden an das python-Skript übergeben. Mit den Nutzereingaben wird ein Insert-Befehl in der Datenbank ausgeführt um eine neue Zeile anzulegen.
-* ##Antrag bearbeiten: Die gewünschten Änderungen des Antrags werden über einen Update-Befehl in der Datenbank geändert.##
-* ##Antragssatus ändern: Das Flag des Antrags in der Tabelle wird über einen Update-Befehl in der Datenbank geändert.##
-* ##Anmelden: Die eingegebenen Anmeldedaten werden, mit denen über einen Select-Befehl generierten, Daten aus der zum Login gespeicherten Daten abgeglichen und es wird ein entsprechendes Anmelden gewährleistet.##
+* Antrag anlegen: Die Nutzereingaben werden vom Framework entgegebgenommen und es wird ein neues Antrags-Objekt erstellt. Dieses wird darauf mit "save" gespeichert und in die Datenbank geschrieben.
+* Antrag bearbeiten: Die gewünschten Änderungen des Antrags werden über die Django eigene Methode "save" auf dem Objekt des Antrags in der Datenbank geändert.
+* Anmelden: Die eingegebenen Anmeldedaten werden, mit dem von DJango bereitgestellten Session und Authenticifiation Komponenten überprüft.
 
 === *Workflos:*
 
