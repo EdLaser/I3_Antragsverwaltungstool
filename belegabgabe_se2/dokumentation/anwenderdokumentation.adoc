@@ -12,4 +12,41 @@ Die Funktion des Atragsverwaltungstool des StuRas der HTW-Dresden ist es, jeder 
 
 === Homepage / Landingpage
 
-image::database-scheme.png[]
+image::index.jpg[]
+
+Beim Erfolgreichen verbinden auf das Tool wird man von der Hauptseite begrüßt. Diese beschreibt den Anwendungzweck der Webanwendung etwas genauer und bietet eine Funktion für rückfragen per Mail an den StuRa. Diese Rückfragenoption kann durch das abschreiben der mailadressen wargenommen werden.
+
+:tip-caption: 💡
+[TIP]
+Durch linksklicken auf "dieser Mail" öffent sich das Standard-Mail Verarbeitungsprogramm eures Computers und öffet eine leere Mail mit der passenden E-Mail adresse für sofortiges verfassen einer E-Mail.
+
+Desweiteren befinden sich zu jedem Antrag der in der Navigationsleiste aufgeführt ist noch eine Karte mit Name des jeweiligen Antrags und einem beschreibenden textes auf der Seite. Jede Karte die zu einem Antrag gehört stellt auch eine Verlinkung zu dem jeweiligen Antrag dar.
+
+=== Navigationsleiste
+
+image::navbar.jpg[]
+
+Mit der Navigationsleiste kann man zu den Verschieden Antragsformulaten wechseln, sich einloggen oder auf die Hauptseite des StuRas der HTW-Dresden wechseln. Desweiteren fungiert das StuRa Logo links oben in der Ecke auf jeder Seite bis auf der Homepage als Homebutton der einen immer auf die Haupseite zurückbringt.
+
+=== Anträge einreichen
+
+image::Antrag.jpg[]
+
+Wenn der passende Antrag augewält wurde geht es ans einreichen des jeweiligen Antrages. Dies wird Erreicht durch das Systematische ausfüllen des Antragformulares. Nach bearbeitung des Formulars und Ausfüllung aller Pflichtfelder den Button "Absenden" Drücken. Danach läd die Seite neu und setzt das Formular zurück. Ein Popup oder änliches über den Status des Antrages (erfolgreich abgesendet oder nicht) gibt es nicht.
+
+:tip-caption: 💡
+[TIP]
+Bei unkenntnis über die zuständige Stelle: einfach die Auswahl "Bitte Auswählen" ausgewählt lassen. 
+
+:warning-caption: ❗
+WARNING: Sollte "Bitte Auswählen" bereits überschrieben worden sein kann dies Option nur durch zurücksetzen des Formulars mit dem Jeweiligen Button oder neuaufrufen der Seite erreicht werden. In beiden Fällen müssen die Daten neu eingetragen werden.
+
+=== Login
+
+image::login_befullt.jpg[]
+
+Nach klick auf den Login Button wird man zu dieser Seite weitergeleitet. Diese Funktioniert genau so wie auf anderen Portalen. Benutzernamen eingeben,  das dazu passende Passowort eingeben und auf "Daten absenden" drücken. Sollte die überprüfung Erfolgreich sein wird man Eingeloggt und wird zurück zur Homepage gebracht.
+
+== Anwendungszweck und Funktionsumfang des Antragsverwaltungstools für StuRa Mitglieder
+
+Alle zuvor beschriebenen Funktionen gelten hier auch, im Zweifel weiter oben nachlesen
