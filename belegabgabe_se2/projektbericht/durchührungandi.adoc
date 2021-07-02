@@ -187,7 +187,7 @@ Zudem haben wir Felix nochmal über unsere Analyse (Domainmodell,Vision,ProjectP
 === 2.2.2 Elaboration-Phase [A.G,R.K,R.M,J.F] 
 
 ==== 2.2.2.1 Zustand
-Wir waren mitten in der Elaboration Phase beim Übergang von SE1 zu SE2, unsere Anforderungsanalyse war fertig aber fehlerhaft, es wurde sich darauf geeinigt welche sprachen bzw. tools man für die Implementierung verwenden möchte.
+Wir waren mitten in der Elaboration Phase beim Übergang von SE1 zu SE2, unsere Anforderungsanalyse war fertig aber fehlerhaft, es wurde sich darauf geeinigt welche Sprachen bzw. Tools man für die Implementierung verwenden möchte.
 Diese Phase betrifft die Iterationen 3 bis 6
 
 ==== 2.2.2.2 Ziele
@@ -200,7 +200,7 @@ Diese Phase betrifft die Iterationen 3 bis 6
 |Plan für weiteres vorgehen |17.05 | ein neue Grobplannung um die Use-Cases noch zu Implementieren| erstellt aber nicht realisierbar -> Ergebenis eher dem Aufwand angepasst als anders herum
 |Neue Anforderungsanalyse | 17.05 | Vision,Use-Cases,Projectplan und Domainmodell erneuert | Ja
 |Test-Cases erstellen| 19.04 bzw 17.05 | - | Ja
-|Architektur festgellegt | 03.05 bzw. 17.05 | Auf Systemstruktur einigen, Programmiersprache wählen | Ja 
+|Architektur festgelegt | 03.05 bzw. 17.05 | Auf Systemstruktur einigen, Programmiersprache wählen | Teilweise -> geplante Architektur funktionierte nur Teilweise und musste zum Teil neu konstruiert werden
 |Aufgabenbereiche zuteilen| 03.05 | Im Bereich test sowie Implementierung einzelne Tasks zuweisen und grobe Problemstellungen zuweisen | -
 
 |===
@@ -259,7 +259,7 @@ Und Obwohl die Situation erst sehr angespannt und auch nicht gerade gut aussah m
 
 ==== 2.2.3.1 Zustand
 
-Diese Phase hat Bestandteile in den Iterationen 5-8. Wie schon erwähnt habe wir hier erste große Fortschritte in hinblick auf die Implementierung erzielen können.
+Diese Phase hat Bestandteile in den Iterationen 5-8. Wie schon erwähnt habe wir hier große Fortschritte in Hinblick auf die Implementierung erzielen können.
 
 ==== 2.2.3.2 Ziele
 [%header, cols="2,1,4,3"]
@@ -280,8 +280,8 @@ Wir standen unter Imensem Zeitdruck und mussten uns in der Anfangsphase vielleic
 Zudem kommt das wie schon erwähnt uns unser Server knapp einen bis anderthalb Monate zu Spät übergeben wurde.
 
 ==== 2.2.3.4 Aktivitäten
-#help#
-  was soll das sein
+
+===== Verwendete Tools zur Implementierung
 
 * Jet Brains
 ** PHP Storm
@@ -295,9 +295,10 @@ Zudem kommt das wie schon erwähnt uns unser Server knapp einen bis anderthalb M
 ** Microsoft Edge (V. 91.0.864.59)
 ** Mozilla Firefox (V. 89.0.2)
 
+
 ===== Implementierung
- 
- Als Entwicklungstool für die Webanwendung im Frontend wurde anfangs Jet Brains PHP Storm mit der Sudenten Lizenz verwendet da dieses Tool einige sehr nützliche Features mitbrachte wie die eien Projektexplorer eine Implementierung von Git was die Dateiverwaltung sehr einfach gestaltete sowie einen Tool eigenen Browser der die HTML Seiten korrekt darstellen kann dies machte es möglich live Änderungen am HTML, CSS code vorzunehmen und dierekt ein Ergebniss zu sehen ohne erst eine Browsereite neu laden zu müssen. Das ist eine Eigenschaft des Programm die ich (Richard Müller) sehr schätze.
+
+Als Entwicklungstool für die Webanwendung im Frontend wurde anfangs Jet Brains PHP Storm mit der Sudenten Lizenz verwendet da dieses Tool einige sehr nützliche Features mitbrachte wie die eien Projektexplorer eine Implementierung von Git was die Dateiverwaltung sehr einfach gestaltete sowie einen Tool eigenen Browser der die HTML Seiten korrekt darstellen kann dies machte es möglich live Änderungen am HTML, CSS code vorzunehmen und dierekt ein Ergebniss zu sehen ohne erst eine Browsereite neu laden zu müssen. Das ist eine Eigenschaft des Programm die Ich (Richard Müller) sehr schätze.
 
 Die erste Version der Webanwendung beschrieb nur die Grafische Oberfläche für den Endbenutzer ohne ein Backend. Diese Version wurde mit dem Kunden regelmäßig abgestimmt und nach seinen Wünschen und Vorstellungen erweitert und angepasst.
 
@@ -306,10 +307,10 @@ Bei der Implementierung der Backend Lösung stießen wir auf etliche Probleme. D
 Das Einrichten der Datenbank geschah über eine lokale MySQL Server Installation die erst in einer Virtuellen-Umgebung und dann später auf dem "echten" Server des StuRas installiert wurde.
 
 Von einem Problem in das nächste. 
-Die Datenbank lief für sich und die HTML-Seite lief für sich, aber es gab keine Möglichkeit diese Sinnvoll zu verbinden. Der este Plan sah vor das nach unserer Entscheidung für Python #unger zu Hilfe nahme von PHP scripten als WAS SOLL DAS HEIßEN?# "Auslöser" die Input Daten aus den Formularen mittels "insert" Anweisungen in die Datenbank geschrieben werden sollten. Dies war nicht möglich da der verwendete Webserver Apache PHP scripte nicht ausführt. Auch nach mehrfacher Konfiguration des Webservers weigerte er sich immernoch die Scripte ordnungsgemäß oder überhaubt auszuführen.
+Die Datenbank lief für sich und die HTML-Seite lief für sich, aber es gab keine Möglichkeit diese Sinnvoll zu verbinden. Der este Plan sah vor das nach unserer Entscheidung für Python unter zuhilfenahme von PHP-Scripten als "Auslöser" die Input Daten aus den Formularen mittels "insert" Anweisungen in die Datenbank geschrieben werden sollten. Dies war nicht möglich da der verwendete Webserver Apache PHP scripte nicht ausführt. Auch nach mehrfacher Konfiguration des Webservers weigerte er sich immernoch die Scripte ordnungsgemäß oder überhaubt auszuführen.
 
 Da wir uns am Anfang des Semesters gegen ein Web Framework entschieden haben, da keines der Teammitglieder Erfahrungen mit dem Arbeiten mit Web Frameworks hat, oder einen HTML Bauskasten o.Ä. mussten wir einsehen das wir mit unserer Lösung nicht weiterkahmen. 
-Daraufhin Entschlossen Wir das die Webanwendung auf das Django Framework umgebaut werden muss. Dies bereitete einige Probleme da sich das Implementierungs-Team erst auf das Framework einarbeiten musste und dann die Frontend Lösung umschreiben musste, dies hat einiges an Zeit beansprucht. Die Syntax für das inlcuden von externe CSS und Java Script Files war eine andere als im herkömmlichen HTML verwendet,# da das Framework ein eigenes File und Arbeitsstruktur mitbrachte. Ich hab den Satz umgeschrieben stimmt der so?#
+Daraufhin Entschlossen Wir das die Webanwendung auf das Django Framework umgebaut werden muss. Dies bereitete einige Probleme da sich das Implementierungs-Team erst auf das Framework einarbeiten musste und dann die Frontend Lösung umschreiben musste, dies hat einiges an Zeit beansprucht. Die Syntax für das inlcuden externer CSS und Java Script Files war eine andere als im herkömmlichen HTML, da das Framework eine eigene File- und Arbeitsstruktur mitbrachte.
 
 Der Umbau erfolgte zuerst nur im Backend, so dass es erstmal kleine Tests im neuen Framework gab. Der Vorteil von Django war hier ganz klar, dass eine Kommunikation mit der Datenbank nicht selbst geschehen muss. Hier wird alles direkt vom Framework verwaltet und unser Problem mit der Datenbank wurde gelöst.
 
@@ -329,7 +330,7 @@ Das installieren des MySQL Servers machte keine Probleme und verlief reibungslos
 
 Im letzten Schritt der Implemetierungsphase wurden Bugs behoben und der Code aufgeräumt, nicht genutze Scripte und Funktionen entfernt oder überarbeitet.
 
-Es wurde für das Starten des Servers sowie das migrieren neuer Daten ein Shellscript geschrieben, welches in den Autostart des Linux Servers gebracht werden sollte. Dies war allerdings nicht Erfolgreich. Das Script welches Problemlos den Server startet und die Daten #mirgiert ???# wurde nicht vom Server automatisch im Starup gestartet. Es wurde versucht über eine rc.lokal Datei zu starten, nicht erfolgreich. Das Erstellen und aktivieren eines eigenen Services, nicht erfolgreich. Das verwenden einer #Crontabelle HAB KEINE Ahnung heißt das so?#, nicht erfolgreich. Das Kopieren der Datei in das init.d Verzeichnis mit anschließender Konfiguration, nicht erfolgreich. Da dies keine Anforderung war und nur der einfachen Wartbarkeint dienen sollte wurde die Idee verworfen und der Prozess in eine Screen-Session geschickt. Diese muss nach jedem reboot des Serves neu manuell gestartet werden. Der Server hat keinen automatischen reboot konfiguriert.
+Es wurde für das Starten des Servers sowie das migrieren neuer Daten ein Shellscript geschrieben, welches in den Autostart des Linux Servers gebracht werden sollte. Dies war allerdings nicht Erfolgreich. Das Script welches Problemlos den Server startet und die Daten migriert wurde nicht vom Server automatisch im Starup gestartet. Es wurde versucht über eine rc.lokal Datei zu starten, nicht erfolgreich. Das Erstellen und aktivieren eines eigenen Services, nicht erfolgreich. Das verwenden einer Crontabelle, nicht erfolgreich. Das Kopieren der Datei in das init.d Verzeichnis mit anschließender Konfiguration, nicht erfolgreich. Da dies keine Anforderung war und nur der einfachen Wartbarkeint dienen sollte wurde die Idee verworfen und der Prozess in eine Screen-Session geschickt. Diese muss nach jedem reboot des Serves neu manuell gestartet werden. Der Server hat keinen automatischen reboot konfiguriert.
 
 ===== Dokumentation und Test
 
@@ -345,6 +346,8 @@ Auf der anderen wurde durch die Lösung mit dem Django Webtool eine großartige 
 === 2.2.4 Transition-Phase [A.G,R.K,R.M,J.F] 
 
 ==== 2.2.4.1 Zustand
+Diese Phase behandelt die Iteration 9 und 10(Die 10 Iteration war eigentlich dafür angedacht ausschließlich den Bericht und andere Dokumente zu verfassen).
+Unser System lief ab dem 28.06 auf den StuRa Servern und wir konnten jetzt besser den je testen, zudem bot sich die Gelegenheit einer Art Live-Test im StuRa durchzuführen und unser System wenigstens noch eine Woche zur Verfügung zu stellen um Bugs zu fixen und letzte User-Experiences einzuholen und zu reagieren d.h noch kleine Änderungen vorzunehmen wo es machbar war um das Benutzer Erfahrung zu verbessern.  
 ==== 2.2.4.2 Ziele
 [%header, cols="2,1,4,3"]
 
