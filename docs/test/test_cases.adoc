@@ -5,9 +5,8 @@
 * Abfangen ungültiger Eingaben (z.B. E-Mail)
 * korrekte Übertragung der Daten nach Erstellung/Änderung eines Antrages
 * Zugriffsberechtigungen für verschiedene Funktionen der Software
-* generelle Funktionalität aller beabsichtigten Funktionen
-* korrekte Handhabung unerwarteter Fehler
-* korrekte Erstellung des TOP, nachdem neuer Antrag gestellt wurde (nicht weiter erforderlich, da TO-use-case vorerst verworfen wurde)
+* generelle Funktionalität aller implementierten Funktionen
+* korrekte Handhabung (un)erwarteter Fehler
 
 == Test Cases
 
@@ -15,7 +14,7 @@
 * Internetverbindung ist vorhanden
 * Verbindung zu Host-Server kann aufgebaut werden
 
-*TC01 - Valide Logindaten akzeptiert*
+=== TC01 - Valide Logindaten akzeptiert
 |===
 Beschreibung:  Prüfen der Reaktion der Software, wenn valide Logindaten eingegeben werden. Diese müssen akzeptiert werden. Der Login muss gelingen.
 
@@ -26,7 +25,7 @@ Nachbedingungen: Uhrzeit und Logindaten müssen (in einer Datenbank als log Date
 Erforderliche Daten: Logindaten (Nutzername/Rolle und Passwort) 
 |===
 
-*TC02 - Falsches Passwort eingegeben*
+=== TC02 - Falsches Passwort eingegeben
 |===
 Beschreibung: Prüfen der Reaktion der Software, wenn falsches Passwort eingegeben wird. Der Login muss fehlschlagen.
 
@@ -37,7 +36,7 @@ Nachbedingungen: Keine
 Erforderliche Daten: Logindaten (Nutzername/Rolle und Passwort)
 |===
 
-*TC03 - Vollständig ausgefüllten Antrag einreichen*
+=== TC03 - Vollständig ausgefüllten Antrag einreichen
 |===
 Beschreibung: Prüfen, ob sich ein vollständig ausgefüllter Antrag einreichen lässt. Antrag muss angenommen und an Server/Datenbank übermittelt werden.
 
@@ -48,7 +47,7 @@ Nachbedingungen: Uhrzeit, Name des Antragsstellers und der Antrag müssen (in ei
 Erforderliche Daten: vollständig ausgefüllter Antrag
 |===
 
-*TC04 - Unvollständiger Antrag eingerreicht*
+=== TC04 - Unvollständiger Antrag eingerreicht
 |===
 Beschreibung: Prüfen, ob sich ein unvollständiger (es fehlt z.B.: Antragstitel, Name, E-Mail oder Antragstext) Antrag einreichen lässt. Dies darf nicht möglich sein.
 
@@ -59,7 +58,7 @@ Nachbedingungen: Dem Nutzer muss eine Fehlermeldung angezeigt werden.
 Erforderliche Daten: unvollständige Antragsdaten
 |===
 
-*TC05 - Eingereichter Antrag aufrufbar*
+=== TC05 - Eingereichter Antrag aufrufbar
 |===
 Beschreibung: Prüfen, ob sich ein bereits eingereichter Antrag aufrufen lässt. Antrag muss korrekt angezeigt werden.
 
@@ -70,7 +69,7 @@ Nachbedingungen: Der Inhalt des Auftrag muss vollständig und korrekt auf dem Bi
 Erforderliche Daten: Antragsnummer
 |===
 
-*TC06 - Externer Nutzer darf keinen Antrag bearbeiten*
+=== TC06 - Externer Nutzer darf keinen Antrag bearbeiten
 |===
 Beschreibung: Prüfen, ob ein nicht berechtigter Nutzer einen Antrag bearbeiten kann. Dies darf nicht möglich sein.
 
@@ -81,7 +80,7 @@ Nachbedingungen:
 Erforderliche Daten: Antragsnummer
 |===
  
-*TC07 - Administrator/Präsidium kann Anträge bearbeiten*
+=== TC07 - Administrator/Präsidium kann Anträge bearbeiten
 |===
 Beschreibung: Prüfen, ob ein berechtigter Nutzer Anträge bearbeiten kann. Dies muss möglich sein.
 
@@ -92,7 +91,7 @@ Nachbedingungen: Uhrzeit, Benutzername und der bearbeitete Antrag müssen (in ei
 Erforderliche Daten: Antragsdaten
 |===
 
-*TC08 - Unterschiedliche Datentypen als Anlage*
+=== TC08 - Unterschiedliche Datentypen als Anlage
 |===
 Beschreibung: Prüfen, ob sich verschiedene Datentypen (Text, Video, Audio, usw.) als Anlagen anhängen lassen. 
 
