@@ -7,20 +7,22 @@
 * Erwartetes Ergebnis, z.B. Systemzustand, Fehlermeldung, Ausgabedaten
 ////
 
-== Test Script
-// Template
-*TS## - TC-Name*
+== Testfallbeschreibung
+
+[%header, cols="1,1,1,1,2"]
 |===
-| Vorbedingung:
-
-| Eingabedaten:
-
-| Ablaufbeschreibung des Tests:
-
-| Erwartetes Ergebnis:
+|Testobjekt |Testfall |Vorbedingung |Daten |erwartetes Ergebnis
+|Weboberfläche, Datenbank, Django Skripte |Valide Logindaten akzeptiert |Nutzerdaten wurden angelegt, aktuell nicht eingeloggt |Nutzerdaten |Nutzer ist angemeldet und hat Zugriff auf "Intern"
+|Weboberfläche, Datenbank, Django Skripte |Falsche Logindaten abgelehnt |aktuell nicht eingeloggt |falsche Nutzerdaten |Login schlägt fehl
+|Weboberfläche, Datenbank, Skripte |Vollständig ausgefüllter Antrag eingereicht | alle Pflichtfelder sind ausgefüllt |Antragsdaten |Antrag wird an Datenbank übermittelt
+|Weboberfläche, Skripte |Unvollständiger Antrag abgelehnt |min. ein Pflichtfeld nicht ausgefüllt |unvollständige Antragsdaten |Antrag wird nicht eingereicht. Nutzer wird auf nicht ausgefüllte Pflichtfelder hingewiesen
+|Weboberfläche, Datenbank, Skripte |Antrag wird korrekt angezeigt |Daten für existierenden Antrag werden angefordert |Antragsdaten |Alle Daten des Antrags werden korrekt und vollständig in Bearbeitungsmaske angezeigt
+|Weboberfläche, Django Skripte| externer Nutzer kann keine Anträge einsehen |aktuell nicht eingeloggt |- |Link "intern" wird nicht in Navigationsleiste angezeigt
+|Weboberfläche, Datenbank, Skripte |Anträge lassen sich bearbeiten |Antrag existiert |Antragsnummer, Antragsdaten |Daten können bearbeitet werden. Daten werden erfolgreich an Datenbank übermittelt.
 |===
 
-*TS01 - Valide Logindaten akzeptiert*
+////
+=== TS01 - Valide Logindaten akzeptiert
 |===
 | Vorbedingung: das Internet
 
@@ -37,7 +39,7 @@
 | Erwartetes Ergebnis: Anzeige der neuen Seite für die gewählte Rolle
 |===
 
-*TS02 - Falsches Passwort akzeptiert*
+=== TS02 - Falsches Passwort akzeptiert
 |===
 | Vorbedingung: das Internet
 
@@ -54,7 +56,7 @@
 | Erwartetes Ergebnis: Fehlermeldung
 |===
 
-*TS03 - Vollständig ausgefüllter Antrag eingerreicht*
+=== TS03 - Vollständig ausgefüllter Antrag eingerreicht
 |===
 | Vorbedingung: das Internet, Login, korrekte Logindaten
 
@@ -71,7 +73,7 @@
 | Erwartetes Ergebnis: Speichern des Antrags in Datenbank
 |===
 
-*TS04 - Unvollständiger Antrag eingerreicht*
+=== TS04 - Unvollständiger Antrag eingerreicht
 |===
 | Vorbedingung: das Internet, Login, korrekte Logindaten
 
@@ -90,7 +92,7 @@
 | Erwartetes Ergebnis: Fehlermeldung
 |===
 
-*TS05 - Angezeigter Antrag aufrufbar*
+=== TS05 - Angezeigter Antrag aufrufbar
 |===
 | Vorbedingung: das Internet, Login
 
@@ -105,7 +107,7 @@
 | Erwartetes Ergebnis: Anzeige des gewählten Antrags
 |===
 
-*TS06 - Externer Nutzer darf keinen Antrag bearbeiten*
+=== TS06 - Externer Nutzer darf keinen Antrag bearbeiten
 |===
 | Vorbedingung: das Internet
 
@@ -120,7 +122,7 @@
 | Erwartetes Ergebnis: Fehlermeldung
 |===
 
-*TS07 - Administrator/Präsidium darf Anträge bearbeiten*
+=== TS07 - Administrator/Präsidium darf Anträge bearbeiten
 |===
 | Vorbedingung: das Internet, Login
 
@@ -141,7 +143,7 @@
 | Erwartetes Ergebnis: Speichern des bearbeiteten Antrags
 |===
 
-*TS08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen*
+=== TS08 - Externer Nutzer dürfen die Tagesordnung nicht ansehen
 |===
 | Vorbedingung: das Internet
 
@@ -154,7 +156,7 @@
 | Erwartetes Ergebnis: Fehlermeldung
 |===
 
-*TS09 - Interner Nutzer können die Tagesordnung ansehen*
+=== TS09 - Interner Nutzer können die Tagesordnung ansehen
 |===
 | Vorbedingung: das Internet, Login
 
@@ -169,7 +171,7 @@
 | Erwartetes Ergebnis: Anzeige der Tagesordnung
 |===
 
-*TS10 - Unterschiedliche Datentypen als Anlage*
+=== TS10 - Unterschiedliche Datentypen als Anlage
 |===
 | Vorbedingung: das Internet, Login, ausgefüllte Felder 
 
@@ -184,7 +186,7 @@
 | Erwartetes Ergebnis: Speichern der Anlage in Datenbank
 |===
 
-*TS11 - Felder "Vorschlag" und "Anlage" sollten optimal sein*
+=== TS11 - Felder "Vorschlag" und "Anlage" sollten optimal sein
 |===
 | Vorbedingung: das Internet, Login 
 
@@ -198,16 +200,4 @@
 
 | Erwartetes Ergebnis: Speichern des Antrags in Datenbank
 |===
-
-*TS## - TC-Name*
-|===
-| Vorbedingung: 
-
-| Eingabedaten:
-
-| Ablaufbeschreibung des Tests:
-
-| Erwartetes Ergebnis:
-|===
-
-
+////
