@@ -103,14 +103,34 @@ Es wurde für das Starten des Servers sowie das migrieren neuer Daten ein Shells
 
 == Transition Phase Übergangsphase
 
-Hier schwankte es zwischen Test und Implentierung da hier beide Teams Hand in Hand arbeiten und sich gegenseitung versuchten zu unterstützen. Nachdem Wir unseren Server beim StuRa eingerichtet hatten und die Software aufgespielt hatten. 
+Hier schwankte es zwischen Test und Implentierung, da hier beide Teams Hand in Hand arbeiteten und sich gegenseitung versuchten zu unterstützen. Nachdem Wir unseren Server beim StuRa eingerichtet hatten und die Software aufgespielt hatten. 
 
 == Test
 
-Das Testen wurde hintenangestellt da die Implentierung große schwierigkeiten hatte und somit lange nichts zum Testen vorhanden war. Zum Teil wurde das Testen der Implentieten Funktionen bereit bei der Implentierung übernommen da bei einer Webanwendung mit Datenbank anbindung automatisch beim Coden getestet wird ob alles so funktioniert wie angenommen was natürlich den Testern arbeit abnimmt diese aber auch eine längere Zeit in der Entwicklungsphase "überflüssig" macht. Da die Lokale instanz sich nicht ohne schwierigkeiten kopiert werden konnte, blieb eine Testmöglichkeit lange aus.
+Das Testen wurde hintenangestellt, da die Implementierung große Schwierigkeiten hatte und somit lange nichts zum Testen vorhanden war. Zum Teil wurde das Testen der implementierten Funktionen bereits wärend der Implemetierung übernommen, da bei einer Webanwendung mit Datenbankanbindung automatisch beim Coden getestet werden muss, ob alles wie geplant funktioniert, was natürlich den Testern Arbeit abnimmt, diese aber auch eine längere Zeit in der Entwicklungsphase "überflüssig" macht. Da die lokale Instanz sich nicht oder nur mit erheblichem Aufwand kopiert ließ, blieb eine Testmöglichkeit für die Tester lange aus.
 
-Django funktionierte auf den Computern der restlichen Gruppenmitglieder nicht richtig oder ließ sich ganicht starten. Trotz mehrfacher Installations und Konfigurations versuche weigertete sich Django erheblich auf anderen Windows Installationen zu Funktionieren. Desweiteren hatte ein weiteren Teammitglied das Problem das seine Hardware die Virtualliserung im BIOS nicht unterstützte was das ausführen des Datenbank servers in der VM unmöglich machte. Damit war das Test team auf den Server des StuRas angewießen. Dessen Bereitstellung verzögerte sich aber auf mitte Juni.
+Django funktionierte auf den Computern der restlichen Gruppenmitglieder nicht richtig oder ließ sich garnicht erst starten. Trotz mehrfacher Installations- und Konfigurationsversuchen weigertete sich Django auf anderen Windows Installationen zu funktionieren. Desweiteren hatte ein Tester das Problem, dass seine Hardware die Virtualisierung im BIOS nicht unterstützte, was das Ausführen des Datenbankservers in der VM unmöglich machte. Damit war das Test Team auf den Server des StuRas angewiesen. Dessen Bereitstellung verzögerte sich aber auf Mitte bis Ende Juni.
+
+Nachdem uns der Server des StuRa zur Verfügung stand wurde direkt mit den Testen der Software begonnen. Wir fokusierten uns darauf sicherzustellen, dass alle vollständig implementierten use-cases ohne bugs oder sonstige Probleme später für den Anwender angenehm zu nutzen sind.
+
+In der Entwicklung lag der Fokus auf der Implementierung der vom StuRa gewünschten Funktionen, weshalb diese für uns auch Priorität beim Testen hatten.
+Das Einreichen von Anträgen, sowie das Anzeigen und Bearbeiten von bereits eingereichten Anträgen musste unbedingt bis zur Auslieferung einwandfrei funktionieren, weshalb der Fokus sehr auf diesen drei use-cases lag.
+
+Die Software wurde wärend der Entwicklung bereits sehr gut debuggt, weshalb sich beim Testen kaum größere Fehlfunktionen gefunden wurden, welche dem Team Implementierung nicht bereits bekannt waren. 
+
+Aufgrund der knappen Zeit wurden die gefundenen bugs und Probleme direkt im Anschluss mit dem Team Implementierung besprochen. Kleine "Schönheitsfehler" wie etwa Rechtschreibfehler oder unschöne Formatierung wurden direkt live geklärt und behoben.
+
+Größere Fehler, wie die fehlende Übermittlung der Stelle des Antrags beim Abfragen der Daten, konnten nicht sofort, aber bis zum nächsten Tag behoben werden. Dies ermöglichte es in der wenigen verbliebenen Zeit direkt weitere Test an der überarbeitetet Software durchzuführen und die nochmal Bugfixes ausführlich zu prüfen.
+
+Leider konnten nicht alle gefundenen Probleme bis zur Auslieferung behoben werden. So ist es aktuell zwar möglich beim Bearbeiten eines Antrags die absolute Mehrheit auf "ja" zu setzen, allerdings wird diese Datenänderung dann nicht wie alle anderen Änderungen an die Datenbank übermittelt.
+
+Trotzdem haben die Tests dafür gesorgt, dass die meisten Fehler und Probleme rechtzeitig entdeckt und behoben werden konnten. Dies hat es ermöglicht die Software rechtzeitig in einen auslieferungsbereiten Zustand zu bringen, sodass der StuRa bedenkenlos mit dem System arbeiten kann, wenn die Auslieferung abgeschlossen ist. Da eins unserer Teammitglieder selbst im StuRa aktiv ist, kann die Software sogar nach der Auslieferung von einem Experten weiter betreut und gewartet werden. Selbst die Weiterentwicklung des Tools durch ein anderes Team kann so einfach unterstützt werden.
+
+Das System hat in der Theorie (und auch in der Praxis) einige Schwachstellen, welche ein böswilliger Akteur ausnutzen könnte, um es anzugreifen und unbenutzbar zu machen. Diese Probleme sind uns bereits wärend der Planung des Projektes aufgefallen. Dazu gehören die Möglichkeit einer DOS Attacke auf den Server und das Einreichen unzähliger unechter Anträge, welche ebenfalls den Server überfordern könnten und die Datenbank mit unnötigen Daten zumüllen. Auch wenn der der Server durch diese Anträge nicht überlastet wird, so wird trotzdem die Arbeit des StuRa behindert. Ebenfalls könnte auch ein SQL-Injection Angriff möglich sein, durch welchen sich (auch ohne Adminrechte) eventuell Daten aus der Datenbank löschen lassen könnten.
+
+Da die Sicherung des Systems gegen solche Angriffe aber keine Anforderung seitens des Stura war, haben wir uns auch nicht wirklich mit der Lösung dieser Probleme beschäftigt. Es wären einige weitere Skripte und log-Dateinen notwendig gewesen, um für einen soliden Schutz zu sorgen. Da diese nicht implementiert wurden haben wir im Test auch garnicht erst auf die besagten Schwachstellen getestet. Aus den gleichen Gründen haben wir auch bewusst den Test zur Reaktion der Software auf unerwartete Sonderzeicheneingaben nicht durchgeführt.
+
 
 == Übergabe und Dokumentation
 
-Die geplante Übergabe findet am 7.7.2021 statt. Dieser Terin kommt zu stande da Wir versuchen bis zum Schluss bugs zu beben um das Usererlebnis so angenehm wie möglich zu gestalten. Das Übergabeprotokoll wurde bereits erstellt und wir mit dem Kunden abgeglichen und unterzeichnet.
+Die geplante Übergabe findet am 7.7.2021 statt. Dieser Termin wurde gewählt, weil Wir versuchen bis zum Schluss bugs zu beheben, um das Usererlebnis so angenehm wie möglich zu gestalten. Das Übergabeprotokoll wurde bereits erstellt und wird mit dem Kunden abgeglichen und anschließend unterzeichnet.
