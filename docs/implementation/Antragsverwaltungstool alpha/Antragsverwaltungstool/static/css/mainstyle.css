@@ -38,6 +38,10 @@ body{
     background-color: #F2AC2E;
 }
 
+.mainnav a:hover:not(.active){
+    background-color: #F2AC2E;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
