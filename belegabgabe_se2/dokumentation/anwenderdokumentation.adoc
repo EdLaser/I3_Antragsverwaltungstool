@@ -3,16 +3,13 @@
 include::../../docs/_includes/default-attributes.inc.adoc[]
 {mail}
 
-== Ziel der Dokumentation
-Ziel der Dokumentation sit es, den Anwender, wenn er nicht mehr weiter weiß, ein möglichst einfaches Dokument an die Hand zu geben damit er weiterarbeiten kann.
+== Motivation dieser Dokumentation
+Diese Dokumentation dient dazu dem Nutzer schnelle Hilfe zur Verfügung zu stellen. Ereicht wird das durch das einbinden von Bildern der Grafischen oberfläche und einen dazu passenenden und möglichst einfachen Erklärungstext. Dieses Dokumnent richtet sich an alle arten von Useren, egal ob Administrator, StuRa Mitglied oder Antragsteller ohne eigene Logindaten.
 
-== Zweck und Funktionsumfang des Antragsverwaltungstools
-=== Zweck
-Das Antragsverwaltungstool soll dafür genutzt werden, Anträge an den StuRa stellen zu können und damit einhergehend eine Bearbeitung selbiger zu ermöglichen. 
-Hier ist zwischen dem Stellen und Bearbeiten klar zu differenzieren.
+== Anwendungszweck und Funktionsumfang des Antragsverwaltungstools für User ohne Logindaten
+=== Anwendungszweck
+Die Funktion des Atragsverwaltungstool des StuRas der HTW-Dresden ist es, jeder Person die möglichkeit bieten auf einfachen Wege Anträge zu verschiedenen Arten an den StuRa zu stellen.
 
-==== Anträge stellen
-Das Stellen von Anträgen soll für jederman, wie vom Studenten Rat gewünscht, von jedem möglich sein. Daher kann jede Person einen Antrag an den StuRa stellen. Dies umfasst Personen aus der Hochschle, aus dem StuRa, aus den Reihen der Professoren oder aber auch Personen oder Firmen, wobei letzteres eher seltener vorkommt. Hier lässt zwischen verschiedenen Anträgen unterscheiden, welche auf der Startseite des Antragsverwaltungstools aufgelistet und erklärt sind.
+=== Homepage / Landingpage
 
-==== Anträge bearbeiten
-Das Bearbeiten von Anträgen obligt nur den berechtigten Mitgliedern aus dem StuRa. Hierbei kann über die Angabe der Antragsnummer der Antrag in eine Maske ähnlich wie beim Antrag Stellen eingetragen und bearbeitet werden. Nach der Bearbeitung wird der Antrag abgeschickt und gespeichert.
+image::database-scheme.png[]
