@@ -47,6 +47,77 @@ image::login_befullt.jpg[]
 
 Nach klick auf den Login Button wird man zu dieser Seite weitergeleitet. Diese Funktioniert genau so wie auf anderen Portalen. Benutzernamen eingeben,  das dazu passende Passowort eingeben und auf "Daten absenden" drücken. Sollte die überprüfung Erfolgreich sein wird man Eingeloggt und wird zurück zur Homepage gebracht.
 
+=== Footer
+
+image::footer.jpg[]
+
+Hier werden alle für die Entwicklung und dessen Ausführung verwendete Tools, Frameworks, etc. Dargestellt. Das SutRa Logo in der Mitte leitet den Nutzer zu der offiziellen StuRa seite weiter.
+
 == Anwendungszweck und Funktionsumfang des Antragsverwaltungstools für StuRa Mitglieder
 
-Alle zuvor beschriebenen Funktionen gelten hier auch, im Zweifel weiter oben nachlesen
+Alle zuvor beschriebenen Funktionen, bedienelemente oder ähnliches gelten auch in diesem Abschnitt, im zweifel weiter oben nachlesen.
+
+=== Navigationsleiste nach Login
+
+image::navbar_login.jpg[]
+
+Nach erfolgreichem Login hat die Navigationsleiste einen weiteren Link, "Intern", bekommen und auf der rechten seite steht nun der Benutzernahme sowie der Button mit der Funktion den Benutzer auf Wunsch abzumelden.
+
+=== Intern
+
+image::intern.jpg[]
+
+Auf der Seite des Internen Bereichs kann der StuRa alle eingereichten Anträge zur Anzeige bringen und durch klick auf die Antragsnummer nach Wunsch beliebig oft bearbeiten. Damit die Liste nich zu unübersichtlich wird kann nach Stellen gefiltert werden um die Auswahl auszudünnen.
+
+:tip-caption: 💡
+[TIP]
+Für das Anzeigen aller eingereichten Anträge muss nur die Standard Option "Bitte Auswählen" eingeloggt sein und anschließend auf den "Absenden" Button gedückt werden. 
+
+:warning-caption: ❗
+WARNING: Die Funktion "Zeitspanne wählen" ist noch nicht Implementiert (Stand Juli 2021) und wurde deshalb ausgegraut
+
+=== Beschließen von Anträgen
+
+image::Antrag_stura1.jpg[]
+
+Nach auswahl des gewünschen Antrages wird dieser in einer StuRa eigenen Bearbeitungs Sicht geöffnet und die Eingereichten Daten werden wieder in das Formular geladen. +
+Diese können nach belieben angepasst werden, bis auf Name und Email Adresse des Antrag stellers.
+
+==== Antrag an richtige Stelle
+
+image::Antrag_stura2.jpg[]
+
+Wenn der Antrag an die korrekte stelle eingereicht wurde haben die StuRa mitglieder alle erforderlichen felder für die Beschließung eines Antrages am ende des Formulars. Diese werden ausgefüllt und danach wieder Abgesendet. 
+
+:tip-caption: 💡
+[TIP]
+Der Antrag kann auch gedruckt werden sollte dies nötig sein
+
+==== Antrag an falsche Stelle
+
+image::Antrag_stura3.jpg[]
+
+Sollte ein Antrag keine Stelle haben oder die falsche Stelle haben kann diese ganz einfach geändert werden. Mann geht an das ende des Formulars bis zu den Beschlusswerkzeugen des StuRas und wählt die Checkbox "Fasches Referat" aus. Danach verschwinden die Bearbeitungstools und die Stellenauswahl wird angezeigt. Hier kann die richtige Stelle ausgewählt werden. Danach den Antrag Absenden.
+
+== Funktionsumfang des Antragsverwaltungstools für Administratoren
+
+Alle zuvor beschriebenen Funktionen, bedienelemente oder ähnliches gelten auch in diesem Abschnitt, im zweifel weiter oben nachlesen.
+
+=== Verbinden auf die Admin Seite
+
+image::admin_url.jpg[]
+
+Um auf die Admin seite des Tools zu gelangen muss obenstehene URL eingeben werden. Desweitern muss man als administrator auf der Seite des Antragsverwaltungstools angemeldet sein. Sollte dies nicht der Fall sein unter Login nachlesen was zu tuen ist.
+
+=== Hauptansicht
+
+image::adminpage.jpg[]
+
+Die obere Tabelle bescheibt alle in der Datenbank hinterlegeten Tabellen, die in halte dieser können nach belieben manipuliert werden. Der Administrator hat die Möglichkeit Anträge zu entfernen.
+
+die untere Tabelle stellt die Benutzer verwaltung dar hier kann der Admin seinen eigenen und andere Benutzer verwalten, manipulieren und löschen. Sowie Benutzergruppen anlegen.
+
+:warning-caption: ❗
+WARNING: Mit großer Macht kommt große Verantwortung!
+
+die Tabelle links stellt einen Feat dar der über die neusten Aktionen aufklären soll. Diese können ausgewählt werden. Daraufhin wird man zu einer Admin internen Ansicht der Daten weitergeleitet und können von dort aus Manipuliert werden.
