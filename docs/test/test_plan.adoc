@@ -1,26 +1,31 @@
-= Testplan
+== Testplan
 
-== Teststrategie
+=== Teststrategie
 Eines der höchsten Risiken von Fehlfunktionen der Software ist der Verlust von Antragsdaten. Wenn Anträge garnicht oder falsch abgespeichert werden, dann kann dies für große Probleme beim StuRa sorgen und macht die Software unzuverlässig und damit auch unbrauchbar.
 
 Deshalb ist es essenziell, dass das Einreichen und Bearbeiten von Anträgen ohne Datenverlust oder ungewollte Datenmanipulation funktioniert. Ebenfalls dürfen bei der Antragsbearbeitung keine Daten falsch angezeigt werden, da dies für Fehlinformationen und -entscheidungen sorgen würde.
 
-== Testumgebung
+Problematisch kann auch ein Angriff einer böswilligen Person sein. Da wir keine Skripte und log-Dateien gegen DOS-Angriffe und Antragssppamming entwickelt besteht an dieser Stelle das Risiko, dass die Arbeit des StuRa z.B. durch einen Serverabsturz behindert wird. Ebenfalls könnten SQL-Injections möglich sein, welche dafür sorgen, dass Daten aus der Datenbank gelöscht werden.
+Da es bisher keine Maßnahmen gegen solche Angriffe gibt können auch keine solchen Sicherheitsmaßnahmen getestet werden.
 
-Zum Testen wird keine besondere Testumgebung benötigt. Da das System auf dem HTW-Server gehostet wird  braucht man lediglich eine Internetverbindung, um das Tool über den Browser aufzurufen und zu testen/nutzen.
+=== Testumgebung
 
-Bevor das Tool auf dem Server gehostet wurde war es notwendig die Systemvoraussetzungen (siehe Betriebsdokumentation) lokal auf dem eigenen Gerät zu schaffen. Dies hat den Test- und Entwicklungsprozess erheblich erschwert.
+Zum Testen wird keine besondere Testumgebung benötigt. Da das System auf dem HTW-Server gehostet wird braucht man lediglich eine Internetverbindung, um das Tool über den Browser aufzurufen und zu testen/nutzen.
 
-Die Test werden ausschließlich manuell durchgeführt. Mit Skripten o.Ä. automatisierte Test werden vorerst nicht benötigt.
+Bevor das Tool auf dem Server gehostet wurde war es notwendig die Systemvoraussetzungen (siehe Betriebsdokumentation) lokal auf dem eigenen Gerät zu schaffen. Dies hat den Test- und Entwicklungsprozess erheblich erschwert bzw. unmöglich gemacht.
 
-== Testdokumentation
+Die Test werden ausschließlich manuell durchgeführt. Mit Skripten o.Ä. automatisierte Test werden aktuell nicht benötigt.
+
+=== Testdokumentation
 
 Die Testergebnisse werden in einer Tabelle (siehe test_log) protokolliert. Es werden der Name des Tests, das Datum an dem er durchgeführt wurde, das Ergebnis und sonstige Anmerkungen/Notizen in der Tabelle notiert. Sonstige Fehler und Verbesserungenvorschläge werden in der Fehlerliste dokumentiert.
 
-== Testorganisation
+=== Testorganisation
 
-Jacob testet alle wichtigen use-cases auf Fehlfunktionen, optimalen Workflow für den Nutzer und sonstige Ungenauigkeiten (wie z.B. Rechtschreibfehler). Nachdem die Tests durchgeführt sind werden alle Funde möglichst zeitnah mit den für die Implementierung zuständigen Teammitgliedern besprochen. Diese setzen dann die notwendigen Änderungen um.
+Die Test Teammitglieder prüfen alle wichtigen use-cases auf Fehlfunktionen, optimalen Workflow für den Nutzer und sonstige Ungenauigkeiten (wie z.B. Rechtschreibfehler). Nachdem die Tests durchgeführt sind werden alle Funde möglichst zeitnah mit den für die Implementierung zuständigen Teammitgliedern besprochen. Diese setzen dann die notwendigen Änderungen um.
 
-== Testausführungsplan
+Wärend der Implementierung werden zudem schon viele Funktionen parallel von den Entwicklern getestet. Dies sorgt dafür, dass kaum große Probleme bei den Tests gefunden werden bzw. das ein Großteil der Fehlfunktionen bereits bekannt ist. 
 
-Alle vollständig implementierten use-cases werden von Jacob ausführlich getestet, sobald das Tool auf dem Server installiert ist und bereit steht.
+=== Testausführungsplan
+
+Alle vollständig implementierten use-cases werden von den Testern ausführlich getestet, sobald das Tool auf dem Server installiert ist und bereit steht.
