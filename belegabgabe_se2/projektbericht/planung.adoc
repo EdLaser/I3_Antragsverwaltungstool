@@ -51,7 +51,7 @@ Da wir ihre Empfehlung für sinvoll erachten  und abgeshen von SE-1 noch nie  je
 
 Wie von ihnen vorgegeben haben wir unser Projekt als OpenUP umgesetzt bzw. dies best möglichst versucht. Wir haben dabei zum Großteil Iterativ gearbeitet zum anderen Teil aber auch in einer Art V-Modell um eine Art Überblick zu behalten und uns nicht an Kleinigkeiten aufzuhalten. 
 
-Grob gesehen wussten wir etwa in welchen Wochen des Semesters wir den Entwurf abschließen, implementieren und testen und diese Grobplannung hat auch recht genau gestimmt. (Auch wenn die Hälfte der Use-Cases am Ende noch nicht implementiert worden sind.)
+Grob gesehen wussten wir etwa in welchen Wochen des Semesters wir den Entwurf abschließen, implementieren und testen müssen um den Umfang aller Use-Cases und deren Funktionalitäten bereit zu stellen. (Auch wenn die Hälfte der Use-Cases am Ende noch nicht implementiert worden sind.)
 
 Innerhalb der einzelnen Iterationen haben wir jedoch nochmal altes überarbeitet sowie verbessert, bei Bedarf auf Kundenwünsche reagiert und unser Ergebnis eher an unsere aufgewandte Zeit angepasst als anders herum.
 

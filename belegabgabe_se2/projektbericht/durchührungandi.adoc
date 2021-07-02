@@ -1,0 +1,104 @@
+== 2.Durchführung 
+
+=== 2.Überblick über Phasen und Iterationen
+
+Wie in Teil 1.3.3 erwähnt hatten wir eine Grobplannung die durch Störfaktoren  (in 3.3.1 behandelt) etwas nach hinten verschoben wurde. 
+Die Iterationen 1 bis 3 wurden in SE-1 abgehandelt und es finden sich keine Ausführung dieser in diesem Dokument. 
+
+Zudem behandelt die Iteration 10 keine neuen Funktionalitäten Grundsätzlich werden ab dem 03.04. keine Änderungen am Quellcode unseres Projektes mehr vorgenommen bis dahin werden noch Kleinigkeiten verändert die keine nähre Erläuterung benötigen. 
+
+[%header, cols="1,2,2,2,5,5"]
+
+|=== 
+
+|Itaration
+|geplannte Phase
+|tatsächliche Phase
+|Datum
+|Aufgaben
+|Besonderheiten/Ereignisse
+
+|1
+|Iception
+|Iception
+|SE-I
+|Anforderungsanalyse
+|-
+
+|2
+|Iception
+|Iception
+|SE-I
+|Anforderungsanalyse
+|-
+
+|3
+|Elaboration
+|Elaboration
+|SE-I
+|Anforderungsanalyse, erstes testen der Tools(Implementierung)
+|Server angefragt
+
+|4
+|Elaboration
+/Construction
+|Elaboration
+|5.04 - 19.04
+|[red]#Requirements genau abklären, 
+Vision nochmal abgleichen#, 
+[green]#Dokumentation SE-1 überarbeiten,
+Prototypen bauen(Implementierung)#
+|Keinen Ansprechpartner beim Stura mehr
+
+|5
+|Construction
+|Construction
+/Elaboration
+|19.04 - 03.05.
+|[green]#Testcases, Erste Funktionalitäten im Prototypen implementieren, Dokumentation überarbeiten# ([green]#Domainmodell# + [yellow]#Use-Cases sowie Use Case Modell#)
+| Prototyp ist nun eher eine Demo-Version
+
+|6
+|Construction
+|Construction
+/Elaboration
+/Inception
+|03.05 - 17.05
+|[green]#Teilweise neue Anforderungsanalyse, Demovorstellen -> Meinungen einholen#, 
+[green]#Überarbeitung Vision + Use-Cases#,[yellow]#Weiter an Funktionalitäten arbeiten/austesten was geht(implementierung)#
+|13.Mai Johann Boxberger als neuer Ansprechpartner und neuen Kunden kennengelernt
+
+|7
+|Construction
+/Transition
+|Construction
+|17.05-31.05
+|[green]#Datenbank sowie verknüpfung erstellen, Dokumentation überarbeiten#,[yellow]#Möglichkeit des Logins bereitstellen/über Lösung nachdenken#
+|17.05 StuRa-Server zugesagt, Demo-Version erfüllt Grundfunktionen
+
+|8
+|Transiton
+|Construction
+|31.05-14.06
+|[green]#einarbeiten in neues Webinterface,aufsetzen eines Apache-Webservers#, [yellow]#erste tests starten#
+|Wechsel aufs Django webinterface
+
+|9
+|Transition
+|Transition
+|14.06-28.06
+|[green]#Projekt Implementation auf Server kopieren und dort testen, letzte Funktionalitäten hinzufügen, testen#, [yellow]#Bericht/Dokumentationen Zuständigkeitsbereiche klären und auf grobe Struktur einnigen#
+|25.06 StuRa stellt Server bereit
+
+|10 
+|[blue]#Bericht schreiben#
+|[blue]#Bericht schreiben#/ Transition
+|28.06-04.07
+|[green]#letzte Änderungen vornehmen, Bugsfixen, Übergabe vorbereiten#, *Bericht schreiben*
+|01.07 Projekt Vorstellung SE-2
+|=== 
+
+[green]#wurde erfüllt#,
+[yellow]#noch nicht vollständig erfüllt#,
+[red]#nicht erfüllt#,
+[blue]#extra#,
