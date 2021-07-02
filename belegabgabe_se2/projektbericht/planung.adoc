@@ -15,7 +15,7 @@ Als Vorlage wurde uns die Website https://antragsgruen.de/ präsentiert an der w
 
 Zu Semesterbeginn haben wir die größtenteils abgeschlossene Anforderungsanalyse aus dem letzten Semester übernommen bzw. damit weitergearbeitet. Zudem hatten wir uns letztes Semester schon einige Gedanken über die Tools gemacht ,welche wir nun zur Implementierung nutzen wollten. Wir waren somit fast mit der Elaboration-Phase fertig und konnten mit der Construction-Phase beginnen. 
 
-Leider mussten wir feststellen das unsere alte Ansprechpartnerin  „Liselotte Ruthe“ vom StuRa sich nicht mehr für uns verantwortlich fühlte bzw. aus dem StuRa ausgetretten ist. Zudem war #"Axel S."(hier noch vervollständigen)# zwar der Antragsteller jedoch nicht unser Ansprechpartner, daher konnten wir zu beginn dieses Semester erstmal keine Rücksprache mit unserem eigentlichen Kunden halten, später erfüllte diese Position dann "Johann Boxberger".
+Leider mussten wir feststellen das unsere alte Ansprechpartnerin  „Liselotte Ruthe“ vom StuRa sich nicht mehr für uns verantwortlich fühlte bzw. aus dem StuRa ausgetretten ist. Zudem war "Axel Schiller" zwar der Antragsteller jedoch nicht unser Ansprechpartner, daher konnten wir zu beginn dieses Semester erstmal keine Rücksprache mit unserem eigentlichen Kunden halten, später erfüllte diese Position dann "Johann Boxberger".
 
 Hinzu kommt das Corona bedingt ein Lockdown vorherrscht welcher die Kommunikation in den virtuellen Raum lenkt, dies hat uns nicht groß behindert war jedoch im Bereich der Motivation und Kommunikation durchaus merkbar.
 
@@ -30,7 +30,7 @@ Hinzu kommt das Corona bedingt ein Lockdown vorherrscht welcher die Kommunikatio
 Unser Team hat sich von 8 auf 5 Personen (Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien Nguyen[T.N], Andreas Gröber[A.G]) verkleinert, welche gelegentlich von unserem Coach Felix Müller unterstützt wurde. Daraus folgt das wir auch unsere Rollen und Aufgabenbereiche angepasst haben bzw. mussten. 
 
 Ruben und Richard haben größtenteils selbständig die Implementierung und das entwerfen der Architektur sowie die Dokumentierung darüber übernommen. 
-Jacob und Tien haben das Testen #(den Teil den Ruben und Richard nicht gemacht haben?)# und dessen Dokumentierung übernommen. 
+Jacob und Tien haben das Testen (den Teil den Ruben und Richard nicht getestet haben) und dessen Dokumentierung übernommen. 
 Andreas hat die Projektplannung sowie den leitenden Teil bei der Analyse-Dokumentation übernommen mit Ruben und Jacob als unterstützende Personen.
 
 Zudem ist Ruben Mitglied im StuRa und somit ein schneller Kommunikationsweg zu unserem Kunden, bei Fragen oder Rücksprache an unseren Kunden bzw. der gesammten StuRa Leitung war das überaus hilfreich.
@@ -76,7 +76,7 @@ Wie erwähnt wurde eine Risklist erstellt.
 
 ==== 1.3.4.2 Eingesetzte Strategien
 
-Höchste Priorität bei der Start-Phase war es Momentum (eine Eigendynamik) zu erzeugen, dies wurde über wöchentliche Meetings bzw. durch regelmäßiges arbeiten am Projekt sowie der Spezialisierung in die verschiedenen Rollen, um Multitasking zu vermeiden, sowie über Konfliktvermeidung auch erreicht. 
+Höchste Priorität bei der Start-Phase war es Momentum (eine Eigendynamik oder Workflow) zu erzeugen, dies wurde über wöchentliche Meetings bzw. durch regelmäßiges arbeiten am Projekt sowie der Spezialisierung in die verschiedenen Rollen, um Multitasking zu vermeiden, sowie über Konfliktvermeidung auch erreicht. 
 
 Das erzeugen des Momentums erfordert am Anfang möglicherweise etwas mehr Zeit, aber es ermöglicht oder vereinfacht das kontinuierliche sowie konzentrierte arbeiten am Projekt und sorgt schlussendlich für Fortschritt an den Hauptfunktionalitäten. Leider wurde dies an einnigen stellen durch unseren Kunden etwas gestört z.B als wir etwa einen Monat keine Reaktion auf die Nachfrage nach unserem zugesagten Server bekammen und nicht wirklich wussten wie es weiter geht. 
 
