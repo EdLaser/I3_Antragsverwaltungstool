@@ -366,7 +366,7 @@ Wir haben etwa anderthalb Wochen vor Projektabgabe mit dieser Phase begonnen und
 
 ==== 2.2.4.4 Aktivitäten
 
-==== Test
+==== Test und bugfixing
 
 Das Testen wurde hintenangestellt, da die Implementierung große Schwierigkeiten hatte und somit lange nichts zum Testen vorhanden war. Zum Teil wurde das Testen der implementierten Funktionen bereits wärend der Implemetierung übernommen, da bei einer Webanwendung mit Datenbankanbindung  beim Coden getestet werden muss, ob alles wie geplant funktioniert. Dies nahm natürlich den Testern Arbeit ab, diese aber auch eine längere Zeit lang in der Entwicklungsphase "überflüssig" macht. Da die lokale Instanz sich nicht oder nur mit erheblichem Aufwand kopiert ließ, blieb eine Testmöglichkeit für die Tester lange aus.
 
