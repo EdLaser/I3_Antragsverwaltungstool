@@ -1,10 +1,13 @@
 = Testdokumentation: {project-name}
+{localdatetime}
+//include::../../docs/_includes/default-attributes.inc.adoc[]
+{mail}
 
 include::../../docs/test/test_plan.adoc[]
 
-include::../../docs/test/test_cases.adoc[]
+//include::../../docs/test/test_cases.adoc[]
 
-=== Testkonzept
+== Testkonzept
 
 Die wichtigsten zu testenden Komponenten waren die Weboberfläche (Front-End), die Datenbank und diverse Skripte zur Datenübermittlung und -verarbeitung.
 
@@ -18,24 +21,6 @@ Zum Testen der Anzeige und Bearbeitung von Anträgen wurden für verschiedene An
 
 Ein Teil der Funktionstests ist bereits während der Implementierung durchgeführt worden. Ausführliche und tiefgehende Tests auf Fehlfunktionen und Verbesserungsmöglichkeiten sind dann durch das Team Test getätigt worden.
 
-
-//. Testdurchführungsplanung (wann wird welche Tests durchgeführt?): siehe test_log.adoc
-
-=== Testfallbeschreibung
-siehe: test_script.adoc
-
-
 include::../../docs/test/test_script.adoc[] 
 
-=== Testergebnisse
-
-//include::../../docs/test/test_log.adoc[]
-
-11 Testfälle sind bestanden
-
-funktionen: anträge stellen
-anzahl anträge pro referat einsehen
-detailierte ansicht der anträge
-admin seite
-logins (fast fertig)
-
+include::../../docs/test/test_log.adoc[]
