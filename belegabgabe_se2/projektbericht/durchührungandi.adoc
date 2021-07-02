@@ -1,6 +1,6 @@
-== 2.Durchführung 
+== 2.Durchführung [A.G,R.K,R.M,J.F] 
 
-=== 2.Überblick über Phasen und Iterationen
+=== 2.1 Überblick über Phasen und Iterationen [A.G]
 
 Wie in Teil 1.3.3 erwähnt hatten wir eine Grobplannung die durch Störfaktoren  (in 3.3.1 behandelt) etwas nach hinten verschoben wurde. 
 Die Iterationen 1 bis 3 wurden in SE-1 abgehandelt und es finden sich keine Ausführung dieser in diesem Dokument. 
@@ -87,7 +87,7 @@ Prototypen bauen(Implementierung)#
 |Transition
 |Transition
 |14.06-28.06
-|[green]#Projekt Implementation auf Server kopieren und dort testen, letzte Funktionalitäten hinzufügen, testen#, [yellow]#Bericht/Dokumentationen Zuständigkeitsbereiche klären und auf grobe Struktur einnigen#
+|[green]#Projekt Implementation auf Server kopieren und dort testen, letzte Funktionalitäten hinzufügen und diese testen#, [yellow]#Bericht/Dokumentationen Zuständigkeitsbereiche klären und auf grobe Struktur einnigen#
 |25.06 StuRa stellt Server bereit
 
 |10 
@@ -102,3 +102,84 @@ Prototypen bauen(Implementierung)#
 [yellow]#noch nicht vollständig erfüllt#,
 [red]#nicht erfüllt#,
 [blue]#extra#,
+
+=== 2.2Gliederung der Durchführung [A.G]
+
+Wir werden die nun folgende Dokumentation der Durchführung anhand den 4 Projekt-Phasen Inception, Elaboration, Construction, and Transition gliedern. Die Tabelle in Punkt 2.1 soll bei der Orientirung helfen, da wir zum Teil innerhalb den Iteration springen (siehe Iteration 6) und dieser Teil des Projektes aus der Sicht von 4 Personen zusammengetragen wird.
+
+=== 2.2.1 Inception-Phase [A.G,R.K,R.M,J.F] 
+
+==== 2.2.1.2 Einführung
+Diese Phase betrifft die Iterationen 1 bis 3 sowie 6, da unser Auftragsteller wechselte mussten wir auch unsere Anforderungsanalyse an ihn anpassen. 
+Dies ist leider erst ab dem 13.Mai passiert. 
+
+Dazu kommt das unsere Dokumente aus SE-1 noch sehr fehlerhaft waren, diese konnten wir zum Teil aber auch ohne die Hilfe unseres Kunden anpassen. Grob gesehen haben wir bestimmt nochmal etwa 1/3 der gesammten Anforderungsanalyse machen müssen darunter fallen Teile der Dokumentation, Use-Cases und Vision.
+
+==== 2.2.1.2 Ziele
+[%header, cols="2,1,4,3"]
+
+|===
+
+|Ziel |Datum |Erläuterung | Erfüllt?
+|Vollständige Anforderungsanalyse | SE-1 | Wurde aufgrund des Kundenwechsels und fehlern erneuert | Nein
+|Neue Anforderungsanalyse | 05.04 bzw. 17.05 | Vision und Use-Cases an Johann Boxbergers wünsche angepasst | Ja 
+| Theoretischen Plan haben was zu Implementieren ist | 17.05 | Wissen wie man Kundenwünsche in der Theorie umsetzt| Ja
+| Zeitplan erstellen| - | Plan für die verwirklichung der Use-Cases und deren Funktionalitäten bis zur finallen Version | Ansatzweise
+
+|===
+
+==== 2.2.1.3 Probleme
+
+Unser Hauptproblem bestand darin das wir nach dem Semesterwechsel keinen Ansprechpartner mehr beim StuRa hatten und zudem uns keiner weiteres Sagen konnte oder wollte, bis zu dem Zeitpunkt als Johann die Rolle des Kunden und Nutzer einnahm. Ein weiteres Problem bestand in unserer fehlerhaften Analyse aus SE-1 die wir aber relativ schnell mitunter auch mit Hilfe von unserem Coach Felix schnell verbessert haben sobald dies möglich war.
+
+==== 2.2.1.4 Aktivitäten
+
+=====  Hauptaktivitäten
+
+Unsere Hauptaktivität bestand darin das wir die Webanwendung so gut es geht vollumfänglich Implimentieren können.  Da wir nicht auf ein bestehendes System aufsetzen beziungsweise weiterentwickeln gab es einige Herausvorderungen denen Wir uns als Gruppe stellen mussten. 
+
+* Auswahl der Anwendungsart = Webanwendung
+* Auswahl der dafür verfügbaren Techniken = HTML, etc.
+* Beschaffung der Hardware vom StuRa = Hat geklappt aber sehr spät im Projekt
+* Auschließliche Verwendung von Open Source Lizenzen
+
+==== Anforderungserhebung und -analyse
+
+Der StuRa vorderte von uns ein Tool mit welchen User unbestimmter Art, meistens aber Professoren und HTW Studeten, verschiedene Arten von Anträgen beim StuRa der HTW-Dresden einreichen können. Das sollte sehr einfach funktionieren so das die Bedinung leicht ist und gut verständlich ist. Desweiteren soll das zu entwickelnde Tool auch die möglichkeit haben die verschieden eingereichten Anträge wieder in einer Listenform anzuzeigen. Zudem soll eine Bearbeitungs möglichkeit für StuRa Mitglieder geschaffen werden. Also ein Tool für das Einrechen und Bearbeiten von StuRa Anträgen war gefordert.
+
+Nach dem esten Kundengespräch im neuen Semester überprüften wir nocheinmal unseren Wissenstand und fragten nach Änderungen.
+
+[cols=2*,options=header]
+|===
+
+|Problemstellung
+|Analyse
+
+|Einfache Bedinbarkeit
+|Verwendung von HTML Formularen
+
+|Verschiedene Antragsarten
+|Die verschiedenen Antragsarten die der StuRa implementiert haben möchte erkennen und von Antragsformularen für die Händische Ausfüllung in einfache HTML Formulare umwandeln
+
+|Ausgabe der eingereichten Anträge in Listenform
+|Eigene HTML seite die als Übersicht der Einzelen Anträge dienen soll 
+
+|Bearbeitungs möglichkeit für StuRa Mitglieder
+|Verwendung eines Login systems der Verschiedene Funktionen sperrt oder zugänlich macht
+
+|Bearbeitung der eingereichten Anträge
+|StuRa eigendes Formular für die Bearbeitung der jeweiligen Anträge zuzüglich der Elemente für die Beschlussfassung des StuRas
+
+|Open Source Lizenzen verwenden
+|Nur auf Open Source Frameworks, etc. zurückgreifen
+
+|===
+
+==== 2.2.1.5 Review
+
+Insgesammt wurde unsere neue Vision und die vorgeschlagenen Use-Cases (die Implementierung aller 8 war damals noch angedacht aber eher nicht realisierbar) angenommen. 
+
+Grundsätzlich gab es wenig Input was Requirements und Anforderungen angeht vom Kunden selbst, wir haben das meißte als Idee vorgestellt die wurden dann angenommen oder abgelehnt, mitunter hatte Johann selber noch Ansprüche an das Layout oder Design gestellt die wir beachtet haben. 
+Johann war von unserer überarbeiteten Vision an das Projekt überzeugt und wir konnten die eigentlich Arbeit eigentlich schnell wieder aufnehmen.  
+
+Zudem haben wir Felix nochmal über unsere Analyse (Domainmodell,Vision,ProjectPlan) drüberschauen lassen und haben seinen Input umgesetzt.
