@@ -109,7 +109,7 @@ Wir werden die nun folgende Dokumentation der Durchführung anhand den 4 Projekt
 
 === 2.2.1 Inception-Phase [A.G,R.K,R.M,J.F] 
 
-==== 2.2.1.2 Einführung
+==== 2.2.1.1 Zustand
 Diese Phase betrifft die Iterationen 1 bis 3 sowie 6, da unser Auftragsteller wechselte mussten wir auch unsere Anforderungsanalyse an ihn anpassen. 
 Dies ist leider erst ab dem 13.Mai passiert. 
 
@@ -124,7 +124,6 @@ Dazu kommt das unsere Dokumente aus SE-1 noch sehr fehlerhaft waren, diese konnt
 |Vollständige Anforderungsanalyse | SE-1 | Wurde aufgrund des Kundenwechsels und fehlern erneuert | Nein
 |Neue Anforderungsanalyse | 05.04 bzw. 17.05 | Vision und Use-Cases an Johann Boxbergers wünsche angepasst | Ja 
 | Theoretischen Plan haben was zu Implementieren ist | 17.05 | Wissen wie man Kundenwünsche in der Theorie umsetzt| Ja
-| Zeitplan erstellen| - | Plan für die verwirklichung der Use-Cases und deren Funktionalitäten bis zur finallen Version | Ansatzweise
 
 |===
 
@@ -183,3 +182,48 @@ Grundsätzlich gab es wenig Input was Requirements und Anforderungen angeht vom 
 Johann war von unserer überarbeiteten Vision an das Projekt überzeugt und wir konnten die eigentlich Arbeit eigentlich schnell wieder aufnehmen.  
 
 Zudem haben wir Felix nochmal über unsere Analyse (Domainmodell,Vision,ProjectPlan) drüberschauen lassen und haben seinen Input umgesetzt.
+
+=== 2.2.2 Elaboration-Phase [A.G,R.K,R.M,J.F] 
+
+==== 2.2.2.1 Zustand
+==== 2.2.2.2 Ziele
+[%header, cols="2,1,4,3"]
+
+|===
+
+|Ziel |Datum |Erläuterung | Erfüllt?
+
+|===
+==== 2.2.2.3 Probleme
+==== 2.2.2.4 Aktivitäten
+==== 2.2.2.5 Review
+
+=== 2.2.3 Construction-Phase [A.G,R.K,R.M,J.F] 
+
+==== 2.2.3.1 Zustand
+==== 2.2.3.2 Ziele
+[%header, cols="2,1,4,3"]
+
+|===
+
+|Ziel |Datum |Erläuterung | Erfüllt?
+
+|===
+==== 2.2.3.3 Probleme
+==== 2.2.3.4 Aktivitäten
+==== 2.2.3.5 Review
+
+=== 2.2.4 Transition-Phase [A.G,R.K,R.M,J.F] 
+
+==== 2.2.4.1 Zustand
+==== 2.2.4.2 Ziele
+[%header, cols="2,1,4,3"]
+
+|===
+
+|Ziel |Datum |Erläuterung | Erfüllt?
+
+|===
+==== 2.2.4.3 Probleme
+==== 2.2.4.4 Aktivitäten
+==== 2.2.4.5 Review
