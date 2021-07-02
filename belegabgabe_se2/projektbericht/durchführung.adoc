@@ -42,18 +42,39 @@ Nach dem esten Kundengespräch im neuen Semester überprüften wir nocheinmal un
 
 |===
 
-== Elaboration Phase Ausarbeitungsphase
+== Elaboration Phase Ausarbeitungsphase (RDK)
 
 === Hautpaktivitäten
 ==== Anforderungserhebung und -analyse
 
-Nach der Groben Richtung und der Erörterung der Domäne, sowie des Fachlichen Problems der Aufgabenstellung, führten wir Zahlreiche Meetings mit den Auftraggebern durch. Hier 
+Nach der Groben Richtung und der Erörterung der Domäne, sowie des Fachlichen Problems der Aufgabenstellung, führten wir Zahlreiche Meetings mit den Auftraggebern durch. Hier haben wir den Fokus auf alle möglichen Uses-Cases der Anwendung gelegt. Aufbauend auf diesem Wissen, haben wir die ersten Use-Case-Diagramme erarbeitet und begonnen das Use-Case-Modell anzufertigen. Dies hat uns am eher viele Probleme bereitet. Leider war das einarbeiten in die Prozesse des StuRa sehr anstrengend und zeitintensiv. Da es sich beim StuRa um eine Einrichtung mit sehr hohem Aufwand an förmlich einzuhaltenen Regeln. Hier gibt es viele Punkte die beachtet werden müssen welche für uns vollumfänglich kaum zu verstehen waren. Hier hatten wir viele Nachfragen bei jedem Meeting mit den Themenstellern bis wir die ganze Domäne vollumfänglich verstanden hatten.
 
-== Entwurf
 
-== Construction Phase Konstruktionsphase
+==== Entwurf
 
-Veranstaltung eines HTML Workshops für das restliche Team um die HTML Basics zu Vermitteln da nur wenige in der Gruppe Erfahrungen mit Webentwicklung mitbrachten. Dieser Workshop diente gleichzeitig zur Entwicklung einer Demo Version des gewünsten Tools. 
+Im Entwurf haben wir begonnen zu Planen in welche Richtung wir technisch gehen wollen. Hier haben wir den Fokus auf zu nutzen Technologien gelegt. Wir haben uns informiert welche Komponenten für unser System als Webanwendung nötig sind. In dieser Phase hat sich herauskristalisiert das wir einen Webserver benötigen. Die Lösung zur Haltung der Daten erschien ist erst als txt Dateien sinnvoll. Wir behielten uns jedoch eine Datenbanklösung im Hinterkopf.
+
+Wir befassten uns außerdem welche einzelnen Komponenten des Systems notwendig sein sollten. Wir arbeiteten aufgrund der Analyse heraus, das wir Funktionalitäten zum Einfügen und zum Anzeigen von Anträgen bereitstellen müssen. Mit diesem Wissen planten wir ebenfalls die Kommunkation mit dem Webserver und den bis jetzt vorhandenen Datenstrukturen.
+
+Außerdem haben wir abgeklärt welche Programmiersprachen bzw. welche Sprachen generell für einen Webservice benötigt werden. Hier haben wir uns auf die im Frontend dominanten Sprachen: HTML / CSS / JavaScript geeinigt. Hier hatte Herr Müller bereits ein kleines Konzept im Kopf, welches Design und welche Stuktur die Webseite haben sollte. Da wir im Backend eine möglichst gut verständliche Sprache nutzen sollten, haben wir uns auch aufgrund von Vorkentnisse auf Python geeinigt. jedoch schien es alles deutlich einfacher als es am Ende war. Hier plante wir die erste Kommunikation mit der Datenbank, welche über einfache Scripte abfolgen sollte. Der Plan sah vor das wir in SQL Abfragen formulieren wollten, welche wir dann in die Anwednung übernehmen wollten. Datrauf aufbauend befasste sich Herr Kraus, da er Vorwissen in Python hatte, mit dem Backend Part und den damit verbundenen Möglichkeiten der Umsetzung. Da wir es hier möglichst einfach halten wollten, wollten wir zunächst auf ein Framework verzichten und planten zuerst nur mit wenigen Bibliotheken und einfachen Skipten.
+
+
+
+Zusätzlich planten wir erste Versionen des Webservers und beschäftigten uns mit der groben Infrastruktur im StuRa. Hier haben wir uns angeeignet, wie ein Webserver einzurichten ist und Erfahren wie dieser im StuRa bereitgestellt wird.
+
+==== Implementierung
+
+Hier gab ein Teammitglied einen Einstieg in HTML als mit größte Komponente des Frontends. Da das Teammitglied schon Erfahrungen mit Frontend-Sprachen hatte, konnte er uns in diesem Fall viel Wissen vermitteln und uns alle anfallenden Fragen bereits erklären. Danach haben wir uns alle mit den geplanten Technologien auseinandergesetzt, aber gemerkt, dass ohne konkretes Ziel ein Anwenden der Sprachen kaum sinnvoll war. Es schien uns am sinnvollsten Herr Müller (mit den Erfahrungen im Frontend) für slbigen Part einzusetzen. Wir hatten hier vorerst eine unterstützende Funktion.
+Dabei wurde bereits eine erste Demo Version von Herr Müller erstellt. Hier haben wir uns ein gewisses Konzept für das Frontend überlegt, um einerseits eine gewisse Einheitlichkeit zu bekommen und um das Frontend ebenfalls nach einem Plan entwickeln zu können.
+Da das Feedback zum Größtenteil positiv war, wurde die Demo Version weiterverfolgt.
+
+Im Backend fehlte uns leider das nötige Wissen um die einsetzbaren Technologien möglichst gut abzuschätzen. Es wurden mit Python erste Scripte, die CRUD Operationen ausführen sollen, zu planen / zu erstellen. Die Scripte bauten auf den HTML Dateien der Demo auf und sollten den input der HTML Forms entgegennehmen und in die Dtaenbank schreiben.
+
+==== Test
+
+Es wurden bereits erste Testfälle für die Demo geplant. Leider begrenzte sich das ganze nur auf einzelne Dummy clicks ohne Funktion da wir weder einen Webserver, noch eine Datenbank online zur verfügen hatten. Hier haben wir versucht das ganze lokal über Container zu betreiben.
+
+==== Dokumentation
 
 === Implementierung
 
@@ -73,21 +94,21 @@ Als Entwicklungstool für die Webanwendung im Frontend wurde anfangs Jet Brains 
 
 Die erste Version der Webanwendung beschrieb nur die Grafische Oberfläche für den Endbenutzer ohne ein Backend. Diese Version wurde mit dem Kunden regelmäßig abgestimmt und nach seinen Wünschen und Vorstellungen erweitert und Angepasst.
 
-Bei der Implementierung der Backend lösung stießen wir auf etliche Probleme. Die erste geplante Version des Tools sah vor das Eingereichte Formulare als Textdateien auf dem Server abgespeichert werden. Mit dieser Lösung wollten wir auf eine Datenbank verzichten, da in unseren Augen eine Datenbank zu viele Funktionen hat die Wir nicht benötigen. Da allerdigs der Aufwand eine Textdatei mit den Inputs eines HTML Formulars zu erstellen, abzuspeichern und dann wieder in ein HTML Formular einzulesen viel zu umständlich war entschlossen wir uns kurzfristig auf eine MySQL Datenbank umzuswitchen da so die Datenspeicherung über eine Tabellenverwaltung deutlich vereinfacht wurde und eine bessere übersicht der Daten ermöglichte.
+Bei der Implementierung der Backend Lösung stießen wir auf etliche Probleme. Die erste geplante Version des Tools sah vor das eingereichte Formulare als Textdateien auf dem Server abgespeichert werden. Mit dieser Lösung wollten wir auf eine Datenbank verzichten, da in unseren Augen eine Datenbank zu viele Funktionen hat die Wir nicht benötigen. Da allerdigs der Aufwand eine Textdatei mit den Inputs eines HTML Formulars zu erstellen, abzuspeichern und dann wieder in ein HTML Formular einzulesen viel zu umständlich war entschlossen wir uns kurzfristig auf eine MySQL Datenbank umzuswitchen da so die Datenspeicherung über eine Tabellenverwaltung deutlich vereinfacht wurde und eine bessere übersicht der Daten ermöglichte.
 
 Das Einrichten der Datenbank geschah über eine lokale MySQL Server installation die erst in einer Virtuellen umgebung und dann später auf dem "echten" Server des StuRas installiert wurde. 
 
-Von einem Problem in das nächste. Die Datenbank lief für sich und die HTML seite lief für sich aber es gab keine Möglichkeit diese Sinnvoll zu verbinden. Der este plan Sah vor das mit zu hilfe nahme von PHP scripten die Input Daten aus den Formularen mittels "insert" Anweisungen in die Datenbank geschrieben werden sollten. Dies war nicht möglich da der verwendete Webserver Apache PHP scripte nicht ausführt. Auch nach mehrfacher Konfiguration des Webservers weigerte er sich immernoch die schripte ordnungsgemäs oder überhaubt auszuführen.
+Von einem Problem in das nächste. Die Datenbank lief für sich und die HTML seite lief für sich aber es gab keine Möglichkeit diese Sinnvoll zu verbinden. Der este plan Sah vor das nach unserer Entscheidung für Python unger zu Hilfe nahme von PHP scripten als "Auslöser" die Input Daten aus den Formularen mittels "insert" Anweisungen in die Datenbank geschrieben werden sollten. Dies war nicht möglich da der verwendete Webserver Apache PHP scripte nicht ausführt. Auch nach mehrfacher Konfiguration des Webservers weigerte er sich immernoch die schripte ordnungsgemäß oder überhaubt auszuführen.
 
-Da wir uns am anfang des Semesters gegen ein HTML Framework, da keines der Teammitglieder Erfahrungen mit dem Arbeiten mit HTML Frameworks hatt, oder einen HTML Bauskasten etc. entschieden hatten mussten wir einsehen das wir mit unserer Lösung nicht weiterkahmen. Daraufhin Entschlossen Wir das die Webanwendung auf das Django Framework umgebaut werden muss. Dies bereitete einige Probleme da sich das Implementierungs-Team erst auf das Framework einarbeiten musste und dann die Frontend lösung umschreiben musste, dies hat einiges an Zeit beansprucht. Die Syntax für das inlcuden von externe CSS und Java Script Files war eine andere als im herkömmlichen HTML verwendet da das Framework eine eigene File und Arbeitsstruktur mitbrachte.
+Da wir uns am anfang des Semesters gegen ein Web Framework, da keines der Teammitglieder Erfahrungen mit dem Arbeiten mit Web Frameworks hat, oder einen HTML Bauskasten etc. entschieden hatten mussten wir einsehen das wir mit unserer Lösung nicht weiterkahmen. Daraufhin Entschlossen Wir das die Webanwendung auf das Django Framework umgebaut werden muss. Dies bereitete einige Probleme da sich das Implementierungs-Team erst auf das Framework einarbeiten musste und dann die Frontend Lösung umschreiben musste, dies hat einiges an Zeit beansprucht. Die Syntax für das inlcuden von externe CSS und Java Script Files war eine andere als im herkömmlichen HTML verwendet da das Framework eine eigene File und Arbeitsstruktur mitbrachte.
 
-Der umbau kostete Zeit war aber erfolgreich so das wir die PHP scripte ausführen konnten und so das erste mal mit unserer Datenbank Komunizieren konnten. 
+Der Umbau erfolgte zuerst nur im Backend, so dass es erstmal kleine Tests im neuen Framework gab. Der Vorteil von Django war hier ganz klar, dass eine Kommunikation mit der Datenbank nicht selbst geschehen muss. Hier wird alles direkt ovm Framework verwaltet und unser Problem mit der Datenbank wurde gelöst.
 
-Django brachte aber noch mehr Vorteile und möglickeiten mit die wir so gut es möglich war versuchten für unsere Zwecke auszuschöpfen. Wir verwarfen die idee mit PHP srcripten und stellten unsere Kommunikation auf Python um da Django damit arbeitet und Konfiguriert wird. Damit konnten wir die Formulare einfach anhand der input/textarea/selects namen/values auslesen und in die Datenbak schreiben.
+Django brachte aber noch mehr Vorteile und möglickeiten mit die wir so gut es möglich war versuchten für unsere Zwecke auszuschöpfen. Wir verwarfen die idee mit PHP srcripten und stellten unsere Kommunikation auf pures Python um da Django ein in Python geschriebenes Framework ist. Damit konnten wir die Formulare einfach anhand der input/textarea/selects namen/values auslesen und in die Datenbak schreiben.
 
 Parallel dazu wurde an einer Login lösung gearbeitet. Die erste herangehenweise war eine htaccess datei als login- und sicherheislösung zu verwenden da der geplante Haubtwebserver Apache war. Allerdings war dies nicht möglich da die htaccess datei nicht ohne weiteres mit Django kompartiebel war und somit ein Datenaustausch von login informationen erschwert wurde. Lösung des ganzen war die Erstellung einer eigenen Loginpage der Frontanwendung. 
 
-Django bot eine eigene Andmin Seite an die mit diversen funktionen ausgestatet is wie das erstllen und bearbeiten von Bemutzern oder das Auslesen und Manipulieren der Datenbak tablellen.  Dies macht die vorherige Entwicklung und Einbettung einer eigenen Adminseite überflüssig. Zudem ist die Django interne Seite mit einigen Sicherheits features ausgestattet die bei der eingenen Lösung nur schwer bis garnicht Implementiert werden könnte. Darunter fällt beispielsweise die unterscheidung zwischen normalen Benutzer und Administrator da nur ein Admin die Admin seite aufrufen können soll.
+Django bot eine eigene Andmin Seite an die mit diversen Funktionen ausgestatet is wie das erstllen und bearbeiten von Bemutzern oder das Auslesen und Manipulieren der Datenbak tablellen.  Dies macht die vorherige Entwicklung und Einbettung einer eigenen Adminseite überflüssig. Zudem ist die Django interne Seite mit einigen Sicherheits features ausgestattet die bei der eingenen Lösung nur schwer bis garnicht Implementiert werden könnte. Darunter fällt beispielsweise die unterscheidung zwischen normalen Benutzer und Administrator da nur ein Admin die Admin seite aufrufen können soll.
 
 Da unser StuRa Server troz mehrfacher nachfrage beim StuRa auf sich warten lies mussten wir Kreativ werden für die weitere Implemtierung. Dazu schafften wir eine lokale installation unserer Einzelen lösungen. Konkret wurde eine Linux VM mit Ubuntu aufgesetzt mit der ein MySQL Datenbankserver betrieben wurde. Jet Brains PyCharm brachte die Django Framework serverinstans mit mit der es möglich war unter localhost ein Server zu testen. Mit dieser Spartanischen lösung wurde weiterentwickelt und Debuggt. Das Problem war nur das diese Installation auf einem Privaten Rechner eines Gruppenmitglieds installiert war und so nur eine Person den Code der anderen ausführen konnte. Dies stelle kein großes Problem dar da unser Programm für die Meetings (Discord) die möglickeit anbot live eine Bildschirmübertragung zu starten damit jeder verfolgen konnte was ging und was nicht. 
 
