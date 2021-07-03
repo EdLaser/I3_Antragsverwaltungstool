@@ -4,120 +4,120 @@ include::../../docs/_includes/default-attributes.inc.adoc[]
 {mail}
 
 == Motivation dieser Dokumentation
-Diese Dokumentation dient dazu dem Nutzer schnelle Hilfe zur Verfügung zu stellen. Ereicht wird das durch das einbinden von Bildern der Grafischen oberfläche und einen dazu passenenden und möglichst einfachen Erklärungstext. Dieses Dokumnent richtet sich an alle arten von Useren, egal ob Administrator, StuRa Mitglied oder Antragsteller ohne eigene Logindaten.
+Diese Dokumentation dient dazu dem Nutzer schnelle Hilfe zur Verfügung zu stellen. Erreicht wird das durch das Einbinden von Bildern der grafischen Oberfläche und einen dazu passenenden, möglichst einfachen Erklärungstext. Dieses Dokumnent richtet sich an alle Arten von Usern, egal ob Administrator, StuRa Mitglied oder Antragsteller ohne eigene Logindaten.
 
 == Anwendungszweck und Funktionsumfang des Antragsverwaltungstools für User ohne Logindaten
 === Anwendungszweck
-Die Funktion des Atragsverwaltungstool des StuRas der HTW-Dresden ist es, jeder Person die möglichkeit bieten auf einfachen Wege Anträge zu verschiedenen Arten an den StuRa zu stellen.
+Die Funktion des Antragsverwaltungstool des StuRa der HTW-Dresden ist es, jeder Person die Möglichkeit zu bieten auf einfachem Wege Anträge verschiedener Arten an den StuRa zu stellen.
 
 === Homepage / Landingpage
 
 image::index.jpg[]
 
-Beim Erfolgreichen verbinden auf das Tool wird man von der Hauptseite begrüßt. Diese beschreibt den Anwendungzweck der Webanwendung etwas genauer und bietet eine Funktion für rückfragen per Mail an den StuRa. Diese Rückfragenoption kann durch das abschreiben der mailadressen wargenommen werden.
+Beim erfolgreichen Verbinden auf das Tool wird man von der Hauptseite begrüßt. Diese beschreibt den Anwendungzweck der Webanwendung etwas genauer und bietet eine Funktion für Rückfragen per Mail an den StuRa. Diese Rückfrageoption kann durch das Abschreiben der Mailadressen wahrgenommen werden.
 
 :tip-caption: 💡
 [TIP]
-Durch linksklicken auf "dieser Mail" öffent sich das Standard-Mail Verarbeitungsprogramm eures Computers und öffet eine leere Mail mit der passenden E-Mail adresse für sofortiges verfassen einer E-Mail.
+Durch linksklicken auf "dieser Mail" öffnet sich das Standard-Mail Verarbeitungsprogramm deines Computers und öffnet eine leere Mail mit der passenden Adresse für sofortiges Verfassen einer E-Mail an den Stura.
 
-Desweiteren befinden sich zu jedem Antrag der in der Navigationsleiste aufgeführt ist noch eine Karte mit Name des jeweiligen Antrags und einem beschreibenden textes auf der Seite. Jede Karte die zu einem Antrag gehört stellt auch eine Verlinkung zu dem jeweiligen Antrag dar.
+Desweiteren befinden sich zu jedem Antrag der in der Navigationsleiste aufgeführt ist noch eine Karte mit Name des jeweiligen Antrags und einem beschreibenden Text auf der Seite. Jede Karte die zu einem Antrag gehört stellt auch eine Verlinkung zu dem jeweiligen Antrag dar.
 
 === Navigationsleiste
 
 image::navbar.jpg[]
 
-Mit der Navigationsleiste kann man zu den Verschieden Antragsformulaten wechseln, sich einloggen oder auf die Hauptseite des StuRas der HTW-Dresden wechseln. Desweiteren fungiert das StuRa Logo links oben in der Ecke auf jeder Seite bis auf der Homepage als Homebutton der einen immer auf die Haupseite zurückbringt.
+Mit der Navigationsleiste kann man zu den verschieden Antragsformularen wechseln, sich einloggen oder auf die Hauptseite des StuRas der HTW-Dresden wechseln. Desweiteren fungiert das StuRa Logo oben links in der Ecke auf jeder Seite als Homebutton der einen auf die Hauptseite zurückbringt.
 
 === Anträge einreichen
 
 image::Antrag.jpg[]
 
-Wenn der passende Antrag augewält wurde geht es ans einreichen des jeweiligen Antrages. Dies wird Erreicht durch das Systematische ausfüllen des Antragformulares. Nach bearbeitung des Formulars und Ausfüllung aller Pflichtfelder den Button "Absenden" Drücken. Danach läd die Seite neu und setzt das Formular zurück. Ein Popup oder änliches über den Status des Antrages (erfolgreich abgesendet oder nicht) gibt es nicht.
+Wenn der passende Antrag augewählt wurde, geht es ans Einreichen des jeweiligen Antrags. Dies wird durch das systematische Ausfüllen des Antragformulares erreicht. Nach Bearbeitung des Formulars und Ausfüllung aller Pflichtfelder muss der Button "Absenden" gedrückt werden. Danach läd die Seite neu und setzt das Formular zurück. Ein Popup oder änliches über den Status des Antrages (erfolgreich abgesendet oder nicht) gibt es bisher noch nicht.
 
 :tip-caption: 💡
 [TIP]
-Bei unkenntnis über die zuständige Stelle: einfach die Auswahl "Bitte Auswählen" ausgewählt lassen. 
+Bei Unkenntnis über die zuständige Stelle: einfach die Auswahl "Bitte Auswählen" ausgewählt lassen. 
 
 :warning-caption: ❗
-WARNING: Sollte "Bitte Auswählen" bereits überschrieben worden sein kann dies Option nur durch zurücksetzen des Formulars mit dem Jeweiligen Button oder neuaufrufen der Seite erreicht werden. In beiden Fällen müssen die Daten neu eingetragen werden.
+WARNING: Sollte "Bitte Auswählen" bereits überschrieben worden sein, kann diese Option nur durch zurücksetzen des Formulars mit dem jeweiligen Button oder durch das Neuaufrufen der Website erreicht werden. In beiden Fällen müssen die Daten neu eingetragen werden.
 
 === Login
 
 image::login_befullt.jpg[]
 
-Nach klick auf den Login Button wird man zu dieser Seite weitergeleitet. Diese Funktioniert genau so wie auf anderen Portalen. Benutzernamen eingeben,  das dazu passende Passowort eingeben und auf "Daten absenden" drücken. Sollte die überprüfung Erfolgreich sein wird man Eingeloggt und wird zurück zur Homepage gebracht.
+Nach Klick auf den Login Button wird man zu dieser Seite weitergeleitet. Diese funktioniert genau so wie auf anderen Portalen. Benutzernamen eingeben, das dazu gehörende Passwort eingeben und auf "Daten absenden" drücken. Sollte die Überprüfung erfolgreich sein wird man eingeloggt und anschließend zur Homepage gebracht.
 
 === Footer
 
 image::footer.jpg[]
 
-Hier werden alle für die Entwicklung und dessen Ausführung verwendete Tools, Frameworks, etc. Dargestellt. Das SutRa Logo in der Mitte leitet den Nutzer zu der offiziellen StuRa seite weiter.
+Hier werden alle für die Entwicklung und dessen Durchführung verwendete Tools, Frameworks, etc. dargestellt. Das StuRa Logo in der Mitte leitet den Nutzer zu der offiziellen StuRa Seite weiter.
 
 == Anwendungszweck und Funktionsumfang des Antragsverwaltungstools für StuRa Mitglieder
 
-Alle zuvor beschriebenen Funktionen, bedienelemente oder ähnliches gelten auch in diesem Abschnitt, im zweifel weiter oben nachlesen.
+Alle zuvor beschriebenen Funktionen, Bedienelemente oder Ähnliches gelten auch in diesem Abschnitt, im Zweifel bitte weiter oben nachlesen.
 
 === Navigationsleiste nach Login
 
 image::navbar_login.jpg[]
 
-Nach erfolgreichem Login hat die Navigationsleiste einen weiteren Link, "Intern", bekommen und auf der rechten seite steht nun der Benutzernahme sowie der Button mit der Funktion den Benutzer auf Wunsch abzumelden.
+Nach erfolgreichem Login hat die Navigationsleiste den weiteren Link "Intern", bekommen und auf der rechten Seite steht nun der Benutzername sowie der Button mit der Funktion den Benutzer abzumelden.
 
 === Intern
 
 image::intern.jpg[]
 
-Auf der Seite des Internen Bereichs kann der StuRa alle eingereichten Anträge zur Anzeige bringen und durch klick auf die Antragsnummer nach Wunsch beliebig oft bearbeiten. Damit die Liste nich zu unübersichtlich wird kann nach Stellen gefiltert werden um die Auswahl auszudünnen.
+Auf der Seite des internen Bereichs kann der StuRa alle eingereichten Anträge zur Anzeige bringen und durch Klick auf die Antragsnummer nach Wunsch beliebig oft bearbeiten. Damit die Liste nicht zu unübersichtlich wird kann nach Stellen gefiltert werden um die Auswahl einzugrenzen.
 
 :tip-caption: 💡
 [TIP]
-Für das Anzeigen aller eingereichten Anträge muss nur die Standard Option "Bitte Auswählen" eingeloggt sein und anschließend auf den "Absenden" Button gedückt werden. 
+Für das Anzeigen aller eingereichten Anträge muss nur die Standard Option "Bitte Auswählen" ausgewählt sein und anschließend auf den "Absenden" Button gedrückt werden. 
 
 :warning-caption: ❗
-WARNING: Die Funktion "Zeitspanne wählen" ist noch nicht Implementiert (Stand Juli 2021) und wurde deshalb ausgegraut
+WARNING: Die Funktion "Zeitspanne wählen" ist noch nicht implementiert (Stand Juli 2021) und wurde deshalb ausgegraut.
 
 === Beschließen von Anträgen
 
 image::Antrag_stura1.jpg[]
 
-Nach auswahl des gewünschen Antrages wird dieser in einer StuRa eigenen Bearbeitungs Sicht geöffnet und die Eingereichten Daten werden wieder in das Formular geladen. +
-Diese können nach belieben angepasst werden, bis auf Name und Email Adresse des Antrag stellers.
+Nach Auswahl des gewünschen Antrags wird dieser in einer StuRa eigenen Bearbeitungssicht geöffnet und die eingereichten Daten werden wieder in das Formular geladen. +
+Diese können nach Belieben angepasst werden. Name und Email Adresse des Antragstellers sind davon ausgenommen.
 
 ==== Antrag an richtige Stelle
 
 image::Antrag_stura2.jpg[]
 
-Wenn der Antrag an die korrekte stelle eingereicht wurde haben die StuRa mitglieder alle erforderlichen felder für die Beschließung eines Antrages am ende des Formulars. Diese werden ausgefüllt und danach wieder Abgesendet. 
+Wenn der Antrag an die korrekte Stelle eingereicht wurde haben die StuRa Mitglieder alle erforderlichen Eingabefelder für das Beschließen des Antrags am Ende des Bearbeitungsformulars. Diese werden ausgefüllt und danach wieder abgesendet. 
 
 :tip-caption: 💡
 [TIP]
-Der Antrag kann auch gedruckt werden sollte dies nötig sein
+Der Antrag kann auch ausgedruckt werden, sollte dies notwendig sein.
 
 ==== Antrag an falsche Stelle
 
 image::Antrag_stura3.jpg[]
 
-Sollte ein Antrag keine Stelle haben oder die falsche Stelle haben kann diese ganz einfach geändert werden. Mann geht an das ende des Formulars bis zu den Beschlusswerkzeugen des StuRas und wählt die Checkbox "Fasches Referat" aus. Danach verschwinden die Bearbeitungstools und die Stellenauswahl wird angezeigt. Hier kann die richtige Stelle ausgewählt werden. Danach den Antrag Absenden.
+Sollte ein Antrag keine oder die falsche Stelle haben, dann kann diese ganz einfach geändert werden. Mann geht an das Ende des Formulars bis zu den Beschlusswerkzeugen des StuRas und wählt die Checkbox "falsches Referat" aus. Danach verschwinden die Bearbeitungstools und die Stellenauswahl wird angezeigt. Hier kann die richtige Stelle ausgewählt werden. Danach muss nur noch der Antrag abgesendet werden.
 
 == Funktionsumfang des Antragsverwaltungstools für Administratoren
 
-Alle zuvor beschriebenen Funktionen, bedienelemente oder ähnliches gelten auch in diesem Abschnitt, im zweifel weiter oben nachlesen.
+Alle zuvor beschriebenen Funktionen, Bedienelemente oder Ähnliches gelten auch in diesem Abschnitt. Im Zweifel bitte weiter oben nachlesen.
 
-=== Verbinden auf die Admin Seite
+=== Zugriff auf die Admin Seite
 
 image::admin_url.jpg[]
 
-Um auf die Admin seite des Tools zu gelangen muss obenstehene URL eingeben werden. Desweitern muss man als administrator auf der Seite des Antragsverwaltungstools angemeldet sein. Sollte dies nicht der Fall sein unter Login nachlesen was zu tuen ist.
+Um auf die Admin Seite des Tools zu gelangen muss die obenstehene URL eingeben werden. Desweitern muss man als Administrator auf der Seite des Antragsverwaltungstools angemeldet sein.
 
 === Hauptansicht
 
 image::adminpage.jpg[]
 
-Die obere Tabelle bescheibt alle in der Datenbank hinterlegeten Tabellen, die in halte dieser können nach belieben manipuliert werden. Der Administrator hat die Möglichkeit Anträge zu entfernen.
+Die obere Tabelle bescheibt alle in der Datenbank hinterlegten Tabellen. Die Inhalte dieser können nach belieben manipuliert werden. Der Administrator hat die Möglichkeit Anträge zu entfernen.
 
-die untere Tabelle stellt die Benutzer verwaltung dar hier kann der Admin seinen eigenen und andere Benutzer verwalten, manipulieren und löschen. Sowie Benutzergruppen anlegen.
+Die untere Tabelle stellt die Benutzerverwaltung dar. Hier kann der Admin seinen eigenen und andere Benutzer verwalten, anpassen und löschen. Auch neue Benutzergruppen können angelegt werden.
 
 :warning-caption: ❗
 WARNING: Mit großer Macht kommt große Verantwortung!
 
-die Tabelle links stellt einen Feat dar der über die neusten Aktionen aufklären soll. Diese können ausgewählt werden. Daraufhin wird man zu einer Admin internen Ansicht der Daten weitergeleitet und können von dort aus Manipuliert werden.
+Die Tabelle rechts stellt einen Feat dar, der über die neusten Aktionen im Tool aufklären soll. Diese können angeklickt werden. Daraufhin wird man zu der Admin internen Ansicht der Daten weitergeleitet und diese können dann von dort aus manipuliert werden.
