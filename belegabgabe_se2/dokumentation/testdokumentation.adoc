@@ -1,11 +1,10 @@
 = Testdokumentation: {project-name}
 {localdatetime}
-//include::../../docs/_includes/default-attributes.inc.adoc[]
+include::../../docs/_includes/default-attributes.inc.adoc[]
 {mail}
 
-include::../../docs/test/test_plan.adoc[]
 
-//include::../../docs/test/test_cases.adoc[]
+include::../../docs/test/test_plan.adoc[]
 
 == Testkonzept
 
