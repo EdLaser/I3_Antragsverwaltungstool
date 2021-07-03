@@ -12,27 +12,37 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
-// |Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
-| Änderungsantrag |Formular für die Bearbeitung/Ergänzung/Korrektur eines bereits existierenden und eingereichten Antrages.   |(keine)
-|Antrag|Gesuch, Forderung|Anfrage, Anliegen. Forderung|
-Antrag (offen)|Antrag, welcher eingereicht wurde, aber noch nicht vollständig vom Präsidium bearbeitet wurde.| offener Antrag|
-Antragssteller|Jemand, der einen Antrag stellt.|Bewerber, Kandidat, Interessent|
-Antragsverwalter|Person, die für einen Antrag verantwortlich ist, ihn in Ordnung hält und betreut|Administrator, Manager|
-Beschluss|[gemeinsam festgelegte] Entscheidung; Ergebnis einer Beratung|Entscheidung, Enschließung, Resolution|
-Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen Mitteln dient, der zur Erfüllung der staatlichen Aufgaben im Bewilligungszeitraum voraussichtlich notwendig ist. In diesem Fall, die finanzielle Mittel, die dem Stura zur Verfügung stehen. |Finanzplan, Etat|
-Hochschule für Technik und Wirtschaft Dresden|Bildungsinstitution mit Fokus auf technische und wirtschaftliche Studiengänge |(keine)|
-Plenum |Vollversammlung einer Körperschaft, besonders der Mitglieder eines Parlaments. |Vollversammlung|
-Präsidium|Leitendes Gremium einer Versammlung.|Vorsitz, Direktorium, Führerschaft|
-Referat|Abteilung einer Behörde als Fachgebiet eines Referenten.|Abteilung, Sektion|
-Referatskollegium|Das Referatskollegium ist die Gesamtheit aller Referate.|(keine)|
-Referatsleitung|Ein von der Referatsleitung zur Vertretung des Referates im Referatskollegium bestimmtes Mitglied.|(keine)|
-Ressourcen|Bestand an Geldmitteln, Geldquelle, auf die jemand zurückgreifen kann. |Bestand, Depot|
 
-Studentenrat|Eine Form der Studierendenvertretung an Hochschulen.|Studierendenrat|
-Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.|Agenda|
-Tagesordnungpunkt|Punkt einer Tagesordnung.|(keine)|
-vertagen|eine Sitzung o. Ä. ergebnislos abbrechen und eine weitere Sitzung zu einem späteren Zeitpunkt ansetzen|verschieben|
-Vorstand der Geschäftsführung|Sprecherinnen und Sprecher sowie Beauftragte die dem Referatskollegium mit beratender Stimme angehören.|Sprecher/innen|
+
+|Antrag |Teilt sich auf in: #*Änderungs-/Ressourcen- oder Wahlantrag?*# kann in 2 Status sein (offen/geschlossen) resultiert in                #*Beschluss*# |Anfrage, Anliegen. Forderung
+
+| Änderungsantrag |Formular für die Bearbeitung/Ergänzung/Korrektur eines bereits existierenden und eingereichten Antrages.   |(keine) 
+
+| Antragssteller| Jemand, der einen Antrag stellt.| #Sturamitglied#
+
+| Antragsverwalter|Person, die für einen Antrag verantwortlich ist, ihn in Ordnung hält und betreut|Administrator, Präsidiumsmitglied?|
+
+Beschluss|[gemeinsam festgelegte] Entscheidung; Ergebnis einer Beratung|Ergebnis, Resolution 
+
+|Haushaltsplan|Plan, der der Feststellung und Deckung des Bedarfs an finanziellen Mitteln dient, der zur Erfüllung der staatlichen Aufgaben im Bewilligungszeitraum voraussichtlich notwendig ist. In diesem Fall, die 
+finanzielle Mittel, die dem Stura zur Verfügung stehen. |Finanzplan, Etat
+
+|Plenum |Beschlussfähige Mehrheit des #Sturas#. |Vollversammlung
+
+|Präsidium|Leitendes Gremium einer Versammlung.|
+
+|Ressourcen|Bestand an vorhandenen Geldmitteln. | 
+
+| Studentenrat |  
+Vertretung der Studenten an der #Htw-Dresden#|Studierendenrat, = StuRa 
+
+| Tagesordnung|Gesamtheit der #Tagesordnungspunkte#, die bei einer Sitzung, Versammlung behandelt werden sollen.|Agenda / ToDoList|
+
+Tagesordnungpunkt|Punkt einer Tagesordnung.|(keine)
+
+| vertagen|eine Sitzung oder Antrag ohne Beschluss abschließen und diese(n) in eine weitere Sitzung zu einem späteren Zeitpunkt wieder aufgreifen bzw. bearbeiten|verschieben
+
+|beschließen |Antrag aus Sitzung wird angenommen | -
 |===
 
 
@@ -40,19 +50,34 @@ Vorstand der Geschäftsführung|Sprecherinnen und Sprecher sowie Beauftragte die
 [%header]
 |===
 |Abkürzung|	Bedeutung|	Erläuterung
-//|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung|
-|HTW Dresden| Hochschule für Technik und Wirtschaft|Ist eine Fachhochschule in Dresden. |
-Stura|Studentinnen- und Studentenrat|Ist das zentrale Organ der Studentinnen- und Studentenschaft, u.a. zur Vertretung dieser.  |
-TO|Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.|
-TOP|Tagesordnungspunkt|Ist ein Punkt der Tagesordnung|
+
+|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung
+
+|Htw-Dresden| Hochschule für Technik und Wirtschaft|Ist eine Fachhochschule in Dresden. 
+
+|Stura|Studentinnen- und Studentenrat|Ist das zentrale Organ der Studentinnen- und Studentenschaft, u.a. zur Vertretung dieser.  
+|TO|Tagesordnung|Gesamtheit der Themen, die bei einer Sitzung, Versammlung behandelt werden sollen.
+|TOP|Tagesordnungspunkt|Ist ein Punkt der Tagesordnung|
 UC|Use Case|funktionale Anforderung eines Systems
+|x |x |x 
 |===
 
 == Verzeichnis der Datenstrukturen
 [%header]
 |===
+
 |Bezeichnung|	Definition |	Format | Gültigkeitsregeln | Aliase
-|Anmeldedaten|Zusammensetzung von Benutzername und Passwort.|String|Emailadresse muss @-Zeichen und Punkt enthalten.|Login|
+|Anmeldedaten-Präsidiumsmitglieder|Zusammensetzung von Benutzername und Passwort.|string|Benutzername muss existieren, Passwort muss zu Benutzernamen passen. [blue]#Ein Benutzername darf maximal 1-mal vorhanden sein.#|Login
+
+|Antrag | Formular welches bearbeitet wird -> über welches während der Sturasitzung abgestimm/diskutiert wird. Zudem sollte angegeben werden um was für eine Art Antrag es sich handelt #(Änderung,Wahl,Ressource o.Ä)#|-| - |  - 
+
+|Antragsnummer (automatisch generiert) |eindeutige Kennung zur Identifizierung eines Antrages |2X/XX-YY-ZZZZ |unique | -
+
+|x |x |x |x |x 
+
+
+| 
 |===
+
 
 
