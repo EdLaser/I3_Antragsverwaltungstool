@@ -3,7 +3,7 @@
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
-:toc-levels: 2
+:toc-levels: 4
 :imagesdir: images
 // Source highlighter
 :source-highlighter: highlightjs
