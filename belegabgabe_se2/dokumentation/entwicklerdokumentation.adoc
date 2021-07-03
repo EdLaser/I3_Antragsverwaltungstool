@@ -221,12 +221,12 @@ body{
 
 Style des <body> tags mit einer Hintergrundfarbe und einer Schriftart die nach dem include des css files in das HTML Dokument einen einheitlichen style der verschiedenen Seiten gewährleistet. Genau wie der <body> tag wurde eine Klasse mit dem Namen "sturalogo" erstellt und an ein <div> gebunden mit <div class="sturalogo"> dies stellt den Style des Tool logos das das auf jeder Seite der Anwendung links oben gefunden werden kann. Das "margin" Atribut beschreibt den Abstand des Objektes von einem Anderen Objekt bzw. Abstand zum Bildschirm-/Fensterrand.
 
-:tip-caption: 💡
+
 [TIP]
 Beim stylen von CSS kann man einem <tag> eine Klasse <tag class="myclass"> eine ID <tag id="myid"> geben. Es ist ebenfalls möglich einem <tag> beides zu geben <tag class="myclass" id="myid"> sowie mehrere Klassen und IDs <tag class="myclass1 myclass2" id="myid1 myid2">
 
 
-:warning-caption: ❗
+
 WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie beispielsweise das in der Navigationsleiste mit der "id="active" gemacht wurde dann gilt es zu beachten das diese id *NICHT* in einem Java Script verwerwendet wird. Das Problem hierbei ist das dann das Script keinen Effekt hat. Der Browser gibt auch einen Error aus das eine ID doppelt verwendet wurde in einem Dokument.
 
 .mainstyle.css
@@ -281,11 +281,11 @@ WARNING: Wenn man die selbe id in dem selben dokument mehrfach verwendet wie bei
 }
 --
 
-:tip-caption: 💡
+
 [TIP]
 Das Stylen von <tags> in  CSS bewerkstelligt man in dem man den Namen des <tags> in das Stylesheet oder den <style></style> tag direkt im HTML File scheibt. Beispiel: der oben gezeigte body tag. eine Klasse wird mit einem .Klassennamen und eine ID mit #IDname gestylt. Beislpiele hier: .mainnav oder #active. Ebenso ist es möglich wenn eine Klasse oder ID einen Bereich umspannt beispielsweise mit einem <div> tag das man innerhalb dieser Klasse oder ID einen tag stylt. Damit kann man Klassen und ID Namen sparen, bzw. erhält mehr übersicht. Beispiel hier: .mainnav(Klassenname) a(der link tag). Damit stylt man den <a> tag nur innerhalb der Klasse mainnav.
 
-:warning-caption: ❗
+
 WARNING: Das File W3.css ist von eine Library der Seite W3 Schools (https://www.w3schools.com/default.asp) welche ich auf grund der Verfügbarkeit Kopiert habe. Für nähere Informationen und Anwendung der verschieden Klassen, Animationen, Farben, etc. Kann unter https://www.w3schools.com/w3css/defaulT.asp genauer nachgelesen werden. Dort findet man Erklärungen und Anwendungs Tutorials.
 
 === Texte
@@ -300,11 +300,11 @@ var text = 'Bei möglichkeit die HTW-Mail verwenden (sXXXXX@htw-dresden.de)';
     document.writeln(text);
 --
 
-:tip-caption: 💡
+
 [TIP]
 Wenn der Text zu lang ist das er den Rahmen einer Zeile sprent kann der Text wie in Java gesplittet werden. Beispiel wäre der Text aus dem financestext.js im text Verzeichnis unter index
 
-:tip-caption: 💡
+
 [TIP]
 In den 'String' des Text-Java Scrips kann Problemlos auch HTML code untergebracht werden. Beispiel wäre der Text aus dem welcometext.js im text Verzeichnis unter index
 

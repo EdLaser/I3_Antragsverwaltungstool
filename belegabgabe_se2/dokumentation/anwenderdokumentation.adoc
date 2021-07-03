@@ -16,7 +16,7 @@ image::index.jpg[]
 
 Beim erfolgreichen Verbinden auf das Tool wird man von der Hauptseite begrüßt. Diese beschreibt den Anwendungzweck der Webanwendung etwas genauer und bietet eine Funktion für Rückfragen per Mail an den StuRa. Diese Rückfrageoption kann durch das Abschreiben der Mailadressen wahrgenommen werden.
 
-:tip-caption: 💡
+
 [TIP]
 Durch linksklicken auf "dieser Mail" öffnet sich das Standard-Mail Verarbeitungsprogramm deines Computers und öffnet eine leere Mail mit der passenden Adresse für sofortiges Verfassen einer E-Mail an den Stura.
 
@@ -34,11 +34,11 @@ image::Antrag.jpg[]
 
 Wenn der passende Antrag augewählt wurde, geht es ans Einreichen des jeweiligen Antrags. Dies wird durch das systematische Ausfüllen des Antragformulares erreicht. Nach Bearbeitung des Formulars und Ausfüllung aller Pflichtfelder muss der Button "Absenden" gedrückt werden. Danach läd die Seite neu und setzt das Formular zurück. Ein Popup oder änliches über den Status des Antrages (erfolgreich abgesendet oder nicht) gibt es bisher noch nicht.
 
-:tip-caption: 💡
+
 [TIP]
 Bei Unkenntnis über die zuständige Stelle: einfach die Auswahl "Bitte Auswählen" ausgewählt lassen. 
 
-:warning-caption: ❗
+
 WARNING: Sollte "Bitte Auswählen" bereits überschrieben worden sein, kann diese Option nur durch zurücksetzen des Formulars mit dem jeweiligen Button oder durch das Neuaufrufen der Website erreicht werden. In beiden Fällen müssen die Daten neu eingetragen werden.
 
 === Login
@@ -69,11 +69,11 @@ image::intern.jpg[]
 
 Auf der Seite des internen Bereichs kann der StuRa alle eingereichten Anträge zur Anzeige bringen und durch Klick auf die Antragsnummer nach Wunsch beliebig oft bearbeiten. Damit die Liste nicht zu unübersichtlich wird kann nach Stellen gefiltert werden um die Auswahl einzugrenzen.
 
-:tip-caption: 💡
+
 [TIP]
 Für das Anzeigen aller eingereichten Anträge muss nur die Standard Option "Bitte Auswählen" ausgewählt sein und anschließend auf den "Absenden" Button gedrückt werden. 
 
-:warning-caption: ❗
+
 WARNING: Die Funktion "Zeitspanne wählen" ist noch nicht implementiert (Stand Juli 2021) und wurde deshalb ausgegraut.
 
 === Beschließen von Anträgen
@@ -89,7 +89,7 @@ image::Antrag_stura2.jpg[]
 
 Wenn der Antrag an die korrekte Stelle eingereicht wurde haben die StuRa Mitglieder alle erforderlichen Eingabefelder für das Beschließen des Antrags am Ende des Bearbeitungsformulars. Diese werden ausgefüllt und danach wieder abgesendet. 
 
-:tip-caption: 💡
+
 [TIP]
 Der Antrag kann auch ausgedruckt werden, sollte dies notwendig sein.
 
@@ -117,7 +117,7 @@ Die obere Tabelle bescheibt alle in der Datenbank hinterlegten Tabellen. Die Inh
 
 Die untere Tabelle stellt die Benutzerverwaltung dar. Hier kann der Admin seinen eigenen und andere Benutzer verwalten, anpassen und löschen. Auch neue Benutzergruppen können angelegt werden.
 
-:warning-caption: ❗
+
 WARNING: Mit großer Macht kommt große Verantwortung!
 
 Die Tabelle rechts stellt einen Feat dar, der über die neusten Aktionen im Tool aufklären soll. Diese können angeklickt werden. Daraufhin wird man zu der Admin internen Ansicht der Daten weitergeleitet und diese können dann von dort aus manipuliert werden.
