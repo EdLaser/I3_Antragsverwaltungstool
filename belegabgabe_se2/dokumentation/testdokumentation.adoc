@@ -13,7 +13,7 @@ Die wichtigsten zu testenden Komponenten waren die Weboberfläche (Front-End), d
 
 Es wurden alle essenziellen Funktionen des Tools ausführlich getestet. Dazu gehört das Einreichen von Anträgen, die Suche und Anzeige von bereits eingereichten Anträgen und deren Bearbeitung.
 
-Zum Testen des use-cases "Antrag einreichen" wurde mittels der Antragsmaske verschiedene Testanträge in allen Antragskategorie eingereicht. Dabei wurde versucht diese mit fehlenden Daten einzureichen, um die Checks für leere Eingabefelder (z.B. Antragstitel, Name und E-Mail) zu testen.
+Zum testen des use-cases "Antrag einreichen" wurde mittels der Antragsmaske verschiedene Testanträge in allen Antragskategorie eingereicht. Dabei wurde versucht diese mit fehlenden Daten einzureichen, um die Checks für leere Eingabefelder (z.B. Antragstitel, Name und E-Mail) zu testen.
 
 Anschließend wurde über den Reiter "intern" das Suchen, das Anzeigen und die Bearbeitung von bereits eingereichten Anträgen getestet. Dazu wurde lediglich bei der Antragssuche eine Stelle ausgewählt und die Suche abgesendet.
 

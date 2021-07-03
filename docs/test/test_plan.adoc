@@ -14,7 +14,7 @@ Zum Testen wird keine besondere Testumgebung benötigt. Da das System auf dem HT
 
 Bevor das Tool auf dem Server gehostet wurde war es notwendig die Systemvoraussetzungen (siehe Betriebsdokumentation) lokal auf dem eigenen Gerät zu schaffen. Dies hat den Test- und Entwicklungsprozess erheblich erschwert bzw. unmöglich gemacht.
 
-Die Test werden ausschließlich manuell durchgeführt. Mit Skripten o.Ä. automatisierte Test werden aktuell nicht benötigt.
+Die Tests werden ausschließlich manuell durchgeführt. Mit Skripten o.Ä. automatisierte Test werden aktuell nicht benötigt.
 
 === Testdokumentation
 
@@ -22,7 +22,7 @@ Die Testergebnisse werden in einer Tabelle (siehe test_log) protokolliert. Es we
 
 === Testorganisation
 
-Die Test Teammitglieder prüfen alle wichtigen use-cases auf Fehlfunktionen, optimalen Workflow für den Nutzer und sonstige Ungenauigkeiten (wie z.B. Rechtschreibfehler). Nachdem die Tests durchgeführt sind werden alle Funde möglichst zeitnah mit den für die Implementierung zuständigen Teammitgliedern besprochen. Diese setzen dann die notwendigen Änderungen um.
+Die Test Teammitglieder prüfen alle wichtigen use-cases auf Fehlfunktionen, optimalen Workflow für den Nutzer und sonstige Ungenauigkeiten (wie z.B. Rechtschreibfehler). Nachdem die Tests durchgeführt sind, werden alle Funde möglichst zeitnah mit den für die Implementierung zuständigen Teammitgliedern besprochen. Diese setzen dann die notwendigen Änderungen um.
 
 Wärend der Implementierung werden zudem schon viele Funktionen parallel von den Entwicklern getestet. Dies sorgt dafür, dass kaum große Probleme bei den Tests gefunden werden bzw. das ein Großteil der Fehlfunktionen bereits bekannt ist. 
 

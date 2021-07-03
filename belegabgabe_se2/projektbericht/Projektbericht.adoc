@@ -619,7 +619,7 @@ Die Art des Themas hat mir im Nachhinein ebenfalls zu denken gegeben. Ich hatte 
 
 Außerdem würde ich beim nächsten Projekt auch gerne einmal SCRUM anwenden bzw. noch mehr mit meinen Teammitgliedern kommunizieren und gemeinsam zu arbeiten. Ich denke es fällt oft schwer im Druck des Semesters genug Motivation zu finden, viel Arbeit ins Projekt zu investieren. Ich habe gemerkt das es viel mehr Spaß macht simultan zusammen zu arbeiten und das möchte ich gerne intensivieren.
 
-==== 3.4.1 Richard Müller [R.M.]
+==== 3.4.3 Richard Müller [R.M.]
 
 Im Sommersemester 2021 starteten wir in die zweite Runde des Moduls „Software Engineering“ bei Herrn Prof. Anke. Auch wir wurden von der Verkleinerung der Gruppe nicht verschont, da dieses Semester die Mitglieder des Studiengangs „Wirtschaftsingenieurwesen“ wie geplant ausschieden. Somit wurde unsere Gruppenstärke von acht auf fünf reduziert was dazu führte das einige Rollen doppelt besetz wurden.
 
@@ -628,4 +628,42 @@ Das erste begutachten unseres Beleges des letzten Semesters machte uns klar das 
 Rückwirkend betrachtet gab es ein paar stellen die nicht wie erwünscht gelaufen sind und leider Zeit in Anspruch genommen hat die nicht eingeplant war, genauso wie es durch das Fehlen der Hardware trotz mehrfacher Nachfrage zu unnötigen Verzögerungen kahm was unseren Zeitplan immer wieder durcheinander gebracht hat.
 
 Alles in allem war es eine Herausragende Erfahrung dieses Softwareprojekt zu betreuen. Es hat sehr großen Spaß gemacht und die Gruppe hat trotz des mangelnden Kundenkontakts am Anfang des Semesters nie aufgegeben und das Beste aus der Situation gemacht! Dies hat dazu geführt das nun am Ende dieser wilden Berg- und Talfahrt der Softwareentwicklung, nahezu alle Use-Cases implementiert und getestet werden konnten.
+
+==== 3.4.4 Duy Tien Nguyen[T.N]
+
+* Was habe ich gelernt?
+
+Erstens habe ich gelernt, wie man mit anderen Teammitgliedern schnell kommunizieren kann. Wir haben eine Whatsapp-Gruppe und eine Discord-Gruppe erstellt, mit denen wir Nachrichten miteinander schicken und Meeting organisiert haben. Zweitens habe ich gelernt, wie man im Team die Aufgaben teilt. Jeder kann etwas gut. Man muss wissen, was er gut kann und was ihm gefällt, um diese Aufgabe gut zu erledigen. Außerdem habe ich gelernt, dass ich manchmal um Hilfe von den anderen bitten kann, dass sich Mitglieder gegenseitig unterstützen sollen.
+
+
+* Worauf bin ich stolz?
+
+Ich bin darauf stolz, dass ich die Aufgaben meiner Rolle erledigen konnte. Am Anfang war es schwer, weil ich die Aufgaben nicht so gut kannte. Aber mithilfe der anderen und der Dokumentationen konnte ich sie erledigen.
+
+
+* Was hat gut funktioniert?
+
+Die Zusammenarbeit zwischen den Teammitgliedern hat gut funktioniert. Obwohl wir uns nicht im Präsenz treffen konnten, haben wir uns regelmäßig getroffen und über die Probleme diskutiert. Die Aufteilung der Aufgaben hat auch gut funktioniert, weil jeder die Aufgaben wählen konnte, die ihn interessiert.
+
+
+* Was würde ich beim nächsten Projekt anders machen?
+
+Ich würde mich auf die Technologie, die bei der Implementierung genutzt wird, vorbereiten. In diesem Projekt haben wir HTML, CSS und JavaScript genutzt. Ich habe diese Sprachen nicht so gut gekannt, deswegen konnte ich bei der Implementierung nicht viel helfen.
+
+==== 3.4.5 Andreas Gröber[A.G]
+
+===== Was habe ich gelernt?
+
+
+===== Worauf bin ich stolz?
+
+
+===== Was hat gut funkioniert?
+ 
+
+
+===== Was würde ich beim nächsten Projekt anders machen?
+
+
+
 

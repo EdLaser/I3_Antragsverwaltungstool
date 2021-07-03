@@ -12,7 +12,7 @@ Ab dem 03.07. werden keine Änderungen am Quellcode unseres Projektes mehr vorge
 |=== 
 
 |Itaration
-|geplannte Phase (aus letztem Semester hervorgehend)
+|geplannte Phase (Sicht Anfang SE-2)
 |tatsächliche Phase
 |Datum
 |Aufgaben
@@ -284,10 +284,11 @@ Zudem kommt das wie schon erwähnt uns unser Server knapp einen bis anderthalb M
 ===== Verwendete Tools zur Implementierung
 
 * Jet Brains
+** DataGrip
 ** PHP Storm
 ** PyCharm
 * MySQL
-** Das verwendete Tool
+** DataGrip
 * VM-ware Player
 * Internetbrowser
 ** Google Chrome (V. 91.0.4472.114)

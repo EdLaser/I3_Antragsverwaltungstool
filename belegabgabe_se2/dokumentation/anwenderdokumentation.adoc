@@ -4,7 +4,7 @@ include::../../docs/_includes/default-attributes.inc.adoc[]
 {mail}
 
 == Motivation dieser Dokumentation
-Diese Dokumentation dient dazu dem Nutzer schnelle Hilfe zur Verfügung zu stellen. Erreicht wird das durch das Einbinden von Bildern der grafischen Oberfläche und einen dazu passenenden, möglichst einfachen Erklärungstext. Dieses Dokumnent richtet sich an alle Arten von Usern, egal ob Administrator, StuRa Mitglied oder Antragsteller ohne eigene Logindaten.
+Diese Dokumentation dient dazu dem Nutzer eine schnelle Hilfe zur Verfügung zu stellen. Erreicht wird das durch das Einbinden von Bildern der grafischen Oberfläche und einen dazu passenenden, möglichst einfachen Erklärungstext. Dieses Dokumnent richtet sich an alle Arten von Usern, egal ob Administrator, StuRa Mitglied oder Antragsteller ohne eigene Logindaten.
 
 == Anwendungszweck und Funktionsumfang des Antragsverwaltungstools für User ohne Logindaten
 === Anwendungszweck
