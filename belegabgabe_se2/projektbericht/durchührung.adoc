@@ -5,7 +5,7 @@
 Wie in Teil 1.3.3 erwähnt hatten wir eine Grobplannung die durch Störfaktoren  (in 3.3.1 behandelt) etwas nach hinten verschoben wurde. 
 Die Iterationen 1 bis 3 wurden in SE-1 abgehandelt und es finden sich keine Ausführung dieser in diesem Dokument. 
 
-Zudem behandelt die Iteration 10 keine neuen Funktionalitäten Grundsätzlich werden ab dem 03.04. keine Änderungen am Quellcode unseres Projektes mehr vorgenommen bis dahin werden noch Kleinigkeiten verändert die keine nähre Erläuterung benötigen. 
+Ab dem 03.07. werden keine Änderungen am Quellcode unseres Projektes mehr vorgenommen bis dahin werden noch Kleinigkeiten verändert die keine großen Ausführungen benötigen. 
 
 [%header, cols="1,2,2,2,5,5"]
 
@@ -397,7 +397,7 @@ Die geplante Übergabe findet am 7.7.2021 statt.
 Das Übergabeprotokoll wurde bereits erstellt und wird mit dem Kunden abgeglichen und anschließend unterzeichnet.
 
 Zudem schreiben wir in der Halb-Iteration 10 diesen Bericht und die aktualisieren die für die Bewertung auschlaggebenden Dokumente. 
-Dies nimmt einen erheblichen Teil unserer Zeit ein (Auf alle bezogen zusammengetragen wahrscheinlich 30-50 Stunden Arbeit)
+Dies nimmt einen erheblichen Teil unserer Zeit ein (Zusammengerechnet etwa 30-50 Stunden Arbeit)
 
 
 ==== 2.2.4.5 Review
