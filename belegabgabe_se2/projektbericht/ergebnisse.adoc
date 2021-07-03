@@ -1,6 +1,6 @@
-= 3.Ergebnisse [RDK,A.G]
+== 3.Ergebnisse [R.K,A.G]
 
-== 3.1 Was  waren unsere Ziele? (RDK,A.G)
+=== 3.1 Was  waren unsere Ziele? 
 
 Am Anfang des Projektes haben wir unsere Ziele  sehr hoch gesteckt und wollten, alle Use-Cases des StuRa umsetzen. Allerding haben wir nur doie Use-Cases für die herkömmliche Verwendung des Tools umsetzen können. Also Anträge stellen, Anträge bearbeiten und #die Möglichkeit bieten eigene Anträge und deren Status (noch in Arbeit, vertagt,beschlossen oder abgelehnte) einsehen zu können. 
  
@@ -12,7 +12,7 @@ Außerdem haben wir versucht noch zusätzliche Anforderugen, in Form von Add-Ons
 include::../../docs/requirements/diagrams/use_case_model.puml[]
 ....
 
-== 3.2 Was haben wir davon Geschafft? (RDK,A.G)
+=== 3.2 Was haben wir davon Geschafft?
 
 Unser Tool bietet die Möglichkeit Anträge aller gewünschten Formen durch externe und interne Stellen einzureichen. Hier werden die Anträge mit ihren Pflicht Daten vom System verarbeitet und entsprechend nach ihren zuvor modellierten Attributen gespeichert. Diese Speicherung erfolgt permanent. Wir haben ebenfalls geschafft eine Antragsnummer  basierend auf  Jahr( der Legislaturperiode) und Nummer (der nächsten Plenumssitzung) zu  generieren und diese als Antragsnummer abzubilden. Dabei haben wir nach Vorgabe des StuRa eine dynamische Antragsnummer für jeden Antrag generiert, dies wurde zudem ausgiebig getest und funktioniert nach unserem Stand ohne Fehler. 
 
@@ -28,9 +28,9 @@ Des weiteren haben wir es geschafft, das die ganze Seite einem gewissen Konzept 
 
 Zusammengefasst haben wir die Use-Cases 01,02,05 sowie 06 implementiert und getestet. Diese werden  innerhalb unseres Tools in der nächsten Woche 5-11.Juli offiziell übergeben, inoffiziell stehen diese auf dem StuRa-Server schon zur Verfügung.
 
-== 3.3 Was haben wir nicht erreicht? (A.G,RDK)
+=== 3.3 Was haben wir nicht erreicht? 
 
-=== 3.3.1 Störfaktoren
+==== 3.3.1 Störfaktoren
 
 Leider konnten wir einige Funktionalitäten innerhalb des Projektes nicht umsetzen.
 Hier ist als großer Faktor der Zeitdruck zu sehen. Dadurch das wir relativ spät im Projekt auf ein Framework umgestiegen sind, mussten wir uns zuerst darin einarbeiten um die Funktionsweise zu verstehen. Da uns dies relativ viel Zeit kostete, waren wir am Anfang von SE II im Verzug. Da in diese Maßnahmen viel Energie geflossen ist, fehlte diese uns leider an anderen Stellen im Projekt bzw. bei der Bearbeitung gennanter Funktionalitäten. Jedoch lässt sich aber sagen, dass wir hier im Hintergrund vielleicht mehr erreicht haben als wir eigentlich dachten. 
@@ -45,7 +45,7 @@ Das allerdings größte Hindernis im Bezug auf unseren Kunden war, das wir Aufgr
 
 Wir hätten wahrscheinlich in der Hinsicht noch mehr auf unsren Kunden zugehen müssen haben, aber nach unserer Meinung eigentlich alles getan um die Kommunikation von unserer Seite aus aufrecht zu halten (E-Mail sowie Discord Nachrichten von mind. 2 Personen). 
 
-=== 3.3.2 Was wurde nicht erreicht
+==== 3.3.2 Was wurde nicht erreicht
 
 Was haben wir also nicht geschafft ?
 Im Hinblick auf unsere Use-Cases haben wir leider einige Dinge nicht erreicht darunter zählen die Use-Cases 03,04,07 und 08. Die größte Funktionalität die nicht erreicht wurde, ist die Wiederspiegelung des Status des Antrags. Da diese sehr komplex und vielseitig ist, haben wir uns dafür entschieden diese vorerst nicht zu implementieren. Leider haben wir bisher keine Möglichkeit gesehen diese im aktuellen Stand des Projektes bei der Antragsbearbeitung unterzubringen. In den Modellen existiert jedoch ein Attribut welches diese abbildet. Erschwerend kam hinzu das durch den Status des Antrags gewisse Abläufe abgebildet bzw. ausgedrückt werden sollten. Dadurch das wir hier nicht die Zeit hatten die Abläufe komplett zu verstehen und diese zu modellieren blieb dieses Feature leider außen vor.

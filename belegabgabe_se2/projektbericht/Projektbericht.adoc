@@ -1,3 +1,100 @@
+= Projektbericht-I3_Antragsverwaltungstool
+
+== 1. Planung [A.G.]
+
+=== 1.1Kurze Erläuterung des zu lösenden Problems
+
+Der StuRa wollte ein Online Antragsverwaltungstool (auf der StuRa Website) zum vereinfachen  des Antragsstellens, der Bearbeitung und des anschließenden Sichern/Speichern der Anträge.  
+(Was im Moment zum Teil noch Analog passiert das heißt dadurch ohne gemeinsame Formatierung und an keiner Stelle automatisiert.) 
+
+Unser Tool soll auf funktionaler Ebene erstmal nur Grundfunktionen wie das einreichen ,bearbeiten sowie anschließend das abspeichern übernehmen, nützliche Zusätze dazu wäre das Anträge zusammengefasst und in eine Art Liste gespeichert werden können (Tagesordnung) sowie direkt gedruckt werden können. 
+Zudem soll  unsere Implementation als ein Grundgerüst für mögliche weiterentwicklung diennen, eine denkbäre weiterentwicklung wäre zum Beispiel eine Version für mobile Geräte.
+
+Auf technischer Ebene wurden wir kaum eingeschränkt (siehe Systemwide Req.).
+Als Vorlage wurde uns die Website https://antragsgruen.de/ präsentiert an der wir uns zumindest optisch orientieren konnten.
+
+=== 1.2 Zustand – Beginn Semester 2
+
+Zu Semesterbeginn haben wir die größtenteils abgeschlossene Anforderungsanalyse aus dem letzten Semester übernommen bzw. damit weitergearbeitet. Zudem hatten wir uns letztes Semester schon einige Gedanken über die Tools gemacht ,welche wir nun zur Implementierung nutzen wollten. Wir waren somit fast mit der Elaboration-Phase fertig und konnten mit der Construction-Phase beginnen. 
+
+Leider mussten wir feststellen das unsere alte Ansprechpartnerin  „Liselotte Ruthe“ vom StuRa sich nicht mehr für uns verantwortlich fühlte bzw. aus dem StuRa ausgetretten ist. Zudem war "Axel Schiller" zwar der Antragsteller jedoch nicht unser Ansprechpartner, daher konnten wir zu beginn dieses Semester erstmal keine Rücksprache mit unserem eigentlichen Kunden halten, später erfüllte diese Position dann "Johann Boxberger".
+
+Hinzu kommt das Corona bedingt ein Lockdown vorherrscht welcher die Kommunikation in den virtuellen Raum lenkt, dies hat uns nicht groß behindert war jedoch im Bereich der Motivation und Kommunikation durchaus merkbar.
+
+
+#Hier noch Essence Navigator Bild einfügen IT-Plan 3-4#
+
+
+=== 1.3 Projektorganisation
+
+==== 1.3.1 Teamaufbau und Aufgabenbereiche
+
+Unser Team hat sich von 8 auf 5 Personen (Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien Nguyen[T.N], Andreas Gröber[A.G]) verkleinert, welche gelegentlich von unserem Coach Felix Müller unterstützt wurde. Daraus folgt das wir auch unsere Rollen und Aufgabenbereiche angepasst haben bzw. mussten. 
+
+Ruben und Richard haben größtenteils selbständig die Implementierung und das entwerfen der Architektur sowie die Dokumentierung darüber übernommen. 
+Jacob und Tien haben das Testen (den Teil den Ruben und Richard nicht getestet haben) und dessen Dokumentierung übernommen. 
+Andreas hat die Projektplannung sowie den leitenden Teil bei der Analyse-Dokumentation übernommen mit Ruben und Jacob als unterstützende Personen.
+
+Zudem ist Ruben Mitglied im StuRa und somit ein schneller Kommunikationsweg zu unserem Kunden, bei Fragen oder Rücksprache an unseren Kunden bzw. der gesammten StuRa Leitung war das überaus hilfreich.
+
+==== 1.3.2 Kommunikation  und Meetings
+Wir haben uns am Anfang des Semesters darauf geeinigt uns einmal in der Woche, coronabedingt in Form eines Discord-Gruppenanruf, zu treffen. Dies ist auch jede Woche Am Montag zwischen 17:00 und 19:00 passiert die Meetings haben je nach Inhalt etwa 30 Minuten bis 90 Minuten in Anspruch genommen. Zudem haben wir uns Freitag von 8:00 bis 10:00 bei Bedarf getroffen, falls wir Zwischenergebnisse teilen, Meinungen von den anderen Teammitgliedern einholen oder zusammen etwas erarbeiten wollten. 
+
+Außerdem haben wir Whattsapp benutzt um diese Treffen zu koordinieren bzw. bei Bedarf zu verschieben , falls jemand mal nicht konnte.
+
+Da wir zu beginn des Semesters keinen wirklichen Kunden als Ansprechpartner hatten, kammen bis  mitte Mai auch keine Kundenmeetings zu stand, dort haben wir dann Johann Boxberger als neuen Ansprechpartner kennen gelernt und darauf geeinigt das wir uns aller 2 Wochen Montags 16:00 zum kurzen Informationaustausch treffen, zudem konnten wir uns bei Bedarf auf Discord Fragen stellen bzw. diese beantworten. 
+Diese Treffen fanden immer in der Mitte einer Iteration statt, falls zu betreffender Iteration noch fragen bestanden, zudem wurde der Kunde bei diesen Meetings über unsere Fortschritte informiert und sofern möglich, genannte Fortschritte oder neue Funktionalitäten gezeigt, um die Meinung des Kunden bzw. Anwenders einzuholen und bei Bedarf noch Änderungen vorzunehmen.
+
+Wichtige Informationen aus den Meetings (Team sowie Kunden) wurden in einem Protokoll festgehalten, um bei Bedarf besprochenes bzw. Ergebnis dessen nochmal zu rekapitulieren.
+
+Da wir ihre Empfehlung für sinvoll erachten  und abgeshen von SE-1 noch nie  jemand von uns innerhalb  eines OpenUP bzw. eines Projekts dieser Größe gearbeitet hat, haben wir die Iterationslänge auf 2 Wochen festgelegt. dadurch haben wir ein Größeres Meeting jeden 2. Montag in welcher wir die Iteration reviewen und Ziele sowie das vorgehen in der nächsten besprechen. An den anderen Montagen besprechen wir kurz unsere zwischen Ergebnisse und klären gegebenenfalls Fragen oder geben Hilfestellung falls nötig.
+
+==== 1.3.3 Model/Idee der Planung
+
+Wie von ihnen vorgegeben haben wir unser Projekt als OpenUP umgesetzt bzw. dies best möglichst versucht. Wir haben dabei zum Großteil Iterativ gearbeitet zum anderen Teil aber auch in einer Art V-Modell um eine Art Überblick zu behalten und uns nicht an Kleinigkeiten aufzuhalten. 
+
+Grob gesehen wussten wir etwa in welchen Wochen des Semesters wir den Entwurf abschließen, implementieren und testen müssen um den Umfang aller Use-Cases und deren Funktionalitäten bereit zu stellen. (Auch wenn die Hälfte der Use-Cases am Ende noch nicht implementiert worden sind.)
+
+Innerhalb der einzelnen Iterationen haben wir jedoch nochmal altes überarbeitet sowie verbessert, bei Bedarf auf Kundenwünsche reagiert und unser Ergebnis eher an unsere aufgewandte Zeit angepasst als anders herum.
+
+Unsere Hauptanforderungen wurden  erfüllt und sind in unserer Software integriert, zudem haben wir beim arbeiten darauf geachtet das andere Entwickler, möglicherweiße der Jahrgang nach uns, unser System ohne große Schwirigkeiten weiterentwickeln können.
+
+Beim plannen haben Ich [A.G.] vorerst nicht den Auffwand einzelner Tasks abgeschätzt dies wäre jedoch wahrscheinlich sinvoll gewesen, Ich habe zum Ende des Projekts hin erst damit angefangen und es hat beim „gerechten“ verteilen der Tasks und beim Plannen über einen größeren Zeitraum durchaus Sinn gemacht.  
+Zudem wurden sich Gedanken zu Risiken und deren Lösung in Form einer Risklist gemacht zum Teil konnten dadurch Probleme vermieden werden oder schnell gelöst werden. Einnige Sachen haben wir jedoch in der Weise wie sie passiert sind, nicht kommen gesehen. 
+
+=== 1.3.4 Way of Working 
+==== 1.3.4.1 Eingesetzte Tools
+Wir haben unser Projekt in einem Github-Repostory angelegt und haben dort die Möglichkeit genutzt mit Github-Issues zu arbeiten. 
+
+Zur Kommunikation wurden Discord sowie Whattsapp (Mobil) genutzt. 
+
+Wir haben uns zudem während des ganzen Projektes an den Meilensteinen des Essence-Navigators sowie der OpenUp-Vorlage orientiert.
+
+Um den Quellcode zu dokumentieren wurde Pydoctor genutzt.
+
+Zur Erstellung der Dokumentation wurde hauptsächlich VS-Code verwendet unter Anleitung des Praktikums. 
+
+Wie erwähnt wurde eine Risklist erstellt.
+
+Eine Übersicht über die eingesetzten Tools bei der Implementierung folgt dann in Punkt 2.2.3.4 in diesem Dokument.
+
+==== 1.3.4.2 Eingesetzte Strategien
+
+Höchste Priorität bei der Start-Phase war es Momentum (eine Eigendynamik oder Workflow) zu erzeugen, dies wurde über wöchentliche Meetings bzw. durch regelmäßiges arbeiten am Projekt sowie der Spezialisierung in die verschiedenen Rollen, um Multitasking zu vermeiden, sowie über Konfliktvermeidung auch erreicht. 
+
+Das erzeugen des Momentums erfordert am Anfang möglicherweise etwas mehr Zeit, aber es ermöglicht oder vereinfacht das kontinuierliche sowie konzentrierte arbeiten am Projekt und sorgt schlussendlich für Fortschritt an den Hauptfunktionalitäten. Leider wurde dies an einnigen stellen durch unseren Kunden etwas gestört z.B als wir etwa einen Monat keine Reaktion auf die Nachfrage nach unserem zugesagten Server bekammen und nicht wirklich wussten wie es weiter geht. 
+
+Konflikte  wurden größtenteils am Anfang des Projekts beseitigt bzw. direkt am Zeitpunkt des auftretens über Kompromisse oder einer klaren Entscheidung über das weitere Verfahren. Es kamm nie zu wirklich großen Diskussionen oder Ausseinandersetzungen, grundsätzlich hat jeder sein bestmögliches gegeben um das Projekt erfolgreich abzuschließen.
+
+Ziele wurden nach dem SMART-Format (https://de.wikipedia.org/wiki/SMART_(Projektmanagement))  formuliert, um die Sinnhaftigkeit sowie eine gewisse Effektivität dieser  zu gewährleisten. Ich persönlich empfinde diese Art der Zielsetzung als Sinvoll, habe allerdings keinen wirklichen Verlgeichswert  um sagen zu können das es effektiv ist bzw. unserem Projekt weitergeholfen hat.
+
+==== 1.3.4.3 Grundregeln
+
+Grundsätzlich wurde versucht ein Arbeitsumfeld zu schaffen indem man gerne und mit möglichst wenig Störungen, auf das Ziel eines möglichst gut (nach Kundenvorstellung) funktionierenden Produktes hinarbeitet sowie einer dementsprechend guten Bewertung des Projektes. 
+
+Außerdem sollte jedes Teammitglied etwa den gleichen zeitlichen Aufwand bzw. Leistung in das Projekt investieren um Fairness zu gewährleisten, pro Woche sollte dieser Umfang etwa in 2 bis 4 (Teammeetings zählen nicht zu dieser Zeit) Zeitstunden die sinvoll genutzt werden, liegen. Dies ist aber nicht immer gelungen. 
+Der Hauptgrund dafür war wahrscheinlich die eher „kurzsichtige“ Plannung,als Beispiel hatten wir in einigen Iterationen keine Analyse bzw. wirkliche Testaufgaben außer die Dokumentation zu überarbeiten während unser Implementierungsteam eigentlich immer beschäftigt war. 
+
 == 2.Durchführung [A.G,R.K,R.M,J.F] 
 
 === 2.1 Überblick über Phasen und Iterationen [A.G]
@@ -12,7 +109,7 @@ Ab dem 03.07. werden keine Änderungen am Quellcode unseres Projektes mehr vorge
 |=== 
 
 |Itaration
-|geplannte Phase (aus letztem Semester hervorgehend)
+|geplannte Phase (Sicht Anfang SE-2)
 |tatsächliche Phase
 |Datum
 |Aufgaben
@@ -284,10 +381,11 @@ Zudem kommt das wie schon erwähnt uns unser Server knapp einen bis anderthalb M
 ===== Verwendete Tools zur Implementierung
 
 * Jet Brains
+** DataGrip
 ** PHP Storm
 ** PyCharm
 * MySQL
-** Das verwendete Tool
+** DataGrip
 * VM-ware Player
 * Internetbrowser
 ** Google Chrome (V. 91.0.4472.114)
@@ -403,3 +501,61 @@ Dies nimmt einen erheblichen Teil unserer Zeit ein (Zusammengerechnet etwa 30-50
 ==== 2.2.4.5 Review
 
 Die Zeit in dieser Iteration war sehr knapp, dennoch haben wir eigentlich jeden implementierten Use-Case ein Stück verbessert und aus Sicht des Nutzers sinvolle Ergänzungen getätigt. Wir haben unserer Meinung nach noch das Beste aus den 2 Wochen vor Abgabe rausgeholt was im Rahmen dieses Projektes möglich war. Wir hätten uns dennoch einen Live-Test mit dem ganzen StuRa gewünscht nicht nur mit unserem Ansprechpartner
+
+== 3.Ergebnisse [R.K,A.G]
+
+=== 3.1 Was  waren unsere Ziele? 
+
+Am Anfang des Projektes haben wir unsere Ziele  sehr hoch gesteckt und wollten, alle Use-Cases des StuRa umsetzen. Allerding haben wir nur doie Use-Cases für die herkömmliche Verwendung des Tools umsetzen können. Also Anträge stellen, Anträge bearbeiten und #die Möglichkeit bieten eigene Anträge und deren Status (noch in Arbeit, vertagt,beschlossen oder abgelehnte) einsehen zu können. 
+ 
+Außerdem haben wir versucht noch zusätzliche Anforderugen, in Form von Add-Ons aufzunehmen, ein Beispiel hierfür wäre die Idee der Automatischen generierung einer Tagesordnung oder einer verbesserten Druckvorlage für Anträge, praktisch haben wir uns schlussendlich erstmal auf die Hauptanwendung (Unsere Use-Cases) konzentriert.
+
+.Use-Case-Model
+[plantuml, "diagrams/use_case_model", svg]
+....
+include::../../docs/requirements/diagrams/use_case_model.puml[]
+....
+
+=== 3.2 Was haben wir davon Geschafft?
+
+Unser Tool bietet die Möglichkeit Anträge aller gewünschten Formen durch externe und interne Stellen einzureichen. Hier werden die Anträge mit ihren Pflicht Daten vom System verarbeitet und entsprechend nach ihren zuvor modellierten Attributen gespeichert. Diese Speicherung erfolgt permanent. Wir haben ebenfalls geschafft eine Antragsnummer  basierend auf  Jahr( der Legislaturperiode) und Nummer (der nächsten Plenumssitzung) zu  generieren und diese als Antragsnummer abzubilden. Dabei haben wir nach Vorgabe des StuRa eine dynamische Antragsnummer für jeden Antrag generiert, dies wurde zudem ausgiebig getest und funktioniert nach unserem Stand ohne Fehler. 
+
+Eine weitere implementierte Funktionalität des Tools, stellt die Bearbeitung der Anträge dar. Hier haben wir die Möglichkeit geschaffen, einzelne Anträge gezielt auszuwählen und dann durch einen auhorisierten Nutzer bearbeiten zu lassen. Hier bekommt der StuRa ebenfalls die Möglichkeit die Beschlüsse des Antrags direkt einzutragen und falsche Angaben zu korrigieren. 
+
+Zusätzlich lässt sich vom Tool auch eine Liste anzeigen, diese Liste gibt entweder alle Anträge aus oder filltert die Anträge nach Stelle. Durch die Farbe des Hyperlinks kann man erkennen welche Anträge schon eingeshen wurden und welche noch nicht eingeshen wurden . Darauf aufbauend lassen sich mit den Hyperlinks der Antragsnummer, die gestellten Anträge ebenfalls anzeigen bzw. führen zur Bearbeitung. Der nächste Schritt wäre hier den Status des Antrags anzeigen zu lassen dies ist jedoch nicht implementiert (Dies behandelt Use-Case 7 und 8).
+
+Außerdem bietet das Tool die Möglichkeit eines Logins. Hier war unser Ziel für die Nutzer des "Präsidiums" Benutzer-Logins einzurichten, damit ausschließlich diese Zugang zu den Anträgen im Tool bekommen. Wir haben es geschafft das nur verifizierte Nutzer Anträge ansehen und bearbeiten dürfen. Auch durch Angabe von URLs zu Anträgen ist ohne Login keine Anzeige möglich. 
+
+Zusätzlich zu diesem Login gibt es eine Administrationsseite zum tieferen Verwalten der Anträge. Hier können die Datenstrukturen, über die normale Eingabemaske hinaus, ergänzt / geändert / entfernt werden.
+
+Des weiteren haben wir es geschafft, das die ganze Seite einem gewissen Konzept folgt. Wir hatten das Ziel die Benutzung der Seite möglichst einfach und so modern wie möglich zu halten. Dabei stand stets der Nutzer im Vordergrund. Es sollte erreicht werden, dass obwohl bei den Anträgen sehr komplexe Gegebenheiten gelten, eine einfache Nutzung des Tools ohne recherche notwendig ist. #Dies haben wir durch erklärende Texte und Popups zumindest bei unserem kleinen User-Test erreicht.
+
+Zusammengefasst haben wir die Use-Cases 01,02,05 sowie 06 implementiert und getestet. Diese werden  innerhalb unseres Tools in der nächsten Woche 5-11.Juli offiziell übergeben, inoffiziell stehen diese auf dem StuRa-Server schon zur Verfügung.
+
+=== 3.3 Was haben wir nicht erreicht? 
+
+==== 3.3.1 Störfaktoren
+
+Leider konnten wir einige Funktionalitäten innerhalb des Projektes nicht umsetzen.
+Hier ist als großer Faktor der Zeitdruck zu sehen. Dadurch das wir relativ spät im Projekt auf ein Framework umgestiegen sind, mussten wir uns zuerst darin einarbeiten um die Funktionsweise zu verstehen. Da uns dies relativ viel Zeit kostete, waren wir am Anfang von SE II im Verzug. Da in diese Maßnahmen viel Energie geflossen ist, fehlte diese uns leider an anderen Stellen im Projekt bzw. bei der Bearbeitung gennanter Funktionalitäten. Jedoch lässt sich aber sagen, dass wir hier im Hintergrund vielleicht mehr erreicht haben als wir eigentlich dachten. 
+
+Durch das Framework haben wir eine guten Startpunkt für die weitere Entwicklung geschaffen und weitere Funktionalitäten können ohne große Probleme hinzugefügt werden, das ist zwar das nicht mehr Teil unseres Projektes dennoch eine Art zusätzliche Anforderung welche wir in kooperation mit unserem Kunden beschlossen haben, um die Weiterentwicklung zu ermöglichen und zu fördern. 
+
+Zudem sind die Funktionalitäten die wir umgesetzt haben, auch benutzerfreundlich umgesetzt und wurden von unserem Kunden positiv entgegen genommen bzw. gerne verwendet.
+
+Ein anderer Störenderfaktor war  unsere Kundenumgebung, zusammengefasst haben wir am Anfang des Semesters zum Teil mehrere Wochen auf Anfragen keine Rückmeldung bekommen, dies war störend jedoch nicht Projektgefährdend. Dazu kommt, dass es einen Wechsel von Auftragsteller bzw. Kunden gab welche unterschiedlichen Prioritäten bzw. Ansichten zum Tool hatten, dies wäre sogar förderlich gewesen wenn genannter Wechsel nicht in der Mitte des Semesters passiert wäre.
+
+Das allerdings größte Hindernis im Bezug auf unseren Kunden war, das wir Aufgrund von Misskommunikation und Wechsel im StuRa, erstmal keinen Server hatten und unsere Website selber vorerst auf einem lokal gehostetem Webserver implementieren und testen mussten, dies war möglich aber umständlich. 
+
+Wir hätten wahrscheinlich in der Hinsicht noch mehr auf unsren Kunden zugehen müssen haben, aber nach unserer Meinung eigentlich alles getan um die Kommunikation von unserer Seite aus aufrecht zu halten (E-Mail sowie Discord Nachrichten von mind. 2 Personen). 
+
+==== 3.3.2 Was wurde nicht erreicht
+
+Was haben wir also nicht geschafft ?
+Im Hinblick auf unsere Use-Cases haben wir leider einige Dinge nicht erreicht darunter zählen die Use-Cases 03,04,07 und 08. Die größte Funktionalität die nicht erreicht wurde, ist die Wiederspiegelung des Status des Antrags. Da diese sehr komplex und vielseitig ist, haben wir uns dafür entschieden diese vorerst nicht zu implementieren. Leider haben wir bisher keine Möglichkeit gesehen diese im aktuellen Stand des Projektes bei der Antragsbearbeitung unterzubringen. In den Modellen existiert jedoch ein Attribut welches diese abbildet. Erschwerend kam hinzu das durch den Status des Antrags gewisse Abläufe abgebildet bzw. ausgedrückt werden sollten. Dadurch das wir hier nicht die Zeit hatten die Abläufe komplett zu verstehen und diese zu modellieren blieb dieses Feature leider außen vor.
+
+Ebenfalls nicht unterstützt wird das Feature des Einsehens der offenen Anträge durch externe Nutzer. Hier war das Ziel für externe Nutzer einzusehen welche Anträge gerade in Bearbeitung sind und welche bereits abgeschlossen. Dadurch das wir die oben genannte Status anzeige der Anträge ebenfalls nicht abbilden konnten mussten wir dieses Feature ebenfalls weglassen. Erschwerend kam hinzu, das hier bei uns Bedenken im Thema Datenschutz auftraten. Da hier personenebzogene Daten im Antrag abgleget werden (Name, Email, Beantwortung sensibler Fragen) wäre nur ein Ansehen eines einzelnen, selbst gestelten Antrages, sinnvoll. Uns ist in diesem Fall keine gute Lösung in der Projekzeiteingefallen, quasi kurzzeitige Links zum ansehen von Anträgen zu generieren.
+
+Ein Feature das noch verbesserunsgwürdig ist, ist das ansehen von Anträgen im "Intern" Bereich. Hier kann man die Anträge nur ansehen indem man in den Bearbeitungsmodus des Tools wechselt. Man zeigt einen Antrag also an, indem man keine Änderungen im Antrag durchführt. Hier gibt es sicher eine bessere Lösung die Anträge als nicht bearbeitbar anzuzeigen.
+
+Auch das Ablehnen und Vertagen von Anträgen mussten wir weglassen. Besonders beim Vertagen des Antrags spielen wieder die Status der Anträge eine Rolle, welcher nicht implementiert sind. Beim Vertagen wird der Antrag auf eine nächste Sitzung verschoben, was genau die abzubildenden Abläufe im StuRa aufzeigt. Hier hätten wir 1. das Feature des Antraggssatus gebraucht und 2. hätte es durch das Ablehnen einer Antragsnummer Änderung bedarft bzw. hätte man hier auch die Tagesordnung der jeweiligen Sitzung beachten müssen, welche als Add-On ebenfalls nicht umgesetzt wurde. 
