@@ -1,8 +1,11 @@
-= Projektbericht-I3_Antragsverwaltungstool
+= Projektbericht: {project-name}
+{localdatetime}
+include::../../docs/_includes/default-attributes.inc.adoc[]
+{mail}
 
 == 1. Planung [A.G.]
 
-=== 1.1Kurze Erläuterung des zu lösenden Problems
+=== 1.1 Kurze Erläuterung des zu lösenden Problems
 
 Der StuRa wollte ein Online Antragsverwaltungstool (auf der StuRa Website) zum vereinfachen  des Antragsstellens, der Bearbeitung und des anschließenden Sichern/Speichern der Anträge.  
 (Was im Moment zum Teil noch Analog passiert das heißt dadurch ohne gemeinsame Formatierung und an keiner Stelle automatisiert.) 
@@ -95,7 +98,7 @@ Grundsätzlich wurde versucht ein Arbeitsumfeld zu schaffen indem man gerne und 
 Außerdem sollte jedes Teammitglied etwa den gleichen zeitlichen Aufwand bzw. Leistung in das Projekt investieren um Fairness zu gewährleisten, pro Woche sollte dieser Umfang etwa in 2 bis 4 (Teammeetings zählen nicht zu dieser Zeit) Zeitstunden die sinvoll genutzt werden, liegen. Dies ist aber nicht immer gelungen. 
 Der Hauptgrund dafür war wahrscheinlich die eher „kurzsichtige“ Plannung,als Beispiel hatten wir in einigen Iterationen keine Analyse bzw. wirkliche Testaufgaben außer die Dokumentation zu überarbeiten während unser Implementierungsteam eigentlich immer beschäftigt war. 
 
-== 2.Durchführung [A.G,R.K,R.M,J.F] 
+== 2. Durchführung [A.G,R.K,R.M,J.F] 
 
 === 2.1 Überblick über Phasen und Iterationen [A.G]
 
@@ -201,7 +204,7 @@ Prototypen bauen(Implementierung)#
 [red]#nicht erfüllt#,
 [blue]#extra#,
 
-=== 2.2Gliederung der Durchführung [A.G]
+=== 2.2 Gliederung der Durchführung [A.G]
 
 Wir werden die nun folgende Dokumentation der Durchführung anhand der 4 Projekt-Phasen Inception, Elaboration, Construction, and Transition gliedern. Die Tabelle in Punkt 2.1 soll bei der Orientierung helfen, da wir zum Teil innerhalb der Iteration springen (siehe Iteration 6) und dieser Teil des Projektes aus der Sicht von 4 Personen zusammengetragen wird.
 
@@ -502,9 +505,9 @@ Dies nimmt einen erheblichen Teil unserer Zeit ein (Zusammengerechnet etwa 30-50
 
 Die Zeit in dieser Iteration war sehr knapp, dennoch haben wir eigentlich jeden implementierten Use-Case ein Stück verbessert und aus Sicht des Nutzers sinvolle Ergänzungen getätigt. Wir haben unserer Meinung nach noch das Beste aus den 2 Wochen vor Abgabe rausgeholt was im Rahmen dieses Projektes möglich war. Wir hätten uns dennoch einen Live-Test mit dem ganzen StuRa gewünscht nicht nur mit unserem Ansprechpartner
 
-== 3.Ergebnisse [R.K,A.G]
+== 3. Ergebnisse [R.K,A.G]
 
-=== 3.1 Was  waren unsere Ziele? 
+=== 3.1 Was waren unsere Ziele? 
 
 Am Anfang des Projektes haben wir unsere Ziele  sehr hoch gesteckt und wollten, alle Use-Cases des StuRa umsetzen. Allerding haben wir nur doie Use-Cases für die herkömmliche Verwendung des Tools umsetzen können. Also Anträge stellen, Anträge bearbeiten und #die Möglichkeit bieten eigene Anträge und deren Status (noch in Arbeit, vertagt,beschlossen oder abgelehnte) einsehen zu können. 
  
@@ -588,7 +591,7 @@ Außerdem würde ich mir noch mehr Mühe geben rechtzeitig für eine Testumgebun
 Selten ist es vorgekommen, dass eine Aufgabe kurzzeitig unter den Tisch gefallen ist, da jeder dachte, dass ein Anderer bearbeitet. Im genauen Gegensatz dazu ist es mir auch passiert, dass ich und ein weiteres Teammitglied beide die Anwendungsdokumentation geschrieben haben. Daraufhin musste ich meine Arbeit verwerfen, was ich sehr ärgerlich fand. Um solche Missverständnisse zu vermeiden würde ich beim nächsten Projekt gern noch genauer mit GitHub issues oder etwas ähnlichem arbeiten.
 
 
-==== 3.4.2  Ruben-David Kraus [R.K.] 
+==== 3.4.2 Ruben-David Kraus [R.K.] 
 
 ===== Was habe ich gelernt ?
 Im Projekt habe ich zahlreiche Erfahrungen gesammelt. Einerseits das die Kommunikation im Team bei solch einem Vorgehen die wichtigste Komponente von allen ist. Kommunikation bildet die Grundlage für ein zielgerichtetes Arbeiten. Wird nicht ausreichend kommuniziert, wird aneinander vorbeigearbeitet. Oft werden Aufgaben nicht klar verteilt, deswegen sollte alles aktiv besprochen und abgeklärt werden. Auch in meiner Rolle, der Implementierung ist es essenziell miteinander zu arbeiten und nicht jeder für sich. Das hat sich im Laufe des Projekts deutlich herausgestellt. Wird in gemeinsamen 'Sessions' programmiert, ist der Output deutlich besser, da man sich direkt absprechen kann. 
