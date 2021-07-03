@@ -35,7 +35,7 @@ siehe xref:glosary.adoc#Einführung[Glossary].
 === Fachliche Motivation
 Im Rahmen unseres Studiums in den Modulen Software-Engineering I / -II, ist das Ziel unseres Teams ein Antragsverwaltungstool für den Stura zu entwickeln. 
 Der Stura der HTW Dresden verwaltet Antragsformulare noch analog. Wenn Bedürfnisse in den einzelnen Referaten entstehen, müssen diese einen Antrag stellen. Das Präsidium wird benachrichtigt und der Antrag bekommt eine Identifizierungsnummer. Wenn der Antrag nicht in der Sitzung bearbeitet wird, wird er vertagt. Aufgrund dieses Prozesses verliert der Stura den Überblick und manche Anträge werden nicht richtig ausgefüllt.  
-Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools, um das Erstellen und Verwalten von Anträgen übersichtlich einfach zu gestalten.
+Die angestrebte Verbesserung hat als Ziel die Einführung eines browserbasierten Tools, um das Erstellen und Verwalten von Anträgen übersichtlich und einfach zu gestalten.
 
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
@@ -167,11 +167,12 @@ Möglichkeit zur Bearbeitung gestellter bzw. vertagter Anträge | sehr hoch |  A
 [%header, cols="4,4,4"]
 |===
 |Antragsbezeichnung|    Zweck|  Inhalt
-|Wahlantrag | Antrag auf Wahl zu einem Stura-Posten | persönliche Daten des Antragstellers, Posten auf welchen kandidiert wird
+|Stelle/Amt | Antrag auf Wahl zu einem Stura-Posten | persönliche Daten des Antragstellers, Posten auf welchen kandidiert wird bzw. Fragen zum Amt
 |Ressourcenantrag | Antrag auf Bereitstellung von Ressourcen/Mitteln | angefragte Mittel, Grund für Antrag
+|Wahl zum beratenden Mitglied | Wahl eines neuen beratenden Mitglieds (Kein StuRa Posten im engeren Sinne) | persönliche Daten des Antragstellers, Posten auf welchen kandidiert wird bzw. Fragen zur Person
+|Herstellen des Benhemens | Antrag zum Herstellen des Benehemens zu Professoren / Hochschule | Titel, Grund, Vorschlag zum Verfahren, Name des Antragsstellers
+|Universall | Antrag der keiner konkreten Richtung zugeordnet werden kann | Title, Grund, Vorschlag, Name des Antragsstellers
 |===
-
-[blue]#kommt noch was?#
 
 == Zusätzliche Produktanforderungen
 
