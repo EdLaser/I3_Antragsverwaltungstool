@@ -29,7 +29,7 @@ Hinzu kommt das Corona bedingt ein Lockdown vorherrscht welcher die Kommunikatio
 
 ==== 1.3.1 Teamaufbau und Aufgabenbereiche
 
-Unser Team hat sich von 8 auf 5 Personen (Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien Nguyen[T.N], Andreas Gröber[A.G]) verkleinert, welche gelegentlich von unserem Coach Felix Müller unterstützt wurde. Daraus folgt das wir auch unsere Rollen und Aufgabenbereiche angepasst haben bzw. mussten. 
+Unser Team hat sich von 8 auf 5 Personen (Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien Nguyen[T.N], Andreas Gröber[A.G]) verkleinert, welche gelegentlich von unserem Coach Felix Müller unterstützt wurde. Daraus folgt das wir auch unsere Rollen und Aufgabenbereiche angepasst haben bzw. mussten. Die Kürzel in den eckigen Klammern Spiegeln in diesem Dokument die Namen der Autoren wieder.
 
 Ruben und Richard haben größtenteils selbständig die Implementierung und das entwerfen der Architektur sowie die Dokumentierung darüber übernommen. 
 Jacob und Tien haben das Testen (den Teil den Ruben und Richard nicht getestet haben) und dessen Dokumentierung übernommen. 
@@ -559,3 +559,72 @@ Ebenfalls nicht unterstützt wird das Feature des Einsehens der offenen Anträge
 Ein Feature das noch verbesserunsgwürdig ist, ist das ansehen von Anträgen im "Intern" Bereich. Hier kann man die Anträge nur ansehen indem man in den Bearbeitungsmodus des Tools wechselt. Man zeigt einen Antrag also an, indem man keine Änderungen im Antrag durchführt. Hier gibt es sicher eine bessere Lösung die Anträge als nicht bearbeitbar anzuzeigen.
 
 Auch das Ablehnen und Vertagen von Anträgen mussten wir weglassen. Besonders beim Vertagen des Antrags spielen wieder die Status der Anträge eine Rolle, welcher nicht implementiert sind. Beim Vertagen wird der Antrag auf eine nächste Sitzung verschoben, was genau die abzubildenden Abläufe im StuRa aufzeigt. Hier hätten wir 1. das Feature des Antraggssatus gebraucht und 2. hätte es durch das Ablehnen einer Antragsnummer Änderung bedarft bzw. hätte man hier auch die Tagesordnung der jeweiligen Sitzung beachten müssen, welche als Add-On ebenfalls nicht umgesetzt wurde. 
+
+=== 3.4 Reflexionen der Teammitglieder 
+
+Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien Nguyen[T.N], Andreas Gröber[A.G]
+
+==== 3.4.1 Jacob Flaskamp [J.F.]
+
+===== Was habe ich gelernt?
+Ich habe gelernt, was so alles hinter der Entwicklung von komplexen Software Systemen steht und wie viele verschiedene Aufgabenbereiche es bei solch einem Projekt eigentlich gibt. Ohne ein gut organisiertes Team mit einem klaren Plan würde man nie in absehbarer Zeit zu einem guten Ergebnis kommen können. Selbst ein anfänglich leicht erscheinendes Projekt wird später wahrscheinlich zu einer Herausforderung werden. Es können jederzeit unvorhergesehene Probleme oder Hürden auftreten, weshalb man im Idealfall auch auf diese vorbereitet sein sollte. Ein Beispiel dafür ist die starke Verzögerung bei der Bereitstellung des Servers für unser Tool.
+
+Vor allem ist auch ein gut geschriebener Projektplan mit konkreten Anforderungen notwendig. Unser Team hat z.B. den Fehler gemacht die "Anforderung" Tagesordnung nicht gut genug mit dem Themensteller (StuRa) abzusprechen, weshalb wir unnötig Zeit in Planung und Entwurf investiert haben, obwohl diese Funktion später wieder verworfen werden musste.
+
+===== Worauf bin ich stolz?
+Auf mein Team und das Ergebnis, das wir erreicht haben.
+Trotz einiger unvorhergesehener Hindernisse haben wir meiner Meinung nach viel erreicht und eine solide Basis geschaffen, auf welcher nächstes Semester auch noch ein weiteres Team aufbauen kann. Auch wenn wir nicht alle ursprünglich geplanten use-cases realisieren konnten, so ist doch ein sehr nützliches Tool entstanden, dass dem StuRa in Zukunft viel Arbeit ersparen/erleichtern wird.
+
+===== Was hat gut funkioniert?
+Die regelmäßigen Treffen zu Besprechungen fanden immer statt. Fast nie hat ein Teammitglied gefehlt (und falls doch hat derjenige bereits vorher Bescheid gegeben). Dies hat dafür gesorgt, dass neue Aufgaben und Probleme schnell und rechtzeitig geklärt werden konnten. Außerdem wussten so auch immer alle Teammitglieder, welchen tasks sie aktuell nachgehen mussten.
+Bei zusätzlichem Bedarf für Absprachen konnten immer schnell und flexibel weitere Besprechungstermine vereinbart werden.
+Jedes Teammitglied hat seine Aufgaben wichtig genommen und sich nicht auf der Arbeit der Anderen ausgeruht, wodurch wir auch immer gut in unserem Zeitplan bleiben konnten. 
+
+
+===== Was würde ich beim nächsten Projekt anders machen?
+Ich hätte gern auch noch andere Rollen besser kennengelernt. Vor allem bei der Implementierung würde ich beim nächsten Mal gern mitwirken und tiefere Einblicke gewinnen.
+Außerdem würde ich mir noch mehr Mühe geben rechtzeitig für eine Testumgebung zu sorgen, da wir leider durch die starke Verzögerung bei der Severbereitstellung viel Zeit zum Testen verloren haben.
+Selten ist es auch vorgekommen, dass eine Aufgabe kurzzeitig unter den Tisch gefallen ist, weil jeder dachte, dass sie ein anderer bearbeitet. Deshalb würde ich beim nächsten Projekt gern noch mehr mit GitHub issues arbeiten wollen.
+
+
+==== 3.4.2  Ruben-David Kraus [R.K.] 
+
+===== Was habe ich gelernt ?
+Im Projekt habe ich zahlreiche Erfahrungen gesammelt. Einerseits das die Kommunikation im Team bei solch einem Vorgehen die wichtigste Komponente von allen ist. Kommunikation bildet die Grundlage für ein zielgerichtetes Arbeiten. Wird nicht ausreichend kommuniziert, wird aneinander vorbeigearbeitet. Oft werden Aufgaben nicht klar verteilt, deswegen sollte alles aktiv besprochen und abgeklärt werden. Auch in meiner Rolle, der Implementierung ist es essenziell miteinander zu arbeiten und nicht jeder für sich. Das hat sich im Laufe des Projekts deutlich herausgestellt. Wird in gemeinsamen 'Sessions' programmiert, ist der Output deutlich besser, da man sich direkt absprechen kann. 
+
+Auch der Umfang den solch ein Projekt schnell erreichen kann, auch wenn man denkt "ach das geht schon", ist doch sehr beachtlich. Ich denke unserem gesamten Team ist klar geworden wie wichtig es ist Dinge bis in relativ hohe Detailgrade zu planen, damit Informationen nicht verloren gehen oder man ein gutes Grundgerüst hat, mit der "eigentlichen" Arbeit des Implementierens zu beginnen. Zusätzlich hat man gemerkt, dass das eigentlich Entwickeln der Software einen gar nicht so großen Teil des Prozesses ausmacht als man eigentlich dachte. Ich finde es gut das hier natürlich alle Prozesse der Softwareentwicklung ansprechend beleuchtet wurden.
+
+Auch die Wichtigkeit von Schaubildern und Diagramen ist mir deutlicher geworden. Es ist deutlich einfacher, beispielsweise eine Domäne zu verstehen bzw. gemeinsam über ein Thema zu diskutieren wenn jeder, unabhängig vom Fachwissen, das Thema in kurzer Zeit überblicken und 'verstehen' kann.
+
+Ich habe auch mitgnommen, das die Entwicklung von Demos oder ein "minimum viable product" Ansatz eine gute Möglichkeit ist früh Feedback einzuholen, damit nicht in Richtung Entwickelt wird, die am Ende falsch sind.
+
+Außerdem habe ich gelernt, dass es wichtig ist nicht alles selbst machen zu wollen. Wenn man versucht alle Schnittstellen für komplexe Anwendungen zu programmieren, kommt man schnell an seine Grenzen und man merkt das man mit seinem aktuellen Wissen nicht weiterkommt. Daher habe ich auch gelernt, wie wichtig Frameworks sein können und das sie einem zahlreiche sowie gute Ansätze bieten auf lästige Arbeit zu verzichten.
+
+Darauf aufbauend habe ich ebenfalls viele Erkenntnissse, bezüglich Model-View-Controller Architekturen gewonnen. Ich habe an vielen Stellen gemerkt wie sinnvoll es ist Funktionalitäten einzeln abzugrenzen. Hier hatte ich oft einen 'AHA!'-Moment indem ich die Sinnhaftigkeit dieses Architekturmusters verstanden habe. Hier konnte ich mir oft langen und komplex zu lesenden Code ersparen.
+
+Auch  wie wichtig REST-API in der aktuellen Zeit ist. Es war spannend zu sehen wie einzelne Requests und Responses über den Server liefen und die Kommunikation mit dem Client zu beobachten. Damit einhergehend habe ich ebenfalls gelernt einen Webserver einzurichten und eine Anwendung in eine Produktivumgebung einzuführen und zu betreiben.
+
+===== Was hat gut funktioniert ?
+
+In unserem Projekt hat vieles gut funktioniert. Einerseits war die Kommunikation mit anderen Teammitgliedern stets freundlich und auf Augenhöhe. Es kam nie zu Streitigkeiten oder Unsachlichkeit in den Diskussionen.
+
+Ebenfalls war die Arbeit in der Implementierung sehr angenehm. Wir haben oft direkt miteinander geredet und "Pair-Programming" betrieben, was das Arbeiten deutlich angenehmer gemacht hat, als Solo for sich hinzucoden. Wir haben stets lösungsorientiert gearbeitet und dem Anderen nie Vorwürfe gemacht wenn mal etwas nicht funktionierte. Ich hatte das Gefühl das wir immer an einem Strang gezogen haben und gemeinsam daran orientiert waren das Problem zu lösen.
+
+===== Was würde ich beim nächsten Projekt anders machen ?
+
+Leider gab es auch ein paar Punkte die mir zu denken gegeben haben. Einerseits ist der StuRa als Auftraggeber sehr gut, alle sind stets nett und bemüht und man merkt das Sie auch an einer guten Umsetzung interessiert sind. Da der StuRa aber leider auf freiwilliger Arbeit basiert und es zur Zeit unseres Projektes einen größeren Mitglieder Abgang gab, fehlt es an dieser Stelle an nötigen Personen die uns betreuten. Am Ende war nur noch ein Student für uns zuständig, der auch selbst inmitten der Prüfungsphase für unser Projekt nur wenig Zeit aufwenden konnte. Da dieser Fakt natürlich schwer abzuschätzen ist, würde ich eventuell vorher beim StuRa anfragen ob genug Kapaziäten für die Betreuung vorhanden sind. 
+
+Die Art des Themas hat mir im Nachhinein ebenfalls zu denken gegeben. Ich hatte das Gefühl, dass das komplette von Grund auf Entwickeln, von Software eine große Herausforderung darstellt. Wenn es hier eher wenig, z.B. berufliche Vorkentnisse gibt, ist es sehr schwer sich in alle Themengebiete einzuarbeiten und einem fehlt die nötige Informationsdichte um für Entscheidungen genug Möglichkeiten zu haben. Hier ist es mir teilweise schwer gefallen den Überblick zu behalten, was nun wo gut angewendet werden kann. Wir haben aus Unwissenheit lange in eine Richtung gearbeitet, die uns am Ende keinen Erfolg brachte. Daher würde ich mich im Vorhinein mehr in Richtung Umsetzung (Frameworks, Programmiersprachen, State-of-the-Art) informieren um genug planen zu können.
+
+Außerdem würde ich beim nächsten Projekt auch gerne einmal SCRUM anwenden bzw. noch mehr mit meinen Teammitgliedern kommunizieren und gemeinsam zu arbeiten. Ich denke es fällt oft schwer im Druck des Semesters genug Motivation zu finden, viel Arbeit ins Projekt zu investieren. Ich habe gemerkt das es viel mehr Spaß macht simultan zusammen zu arbeiten und das möchte ich gerne intensivieren.
+
+==== 3.4.1 Richard Müller [R.M.]
+
+Im Sommersemester 2021 starteten wir in die zweite Runde des Moduls „Software Engineering“ bei Herrn Prof. Anke. Auch wir wurden von der Verkleinerung der Gruppe nicht verschont, da dieses Semester die Mitglieder des Studiengangs „Wirtschaftsingenieurwesen“ wie geplant ausschieden. Somit wurde unsere Gruppenstärke von acht auf fünf reduziert was dazu führte das einige Rollen doppelt besetz wurden.
+
+Das erste begutachten unseres Beleges des letzten Semesters machte uns klar das hier ganz klar Luft nach oben ist. Nach der Konsultation mit Herrn Prof. Anke bezüglich unseres Beleges machte sich das Team daran die Tipps umzusetzen und in zwei kleineren Grüppchen vorerst weiter zu machen. Die eine Gruppe kümmerte sich um die 3 Wichtigsten Use Cases und überarbeitete diese während das andere Team damit begann den Beleg des vorherigen Semesters zu überarbeiten. Als Basis dienten die Vorschläge und Tipps von Herrn Prof. Anke die in das Abgabedokument eingepflegt wurden. Da ich die Rollen Architekt und Entwickler zusammen mit Herrn Kraus innehatte, fokussierten wir uns auf die Use Cases und wie man diese am besten Implementieren könnte. Wir einigten uns also darauf eine Webanwendung mit Datenbank zu bauen, da allerdings nur Ich über die nötigen Kenntnisse der Webentwicklung (HTML, CSS, Java Script) verfügte habe Ich für meine Gruppenmitglieder einen kleinen Workshop „How to Website“ abgehalten in denen Ich die Basics erklärt habe. Für die Finale Implementierung haben Wir uns entschlossen das Ich die Webanwendung bauen werde und Herr Kraus sich um die Datenbank und die Bereitstellung des Servers kümmert. Das hat auch gut funktioniert dennoch hat der Kundenkontakt in diesem Semester nicht so wirklich geklappt. Da wir den StuRa als Kunden hatten und dieser gerade ein paar Personalprobleme hatte, hatten wir das Nachsehen, da sich erstmal keiner wirklich zuständig gefühlt hat und wir quasi „herumgereicht“ wurden. Dies führte dazu das wir unseren Server erst Mitte Juni 2021 bekommen haben was sich massiv auf die Testzeiträume auswirkte da nun die Feinabstimmung der einzelnen Softwareprojekte folgte. Wir wollten ohne Framework arbeiten allerdings erlaubte das die Webanwendung nicht da die Connection mit der Datenbank nicht klappte. Da die Zeit schon recht knapp war und wir keine Zeit für langes recherchieren hatten, entschieden wir uns die Webanwendung auf das Django Framework umzubauen diese Herausforderung meisterten wir jedoch sehr schnell dadruch konnten wir nun endlich mit testen anfangen und bugfixing betreiben was unserem Zeitplan sehr zugute kam. 
+
+Rückwirkend betrachtet gab es ein paar stellen die nicht wie erwünscht gelaufen sind und leider Zeit in Anspruch genommen hat die nicht eingeplant war, genauso wie es durch das Fehlen der Hardware trotz mehrfacher Nachfrage zu unnötigen Verzögerungen kahm was unseren Zeitplan immer wieder durcheinander gebracht hat.
+
+Alles in allem war es eine Herausragende Erfahrung dieses Softwareprojekt zu betreuen. Es hat sehr großen Spaß gemacht und die Gruppe hat trotz des mangelnden Kundenkontakts am Anfang des Semesters nie aufgegeben und das Beste aus der Situation gemacht! Dies hat dazu geführt das nun am Ende dieser wilden Berg- und Talfahrt der Softwareentwicklung, nahezu alle Use-Cases implementiert und getestet werden konnten.
+
