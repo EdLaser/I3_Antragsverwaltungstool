@@ -1,59 +1,60 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 07: Tagesordnung ansehen (intern)
+== Use-Case 07: Antrag ablehnen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Der Use Case beschreibt das Vorgehen zum Ansehen der aktuellen Tagesordnung für die kommende Sitzung im internen Bereich.
+Der Use Case beschreibt das Vorgehen zum Ablehnen von Anträgen. Dies kann während der Bearbeitung des Antrags sein sowohl auch bei bearbeitete Anträge während einer Sitzung.
 
 ===	Kurzbeschreibung der Akteure
 
 ==== Antragsverwalter: 
-Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
+Will Anträge bearbeiten und mögliche Fehler berichtigen. Will Antragsstatus verändern.
 
 ==== Präsidium: 
-Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden.
+Will Anträge bearbeiten und mögliche Fehler berichtigen.
+Will Antragsstatus verändern.
 
-==== Vorstand der Geschäftsführung: 
-Will die TO im Voraus sehen und die Anträge, die schon verknüpft wurden. 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 . Benutzer ist angemeldet.
-. Es ist eine Sitzung des STURA geplant. 
-. Es wurden Anträge eingereicht.
-. Anträge wurden schon mit TO verknüpft sowie TOPs festgelegt.
-. TO hat 3 mögliche Stadien:
-.. automatisch generierter interner Entwurf 
-.. dynamisch live Version der TO(verändert und aktualisert sich fortlaufend) intern veröffentlicht 
-.. generierte TO extern veröffentlicht nach Absendung der Einladung zur nächsten Sitzung (nur mit Anträge die bereits vom Präsidum abgesegnet wurden und konform sind). TO bereit zur Besprechung.
+. Antrag muss eingereicht sein und Regularien entsprechen.
+
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
-
-.	Antragsverwaltungstool aufrufen 
-.	Akteur sieht sich TO an. 
+.	Akteur öffnet Antrag im Antragsverwaltungstool.
+.	Akteur prüft, ob Antrag den Regularien entspricht.
+.	Akteur lehnt Antrag ab.
+..  Akteur gibt eine Begründung ein (Kriterien je nach Antragsart)
+.	Antrag wird im TOP als abgelehnt bezeichnet.
 .	Der Use Case ist abgeschlossen.
+
+
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== Sc01: TO aufrufen
-    Der Akteur ruft im Antragsverwaltungstool die Option Tagesordnung auf. 
 
-==== Sc02: TO nicht vorhanden
-    Der Akteur möchte die TO aufrufen, jedoch ist die Option nicht möglich da keine Sitzung mit TOPs ansteht.
+==== Erfolgreiche Ablehnung
+
+Präsidium hat den Antrag (nach Abstimmung) abgelehnt.
+
 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+Bei erfolgreicher Durchführung des Use Cases müssen folgende Nachbedingungen erfüllt sein:
 
-* Existenz einer TO
+* Alle Angaben entsprechend den Regularien für die entsprechende Antragsstellung
+
+* Antrag wurde von Präsidium verabschiedet 
+
+* Antrag wird in TO als bearbeitet und abgelehnt bezeichnet
+
+* Antrag von Antragliste entfernt
 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-
-
-
-
+xref:system-wide_requirements.adoc#System-wide Requirements[System-wide Requirements]
 

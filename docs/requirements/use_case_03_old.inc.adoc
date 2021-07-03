@@ -1,0 +1,42 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 03: Antragsstatus einsehen 
+===	Kurzbeschreibung
+Der Use Case beschreibt das Vorgehen zum Einsehen des Status eines eingereichten Antrags. 
+//<Kurze Beschreibung des Use Case>
+
+===	Kurzbeschreibung der Akteure
+==== Antragssteller: 
+Der Antragssteller möchte wissen, ob sein Antrag bearbeitet wurde.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer.
+Es wurde bereits ein Antrag vom Antragssteller eingereicht.
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+	1. Der Use Case beginnt, wenn Akteur den Antrag aufrufen möchte.
+	2. Akteur ruft Antragsformulartool auf.
+	3. Akteur wählt geforderten Antrag aus.
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Sc01: Erfolgreiche Einsicht
+	Akteur kann den gewünschten Antrag aufrufen.
+
+==== Sc02: Gescheiterte Einsicht
+	Der vom Akteur gesuchte Antrag existiert nicht.
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+Bei erfolgreicher Durchführung des Use Case müssen folgende Nachbedingungen erfüllt sein:
+
+* Anträge müssen unverändert sein
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
