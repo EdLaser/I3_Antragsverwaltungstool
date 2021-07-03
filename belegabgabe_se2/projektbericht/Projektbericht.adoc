@@ -567,7 +567,7 @@ Jacob Flaskamp [J.F.], Ruben-David Kraus[R.K.], Richard Müller[R.M.], Duy Tien 
 ==== 3.4.1 Jacob Flaskamp [J.F.]
 
 ===== Was habe ich gelernt?
-Ich habe gelernt, was so alles hinter der Entwicklung von komplexen Software Systemen steht und wie viele verschiedene Aufgabenbereiche es bei solch einem Projekt eigentlich gibt. Ohne ein gut organisiertes Team mit einem klaren Plan würde man nie in absehbarer Zeit zu einem guten Ergebnis kommen können. Selbst ein anfänglich leicht erscheinendes Projekt wird später wahrscheinlich zu einer Herausforderung werden. Es können jederzeit unvorhergesehene Probleme oder Hürden auftreten, weshalb man im Idealfall auch auf diese vorbereitet sein sollte. Ein Beispiel dafür ist die starke Verzögerung bei der Bereitstellung des Servers für unser Tool.
+Ich habe gelernt, was so alles hinter der Entwicklung von komplexen Software Systemen steht und wie viele verschiedene Aufgabenbereiche es bei solch einem Projekt eigentlich gibt. Ohne ein gut organisiertes Team mit einem klaren Plan würde man nie in absehbarer Zeit zu einem guten Ergebnis kommen können. Selbst ein anfänglich leicht erscheinendes Projekt wird später mit hoher Wahrscheinlichkeit zu einer Herausforderung werden. Es können jederzeit unvorhergesehene Probleme oder Hürden auftreten, weshalb man im Idealfall auch auf diese vorbereitet sein sollte (siehe Risklist). Ein Beispiel dafür ist die starke Verzögerung bei der Bereitstellung des Servers für unser Tool. Auf dieses Problem waren wir leider nicht so gut vorbereitet.
 
 Vor allem ist auch ein gut geschriebener Projektplan mit konkreten Anforderungen notwendig. Unser Team hat z.B. den Fehler gemacht die "Anforderung" Tagesordnung nicht gut genug mit dem Themensteller (StuRa) abzusprechen, weshalb wir unnötig Zeit in Planung und Entwurf investiert haben, obwohl diese Funktion später wieder verworfen werden musste.
 
@@ -577,14 +577,15 @@ Trotz einiger unvorhergesehener Hindernisse haben wir meiner Meinung nach viel e
 
 ===== Was hat gut funkioniert?
 Die regelmäßigen Treffen zu Besprechungen fanden immer statt. Fast nie hat ein Teammitglied gefehlt (und falls doch hat derjenige bereits vorher Bescheid gegeben). Dies hat dafür gesorgt, dass neue Aufgaben und Probleme schnell und rechtzeitig geklärt werden konnten. Außerdem wussten so auch immer alle Teammitglieder, welchen tasks sie aktuell nachgehen mussten.
-Bei zusätzlichem Bedarf für Absprachen konnten immer schnell und flexibel weitere Besprechungstermine vereinbart werden.
-Jedes Teammitglied hat seine Aufgaben wichtig genommen und sich nicht auf der Arbeit der Anderen ausgeruht, wodurch wir auch immer gut in unserem Zeitplan bleiben konnten. 
+Bei zusätzlichem Bedarf für Absprachen konnten immer schnell und flexibel weitere Besprechungstermine vereinbart werden. Alle Teammitglieder haben sich super verstanden und es kam nie zu Konflikten untereinander.
+Jeder hat seine Aufgaben wichtig genommen und sich nicht auf der Arbeit der Anderen ausgeruht, wodurch wir auch immer gut in unserem Zeitplan bleiben konnten. 
 
 
 ===== Was würde ich beim nächsten Projekt anders machen?
-Ich hätte gern auch noch andere Rollen besser kennengelernt. Vor allem bei der Implementierung würde ich beim nächsten Mal gern mitwirken und tiefere Einblicke gewinnen.
-Außerdem würde ich mir noch mehr Mühe geben rechtzeitig für eine Testumgebung zu sorgen, da wir leider durch die starke Verzögerung bei der Severbereitstellung viel Zeit zum Testen verloren haben.
-Selten ist es auch vorgekommen, dass eine Aufgabe kurzzeitig unter den Tisch gefallen ist, weil jeder dachte, dass sie ein anderer bearbeitet. Deshalb würde ich beim nächsten Projekt gern noch mehr mit GitHub issues arbeiten wollen.
+Ich hätte gern auch noch die anderen Rollen besser kennengelernt. Vor allem bei der Implementierung würde ich beim nächsten Mal gern mitwirken und tiefere Einblicke gewinnen.
+Außerdem würde ich mir noch mehr Mühe geben rechtzeitig für eine Testumgebung zu sorgen, da wir leider durch die starke Verzögerung bei der Serverbereitstellung viel Zeit zum Testen verloren haben.
+
+Selten ist es vorgekommen, dass eine Aufgabe kurzzeitig unter den Tisch gefallen ist, da jeder dachte, dass ein Anderer bearbeitet. Im genauen Gegensatz dazu ist es mir auch passiert, dass ich und ein weiteres Teammitglied beide die Anwendungsdokumentation geschrieben haben. Daraufhin musste ich meine Arbeit verwerfen, was ich sehr ärgerlich fand. Um solche Missverständnisse zu vermeiden würde ich beim nächsten Projekt gern noch genauer mit GitHub issues oder etwas ähnlichem arbeiten.
 
 
 ==== 3.4.2  Ruben-David Kraus [R.K.] 
