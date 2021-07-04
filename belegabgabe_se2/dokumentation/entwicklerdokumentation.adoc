@@ -9,10 +9,7 @@ Ziel der Dokumentation ist es den künftigen Entwicklern der Software möglichst
 == Entwurfsdokumentation
 === Systemarchitektur
 .logische Sicht
-[plantuml, "diagrams/logical", svg]
-....
-include::diagrams/logical.puml[]
-....
+image::logical.png[]
 
 === Bibliotheken und Frameworks
 ==== Frameworks
@@ -33,17 +30,12 @@ image::database-scheme.png[]
 === Zusammenarbeit zwischen den Komponenten
 ==== Anzeigen
 .Ablauf eines Aufrufs zum Anzeigen
-[plantuml, "diagrams/sequence_show", svg]
-....
-include::diagrams/sequence_show.puml[]
-....
+image::sequence_show.png[]
+
 
 ==== Daten einfügen
 .Ablauf eines Aufrufs zum Einfügen
-[plantuml, "diagrams/sequence_insert", svg]
-....
-include::diagrams/sequence_insert.puml[]
-....
+image::sequence_insert.png[]
 
 
 == Entwicklung der Webanwendung

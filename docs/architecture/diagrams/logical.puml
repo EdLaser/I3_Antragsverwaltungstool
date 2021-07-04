@@ -1,11 +1,11 @@
 @startuml "logische Sicht"
 
 node "Django-Applikation" {
-    [HTML]
+    [Template Files]
     [View]
         note top of [View] : CRUD, Processes requests
-    [CSS]
-        note left of [CSS]
+    [CSS Stylesheet]
+        note left of [CSS Stylesheet]
             predefined W3 
             and own stylesheet
         end note
@@ -14,12 +14,12 @@ node "Django-Applikation" {
     [URL Patterns] 
         note top of [URL Patterns] :redirect requests to view
     
-    [JavaScript] ..> [HTML] : toggles, displays text
-    [CSS] ..> [HTML] : styles
+    [JavaScript display toggle] ..> [Template Files] : toggles, displays text
+    [CSS Stylesheet] ..> [Template Files] : styles
     [URL Resolver] --> [URL Patterns] : check patterns
     [URL Patterns] --> [URL Resolver] : tells matching pattern and view
     [URL Resolver] --> [View] : redirects requests
-    [View] ..> [HTML] : renders response to browser
+    [View] ..> [Template Files] : renders response to browser
     
     [View] --> database : CRUD-Operations
 }
