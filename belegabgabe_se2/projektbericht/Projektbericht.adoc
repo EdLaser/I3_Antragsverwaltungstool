@@ -513,11 +513,7 @@ Am Anfang des Projektes haben wir unsere Ziele  sehr hoch gesteckt und wollten, 
  
 Außerdem haben wir versucht noch zusätzliche Anforderugen, in Form von Add-Ons aufzunehmen, ein Beispiel hierfür wäre die Idee der Automatischen generierung einer Tagesordnung oder einer verbesserten Druckvorlage für Anträge, praktisch haben wir uns schlussendlich erstmal auf die Hauptanwendung (Unsere Use-Cases) konzentriert.
 
-.Use-Case-Model
-[plantuml, "diagrams/use_case_model", svg]
-....
-include::../../docs/requirements/diagrams/use_case_model.puml[]
-....
+#Bild Use Case Modell einfügen#
 
 === 3.2 Was haben wir davon Geschafft?
 
@@ -657,16 +653,47 @@ Ich würde mich auf die Technologie, die bei der Implementierung genutzt wird, v
 
 ===== Was habe ich gelernt?
 
+Nun zu aller erst habe Ich gelernt was es heißt eine Komplexe Aufgabenstellung als Team ,in meiner Rolle als Projektmanager bzw. als Entscheidungsperson beim planen und Ansprechperson bei Problemen, zu bearbeiten. Auf der einen Seite, war Ich mit dieser Rolle aus anderen Bereichen meines Lebens vertraut (Teamcaptain beim Sport o.Ä und Projektleitung in kleineren Projekten aber nicht akademisch), was die Arbeit mit den doch recht verschiedenen Persönlichkeiten welche sich in meinem Team zusammen finden erleichtert und meines Erachtens nach sehr gefördert hat. 
+
+Auf der anderen Seite, bin Ich zu großen Teilen ein sehr cha­o­tischer und spontaner Mensch (Corona hat dieses um es in "freestylen"  noch bestärkt), was sich in allen Bereichen meines Lebens, somit auch bei der Plannung wiedergespiegelt hat. Während einnige Teammitglieder super ohne wirklichen Druck bzw. feinstrukturierten Plan zurecht kammen, haben sich andere eher gehenlassen oder wussten nicht was zu tun ist, was Ich im Nachhinein klar beeinflussen hätte können. 
+
+Grundsätzlich ist mir bewusst geworden, dass mit der Größe des Teams auch die Größe des organisatorischen Aufwands steigt, Ich hätte sehr viel mehr Zeit am Anfang des Projektes damit verbringen müssen Aufgaben klar zu definieren/formulieren und Aufwände ab zu schätzen sodass der Workflow, im "flowen" bleibt. Zudem habe Ich zu kurz geplant, Ich meine damit Woche für Woche ,mit Ausnahme der Abschätzung am Semester Anfang welche Ich im Punkt 1.3.3 als Art des V-Modells bezeichne. 
+Was für sich gesehen auch nicht schlecht funktioniert hat, aber über das ganze Projekt hinweg ein immeses Risiko war, und uns auf lange Sicht eher mehr Ressourcen (Zeit,Arbeitsaufwand) gekostet, als  (,mit großer Wahrscheinlichkeit,) die Plannung über 2 bis 3 Iterationen gekostet hätte. In einer beruflichen Umgebung mit Gegebenheiten wie "festen Arbeiszeiten" wäre mein bzw. unser Arbeitststil so nicht umsetzbar gewesen. 
+
+Zudem habe Ich die meißten relevanten Projekte/Arbeiten in den Bereichen von Schule und Hochschule stehts allein, maximal mit einer anderen Person bearbeitet, dies war also
+eine völlig neue Situation, die damit einhergeht das man Verantwortung abgibt und darauf vertraut das Teammitglieder die Freiheiten nutzen die man ihnen gibt um dem Projektziel näher zu kommen oder ihnen ein festes Ziel mit Deadline gibt (eine andere Möglichkeit wäre hier das ganze Projekt selbst zu machen, dies ist jedoch aus offensichtlichen Gründen etwas Sinnfrei und keine wirkliche Lösung). Wie aus den letzten 2 Absätzen hervorgeht, habe ich meinen Teammitgliedern eher vertraut als ihnen Ziele und Arbeit auf zu drücken. Dabei habe Ich natürlich geschaut das dies sich in einem Bereich bewegt, der das Projekt nicht zum scheitern führt, dennoch wäre hier ein noch zielgerichteter Ansatz sinvoll gewesen. Gerade bei noch größeren Teams sagen wir >50 Personen, müssen Ziele klar Formuliert und Deadlines eingehalten werden um voran zu kommen. 
+
+Außerdem ist mir bewusst geworden wie hilfreich eine gute Dokumentation sein kann und, dass es manchmal eines ersten scheiterns Bedarf um das Ziel bzw. das Problem im zweiten oder dritten Anlauf richtig an zu gehen. Zudem kann ein Coach einem manchaml eine Art "Abkürzung" zur Lösung eines Problems zeigen, um dieses scheitern und den damit verbundenen Zeitaufwand, vorzubeugen. 
 
 ===== Worauf bin ich stolz?
 
+Das wir Innerhalb des Teams eine Vision hatten, ob das jetzt eine gute Note oder das bauen eines Online-Antragsverwaltungstool ist, ist an dieser Stelle irrelevant, da jeder aktiv an der Erfüllung beider dieser Vision gearbeitet hat. Einige wahrscheinlich mehr und mit unterschiedlichem Aufwand als andere, aber dennoch jeder so gut er konnte. Gerade in den letzten Wochen, wo es mal wirklich lief war ein Flow in unserem Team, indem ein großteil unseres Teams eher 4-8 Stunden im Gegensatz zu den anfänglich vereinbarten 2-4 Stunden arbeitete, und von Woche zu Woche  mehr Funktionalitäten realisiert wurden. Ich halte es für bemerkenswert wie unsere Implementierungsgruppe quasi aus dem nichts heraus, ein Tool kreiert hat, was zwar noch einniges an Weiterentwicklung bedarf, aber einen praktischen Nutzen im Stura findet und stolz darauf, ein Umfeld  geschaffen zu haben in dem dies möglich war.
+
+Zudem fühlt es sich gut an, dass wir uns(gemeint sind hier meine 4 Teammitglieder und Ich) in keiner Phase dieses Projektes groß gegenseitig gestresst haben bzw. unstimmig waren, interne Probleme gab es kaum und wurden falls es Sie gab schnell gelöst. Zudem wurde oft Hilfe angeboten und dankend angenommen wo Sie benötigt war. 
+Schlussendlich waren alle kompromissbereit, auch wenn das heißt sich 4 Stunden (beginn Samstag 21:30, 3 Tage vor der ersten Prüfung) zum letzten durchgehen der Abgabe-Dokumente zu treffen, weil kein anderer Termin gefunden werden konnte. Es wurde nicht diskutiert sondern gemeinsam auf ein Ziel hingearbeitet. 
+Dies sehe Ich im Rahmen eines Hochschul Projektes nicht als selbstverständlich an(,vorallendigen da dies nicht das erste Treffen dieser Art in dieser Woche war). 
+
+Wir hatten gerade zu Anfang dieses Semesters zum Teil großen Verzug, einen nicht gerade kleinen Teil hat unser Kunde, der StuRa, dazu beigetragen. Dennoch waren alle bemüht nach Lösungen zu suchen, als sich vor bevorstehenden Problemen zu verstecken und die anderem machen zu lassen. 
+
+Aus genannten Gründen würde Ich jederzeit wieder mit Ruben,Richard und Jakob zusammenarbeiten, Ich möchte Tien hier nicht ausschließen, dennoch hatte er während unser gemeinsamen Arbeit eine eher passive Rolle eingenommen, was wahrscheinlich eher mit seiner zurückhaltenden Persönlichkeit und einer vorhandenen Sprachbarriere zu tun hat als mit seinem Fleiß oder seiner Moral. Genannter Umstand hat den Rest von uns nie gestört, wir wussten seit SE-1 worauf wir uns einließen und habem die aktiven Rollen/Posten eingenommen, zudem hat es meiner Meinung nach das Beste aus uns herausgeholt. 
+
+Als letzten Punkt macht es mich froh das ganze Projekt mit einem recht guten Eindruck/Gefühl abzuschließen bzw. zu übergeben. Was Ich im Gegensatz zu meinen restlichen Akademischen-Aktivitäten in Zeiten von Corona nicht gerade behaupten kann.
 
 ===== Was hat gut funkioniert?
+
+Die Kommunikation und Kompromisbereitschaft war herausragend, dies gilt auch für unseren Kunden Johann Boxerberger (ab dem Zeitpunkt wo dieser uns zur Verfügung steht). Häufiger Kontakt, auch wenn nur Online, hat unser Team zusammengehalten und eine solide Arbeitsgrundlage geschaffen. 
+Hinzukommend gab es durch die Wöchentlichen Teammeatings (manchmal auch 2-3 in einer Woche) einen guten Informationsfluss und jeder wusste eigentlich wo die anderen Teammitglieder stehen, was sie im Begriff sind zu tun bzw. was sie gerade tun. 
+
+Die Spezialisierung in einzelne Bereiche, bei uns Implementierung[Richard,Ruben],Test[Jacob,Tien],Analyse[Ruben,Jacob,Andreas] und Planung[Andreas], hat sich als überaus förderlich für den Workflow erwiesen. Jeder der Bereiche (ausgenommen der Analyse  da dort 3 Teammitglieder parallel kleine Teile übernommen haben), war in einer Art Blase welche mit den Problemen/Zielen seines Bereiches umgeben, andere Teammitglieder konnten zwar nicht wirklich in diese meistens tiefe fachlich Ebene vordringen aber jeder konnte sich auf die Probleme seines Bereiches, mit maximal einem anderen Teammitglied konzentrieren, und nicht triviale Lösungen finden.
+
+Der Workflow flowte als dies möglich war, viele Funktionalitäten wurden geschaffen, als "Umstände(Server,StuRa organisation)" dies möglich machten. Zudem macht eine Stressfreie, eher auf Freiheit bassieremde Arbeitsstruktur Sinn sobald jeder das Problem und seine Mittel und Wege um dieses zu lösen durch drungen hat, und auf ein gemeinsames Ziel hinarbeitet. Zudem haben wir die Probleme welche vom StuRa kammen relativ gut kompensiert und konnten uns schnell auf die Ansprüche unseres neuen Kunden konzentrieren.
  
-
-
+ 
 ===== Was würde ich beim nächsten Projekt anders machen?
 
+Ich würde versuchen, dass das Team anfänglich, wenn noch keine Eigendynamik entwickelt wurde,in ein Umfeld einzubinden indem dies schneller geschieht als in diesem Projekt.  Es sollte z.B eine klare Zielvorstellungen formuliert werden, auf die gezielt hingearbeitet werden kann. Zudem sollte Ich zumindest anfänglich Aufgabenbereiche klarer definieren, und eher passive Persönlichkeiten Aktiv in das Projekt mit einbinden. Zudem würde ich Wahrscheinlich mehr Zwischenziele setzen und den Aufwand einzelner Tasks von Anfang an abschätzen.
 
+Zudem sollte Ich versuchen so etwas wie Arbeitszeiten oder Arbeitsaufwand strikt zu regeln und mehr Deadlines setzen, um meiner bzw. der Spontanität und Unordnung meiner Teammitgliedern teilweise entgegen zu wirken. Dies hat in einem Projekt mit mehr als 4 Personen definitiv mehr Vorteile als Nachteile. Output wird ganz einfach konstanter und in regelmäßigeren Abständen erzeugt, zudem sinkt das Risiko sich an Kleinigkeiten aufzuhalten bzw. bestimmte Tasks länger und öfter als es nötig ist zu erledigen. 
+Zudem werde Ich definitv, gewonnene Erkenntnisse bezüglich der Strukturierung von Dokumenten über Asciidoc, und nützliche Tools wie Github sowie Github-Issues mehr und sinvoller anwenden als ich es in diesem Projekt tat.
 
 
