@@ -513,7 +513,7 @@ Am Anfang des Projektes haben wir unsere Ziele  sehr hoch gesteckt und wollten, 
  
 Außerdem haben wir versucht noch zusätzliche Anforderugen, in Form von Add-Ons aufzunehmen, ein Beispiel hierfür wäre die Idee der Automatischen generierung einer Tagesordnung oder einer verbesserten Druckvorlage für Anträge, praktisch haben wir uns schlussendlich erstmal auf die Hauptanwendung (Unsere Use-Cases) konzentriert.
 
-#Bild Use Case Modell einfügen#
+image::use_case_model.svg[]
 
 === 3.2 Was haben wir davon Geschafft?
 
