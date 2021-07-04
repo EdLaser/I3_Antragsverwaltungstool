@@ -25,8 +25,7 @@ Leider mussten wir feststellen das unsere alte Ansprechpartnerin  „Liselotte R
 Hinzu kommt das Corona bedingt ein Lockdown vorherrscht welcher die Kommunikation in den virtuellen Raum lenkt, dies hat uns nicht groß behindert war jedoch in den Bereichen Motivation und Kommunikation durchaus merkbar.
 
 
-#Hier noch Essence Navigator Bild einfügen IT-Plan 3-4#
-
+image::EssenceNavigator1.png[]
 
 === 1.3 Projektorganisation
 
@@ -527,11 +526,13 @@ Außerdem bietet das Tool die Möglichkeit eines Logins. Hier war unser Ziel fü
 
 Zusätzlich zu diesem Login gibt es eine Administrationsseite zum tieferen Verwalten der Anträge. Hier können die Datenstrukturen, über die normale Eingabemaske hinaus, ergänzt / geändert / entfernt werden.
 
-Des weiteren haben wir es geschafft, das die ganze Seite einem gewissen Konzept folgt. Wir hatten das Ziel die Benutzung der Seite möglichst einfach und so modern wie möglich zu halten. Dabei stand stets der Nutzer im Vordergrund. Es sollte erreicht werden, dass obwohl bei den Anträgen sehr komplexe Gegebenheiten gelten, eine einfache Nutzung des Tools ohne recherche notwendig ist. #Dies haben wir durch erklärende Texte und Popups zumindest bei unserem kleinen User-Test erreicht.
+Des weiteren haben wir es geschafft, das die ganze Seite einem gewissen Konzept folgt. Wir hatten das Ziel die Benutzung der Seite möglichst einfach und so modern wie möglich zu halten. Dabei stand stets der Nutzer im Vordergrund. Es sollte erreicht werden, dass obwohl bei den Anträgen sehr komplexe Gegebenheiten gelten, eine einfache Nutzung des Tools ohne recherche notwendig ist. Dies haben wir durch erklärende Texte und Popups zumindest bei unserem kleinen User-Test erreicht.
 
 Zusammengefasst haben wir die Use-Cases 01,02,05 sowie 06 implementiert und getestet. Diese werden  innerhalb unseres Tools in der nächsten Woche 5-11.Juli offiziell übergeben, inoffiziell stehen diese auf dem StuRa-Server schon zur Verfügung.
 
-=== 3.3 Was haben wir nicht erreicht? 
+image::EssenceNavigator2.png[]
+
+=== 3.3 Was und warum haben wir etwas nicht erreicht? 
 
 ==== 3.3.1 Störfaktoren
 
