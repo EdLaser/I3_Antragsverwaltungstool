@@ -1,0 +1,94 @@
+= Abnahmeprotokoll Antragsverwatlungstool
+:icons: font
+:lang: de
+//:sectnums: short
+
+//:source-highlighter: highlightjs
+//:imagesdir: img
+//Platzhalter für weitere Dokumenten-Attribute
+
+//Autor: {author}, Version {revnumber}, {revdate}
+== Projektangaben
+Thema: I3 Antragsverwaltungstool
+
+Zeitraum: 30.11.2020 - 04.07.2021
+
+GitHub Repository: https://github.com/EdLaser/I3_Antragsverwaltungstool[Antragsverwaltungstool]
+
+
+== Abnahmedokumentation 
+=== Abnahme
+Datum: 09.07.2021
+
+Zeit: 12:15 Uhr
+
+Abnahmeumgebung: StuRa LCX Container mit Web-/Datenbankserver
+
+=== Lieferumfang
+
+* Software in folgender Form: Antragsverwaltungstool bestehend aus Django-Applikation, Webserver, Datenbankserver
+* Benutzeranleitung
+* Betriebsanleitung
+* Anforderungsspezifikation
+* Entwicklerdokumentation
+* Testdokumentation
+
+=== Funktionalität
+[cols="4,1,5"]
+|===
+|Use Case / Szenario | erfüllt | Anmerkung
+
+|UC01 Wahlantrag stellen
+| ja
+| keine
+| UC02 Ressourcenantrag stellen
+| ja
+| keine
+| UC03 Offene Anträge ansehen (Antragssteller)
+| nein
+| keine
+| UC04 Änderungsantrag Antragssteller
+| nein
+| indirekt durch Präsidium eintragbar
+| UC05 Offene Anträge ansehen
+| ja
+| Ansicht nur über Bearbeitungssicht
+| UC06 Antrag bearbeiten
+| ja
+| keine
+| UC07 Antrag ablehnen
+| nein
+| Datenstruktur für Sachverhalt vorhanden
+| UC08 Antrag vertagen
+| nein
+| Tagesordnung nicht implementiert
+
+|===
+
+===  Systemweite Anforderungen
+[cols="4,1,5"]
+|===
+|Anforderung | erfüllt | Anmerkung
+
+|NFA1 Hilfefenster bei Antragsstellung
+| ja
+| werden im Laufe der Zeit ergänzt
+|NFA2 Erklärungen der Antragsarten auf Startseite
+| ja
+| Texte vorhanden, können leicht abgeändert werden
+
+|===
+
+== Unterschriften
+
+Hiermit wird die Abnahme vollständig / mit Mängeln bestätigt.
+
+Bemerkungen:
+
+[cols="1,1"]
+|===
+| X
+| X
+|Unterschrift Themensteller*in
+|Unterschrift Abgabeberechtigter
+|===
