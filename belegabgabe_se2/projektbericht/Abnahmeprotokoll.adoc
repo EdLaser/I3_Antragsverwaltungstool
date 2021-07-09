@@ -1,4 +1,4 @@
-= Abnahmeprotokoll Antragsverwatlungstool
+= Abnahmeprotokoll Antragsverwaltungstool
 :icons: font
 :lang: de
 //:sectnums: short
